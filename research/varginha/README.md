@@ -61,7 +61,14 @@ not a verdict.
   ~30 yrs on) → spawned **H-4** (late accretion vs suppression). ★★ Surfaced the one live falsifiable event:
   **a legal request to exhume soldier Marco Chereze** for DNA/bacterial analysis — the case's single best shot
   at primary physical evidence; track it. See [`cycle-5.md`](cycle-5.md).
-- **Cycle 6** — *next.* **Track the Chereze exhumation** (status + result — highest-value future datum); read
-  the IPM's actual **conclusion text** (lift H-1 to primary); run **H-3's base-rate test**; retrieve the FanBolt
-  "what changed 2022→2026" testimony-drift piece (403'd this pass); then route the whole picture to Gemini for
-  its decorrelated grade.
+- **Cycle 6** — *done (the surgeon's testimony).* Close read of Dr. Italo Venturelli — the case's centerpiece
+  witness. Graded **well-attested Reported** (credentialed, on-record, by-name, no claimed motive) and capped
+  there (no corroborating primary; the surgeon who allegedly *operated*, Marcos Vinícius Neves, left no records
+  and died 2018). ★ Caught a media **escalation**: IBTimes' "neurosurgeon *operated* on a live being" inflates
+  Venturelli's own words — "called to give my opinion… *assessing* it medically" — the same Reported→Established
+  smuggle as the Rebelo headline. His "not from our planet / telepathy" reading filed as **Inferred**. Venturelli
+  = **H-4's exemplar** (dramatic firsthand claim surfacing 29 yrs late). See [`cycle-6.md`](cycle-6.md).
+- **Cycle 7** — *next.* **Track the Chereze exhumation** (status + result — highest-value future datum); read
+  the IPM's actual **conclusion text** (lift H-1 to primary); run **H-3's base-rate test**; retrieve the
+  403'd primaries (Venturelli's full NewsNation/UAP Digest interview; the FanBolt drift piece); then route the
+  whole picture to Gemini for its decorrelated grade.

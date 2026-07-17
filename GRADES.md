@@ -21,8 +21,10 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   base-rate test still open). Cycle 5 (the James Fox angle) audited the physical evidence to **zero chain of
   custody** (H-2 confirmed) and found the dramatic firsthand layer surfacing *latest* (2025–2026) → **H-4**
   (late accretion). ★ One live falsifiable event now tracked: a legal request to **exhume soldier Marco Chereze**
-  for DNA/bacterial analysis — the case's single best shot at primary physical evidence. Verdict pending cycle 6
-  + Gemini's decorrelated grade.
+  for DNA/bacterial analysis — the case's single best shot at primary physical evidence. Cycle 6 (the surgeon's
+  testimony) graded Dr. Italo Venturelli **well-attested Reported** (credentialed, on-record) and capped there —
+  no corroborating primary; caught a media "*operated*" inflation of his own "*assessed*"; his ET/telepathy
+  reading = **Inferred**; he is **H-4's exemplar**. Verdict pending cycle 7 + Gemini's decorrelated grade.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*
