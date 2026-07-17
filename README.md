@@ -20,6 +20,10 @@ Public and open — grant-supported ethos, no paywalls. The openness is what inv
   *timeline* lives in `MEASUREMENTS.md`; the *current state* lives here. Both change in the same commit as any regrade.
 - **`research/<topic>/hypotheses.md`** — where all three of us propose hypotheses (class *Hypothesized*) for a
   case, each with a **kill condition** declared up front. Experiments state their hypothesis in their own README.
+- **`METHOD-cage-audit.md`** — the operational checklist that implements §3 at its two danger-points:
+  **charter-time** (no claim anchors above its earned provenance tier) and **verdict-time** ("undecidable" must be
+  earned by balanced evidence, not reached for to protect a belief or a person). Built from where the method
+  actually failed (Varginha + Tim Taylor). *Run it — especially the verdict-time checks — before grading a case.*
 
 ---
 
