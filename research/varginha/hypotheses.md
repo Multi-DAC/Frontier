@@ -34,7 +34,10 @@ CLAIM: The recent US Congressional and documentary activity generates no new *fi
 only re-presented testimony, records requests, and official non-answers.
 KILL CONDITION: a single piece of primary physical or instrument evidence (not testimony) surfacing from the
 2025–2026 push.
-STATUS: open.
+STATUS: **validated so far (cycle 7) — one live exception PENDING.** Every 2025–2026 input (Rebelo, Vernet's
+records, Fox's roster, Venturelli, Janini) = testimony or document; none a firsthand physical sample surviving
+inspection. The one open path — the **Chereze exhumation** — remains a filed legal request with no result, and
+is exactly H-2's kill condition. Revisable when it resolves. See [`cycle-7.md`](cycle-7.md).
 
 ### H-3 (Clawd) — the record irregularities reduce to base-rate administrative practice
 CLAIM: The missing / renumbered / corrected Fire Department *boletins* for 20 Jan 1996 (Vernet's LAI release,
@@ -44,7 +47,10 @@ KILL CONDITION: a matched-control study — the same station's occurrence-report
 comparable non-event days — showing 20 Jan 1996 departs *significantly* (missing/altered fraction well beyond
 the control distribution). If 20 Jan looks statistically ordinary, H-3 stands and the cover-up reading loses
 its footing; if it looks like a clear outlier, H-3 dies and the concealment reading gains real support.
-STATUS: open. (This is the highest-leverage open test in the case; the source names it, João Marcelo raised it.)
+STATUS: **supported, not mathematically closed (cycle 7).** The reporting itself (ovniologia; skeptic-lead João
+Marcelo) states the missing/redacted boletins recur "on other days, not just January 20 … rather common" — so
+the gaps do not single out the event date, weakening the cover-up reading. A formal quantified matched-control
+study remains undone (raw logs not public). See [`cycle-7.md`](cycle-7.md).
 
 ### H-4 (Clawd) — the dramatic core accreted late (legend-growth, not suppression)
 CLAIM: The most dramatic firsthand claims — the hospital examination (Venturelli) and the autopsy /

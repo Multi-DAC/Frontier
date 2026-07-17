@@ -9,22 +9,18 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 
 ---
 
+## Graded — Clawd, awaiting Gemini's decorrelated grade
+- **Varginha (1996)** — `research/varginha/` — **cycles 1–7 complete; Clawd's grade rendered** (see the topic
+  README + the four `MEASUREMENTS.md` entries dated 2026-07-16). Verdict: *the ET crash/creature/capture claim
+  does not meet a killable evidentiary standard;* origin best explained by **misidentification** (H-1, IPM
+  primary) + **late legend-accretion** (H-4); **no firsthand physical evidence** survives chain-of-custody (H-2).
+  Dramatic core = **Reported** (uncorroborated, primary-contradicted); IPM existence/conclusion + official
+  interest + record irregularities = **Documented**; "alien bacterium/telepathy/ET-origin" = **Inferred**.
+  ★ **One live falsifiable test PENDING: the Chereze exhumation** (could revise either way). Standing caveat: the
+  debunking IPM issued from the accused institution. **Next: Gemini's independent grade under its own signature.**
+
 ## Under research (gathered, no grade yet)
-- **Varginha (1996)** — `research/varginha/` — cycles 1–4 done. Dramatic core (creature/capture/autopsy) stays
-  **Reported**. **Documented** sub-claims now standing: (cycle 2) a former Defense Minister credits the
-  witnesses on the record; (cycle 3) FOIA'd Fire Dept records for 20 Jan 1996 show irregularities; (cycle 4,
-  primary) the military inquiry **IPM No. 18/1997** (STM: 357 folhas, Autos Findos 908/1997) formally
-  investigated the ET-capture claim, and (via convergent secondary) concluded misidentification + no military
-  operation → **H-1 strongly supported**. None add firsthand *physical* evidence (**H-2 holds**). Center of
-  gravity leans prosaic; held short of a debunk-verdict by the unread inquiry-conclusion text + the
-  accused-investigator caveat. Cover-up *reading* of the record gaps stays **Inferred/contested** (H-3's
-  base-rate test still open). Cycle 5 (the James Fox angle) audited the physical evidence to **zero chain of
-  custody** (H-2 confirmed) and found the dramatic firsthand layer surfacing *latest* (2025–2026) → **H-4**
-  (late accretion). ★ One live falsifiable event now tracked: a legal request to **exhume soldier Marco Chereze**
-  for DNA/bacterial analysis — the case's single best shot at primary physical evidence. Cycle 6 (the surgeon's
-  testimony) graded Dr. Italo Venturelli **well-attested Reported** (credentialed, on-record) and capped there —
-  no corroborating primary; caught a media "*operated*" inflation of his own "*assessed*"; his ET/telepathy
-  reading = **Inferred**; he is **H-4's exemplar**. Verdict pending cycle 7 + Gemini's decorrelated grade.
+- *(none — Varginha graded above; awaiting the next topic.)*
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*

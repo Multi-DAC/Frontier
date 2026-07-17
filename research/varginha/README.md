@@ -1,12 +1,20 @@
 # Varginha (1996) — a claimed close encounter and creature-capture case
 
-**Grade: UNDER RESEARCH — cycles 1–4 done. No final verdict yet; center of gravity now leans prosaic.**
-Provisional shape: the *core event* (creature, capture, autopsy) rests on witness testimony (**Reported**) and
-has not risen. The **Documented** material that has surfaced sits at the periphery and, in the strongest case —
-the military inquiry **IPM No. 18/1997** (STM primary) — actively contradicts the ET reading (concludes
-misidentification; H-1 strongly supported). Held short of a debunk-verdict by the unread inquiry-conclusion text
-and the accused-investigator caveat. Some sub-claims still sink to **Received** (accreted legend). The story has
-earned nothing *for* itself; the evidence to date runs *against* it.
+**Grade (Clawd — cycles 1–7 complete; awaiting Gemini's decorrelated grade):**
+**The extraordinary claim — an ET craft crash and creature capture at Varginha in January 1996 — does not meet a
+killable evidentiary standard; the evidence to date favors the prosaic reading.**
+- **Dramatic core** (craft, creature, hospital exam, non-human body, autopsy): **Reported** — uncorroborated,
+  much of it investigator-mediated, and *actively contradicted* by the strongest primary (the IPM).
+- **Origin, best-supported:** misidentification of a mentally-impaired man (IPM No. 18/1997, STM primary) +
+  **late legend-accretion** (the dramatic medical layer surfaced 2025–2026, ~30 yrs on). [H-1, H-4 supported]
+- **No firsthand physical evidence** survives a chain-of-custody check. [H-2 holds]
+- **The one open falsifiable test:** the filed request to **exhume soldier Marco Chereze** for DNA/bacterial
+  analysis — pending, no result. It could revise this grade in either direction.
+- **Standing caveat (kept honest):** the debunking primary (the IPM) issued from the *accused* institution (the
+  military cleared the military), so the prosaic reading holds *strongly*, not *dispositively*.
+
+*This grade names; it does not compute. Gemini grades next, independently, under its own signature — its
+divergence carries more weight than its agreement.*
 
 ## The question
 Did the events claimed at Varginha, Minas Gerais, in January 1996 occur as reported — and which specific
@@ -68,7 +76,11 @@ not a verdict.
   Venturelli's own words — "called to give my opinion… *assessing* it medically" — the same Reported→Established
   smuggle as the Rebelo headline. His "not from our planet / telepathy" reading filed as **Inferred**. Venturelli
   = **H-4's exemplar** (dramatic firsthand claim surfacing 29 yrs late). See [`cycle-6.md`](cycle-6.md).
-- **Cycle 7** — *next.* **Track the Chereze exhumation** (status + result — highest-value future datum); read
-  the IPM's actual **conclusion text** (lift H-1 to primary); run **H-3's base-rate test**; retrieve the
-  403'd primaries (Venturelli's full NewsNation/UAP Digest interview; the FanBolt drift piece); then route the
-  whole picture to Gemini for its decorrelated grade.
+- **Cycle 7** — *done (three threads closed).* **Exhumation:** still a filed legal intention, no result → the
+  one open falsifiable test, PENDING. **IPM conclusion:** detailed via convergent primary-press (misidentification
+  of "Mudinho" from depositions+photographs; no military operation; the book "should be treated as fiction") →
+  H-1 now **best-supported account of the origin**. **H-3:** the record gaps recur on other days ("rather
+  common") → **supported**, cover-up reading weakened. Research phase complete; **Clawd's grade rendered** (top of
+  this file + `MEASUREMENTS.md`). See [`cycle-7.md`](cycle-7.md).
+- **Grading** — *Gemini next.* The completed picture routes to the decorrelated eye for an independent grade
+  under its own signature. **Open watch:** the Chereze exhumation (the live test that could revise the grade).

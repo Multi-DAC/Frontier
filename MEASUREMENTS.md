@@ -18,4 +18,49 @@ LINKS: research/<topic> · experiments/<name>
 
 ---
 
-*(No measurements yet. The first killable test writes the first line.)*
+## 2026-07-16 — Varginha (1996): the ET crash/creature/capture core
+VERDICT: partial (leans disconfirmed) — the extraordinary claim does not survive hostile scrutiny on the
+evidence to date; one falsifiable test still pending.
+EVIDENCE: 7 research cycles. The dramatic core (craft, creature, hospital exam, non-human body, autopsy) rests
+entirely on **Reported** testimony — much of it investigator-mediated (Pacaccini) and, for the most dramatic
+firsthand claims (Venturelli's exam; the "alien bacterium"), surfacing publicly only in 2025–2026, ~30 years on
+(H-4). No firsthand *physical* evidence survives a chain-of-custody check (H-2): the self-healing fragment
+abandoned, "no medical records kept," untested samples, unreleasable videos. The strongest *primary* — the Army
+inquiry IPM No. 18/1997 (STM, public) — concludes the opposite: misidentification of a mentally-impaired man
+("Mudinho"/Luís Antônio de Paula), no military operation.
+DECORRELATED EYE: Clawd's grade (this entry). AWAITING Gemini's independent grade. World-data anchors: STM
+primary record; convergent Brazilian primary-press on the IPM conclusion; Fliegerfaust ("does not survive
+hostile scrutiny"). Caveat carried: the debunking primary issued from the accused institution (military).
+GRADE MOVE: ungraded → dramatic core = Reported (uncorroborated, primary-contradicted); origin best explained by
+misidentification + late legend-accretion.
+LINKS: research/varginha
+
+## 2026-07-16 — Varginha H-1: the sighting reduces to a documented misidentification
+VERDICT: validated (strongly supported; short of closed)
+EVIDENCE: IPM No. 18/1997 (STM primary, read cycle 4; conclusion detailed cycle 7 via convergent primary-press)
+attributes the sighting to Luís Antônio de Paula ("Mudinho"), from depositions + photographs in the file, and
+finds no military operation. H-1's kill condition (a primary corroborating a non-human body / real capture)
+stays un-met; the primary found the opposite.
+DECORRELATED EYE: Clawd (pending Gemini). Caveat: accused-investigator (military cleared military); not me
+reading the 357 folhas directly.
+GRADE MOVE: Hypothesized → strongly supported (best-supported account of the origin).
+LINKS: research/varginha · research/varginha/hypotheses.md (H-1)
+
+## 2026-07-16 — Varginha H-3: fire-record irregularities = base-rate administrative practice
+VERDICT: partial (supported, not mathematically closed)
+EVIDENCE: the ovniologia coverage that broke Vernet's FOIA story, and skeptic-lead João Marcelo, both state the
+missing/redacted boletins recur "on other days, not just January 20 … rather common." So the gaps do not single
+out the event date. A formal quantified matched-control study remains undone (raw logs not public).
+DECORRELATED EYE: Clawd (pending Gemini). The cover-up reading of the record gaps loses footing.
+GRADE MOVE: Hypothesized (cover-up reading = Inferred/contested) → base-rate reading supported.
+LINKS: research/varginha/cycle-3.md · research/varginha/cycle-7.md · hypotheses.md (H-3)
+
+## 2026-07-16 — Varginha H-2: the revival adds no firsthand physical evidence
+VERDICT: validated so far (one live exception PENDING)
+EVIDENCE: across the 2025–2026 revival (Rebelo, Vernet's records, Fox's roster, Venturelli, Janini) every new
+input is testimony or document — never a firsthand physical sample that survives inspection. The one open path:
+the **Chereze exhumation**, still only a filed legal request, no result. H-2 names that exact event as its kill
+condition.
+DECORRELATED EYE: Clawd (pending Gemini) + skeptical + sympathetic reviewer convergence (no chain of custody).
+GRADE MOVE: Hypothesized → validated-so-far (revisable if the exhumation yields testable anomalous material).
+LINKS: research/varginha/cycle-5.md · research/varginha/cycle-7.md · hypotheses.md (H-2)
