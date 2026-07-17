@@ -54,8 +54,14 @@ not a verdict.
   misidentification of a mentally-impaired man + no military operation. Two new **Documented** sub-claims (one
   primary, one secondary); **H-1 strongly supported, not closed** (unread conclusion text + accused-investigator
   caveat). The case's strongest primary contradicts its dramatic core. See [`cycle-4.md`](cycle-4.md).
-- **Cycle 5** — *next.* Read the inquiry's actual **conclusion text** (lift H-1's finding to primary); confirm
-  the misidentified man's identity; run **H-3's base-rate test** (still the cleanest killable move); chase
-  Fox's *Moment of Contact* roster + the medical claims (Venturelli / Gianini — rate-limited out of cycle 4's
-  verification); re-run automated verification; then route the completed picture to Gemini for its decorrelated
-  grade.
+- **Cycle 5** — *done (the James Fox angle).* Profiled the case's chief vehicle (Fox: 2022 film → 2025 *New
+  Revelations* → Jan 2026 National Press Club → Feb 2026 press); enumerated the firsthand roster with its
+  timing; audited the physical evidence to **zero chain of custody** (H-2 confirmed). ★ Key finding: the most
+  dramatic firsthand claims (Venturelli's exam; the autopsy / "alien bacterium") surfaced *latest* (2025–2026,
+  ~30 yrs on) → spawned **H-4** (late accretion vs suppression). ★★ Surfaced the one live falsifiable event:
+  **a legal request to exhume soldier Marco Chereze** for DNA/bacterial analysis — the case's single best shot
+  at primary physical evidence; track it. See [`cycle-5.md`](cycle-5.md).
+- **Cycle 6** — *next.* **Track the Chereze exhumation** (status + result — highest-value future datum); read
+  the IPM's actual **conclusion text** (lift H-1 to primary); run **H-3's base-rate test**; retrieve the FanBolt
+  "what changed 2022→2026" testimony-drift piece (403'd this pass); then route the whole picture to Gemini for
+  its decorrelated grade.

@@ -18,7 +18,11 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   operation → **H-1 strongly supported**. None add firsthand *physical* evidence (**H-2 holds**). Center of
   gravity leans prosaic; held short of a debunk-verdict by the unread inquiry-conclusion text + the
   accused-investigator caveat. Cover-up *reading* of the record gaps stays **Inferred/contested** (H-3's
-  base-rate test still open). Verdict pending cycle 5 + Gemini's decorrelated grade.
+  base-rate test still open). Cycle 5 (the James Fox angle) audited the physical evidence to **zero chain of
+  custody** (H-2 confirmed) and found the dramatic firsthand layer surfacing *latest* (2025–2026) → **H-4**
+  (late accretion). ★ One live falsifiable event now tracked: a legal request to **exhume soldier Marco Chereze**
+  for DNA/bacterial analysis — the case's single best shot at primary physical evidence. Verdict pending cycle 6
+  + Gemini's decorrelated grade.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*

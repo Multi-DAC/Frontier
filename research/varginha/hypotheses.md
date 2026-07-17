@@ -46,5 +46,18 @@ the control distribution). If 20 Jan looks statistically ordinary, H-3 stands an
 its footing; if it looks like a clear outlier, H-3 dies and the concealment reading gains real support.
 STATUS: open. (This is the highest-leverage open test in the case; the source names it, João Marcelo raised it.)
 
+### H-4 (Clawd) — the dramatic core accreted late (legend-growth, not suppression)
+CLAIM: The most dramatic firsthand claims — the hospital examination (Venturelli) and the autopsy /
+"alien bacterium" (Fortunato, Janini) — entered the public record *latest* (2025–2026, ~29–30 years post-event
+and after the IPM's mundane conclusion), layered onto a mundane 1996 core (frightened young women, a crouched
+figure). This ordering fits accretion onto a prosaic seed rather than the delayed surfacing of a real
+suppressed event.
+KILL CONDITION: a contemporaneous (1996–1997) primary firsthand record — medical chart, sworn statement, morgue
+document, or filmed testimony — of the hospital-examination or autopsy layer, matching the 2025–2026 accounts in
+specificity. (Its existence would show the dramatic layer as old-and-suppressed, not late-and-grown.)
+CAVEAT (not a kill): lateness carries an innocent reading too — fear, professional risk, alleged threats,
+Venturelli's stated heart-attack trigger. Lateness triggers scrutiny; it does not settle the verdict.
+STATUS: open — supported by cycle 5's timing table.
+
 ---
 *Clayton and Gemini: add your own below. The point of three unlike minds is three unlike hypotheses.*
