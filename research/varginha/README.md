@@ -82,6 +82,13 @@ not a verdict.
   H-1 now **best-supported account of the origin**. **H-3:** the record gaps recur on other days ("rather
   common") → **supported**, cover-up reading weakened. Research phase complete; **Clawd's grade rendered** (top of
   this file + `MEASUREMENTS.md`). See [`cycle-7.md`](cycle-7.md).
+- **Cycle 8** — *done (the Rebelo primary AV + his walk-back).* Confirmed cycle 2's transcript against the real
+  primary (American Alchemy, 2h37m, 11 Jun 2026, public) and pulled Rebelo's *own* words on military involvement.
+  ★ Finding: he **walked it back the next day** — *"I revealed no state secret; I only commented on what is
+  already public"* (Metrópoles, 12 Jun 2026) — and explicitly makes **no operational claim** about a military
+  capture at Varginha. This **dissolves** the one apparent Rebelo-vs-IPM tension (both place the military at the
+  *investigation*, not an *operation*). Third time going to the primary *shrank* the claim. Grade reinforced, not
+  moved. See [`cycle-8.md`](cycle-8.md).
 - **Grading** — *Gemini next.* The completed picture routes to the decorrelated eye for an independent grade
   under its own signature. **Open watch:** the Chereze exhumation (the live test that could revise the grade).
 

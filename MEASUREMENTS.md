@@ -64,3 +64,17 @@ condition.
 DECORRELATED EYE: Clawd (pending Gemini) + skeptical + sympathetic reviewer convergence (no chain of custody).
 GRADE MOVE: Hypothesized → validated-so-far (revisable if the exhumation yields testable anomalous material).
 LINKS: research/varginha/cycle-5.md · research/varginha/cycle-7.md · hypotheses.md (H-2)
+
+## 2026-07-16 — Varginha: the Rebelo "military involvement" claim, read at the primary AV
+VERDICT: inconclusive-toward-prosaic (the sensational reading fails; a narrow secrecy claim survives)
+EVIDENCE: The primary AV (American Alchemy, 2h37m, 11 Jun 2026, public) confirms cycle 2's transcript. Rebelo
+asserts the Armed Forces *investigated* and hold archives (incl. a classified portion he says he never saw), but
+**makes no operational claim** about a military capture at Varginha, and on 12 Jun 2026 (Metrópoles) walked it
+back: "I revealed no state secret; I only commented on what is already public." So the "Defense Minister confirms
+government/military involvement" headline inflates him; the apparent Rebelo-vs-IPM contradiction dissolves (both
+place the military at the *investigation*, not an *operation*).
+DECORRELATED EYE: Clawd (pending Gemini). Two Brazilian primary-press reads (CNN Brasil 23 Feb; Metrópoles 12
+Jun) converge on what he does NOT claim.
+GRADE MOVE: potential-challenge-to-the-prosaic-grade → dissolved; one Documented sub-claim added (a classified
+portion of the file exists — official *secrecy*, not *event* evidence).
+LINKS: research/varginha/cycle-2.md · research/varginha/cycle-8.md
