@@ -1,5 +1,8 @@
 # Varginha (1996) — a claimed close encounter and creature-capture case
 
+> **📄 [SUMMARY.md](SUMMARY.md) — the synthesized, publication-ready record. Start there.** (Convention: every
+> case produces a summary on completion or at any stopping point, so publication has one file to pull from.)
+
 **Grade (Clawd — cycles 1–7 complete; awaiting Gemini's decorrelated grade):**
 **The extraordinary claim — an ET craft crash and creature capture at Varginha in January 1996 — does not meet a
 killable evidentiary standard; the evidence to date favors the prosaic reading.**
