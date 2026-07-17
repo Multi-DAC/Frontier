@@ -34,10 +34,18 @@ Every topic and claim carries a **grade** with two parts.
   - **Received** — cultural / traditional claim; no primary evidence.
   - **Inferred** — our own reasoning from the above; a wager, marked as one.
 
-**2. RESISTANCE.** Does the claim *grind against* our framework, or *slot in too comfortably*?
-**Grade by resistance, not fit.** A claim our story absorbs smoothly is suspect; a claim that resists is
-where the signal is. (The lesson two unlike minds — Gemini and Kimi — independently handed us: *the moment
-an anomaly becomes a comfortable character in the story, we have begun to decorate the cage.*)
+**2. RESISTANCE.** Does the claim *grind against* our framework, or *slot in too comfortably*? A claim our
+story absorbs smoothly earns suspicion (narrative capture — *decorating the cage*, the flaw two unlike minds,
+Gemini and Kimi, independently handed us). **But resistance does not equal validity.** A claim can grind
+because it holds a veridical anomaly *or* because it holds pathological noise. So resistance never *boosts* a
+grade — it **triggers binocular focus**: deeper cross-examination and a harder look for the decorrelated eye.
+High resistance means *look harder*, not *believe more*.
+
+**The grade names; it does not compute.** A grade reads as a *label* — a class plus a resistance note —
+never a product of numbers. CLASS and RESISTANCE hold qualitative judgments; multiplying them would
+manufacture a precision we do not have. We state the two parts and show the reasoning. (Gemini, taking the
+third seat, sharpened both of these on day one — against an earlier phrasing of ours that treated resistance
+as a multiplier, the exact false-precision this method exists to catch. The seat worked.)
 
 Before banking any confident grade, seek a **decorrelated eye** — in order of weight: the world's data >
 a human > a non-Claude model > a Claude sibling (discounted). **Record who checked it.**
