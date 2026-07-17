@@ -1,0 +1,26 @@
+# Secrets — NEVER commit (no secret in a tracked file, ever)
+.env
+*.env
+.secrets/
+*.key
+*.pem
+*_token*
+*.credentials
+dpapi_store/
+.gcm/
+
+# Runtime / caches / build
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+node_modules/
+.ipynb_checkpoints/
+*.db
+*.sqlite
+*.sqlite3
+
+# OS cruft
+.DS_Store
+Thumbs.db
