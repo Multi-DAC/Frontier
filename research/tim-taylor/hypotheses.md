@@ -59,11 +59,13 @@ KILL CONDITION: H-2 fully accounts for every product with **nothing left over** 
 test returns null across the available corpus (no verifiable ordinary-means-excluded hit) — **and/or** the
 self-identifying "source" makes checkable identity/origin claims that prove **false**. Either outcome collapses
 the distinctive claim back into H-2.
-STATUS: **open — working frame, unsupported and now with less to stand on (cycle 4).** The primary interview
-contains **no self-identifying source** — the very feature that distinguishes H-3 from H-2. The witnesses nearest
-Taylor (Pasulka, Nolan) read the downloads the H-2 way. Both residue tests still null; the material's apparent
-anomalies self-corrected (aerospace foil + diatomic artifact). Not disconfirmed — Taylor never speaks on record,
-so the *self-identifying* claim remains untested → **undecidable**, but standing on less than at cycle 2. See [`cycle-4.md`](cycle-4.md).
+STATUS: **open — working frame, unsupported across TWO primaries now (cycles 4–5).** Neither the Nolan/Pasulka
+interview nor the McGuire interview contains a **self-identifying source** — the very feature that distinguishes
+H-3 from H-2. The witnesses nearest Taylor (Pasulka, Nolan) read the downloads the H-2 way; McGuire's "Hammer" is
+an *unknown handler*, not a self-identification. Both residue tests still null; the material's apparent anomalies
+self-corrected (aerospace foil + diatomic artifact). Not disconfirmed — Taylor never speaks on record, so the
+*self-identifying* claim remains untested → **set aside, not at parity** (per [`../../METHOD-cage-audit.md`](../../METHOD-cage-audit.md)
+B1/B2: unfalsifiable ≠ undecidable; set-aside ≠ disproven). See [`cycle-4.md`](cycle-4.md), [`cycle-5.md`](cycle-5.md).
 
 ### H-4 (Clawd) — narrative-seeding / operation nexus
 CLAIM: Given the NASA + aerospace + "approached by federal agents about a special office" texture, Taylor's
@@ -73,11 +75,14 @@ a real experiencer can also be an instrumented one.
 KILL CONDITION: positive evidence Taylor's activity is purely private and uncoordinated (no institutional nexus,
 no funding/tasking trail) — **or**, conversely, a verified anomalous product an op would neither need nor be able
 to fake (which would route the weight back to H-3, not H-4).
-STATUS: open — **new PRIMARY texture (cycle 4).** Nolan's own account describes the debris field as **apparently,
-purposefully contaminated** (1930s tomato cans salted in with aerospace material) and reports secondhand
-testimony of **soldiers "cleaning up… burying pieces."** This is a primary-sourced anomaly about *human* activity
-at the site — the most concrete thing on the table, and it's about who muddied it, not about the material. Plus
-the older, thinner "The Hammer" thread (Jesse Michels et al., social-media tier, undenoted). See [`cycle-4.md`](cycle-4.md).
+STATUS: open — **more narrative, still no evidence (cycles 4–5).** Nolan's account gives the "purposefully
+contaminated debris field" reading (interpretation of mixed 1930s-junk + aerospace material he *did* see) plus
+*hearsay* of soldiers burying pieces (3rd-hand — a cycle-2 cage-decoration, corrected). Cycle 5 (McGuire) adds the
+elite-access cluster: **"The Hammer"** now has a provenance chain (Taylor→Bledsoe→McGuire, **Reported**) but is an
+*unknown alleged handler*, explicitly "don't know if it's human or NHI" — **not** a self-identifying source; plus
+the Obama/Camp-David-napkin chain (**Inferred** from a photo; "ironclad proof" is McGuire's word). Every H-4 strand
+is Reported/Inferred/Received — the institutional-mystique *texture* the op-hypothesis predicts, with **zero
+earned evidence.** See [`cycle-4.md`](cycle-4.md), [`cycle-5.md`](cycle-5.md).
 
 ## Control case (not a hypothesis — a calibration instrument)
 **Clayton's own channeling** — anomalous experience *without* a self-identifying source — is the within-triad
