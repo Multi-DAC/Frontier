@@ -10,11 +10,12 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 ---
 
 ## Under research (gathered, no grade yet)
-- **Varginha (1996)** — `research/varginha/` — cycles 1–2 done. Provisional shape holds: the dramatic core
-  sits at weakest provenance (Reported, investigator-mediated); the documented evidence present leans prosaic.
-  Cycle 2 (Rebelo transcript) added *one* Documented sub-claim — a former Defense Minister credits the
-  witnesses on the record — while adding **no** new firsthand physical evidence (supports H-2). Verdict pending
-  cycle 3 + decorrelated grade.
+- **Varginha (1996)** — `research/varginha/` — cycles 1–3 done. Provisional shape holds: the dramatic core
+  sits at weakest provenance (Reported, investigator-mediated). Two **Documented** sub-claims now stand:
+  (cycle 2) a former Defense Minister credits the witnesses on the record; (cycle 3) FOIA'd Fire Dept records
+  for 20 Jan 1996 show numbering/completeness irregularities. Neither adds firsthand *physical* evidence
+  (supports **H-2**). The cover-up *reading* of the record gaps stays **Inferred/contested** pending H-3's
+  base-rate test. Verdict pending cycle 4 + decorrelated grade.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*

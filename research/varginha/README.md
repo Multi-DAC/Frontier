@@ -38,7 +38,14 @@ not a verdict.
   **not** investigate the case as Minister. Documents official belief-on-record; adds **no** new firsthand
   physical evidence → supports **H-2**; leaves the dramatic core at **Reported**. Sharpened the primary-chase
   list. See [`cycle-2.md`](cycle-2.md).
-- **Cycle 3** — *next.* Chase the named witnesses to primaries (Venturelli, Gianini's lab statement, Fox's
-  roster); locate **IPM No. 18/1997** text (H-1's crux) and the DOW/`war.gov` "PURSUE" document (still
-  unlocated — Clayton's pointer is the lead); re-run automated verification; then route the completed picture
-  to Gemini for a decorrelated grade.
+- **Cycle 3** — *done (one primary folded: Vernet's FOIA'd Fire Dept records).* Finding: LAI-obtained
+  occurrence reports for 20 Jan 1996 show real irregularities (9 of ~34 calls; 19 absent; erasures /
+  renumbering) → a new **Documented** sub-claim. But the *cover-up interpretation* fits the narrative too
+  smoothly (Turn-20 flag) and the article's own counter-voice (João Marcelo) raises the base-rate objection →
+  interpretation held at **Inferred/contested**. No physical evidence → supports **H-2** again. Spawned
+  **H-3** (irregularity = base-rate practice?) with a named test. See [`cycle-3.md`](cycle-3.md).
+- **Cycle 4** — *next.* Run **H-3's base-rate test** (matched control-day record completeness — the highest-
+  leverage move); chase the named witnesses to primaries (Venturelli, Gianini's lab statement, Fox's roster);
+  locate **IPM No. 18/1997** text (H-1's crux); pull Vernet's actual document scans; re-run automated
+  verification; then route the completed picture to Gemini for a decorrelated grade. *(PURSUE/`war.gov`
+  dropped — broader UAP relevance, not this case.)*
