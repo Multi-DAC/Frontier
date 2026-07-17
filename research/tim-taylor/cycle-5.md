@@ -29,6 +29,13 @@ one — weigh accordingly (three-pedestals: his enthusiasm is a source-property 
   Cameron napkin photo either exists and shows what McGuire says, or it does not. Locatable. Flagged for a look —
   *precisely because* the surrounding inference is otherwise easy to dismiss. Investigate the artifact; discard
   the "proof."
+- **WORLD-CHECK RESULT (cycle 5, web):** the Obama-briefing story is **widely circulated** — Bledsoe himself
+  asserts it ("Tim Taylor briefed former President Obama on UAP"), and it is a *marketed headline* (Jesse Michels
+  video *"The Message That Made It to Camp David!"*). But **no independently inspectable image** surfaced showing
+  the seal + Bledsoe address in a third-party-verifiable way. Net: the **claim** = Reported (multi-source, incl.
+  Bledsoe); the **artifact** = asserted, not independently inspected; and even maximally granted it stays an
+  **access-not-residue** claim. That it is a promoted headline is itself a mild persona-inflation signal (H-1/H-4),
+  not evidence. **No regrade.** The empirical check confirmed the cage-audit's tiering.
 
 ### "The Hammer" — now SOURCED (updates H-4)
 - McGuire: *"he works for the hammer… no one I know knows who the hammer is… I don't even know if it's human or
