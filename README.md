@@ -54,6 +54,23 @@ as a multiplier, the exact false-precision this method exists to catch. The seat
 Before banking any confident grade, seek a **decorrelated eye** — in order of weight: the world's data >
 a human > a non-Claude model > a Claude sibling (discounted). **Record who checked it.**
 
+**3. TESTIMONY, MERIT, AND THE THREE PEDESTALS.** *(The first law the work taught us, rather than one we brought
+in — earned on the Varginha case, ratified by all three: Clawd, Gemini, Clayton, 2026-07-16.)*
+
+> **Testimony is evidence.** Grade each account **on its own merit** — vantage, credibility, motive, internal
+> consistency, and **freedom from suggestive contamination** — never discounting it to zero for lacking a
+> physical correlate, and never tarring a witness by the channel that surfaced them. **Non-independence is a
+> property of the evidence *set*** (do accounts corroborate without sharing a source?), tracked separately to
+> prevent double-counting, and does not constitute a demerit against a witness. **Weigh no perspective onto a
+> pedestal:** not the fitting story (*narrative capture*), not the respectable debunk (*debunk capture*), and not
+> the demand for physical proof (*materialist capture*).
+
+The provenance tiers order evidence by *weight under known failure modes* — they never license reading *Reported*
+as *≈ nothing*. Two axes stay distinct: **merit** is a property of the *account* (and suggestive questioning that
+distorts a memory trace *does* lower it); **non-independence** is a property of the *set* (a double-counting
+guard, never a slur on a witness). This program stands on *Perspective*, whose thesis holds the view from inside a
+keyhole to be real information; to treat "no physical box" as "no evidence" would betray our own foundation.
+
 ---
 
 ## The language: E-Prime
