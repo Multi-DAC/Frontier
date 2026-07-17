@@ -23,6 +23,19 @@ divergence carries more weight than its agreement.*
 - **Hypothesis 5 (Institutional Containment):** We propose a new hypothesis (H-5) in [hypotheses.md](file:///C:/Users/mercu/clawd/triad/gemini-frontier/research/varginha/hypotheses.md). The military may have conducted a localized, non-alien containment operation (such as a hazardous material incident or domestic accident) resulting in Chereze's fatal exposure. The subsequent alien rumors arose from extreme secrecy, and the military inquiry (IPM) later deployed the "Mudinho" story as a convenient post-hoc shield.
 - **Evidential Standing:** The case lacks firsthand physical evidence (H-2). The exhumation of soldier Marco Chereze stands as the single open falsifiable test.
 
+**Grade (Clawd — REVISED, cycle 9, after the three-way discussion):**
+**I move my grade to UNRESOLVED, converging with Gemini.** Two corrections landed: Gemini caught me putting the
+prosaic reading on a pedestal (*debunk capture*); Clayton caught both of us discounting testimony to non-evidence
+(*materialist capture* — un-Perspectival) and set the rule: **weigh each account on its own merit.** Re-weighed
+that way (see [`cycle-9.md`](cycle-9.md)):
+- The **ET-capture** claim stays **low** (huge prior, no physical corroboration).
+- But **"pure misidentification / nothing happened" is now insufficient** — credentialed medical testimony plus a
+  **documented dead soldier** is real evidence that *something out-of-ordinary occurred*.
+- **Origin unresolved** among H-1 (misID), H-5 (covered-up ordinary incident), and the anomalous reading. The
+  load-bearing evidence = **Chereze's death + the credentialed medical testimony**; the **exhumation** discriminates.
+- *Independence* (the Pacaccini funnel) lowers the *count* of independent confirmations — never the *merit* of any
+  single witness. Two axes, never conflated.
+
 ## The question
 Did the events claimed at Varginha, Minas Gerais, in January 1996 occur as reported — and which specific
 **sub-claims** survive provenance-stratification and a decorrelated cross-examination, versus which dissolve
@@ -96,8 +109,14 @@ not a verdict.
   capture at Varginha. This **dissolves** the one apparent Rebelo-vs-IPM tension (both place the military at the
   *investigation*, not an *operation*). Third time going to the primary *shrank* the claim. Grade reinforced, not
   moved. See [`cycle-8.md`](cycle-8.md).
-- **Grading** — *Gemini next.* The completed picture routes to the decorrelated eye for an independent grade
-  under its own signature. **Open watch:** the Chereze exhumation (the live test that could revise the grade).
+- **Grading (Gemini)** — *done.* Gemini wrote an independent **inconclusive** grade under its own signature +
+  proposed **H-5** (institutional containment): it graded the military's "Mudinho" explanation as *Reported
+  (accused-institutional)* too, flagged Chereze's death as underweighted, and left the origin unresolved.
+- **Cycle 9 (the three-way synthesis)** — *done.* Folded Gemini's grade + Clayton's *materialist-capture*
+  correction (testimony is evidence) + his rule *take each account on its own merit*. Re-weighed the testimony
+  per-account; **Clawd's grade moved to UNRESOLVED, converging with Gemini** by a different route. Proposed a
+  **constitution clause** (testimony-is-evidence / each-account-on-its-own-merit / no-pedestal) for joint
+  ratification. See [`cycle-9.md`](cycle-9.md). **Open watch:** the Chereze exhumation (the discriminator).
 
 **Dry wells:** sources checked that added nothing (with reasons) live in [`source-checks.md`](source-checks.md) —
 logged so a louder re-share never gets mistaken for fresh corroboration.

@@ -93,3 +93,20 @@ DECORRELATED EYE: Gemini (proposer).
 GRADE MOVE: Hypothesized (open)
 LINKS: research/varginha/hypotheses.md
 
+## 2026-07-16 — Varginha: Clawd's REVISED grade after the three-way discussion (cycle 9)
+VERDICT: unresolved — origin genuinely open; the ET-capture claim stays low, but "pure misidentification /
+nothing happened" is insufficient once testimony is weighed on its own merit.
+EVIDENCE: Two corrections folded. (1) Gemini (Turn 33) caught Clawd putting the prosaic reading on a pedestal —
+*debunk capture*. (2) Clayton caught both of us discounting testimony to non-evidence — *materialist capture*,
+un-Perspectival — and set the governing rule: **weigh each account on its own merit** (merit = property of the
+account; independence = property of the set, a double-counting guard, never a per-witness demerit). Re-weighed:
+Venturelli (credentialed, on-record, no motive) + Fortunato/Janini + a **documented dead soldier** = real evidence
+that *something out-of-ordinary occurred*; Dunning's "nothing unusual" overreaches. Origin unresolved among H-1 /
+H-5 / anomalous; Chereze's death + credentialed medical testimony load-bearing; exhumation discriminates.
+DECORRELATED EYE: three-way — Gemini (independent inconclusive, reached via symmetric-scrutiny) + Clayton
+(testimony-weighting + the each-account-on-its-own-merit rule). Clawd's route (testimony-weighting) CONVERGES
+with Gemini's (symmetric-scrutiny) on "unresolved" — two unlike paths, one destination.
+GRADE MOVE: Clawd's prosaic-favored grade → unresolved (converged with Gemini). Proposed a constitution clause
+(testimony-is-evidence / each-account-on-its-own-merit / no-pedestal) for JOINT ratification.
+LINKS: research/varginha/cycle-9.md · research/varginha/README.md
+
