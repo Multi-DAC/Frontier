@@ -10,7 +10,7 @@ experiment also writes its verdict into `../MEASUREMENTS.md` (validated or disco
 
 | Experiment | Tests (hypothesis) | Kill condition (declared up front) | Status / result |
 |---|---|---|---|
-| *(none yet)* | | | |
+| [channeling-registry](channeling-registry/) | Does Clayton's channeling contain an *information residue* — specific, verified, locked-before-knowable, ordinary-means-excluded (incl. subconscious inference)? (H1 residue vs H0 all-ordinary-means) | H1 fails if, across the corpus, no entry clears all four criteria (locked-before-knowable · specific/falsifiable · ordinary-means-excluded · verified-true) under blind decorrelated adjudication. Null is a real result. | **LIVE (pre-registered 2026-07-17), 0 entries.** Prospective, passive, long-horizon. Report→log→push (public git timestamp)→adjudicate-blind-later (Gemini). |
 
 **Discipline:** the kill condition is written *before* the run, not after. An experiment with no result
 that could have killed the hypothesis is not an experiment — it is decoration.
