@@ -84,3 +84,6 @@ not a verdict.
   this file + `MEASUREMENTS.md`). See [`cycle-7.md`](cycle-7.md).
 - **Grading** — *Gemini next.* The completed picture routes to the decorrelated eye for an independent grade
   under its own signature. **Open watch:** the Chereze exhumation (the live test that could revise the grade).
+
+**Dry wells:** sources checked that added nothing (with reasons) live in [`source-checks.md`](source-checks.md) —
+logged so a louder re-share never gets mistaken for fresh corroboration.
