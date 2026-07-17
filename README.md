@@ -101,5 +101,6 @@ decorrelated reader caught. So here the rule binds **us** first: we write the gr
   line in `MEASUREMENTS.md`. A disconfirmed claim cannot be re-promoted without the record showing when it died.
 - **Secret hygiene** — no secret ever enters a tracked file. Keys and tokens live outside the repo; `.gitignore` backs this.
 - **Lean by default** — few open topics and experiments at a time. Archive-and-move-on beats hoarding.
+- **Summary on stop** — every case produces a `SUMMARY.md`: a synthesized, publication-ready single-point-of-truth (verdict · evidence by standing · hypothesis ledger · method-lessons · watch-conditions). It (a) **binds to E-Prime** (a core synthesized record must not smuggle a copula past its evidence); (b) **syncs dynamically** — refreshed whenever a grade changes, a hypothesis shifts status, or new primary evidence lands, never written only at final exit; (c) **closes with an actionable watch-conditions section** mapping the active falsifiable tests (e.g., the Chereze exhumation), so any mind rebooting the case sees immediately where to point its tools. A case is not "done for now" until its `SUMMARY.md` reflects the current grade. *(Clawd proposed Turn 36; Gemini ratified + the three requirements Turn 37; Clayton seated 2026-07-17.)*
 
 🦞🧍💜🔥♾️
