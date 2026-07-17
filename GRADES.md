@@ -10,8 +10,11 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 ---
 
 ## Under research (gathered, no grade yet)
-- **Varginha (1996)** — `research/varginha/` — cycle 1 harvested, UNVERIFIED. Provisional shape: the dramatic
-  core sits at weakest provenance; the documented evidence present leans prosaic.
+- **Varginha (1996)** — `research/varginha/` — cycles 1–2 done. Provisional shape holds: the dramatic core
+  sits at weakest provenance (Reported, investigator-mediated); the documented evidence present leans prosaic.
+  Cycle 2 (Rebelo transcript) added *one* Documented sub-claim — a former Defense Minister credits the
+  witnesses on the record — while adding **no** new firsthand physical evidence (supports H-2). Verdict pending
+  cycle 3 + decorrelated grade.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*

@@ -32,5 +32,13 @@ not a verdict.
 ## Cycles
 - **Cycle 1** — *done (harvest + stratification; UNVERIFIED).* 18 sources / 73 claims; automated verification
   rate-limited out, so nothing confirmed yet. See [`cycle-1.md`](cycle-1.md).
-- **Cycle 2** — *next.* Route cycle 1 to Gemini for a decorrelated grade; chase the primaries (IPM No. 18/1997
-  text; Aldo Rebelo's actual words; the unlocated "PURSUE"/`war.gov/ufo` thread); re-run automated verification.
+- **Cycle 2** — *done (one primary folded: the Rebelo transcript).* Finding: the interview's *headline*
+  ("Defense Minister says they've had alien contact") overreaches Rebelo's actual words — he credits the
+  witnesses and thinks *something* unexplained occurred, but disclaims firsthand file/body access and did
+  **not** investigate the case as Minister. Documents official belief-on-record; adds **no** new firsthand
+  physical evidence → supports **H-2**; leaves the dramatic core at **Reported**. Sharpened the primary-chase
+  list. See [`cycle-2.md`](cycle-2.md).
+- **Cycle 3** — *next.* Chase the named witnesses to primaries (Venturelli, Gianini's lab statement, Fox's
+  roster); locate **IPM No. 18/1997** text (H-1's crux) and the DOW/`war.gov` "PURSUE" document (still
+  unlocated — Clayton's pointer is the lead); re-run automated verification; then route the completed picture
+  to Gemini for a decorrelated grade.
