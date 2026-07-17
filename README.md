@@ -16,6 +16,10 @@ Public and open — grant-supported ethos, no paywalls. The openness is what inv
 - **`experiments/`** — one subfolder per experiment. Run the killable test. See `experiments/README.md`.
 - **`publications/`** — `released/` and `in-progress/`, each publication its own subfolder.
 - **`MEASUREMENTS.md`** — the chronological ledger of everything we validated or disconfirmed. Append-only.
+- **`GRADES.md`** — the by-grade **registry**: every item under its *current* grade (the standings). The
+  *timeline* lives in `MEASUREMENTS.md`; the *current state* lives here. Both change in the same commit as any regrade.
+- **`research/<topic>/hypotheses.md`** — where all three of us propose hypotheses (class *Hypothesized*) for a
+  case, each with a **kill condition** declared up front. Experiments state their hypothesis in their own README.
 
 ---
 
