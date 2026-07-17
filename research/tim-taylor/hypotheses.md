@@ -43,7 +43,8 @@ for the phenomenology with no external agent.
 KILL CONDITION: channeled/downloaded material that contains **verifiable information Taylor could not have
 obtained by ordinary means**, under conditions that exclude leakage/retrofit — a genuine precognition or
 clairvoyance hit no purely-internal account predicts. (This is the information-residue test.)
-STATUS: **open — strengthened (cycle 4).** The primary interview has **Pasulka herself** framing Tyler's
+STATUS: **VALIDATED as baseline (cycle 6, 2026-07-17; three-signed).** Accounts for every checkable datum with
+zero residue; endorsed by the nearest witnesses. → `../../MEASUREMENTS.md` 2026-07-17. The primary interview has **Pasulka herself** framing Tyler's
 "downloads" the H-2 way — quiet default-mode-network creativity whose insight the mind *misattributes* to an
 external agent (her Ramanujan/Lakshmi parallel; "could just be the creative process of human beings"). **Nolan**
 reports the same phenomenology and **declines** external attribution ("I can't trace the path… I don't [say
@@ -59,7 +60,10 @@ KILL CONDITION: H-2 fully accounts for every product with **nothing left over** 
 test returns null across the available corpus (no verifiable ordinary-means-excluded hit) — **and/or** the
 self-identifying "source" makes checkable identity/origin claims that prove **false**. Either outcome collapses
 the distinctive claim back into H-2.
-STATUS: **open — working frame, unsupported across TWO primaries now (cycles 4–5).** Neither the Nolan/Pasulka
+STATUS: **SET ASIDE at null weight (cycle 6, 2026-07-17; three-signed) — unsupported-on-record, NOT disproven.**
+Sought across THREE sources; where tellers name "The Hammer" they disagree (McGuire "unknown" vs Bledsoe "an angel
+serving God") = legend-variance, not a stable self-identification. Residue null; subject verification-proof →
+untestable, earns no ledger weight. → `../../MEASUREMENTS.md` 2026-07-17. Neither the Nolan/Pasulka
 interview nor the McGuire interview contains a **self-identifying source** — the very feature that distinguishes
 H-3 from H-2. The witnesses nearest Taylor (Pasulka, Nolan) read the downloads the H-2 way; McGuire's "Hammer" is
 an *unknown handler*, not a self-identification. Both residue tests still null; the material's apparent anomalies

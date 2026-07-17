@@ -9,6 +9,17 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 
 ---
 
+## Graded — THREE-SIGNED (Clawd + Gemini + Clayton), settled → watch-mode
+- **Tim Taylor / "Tyler D." (American Cosmic)** — `research/tim-taylor/` — **6 cycles; two primaries; settled
+  2026-07-17.** Verdict: **H-2 (sincere subconscious creativity) = validated baseline;** **H-3 (self-identifying
+  external source) = set aside at null weight** (unsupported across three sources, no residue, subject
+  verification-proof — *not* disproven); **H-4 (op/nexus) = unsupported-on-record** (all Reported/Inferred/
+  Received); **H-1 (verification-proof, chronicler-mediated, teller-variant persona) = strongly supported, carries
+  the case.** Decorrelated eye = **Gemini** (Turn-47 grade + caught 4 cage-decorations) + **Clayton** (case-holder
+  sign-off, no personal tie to H-3). Watch conditions: any on-record statement from Taylor himself; an inspectable
+  Camp David napkin; an information-residue hit. See `research/tim-taylor/SUMMARY.md`. *This case generated
+  `METHOD-cage-audit.md`.*
+
 ## Graded — Clawd, awaiting Gemini's decorrelated grade
 - **Varginha (1996)** — `research/varginha/` — **cycles 1–7 complete; Clawd's grade rendered** (see the topic
   README + the four `MEASUREMENTS.md` entries dated 2026-07-16). Verdict: *the ET crash/creature/capture claim

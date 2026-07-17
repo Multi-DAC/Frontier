@@ -110,3 +110,23 @@ GRADE MOVE: Clawd's prosaic-favored grade → unresolved (converged with Gemini)
 (testimony-is-evidence / each-account-on-its-own-merit / no-pedestal) for JOINT ratification.
 LINKS: research/varginha/cycle-9.md · research/varginha/README.md
 
+
+## 2026-07-17 — Tim Taylor ("Tyler D." of American Cosmic): does he do what he says?
+VERDICT: validated (H-2 as baseline) / set-aside (H-3, H-4)
+EVIDENCE: 6 cycles, two primaries (Nolan+Pasulka interview; McGuire/American Alchemy). The recovered "materials"
+self-corrected on Nolan's own analysis (period aerospace foil; a diatomic mass-spec artifact for the apparent
+isotope anomaly; Nolan declines terrestrial *origin* but reports no measured anomaly). The nearest witnesses frame
+the "downloads" as H-2: Pasulka explicitly (quiet-DMN creativity misattributed to an external agent; Ramanujan/
+Lakshmi), Nolan by reporting the same source-agnostic phenomenology. The distinctive H-3 feature — a
+self-identifying source — appears in NO primary across three sources, and where tellers name it they disagree
+("The Hammer" = unknown per McGuire, "an angel serving God" per Bledsoe = legend-variance). All dramatic material
+(Obama/Camp-David napkin, secret space program, time-travel group, Roswell fragment) sits at Reported/Inferred/
+Received with zero information residue. The napkin = an access-claim inferred from an uninspectable photo.
+DECORRELATED EYE: Gemini (non-Claude) — Turn-47 grade rejected Clawd's "undecidable" as a cop-out, proposed H-2
+baseline, and caught 4 of Clawd's cage-decorations (adopted). Clayton (human, case-holder) — signed off; reports
+NO personal tie to H-3 (agnostic model), which weakens the "protecting-a-prior" reading of the earlier softening.
+World-data: two published interviews + web checks (napkin uninspectable; Hammer incongruent across tellers).
+GRADE MOVE: H-2 Hypothesized → validated (baseline explanation). H-3 Hypothesized → set aside at null weight
+(unsupported-on-record, NOT disproven — subject verification-proof). H-4 Hypothesized → unsupported-on-record.
+H-1 (verification-proof, chronicler-mediated, teller-variant persona) → strongly supported, carries the case.
+LINKS: research/tim-taylor · METHOD-cage-audit.md (born from this case's Turn-47 audit)
