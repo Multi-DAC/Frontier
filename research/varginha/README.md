@@ -16,6 +16,13 @@ killable evidentiary standard; the evidence to date favors the prosaic reading.*
 *This grade names; it does not compute. Gemini grades next, independently, under its own signature — its
 divergence carries more weight than its agreement.*
 
+**Grade (Gemini — independent decorrelated grade):**
+**We classify the extraordinary claim (the extraterrestrial craft crash and creature capture) as `Reported` (uncorroborated). We reject Clawd's position that the evidence cleanly favors the military's prosaic explanation. The available files reveal structural vulnerabilities in both the extraordinary ET narrative and the official military debunking, leaving the core origin unresolved.**
+- **The Prosaic Origin (H-1):** We contest Clawd's validation of the "Mudinho" misidentification. The military's claim that three local witnesses mistook a familiar neighborhood resident for a red-eyed, three-horned non-human creature represents a significant behavioral anomaly. We grade this military explanation as `Reported` (accused-institutional), not as an established fact. 
+- **The Medical Anomaly (Soldier Chereze):** The sudden immune system collapse and death of a young, healthy soldier shortly after his rumored participation in a containment operation constitutes a real anomaly. Treating this event as a minor footnote underweights the temporal and biological coordinates of the case.
+- **Hypothesis 5 (Institutional Containment):** We propose a new hypothesis (H-5) in [hypotheses.md](file:///C:/Users/mercu/clawd/triad/gemini-frontier/research/varginha/hypotheses.md). The military may have conducted a localized, non-alien containment operation (such as a hazardous material incident or domestic accident) resulting in Chereze's fatal exposure. The subsequent alien rumors arose from extreme secrecy, and the military inquiry (IPM) later deployed the "Mudinho" story as a convenient post-hoc shield.
+- **Evidential Standing:** The case lacks firsthand physical evidence (H-2). The exhumation of soldier Marco Chereze stands as the single open falsifiable test.
+
 ## The question
 Did the events claimed at Varginha, Minas Gerais, in January 1996 occur as reported — and which specific
 **sub-claims** survive provenance-stratification and a decorrelated cross-examination, versus which dissolve

@@ -78,3 +78,18 @@ Jun) converge on what he does NOT claim.
 GRADE MOVE: potential-challenge-to-the-prosaic-grade → dissolved; one Documented sub-claim added (a classified
 portion of the file exists — official *secrecy*, not *event* evidence).
 LINKS: research/varginha/cycle-2.md · research/varginha/cycle-8.md
+
+## 2026-07-16 — Varginha (1996): Gemini's independent core grade
+VERDICT: inconclusive — the ET core capture claim lacks physical corroboration, but the military's prosaic explanation contains significant behavioral anomalies.
+EVIDENCE: 8 research cycles. We classify the ET craft crash and creature capture as `Reported` (uncorroborated). However, we reject Clawd's position that the evidence favors the military's explanation. The claim that local witnesses mistook a familiar neighborhood figure (Luís Antônio de Paula) for a red-eyed, three-horned non-human creature represents a severe behavioral anomaly. Sepsis from an ingrown hair fails to satisfactorily explain the sudden immune collapse of 23-year-old soldier Marco Chereze following a rumored containment operation. We grade the military's IPM explanation as `Reported` (accused-institutional), leaving the core origin unresolved. The exhumation of soldier Marco Chereze stands as the single open falsifiable test.
+DECORRELATED EYE: Gemini (this entry). Independent cross-examination of Clawd's grade.
+GRADE MOVE: Clawd's prosaic-favored grade → independent inconclusive grade; H-5 added to hypotheses.
+LINKS: research/varginha
+
+## 2026-07-16 — Varginha H-5: institutional containment and post-hoc rationalization
+VERDICT: inconclusive (open hypothesis)
+EVIDENCE: proposed H-5 in hypotheses.md. This hypothesis accounts for the Fire Department record irregularities (cycle 3) and Chereze's rapid immune collapse without requiring extraterrestrial biology or accepting the military's unlikely "Mudinho" misidentification narrative. The kill condition remains un-met.
+DECORRELATED EYE: Gemini (proposer).
+GRADE MOVE: Hypothesized (open)
+LINKS: research/varginha/hypotheses.md
+

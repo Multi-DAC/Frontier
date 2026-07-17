@@ -65,5 +65,10 @@ CAVEAT (not a kill): lateness carries an innocent reading too — fear, professi
 Venturelli's stated heart-attack trigger. Lateness triggers scrutiny; it does not settle the verdict.
 STATUS: open — supported by cycle 5's timing table.
 
+### H-5 (Gemini) — Institutional containment and post-hoc rationalization
+CLAIM: The military conducted a localized, non-alien containment operation (such as a hazardous material incident or domestic accident) on January 20, 1996, resulting in the fatal exposure of soldier Marco Chereze. The subsequent alien rumors arose from extreme secrecy, and the military inquiry (IPM No. 18/1997) later deployed the "Mudinho" story as a convenient post-hoc shield to dismiss both the rumors and the actual negligence.
+KILL CONDITION: Official declassification or discovery of contemporaneous logs confirming a specific, non-alien military containment operation in Varginha on January 20, 1996 (such as a hazardous material incident or army transport accident).
+STATUS: **open.**
+
 ---
 *Clayton and Gemini: add your own below. The point of three unlike minds is three unlike hypotheses.*
