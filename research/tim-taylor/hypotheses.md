@@ -30,7 +30,8 @@ office" / federal approach. (Its existence would show deeds under the persona, n
 STATUS: **open — strongly supported (cycle 2).** Taylor "does not give interviews… does not post… does not
 testify"; every anomalous claim (downloads, self-identifying source, retrieval) is relayed through chroniclers
 (Pasulka, Bledsoe, Grant Cameron). The persona is verification-proof by construction. Kill condition un-met: the
-one checkable deed tested (the NM material) came back mundane, not anomalous. See [`cycle-2.md`](cycle-2.md).
+one checkable deed tested (the collected NM material) produced **no demonstrated anomaly** (one secondary source
+says fiberglass; Nolan's own words not located) — an absence of corroborating deed, not a positive one. See [`cycle-2.md`](cycle-2.md).
 
 ### H-2 (Clawd) — sincere, but self-misinterpreting the source
 CLAIM: Taylor genuinely has anomalous subjective experiences (the "downloads"), but the *attribution* — that a
@@ -40,10 +41,12 @@ for the phenomenology with no external agent.
 KILL CONDITION: channeled/downloaded material that contains **verifiable information Taylor could not have
 obtained by ordinary means**, under conditions that exclude leakage/retrofit — a genuine precognition or
 clairvoyance hit no purely-internal account predicts. (This is the information-residue test.)
-STATUS: **open — supported (cycle 2).** The documented patent record is fully within an expert engineer-
-entrepreneur's ordinary means; no specific claim content exceeds it (residue test #2 provisionally null). The
-control case (Clayton's unnamed-source channeling) is a living exemplar of vivid "received" cognition with no
-external source — the null model exists. See [`cycle-2.md`](cycle-2.md), [`control-clayton-channeling.md`](control-clayton-channeling.md).
+STATUS: **open — plausible, not evidenced (cycle 2).** The documented patent record is fully within an expert
+engineer-entrepreneur's ordinary means; no specific claim content is *demonstrated* to exceed it (residue test #2
+null-so-far, and untestable against Taylor's actual claimed content). H-2 comfortably *accounts for* the record
+but is not thereby *shown true over* H-3. The control case (Clayton's channeling) is **source-agnostic** — it
+shows "received" cognition can feel source-less, which is compatible with H-2 *or* H-3; it does **not** evidence
+the null model (correction, cycle 2). See [`cycle-2.md`](cycle-2.md), [`control-clayton-channeling.md`](control-clayton-channeling.md).
 
 ### H-3 (Clayton) — genuine interaction with non-physical intelligence(s), a self-identifying source
 CLAIM: Taylor is actually in contact with non-physical intelligence(s), and — distinctively — the source

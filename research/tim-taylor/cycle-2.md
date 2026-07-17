@@ -12,12 +12,21 @@ third-party writing/testimony, the ceramic-for-bone thread, and "The Hammer."
 
 ## Leg 1 — the crash-site material (residue test #1): points PROSAIC
 
-- **★ The specific New Mexico crash-site material — the material Taylor took Pasulka (blindfolded) to, and that
-  Nolan actually analyzed — reportedly came back MUNDANE.** Per a 2026 long-form profile: *"Gary Nolan later
-  analyzed some of this material and determined it to be **early fiberglass composite, not extraterrestrial in
-  origin.**"* *(strangerthanfiction.org — SECONDARY.)* A separate skeptical treatment independently raises the
-  same possibility ("Was Diana Pasulka Lied To About [the] Secret UFO Crash Site", vetted.show). Convergent
-  secondary support for a **prosaic** reading of the retrieval.
+- **A single SECONDARY source reports the collected material tested mundane.** Per a 2026 long-form profile:
+  *"Gary Nolan later analyzed some of this material and determined it to be early fiberglass composite, not
+  extraterrestrial in origin."* *(strangerthanfiction.org — SECONDARY.)* A skeptical treatment raises the
+  "was Pasulka deceived" angle (vetted.show). ⚠ **NOT corroborated by Nolan's own words** — a cycle-2 search for
+  Nolan's *primary* statement on this specific material came up empty (found only his general debunk-first
+  posture: the "Ata" skeleton → terrestrial human girl; the CB_JV 1 paper w/ Vallée → "no significant deviations
+  from terrestrial isotopic norms… provenance and function remain unknown"). So the fiberglass claim stays
+  **Reported-secondary, uncorroborated.**
+- **★ Thread the needle on WHAT was even claimed (Clayton, cycle 2).** The claim on record is *not* established
+  to be "this specific collected sample is anomalous." What is documented is narrower: **Taylor alleged a desert
+  site would yield anomalous material; they went (blindfolded); material was collected there.** A mundane result
+  on a collected sample is conclusive about **that sample only** — it does not, by itself, falsify "the site is
+  associated with anomalous material," nor show Taylor stated the sample was anomalous, nor that Pasulka/Nolan
+  believed it was. We neither conclude nor exclude beyond the record: the material-anomaly *of that sample* is
+  (per one secondary source) absent; everything wider stays open.
 - **★ Provenance discipline vindicated (and it matters):** Nolan's *famous published* anomalies — the Nolan/Vallée
   2022 paper (*Progress in Aerospace Sciences*, "Improved instrumental techniques…isotopic analysis…aerospace
   forensics"), MIBI analysis, **Ubatuba magnesium "~30% off," "2 of ~10–12 fragments not playing by our rules"**
@@ -46,7 +55,9 @@ third-party writing/testimony, the ceramic-for-bone thread, and "The Hammer."
   patent to *specific information Taylor could not have obtained normally* — and the profile explicitly notes
   "specific device types are never named" in the download story. So **H-2 (internally-generated + ordinary
   expertise) accounts for the invention record with no residue.** The patents' reality proves Taylor is a real
-  inventor; it does not evidence an external source. Residue test #2 = **provisionally null.**
+  inventor; it does not evidence an external source **and does not exclude one either.** Residue test #2 =
+  **null so far** — meaning no residue has been *demonstrated*, not that none exists (nothing here is testable
+  against Taylor's actual claimed download-content, which is not on the record).
 
 ## Leg 3 — the persona (H-1): STRONGLY SUPPORTED
 
@@ -73,22 +84,27 @@ third-party writing/testimony, the ceramic-for-bone thread, and "The Hammer."
 
 ## Provisional shape after Cycle 2 — a note, not a grade
 
-Two hard, checkable legs, two prosaic readings: the retrieval's **material → fiberglass** (pending Nolan
-primary), and the **patents → ordinary inventor-expertise** (no informational residue). Meanwhile the persona is
-**entirely chronicler-mediated**, which is both H-1's strongest support and the reason the deepest claim may be
+Two checkable legs, both **failing to produce a demonstrated anomaly** — which is not the same as producing a
+demonstrated mundane. The collected material tested prosaic *per one secondary source* (Nolan's own words not
+found); the patents sit within ordinary inventor-expertise (no residue *demonstrated*, none testable). Meanwhile
+the persona is **entirely chronicler-mediated** — H-1's strongest support, and the reason the deepest claim is
 **undecidable**: the one thing that could vindicate H-3 — an information-residue hit in actual download *content*,
 excluded from ordinary means — cannot be tested on a subject who never speaks on the record.
 
-So the verdict now forming is *not* "debunked." It is sharper: **the crash-retrieval and download-invention
-claims, as physical/evidential claims, do not currently survive scrutiny; the phenomenological claim is
-undecidable on available evidence, because the subject is verification-proof.** A real inventor with a genuine
-private practice of some inner protocol is entirely compatible with everything here — H-2 covers it — and so is a
-co-produced myth (H-1). Nothing yet *requires* H-3.
+So the verdict now forming is *not* "debunked," and *not* "confirmed prosaic" either — it is **"unproven, and
+partly unprovable."** No anomaly has survived to the record on either checkable leg; but nothing has *excluded*
+one, and the deepest claim (the self-identifying source) is structurally untestable while the subject stays
+silent. A real inventor with a genuine, source-agnostic inner practice fits everything here (H-2); so does a
+co-produced myth (H-1); and H-3 is neither required nor refuted — it is **held open, unsupported-on-record**.
+The discipline is to keep all three live and resist the pull, from *either* pedestal, to collapse "not
+demonstrated" into "demonstrated not."
 
 **Note on the frame (per §3):** Clayton opened anti-materialist on purpose, and the anti-materialist start did
 its job — it made us actually chase the Nolan material and the patents instead of reflex-dismissing. The work
-then pointed prosaic on the checkable legs. That is the three-pedestals law functioning from the *belief* side,
-not a betrayal of the start. We held H-3; the evidence, so far, has not.
+turned up **no demonstrated anomaly** on the checkable legs — which is a weaker, more honest statement than
+"pointed prosaic." That is the three-pedestals law functioning from *both* sides at once: the belief pedestal
+doesn't get to keep H-3 alive on allure, and the debunk pedestal doesn't get to promote "not demonstrated" into
+"disproven." We hold H-3, unsupported-on-record; we have not excluded it.
 
 ## Open gaps → Cycle 3
 1. **Nolan's primary words** on the NM/Taylor material (confirm/kill Leg 1).
