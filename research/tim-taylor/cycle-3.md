@@ -24,6 +24,10 @@ crumpled.** *(vetted.show recap.)* This is the classic "memory metal / memory fo
 be early fiberglass composite, not extraterrestrial in origin."* Now backed by **both** secondary recaps of the
 same interview — convergent, but the two may share a common source, and **neither is Nolan speaking in his own
 quoted words.** Grade: **Reported — convergent secondary; primary un-extracted.**
+> ⚠ **SUPERSEDED by cycle 4 (primary obtained).** Nolan's actual words say **no "fiberglass"** and explicitly
+> **decline terrestrial origin**; the real story is period aerospace foil for the honeycomb + a *diatomic
+> measurement artifact* for the apparent isotope anomaly, with origin left open. Both secondary recaps were wrong
+> in the same direction — a logged case of *convergence ≠ correctness*. See [`cycle-4.md`](cycle-4.md).
 
 **★ Provenance stratification (the keeper insight).** The *dramatic property* (shape-memory, amphibian-skin) sits
 at **witness-impression** tier; the *measurement* (fiberglass composite) sits at **lab** tier. If both hold, the

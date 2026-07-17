@@ -43,12 +43,13 @@ for the phenomenology with no external agent.
 KILL CONDITION: channeled/downloaded material that contains **verifiable information Taylor could not have
 obtained by ordinary means**, under conditions that exclude leakage/retrofit — a genuine precognition or
 clairvoyance hit no purely-internal account predicts. (This is the information-residue test.)
-STATUS: **open — plausible, not evidenced (cycle 2).** The documented patent record is fully within an expert
-engineer-entrepreneur's ordinary means; no specific claim content is *demonstrated* to exceed it (residue test #2
-null-so-far, and untestable against Taylor's actual claimed content). H-2 comfortably *accounts for* the record
-but is not thereby *shown true over* H-3. The control case (Clayton's channeling) is **source-agnostic** — it
-shows "received" cognition can feel source-less, which is compatible with H-2 *or* H-3; it does **not** evidence
-the null model (correction, cycle 2). See [`cycle-2.md`](cycle-2.md), [`control-clayton-channeling.md`](control-clayton-channeling.md).
+STATUS: **open — strengthened (cycle 4).** The primary interview has **Pasulka herself** framing Tyler's
+"downloads" the H-2 way — quiet default-mode-network creativity whose insight the mind *misattributes* to an
+external agent (her Ramanujan/Lakshmi parallel; "could just be the creative process of human beings"). **Nolan**
+reports the same phenomenology and **declines** external attribution ("I can't trace the path… I don't [say
+angels]"). So the experience is attested by three (Taylor-via-chroniclers, Nolan, Clayton) and two of three
+decline an external source. Still "accounts for" rather than "proven over" H-3; the patent record remains within
+ordinary means. Control (Clayton) stays **source-agnostic**, not null-evidencing. See [`cycle-4.md`](cycle-4.md), [`control-clayton-channeling.md`](control-clayton-channeling.md).
 
 ### H-3 (Clayton) — genuine interaction with non-physical intelligence(s), a self-identifying source
 CLAIM: Taylor is actually in contact with non-physical intelligence(s), and — distinctively — the source
@@ -58,10 +59,11 @@ KILL CONDITION: H-2 fully accounts for every product with **nothing left over** 
 test returns null across the available corpus (no verifiable ordinary-means-excluded hit) — **and/or** the
 self-identifying "source" makes checkable identity/origin claims that prove **false**. Either outcome collapses
 the distinctive claim back into H-2.
-STATUS: **open — working frame, currently unsupported on record (cycle 2).** Both residue tests provisionally
-null; the distinctive self-identifying-source claim is itself chronicler-relayed, never on-record from Taylor,
-so it cannot yet be checked for consistency or false identity-claims. Not disconfirmed — the subject is
-verification-proof, which makes H-3 *undecidable* rather than dead. See [`cycle-2.md`](cycle-2.md).
+STATUS: **open — working frame, unsupported and now with less to stand on (cycle 4).** The primary interview
+contains **no self-identifying source** — the very feature that distinguishes H-3 from H-2. The witnesses nearest
+Taylor (Pasulka, Nolan) read the downloads the H-2 way. Both residue tests still null; the material's apparent
+anomalies self-corrected (aerospace foil + diatomic artifact). Not disconfirmed — Taylor never speaks on record,
+so the *self-identifying* claim remains untested → **undecidable**, but standing on less than at cycle 2. See [`cycle-4.md`](cycle-4.md).
 
 ### H-4 (Clawd) — narrative-seeding / operation nexus
 CLAIM: Given the NASA + aerospace + "approached by federal agents about a special office" texture, Taylor's
@@ -71,8 +73,11 @@ a real experiencer can also be an instrumented one.
 KILL CONDITION: positive evidence Taylor's activity is purely private and uncoordinated (no institutional nexus,
 no funding/tasking trail) — **or**, conversely, a verified anomalous product an op would neither need nor be able
 to fake (which would route the weight back to H-3, not H-4).
-STATUS: open — **one uncorroborated thread (cycle 2):** Taylor reportedly says he works for "The Hammer"
-(Jesse Michels et al.), social-media tier, undenoted. Source it before weighing. See [`cycle-2.md`](cycle-2.md).
+STATUS: open — **new PRIMARY texture (cycle 4).** Nolan's own account describes the debris field as **apparently,
+purposefully contaminated** (1930s tomato cans salted in with aerospace material) and reports secondhand
+testimony of **soldiers "cleaning up… burying pieces."** This is a primary-sourced anomaly about *human* activity
+at the site — the most concrete thing on the table, and it's about who muddied it, not about the material. Plus
+the older, thinner "The Hammer" thread (Jesse Michels et al., social-media tier, undenoted). See [`cycle-4.md`](cycle-4.md).
 
 ## Control case (not a hypothesis — a calibration instrument)
 **Clayton's own channeling** — anomalous experience *without* a self-identifying source — is the within-triad
