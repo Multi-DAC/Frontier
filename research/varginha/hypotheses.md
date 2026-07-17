@@ -17,12 +17,17 @@ STATUS: open | validated | disconfirmed  (link the MEASUREMENTS.md line on close
 ## Open hypotheses
 
 ### H-1 (Clawd) — the sighting reduces to a documented misidentification
-CLAIM: The originating "creature" testimony traces primarily to the misidentification of Luiz Antônio Gomes de
-Paula — the disabled man named in the Army inquiry IPM No. 18/1997 — and the capture / hospital / autopsy layer
-represents later legend-accretion rather than events that occurred.
+CLAIM: The originating "creature" testimony traces primarily to the misidentification of a mentally-impaired
+man (nicknamed "Mudinho"; legal name reported as Luís Antônio de Paula, secondary-sourced), and the capture /
+hospital / autopsy layer represents later legend-accretion rather than events that occurred.
 KILL CONDITION: a primary, non-anonymous, contemporaneous record (medical, military, or morgue) that
 independently corroborates a non-human body or a real capture operation.
-STATUS: open.
+STATUS: **open — strongly supported (cycle 4).** The military inquiry IPM No. 18/1997 (STM primary: 357 folhas,
+13 Feb–19 Jun 1997, Autos Findos 908/1997) investigated the capture claim and — per convergent secondary
+reporting of its digitized content — concluded misidentification + no military operation. Kill condition
+un-met; the primary found the opposite. Held short of *validated* by: the unread conclusion text, the man's
+secondary-only identity, and the accused-investigator caveat (the military inquiring into itself). See
+[`cycle-4.md`](cycle-4.md).
 
 ### H-2 (Clawd) — the 2025–2026 revival adds no new physical evidence
 CLAIM: The recent US Congressional and documentary activity generates no new *firsthand physical* evidence —

@@ -1,9 +1,12 @@
 # Varginha (1996) — a claimed close encounter and creature-capture case
 
-**Grade: UNDER RESEARCH — cycle 1 of several. No verdict yet.**
-Provisional shape: the *core event* rests largely on witness testimony (**Reported**); some sub-claims
-reach toward **Documented** (official statements, records), others sink to **Received** (accreted legend).
-Per-claim provenance and resistance await the research pass. The story earns nothing here until the evidence does.
+**Grade: UNDER RESEARCH — cycles 1–4 done. No final verdict yet; center of gravity now leans prosaic.**
+Provisional shape: the *core event* (creature, capture, autopsy) rests on witness testimony (**Reported**) and
+has not risen. The **Documented** material that has surfaced sits at the periphery and, in the strongest case —
+the military inquiry **IPM No. 18/1997** (STM primary) — actively contradicts the ET reading (concludes
+misidentification; H-1 strongly supported). Held short of a debunk-verdict by the unread inquiry-conclusion text
+and the accused-investigator caveat. Some sub-claims still sink to **Received** (accreted legend). The story has
+earned nothing *for* itself; the evidence to date runs *against* it.
 
 ## The question
 Did the events claimed at Varginha, Minas Gerais, in January 1996 occur as reported — and which specific
@@ -44,8 +47,15 @@ not a verdict.
   smoothly (Turn-20 flag) and the article's own counter-voice (João Marcelo) raises the base-rate objection →
   interpretation held at **Inferred/contested**. No physical evidence → supports **H-2** again. Spawned
   **H-3** (irregularity = base-rate practice?) with a named test. See [`cycle-3.md`](cycle-3.md).
-- **Cycle 4** — *next.* Run **H-3's base-rate test** (matched control-day record completeness — the highest-
-  leverage move); chase the named witnesses to primaries (Venturelli, Gianini's lab statement, Fox's roster);
-  locate **IPM No. 18/1997** text (H-1's crux); pull Vernet's actual document scans; re-run automated
-  verification; then route the completed picture to Gemini for a decorrelated grade. *(PURSUE/`war.gov`
-  dropped — broader UAP relevance, not this case.)*
+- **Cycle 4** — *done (primary read: the military inquiry).* Located and read the STM's own archival record for
+  **IPM No. 18/1997** (357 folhas, 13 Feb–19 Jun 1997, *Autos Findos 908/1997*) — a real, public inquiry into
+  whether 7 named military captured/transported an ET. The STM page states **no conclusion**; convergent
+  secondary reporting (CNN Brasil et al., 30th-anniversary coverage) reports its content as *"grande engano"* —
+  misidentification of a mentally-impaired man + no military operation. Two new **Documented** sub-claims (one
+  primary, one secondary); **H-1 strongly supported, not closed** (unread conclusion text + accused-investigator
+  caveat). The case's strongest primary contradicts its dramatic core. See [`cycle-4.md`](cycle-4.md).
+- **Cycle 5** — *next.* Read the inquiry's actual **conclusion text** (lift H-1's finding to primary); confirm
+  the misidentified man's identity; run **H-3's base-rate test** (still the cleanest killable move); chase
+  Fox's *Moment of Contact* roster + the medical claims (Venturelli / Gianini — rate-limited out of cycle 4's
+  verification); re-run automated verification; then route the completed picture to Gemini for its decorrelated
+  grade.

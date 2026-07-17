@@ -10,12 +10,15 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 ---
 
 ## Under research (gathered, no grade yet)
-- **Varginha (1996)** — `research/varginha/` — cycles 1–3 done. Provisional shape holds: the dramatic core
-  sits at weakest provenance (Reported, investigator-mediated). Two **Documented** sub-claims now stand:
-  (cycle 2) a former Defense Minister credits the witnesses on the record; (cycle 3) FOIA'd Fire Dept records
-  for 20 Jan 1996 show numbering/completeness irregularities. Neither adds firsthand *physical* evidence
-  (supports **H-2**). The cover-up *reading* of the record gaps stays **Inferred/contested** pending H-3's
-  base-rate test. Verdict pending cycle 4 + decorrelated grade.
+- **Varginha (1996)** — `research/varginha/` — cycles 1–4 done. Dramatic core (creature/capture/autopsy) stays
+  **Reported**. **Documented** sub-claims now standing: (cycle 2) a former Defense Minister credits the
+  witnesses on the record; (cycle 3) FOIA'd Fire Dept records for 20 Jan 1996 show irregularities; (cycle 4,
+  primary) the military inquiry **IPM No. 18/1997** (STM: 357 folhas, Autos Findos 908/1997) formally
+  investigated the ET-capture claim, and (via convergent secondary) concluded misidentification + no military
+  operation → **H-1 strongly supported**. None add firsthand *physical* evidence (**H-2 holds**). Center of
+  gravity leans prosaic; held short of a debunk-verdict by the unread inquiry-conclusion text + the
+  accused-investigator caveat. Cover-up *reading* of the record gaps stays **Inferred/contested** (H-3's
+  base-rate test still open). Verdict pending cycle 5 + Gemini's decorrelated grade.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*
