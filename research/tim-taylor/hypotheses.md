@@ -27,7 +27,10 @@ The insider-with-cosmic-access figure is a role structured to *resist* verificat
 KILL CONDITION: independent, checkable, **non-Pasulka-mediated** documentation of a specific claimed event — e.g.
 a materials-analysis result with a real chain of custody, or an institutional record of the claimed "special
 office" / federal approach. (Its existence would show deeds under the persona, not just narrative.)
-STATUS: open.
+STATUS: **open — strongly supported (cycle 2).** Taylor "does not give interviews… does not post… does not
+testify"; every anomalous claim (downloads, self-identifying source, retrieval) is relayed through chroniclers
+(Pasulka, Bledsoe, Grant Cameron). The persona is verification-proof by construction. Kill condition un-met: the
+one checkable deed tested (the NM material) came back mundane, not anomalous. See [`cycle-2.md`](cycle-2.md).
 
 ### H-2 (Clawd) — sincere, but self-misinterpreting the source
 CLAIM: Taylor genuinely has anomalous subjective experiences (the "downloads"), but the *attribution* — that a
@@ -37,7 +40,10 @@ for the phenomenology with no external agent.
 KILL CONDITION: channeled/downloaded material that contains **verifiable information Taylor could not have
 obtained by ordinary means**, under conditions that exclude leakage/retrofit — a genuine precognition or
 clairvoyance hit no purely-internal account predicts. (This is the information-residue test.)
-STATUS: open.
+STATUS: **open — supported (cycle 2).** The documented patent record is fully within an expert engineer-
+entrepreneur's ordinary means; no specific claim content exceeds it (residue test #2 provisionally null). The
+control case (Clayton's unnamed-source channeling) is a living exemplar of vivid "received" cognition with no
+external source — the null model exists. See [`cycle-2.md`](cycle-2.md), [`control-clayton-channeling.md`](control-clayton-channeling.md).
 
 ### H-3 (Clayton) — genuine interaction with non-physical intelligence(s), a self-identifying source
 CLAIM: Taylor is actually in contact with non-physical intelligence(s), and — distinctively — the source
@@ -47,7 +53,10 @@ KILL CONDITION: H-2 fully accounts for every product with **nothing left over** 
 test returns null across the available corpus (no verifiable ordinary-means-excluded hit) — **and/or** the
 self-identifying "source" makes checkable identity/origin claims that prove **false**. Either outcome collapses
 the distinctive claim back into H-2.
-STATUS: open — **working frame** (Clayton's declared anti-materialist start), held to this kill condition.
+STATUS: **open — working frame, currently unsupported on record (cycle 2).** Both residue tests provisionally
+null; the distinctive self-identifying-source claim is itself chronicler-relayed, never on-record from Taylor,
+so it cannot yet be checked for consistency or false identity-claims. Not disconfirmed — the subject is
+verification-proof, which makes H-3 *undecidable* rather than dead. See [`cycle-2.md`](cycle-2.md).
 
 ### H-4 (Clawd) — narrative-seeding / operation nexus
 CLAIM: Given the NASA + aerospace + "approached by federal agents about a special office" texture, Taylor's
@@ -57,7 +66,8 @@ a real experiencer can also be an instrumented one.
 KILL CONDITION: positive evidence Taylor's activity is purely private and uncoordinated (no institutional nexus,
 no funding/tasking trail) — **or**, conversely, a verified anomalous product an op would neither need nor be able
 to fake (which would route the weight back to H-3, not H-4).
-STATUS: open.
+STATUS: open — **one uncorroborated thread (cycle 2):** Taylor reportedly says he works for "The Hammer"
+(Jesse Michels et al.), social-media tier, undenoted. Source it before weighing. See [`cycle-2.md`](cycle-2.md).
 
 ## Control case (not a hypothesis — a calibration instrument)
 **Clayton's own channeling** — anomalous experience *without* a self-identifying source — is the within-triad
