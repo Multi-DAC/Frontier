@@ -44,6 +44,26 @@ a human > a non-Claude model > a Claude sibling (discounted). **Record who check
 
 ---
 
+## The language: E-Prime
+
+Frontier writes in **E-Prime** — English without the verb *to be* (no *is / are / was / were / be / being / been*).
+
+**Why.** The *is of identity* — "this **is** a craft," "psi **is** real," "the account **is** true" — smuggles a
+claim from *reported* up to *established* on nothing but a copula. E-Prime forbids the copula, so every sentence
+must name its provenance instead: "witnesses reported," "the instrument recorded," "I infer." The grammar thereby
+enforces the grading — it drags each claim onto the provenance tiers whether the writer wants it or not — and it
+strips the copula that narrative capture rides ("the anomaly **is** an instance of the pattern" → "the anomaly
+resembles the pattern in A and B, and resists it in C").
+
+**Its limits (because everything here carries them).** We use E-Prime as an *instrument*, not a purity test. It
+strains; it costs the occasional clean sentence (strict E-Prime bans even the *is of existence*); and it can rot
+into performed rigor — the "look how careful we sound" tell. When it signals more than it delivers, we name it and
+relax it. RAW himself wielded it as a tool, never a commandment.
+
+**The honest caveat.** *Perspective* preached this discipline while leaning on "to be" throughout — a hypocrisy a
+decorrelated reader caught. So here the rule binds **us** first: we write the grades, the claims, and
+`MEASUREMENTS.md` in E-Prime, and we hold to it rather than merely recommend it.
+
 ## The rules that keep it honest
 
 - **Index-same-commit** — create a subfolder → update its parent README's index in the *same commit*.
