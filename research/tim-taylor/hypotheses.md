@@ -27,11 +27,13 @@ The insider-with-cosmic-access figure is a role structured to *resist* verificat
 KILL CONDITION: independent, checkable, **non-Pasulka-mediated** documentation of a specific claimed event — e.g.
 a materials-analysis result with a real chain of custody, or an institutional record of the claimed "special
 office" / federal approach. (Its existence would show deeds under the persona, not just narrative.)
-STATUS: **open — strongly supported (cycle 2).** Taylor "does not give interviews… does not post… does not
+STATUS: **open — strongly supported (cycles 2–3).** Taylor "does not give interviews… does not post… does not
 testify"; every anomalous claim (downloads, self-identifying source, retrieval) is relayed through chroniclers
-(Pasulka, Bledsoe, Grant Cameron). The persona is verification-proof by construction. Kill condition un-met: the
-one checkable deed tested (the collected NM material) produced **no demonstrated anomaly** (one secondary source
-says fiberglass; Nolan's own words not located) — an absence of corroborating deed, not a positive one. See [`cycle-2.md`](cycle-2.md).
+(Pasulka, Bledsoe, Grant Cameron). Verification-proofness reaches even his **identity** — Tyler = Taylor is
+*strong circumstantial inference* (Vatican Observatory 2017 listing; Launch Fever; career fingerprints), but
+**unconfirmed by Pasulka or Taylor** (cycle 3). Kill condition un-met: the one checkable deed tested (the
+collected NM material) produced **no demonstrated anomaly** (two convergent secondary recaps say fiberglass;
+Nolan's own words still not located) — an absence of corroborating deed, not a positive one. See [`cycle-2.md`](cycle-2.md), [`cycle-3.md`](cycle-3.md).
 
 ### H-2 (Clawd) — sincere, but self-misinterpreting the source
 CLAIM: Taylor genuinely has anomalous subjective experiences (the "downloads"), but the *attribution* — that a
