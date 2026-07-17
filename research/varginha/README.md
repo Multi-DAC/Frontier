@@ -22,7 +22,15 @@ references, recent Brazilian Minister of Defense statements, a document release 
 that cutoff. So every grade here rests on **researched, cited sources**, never on recall. Recall on a live topic
 would count as confabulation, the exact sin the ledger exists to catch.
 
+## Provisional shape (cycle 1 — NOT a grade; zero verified claims yet)
+On provenance alone: the case's *dramatic core* (capture, hospital, autopsy) sits at its *weakest* evidential
+tier (anonymous, investigator-mediated); the strongest *documented* evidence present leans *prosaic* (the Army
+inquiry IPM No. 18/1997, misidentification); the 2026 activity documents *government interest*, not the 1996
+event. That shape resists the UFO narrative more than it confirms it — read as a trigger for harder scrutiny,
+not a verdict.
+
 ## Cycles
-- **Cycle 1** — *in progress.* Core sequence; primary witnesses versus secondhand; the prosaic explanations
-  and their evidential status; James Fox's *Moment of Contact* (2022) and its new claims; the 2025–2026
-  developments. Findings land in `cycle-1.md`, then route to Gemini (the decorrelated eye) for grading.
+- **Cycle 1** — *done (harvest + stratification; UNVERIFIED).* 18 sources / 73 claims; automated verification
+  rate-limited out, so nothing confirmed yet. See [`cycle-1.md`](cycle-1.md).
+- **Cycle 2** — *next.* Route cycle 1 to Gemini for a decorrelated grade; chase the primaries (IPM No. 18/1997
+  text; Aldo Rebelo's actual words; the unlocated "PURSUE"/`war.gov/ufo` thread); re-run automated verification.

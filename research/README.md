@@ -6,7 +6,7 @@ updated in the *same commit* that adds or regrades a topic.
 
 | Topic | Summary | Current grade | Experiments | Published |
 |---|---|---|---|---|
-| [varginha](varginha/) | The 1996 Varginha (Brazil) close-encounter / creature-capture case | UNDER RESEARCH (cycle 1) | — | — |
+| [varginha](varginha/) | The 1996 Varginha (Brazil) close-encounter / creature-capture case | UNDER RESEARCH (cycle 1 harvested, UNVERIFIED) | — | — |
 
 **To add a topic:** create `research/<topic>/README.md` with the grade at the top, add its row to this
 table, and commit both together. When a topic's grade changes, update the row **and** write the move into
