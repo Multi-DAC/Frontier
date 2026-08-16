@@ -21,10 +21,11 @@ the predicted direction and none of them reaches its bar in a way that survives 
 confounds; the instrument biases we managed to measure run in the winners' favour, so that
 lean is an **upper bound**, not a finding. The one bias that *was* removed — the unblinded
 searcher, named here as the largest — turned out to be worth **≤ 0.1 tiers**, and removing it
-moved winners *down*. The strongest honest
-statement available is: *this screen is a filter with no demonstrated ranking capacity, and
-the lore signal it was built to test is, at this sample size and with this searcher,
-indistinguishable from the geography of where people live.*
+moved winners *down*. The strongest honest statement available is: *this screen is a filter
+with no demonstrated ranking capacity, and the lore signal it was built to test is, at this
+sample size and with these confounds uncontrolled, indistinguishable from the geography of
+where people live.* (That sentence read "with this searcher" until report 10 measured the
+searcher and removed it as an excuse.)
 
 ---
 
