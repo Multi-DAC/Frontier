@@ -1,0 +1,72 @@
+[
+ {
+  "rank": 1,
+  "name": "Madison fault",
+  "grad": 1.58,
+  "pct_in_box": 44.9,
+  "rng": 54.7
+ },
+ {
+  "rank": 2,
+  "name": "Centennial fault",
+  "grad": 0.56,
+  "pct_in_box": 11.7,
+  "rng": 28.6
+ },
+ {
+  "rank": 3,
+  "name": "Teton fault",
+  "grad": 0.5,
+  "pct_in_box": 14.1,
+  "rng": 38.6
+ },
+ {
+  "rank": 4,
+  "name": "Sawatch fault",
+  "grad": 1.46,
+  "pct_in_box": 32.8,
+  "rng": 47.1
+ },
+ {
+  "rank": 5,
+  "name": "Southern Sangre de Cristo fault",
+  "grad": 2.28,
+  "pct_in_box": 77.1,
+  "rng": 39.2
+ },
+ {
+  "rank": 6,
+  "name": "Mount Rose fault zone",
+  "grad": 1.12,
+  "pct_in_box": 54.1,
+  "rng": 33.5
+ },
+ {
+  "rank": 7,
+  "name": "Helena valley fault",
+  "grad": 0.9,
+  "pct_in_box": 38.0,
+  "rng": 34.8
+ },
+ {
+  "rank": 8,
+  "name": "East Pintwater Range fault",
+  "grad": 0.35,
+  "pct_in_box": 10.6,
+  "rng": 28.8
+ },
+ {
+  "rank": 9,
+  "name": "Wasatch fault zone",
+  "grad": 0.45,
+  "pct_in_box": 0.9,
+  "rng": 61.3
+ },
+ {
+  "rank": 10,
+  "name": "Northern Sangre de Cristo fault",
+  "grad": 1.77,
+  "pct_in_box": 60.2,
+  "rng": 45.9
+ }
+]

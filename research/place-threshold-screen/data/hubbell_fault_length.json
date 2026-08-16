@@ -1,0 +1,117 @@
+{
+  "bbox": "-107.2,34.2,-106.0,35.6",
+  "n_named_faults": 15,
+  "hubbell": [],
+  "longest_10": [
+    {
+      "name": "Tijeras-Ca\u00f1oncito fault system",
+      "traced_len_km": 136.0,
+      "endpoint_extent_km": 65.3,
+      "lat_range": [
+        34.985,
+        35.397
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 3821
+    },
+    {
+      "name": "Jemez-San Ysidro fault",
+      "traced_len_km": 64.9,
+      "endpoint_extent_km": 53.3,
+      "lat_range": [
+        35.132,
+        35.603
+      ],
+      "age": "middle and late Quaternary",
+      "n_vertices": 989
+    },
+    {
+      "name": "San Felipe fault zone",
+      "traced_len_km": 456.9,
+      "endpoint_extent_km": 47.8,
+      "lat_range": [
+        35.244,
+        35.614
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 5704
+    },
+    {
+      "name": "San Francisco fault",
+      "traced_len_km": 71.8,
+      "endpoint_extent_km": 37.3,
+      "lat_range": [
+        35.286,
+        35.602
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 1814
+    },
+    {
+      "name": "La Bajada fault",
+      "traced_len_km": 47.3,
+      "endpoint_extent_km": 35.7,
+      "lat_range": [
+        35.289,
+        35.608
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 1248
+    },
+    {
+      "name": "Sand Hill fault zone",
+      "traced_len_km": 28.4,
+      "endpoint_extent_km": 34.1,
+      "lat_range": [
+        35.138,
+        35.444
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 638
+    },
+    {
+      "name": "County Dump fault",
+      "traced_len_km": 33.7,
+      "endpoint_extent_km": 31.2,
+      "lat_range": [
+        35.008,
+        35.288
+      ],
+      "age": "late Quaternary",
+      "n_vertices": 632
+    },
+    {
+      "name": "Sandia fault",
+      "traced_len_km": 80.5,
+      "endpoint_extent_km": 26.3,
+      "lat_range": [
+        34.984,
+        35.215
+      ],
+      "age": "late Quaternary",
+      "n_vertices": 589
+    },
+    {
+      "name": "Nacimiento fault",
+      "traced_len_km": 16.8,
+      "endpoint_extent_km": 12.4,
+      "lat_range": [
+        35.495,
+        35.606
+      ],
+      "age": "middle and late Quaternary",
+      "n_vertices": 42
+    },
+    {
+      "name": "West Ceja fault",
+      "traced_len_km": 11.8,
+      "endpoint_extent_km": 11.6,
+      "lat_range": [
+        34.467,
+        34.57
+      ],
+      "age": "undifferentiated Quaternary",
+      "n_vertices": 181
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+ "query": "Hubbell",
+ "exact": null,
+ "segments": 321,
+ "distinct_names": {
+  "Hubbell Spring fault": 321
+ },
+ "bins": [
+  {
+   "lat": 34.992,
+   "lon": -106.5182,
+   "traced_km": 3.01,
+   "well_km": 0.92,
+   "well_pct": 31,
+   "mod_pct": 0
+  },
+  {
+   "lat": 34.974,
+   "lon": -106.5201,
+   "traced_km": 6.21,
+   "well_km": 3.87,
+   "well_pct": 62,
+   "mod_pct": 6
+  },
+  {
+   "lat": 34.956,
+   "lon": -106.5224,
+   "traced_km": 8.95,
+   "well_km": 2.52,
+   "well_pct": 28,
+   "mod_pct": 8
+  },
+  {
+   "lat": 34.938,
+   "lon": -106.5283,
+   "traced_km": 9.23,
+   "well_km": 0.87,
+   "well_pct": 9,
+   "mod_pct": 23
+  },
+  {
+   "lat": 34.92,
+   "lon": -106.5308,
+   "traced_km": 15.84,
+   "well_km": 0.77,
+   "well_pct": 5,
+   "mod_pct": 4
+  },
+  {
+   "lat": 34.902,
+   "lon": -106.5323,
+   "traced_km": 15.61,
+   "well_km": 0.53,
+   "well_pct": 3,
+   "mod_pct": 15
+  },
+  {
+   "lat": 34.884,
+   "lon": -106.5282,
+   "traced_km": 8.51,
+   "well_km": 1.11,
+   "well_pct": 13,
+   "mod_pct": 16
+  },
+  {
+   "lat": 34.866,
+   "lon": -106.5473,
+   "traced_km": 4.3,
+   "well_km": 2.57,
+   "well_pct": 60,
+   "mod_pct": 17
+  },
+  {
+   "lat": 34.848,
+   "lon": -106.5571,
+   "traced_km": 2.52,
+   "well_km": 0.84,
+   "well_pct": 33,
+   "mod_pct": 29
+  },
+  {
+   "lat": 34.83,
+   "lon": -106.5543,
+   "traced_km": 3.2,
+   "well_km": 1.15,
+   "well_pct": 36,
+   "mod_pct": 43
+  },
+  {
+   "lat": 34.812,
+   "lon": -106.5432,
+   "traced_km": 4.01,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 86
+  },
+  {
+   "lat": 34.794,
+   "lon": -106.5367,
+   "traced_km": 4.92,
+   "well_km": 0.79,
+   "well_pct": 16,
+   "mod_pct": 81
+  },
+  {
+   "lat": 34.776,
+   "lon": -106.5377,
+   "traced_km": 6.67,
+   "well_km": 2.01,
+   "well_pct": 30,
+   "mod_pct": 28
+  },
+  {
+   "lat": 34.758,
+   "lon": -106.5377,
+   "traced_km": 6.27,
+   "well_km": 1.66,
+   "well_pct": 27,
+   "mod_pct": 30
+  },
+  {
+   "lat": 34.74,
+   "lon": -106.5448,
+   "traced_km": 2.4,
+   "well_km": 0.77,
+   "well_pct": 32,
+   "mod_pct": 0
+  },
+  {
+   "lat": 34.722,
+   "lon": -106.5442,
+   "traced_km": 4.16,
+   "well_km": 0.69,
+   "well_pct": 17,
+   "mod_pct": 23
+  },
+  {
+   "lat": 34.704,
+   "lon": -106.5433,
+   "traced_km": 11.14,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 78
+  },
+  {
+   "lat": 34.686,
+   "lon": -106.5474,
+   "traced_km": 6.71,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 71
+  },
+  {
+   "lat": 34.668,
+   "lon": -106.5419,
+   "traced_km": 6.67,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 81
+  },
+  {
+   "lat": 34.65,
+   "lon": -106.5528,
+   "traced_km": 2.23,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 29
+  },
+  {
+   "lat": 34.632,
+   "lon": -106.5536,
+   "traced_km": 0.82,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  }
+ ]
+}

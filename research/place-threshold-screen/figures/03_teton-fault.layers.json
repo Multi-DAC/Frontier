@@ -1,0 +1,50 @@
+{
+ "site": 3,
+ "name": "Teton fault",
+ "lat": 43.557,
+ "lon": -110.862,
+ "half_km": 18.0,
+ "bbox": [
+  -111.08512462917874,
+  43.39530398850162,
+  -110.63887537082125,
+  43.71869601149839
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 390547,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-111.08512462917874,43.39530398850162,-110.63887537082125,43.71869601149839&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 129509,
+   "how": "FETCHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-111.08512462917874,43.39530398850162,-110.63887537082125,43.71869601149839&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 365521,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-111.97762314589373,42.74851994250809,-109.74637685410626,44.365480057491915&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 659,
+   "min_mGal": -235.58359657262085,
+   "max_mGal": -197.00074273787294,
+   "range_mGal": 38.58285383474791
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 9,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=42.74851994250809&maxlatitude=44.365480057491915&minlongitude=-111.97762314589373&maxlongitude=-109.74637685410626&minmagnitude=1.0&limit=2000&orderby=magnitude",
+   "note": "context bbox, M>=1.0, ANSS"
+  }
+ },
+ "built": "2026-08-15 22:27:13",
+ "output": "work/figures\\03_teton-fault.png"
+}

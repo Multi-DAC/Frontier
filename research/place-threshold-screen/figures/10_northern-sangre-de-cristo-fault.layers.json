@@ -1,0 +1,50 @@
+{
+ "site": 10,
+ "name": "Northern Sangre de Cristo fault",
+ "lat": 38.344,
+ "lon": -105.95,
+ "half_km": 18.0,
+ "bbox": [
+  -106.15616597444959,
+  38.182303988501616,
+  -105.74383402555041,
+  38.50569601149839
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 447284,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-106.15616597444959,38.182303988501616,-105.74383402555041,38.50569601149839&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 74006,
+   "how": "FETCHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-106.15616597444959,38.182303988501616,-105.74383402555041,38.50569601149839&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 358260,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-106.98082987224798,37.53551994250809,-104.91917012775203,39.152480057491914&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 687,
+   "min_mGal": -297.0001374785626,
+   "max_mGal": -251.03598079440727,
+   "range_mGal": 45.96415668415531
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 0,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=37.53551994250809&maxlatitude=39.152480057491914&minlongitude=-106.98082987224798&maxlongitude=-104.91917012775203&minmagnitude=1.0&limit=2000&orderby=magnitude",
+   "note": "context bbox, M>=1.0, ANSS"
+  }
+ },
+ "built": "2026-08-15 22:28:49",
+ "output": "work/figures\\10_northern-sangre-de-cristo-fault.png"
+}

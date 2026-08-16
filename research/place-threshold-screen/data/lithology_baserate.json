@@ -1,0 +1,696 @@
+{
+ "summary": {
+  "n_random_points": 80,
+  "box": {
+   "lat": [
+    31.0,
+    49.0
+   ],
+   "lon": [
+    -124.5,
+    -100.0
+   ]
+  },
+  "frac_quartz_rich_within": {
+   "0km": 0.138,
+   "2km": 0.212,
+   "5km": 0.237,
+   "10km": 0.3,
+   "15km": 0.3,
+   "25km": 0.35,
+   "40km": 0.362
+  },
+  "frac_none_within_40km": 0.637,
+  "median_nearest_km_where_found": 2.0,
+  "total_unmeasured_probes": 1,
+  "total_probes": 3808
+ },
+ "sites": {
+  "Hubbell Spring PIN": {
+   "nearest_km": 10.0,
+   "pct_of_random_points_CLOSER_than_this": 23.8
+  },
+  "Sandia W scarp": {
+   "nearest_km": 2.0,
+   "pct_of_random_points_CLOSER_than_this": 13.8
+  },
+  "Tijeras CONTROL": {
+   "nearest_km": 2.0,
+   "pct_of_random_points_CLOSER_than_this": 13.8
+  },
+  "Socorro": {
+   "nearest_km": 15.0,
+   "pct_of_random_points_CLOSER_than_this": 30.0
+  },
+  "Toppenish Ridge WA (known FAIL)": {
+   "nearest_km": null,
+   "pct_of_random_points_CLOSER_than_this": null
+  },
+  "Marfa TX": {
+   "nearest_km": null,
+   "pct_of_random_points_CLOSER_than_this": null
+  }
+ },
+ "random_points": [
+  {
+   "lat": 32.5773,
+   "lon": -106.0799,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 40.4154,
+   "lon": -113.7621,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.0582,
+   "lon": -112.6083,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 44.3013,
+   "lon": -108.897,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 40.911,
+   "lon": -103.4979,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.0433,
+   "lon": -108.2249,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.4937,
+   "lon": -103.6677,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 32.0454,
+   "lon": -111.9236,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 33
+  },
+  {
+   "lat": 32.8401,
+   "lon": -101.786,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 45.1347,
+   "lon": -121.1906,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 31.464,
+   "lon": -116.2163,
+   "nearest_km": 25.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 40.6691,
+   "lon": -110.9667,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 35.8148,
+   "lon": -109.8184,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.7521,
+   "lon": -116.6395,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 37.888,
+   "lon": -105.0316,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 43.492,
+   "lon": -108.4345,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 41.1516,
+   "lon": -113.4712,
+   "nearest_km": 10.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.9301,
+   "lon": -112.1134,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 41.5503,
+   "lon": -113.6906,
+   "nearest_km": 0.0,
+   "at_point": "TIER_PLUTONIC",
+   "unmeasured_probes": 0,
+   "probes": 41
+  },
+  {
+   "lat": 43.9822,
+   "lon": -123.4104,
+   "nearest_km": null,
+   "at_point": "TIER_VOLCANIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 39.6496,
+   "lon": -109.3921,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 46.1036,
+   "lon": -118.4825,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 34.5623,
+   "lon": -112.6543,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 41
+  },
+  {
+   "lat": 38.7257,
+   "lon": -113.844,
+   "nearest_km": 10.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 41.704,
+   "lon": -101.8152,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.2915,
+   "lon": -111.3141,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.7752,
+   "lon": -114.9028,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 31.1607,
+   "lon": -116.3447,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.5588,
+   "lon": -123.4874,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 41.5401,
+   "lon": -108.1656,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.7898,
+   "lon": -110.2275,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 46.4849,
+   "lon": -105.7835,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 40.0171,
+   "lon": -103.0228,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 38.9024,
+   "lon": -120.8922,
+   "nearest_km": 10.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 25
+  },
+  {
+   "lat": 38.9723,
+   "lon": -118.8522,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.2976,
+   "lon": -111.3411,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.1971,
+   "lon": -117.5825,
+   "nearest_km": 0.0,
+   "at_point": "TIER_PLUTONIC",
+   "unmeasured_probes": 0,
+   "probes": 33
+  },
+  {
+   "lat": 48.8733,
+   "lon": -114.9567,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.165,
+   "lon": -107.9051,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.0352,
+   "lon": -109.5717,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 1,
+   "probes": 49
+  },
+  {
+   "lat": 45.3341,
+   "lon": -122.187,
+   "nearest_km": null,
+   "at_point": "TIER_VOLCANIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.5835,
+   "lon": -115.6719,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 39.0013,
+   "lon": -121.7619,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 45.0675,
+   "lon": -104.6505,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 39.3803,
+   "lon": -112.2942,
+   "nearest_km": 5.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 37.1315,
+   "lon": -106.9998,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.9446,
+   "lon": -103.7176,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 31.7529,
+   "lon": -102.5878,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 43.6992,
+   "lon": -100.5961,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.427,
+   "lon": -115.8079,
+   "nearest_km": 2.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 35.7249,
+   "lon": -116.1001,
+   "nearest_km": 5.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 33
+  },
+  {
+   "lat": 42.0706,
+   "lon": -109.3015,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 45.0255,
+   "lon": -121.4983,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 35.5048,
+   "lon": -113.9122,
+   "nearest_km": 10.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.6742,
+   "lon": -118.9065,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 41.9318,
+   "lon": -102.3053,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.2014,
+   "lon": -103.8809,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.1728,
+   "lon": -101.4224,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.3151,
+   "lon": -104.4584,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 31.459,
+   "lon": -102.5685,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 46.6692,
+   "lon": -115.8933,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 33
+  },
+  {
+   "lat": 43.5691,
+   "lon": -112.2341,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 39.9331,
+   "lon": -106.4308,
+   "nearest_km": 0.0,
+   "at_point": "TIER_PLUTONIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.3767,
+   "lon": -102.1921,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 42.1335,
+   "lon": -107.3946,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 47.0384,
+   "lon": -104.9069,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 45.7129,
+   "lon": -123.9132,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 45.1303,
+   "lon": -108.0947,
+   "nearest_km": 10.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 43.917,
+   "lon": -121.6904,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 31.0095,
+   "lon": -123.3584,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 44.6938,
+   "lon": -119.7884,
+   "nearest_km": 25.0,
+   "at_point": "TIER_VOLCANIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 42.4509,
+   "lon": -100.9163,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 36.5642,
+   "lon": -118.7919,
+   "nearest_km": 0.0,
+   "at_point": "TIER_PLUTONIC",
+   "unmeasured_probes": 0,
+   "probes": 41
+  },
+  {
+   "lat": 42.286,
+   "lon": -108.9603,
+   "nearest_km": 25.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 48.1061,
+   "lon": -106.8089,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 39.7416,
+   "lon": -103.5211,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 40.9081,
+   "lon": -106.7916,
+   "nearest_km": 0.0,
+   "at_point": "TIER_FABRIC",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 32.7379,
+   "lon": -107.0308,
+   "nearest_km": 25.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 33.0698,
+   "lon": -102.3324,
+   "nearest_km": null,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  },
+  {
+   "lat": 38.8844,
+   "lon": -117.3126,
+   "nearest_km": 40.0,
+   "at_point": "NONE",
+   "unmeasured_probes": 0,
+   "probes": 49
+  }
+ ]
+}

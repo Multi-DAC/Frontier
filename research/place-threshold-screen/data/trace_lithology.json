@@ -1,0 +1,312 @@
+{
+ "Sandia fault": [
+  {
+   "lat": 35.1525,
+   "lon": -106.472,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.2015,
+   "lon": -106.5054,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.0599,
+   "lon": -106.4996,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.2155,
+   "lon": -106.5252,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 35.1532,
+   "lon": -106.5096,
+   "tier": "NONE",
+   "unit": "Medial-age piedmont-slope alluvium"
+  },
+  {
+   "lat": 35.1749,
+   "lon": -106.511,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 35.1238,
+   "lon": -106.4893,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 34.9907,
+   "lon": -106.5104,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.1898,
+   "lon": -106.4949,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.177,
+   "lon": -106.4845,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.0902,
+   "lon": -106.4895,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.2106,
+   "lon": -106.4915,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.1435,
+   "lon": -106.4877,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 35.1089,
+   "lon": -106.4869,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.1662,
+   "lon": -106.4687,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  },
+  {
+   "lat": 35.0736,
+   "lon": -106.4901,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Sandia Granite"
+  }
+ ],
+ "Hubbell Spring fault": [
+  {
+   "lat": 34.9396,
+   "lon": -106.5502,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.658,
+   "lon": -106.5336,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.9175,
+   "lon": -106.5571,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7021,
+   "lon": -106.5536,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.9587,
+   "lon": -106.5299,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.8996,
+   "lon": -106.5113,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.6998,
+   "lon": -106.5359,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.9135,
+   "lon": -106.5333,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.9543,
+   "lon": -106.5138,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.9203,
+   "lon": -106.5142,
+   "tier": "NONE",
+   "unit": "Abo Formation"
+  },
+  {
+   "lat": 34.8876,
+   "lon": -106.5002,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.9079,
+   "lon": -106.5713,
+   "tier": "NONE",
+   "unit": "Piedmont alluvial deposits"
+  },
+  {
+   "lat": 34.896,
+   "lon": -106.583,
+   "tier": "NONE",
+   "unit": "Neogene sedimentary"
+  },
+  {
+   "lat": 34.8571,
+   "lon": -106.5584,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.8402,
+   "lon": -106.5571,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.6852,
+   "lon": -106.5564,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.6504,
+   "lon": -106.5564,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.6702,
+   "lon": -106.552,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.8183,
+   "lon": -106.5524,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.8793,
+   "lon": -106.5504,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7154,
+   "lon": -106.5506,
+   "tier": "NONE",
+   "unit": "Paleozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7299,
+   "lon": -106.548,
+   "tier": "NONE",
+   "unit": "Paleozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7571,
+   "lon": -106.5484,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.9267,
+   "lon": -106.5441,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.8926,
+   "lon": -106.5432,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7782,
+   "lon": -106.5426,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7938,
+   "lon": -106.5388,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.8724,
+   "lon": -106.5352,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.6718,
+   "lon": -106.5334,
+   "tier": "NONE",
+   "unit": "Quaternary sedimentary"
+  },
+  {
+   "lat": 34.9309,
+   "lon": -106.5274,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.7722,
+   "lon": -106.5273,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.9799,
+   "lon": -106.5266,
+   "tier": "NONE",
+   "unit": "Piedmont alluvial deposits"
+  },
+  {
+   "lat": 34.7522,
+   "lon": -106.5242,
+   "tier": "NONE",
+   "unit": "Cenozoic sedimentary rocks"
+  },
+  {
+   "lat": 34.997,
+   "lon": -106.5215,
+   "tier": "NONE",
+   "unit": "Piedmont alluvial deposits"
+  },
+  {
+   "lat": 34.9846,
+   "lon": -106.5103,
+   "tier": "TIER_PLUTONIC",
+   "unit": "Mesoproterozoic plutonic: granite"
+  }
+ ]
+}

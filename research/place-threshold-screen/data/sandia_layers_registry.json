@@ -1,0 +1,145 @@
+{
+  "_what": "Machine-readable source for the final Sandia-Manzano figure. Clayton, D196: 'we will want to generate an image that shows all of the layers and the correct pins coordinates.' This file exists so that image is BUILT FROM MEASUREMENTS, not redrawn from prose. Every coordinate here carries the file or citation it came from. Nothing enters without one.",
+  "_created": "2026-08-15 Day 196",
+  "_rule_before_content": {
+    "policy": "NO Native ceremonial or sacred-site locations are plotted, ever, at any zoom. Only what the Pueblos, the NPS or the published archaeological record place on a public map themselves.",
+    "why": "The pin is on Isleta Pueblo trust land. Precedent: the Parsons/Goldfrank 'Isleta Paintings' breach (BAE 1962), deaccessioned by the American Philosophical Society December 2023. See section C of work/hubbell-spring-CONFIRMATION-AND-LORE-2026-08-15.md.",
+    "consequence_for_the_figure": "Isleta and Sandia Pueblo LAND BOUNDARIES may be drawn (public cadastral fact, and drawing them is the honest disclosure of whose land this is). Shrines, springs-as-passages, and ceremonial geography may NOT be pinned even where a source names them."
+  },
+
+  "pins": [
+    {
+      "id": "P-NORTH-MAX",
+      "label": "Hubbell Spring fault - north scarp maximum",
+      "lat": 34.974, "lon": -106.519,
+      "status": "LIVE - best-evidenced pin on the Hubbell Spring trace",
+      "basis": "3.9 km of 'Well Constrained' mapped scarp, 62% of a 2 km latitude bin - the maximum of 21 bins.",
+      "source": "work/hubbell_geom.geojson (USGS Qfaults layer 12, fault_name='Hubbell Spring fault', 321 segments / 4390 vertices), binned in ADDENDUM2 s3",
+      "caveat": "linetype grades MAPPING CONFIDENCE, not activity. This is a proxy for 'someone verified rock here'."
+    },
+    {
+      "id": "P-SOUTH-MAX",
+      "label": "Hubbell Spring fault - south scarp maximum, relay step",
+      "lat": 34.866, "lon": -106.550,
+      "status": "LIVE - co-equal with P-NORTH-MAX",
+      "basis": "2.6 km well-constrained, 60% of bin, AND a ~3 km westward step in longitude between 34.884 and 34.866 - a mapped left-step/relay, the setting where a normal fault's damage zone and permeability are highest.",
+      "source": "same as P-NORTH-MAX"
+    },
+    {
+      "id": "P-SANDIA-SCARP",
+      "label": "Sandia fault, west scarp",
+      "lat": 35.10, "lon": -106.51,
+      "lat_range": [35.08, 35.12],
+      "status": "LIVE - ranked ABOVE Hubbell Spring by two independent routes",
+      "basis": "(1) June's own geophysical text: 'best piezo in the survey', Sandia quartz-monzonite at 2.0 km, demoted only for having no light-record. (2) D196 lithology re-rank against a real geologic map rather than the Bouguer density proxy.",
+      "source": "Corpus-Perspectival/Unreleased-Work/portal-sandia-pin-RESULTS-2026-06-18.md:45-46; work/hubbell-spring-CONFIRMATION-AND-LORE-2026-08-15.md A2",
+      "todo_RESOLVED": "The estimate above was ~1.5 km WEST of the mapped trace, in the alluvial fan, and returned 'Quaternary sedimentary' - a false negative caused by my own eyeballed coordinate. Replaced by measured trace vertices below.",
+      "measured_trace_lithology": "12 of 16 sampled Sandia fault trace vertices sit on Mesoproterozoic granite (75%); the unit at 35.0736,-106.4901 is named 'Sandia Granite' outright. work/trace_lithology.json",
+      "measured_pin": {"lat": 35.0736, "lon": -106.4901, "unit": "Sandia Granite",
+                       "note": "USE THIS, not the range-front estimate."}
+    },
+    {
+      "id": "P-JUNCTION",
+      "label": "Hubbell Spring / Sandia fault-system junction",
+      "lat": 34.985, "lon": -106.510,
+      "status": "LIVE - the tightest convergence the programme has produced from measurements",
+      "basis": "Three layers inside a 2 km circle: Hubbell N-scarp maximum (34.974,-106.519, 62% well-constrained, max of 21 bins); the ONLY quartz-rich point on 35 sampled Hubbell trace vertices (34.9846,-106.5103); the southernmost granite point on the Sandia fault (34.9907,-106.5104). Mutual distances 0.68-2.02 km. The D138 star is 8.3 km away.",
+      "source": "work/trace_lithology.json, work/scarp_bins_Hubbell.json, work/scarp_bins_Sandia.json",
+      "MANDATORY_CAVEAT_FOR_THE_FIGURE": "This is probably ONE fact, not three. 'Well Constrained' is assigned where a mapper could SEE the fault, i.e. where bedrock is exposed - the same condition that makes the geologic map return granite. The two layers share a cause. What survives is narrower and still useful: this is where the Hubbell trace stops being a line across basin fill and starts being a fault in rock."
+    },
+    {
+      "id": "P-TIJERAS",
+      "label": "Tijeras-Canoncito fault, control",
+      "lat": 35.06, "lon": -106.43,
+      "status": "CONTROL - June's best RAW convergence (density low 0.3 km from an active fault), demoted explicitly for having no anomaly record",
+      "source": "portal-sandia-pin-RESULTS-2026-06-18.md:49-50",
+      "todo": "STILL APPROXIMATE - needs a measured vertex. It returned TIER_PLUTONIC 'Granite' at-point on the national screen, which is the ONLY Sandia-Manzano candidate that did; but that hit rests on a coordinate I placed by eye inside the Sandia granite outcrop, so it is provisional in the same way the Sandia west-scarp false negative was. Do not report it as a result until the trace is pulled.",
+      "why_it_belongs_in_the_figure": "It is the counter-example that shows the June ranking was set by the light-record, not by the geophysics. A figure without it flatters the result."
+    },
+    {
+      "id": "P-D138-STAR",
+      "label": "Original D138 pin",
+      "lat": 34.900, "lon": -106.530,
+      "status": "RETIRED, plotted as a hollow marker",
+      "basis": "0.18 km from the mapped trace (confirmed against geometry). But it sits in the bin that is 3% well-constrained and carries the MOST traced length (15.6 km) - i.e. the most heavily inferred stretch of the whole fault.",
+      "why_kept": "Showing where the star was, and that it moved, is the honest version of this figure."
+    },
+    {
+      "id": "P-TRENCH",
+      "label": "Personius & Mahan 2003 paleoseismic trench",
+      "lat": null, "lon": null,
+      "status": "NEEDED - coordinate not yet extracted from the paper",
+      "basis": "Trench on Isleta land ~1 km south of the Kirtland fence. Four surface ruptures; last three luminescence-dated 56 +/- 6, 29 +/- 3, 12 +/- 1 ka. Recurrence 27 and 17 kyr, 1-2 m per event, M 6.8-7.1, slip rate 0.05 mm/yr (intervals 0.06, 0.09).",
+      "source": "Personius & Mahan 2003, BSSA 93(3)",
+      "why_it_matters": "This is the single measurement that moved the driver rate by 10x. The figure should show WHERE the only ground truth on this fault was actually dug."
+    }
+  ],
+
+  "layers": [
+    {"id": "L-FAULT-TRACE", "name": "Hubbell Spring fault, full mapped geometry", "have": true,
+     "file": "work/hubbell_geom.geojson",
+     "detail": "321 segments, 4390 vertices, 34.634-34.997 N = 40.1 km mapped (attribute total_fault_length says 74 km, so ~half is mapped).",
+     "style": "colour by linetype: Well Constrained 61 / Moderately Constrained 79 / Inferred 181"},
+
+    {"id": "L-QFAULTS-REGION", "name": "All Quaternary faults, Sandia-Manzano window", "have": true,
+     "file": "work/qfaults_normal_national.geojson (subset by bbox)"},
+
+    {"id": "L-SEISMICITY", "name": "Instrumental seismicity", "have": true,
+     "file": "work/sandia_seismicity_layer.json"},
+
+    {"id": "L-GPS", "name": "NGL MIDAS station velocities", "have": true,
+     "file": "work/midas_NA_true.txt + work/hubbell_component_check.json",
+     "detail": "Fault-NORMAL component is the correct one for a normal fault; the fault-parallel null of the first pass was guaranteed by the component chosen. Bound is ~0.486 mm/yr at wide aperture, and does not improve at the aperture that is actually about a 74 km fault.",
+     "note_for_figure": "This layer's honest caption is that it CANNOT decide anything here: 0.05 mm/yr is 12-19x under the bound."},
+
+    {"id": "L-LITHOLOGY", "name": "Macrostrat geologic map - quartz-rich crystalline", "have": true,
+     "file": "work/macrostrat_cache.json via work/lithology_probe.py",
+     "detail": "TIER_PLUTONIC and TIER_FABRIC plotted SEPARATELY and never summed - bulk piezoelectricity in an equigranular pluton averages toward zero; only preferred crystallographic orientation gives a macroscopic response."},
+
+    {"id": "L-BOUGUER", "name": "Bouguer gravity, basin/range density contrast", "have": "PARTIAL",
+     "file": "June survey, 378 points in a 55x111 km box (sandia_pin_analysis.py)",
+     "todo": "re-pull at a real grid resolution; the June set is the one whose 'granite = densest quartile' proxy has now been superseded by L-LITHOLOGY."},
+
+    {"id": "L-AEROMAG", "name": "Depth to crystalline basement, USGS national magnetic grid", "have": false,
+     "todo": "This is the RIGHT version of the piezo question for a buried source - how deep is crystalline rock UNDER the pin, not how far sideways. Ranked #1 of the remaining instruments in the confirmation doc s A4. Cheap, on-machine, public."},
+
+    {"id": "L-LAND", "name": "Isleta Pueblo and Sandia Pueblo boundaries; Kirtland AFB and Manzano WSA", "have": false,
+     "todo": "BIA/BLM public cadastral. Drawing these is disclosure, not decoration: the pin is INSIDE Isleta's 329+ sq mi, not adjacent to it.",
+     "governed_by": "_rule_before_content"},
+
+    {"id": "L-SPRINGS", "name": "Fault-line springs", "have": false,
+     "todo": "NM OSE / NHD. The pin sits 180 m from a mapped fault-line spring. Plot as HYDROLOGY, with the caption from section D: one hydrological mechanism generates the springs, the vegetation line, the historic settlement pattern and the lights-adjacent reports, and it is a better explanation than a portal."},
+
+    {"id": "L-NATIONAL-CONTEXT", "name": "Where this site sits among all CONUS candidates", "have": "RUNNING",
+     "file": "work/transport_nodes.json + work/transport_screen_stage2.json",
+     "detail": "502 CONUS nodes on Quaternary faults with an extensional (dilatant) sense, thinned to 40 km, scored on physics only - no slip-rate gate, no modern-strain gate. This is the first screen on which the Sandia candidate can place at all."}
+  ],
+
+  "lore_anchors_plottable": [
+    {"label": "Tome Hill / El Cerro de Tome", "lat": 34.75, "lon": -106.72,
+     "status": "APPROXIMATE - needs a GNIS pull",
+     "public_basis": "3.5 Myr volcanic remnant, 1800+ petroglyphs ~3000 BC to 17th c., three summit crosses since 1947-48, Good Friday Penitente procession. Published landmark, not restricted knowledge.",
+     "caption": "One landform treated as a threshold by three consecutive religious systems - a fact about landforms and human attention, and exactly the fact this survey is at risk of misreading."},
+    {"label": "Salinas pueblos: Quarai, Abo, Gran Quivira", "status": "NEEDED - NPS publishes these coordinates",
+     "caption": "Abandoned through the 1660s-70s; survivors moved to the Rio Grande pueblos including Isleta. Any inference from 'density of old stories here' must carry this: the record was concentrated by catastrophe and forced movement."},
+    {"label": "Sandia Cave", "status": "NEEDED - public NPS/USFS site",
+     "caption": "Stage for Hibben's fabrication. Plotted with the fraud named, not as evidence."},
+    {"label": "Manzano Weapons Storage Area (Bennewitz 1979-80 locus)", "status": "NEEDED - public installation boundary",
+     "caption": "THE TIEBREAKER. This is the anomaly record that promoted Hubbell Spring over a geophysically better pin in June. It was an INPUT to the selection, not a downstream confirmation."}
+  ],
+
+  "figure_spec": {
+    "panels": [
+      "A - CONUS context: all 502 dilatant-fault nodes, the Sandia candidates marked. Answers 'is anywhere else better' by showing the population the pin was drawn from.",
+      "B - Sandia-Manzano window: fault traces, lithology tiers, land boundaries, seismicity, GPS vectors.",
+      "C - Hubbell Spring along-strike: the linetype bins as a strip chart, the two scarp maxima, the retired D138 star, the trench site.",
+      "D - the honest ledger: which layers can still fail, and which are retired. Not decoration - it is the reason the figure is trustworthy."
+    ],
+    "hard_rules": [
+      "Every pin carries its source in the caption.",
+      "Retired pins stay on the map, hollow.",
+      "TIER_PLUTONIC and TIER_FABRIC never share a colour ramp.",
+      "No sacred-site pins. See _rule_before_content."
+    ]
+  }
+}

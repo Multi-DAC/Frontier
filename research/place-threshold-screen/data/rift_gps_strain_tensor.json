@@ -1,0 +1,441 @@
+[
+  {
+    "site": "METHOD-POS Parkfield SAF",
+    "lat": 35.9,
+    "lon": -120.43,
+    "by_radius": {
+      "50": {
+        "n_stations": 63,
+        "n_kept": 63,
+        "outliers_rejected": [],
+        "gmax_nanostrain_yr": 442.5,
+        "dilatation_nanostrain_yr": -5.9,
+        "rms_resid_mm_yr": 6.722,
+        "scramble_p": 0.0005,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": 1.56
+      },
+      "100": {
+        "n_stations": 116,
+        "n_kept": 116,
+        "outliers_rejected": [],
+        "gmax_nanostrain_yr": 265.6,
+        "dilatation_nanostrain_yr": -0.5,
+        "rms_resid_mm_yr": 6.552,
+        "scramble_p": 0.0005,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": 0.99
+      }
+    }
+  },
+  {
+    "site": "METHOD-NEG Kansas craton",
+    "lat": 38.8,
+    "lon": -98.2,
+    "by_radius": {
+      "50": {
+        "n_stations": 2,
+        "verdict": "TOO FEW STATIONS"
+      },
+      "100": {
+        "n_stations": 8,
+        "n_kept": 7,
+        "outliers_rejected": [
+          {
+            "site": "KSHR",
+            "resid_mm_yr": 1.36,
+            "vn": 2.43,
+            "vu": 0.38
+          }
+        ],
+        "gmax_nanostrain_yr": 8.1,
+        "dilatation_nanostrain_yr": 2.9,
+        "rms_resid_mm_yr": 0.269,
+        "scramble_p": 0.1529,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": 0.34
+      }
+    }
+  },
+  {
+    "site": "RIFT-POS  Socorro magma",
+    "lat": 34.1,
+    "lon": -106.9,
+    "by_radius": {
+      "50": {
+        "n_stations": 4,
+        "n_kept": 4,
+        "outliers_rejected": [],
+        "gmax_nanostrain_yr": 40.9,
+        "dilatation_nanostrain_yr": 126.3,
+        "rms_resid_mm_yr": 0.093,
+        "scramble_p": 0.7101,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": 1.37
+      },
+      "100": {
+        "n_stations": 7,
+        "n_kept": 7,
+        "outliers_rejected": [],
+        "gmax_nanostrain_yr": 10.4,
+        "dilatation_nanostrain_yr": 36.4,
+        "rms_resid_mm_yr": 0.352,
+        "scramble_p": 0.8456,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": 0.6
+      }
+    }
+  },
+  {
+    "site": "PRIMARY   Hubbell Spring",
+    "lat": 34.9,
+    "lon": -106.53,
+    "by_radius": {
+      "50": {
+        "n_stations": 16,
+        "n_kept": 12,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.58,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 3.03,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.97,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 0.88,
+            "vn": 0.91,
+            "vu": 0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 21.4,
+        "dilatation_nanostrain_yr": 3.2,
+        "rms_resid_mm_yr": 0.274,
+        "scramble_p": 0.002,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.48
+      },
+      "100": {
+        "n_stations": 26,
+        "n_kept": 22,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.75,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMSE",
+            "resid_mm_yr": 1.38,
+            "vn": 0.68,
+            "vu": -2.28
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 3.23,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 1.04,
+            "vn": 0.91,
+            "vu": 0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 5.8,
+        "dilatation_nanostrain_yr": 4.9,
+        "rms_resid_mm_yr": 0.414,
+        "scramble_p": 0.1219,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.5
+      }
+    }
+  },
+  {
+    "site": "SECONDARY Sandia W scarp",
+    "lat": 35.1,
+    "lon": -106.51,
+    "by_radius": {
+      "50": {
+        "n_stations": 14,
+        "n_kept": 10,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.41,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 2.96,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.96,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 0.75,
+            "vn": 0.91,
+            "vu": 0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 24.1,
+        "dilatation_nanostrain_yr": 5.6,
+        "rms_resid_mm_yr": 0.246,
+        "scramble_p": 0.023,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.48
+      },
+      "100": {
+        "n_stations": 25,
+        "n_kept": 20,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.69,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 3.13,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMSE",
+            "resid_mm_yr": 1.06,
+            "vn": 0.68,
+            "vu": -2.28
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.95,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 1.05,
+            "vn": 0.91,
+            "vu": 0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 5.8,
+        "dilatation_nanostrain_yr": 1.2,
+        "rms_resid_mm_yr": 0.357,
+        "scramble_p": 0.055,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.54
+      }
+    }
+  },
+  {
+    "site": "CONTROL   Tijeras corridor",
+    "lat": 35.17,
+    "lon": -106.32,
+    "by_radius": {
+      "50": {
+        "n_stations": 13,
+        "n_kept": 10,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.41,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 2.86,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.97,
+            "vn": 2.78,
+            "vu": -0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 22.5,
+        "dilatation_nanostrain_yr": 10.8,
+        "rms_resid_mm_yr": 0.348,
+        "scramble_p": 0.2759,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.48
+      },
+      "100": {
+        "n_stations": 24,
+        "n_kept": 19,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.67,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 3.1,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMSE",
+            "resid_mm_yr": 1.06,
+            "vn": 0.68,
+            "vu": -2.28
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.95,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 1.05,
+            "vn": 0.91,
+            "vu": 0.53
+          }
+        ],
+        "gmax_nanostrain_yr": 5.6,
+        "dilatation_nanostrain_yr": 1.0,
+        "rms_resid_mm_yr": 0.366,
+        "scramble_p": 0.095,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.53
+      }
+    }
+  },
+  {
+    "site": "FLOOR     Bouguer low",
+    "lat": 35.2,
+    "lon": -106.72,
+    "by_radius": {
+      "50": {
+        "n_stations": 14,
+        "n_kept": 8,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.66,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 2.94,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.86,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 0.73,
+            "vn": 0.91,
+            "vu": 0.53
+          },
+          {
+            "site": "NMRC",
+            "resid_mm_yr": 0.65,
+            "vn": 1.19,
+            "vu": -0.57
+          },
+          {
+            "site": "ABQ5",
+            "resid_mm_yr": 0.28,
+            "vn": 1.68,
+            "vu": -1.74
+          }
+        ],
+        "gmax_nanostrain_yr": 18.3,
+        "dilatation_nanostrain_yr": 16.4,
+        "rms_resid_mm_yr": 0.105,
+        "scramble_p": 0.003,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.48
+      },
+      "100": {
+        "n_stations": 23,
+        "n_kept": 16,
+        "outliers_rejected": [
+          {
+            "site": "RRHS",
+            "resid_mm_yr": 2.72,
+            "vn": 3.21,
+            "vu": 1.13
+          },
+          {
+            "site": "NMSE",
+            "resid_mm_yr": 1.28,
+            "vn": 0.68,
+            "vu": -2.28
+          },
+          {
+            "site": "NMAB",
+            "resid_mm_yr": 3.11,
+            "vn": 5.23,
+            "vu": -3.01
+          },
+          {
+            "site": "EAG1",
+            "resid_mm_yr": 1.28,
+            "vn": 0.91,
+            "vu": 0.53
+          },
+          {
+            "site": "NMRC",
+            "resid_mm_yr": 0.69,
+            "vn": 1.19,
+            "vu": -0.57
+          },
+          {
+            "site": "NMAQ",
+            "resid_mm_yr": 0.86,
+            "vn": 2.78,
+            "vu": -0.53
+          },
+          {
+            "site": "LANM",
+            "resid_mm_yr": 0.61,
+            "vn": 1.8,
+            "vu": 0.66
+          }
+        ],
+        "gmax_nanostrain_yr": 13.0,
+        "dilatation_nanostrain_yr": 7.3,
+        "rms_resid_mm_yr": 0.248,
+        "scramble_p": 0.0005,
+        "scramble_draws": 2000,
+        "median_vu_mm_yr": -0.53
+      }
+    }
+  }
+]

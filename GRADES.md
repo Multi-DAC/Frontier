@@ -31,13 +31,34 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   debunking IPM issued from the accused institution. **Next: Gemini's independent grade under its own signature.**
 
 ## Under research (gathered, no grade yet)
-- *(none — Varginha graded above; awaiting the next topic.)*
+- **Place-threshold screen (CONUS)** — `research/place-threshold-screen/` — **opened and worked
+  2026-08-15; Clawd only; NO decorrelated eye.** A physics-only continental screen (dilatant
+  Quaternary rupture × quartz-rich crystalline **trace** lithology × junction density) over 507
+  thinned CONUS nodes, with lore **held out of the score** and looked up afterward per site,
+  including sites where I expected nothing. Ten ranked sites, each with a four-panel plate and a
+  layer-provenance record. Three deflations travel with the list and outrank it: ±50% weight
+  perturbation holds only **3 of 10** slots; the top three sit inside one ~150 km province triangle
+  and thus report **one fact three times**; and the Bouguer gradient measured *at* each starred
+  coordinate ranges 0.9%–77.1% of panel range, so several stars sit off the density step the figure
+  appears to show. Grade awaits the two open instruments below. See
+  `research/place-threshold-screen/SUMMARY.md`.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*
 
 ## Documented (solid primary or institutional record; not independently replicated)
-*(none yet)*
+- **The place-threshold screen's inputs** — `research/place-threshold-screen/` — USGS Qfaults
+  national layer 21 (112,809 features; 54,249 with an extensional component), Macrostrat map
+  lithology sampled *along traces*, USGS Bouguer gravity, USGS SGMC2, USGS 3DEP, ANSS seismicity,
+  MIDAS GPS. Pulled live 2026-08-15; every figure layer preserves its own request URL in
+  `figures/*.layers.json`, so anyone may re-pull and disagree.
+- **The 1993 Taos Hum investigation** — UNM · Los Alamos · Phillips AFB Lab · Sandia National
+  Laboratories; 161 of 1,440 respondents reported hearing it; infrasound, seismic and EM
+  instruments located no source. Convened at Rep. Bill Richardson's request. Sited on a fault the
+  screen independently ranked top-5 on rock and rupture alone.
+- **Blue Lake returned to Taos Pueblo by act of Congress, 1970** · **Pintwater Cave** dart and
+  arrow shafts radiocarbon-dated 9,300–3,000 BP with ordnance damage at the entrance · **the
+  Enclosure** on the Grand Teton, recorded by the Hayden Survey, 1872.
 
 ## Reported (firsthand testimony; uncorroborated)
 *(none yet)*
@@ -46,10 +67,39 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
 *(none yet)*
 
 ## Inferred / Staked (our own reasoning; a wager, marked as one)
-*(none yet)*
+- **The four-term site score and its weights** — `research/place-threshold-screen/` — P1 rupture
+  recency (0–3), P2 dilatant sense (gate), P3 quartz-rich trace lithology (0–2, **fabric 2.0 above
+  pluton 1.4** on a c-axis-coherence argument, not on a fit), P4 junction density (0–2, capped
+  because fault-*name* density partly measures mapping intensity). Marked a wager: seven of ten
+  slots move under a ±50% weight perturbation.
+- **~12% of dilatant Quaternary CONUS nodes carry quartz-rich trace rock** (62 of 507) — a
+  *selectivity* measurement. Its **recall stays unmeasured** pending the national trace run, so the
+  qualifying population reads as a lower bound.
 
 ## Hypothesized (proposed, untested — see each case's `hypotheses.md`)
-*(none yet)*
+- **H-1, piezoelectric conduit** — dilatant Quaternary rupture through quartz-rich crystalline
+  *fabric* predicts anomalous light/sound clustering. Kill condition declared before the test: a
+  blind 30-fault base rate matching the top-ten hit rate within sampling error kills it as a
+  predictor. `research/place-threshold-screen/hypotheses.md`.
+- **H-2, the null and the one to beat** — the lore convergence measures the density of the
+  *record* (and of settler invention) across the mountain West, not anything the rock does.
+  Currently favoured on parsimony. Same kill test, read the other way.
+- **H-3, province over site** — the correct analysis unit names a province, not a fault. Partially
+  supported already: regrouping moved the Rio Grande rift to 2nd nationally, which the fault-level
+  table concealed.
+- **H-0, method** — a screen may only measure its own instruments. **VALIDATED for the gates**
+  2026-08-15 (removing a slip-rate floor and a geodetic-strain requirement moved the answer off the
+  plate boundary), and **open for the weights**.
 
 ## Disconfirmed (dead — kept on the record; see `MEASUREMENTS.md` for the date it fell)
-*(none yet)*
+- **H-4 — "the Sandia / Hubbell Spring junction ranks best in the continental US"** —
+  `research/place-threshold-screen/` — **fell 2026-08-15.** Scored on its own trace lithology
+  against 507 thinned CONUS nodes it reaches 6.65 and lands **~9th**, losing on exactly one term:
+  rupture recency (0.05–0.2 mm/yr late-Quaternary against Madison's 1959 historic scarp). Nothing
+  about its rock or structure ranks inferior. **What survives as a separate, weaker claim:** the
+  terrain belongs to the right class, and that class dominates the top of the national list — by
+  province the Rio Grande rift places 2nd. Re-promotion requires a dated ledger line.
+- **Finding C of the D196 geodetic addendum** (Hubbell Spring shows no resolvable creep signal, as
+  stated) — **withdrawn 2026-08-15 by its own author.** The aperture sweep profiled the wrong
+  velocity component, and widening the swath past the fault's measured 74 km length produced a
+  tighter number about a different subject — the rift, not the fault.

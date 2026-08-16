@@ -1,0 +1,50 @@
+{
+ "site": 5,
+ "name": "Southern Sangre de Cristo fault",
+ "lat": 36.849,
+ "lon": -105.551,
+ "half_km": 18.0,
+ "bbox": [
+  -105.75306475309338,
+  36.68730398850161,
+  -105.34893524690662,
+  37.01069601149838
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 362580,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-105.75306475309338,36.68730398850161,-105.34893524690662,37.01069601149838&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 93076,
+   "how": "FETCHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-105.75306475309338,36.68730398850161,-105.34893524690662,37.01069601149838&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 303614,
+   "how": "FETCHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-106.56132376546692,36.040519942508084,-104.54067623453308,37.65748005749191&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 701,
+   "min_mGal": -280.9187456921127,
+   "max_mGal": -241.73561919059114,
+   "range_mGal": 39.18312650152154
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 3,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=36.040519942508084&maxlatitude=37.65748005749191&minlongitude=-106.56132376546692&maxlongitude=-104.54067623453308&minmagnitude=1.0&limit=2000&orderby=magnitude",
+   "note": "context bbox, M>=1.0, ANSS"
+  }
+ },
+ "built": "2026-08-15 22:28:17",
+ "output": "work/figures\\05_southern-sangre-de-cristo-fault.png"
+}

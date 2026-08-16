@@ -130,3 +130,40 @@ GRADE MOVE: H-2 Hypothesized → validated (baseline explanation). H-3 Hypothesi
 (unsupported-on-record, NOT disproven — subject verification-proof). H-4 Hypothesized → unsupported-on-record.
 H-1 (verification-proof, chronicler-mediated, teller-variant persona) → strongly supported, carries the case.
 LINKS: research/tim-taylor · METHOD-cage-audit.md (born from this case's Turn-47 audit)
+
+
+## 2026-08-15 — Place-threshold screen: does the physics predict WHERE, and does the starting site rank first?
+VERDICT: disconfirmed (H-4, as stated) / validated (H-0, for the gates) / open (H-1, H-2, H-3)
+EVIDENCE: A continental screen carrying ONLY physics criteria — dilatant (normal) slip sense as a gate, recency
+of Quaternary rupture, quartz-rich crystalline lithology sampled ALONG THE TRACE, and junction density — ran over
+USGS Qfaults national layer 21 (112,809 features; 54,249 extensional) thinned to 507 CONUS nodes. Lore, sighting
+counts, light records and facility proximity stayed OUT of the score by design, and got looked up afterward per
+site, including sites where I expected nothing. 62 of 507 nodes (~12%) returned quartz-rich trace rock, so the
+criterion discriminates. Ten sites ranked; ten four-panel plates rendered, each preserving its own layer request
+URLs. THREE DEFLATIONS TRAVEL WITH THE LIST AND OUTRANK IT: (1) 400 trials redrawing every weight uniformly over
+a +/-50% band hold only 3 of 10 slots at 100%; slots 4-5 amount to a coin flip among five sites. (2) The top three
+sit inside one ~150 km triangle on the Yellowstone parabola, so the thinning rule counted faults rather than
+provinces and one fact spoke three times; regrouped by province, the Rio Grande rift places 2nd nationally.
+(3) Bouguer gradient measured AT each starred coordinate ranges 0.9% to 77.1% of panel range — several stars sit
+off the density step the figure appears to show. The starting site, scored on its own trace lithology (75% of 16
+trace points quartz-rich, one unit named Sandia Granite) rather than the at-point probe that had failed it 1.5 km
+off-trace in fan gravel, reaches 6.65 and lands ~9th, losing on rupture recency alone. Separately, the aperture
+sweep behind the D196 geodetic addendum profiled the wrong velocity component, and widening the swath past the
+fault's measured 74 km length produced a tighter number about the rift rather than the fault; finding C withdrawn.
+Held-out lore result, reported with its own weakness: 4 of 5 printed sites carry grade-A or A/B material, 1
+(Centennial) carries almost none, and the base rate behind all of it remains UNMEASURED.
+DECORRELATED EYE: NONE on the interpretation. The world's own data supplied every input (USGS Qfaults, SGMC2,
+3DEP, Bouguer gravity, ANSS, MIDAS, Macrostrat — live pulls, URLs preserved per figure so anyone may re-pull and
+disagree), which counts for the INPUTS and not for the ranking. No human and no non-Claude model has looked yet.
+Clayton set the constraint that forced the design ("I'm tied to the geophysics and lore. That's it"), which
+produced the held-out ordering but does not constitute an independent grade.
+GRADE MOVE: H-4 ("Sandia/Hubbell ranks best in CONUS") Hypothesized -> DISCONFIRMED AS STATED; the weaker
+class-of-terrain claim survives and stays separate. H-0 (a screen may only measure its own instruments)
+Hypothesized -> VALIDATED for the gates, open for the weights. H-1, H-2, H-3 opened as Hypothesized with kill
+conditions declared BEFORE their test. Topic entered GRADES.md under 'Under research'; inputs entered Documented;
+the score entered Inferred. Geodetic finding C -> withdrawn by its own author.
+LINKS: research/place-threshold-screen/ (README · SUMMARY.md · hypotheses.md · reports/01-07 · code/ · figures/)
+OPEN INSTRUMENTS: code/trace_lithology_national.py RUNNING at entry time (445 faults that failed the at-point
+probe, re-measured along trace, Sandia declared positive control and Hubbell Spring declared negative — a failed
+control voids the pass); the blind 30-fault lore base rate UNBUILT and load-bearing for both H-1 and H-2;
+aeromagnetic depth-to-basement UNBUILT.

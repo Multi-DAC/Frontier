@@ -1,0 +1,284 @@
+{
+  "fault_facts_from_qfaults": {
+    "slip_sense": "Normal",
+    "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+    "slip_rate_mid_mm_yr": 0.6,
+    "slip_rate_range_mm_yr": [
+      0.2,
+      1.0
+    ],
+    "total_fault_length_km": 74.0,
+    "max_honest_along_strike_halfwidth_km": 37.0
+  },
+  "why_this_reruns": "last night profiled FAULT-PARALLEL velocity; a normal fault's interseismic signal is in FAULT-NORMAL and VERTICAL",
+  "apertures": [
+    {
+      "aperture": "fault-scale (+/-37 km = half the mapped 74 km trace)",
+      "along_hw_km": 37.0,
+      "norm_hw_km": 40.0,
+      "n": 12,
+      "components": [
+        {
+          "component": "FAULT-NORMAL (extension) <- the right one",
+          "n": 12,
+          "indep_west": 5,
+          "indep_east": 2,
+          "scatter_mm_yr": 0.345,
+          "observed_diff_mm_yr": 0.25,
+          "sigma_mm_yr": 0.289,
+          "min_detect_2sig": 0.578,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.86,
+          "z_vs_prediction": 1.21,
+          "excludes_zero": false,
+          "excludes_prediction": false,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": true,
+          "verdict": "UNDECIDED -- observed +0.25 is consistent with BOTH zero (0.9s) and the published 0.6 (1.2s). No refutation is available here."
+        },
+        {
+          "component": "VERTICAL (footwall/hanging wall)",
+          "n": 12,
+          "indep_west": 5,
+          "indep_east": 2,
+          "scatter_mm_yr": 1.091,
+          "observed_diff_mm_yr": -1.237,
+          "sigma_mm_yr": 0.913,
+          "min_detect_2sig": 1.826,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 1.35,
+          "z_vs_prediction": 2.01,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "REFUTES PUBLISHED RATE -- observed -1.24 excludes 0.6 at 2.0s, consistent with zero"
+        },
+        {
+          "component": "fault-parallel (last night's, wrong for normal slip)",
+          "n": 12,
+          "indep_west": 5,
+          "indep_east": 2,
+          "scatter_mm_yr": 0.444,
+          "observed_diff_mm_yr": -0.082,
+          "sigma_mm_yr": 0.371,
+          "min_detect_2sig": 0.743,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.22,
+          "z_vs_prediction": 1.84,
+          "excludes_zero": false,
+          "excludes_prediction": false,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "UNDECIDED -- observed -0.08 is consistent with BOTH zero (0.2s) and the published 0.6 (1.8s). No refutation is available here."
+        }
+      ]
+    },
+    {
+      "aperture": "last night's run (+/-60 km)",
+      "along_hw_km": 60.0,
+      "norm_hw_km": 40.0,
+      "n": 14,
+      "components": [
+        {
+          "component": "FAULT-NORMAL (extension) <- the right one",
+          "n": 14,
+          "indep_west": 7,
+          "indep_east": 2,
+          "scatter_mm_yr": 0.666,
+          "observed_diff_mm_yr": 0.046,
+          "sigma_mm_yr": 0.534,
+          "min_detect_2sig": 1.069,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.09,
+          "z_vs_prediction": 1.04,
+          "excludes_zero": false,
+          "excludes_prediction": false,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "UNDECIDED -- observed +0.05 is consistent with BOTH zero (0.1s) and the published 0.6 (1.0s). No refutation is available here."
+        },
+        {
+          "component": "VERTICAL (footwall/hanging wall)",
+          "n": 14,
+          "indep_west": 7,
+          "indep_east": 2,
+          "scatter_mm_yr": 1.078,
+          "observed_diff_mm_yr": -1.286,
+          "sigma_mm_yr": 0.865,
+          "min_detect_2sig": 1.729,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 1.49,
+          "z_vs_prediction": 2.18,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "REFUTES PUBLISHED RATE -- observed -1.29 excludes 0.6 at 2.2s, consistent with zero"
+        },
+        {
+          "component": "fault-parallel (last night's, wrong for normal slip)",
+          "n": 14,
+          "indep_west": 7,
+          "indep_east": 2,
+          "scatter_mm_yr": 0.649,
+          "observed_diff_mm_yr": -0.155,
+          "sigma_mm_yr": 0.52,
+          "min_detect_2sig": 1.04,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.3,
+          "z_vs_prediction": 1.45,
+          "excludes_zero": false,
+          "excludes_prediction": false,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "UNDECIDED -- observed -0.15 is consistent with BOTH zero (0.3s) and the published 0.6 (1.5s). No refutation is available here."
+        }
+      ]
+    },
+    {
+      "aperture": "wide (+/-100 km)",
+      "along_hw_km": 100.0,
+      "norm_hw_km": 40.0,
+      "n": 22,
+      "components": [
+        {
+          "component": "FAULT-NORMAL (extension) <- the right one",
+          "n": 22,
+          "indep_west": 12,
+          "indep_east": 5,
+          "scatter_mm_yr": 0.6,
+          "observed_diff_mm_yr": -0.075,
+          "sigma_mm_yr": 0.319,
+          "min_detect_2sig": 0.639,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.23,
+          "z_vs_prediction": 2.11,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "REFUTES PUBLISHED RATE -- observed -0.07 excludes 0.6 at 2.1s, consistent with zero"
+        },
+        {
+          "component": "VERTICAL (footwall/hanging wall)",
+          "n": 22,
+          "indep_west": 12,
+          "indep_east": 5,
+          "scatter_mm_yr": 1.215,
+          "observed_diff_mm_yr": -1.646,
+          "sigma_mm_yr": 0.647,
+          "min_detect_2sig": 1.293,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 2.55,
+          "z_vs_prediction": 3.47,
+          "excludes_zero": true,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "observed -1.65 excludes BOTH zero (2.5s) and 0.6 (3.5s) -- something else"
+        },
+        {
+          "component": "fault-parallel (last night's, wrong for normal slip)",
+          "n": 22,
+          "indep_west": 12,
+          "indep_east": 5,
+          "scatter_mm_yr": 0.633,
+          "observed_diff_mm_yr": -0.217,
+          "sigma_mm_yr": 0.337,
+          "min_detect_2sig": 0.674,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.64,
+          "z_vs_prediction": 2.42,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "REFUTES PUBLISHED RATE -- observed -0.22 excludes 0.6 at 2.4s, consistent with zero"
+        }
+      ]
+    },
+    {
+      "aperture": "rift-scale (+/-260 km -- NO LONGER THIS FAULT)",
+      "along_hw_km": 260.0,
+      "norm_hw_km": 40.0,
+      "n": 29,
+      "components": [
+        {
+          "component": "FAULT-NORMAL (extension) <- the right one",
+          "n": 29,
+          "indep_west": 15,
+          "indep_east": 8,
+          "scatter_mm_yr": 0.56,
+          "observed_diff_mm_yr": 0.032,
+          "sigma_mm_yr": 0.245,
+          "min_detect_2sig": 0.491,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.13,
+          "z_vs_prediction": 2.32,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": true,
+          "verdict": "REFUTES PUBLISHED RATE -- observed +0.03 excludes 0.6 at 2.3s, consistent with zero"
+        },
+        {
+          "component": "VERTICAL (footwall/hanging wall)",
+          "n": 29,
+          "indep_west": 15,
+          "indep_east": 8,
+          "scatter_mm_yr": 1.129,
+          "observed_diff_mm_yr": -1.028,
+          "sigma_mm_yr": 0.494,
+          "min_detect_2sig": 0.988,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 2.08,
+          "z_vs_prediction": 3.29,
+          "excludes_zero": true,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": false,
+          "verdict": "observed -1.03 excludes BOTH zero (2.1s) and 0.6 (3.3s) -- something else"
+        },
+        {
+          "component": "fault-parallel (last night's, wrong for normal slip)",
+          "n": 29,
+          "indep_west": 15,
+          "indep_east": 8,
+          "scatter_mm_yr": 0.555,
+          "observed_diff_mm_yr": -0.196,
+          "sigma_mm_yr": 0.243,
+          "min_detect_2sig": 0.486,
+          "predicted_mm_yr": 0.6,
+          "z_vs_zero": 0.81,
+          "z_vs_prediction": 3.28,
+          "excludes_zero": false,
+          "excludes_prediction": true,
+          "CAN_THE_INSTRUMENT_SEPARATE_THEM": true,
+          "verdict": "REFUTES PUBLISHED RATE -- observed -0.20 excludes 0.6 at 3.3s, consistent with zero"
+        }
+      ]
+    }
+  ],
+  "what_would_be_needed": {
+    "fault-normal": {
+      "scatter_mm_yr": 0.345,
+      "to_detect_0.6_mm_yr": {
+        "total_indep_sites": 6,
+        "west": 3,
+        "east": 3
+      },
+      "to_detect_0.2_mm_yr_lower_bound": {
+        "total_indep_sites": 48,
+        "west": 24,
+        "east": 24
+      },
+      "currently_have": {
+        "indep_west": 5,
+        "indep_east": 2
+      }
+    },
+    "vertical": {
+      "scatter_mm_yr": 1.091,
+      "to_detect_0.6_mm_yr": {
+        "total_indep_sites": 53,
+        "west": 26,
+        "east": 27
+      },
+      "to_detect_0.2_mm_yr_lower_bound": null,
+      "currently_have": {
+        "indep_west": 5,
+        "indep_east": 2
+      }
+    }
+  }
+}

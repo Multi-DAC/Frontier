@@ -1,0 +1,114 @@
+{
+ "query": "Sandia",
+ "exact": null,
+ "segments": 56,
+ "distinct_names": {
+  "Sandia fault": 56
+ },
+ "bins": [
+  {
+   "lat": 35.208,
+   "lon": -106.505,
+   "traced_km": 10.17,
+   "well_km": 0.06,
+   "well_pct": 1,
+   "mod_pct": 11
+  },
+  {
+   "lat": 35.19,
+   "lon": -106.4938,
+   "traced_km": 15.27,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 10
+  },
+  {
+   "lat": 35.172,
+   "lon": -106.4935,
+   "traced_km": 11.86,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 7
+  },
+  {
+   "lat": 35.154,
+   "lon": -106.4939,
+   "traced_km": 8.16,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.136,
+   "lon": -106.4947,
+   "traced_km": 7.96,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.118,
+   "lon": -106.4926,
+   "traced_km": 3.69,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.1,
+   "lon": -106.4901,
+   "traced_km": 6.67,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.082,
+   "lon": -106.4905,
+   "traced_km": 5.43,
+   "well_km": 0.08,
+   "well_pct": 1,
+   "mod_pct": 6
+  },
+  {
+   "lat": 35.064,
+   "lon": -106.4948,
+   "traced_km": 3.25,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 25
+  },
+  {
+   "lat": 35.046,
+   "lon": -106.4984,
+   "traced_km": 2.23,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.028,
+   "lon": -106.5022,
+   "traced_km": 1.9,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 35.01,
+   "lon": -106.506,
+   "traced_km": 1.87,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  },
+  {
+   "lat": 34.992,
+   "lon": -106.51,
+   "traced_km": 2.06,
+   "well_km": 0.0,
+   "well_pct": 0,
+   "mod_pct": 0
+  }
+ ]
+}

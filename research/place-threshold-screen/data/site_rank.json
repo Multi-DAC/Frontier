@@ -1,0 +1,1685 @@
+{
+ "n": 62,
+ "criteria": "P1 age, P2 dilatant (gate), P3 quartz at trace, P4 junction density; NO lore, NO light-record",
+ "rows": [
+  {
+   "lat": 44.792,
+   "lon": -111.438,
+   "age": "historic",
+   "age_rank": 5,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Madison fault",
+   "section_name": "Madison Canyon section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 98,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks",
+   "n_systems_15km": 6,
+   "systems_15km": [
+    "Hebgen fault",
+    "Madison fault",
+    "Red Canyon fault",
+    "West Fork fault",
+    "unnamed fault near Cliff Lake",
+    "unnamed fault near Mile Creek"
+   ],
+   "score": {
+    "age": 3.0,
+    "tier": 2.0,
+    "length": 1.99,
+    "junction": 2.0,
+    "total": 8.99
+   }
+  },
+  {
+   "lat": 44.584,
+   "lon": -112.066,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Centennial fault",
+   "section_name": "western Centennial Valley section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 62,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Frontier Formation",
+   "n_systems_15km": 5,
+   "systems_15km": [
+    "Centennial fault",
+    "Lima Reservoir fault",
+    "unnamed fault near Cottonwood Creek",
+    "unnamed fault near Monida",
+    "unnamed fault near West Camas Creek"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.79,
+    "junction": 2.0,
+    "total": 8.19
+   }
+  },
+  {
+   "lat": 43.557,
+   "lon": -110.862,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Teton fault",
+   "section_name": "southern section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 59,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Archean crystalline metamorphic rocks",
+   "n_systems_15km": 7,
+   "systems_15km": [
+    "East Gros Ventre fault",
+    "Faults south of Blacktail Butte",
+    "Flat Creek fault system",
+    "Hoback fault",
+    "Phillips Valley fault",
+    "Secondary faults in Jackson Hole valley",
+    "Teton fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.77,
+    "junction": 2.0,
+    "total": 8.17
+   }
+  },
+  {
+   "lat": 39.094,
+   "lon": -106.38,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Sawatch fault",
+   "section_name": "northern section",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 84,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic metamorphic and undivided crystalline: sedimentary and volcanic gneiss",
+   "n_systems_15km": 5,
+   "systems_15km": [
+    "Mosquito fault",
+    "Northeastern Boundary fault system",
+    "Sawatch fault",
+    "unnamed faults near Twin Lakes Reservoir",
+    "unnamed faults south of Leadville"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.92,
+    "junction": 2.0,
+    "total": 7.72
+   }
+  },
+  {
+   "lat": 36.849,
+   "lon": -105.551,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Southern Sangre de Cristo fault",
+   "section_name": "Urraca section",
+   "linetype": "Inferred",
+   "total_fault_length": 96,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic metamorphic and undivided crystalline: sedimentary and volcanic gneiss",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Mesita fault",
+    "Southern Sangre de Cristo fault",
+    "Sunshine Valley faults"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.98,
+    "junction": 1.0,
+    "total": 7.38
+   }
+  },
+  {
+   "lat": 39.214,
+   "lon": -119.816,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 1.0 and 5.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Mount Rose fault zone",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 38,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granodiorite",
+   "at_point_unit": "Felsic phaneritic intrusive rocks",
+   "n_systems_15km": 13,
+   "systems_15km": [
+    "Carson City fault",
+    "East Carson Valley fault zone",
+    "East Tahoe fault",
+    "Eastern Prison Hill fault zone",
+    "Genoa fault",
+    "Incline Village fault",
+    "Indian Hill fault",
+    "Kings Canyon fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.58,
+    "junction": 2.0,
+    "total": 7.38
+   }
+  },
+  {
+   "lat": 46.759,
+   "lon": -112.049,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Helena valley fault",
+   "section_name": "piedmont section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 20,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 5,
+   "systems_15km": [
+    "Diamond Springs fault",
+    "Franklin Mine Road fault",
+    "Helena valley fault",
+    "Hilger fault",
+    "Spokane Bench fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.3,
+    "junction": 2.0,
+    "total": 7.1
+   }
+  },
+  {
+   "lat": 37.036,
+   "lon": -115.548,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "East Pintwater Range fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 14,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Carbonate Shelf Sequence - Limestone, dolomite, and quartzite",
+   "n_systems_15km": 7,
+   "systems_15km": [
+    "Central Pintwater Range faults",
+    "Chert Ridge faults",
+    "East Pintwater Range fault",
+    "Fallout Hills faults",
+    "Indian Springs Valley fault",
+    "North Desert Range fault",
+    "West Pintwater Range fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.15,
+    "junction": 2.0,
+    "total": 6.95
+   }
+  },
+  {
+   "lat": 40.871,
+   "lon": -111.855,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 1.0 and 5.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Wasatch fault zone",
+   "section_name": "Weber section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 357,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic crystalline metamorphic rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Wasatch fault zone",
+    "West Valley fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.5,
+    "total": 6.9
+   }
+  },
+  {
+   "lat": 38.344,
+   "lon": -105.95,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Northern Sangre de Cristo fault",
+   "section_name": "Crestone section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 164,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic metamorphic and undivided crystalline: sedimentary and volcanic gneiss",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Northern Sangre de Cristo fault",
+    "Villa Grove fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.5,
+    "total": 6.9
+   }
+  },
+  {
+   "lat": 36.11,
+   "lon": -116.735,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 1.0 and 5.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Black Mountains fault zone",
+   "section_name": "Copper Canyon section",
+   "linetype": "Inferred",
+   "total_fault_length": 70,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Precambrian rocks, undivided, unit 1 (Death Valley)",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Black Mountains fault zone",
+    "unnamed West Side faults"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.85,
+    "junction": 0.5,
+    "total": 6.75
+   }
+  },
+  {
+   "lat": 35.193,
+   "lon": -112.782,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Big Chino fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 46,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mississippian, Devonian, and Cambrian sedimentary rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Big Chino fault",
+    "Seligman fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.66,
+    "junction": 0.5,
+    "total": 6.56
+   }
+  },
+  {
+   "lat": 40.164,
+   "lon": -119.062,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Granite Springs Valley fault zone",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 50,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Felsic phaneritic intrusive rocks",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Granite Springs Valley fault zone",
+    "unnamed fault zone between Kumiva and Sage Hen Valleys",
+    "unnamed faults along Sahwave Mountains"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.7,
+    "junction": 1.0,
+    "total": 6.5
+   }
+  },
+  {
+   "lat": 31.965,
+   "lon": -106.462,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "East Franklin Mountains fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 45,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Artillery Range fault",
+    "East Franklin Mountains fault",
+    "Hueco fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.65,
+    "junction": 1.0,
+    "total": 6.45
+   }
+  },
+  {
+   "lat": 37.858,
+   "lon": -105.59,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Northern Sangre de Cristo fault",
+   "section_name": "Crestone section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 164,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Felsic and hornblendic gneisses, either separate or interlayered",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Northern Sangre de Cristo fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 6.4
+   }
+  },
+  {
+   "lat": 44.354,
+   "lon": -113.478,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Lemhi fault",
+   "section_name": "Big Gulch section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 136,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Swauger and Lawson Creek formations",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Lemhi fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 6.4
+   }
+  },
+  {
+   "lat": 47.833,
+   "lon": -114.164,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Mission fault",
+   "section_name": "Flathead Lake section",
+   "linetype": "Inferred",
+   "total_fault_length": 104,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Mission fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 6.4
+   }
+  },
+  {
+   "lat": 47.357,
+   "lon": -114.008,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Mission fault",
+   "section_name": "Mission Valley section",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 104,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Mission fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 6.4
+   }
+  },
+  {
+   "lat": 36.462,
+   "lon": -105.531,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Southern Sangre de Cristo fault",
+   "section_name": "Hondo section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 96,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic crystalline metamorphic rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Los Cordovas faults",
+    "Southern Sangre de Cristo fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.98,
+    "junction": 0.5,
+    "total": 6.28
+   }
+  },
+  {
+   "lat": 38.687,
+   "lon": -106.174,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Sawatch fault",
+   "section_name": "southern section",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 84,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granitic rock of Mount Princeton batholith, equigranular biotite-hornblende monzogranite interior facies",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Sawatch fault",
+    "unnamed fault south of Shavano Peak"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.92,
+    "junction": 0.5,
+    "total": 6.22
+   }
+  },
+  {
+   "lat": 40.109,
+   "lon": -120.089,
+   "age": "historic",
+   "age_rank": 5,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Fort Sage fault",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 17,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesozoic granitic rocks, unit 3 (Sierra Nevada, Death Valley area, Northern Mojave Desert and Transverse Ranges)",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Dry Valley-Smoke Creek Ranch fault zone",
+    "Fort Sage fault"
+   ],
+   "score": {
+    "age": 3.0,
+    "tier": 1.4,
+    "length": 1.23,
+    "junction": 0.5,
+    "total": 6.13
+   }
+  },
+  {
+   "lat": 45.006,
+   "lon": -112.538,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Blacktail fault",
+   "section_name": "Cottonwood section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 40,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Wyoming Province, gneissic rocks, southwestern Montana",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Blacktail fault",
+    "Ruby Range western border fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.6,
+    "junction": 0.5,
+    "total": 5.9
+   }
+  },
+  {
+   "lat": 46.608,
+   "lon": -111.524,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Between 0.2 and 1.0 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Canyon Ferry fault",
+   "section_name": "southern section",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 35,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Greyson Formation",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Canyon Ferry fault",
+    "Lower Duck Creek fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.54,
+    "junction": 0.5,
+    "total": 5.84
+   }
+  },
+  {
+   "lat": 32.682,
+   "lon": -106.497,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "San Andres Mountains fault",
+   "section_name": "southern section",
+   "linetype": "Inferred",
+   "total_fault_length": 114,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "San Andres Mountains fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 5.8
+   }
+  },
+  {
+   "lat": 45.947,
+   "lon": -114.172,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "0.2 +/- 0.1 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bitterroot fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 98,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granitic rock",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Bitterroot fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.99,
+    "junction": 0.0,
+    "total": 5.79
+   }
+  },
+  {
+   "lat": 32.694,
+   "lon": -109.75,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Safford fault zone",
+   "section_name": "northern section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 31,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Cactus Flats faults",
+    "Safford fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.49,
+    "junction": 0.5,
+    "total": 5.79
+   }
+  },
+  {
+   "lat": 45.368,
+   "lon": -111.6,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Madison fault",
+   "section_name": "northern section",
+   "linetype": "Inferred",
+   "total_fault_length": 98,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Archean crystalline metamorphic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Madison fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.99,
+    "junction": 0.0,
+    "total": 5.79
+   }
+  },
+  {
+   "lat": 39.904,
+   "lon": -106.466,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Gore Range frontal fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 75,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granitic rocks of 1700-m.y. age group",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Gore Range frontal fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.88,
+    "junction": 0.0,
+    "total": 5.68
+   }
+  },
+  {
+   "lat": 33.989,
+   "lon": -111.731,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Horseshoe fault zone",
+   "section_name": "Horseshoe Reservoir section",
+   "linetype": "Well Constrained",
+   "total_fault_length": 19,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic metamorphic and undivided crystalline: sedimentary and volcanic gneiss",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Horseshoe fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 2.0,
+    "length": 1.28,
+    "junction": 0.0,
+    "total": 5.68
+   }
+  },
+  {
+   "lat": 44.306,
+   "lon": -115.165,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Sawtooth fault",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 60,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Biotite granodiorite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Sawtooth fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.78,
+    "junction": 0.0,
+    "total": 5.58
+   }
+  },
+  {
+   "lat": 34.136,
+   "lon": -107.177,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "La Jencia fault",
+   "section_name": "southern section",
+   "linetype": "Inferred",
+   "total_fault_length": 43,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "La Jencia fault"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 1.63,
+    "junction": 0.0,
+    "total": 5.43
+   }
+  },
+  {
+   "lat": 41.807,
+   "lon": -113.744,
+   "age": "middle and late Quaternary",
+   "age_rank": 2,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Grouse Creek and Dove Creek Mountains faults",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 48,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Archean crystalline metamorphic rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Goose Creek Mountains fault",
+    "Grouse Creek and Dove Creek Mountains faults"
+   ],
+   "score": {
+    "age": 1.2,
+    "tier": 2.0,
+    "length": 1.68,
+    "junction": 0.5,
+    "total": 5.38
+   }
+  },
+  {
+   "lat": 41.914,
+   "lon": -115.039,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Oneil Basin fault zone",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 46,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "schist",
+   "at_point_unit": "Nolan Belt - Phyllite, schist, shale, thin-bedded limestone, chert, and siltstone",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Oneil Basin fault zone",
+    "unnamed fault zone east of Bear Mountain",
+    "unnamed fault zone in Oneil Basin"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.66,
+    "junction": 1.0,
+    "total": 5.26
+   }
+  },
+  {
+   "lat": 38.984,
+   "lon": -105.608,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "East-Side Chase Gulch fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 31,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granitic rocks of 1700-m.y. age group",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "East-Side Chase Gulch fault",
+    "Eleven Mile fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 1.4,
+    "length": 1.49,
+    "junction": 0.5,
+    "total": 5.19
+   }
+  },
+  {
+   "lat": 35.971,
+   "lon": -105.308,
+   "age": "middle and late Quaternary",
+   "age_rank": 2,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "El Oro fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 27,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "schist",
+   "at_point_unit": "Paleoproterozoic crystalline metamorphic rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "El Oro fault",
+    "Quebraditas fault zone"
+   ],
+   "score": {
+    "age": 1.2,
+    "tier": 2.0,
+    "length": 1.43,
+    "junction": 0.5,
+    "total": 5.13
+   }
+  },
+  {
+   "lat": 48.412,
+   "lon": -114.142,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Swan fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 154,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "South Fork Flathead fault",
+    "Swan fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.5,
+    "total": 5.1
+   }
+  },
+  {
+   "lat": 38.87,
+   "lon": -104.944,
+   "age": "middle and late Quaternary",
+   "age_rank": 2,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Ute Pass fault zone",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 71,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Rocks of Pikes Peak Batholith (1000-m.y. age group)",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Rampart Range fault",
+    "Ute Pass fault zone"
+   ],
+   "score": {
+    "age": 1.2,
+    "tier": 1.4,
+    "length": 1.85,
+    "junction": 0.5,
+    "total": 4.95
+   }
+  },
+  {
+   "lat": 48.331,
+   "lon": -115.794,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bull Lake fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 22,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Bull Lake fault",
+    "O'Brien Creek fault",
+    "Savage Lake fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.34,
+    "junction": 1.0,
+    "total": 4.94
+   }
+  },
+  {
+   "lat": 35.375,
+   "lon": -118.56,
+   "age": "historic",
+   "age_rank": 5,
+   "slip_rate_class": "Unspecified",
+   "slip_sense": "Normal",
+   "fault_name": "Breckenridge fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 0,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesozoic granitic rocks, unit 3 (Sierra Nevada, Death Valley area, Northern Mojave Desert and Transverse Ranges)",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Breckenridge fault",
+    "Kern Canyon fault zone"
+   ],
+   "score": {
+    "age": 3.0,
+    "tier": 1.4,
+    "length": 0.0,
+    "junction": 0.5,
+    "total": 4.9
+   }
+  },
+  {
+   "lat": 47.769,
+   "lon": -114.968,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Thompson Valley fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 10,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Thompson Valley fault"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 2.0,
+    "length": 1.0,
+    "junction": 0.0,
+    "total": 4.8
+   }
+  },
+  {
+   "lat": 45.857,
+   "lon": -111.021,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bridger fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 48,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "LaHood Formation: locally includes Table Mountain and Moose Formations in Highland Mountains",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Bridger fault",
+    "Central Park fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.68,
+    "junction": 0.5,
+    "total": 4.78
+   }
+  },
+  {
+   "lat": 47.315,
+   "lon": -113.473,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Swan fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 154,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Upper Missoula Group: McNamara, Bonner, and Mount Shields Formations; locally includes lower Libby Formation in northwestern Montana",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Swan fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 4.6
+   }
+  },
+  {
+   "lat": 48.117,
+   "lon": -113.698,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "South Fork Flathead fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 147,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "South Fork Flathead fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 4.6
+   }
+  },
+  {
+   "lat": 46.788,
+   "lon": -114.109,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bitterroot fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 98,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Snowslip Formation",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Bitterroot fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.99,
+    "junction": 0.0,
+    "total": 4.59
+   }
+  },
+  {
+   "lat": 39.285,
+   "lon": -105.143,
+   "age": "middle and late Quaternary",
+   "age_rank": 2,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Ute Pass fault zone",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 71,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Ute Pass fault zone"
+   ],
+   "score": {
+    "age": 1.2,
+    "tier": 1.4,
+    "length": 1.85,
+    "junction": 0.0,
+    "total": 4.45
+   }
+  },
+  {
+   "lat": 47.246,
+   "lon": -114.68,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Ninemile fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 70,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Ninemile fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.85,
+    "junction": 0.0,
+    "total": 4.45
+   }
+  },
+  {
+   "lat": 41.604,
+   "lon": -111.561,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bear River Range faults",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 63,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Geertsen Canyon Quartzite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Bear River Range faults"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.8,
+    "junction": 0.0,
+    "total": 4.4
+   }
+  },
+  {
+   "lat": 45.908,
+   "lon": -112.622,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Rocker fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 43,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Monzogranite in the Anaconda Range and the Boulder batholith",
+   "n_systems_15km": 2,
+   "systems_15km": [
+    "Continental fault",
+    "Rocker fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 1.4,
+    "length": 1.63,
+    "junction": 0.5,
+    "total": 4.13
+   }
+  },
+  {
+   "lat": 33.686,
+   "lon": -111.469,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Sugarloaf fault zone",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 8,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesoproterozoic plutonic: granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Sugarloaf fault zone"
+   ],
+   "score": {
+    "age": 1.8,
+    "tier": 1.4,
+    "length": 0.9,
+    "junction": 0.0,
+    "total": 4.1
+   }
+  },
+  {
+   "lat": 47.064,
+   "lon": -113.041,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "unnamed fault near Ovando",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 29,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "quartzite",
+   "at_point_unit": "Mesoproterozoic sedimentary and volcanic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "unnamed fault near Ovando"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 2.0,
+    "length": 1.46,
+    "junction": 0.0,
+    "total": 4.06
+   }
+  },
+  {
+   "lat": 35.559,
+   "lon": -105.822,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Picuris-Pecos fault",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 98,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "schist",
+   "at_point_unit": "Paleoproterozoic crystalline metamorphic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Picuris-Pecos fault"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 2.0,
+    "length": 1.99,
+    "junction": 0.0,
+    "total": 3.99
+   }
+  },
+  {
+   "lat": 44.269,
+   "lon": -115.689,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Deadwood-Reeves Creek fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 87,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granodiorite and two-mica granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Deadwood-Reeves Creek fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 1.4,
+    "length": 1.94,
+    "junction": 0.0,
+    "total": 3.94
+   }
+  },
+  {
+   "lat": 44.628,
+   "lon": -115.502,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Deadwood-Reeves Creek fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 87,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granodiorite and two-mica granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Deadwood-Reeves Creek fault"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 1.4,
+    "length": 1.94,
+    "junction": 0.0,
+    "total": 3.94
+   }
+  },
+  {
+   "lat": 36.125,
+   "lon": -118.44,
+   "age": "latest Quaternary",
+   "age_rank": 4,
+   "slip_rate_class": "Unspecified",
+   "slip_sense": "Normal",
+   "fault_name": "Kern Canyon fault zone",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 0,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Mesozoic granitic rocks, unit 3 (Sierra Nevada, Death Valley area, Northern Mojave Desert and Transverse Ranges)",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Kern Canyon fault zone"
+   ],
+   "score": {
+    "age": 2.4,
+    "tier": 1.4,
+    "length": 0.0,
+    "junction": 0.0,
+    "total": 3.8
+   }
+  },
+  {
+   "lat": 41.981,
+   "lon": -113.308,
+   "age": "middle and late Quaternary",
+   "age_rank": 2,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Raft River Mountains fault",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 2,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Neoarchean metamorphic and undivided crystalline: undivided gneissic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Raft River Mountains fault"
+   ],
+   "score": {
+    "age": 1.2,
+    "tier": 2.0,
+    "length": 0.3,
+    "junction": 0.0,
+    "total": 3.5
+   }
+  },
+  {
+   "lat": 37.793,
+   "lon": -110.592,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Bright Angel fault system",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 109,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Laccolithic intrusions mostly diorite porphyry",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Bright Angel fault system"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 1.4,
+    "length": 2.0,
+    "junction": 0.0,
+    "total": 3.4
+   }
+  },
+  {
+   "lat": 36.577,
+   "lon": -106.018,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Las Tablas fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 21,
+   "at_point_tier": "TIER_FABRIC",
+   "at_point_term": "gneiss",
+   "at_point_unit": "Paleoproterozoic metamorphic and undivided crystalline: sedimentary and volcanic gneiss",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Las Tablas fault"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 2.0,
+    "length": 1.32,
+    "junction": 0.0,
+    "total": 3.32
+   }
+  },
+  {
+   "lat": 46.259,
+   "lon": -114.716,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Cedar Creek fault",
+   "section_name": "",
+   "linetype": "Inferred",
+   "total_fault_length": 55,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Idaho batholith, biotite- and muscovite-biotite granodiorite and granite",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Cedar Creek fault"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 1.4,
+    "length": 1.74,
+    "junction": 0.0,
+    "total": 3.14
+   }
+  },
+  {
+   "lat": 46.626,
+   "lon": -114.666,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Cedar Creek fault",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 55,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Challis intrusive rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Cedar Creek fault"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 1.4,
+    "length": 1.74,
+    "junction": 0.0,
+    "total": 3.14
+   }
+  },
+  {
+   "lat": 32.303,
+   "lon": -114.086,
+   "age": "undifferentiated Quaternary",
+   "age_rank": 1,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Tinajas Altas fault zone",
+   "section_name": "",
+   "linetype": "Well Constrained",
+   "total_fault_length": 7,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Early Tertiary to Late Cretaceous muscovite-bearing granitic rocks",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Tinajas Altas fault zone"
+   ],
+   "score": {
+    "age": 0.6,
+    "tier": 1.4,
+    "length": 0.85,
+    "junction": 0.0,
+    "total": 2.85
+   }
+  },
+  {
+   "lat": 42.647,
+   "lon": -109.358,
+   "age": "class B",
+   "age_rank": 0,
+   "slip_rate_class": "Less than 0.2 mm/yr",
+   "slip_sense": "Normal",
+   "fault_name": "Leckie fault",
+   "section_name": "",
+   "linetype": "Moderately Constrained",
+   "total_fault_length": 17,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granitic rocks of 2,600-Ma Age Group",
+   "n_systems_15km": 1,
+   "systems_15km": [
+    "Leckie fault"
+   ],
+   "score": {
+    "age": 0.0,
+    "tier": 1.4,
+    "length": 1.23,
+    "junction": 0.0,
+    "total": 2.63
+   }
+  },
+  {
+   "lat": 35.06,
+   "lon": -106.43,
+   "age": "forced-pin",
+   "age_rank": -1,
+   "slip_rate_class": null,
+   "slip_sense": "Normal",
+   "fault_name": "Tijeras-Canoncito (June's best RAW convergence, demoted)",
+   "section_name": null,
+   "linetype": null,
+   "total_fault_length": 0,
+   "forced": true,
+   "at_point_tier": "TIER_PLUTONIC",
+   "at_point_term": "granite",
+   "at_point_unit": "Granite",
+   "n_systems_15km": 3,
+   "systems_15km": [
+    "Coyote fault",
+    "Hubbell Spring fault",
+    "Sandia fault"
+   ],
+   "score": {
+    "age": -0.6,
+    "tier": 1.4,
+    "length": 0.0,
+    "junction": 1.0,
+    "total": 1.8
+   }
+  }
+ ]
+}
