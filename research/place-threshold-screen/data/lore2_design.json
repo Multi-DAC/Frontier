@@ -1,0 +1,33 @@
+{
+ "designed": "2026-08-16",
+ "supersedes": null,
+ "companion": "lore_experiment_design.py (v1, anomalous-light record)",
+ "hypotheses": {
+  "H2": "physics rank -> anomaly-shaped Indigenous place-narrative density",
+  "H3": "physics rank -> US/settler historical incident density"
+ },
+ "native_tiers": [
+  "NT3",
+  "NT2",
+  "NT1",
+  "NT0",
+  "NX"
+ ],
+ "settler_tiers": [
+  "HT3",
+  "HT2",
+  "HT1",
+  "HT0"
+ ],
+ "denominator": "N_ANY -- any documented Indigenous association within 25 km",
+ "headline": "ratio N_ANOM/N_ANY, not count of N_ANOM",
+ "queries_per_site": 4,
+ "blind": false,
+ "positive_control": "Sandia fault -- run and reported FIRST; failure invalidates all",
+ "negative_control": "Hubbell Spring fault",
+ "asymmetry": "instrument can REFUTE H2, cannot CONFIRM it; searchability of Indigenous narrative is a settler-archive artifact with a known sign",
+ "excluded_not_zeroed": "NX sites are coverage gaps, not negatives",
+ "readout_rule": ">=1 full tier separation on mean NT, predicted direction = SUPPORTED",
+ "kill_rule": "see lore2_covariates.py -- confound beats effect",
+ "lore_status_at_freeze": "NO Native-lore query has been run at the time of writing"
+}

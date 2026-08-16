@@ -1,0 +1,202 @@
+{
+ "designed": "2026-08-16",
+ "leg": "H3 -- US/settler historical record",
+ "inherits": "lore2_design.py (HT tiers, template (c), pairs, readout, no-thread-chasing)",
+ "hypothesis": "H3: physics rank -> density of US/settler historical incident record",
+ "denominator": "H_ANY (near-unity expected); headline is mean HT and H_SPEC/H_ANY",
+ "queries_per_site": 1,
+ "blind": false,
+ "covariate_note": "observer matching (census places <=50km) is the CORRECT control for H3 and was nearly inert for H2; the likely positive mechanism has therefore been deliberately removed",
+ "positive_control": {
+  "site": "Sandia fault",
+  "expected_before_running": "Manzano Weapons Storage Area / Kirtland AFB / Bennewitz 1979-80 AFOSI operation, all <25 km",
+  "fail_condition": "generic Albuquerque background only -- exactly how the v1 run died",
+  "order": "run and reported FIRST"
+ },
+ "negative_side_control": "Hubbell Spring fault -- scored, reported, excluded from readout",
+ "readout_rule": ">=1 full tier separation on mean HT, predicted direction = SUPPORTED",
+ "kill_rule": "if SUPPORTED, flag any pair where winner observer count > 1.5x decoy and recompute without it",
+ "h3_status_at_freeze": "NO settler-history query has been run for ANY site at the time of writing",
+ "queries": [
+  {
+   "rank": 1,
+   "role": "winner",
+   "fault": "Madison fault",
+   "lat": 44.792,
+   "lon": -111.438,
+   "observer_places_50km": 4,
+   "query": "\"Madison\" Hebgen Lake Estates MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 1,
+   "role": "decoy",
+   "fault": "Big Chino fault",
+   "lat": 35.193,
+   "lon": -112.782,
+   "observer_places_50km": 4,
+   "query": "\"Big Chino\" Seligman AZ history settlement OR mining OR incident"
+  },
+  {
+   "rank": 2,
+   "role": "winner",
+   "fault": "Round Valley fault",
+   "lat": 37.542,
+   "lon": -118.726,
+   "observer_places_50km": 16,
+   "query": "\"Round Valley\" Aspen Springs CA history settlement OR mining OR incident"
+  },
+  {
+   "rank": 2,
+   "role": "decoy",
+   "fault": "Thompson Valley fault",
+   "lat": 47.769,
+   "lon": -114.968,
+   "observer_places_50km": 15,
+   "query": "\"Thompson Valley\" Lonepine MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 3,
+   "role": "winner",
+   "fault": "Little Valley fault",
+   "lat": 39.237,
+   "lon": -119.886,
+   "observer_places_50km": 47,
+   "query": "\"Little Valley\" Incline Village NV history settlement OR mining OR incident"
+  },
+  {
+   "rank": 3,
+   "role": "decoy",
+   "fault": "Bear River Range faults",
+   "lat": 41.604,
+   "lon": -111.561,
+   "observer_places_50km": 44,
+   "query": "\"Bear River Range\" Avon UT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 4,
+   "role": "winner",
+   "fault": "Helena valley fault",
+   "lat": 46.759,
+   "lon": -112.049,
+   "observer_places_50km": 22,
+   "query": "\"Helena valley\" Helena Valley Northwest MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 4,
+   "role": "decoy",
+   "fault": "Bull Mountain western border fault",
+   "lat": 46.165,
+   "lon": -112.103,
+   "observer_places_50km": 22,
+   "query": "\"Bull Mountain western border\" Boulder MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 5,
+   "role": "winner",
+   "fault": "Red Rock fault",
+   "lat": 44.66,
+   "lon": -112.698,
+   "observer_places_50km": 3,
+   "query": "\"Red Rock\" Dell MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 5,
+   "role": "decoy",
+   "fault": "Lida faults",
+   "lat": 37.421,
+   "lon": -117.578,
+   "observer_places_50km": 3,
+   "query": "\"Lida\" Silver Peak NV history settlement OR mining OR incident"
+  },
+  {
+   "rank": 6,
+   "role": "winner",
+   "fault": "Sand Springs Range fault",
+   "lat": 39.19,
+   "lon": -118.338,
+   "observer_places_50km": 3,
+   "query": "\"Sand Springs Range\" Fallon Station NV history settlement OR mining OR incident"
+  },
+  {
+   "rank": 6,
+   "role": "decoy",
+   "fault": "Lone Pine fault",
+   "lat": 44.263,
+   "lon": -113.955,
+   "observer_places_50km": 3,
+   "query": "\"Lone Pine\" Clayton ID history settlement OR mining OR incident"
+  },
+  {
+   "rank": 7,
+   "role": "winner",
+   "fault": "Mosquito fault",
+   "lat": 39.327,
+   "lon": -106.14,
+   "observer_places_50km": 20,
+   "query": "\"Mosquito\" Alma CO history settlement OR mining OR incident"
+  },
+  {
+   "rank": 7,
+   "role": "decoy",
+   "fault": "unnamed faults west of Hungry Valley",
+   "lat": 39.809,
+   "lon": -119.8,
+   "observer_places_50km": 20,
+   "query": "Lemmon Valley NV history settlement OR mining OR incident"
+  },
+  {
+   "rank": 8,
+   "role": "winner",
+   "fault": "Sandia fault",
+   "lat": 35.153,
+   "lon": -106.472,
+   "observer_places_50km": 59,
+   "query": "\"Sandia\" Sandia Heights NM history settlement OR mining OR incident"
+  },
+  {
+   "rank": 8,
+   "role": "decoy",
+   "fault": "Picuris-Pecos fault",
+   "lat": 35.559,
+   "lon": -105.822,
+   "observer_places_50km": 61,
+   "query": "\"Picuris-Pecos\" Ca\u00f1oncito NM history settlement OR mining OR incident"
+  },
+  {
+   "rank": 9,
+   "role": "winner",
+   "fault": "Bear River fault zone",
+   "lat": 41.091,
+   "lon": -110.812,
+   "observer_places_50km": 6,
+   "query": "\"Bear River\" Evanston WY history settlement OR mining OR incident"
+  },
+  {
+   "rank": 9,
+   "role": "decoy",
+   "fault": "Sweetwater fault",
+   "lat": 45.04,
+   "lon": -112.275,
+   "observer_places_50km": 6,
+   "query": "\"Sweetwater\" Alder MT history settlement OR mining OR incident"
+  },
+  {
+   "rank": 10,
+   "role": "winner",
+   "fault": "Teton fault",
+   "lat": 44.013,
+   "lon": -110.682,
+   "observer_places_50km": 5,
+   "query": "\"Teton\" Alta WY history settlement OR mining OR incident"
+  },
+  {
+   "rank": 10,
+   "role": "decoy",
+   "fault": "unnamed fault near Ovando",
+   "lat": 47.145,
+   "lon": -113.311,
+   "observer_places_50km": 5,
+   "query": "Seeley Lake MT history settlement OR mining OR incident"
+  }
+ ]
+}

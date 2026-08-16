@@ -1,0 +1,197 @@
+{
+ "verdict_PRIMARY_prereg": "NOT SUPPORTED",
+ "winner_mean_HT": 2.5,
+ "decoy_mean_HT": 1.6,
+ "separation": 0.9,
+ "required": 1.0,
+ "sign_test": {
+  "non_tied": 8,
+  "favour_winner": 6,
+  "p_two_sided": 0.2891
+ },
+ "H_ANY_satisfied": "20/20 -- near-unity base rate, exactly as pre-declared; NOT a finding",
+ "place_specific_ratio_HT2plus": {
+  "winners": "9/10",
+  "decoys": "4/10"
+ },
+ "zeroes": {
+  "winners": [
+   "Red Rock fault"
+  ],
+  "decoys": [
+   "Bull Mountain western border fault"
+  ]
+ },
+ "positive_control": "PASS on the declared condition -- named, place-specific incident <25 km. BUT NOT the declared CONTENT: Manzano/Kirtland/Bennewitz never appeared, because the frozen query says 'settlement OR mining OR incident' and the Sandia military record is MILITARY. Out of reach BY CONSTRUCTION of the query, not by search failure. Not amended mid-run; amending a query after seeing its miss is how a null becomes a positive.",
+ "negative_side_control": "Nothing returned. The instrument CAN return zero -- but Hubbell Spring is an obscure name 3.7 km from metro Albuquerque, so this zero may be name-obscurity rather than absence. Same contamination as the Bull Mountain HT0. Reported, EXCLUDED from the readout as pre-declared.",
+ "prereg_kill_rule": {
+  "flagged_pairs": "none -- observer counts matched, no-op as predicted",
+  "note": "a no-op check is only a no-op after you run it"
+ },
+ "UNREGISTERED_CONFOUND_nearest_town_km": {
+  "winner_median_km": 7.5,
+  "decoy_median_km": 19.3,
+  "winner_km": [
+   19.7,
+   2.4,
+   6.1,
+   3.4,
+   7.4,
+   41.1,
+   7.6,
+   2.8,
+   22.7,
+   38.6
+  ],
+  "decoy_km": [
+   16.3,
+   26.0,
+   22.3,
+   8.0,
+   37.8,
+   34.1,
+   13.8,
+   3.1,
+   33.9,
+   11.5
+  ],
+  "sign_test_winner_closer": {
+   "non_tied": 10,
+   "favour_winner": 7,
+   "p_two_sided": 0.3438
+  },
+  "reading": "winners sit systematically CLOSER to a census place than their decoys. The HT rubric cuts at 25 km. Settler record clusters at towns. This was NOT matched and it runs in the winners' favour -- it is the leading alternative explanation for the +0.9."
+ },
+ "POST_HOC_distance_controlled_subset": {
+  "n_pairs": 5,
+  "pairs": [
+   1,
+   3,
+   4,
+   7,
+   8
+  ],
+  "winner_mean": 3.0,
+  "decoy_mean": 1.6,
+  "separation": 1.4,
+  "sign_test": {
+   "non_tied": 3,
+   "favour_winner": 3,
+   "p_two_sided": 0.25
+  },
+  "STATUS": "POST HOC, NOT PRE-REGISTERED, n small, winners at the HT3 ceiling. This is a hypothesis for the next instrument, NOT a result, and it does NOT overturn the primary verdict above."
+ },
+ "instrument_defect_landform_name_salience": "Winners carry famous landform names (Madison, Helena, Teton, Sandia); several decoys are 'unnamed fault near X' or obscure (Bull Mountain western border, Hubbell Spring). Both HT0s in this table -- one winner, one decoy -- and the control's zero are NAME CONFLATIONS, not absences: Red Rock returned Red Lodge, Bull Mountain returned Roundup and Boulder COLORADO, Sweetwater returned Wyoming, Thompson Valley returned Virginia, Round Valley returned Mendocino. Five of twenty first passes went to the wrong state. This is an unmeasured bias with an unknown sign.",
+ "rows": [
+  {
+   "rank": 1,
+   "winner": "Madison fault",
+   "winner_HT": 3,
+   "winner_note": "1959 M7.5 Hebgen Lake quake + Madison Slide, 28 dead, Quake Lake; Hebgen Dam 1914-15 Montana Power. USGS + ASDSO",
+   "decoy": "Big Chino fault",
+   "decoy_HT": 1,
+   "decoy_note": "Big Chino Wash returned as geography + regional Yavapai use; Seligman railroad/Route 66 present but no locus-specific incident",
+   "winner_nearest_km": 19.7,
+   "decoy_nearest_km": 16.3
+  },
+  {
+   "rank": 2,
+   "winner": "Round Valley fault",
+   "winner_HT": 2,
+   "winner_note": "Round Valley tungsten mine, Inyo Co (Western Mining History). NOTE: first pass mostly returned MENDOCINO Round Valley -- name conflation, massacres NOT credited",
+   "decoy": "Thompson Valley fault",
+   "decoy_HT": 1,
+   "decoy_note": "Lonepine PO 1911, Lower Dry Fork Reservoir 1921 (Reclamation) -- but at 26.0 km, so 25-60 km band. Thompson Valley hits were Tazewell Co, VIRGINIA -- conflation",
+   "winner_nearest_km": 2.4,
+   "decoy_nearest_km": 26.0
+  },
+  {
+   "rank": 3,
+   "winner": "Little Valley fault",
+   "winner_HT": 3,
+   "winner_note": "Hobart & Marlette sawmill in Little Valley 1873; 1884 V-flume blowdown on an 80-ft trestle, rebuilt in 8 days; Little Valley Placers. Truckee-Donner Historical Society",
+   "decoy": "Bear River Range faults",
+   "decoy_HT": 3,
+   "decoy_note": "Avon founded at forks of East Creek and Little Bear River, local history + USU thesis 'An Environmental History of the Bear River Range 1860-1910'. Boa Ogoi NOT credited -- ~60km",
+   "winner_nearest_km": 6.1,
+   "decoy_nearest_km": 22.3
+  },
+  {
+   "rank": 4,
+   "winner": "Helena valley fault",
+   "winner_HT": 3,
+   "winner_note": "Last Chance Gulch, July 1864 'Four Georgians', named Oct 1864, territorial capital 1875, $3.5bn in gold, 1937-class fire hazard. Montana Historical Society textbook",
+   "decoy": "Bull Mountain western border fault",
+   "decoy_HT": 0,
+   "decoy_note": "TOTAL CONFLATION: returned Bull Mountains coal field near Roundup (~200 km) and Boulder County COLORADO. Nothing on-target at Boulder MT",
+   "winner_nearest_km": 3.4,
+   "decoy_nearest_km": 8.0
+  },
+  {
+   "rank": 5,
+   "winner": "Red Rock fault",
+   "winner_HT": 0,
+   "winner_note": "CONFLATION: returned Red Lodge (Carbon Co, ~350 km) and Red Rock Mine in Fergus Co. Nothing on-target at Dell / Red Rock Valley",
+   "decoy": "Lida faults",
+   "decoy_HT": 2,
+   "decoy_note": "Lida: 1867 mining district, town laid out 1872, PO + mill, 1905 Goldfield boom to pop 300, ~$1M produced. Ghost-town aggregators + Wikipedia = web-secondary",
+   "winner_nearest_km": 7.4,
+   "decoy_nearest_km": 37.8
+  },
+  {
+   "rank": 6,
+   "winner": "Sand Springs Range fault",
+   "winner_HT": 3,
+   "winner_note": "Sand Springs Pony Express Station built 1859-60, abandoned 1861, sand-buried a century, stabilized 1997 (SAH Archipedia, HMdb); PROJECT SHOAL 12 kt underground nuclear test in the range, 26 Oct 1963",
+   "decoy": "Lone Pine fault",
+   "decoy_HT": 1,
+   "decoy_note": "Clayton ID founded 1881 as smelter site, Clayton Silver Mine / Bayhorse district -- but 34.1 km, so 25-60 km band. No 'Lone Pine' locus near Clayton",
+   "winner_nearest_km": 41.1,
+   "decoy_nearest_km": 34.1
+  },
+  {
+   "rank": 7,
+   "winner": "Mosquito fault",
+   "winner_HT": 3,
+   "winner_note": "Mosquito mining district within the Alma District; Alma's first town meeting 4 Dec 1873; 1879-80 silver; business district destroyed by fire 23 Mar 1937. Colorado Geological Survey + Park County Local History Digital Archive",
+   "decoy": "unnamed faults west of Hungry Valley",
+   "decoy_HT": 1,
+   "decoy_note": "Lemmon Valley: 19th-c cemetery, Evans Canyon miner's trail. No named place-specific incident, no archival attestation",
+   "winner_nearest_km": 7.6,
+   "decoy_nearest_km": 13.8
+  },
+  {
+   "rank": 8,
+   "winner": "Sandia fault",
+   "winner_HT": 3,
+   "winner_note": "POSITIVE CONTROL. Montezuma silver-boom settlement 1879-80 in Las Huertas Canon, claims registered at Albuquerque county seat; Sandia Man Cave; Turquoise Trail / Tijeras Canyon mine",
+   "decoy": "Picuris-Pecos fault",
+   "decoy_HT": 3,
+   "decoy_note": "Canoncito = Glorieta Unit of Pecos National Historical Park, site of the Confederate Army camp (Glorieta Pass, Mar 1862). NPS, primary",
+   "winner_nearest_km": 2.8,
+   "decoy_nearest_km": 3.1
+  },
+  {
+   "rank": 9,
+   "winner": "Bear River fault zone",
+   "winner_HT": 3,
+   "winner_note": "Bear River City Riot, 19 Nov 1868 -- vigilante lynching, town torched; Almy coal mines opened 1868. HMdb markers + WyoHistory.org (Wyoming State Historical Society)",
+   "decoy": "Sweetwater fault",
+   "decoy_HT": 1,
+   "decoy_note": "Alder Gulch 1863, Montana's second major gold strike, Conrey Placer Mining Co -- but Alder is 33.9 km, 25-60 km band. 'Sweetwater Mines' hits were WYOMING/South Pass -- conflation",
+   "winner_nearest_km": 22.7,
+   "decoy_nearest_km": 33.9
+  },
+  {
+   "rank": 10,
+   "winner": "Teton fault",
+   "winner_HT": 2,
+   "winner_note": "~1900 160-acre placer claims filed Jackson Lake to Menor's Ferry (NPS, reaching me via buckrail = secondary); 1889 Teton Wilderness mine; 1886 Deadman's Bar murders at ~29 km",
+   "decoy": "unnamed fault near Ovando",
+   "decoy_HT": 3,
+   "decoy_note": "Seeley Lake: logging 1892, first road 1895, Seely first ranger 1899-1900 Lewis & Clark Forest Reserve (USGS misspelled him onto the map), Big Blackfoot Milling 1906, USFS 50M board-ft sale to Anaconda. Montana History Portal",
+   "winner_nearest_km": 38.6,
+   "decoy_nearest_km": 11.5
+  }
+ ]
+}

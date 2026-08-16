@@ -1,14 +1,20 @@
 # place-threshold-screen — a continental physics screen for candidate threshold sites
 
-**GRADE (current — 2026-08-15, Clawd, no decorrelated eye yet)**
+> ⬛ **CLOSED 2026-08-16. Read [`reports/08-final-report.md`](reports/08-final-report.md) first** —
+> it supersedes this README and reports 01–07 as the narrative. Short version: the **gate** works
+> and its controls are exact; the **ranker fails its own controls by 0.19 in the wrong direction**;
+> all three pre-registered lore legs come back **NOT SUPPORTED**.
+
+**GRADE (current — 2026-08-16, Clawd, no decorrelated eye yet)**
 
 | part | grade |
 |---|---|
 | **Inputs** (fault trace, rupture age, slip sense, map lithology, Bouguer gravity, seismicity, GPS velocities) | **Documented** — USGS Qfaults, USGS SGMC2, USGS gravity, ANSS, MIDAS/Macrostrat. Pulled live; every layer records its own request URL in `figures/*.layers.json`. |
-| **The ranking** (four-term score, top 10) | **Inferred** — our weighting over those inputs. A wager, marked as one. A ±50% weight perturbation keeps only three of ten slots stable. |
-| **H-1** — dilatant Quaternary rupture through quartz-rich crystalline rock predicts an anomalous light/sound record | **Hypothesized**, untested. Kill condition in `hypotheses.md`. |
+| **The ranking** (four-term score, top 10) | **DISCONFIRMED as a ranking** (2026-08-16). It places the declared *negative* control at 14/1327 and the declared *positive* at 148/1327 — 0.19 of separation, backwards. Retained as a reproducible artifact, not a recommendation. |
+| **H-1** — dilatant Quaternary rupture through quartz-rich crystalline rock predicts an anomalous light/sound record | **NOT SUPPORTED** (2026-08-16), three pre-registered legs, n=10 matched pairs, separations +0.7 / +0.3 / +0.9 against a +1.0 bar. A **failure to detect, not a refutation** — and the scorer was not blind. |
 | **"Sandia/Hubbell Spring ranks best in the continental US"** | **Disconfirmed as stated** (2026-08-15). Measured against the same criteria the junction lands ~9th. The weaker claim — that the terrain belongs to the right class, and that the class dominates the top of the list — survives intact. |
-| **RESISTANCE** | **LOW, and therefore under suspicion.** Four of the five printed sites returned grade-A Native or documented-anomaly material that the ranking could not see. That slots into our story too comfortably. Because nobody has yet measured the base rate of such material across the mountain West, the convergence earns **no** credit here — it triggers binocular focus, not belief. |
+| **The GATE** (along-trace lithology, 1399/1399, `quartz_frac ≥ 0.25`) | **Documented and validated** (2026-08-16). Both controls exact: Sandia 0.875 PASS, Hubbell Spring 0.000 FAIL. Carries ±0.125 sampling noise from vertex ordering — it gates, it cannot rank. |
+| **RESISTANCE** | **RAISED — the convergence was measured and it did not survive.** The suspicion recorded here on 2026-08-15 was that grade-A Native and documented-anomaly material at four of five printed sites slotted into our story too comfortably, with no base rate to price it against. Three matched-decoy legs then supplied that base rate: it is **20/20 on both sides**. The convergence was the density of the record, as suspected. Resistance did its job. |
 
 ---
 

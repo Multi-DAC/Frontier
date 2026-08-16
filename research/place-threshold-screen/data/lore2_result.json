@@ -1,0 +1,134 @@
+{
+ "verdict": "NOT SUPPORTED",
+ "winner_mean_NT": 1.5,
+ "decoy_mean_NT": 1.2,
+ "separation": 0.3,
+ "required": 1.0,
+ "sign_test": {
+  "non_tied": 7,
+  "favour_winner": 4,
+  "p_two_sided": 1.0
+ },
+ "N_ANY_satisfied": "20/20 -- the near-unity base rate the design predicted",
+ "anomaly_shaped_ratio": {
+  "winners": "7/10",
+  "decoys": "7/10"
+ },
+ "excluding_sandia_which_is_also_the_positive_control": {
+  "winner_mean": 1.33,
+  "decoy_mean": 1.0,
+  "separation": 0.33
+ },
+ "positive_control": "POSITIVE CONTROL -- recovered on the first pass. Protocol works.",
+ "H3_settler_history": "UNTESTED -- third query not run for any site; absent by omission",
+ "rows": [
+  {
+   "rank": 1,
+   "winner": "Madison fault",
+   "winner_NT": 1,
+   "winner_note": "Shoshone-Bannock ancestral, 'long revered as sacred' -- regional, no locus on the range",
+   "decoy": "Big Chino fault",
+   "decoy_NT": 1,
+   "decoy_note": "Yavapai territory, Big Chino Wash villages, 'spiritual ties to plateaus and washes' -- regional"
+  },
+  {
+   "rank": 2,
+   "winner": "Round Valley fault",
+   "winner_NT": 1,
+   "winner_note": "Payahuunadu/Nuumu; Volcanic Tableland petroglyphs 'fragile and sacred' but across the valley, not the fault",
+   "decoy": "Thompson Valley fault",
+   "decoy_NT": 3,
+   "decoy_note": "'Big Medicine' hot springs -- NAMED power/healing place, centuries of ceremonial use, CSKT + Montana Historic Landscapes"
+  },
+  {
+   "rank": 3,
+   "winner": "Little Valley fault",
+   "winner_NT": 3,
+   "winner_note": "Washoe Da ow aga / Cave Rock Water Babies -- named spirit-beings, shaman practice, folklore collections + USFS tribal history",
+   "decoy": "Bear River Range faults",
+   "decoy_NT": 2,
+   "decoy_note": "Old Main Hill / Logan Temple hill named sacred Shoshone loci <25km; student-paper attestation"
+  },
+  {
+   "rank": 4,
+   "winner": "Helena valley fault",
+   "winner_NT": 2,
+   "winner_note": "Gates of the Mountains ~16km: 50 pictograph sites, Blackfeet/Salish/Kootenai, ceremonial; first-pass sources part listicle",
+   "decoy": "Bull Mountain western border fault",
+   "decoy_NT": 0,
+   "decoy_note": "Boulder hot springs known to Native people (use, not anomaly). Sacred-mountain hit was Sweet Grass Hills, a search conflation"
+  },
+  {
+   "rank": 5,
+   "winner": "Red Rock fault",
+   "winner_NT": 0,
+   "winner_note": "Travel corridor + hunting grounds; 'Red Rock' from ochre paint beds. Nothing anomaly-shaped",
+   "decoy": "Lida faults",
+   "decoy_NT": 0,
+   "decoy_note": "Shoshone/N. Paiute camp and gathering point at Lida Valley. Nothing anomaly-shaped"
+  },
+  {
+   "rank": 6,
+   "winner": "Sand Springs Range fault",
+   "winner_NT": 3,
+   "winner_note": "Sand Mountain sacred to Fallon Paiute-Shoshone; Spirit Cave (mummy repatriated 2016), Grimes Point. BLM + Federal Register + congressional",
+   "decoy": "Lone Pine fault",
+   "decoy_NT": 1,
+   "decoy_note": "Salmon corridor ceded lands, pictographs/burials/'other sacred sites' -- FWS source but no locus near Clayton"
+  },
+  {
+   "rank": 7,
+   "winner": "Mosquito fault",
+   "winner_NT": 0,
+   "winner_note": "Ute/Nuche ancestral hunting ground 8,000 yrs. Nothing anomaly-shaped returned",
+   "decoy": "unnamed faults west of Hungry Valley",
+   "decoy_NT": 1,
+   "decoy_note": "N. Paiute spirit-beings (Wolf/Coyote/water babies) regional; no locus at Lemmon/Hungry Valley"
+  },
+  {
+   "rank": 8,
+   "winner": "Sandia fault",
+   "winner_NT": 3,
+   "winner_note": "Sandia Mtns sacred to Sandia Pueblo, Tiwa 'Bien Mur', active USFS sacred-sites claim. Tribal + newspaper",
+   "decoy": "Picuris-Pecos fault",
+   "decoy_NT": 3,
+   "decoy_note": "Pecos Pueblo kivas as communion with underworld spirits + 'The Drowning of Pecos' in a pre-1995 printed folk-story collection; NPS"
+  },
+  {
+   "rank": 9,
+   "winner": "Bear River fault zone",
+   "winner_NT": 0,
+   "winner_note": "Shoshone encamped on Yellow Creek 1872 (historical). Bear River sacredness attaches to Boa Ogoi ~80km away",
+   "decoy": "Sweetwater fault",
+   "decoy_NT": 1,
+   "decoy_note": "Washoe water babies (me-tsung) across territory; locus is Cave Rock ~40km, not Virginia City"
+  },
+  {
+   "rank": 10,
+   "winner": "Teton fault",
+   "winner_NT": 2,
+   "winner_note": "Teewinot; vision-quest stone structures in the upper Grand Teton; 'sacred peaks', creation stories. Mostly web-secondary first pass",
+   "decoy": "unnamed fault near Ovando",
+   "decoy_NT": 0,
+   "decoy_note": "Cokalahishkit buffalo road, Semte'use presence, Camp Paxson stewardship. Nothing anomaly-shaped"
+  }
+ ],
+ "covariates": {
+  "coverage": "7 of 10 pairs -- run stalled on the Albuquerque TIGER query, stated not hidden",
+  "relief_delta_median_m": -7.4,
+  "relief_deltas_m": [
+   458.7,
+   1247.6,
+   313.1,
+   -44.4,
+   -33.2,
+   -1152.7,
+   -7.4
+  ],
+  "relief_favour_winner": "3/7",
+  "relief_p_two_sided": 1.0,
+  "nps_delta_median_km": -19.7,
+  "kill_rule_fired": false,
+  "reading": "covariates BALANCED -- relief median is negative, so the small positive drift in NT is not a relief artifact. The null stands on its own."
+ }
+}

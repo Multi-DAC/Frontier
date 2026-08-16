@@ -43,9 +43,34 @@ prediction. Should gneiss/quartzite/mylonite sites carry *no* excess anomalous r
 equigranular granite sites at matched rupture age, the specific piezoelectric mechanism loses its
 best discriminator, whatever survives of the correlation.
 
-**Standing: Hypothesized. Untested.** The lore pass in report 07 returned four grade-A or A/B hits
-among five printed sites and one clear miss (Centennial) — a result with **no denominator**, and
-therefore not evidence for H-1 yet.
+**Standing: NOT SUPPORTED, 2026-08-16.** Three pre-registered legs ran against 10 ranked
+winners and 10 decoys matched on observer density, every rubric and query string committed to
+git before any lookup. All three landed short of the declared +1.0 bar:
+
+| leg | subject | separation | sign test | verdict |
+|---|---|---|---|---|
+| H1 | anomalous light / sound record | +0.7 | 6/7, p=0.125 | NOT SUPPORTED |
+| H2 | Native sacred / anomaly lore | +0.3 | 4/7, p=1.0 | NOT SUPPORTED |
+| H3 | settler-history record | +0.9 | 6/8, p=0.289 | NOT SUPPORTED |
+
+**The base rate the kill condition asked for was answered by a substituted design, and the
+substitution is not a straight upgrade.** Instead of 30 unlabelled random draws, we used 10
+decoys drawn from the same physiographic provinces and matched on census places within 50 km.
+That is **stronger on matching** and **weaker on two axes the original named**: n=10 rather than
+30, and — decisively — the original said *look each up **blind***, and this scorer was not.
+The `ANY`-level base rate came back **20/20 for both winners and decoys**, exactly as
+pre-declared, which is what "the record saturates the mountain West" looks like.
+
+**The second, sharper kill (fabric over pluton) remains untested.** No leg separated
+gneiss/quartzite/mylonite sites from equigranular granite at matched rupture age.
+
+**What this is and is not.** Three underpowered legs failing to clear a pre-declared bar is a
+**failure to detect, not a refutation.** But the corrections all run one way: distance-to-town
+matching cuts H1 from +0.7 to +0.4; the three legs correlate at rho 0.32-0.48 and so are closer
+to one weak fact than three; the pooled test reaches p = 0.0525 and is optimistic because its
+nominal n=22 rests on 10 independent site pairs. And the scorer was **not blind** — see
+`reports/08-final-report.md` §7.1, the largest uncontrolled term in the whole lore program and
+absent from all three design documents.
 
 ---
 
@@ -59,8 +84,14 @@ density of *settler invention*, rather than anything the rock does.
 **Kill condition.** The same blind base-rate draw as H-1, read in the opposite direction: a
 top-ten hit rate exceeding the blind rate beyond sampling error kills H-2.
 
-**Standing: Hypothesized, and currently favoured on grounds of parsimony.** Grading the lore A/B/C
-by source rather than accepting it whole (report 07 §5) limits the damage but does not remove it.
+**Standing: NOT KILLED, and now more strongly favoured, 2026-08-16.** Its kill condition — a
+top-ten hit rate exceeding the blind rate beyond sampling error — did not fire in any of the
+three legs. The `ANY`-level base rate came back **20/20 on both sides**, which is the saturation
+this hypothesis predicts. Grading the lore A/B/C by source rather than accepting it whole
+(report 07 §5) limits the damage but does not remove it.
+
+H-2 cannot be promoted to *confirmed* either: it is favoured because the alternative failed to
+detect, which is a weaker footing than a positive result of its own would be.
 
 ---
 
@@ -97,9 +128,17 @@ line in the ledger showing what changed.
 
 ## Open instruments that will move these
 
-1. `code/trace_lithology_national.py` — 445 unmeasured faults, controls declared in advance
-   (Sandia positive, Hubbell Spring negative). Governs **recall**.
-2. The blind lore base rate — 30 random draws, same provinces. Governs **H-1 vs H-2**, and until
-   it lands neither hypothesis moves.
-3. Aeromagnetic depth-to-basement — the correct P3 for a *buried* source. Re-ranks every
+1. ~~`code/trace_lithology_national.py`~~ — **CLOSED 2026-08-16.** 1,399/1,399 measured, zero
+   errors, both controls exact (0.875 / 0.000). Recall is no longer the limiting factor.
+2. ~~The blind lore base rate~~ — **CLOSED 2026-08-16**, answered by matched decoys across three
+   legs. See H-1 above.
+3. **A BLIND lore protocol** — labels stripped, 20 sites shuffled into one list, scored cold,
+   unblinded at readout. This is now the load-bearing open instrument: pre-registration froze
+   the questions and left the reader sighted.
+4. **Distance-to-nearest-place as a design-time matching axis.** Winners sat at a median 7.5 km
+   from a census place, decoys 19.3 km, and all three rubrics band on distance.
+5. **A labelled set of 20-30 sites**, or the written admission that this screen is a filter with
+   no ranking capacity — the four scoring legs separate the two controls by 0.19 in the *wrong*
+   direction, so the latter is currently better supported.
+6. Aeromagnetic depth-to-basement — the correct P3 for a *buried* source. Re-ranks every
    basin-fill site.

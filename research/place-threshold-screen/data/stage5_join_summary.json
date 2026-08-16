@@ -1,0 +1,3219 @@
+{
+ "population": 1399,
+ "gate": {
+  "leg": "L1_lithology",
+  "threshold": 0.25,
+  "passed": 242,
+  "failed": 1157,
+  "unmeasured": 0
+ },
+ "coverage": {
+  "L1_lithology": {
+   "measured": 1399,
+   "of": 1399,
+   "pct": 100.0
+  },
+  "L2_age": {
+   "measured": 1399,
+   "of": 1399,
+   "pct": 100.0
+  },
+  "L3_slip": {
+   "measured": 1349,
+   "of": 1399,
+   "pct": 96.4
+  },
+  "L4_junction": {
+   "measured": 1399,
+   "of": 1399,
+   "pct": 100.0
+  },
+  "L6_length": {
+   "measured": 1328,
+   "of": 1399,
+   "pct": 94.9
+  },
+  "L5_strain": {
+   "measured": 21,
+   "of": 1399,
+   "pct": 1.5
+  }
+ },
+ "controls": {
+  "Sandia fault": {
+   "declared": "POSITIVE",
+   "must_pass_gate": true,
+   "passed_gate": true,
+   "correct": true,
+   "rank_among_survivors": 36,
+   "of": 242,
+   "score": 0.5447
+  },
+  "Hubbell Spring fault": {
+   "declared": "NEGATIVE",
+   "must_pass_gate": false,
+   "passed_gate": false,
+   "correct": true,
+   "rank_among_survivors": null,
+   "of": 242,
+   "score": 0.7342
+  }
+ },
+ "controls_valid": true,
+ "ranked_complete": 225,
+ "ranked_partial": 17,
+ "join_rule": "L1 gates (3-valued; UNMEASURED never excludes). L2/L3/L4/L6 score, each fault scored only on the legs it has, denominator recorded. Ranking is tiered on completeness FIRST so a partially-measured fault cannot outrank a fully-measured one on a mean taken over fewer legs. L5 (1.5% coverage) annotates only.",
+ "survivors_ranked": [
+  {
+   "rank": 1,
+   "fault_name": "Madison fault",
+   "lat": 44.792,
+   "lon": -111.438,
+   "score": 0.7964,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.796
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 2,
+   "fault_name": "Round Valley fault",
+   "lat": 37.542,
+   "lon": -118.726,
+   "score": 0.7903,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 1.0,
+    "length": 0.623
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 3,
+   "fault_name": "Kings Canyon fault zone",
+   "lat": 39.143,
+   "lon": -119.823,
+   "score": 0.7551,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 1.0,
+    "length": 0.482
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 4,
+   "fault_name": "Red Canyon fault",
+   "lat": 44.864,
+   "lon": -111.297,
+   "score": 0.7435,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.585
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 5,
+   "fault_name": "Hartley Springs fault zone",
+   "lat": 37.644,
+   "lon": -119.003,
+   "score": 0.7334,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.545
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 6,
+   "fault_name": "Centennial fault",
+   "lat": 44.584,
+   "lon": -112.066,
+   "score": 0.7265,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.717
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 7,
+   "fault_name": "Antelope Valley fault zone",
+   "lat": 38.677,
+   "lon": -119.548,
+   "score": 0.718,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.683
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 8,
+   "fault_name": "Fish Lake Valley fault zone",
+   "lat": 37.694,
+   "lon": -118.114,
+   "score": 0.7092,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.5,
+    "length": 0.798
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 9,
+   "fault_name": "Hebgen fault",
+   "lat": 44.858,
+   "lon": -111.324,
+   "score": 0.7087,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.446
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 10,
+   "fault_name": "Sand Springs Range fault",
+   "lat": 39.19,
+   "lon": -118.338,
+   "score": 0.7075,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.641
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 11,
+   "fault_name": "Silver Lake fault",
+   "lat": 37.8,
+   "lon": -119.121,
+   "score": 0.6991,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.607
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 12,
+   "fault_name": "White Mountains fault zone",
+   "lat": 37.867,
+   "lon": -118.465,
+   "score": 0.6885,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.815
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 13,
+   "fault_name": "Little Valley fault",
+   "lat": 39.237,
+   "lon": -119.886,
+   "score": 0.6703,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.492
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 14,
+   "fault_name": "Bear River fault zone",
+   "lat": 41.091,
+   "lon": -110.812,
+   "score": 0.664,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.5,
+    "length": 0.618
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 15,
+   "fault_name": "Red Rock fault",
+   "lat": 44.66,
+   "lon": -112.698,
+   "score": 0.646,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.645
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 16,
+   "fault_name": "Mono Lake fault",
+   "lat": 38.079,
+   "lon": -119.181,
+   "score": 0.6458,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.5,
+    "length": 0.545
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 17,
+   "fault_name": "Hunter Mountain- Saline Valley fault zone",
+   "lat": 36.759,
+   "lon": -117.894,
+   "score": 0.625,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.25,
+    "length": 0.711
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 18,
+   "fault_name": "Gerlach fault zone",
+   "lat": 40.702,
+   "lon": -119.349,
+   "score": 0.6052,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.482
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 19,
+   "fault_name": "West Cache fault zone",
+   "lat": 41.965,
+   "lon": -112.109,
+   "score": 0.5994,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.5,
+    "length": 0.708
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 20,
+   "fault_name": "Lima Reservoir fault",
+   "lat": 44.646,
+   "lon": -112.192,
+   "score": 0.595,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.191
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 21,
+   "fault_name": "Sulphur Spring fault",
+   "lat": 40.927,
+   "lon": -117.311,
+   "score": 0.5931,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.573
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 22,
+   "fault_name": "Granite Springs Valley fault zone",
+   "lat": 40.164,
+   "lon": -119.062,
+   "score": 0.5922,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.5,
+    "length": 0.68
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 23,
+   "fault_name": "McAfee Canyon fault",
+   "lat": 37.686,
+   "lon": -117.968,
+   "score": 0.5889,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.417
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 24,
+   "fault_name": "Western Roberts Mountains fault",
+   "lat": 39.75,
+   "lon": -116.384,
+   "score": 0.588,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.552
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 25,
+   "fault_name": "Caballo fault",
+   "lat": 33.121,
+   "lon": -107.286,
+   "score": 0.5862,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.545
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 26,
+   "fault_name": "Spanish Springs Valley fault",
+   "lat": 39.663,
+   "lon": -119.732,
+   "score": 0.5862,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.545
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 27,
+   "fault_name": "Toiyabe Range fault zone",
+   "lat": 38.5,
+   "lon": -117.309,
+   "score": 0.5787,
+   "components": {
+    "age": 0.6,
+    "slip": 0.389,
+    "junction": 0.5,
+    "length": 0.826
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 28,
+   "fault_name": "Carson City fault",
+   "lat": 39.092,
+   "lon": -119.822,
+   "score": 0.5704,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.482
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 29,
+   "fault_name": "Cortez Mountains fault zone",
+   "lat": 40.296,
+   "lon": -116.451,
+   "score": 0.5674,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.72
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 30,
+   "fault_name": "Teton fault",
+   "lat": 44.013,
+   "lon": -110.682,
+   "score": 0.5646,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.708
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 31,
+   "fault_name": "Rincon fault",
+   "lat": 35.214,
+   "lon": -106.516,
+   "score": 0.5579,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.432
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 32,
+   "fault_name": "Paymaster Ridge fault",
+   "lat": 37.794,
+   "lon": -117.493,
+   "score": 0.5531,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.613
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 33,
+   "fault_name": "Dry Mountain fault",
+   "lat": 40.551,
+   "lon": -119.088,
+   "score": 0.5477,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.591
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 34,
+   "fault_name": "West Fork fault",
+   "lat": 44.863,
+   "lon": -111.313,
+   "score": 0.5477,
+   "components": {
+    "age": 1.0,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.191
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 35,
+   "fault_name": "Freds Mountain fault",
+   "lat": 39.818,
+   "lon": -119.843,
+   "score": 0.5447,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.579
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 36,
+   "fault_name": "Sandia fault",
+   "lat": 35.153,
+   "lon": -106.472,
+   "score": 0.5447,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.579
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 37,
+   "fault_name": "Indian Hill fault",
+   "lat": 39.049,
+   "lon": -119.829,
+   "score": 0.5403,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.361
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 38,
+   "fault_name": "Crawford Mountains (west side) fault",
+   "lat": 41.755,
+   "lon": -111.055,
+   "score": 0.5398,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.559
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 39,
+   "fault_name": "Nacimiento fault",
+   "lat": 35.499,
+   "lon": -106.858,
+   "score": 0.5398,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.759
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 40,
+   "fault_name": "Petersen Mountain fault",
+   "lat": 39.682,
+   "lon": -119.982,
+   "score": 0.5398,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.559
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 41,
+   "fault_name": "The Lava Beds fault",
+   "lat": 40.509,
+   "lon": -118.963,
+   "score": 0.5398,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.559
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 42,
+   "fault_name": "Clayton Ridge fault",
+   "lat": 37.569,
+   "lon": -117.537,
+   "score": 0.5342,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.537
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 43,
+   "fault_name": "Helena valley fault",
+   "lat": 46.759,
+   "lon": -112.049,
+   "score": 0.5301,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.52
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 44,
+   "fault_name": "Southern Sierra Nevada fault zone",
+   "lat": 36.807,
+   "lon": -118.314,
+   "score": 0.528,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.923
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 45,
+   "fault_name": "Boundary fault",
+   "lat": 37.211,
+   "lon": -116.057,
+   "score": 0.5278,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.311
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 46,
+   "fault_name": "Southern Sangre de Cristo fault",
+   "lat": 36.849,
+   "lon": -105.551,
+   "score": 0.5232,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.793
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 47,
+   "fault_name": "Antelope Range-Kingsley Mountains fault zone",
+   "lat": 40.137,
+   "lon": -114.338,
+   "score": 0.5188,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.725
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 48,
+   "fault_name": "Red Hills fault",
+   "lat": 32.899,
+   "lon": -107.273,
+   "score": 0.5176,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 49,
+   "fault_name": "Mosquito fault",
+   "lat": 39.327,
+   "lon": -106.14,
+   "score": 0.5167,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.717
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 50,
+   "fault_name": "East Pintwater Range fault",
+   "lat": 37.036,
+   "lon": -115.548,
+   "score": 0.5146,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 51,
+   "fault_name": "Silver King Pass fault",
+   "lat": 38.217,
+   "lon": -114.866,
+   "score": 0.5146,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 52,
+   "fault_name": "Spokane Hills fault",
+   "lat": 46.562,
+   "lon": -111.74,
+   "score": 0.5146,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 53,
+   "fault_name": "Black Mountains fault zone",
+   "lat": 36.467,
+   "lon": -116.832,
+   "score": 0.5095,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.738
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 54,
+   "fault_name": "Wassuk Range fault zone",
+   "lat": 38.445,
+   "lon": -118.643,
+   "score": 0.5037,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.826
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 55,
+   "fault_name": "Mission fault",
+   "lat": 47.833,
+   "lon": -114.164,
+   "score": 0.499,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.807
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 56,
+   "fault_name": "Montezuma Range fault",
+   "lat": 37.58,
+   "lon": -117.475,
+   "score": 0.4947,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.579
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 57,
+   "fault_name": "unnamed faults north of Manzone Well",
+   "lat": 38.743,
+   "lon": -115.369,
+   "score": 0.4845,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.338
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 58,
+   "fault_name": "Williams Fork Mountains fault",
+   "lat": 39.954,
+   "lon": -106.259,
+   "score": 0.483,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.632
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 59,
+   "fault_name": "James Peak fault",
+   "lat": 41.42,
+   "lon": -111.771,
+   "score": 0.4778,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.311
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 60,
+   "fault_name": "Schell Creek Range fault",
+   "lat": 39.793,
+   "lon": -114.641,
+   "score": 0.4746,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.798
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 61,
+   "fault_name": "Ogden Valley southwestern margin faults",
+   "lat": 41.334,
+   "lon": -111.895,
+   "score": 0.473,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.492
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 62,
+   "fault_name": "Eastern Tuscarora Mountains fault zone",
+   "lat": 40.812,
+   "lon": -116.332,
+   "score": 0.4716,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.686
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 63,
+   "fault_name": "Arrowhead fault zone",
+   "lat": 35.54,
+   "lon": -111.469,
+   "score": 0.4699,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.28
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 64,
+   "fault_name": "East Tonuco fault",
+   "lat": 32.616,
+   "lon": -106.988,
+   "score": 0.4646,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 65,
+   "fault_name": "West Pintwater Range fault",
+   "lat": 36.945,
+   "lon": -115.596,
+   "score": 0.4623,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.649
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 66,
+   "fault_name": "unnamed faults in the Pine Mountains",
+   "lat": 38.92,
+   "lon": -119.521,
+   "score": 0.4623,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.649
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 67,
+   "fault_name": "Manzano fault",
+   "lat": 34.476,
+   "lon": -106.501,
+   "score": 0.4607,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.693
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 68,
+   "fault_name": "Emigrant fault",
+   "lat": 45.217,
+   "lon": -110.876,
+   "score": 0.4606,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.653
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 69,
+   "fault_name": "Northeastern Boundary fault system",
+   "lat": 39.013,
+   "lon": -106.271,
+   "score": 0.4565,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.676
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 70,
+   "fault_name": "East Tahoe fault",
+   "lat": 39.022,
+   "lon": -119.943,
+   "score": 0.4556,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.623
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 71,
+   "fault_name": "North Golden Gate fault",
+   "lat": 38.283,
+   "lon": -115.293,
+   "score": 0.4551,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.47
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 72,
+   "fault_name": "Sawatch fault",
+   "lat": 38.687,
+   "lon": -106.174,
+   "score": 0.4549,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.77
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 73,
+   "fault_name": "Coyote fault",
+   "lat": 35.006,
+   "lon": -106.474,
+   "score": 0.4541,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.417
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 74,
+   "fault_name": "Lone Pine fault",
+   "lat": 44.263,
+   "lon": -113.955,
+   "score": 0.454,
+   "components": {
+    "age": 1.0,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.566
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 75,
+   "fault_name": "Eastern Pine Forest Range fault zone",
+   "lat": 41.881,
+   "lon": -118.653,
+   "score": 0.4528,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.711
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 76,
+   "fault_name": "Gore Range frontal fault",
+   "lat": 39.39,
+   "lon": -106.055,
+   "score": 0.45,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.75
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 77,
+   "fault_name": "Morgan fault",
+   "lat": 41.091,
+   "lon": -111.676,
+   "score": 0.448,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.492
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 78,
+   "fault_name": "Broadmouth Canyon faults",
+   "lat": 41.392,
+   "lon": -111.841,
+   "score": 0.4477,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.191
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 79,
+   "fault_name": "Stumble fault",
+   "lat": 37.358,
+   "lon": -115.813,
+   "score": 0.4462,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.585
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 80,
+   "fault_name": "Fort Sage fault",
+   "lat": 40.109,
+   "lon": -120.089,
+   "score": 0.4355,
+   "components": {
+    "age": 1.0,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.492
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 81,
+   "fault_name": "Deep Springs fault",
+   "lat": 37.271,
+   "lon": -118.026,
+   "score": 0.4334,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.545
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 82,
+   "fault_name": "West Muddy Creek fault",
+   "lat": 44.782,
+   "lon": -112.944,
+   "score": 0.4301,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.52
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 83,
+   "fault_name": "unnamed fault near Mile Creek",
+   "lat": 44.81,
+   "lon": -111.486,
+   "score": 0.4301,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.12
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 84,
+   "fault_name": "Big Chino fault",
+   "lat": 35.193,
+   "lon": -112.782,
+   "score": 0.4288,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.665
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 85,
+   "fault_name": "unnamed faults west of Hungry Valley",
+   "lat": 39.809,
+   "lon": -119.8,
+   "score": 0.4279,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.512
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 86,
+   "fault_name": "Northern Windermere Hills fault",
+   "lat": 41.21,
+   "lon": -114.742,
+   "score": 0.4255,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.502
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 87,
+   "fault_name": "Selenite Range fault zone",
+   "lat": 40.393,
+   "lon": -119.316,
+   "score": 0.4255,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.502
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 88,
+   "fault_name": "Towne Pass fault",
+   "lat": 36.38,
+   "lon": -117.27,
+   "score": 0.4248,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.649
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 89,
+   "fault_name": "Northern Sangre de Cristo fault",
+   "lat": 37.858,
+   "lon": -105.59,
+   "score": 0.4215,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.886
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 90,
+   "fault_name": "Bitterroot fault",
+   "lat": 45.947,
+   "lon": -114.172,
+   "score": 0.4211,
+   "components": {
+    "age": 0.8,
+    "slip": 0.088,
+    "junction": 0.0,
+    "length": 0.796
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 91,
+   "fault_name": "unnamed fault zone southeastern Jackson Mountains",
+   "lat": 41.16,
+   "lon": -118.525,
+   "score": 0.4181,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.573
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 92,
+   "fault_name": "Cambridge Hills fault",
+   "lat": 38.732,
+   "lon": -119.015,
+   "score": 0.4176,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 93,
+   "fault_name": "Central Pintwater Range faults",
+   "lat": 37.04,
+   "lon": -115.572,
+   "score": 0.4176,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 94,
+   "fault_name": "unnamed fault near Wolf Hill",
+   "lat": 38.748,
+   "lon": -108.849,
+   "score": 0.4176,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 95,
+   "fault_name": "unnamed faults east of Taylor Peak",
+   "lat": 39.119,
+   "lon": -114.655,
+   "score": 0.4176,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 96,
+   "fault_name": "unnamed fault of Missouri Park",
+   "lat": 38.509,
+   "lon": -106.079,
+   "score": 0.4153,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.311
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 97,
+   "fault_name": "unnamed fault near Monida",
+   "lat": 44.568,
+   "lon": -112.341,
+   "score": 0.4146,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 98,
+   "fault_name": "unnamed faults along Sahwave Mountains",
+   "lat": 40.245,
+   "lon": -119.092,
+   "score": 0.4146,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 99,
+   "fault_name": "Western Granite Range fault",
+   "lat": 40.865,
+   "lon": -119.508,
+   "score": 0.4138,
+   "components": {
+    "age": 0.2,
+    "slip": 0.389,
+    "junction": 0.5,
+    "length": 0.566
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 100,
+   "fault_name": "Lemhi fault",
+   "lat": 44.521,
+   "lon": -113.709,
+   "score": 0.4134,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.853
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 101,
+   "fault_name": "Safford fault zone",
+   "lat": 32.694,
+   "lon": -109.75,
+   "score": 0.4116,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.597
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 102,
+   "fault_name": "Ogden Valley northeastern margin fault",
+   "lat": 41.347,
+   "lon": -111.817,
+   "score": 0.4114,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.446
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 103,
+   "fault_name": "unnamed faults south of Leadville",
+   "lat": 39.236,
+   "lon": -106.284,
+   "score": 0.4114,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.446
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 104,
+   "fault_name": "unnamed fault of West Buttes",
+   "lat": 40.391,
+   "lon": -115.003,
+   "score": 0.4074,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.28
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 105,
+   "fault_name": "San Andres Mountains fault",
+   "lat": 32.682,
+   "lon": -106.497,
+   "score": 0.4057,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.823
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 106,
+   "fault_name": "Secondary faults in Jackson Hole valley",
+   "lat": 43.533,
+   "lon": -110.706,
+   "score": 0.4019,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.607
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 107,
+   "fault_name": "Bare Mountain fault",
+   "lat": 36.845,
+   "lon": -116.639,
+   "score": 0.4005,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.502
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 108,
+   "fault_name": "Franklin Mine Road fault",
+   "lat": 46.652,
+   "lon": -112.073,
+   "score": 0.4,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.0
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 109,
+   "fault_name": "unnamed fault zone between Kumiva and Sage Hen Valleys",
+   "lat": 40.112,
+   "lon": -119.218,
+   "score": 0.398,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.492
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 110,
+   "fault_name": "Gold Mountain fault",
+   "lat": 37.234,
+   "lon": -117.424,
+   "score": 0.3954,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.482
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 111,
+   "fault_name": "McRae Canyon fault",
+   "lat": 33.248,
+   "lon": -107.111,
+   "score": 0.3954,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.382
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 112,
+   "fault_name": "Tule Canyon faults",
+   "lat": 37.324,
+   "lon": -117.515,
+   "score": 0.3954,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.382
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 113,
+   "fault_name": "unnamed fault zone near Sheep Spring",
+   "lat": 40.666,
+   "lon": -118.914,
+   "score": 0.3954,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.382
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 114,
+   "fault_name": "Nightingale Mountains fault zone",
+   "lat": 40.0,
+   "lon": -119.291,
+   "score": 0.3919,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.618
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 115,
+   "fault_name": "Eastern Granite Range fault",
+   "lat": 41.0,
+   "lon": -119.444,
+   "score": 0.388,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.602
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 116,
+   "fault_name": "unnamed fault in Coal Valley",
+   "lat": 38.063,
+   "lon": -115.143,
+   "score": 0.3845,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.338
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 117,
+   "fault_name": "West Walker River fault zone",
+   "lat": 38.337,
+   "lon": -119.48,
+   "score": 0.3829,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.482
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 118,
+   "fault_name": "East Gros Ventre fault",
+   "lat": 43.463,
+   "lon": -110.799,
+   "score": 0.3801,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.52
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 119,
+   "fault_name": "Groom Range Central fault",
+   "lat": 37.578,
+   "lon": -115.786,
+   "score": 0.379,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.566
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 120,
+   "fault_name": "Sawtooth fault",
+   "lat": 44.306,
+   "lon": -115.165,
+   "score": 0.3778,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.711
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 121,
+   "fault_name": "unnamed faults in southern Red Hills",
+   "lat": 39.63,
+   "lon": -114.372,
+   "score": 0.3778,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.311
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 122,
+   "fault_name": "unnamed faults west of Peavine Peak",
+   "lat": 39.589,
+   "lon": -119.988,
+   "score": 0.3778,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.311
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 123,
+   "fault_name": "Hoback fault",
+   "lat": 43.458,
+   "lon": -110.799,
+   "score": 0.3755,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.502
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 124,
+   "fault_name": "Sand Flat graben faults",
+   "lat": 38.885,
+   "lon": -109.055,
+   "score": 0.3737,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.545
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 125,
+   "fault_name": "Beaver Creek fault zone",
+   "lat": 42.804,
+   "lon": -124.322,
+   "score": 0.3728,
+   "components": {
+    "age": 0.6,
+    "slip": 0.389,
+    "junction": 0.0,
+    "length": 0.502
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 126,
+   "fault_name": "Blacktail fault",
+   "lat": 45.006,
+   "lon": -112.538,
+   "score": 0.3727,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.641
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 127,
+   "fault_name": "Red Rock Hills fault",
+   "lat": 44.908,
+   "lon": -112.748,
+   "score": 0.3705,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.632
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 128,
+   "fault_name": "unnamed fault in Grass Valley Wash",
+   "lat": 39.687,
+   "lon": -114.361,
+   "score": 0.3699,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.28
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 129,
+   "fault_name": "Tin Mountain fault",
+   "lat": 36.738,
+   "lon": -117.543,
+   "score": 0.3693,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.627
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 130,
+   "fault_name": "Mesquite fault",
+   "lat": 36.666,
+   "lon": -114.097,
+   "score": 0.3681,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.623
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 131,
+   "fault_name": "unnamed fault east of Buck Mountain",
+   "lat": 39.606,
+   "lon": -115.625,
+   "score": 0.3676,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.52
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 132,
+   "fault_name": "unnamed faults northwest of Leadville",
+   "lat": 39.388,
+   "lon": -106.271,
+   "score": 0.3676,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.52
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 133,
+   "fault_name": "Marys Mountain fault",
+   "lat": 40.696,
+   "lon": -116.26,
+   "score": 0.3654,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.512
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 134,
+   "fault_name": "Delamar Mountains fault",
+   "lat": 37.423,
+   "lon": -114.849,
+   "score": 0.3653,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.311
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 135,
+   "fault_name": "East Franklin Mountains fault",
+   "lat": 31.605,
+   "lon": -106.488,
+   "score": 0.3653,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.661
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 136,
+   "fault_name": "Mineral Mountains (northeast side) fault",
+   "lat": 38.606,
+   "lon": -112.801,
+   "score": 0.3646,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.458
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 137,
+   "fault_name": "East-Side Chase Gulch fault",
+   "lat": 38.984,
+   "lon": -105.608,
+   "score": 0.3616,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.597
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 138,
+   "fault_name": "Dry Hills faults",
+   "lat": 40.411,
+   "lon": -116.511,
+   "score": 0.3592,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.537
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 139,
+   "fault_name": "Boulder front fault",
+   "lat": 43.816,
+   "lon": -114.591,
+   "score": 0.3579,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.382
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 140,
+   "fault_name": "unnamed fault on west side of Snake Range",
+   "lat": 39.406,
+   "lon": -114.327,
+   "score": 0.354,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.566
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 141,
+   "fault_name": "Kissick fault",
+   "lat": 44.908,
+   "lon": -112.998,
+   "score": 0.3521,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.458
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 142,
+   "fault_name": "Slate Ridge faults",
+   "lat": 37.314,
+   "lon": -117.355,
+   "score": 0.3521,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.458
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 143,
+   "fault_name": "Los Pi\u00f1os fault",
+   "lat": 34.347,
+   "lon": -106.608,
+   "score": 0.3505,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.502
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 144,
+   "fault_name": "Soup Creek fault",
+   "lat": 46.813,
+   "lon": -111.808,
+   "score": 0.3489,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.446
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 145,
+   "fault_name": "unnamed fault west of Cave Valley",
+   "lat": 38.387,
+   "lon": -114.953,
+   "score": 0.3489,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.446
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 146,
+   "fault_name": "unnamed faults near Twin Lakes Reservoir",
+   "lat": 39.0,
+   "lon": -106.306,
+   "score": 0.3489,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.446
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 147,
+   "fault_name": "unnamed faults east of Austin",
+   "lat": 39.494,
+   "lon": -117.015,
+   "score": 0.3416,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.417
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 148,
+   "fault_name": "Peace Camp faults",
+   "lat": 36.597,
+   "lon": -115.953,
+   "score": 0.3396,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.458
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 149,
+   "fault_name": "Diamond Springs fault",
+   "lat": 46.748,
+   "lon": -112.091,
+   "score": 0.3375,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.0
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 150,
+   "fault_name": "Adobe Range fault",
+   "lat": 41.04,
+   "lon": -115.825,
+   "score": 0.3352,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.641
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 151,
+   "fault_name": "Cricket Mountains (north end) faults",
+   "lat": 39.081,
+   "lon": -112.851,
+   "score": 0.3352,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.191
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 152,
+   "fault_name": "Ruby Range western border fault",
+   "lat": 45.391,
+   "lon": -112.243,
+   "score": 0.333,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.632
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 153,
+   "fault_name": "Jocko fault",
+   "lat": 47.148,
+   "lon": -113.975,
+   "score": 0.3329,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.482
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 154,
+   "fault_name": "unnamed fault west of Toano Range",
+   "lat": 41.072,
+   "lon": -114.316,
+   "score": 0.3329,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.382
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 155,
+   "fault_name": "Overton Arm faults",
+   "lat": 36.162,
+   "lon": -114.361,
+   "score": 0.3313,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.725
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 156,
+   "fault_name": "Swan fault",
+   "lat": 48.412,
+   "lon": -114.142,
+   "score": 0.3313,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.875
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 157,
+   "fault_name": "Grouse Creek and Dove Creek Mountains faults",
+   "lat": 41.807,
+   "lon": -113.744,
+   "score": 0.3306,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.672
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 158,
+   "fault_name": "South Fork Flathead fault",
+   "lat": 48.472,
+   "lon": -113.974,
+   "score": 0.3292,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.867
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 159,
+   "fault_name": "Rampart Range fault",
+   "lat": 39.028,
+   "lon": -104.911,
+   "score": 0.3288,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.665
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 160,
+   "fault_name": "Horseshoe fault zone",
+   "lat": 33.989,
+   "lon": -111.731,
+   "score": 0.3279,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.512
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 161,
+   "fault_name": "unnamed fault near Pine Mountain",
+   "lat": 38.611,
+   "lon": -108.668,
+   "score": 0.3241,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.597
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 162,
+   "fault_name": "unnamed fault near Cliff Lake",
+   "lat": 44.825,
+   "lon": -111.542,
+   "score": 0.3227,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.191
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 163,
+   "fault_name": "unnamed faults in northern Pancake Range",
+   "lat": 39.331,
+   "lon": -115.771,
+   "score": 0.3153,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.311
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 164,
+   "fault_name": "Arrow Canyon Range fault",
+   "lat": 36.682,
+   "lon": -114.904,
+   "score": 0.3148,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.559
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 165,
+   "fault_name": "Boulder River valley western border fault",
+   "lat": 46.187,
+   "lon": -112.069,
+   "score": 0.3144,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.607
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 166,
+   "fault_name": "Sheep-East Desert Ranges fault",
+   "lat": 36.561,
+   "lon": -115.317,
+   "score": 0.3123,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.649
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 167,
+   "fault_name": "Bull Lake fault",
+   "lat": 48.331,
+   "lon": -115.794,
+   "score": 0.3092,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.537
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 168,
+   "fault_name": "Ruby Range northern border fault",
+   "lat": 45.393,
+   "lon": -112.237,
+   "score": 0.3092,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.537
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 169,
+   "fault_name": "unnamed fault north of Wells Station Summit",
+   "lat": 38.643,
+   "lon": -115.359,
+   "score": 0.3074,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.28
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 170,
+   "fault_name": "El Oro fault",
+   "lat": 35.971,
+   "lon": -105.308,
+   "score": 0.3056,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.573
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 171,
+   "fault_name": "Little Chino fault",
+   "lat": 34.8,
+   "lon": -112.415,
+   "score": 0.3028,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.361
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 172,
+   "fault_name": "Savage Lake fault",
+   "lat": 48.436,
+   "lon": -115.795,
+   "score": 0.3005,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.502
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 173,
+   "fault_name": "unnamed fault near Packer Station",
+   "lat": 38.725,
+   "lon": -114.772,
+   "score": 0.2977,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.241
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 174,
+   "fault_name": "Wildcat Wash fault",
+   "lat": 36.88,
+   "lon": -114.872,
+   "score": 0.2947,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.529
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 175,
+   "fault_name": "unnamed fault west of Stag Mountain",
+   "lat": 41.374,
+   "lon": -115.514,
+   "score": 0.2896,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.458
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 176,
+   "fault_name": "unnamed faults in Williams Fork Valley",
+   "lat": 39.972,
+   "lon": -106.188,
+   "score": 0.288,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.502
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 177,
+   "fault_name": "Sacrament Pass fault",
+   "lat": 39.082,
+   "lon": -114.141,
+   "score": 0.2864,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.446
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 178,
+   "fault_name": "Wild Rose Spring fault",
+   "lat": 37.371,
+   "lon": -117.651,
+   "score": 0.2864,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.446
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 179,
+   "fault_name": "Ute Pass fault zone",
+   "lat": 39.285,
+   "lon": -105.143,
+   "score": 0.2851,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.741
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 180,
+   "fault_name": "Red Rocks fault",
+   "lat": 38.558,
+   "lon": -107.744,
+   "score": 0.283,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.632
+   },
+   "quartz_frac": 0.75
+  },
+  {
+   "rank": 181,
+   "fault_name": "Eastern Columbus Salt Marsh fault",
+   "lat": 38.099,
+   "lon": -117.895,
+   "score": 0.2829,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.432
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 182,
+   "fault_name": "Eleven Mile fault",
+   "lat": 38.885,
+   "lon": -105.516,
+   "score": 0.2824,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.28
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 183,
+   "fault_name": "unnamed fault zone south of Bull Run Mountains",
+   "lat": 41.649,
+   "lon": -116.165,
+   "score": 0.2791,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.417
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 184,
+   "fault_name": "unnamed fault zone west of Garden Valley",
+   "lat": 38.2,
+   "lon": -115.534,
+   "score": 0.2778,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.661
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 185,
+   "fault_name": "Rocker fault",
+   "lat": 45.998,
+   "lon": -112.596,
+   "score": 0.2758,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.653
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 186,
+   "fault_name": "unnamed fault near northern Fortification Range",
+   "lat": 38.703,
+   "lon": -114.543,
+   "score": 0.275,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.4
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 187,
+   "fault_name": "Pilot Range faults",
+   "lat": 41.281,
+   "lon": -114.03,
+   "score": 0.2727,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.641
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 188,
+   "fault_name": "Wolf Creek graben",
+   "lat": 44.997,
+   "lon": -111.646,
+   "score": 0.2727,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.241
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 189,
+   "fault_name": "Lida faults",
+   "lat": 37.421,
+   "lon": -117.578,
+   "score": 0.2704,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.382
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 190,
+   "fault_name": "unnamed faults in northeastern Paradise Valley",
+   "lat": 41.589,
+   "lon": -117.493,
+   "score": 0.2676,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.12
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 191,
+   "fault_name": "South Swisshelm fault",
+   "lat": 31.64,
+   "lon": -109.501,
+   "score": 0.2653,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.361
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 192,
+   "fault_name": "South Granite Mountains fault system",
+   "lat": 42.479,
+   "lon": -108.252,
+   "score": 0.2624,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.85
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 193,
+   "fault_name": "Sweetwater fault",
+   "lat": 45.04,
+   "lon": -112.275,
+   "score": 0.2614,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.446
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 194,
+   "fault_name": "Bull Mountain western border fault",
+   "lat": 46.165,
+   "lon": -112.103,
+   "score": 0.2587,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.585
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 195,
+   "fault_name": "unnamed fault near Ovando",
+   "lat": 47.145,
+   "lon": -113.311,
+   "score": 0.2587,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.585
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 196,
+   "fault_name": "Saleratus Creek fault",
+   "lat": 41.236,
+   "lon": -111.267,
+   "score": 0.258,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.632
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 197,
+   "fault_name": "Gallatin Range fault",
+   "lat": 45.622,
+   "lon": -110.94,
+   "score": 0.254,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.566
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 198,
+   "fault_name": "unnamed fault south of Shavano Peak",
+   "lat": 38.553,
+   "lon": -106.243,
+   "score": 0.2528,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.311
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 199,
+   "fault_name": "South Horse Prairie basin fault",
+   "lat": 44.764,
+   "lon": -113.191,
+   "score": 0.2523,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.559
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 200,
+   "fault_name": "Thompson Valley fault",
+   "lat": 47.769,
+   "lon": -114.968,
+   "score": 0.25,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.4
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 201,
+   "fault_name": "Deadwood-Reeves Creek fault",
+   "lat": 44.269,
+   "lon": -115.689,
+   "score": 0.244,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.776
+   },
+   "quartz_frac": 0.5
+  },
+  {
+   "rank": 202,
+   "fault_name": "Sugarloaf fault zone",
+   "lat": 33.742,
+   "lon": -111.523,
+   "score": 0.2403,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.361
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 203,
+   "fault_name": "Ninemile fault",
+   "lat": 47.246,
+   "lon": -114.68,
+   "score": 0.2345,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.738
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 204,
+   "fault_name": "Hilger fault",
+   "lat": 46.906,
+   "lon": -112.147,
+   "score": 0.2301,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.52
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 205,
+   "fault_name": "O'Brien Creek fault",
+   "lat": 48.547,
+   "lon": -115.9,
+   "score": 0.2301,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.47
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 206,
+   "fault_name": "Wilkins fault",
+   "lat": 41.515,
+   "lon": -114.686,
+   "score": 0.2301,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.47
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 207,
+   "fault_name": "Bear River Range faults",
+   "lat": 41.604,
+   "lon": -111.561,
+   "score": 0.2299,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.72
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 208,
+   "fault_name": "unnamed fault west of Buena Vista",
+   "lat": 38.828,
+   "lon": -106.241,
+   "score": 0.2227,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.5,
+    "length": 0.191
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 209,
+   "fault_name": "unnamed faults in southern Gillis Range",
+   "lat": 38.654,
+   "lon": -118.495,
+   "score": 0.2204,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.432
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 210,
+   "fault_name": "Bridger fault",
+   "lat": 46.058,
+   "lon": -111.131,
+   "score": 0.2181,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.672
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 211,
+   "fault_name": "Quebraditas fault zone",
+   "lat": 35.808,
+   "lon": -105.417,
+   "score": 0.2176,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.47
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 212,
+   "fault_name": "unnamed faults east of Mount Lewis, Shoshone Range",
+   "lat": 40.373,
+   "lon": -116.759,
+   "score": 0.2079,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.382
+   },
+   "quartz_frac": 0.375
+  },
+  {
+   "rank": 213,
+   "fault_name": "Carefree fault zone",
+   "lat": 33.845,
+   "lon": -111.854,
+   "score": 0.2041,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.417
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 214,
+   "fault_name": "Eastern Battle Mountain faults",
+   "lat": 40.548,
+   "lon": -117.083,
+   "score": 0.2028,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.361
+   },
+   "quartz_frac": 0.25
+  },
+  {
+   "rank": 215,
+   "fault_name": "Picuris-Pecos fault",
+   "lat": 35.559,
+   "lon": -105.822,
+   "score": 0.1991,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.796
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 216,
+   "fault_name": "Bradley Creek fault",
+   "lat": 45.562,
+   "lon": -111.753,
+   "score": 0.197,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.338
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 217,
+   "fault_name": "Carmichael fault",
+   "lat": 45.607,
+   "lon": -111.819,
+   "score": 0.197,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.338
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 218,
+   "fault_name": "Elk Creek fault",
+   "lat": 45.682,
+   "lon": -111.611,
+   "score": 0.1947,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.579
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 219,
+   "fault_name": "Cedar Creek fault",
+   "lat": 46.259,
+   "lon": -114.716,
+   "score": 0.174,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.696
+   },
+   "quartz_frac": 0.875
+  },
+  {
+   "rank": 220,
+   "fault_name": "unnamed fault of Bonita Canyon",
+   "lat": 34.965,
+   "lon": -107.946,
+   "score": 0.1579,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.382
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 221,
+   "fault_name": "Fort Harrison fault",
+   "lat": 46.613,
+   "lon": -112.119,
+   "score": 0.1426,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.25,
+    "length": 0.12
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 222,
+   "fault_name": "Tinajas Altas fault zone",
+   "lat": 32.303,
+   "lon": -114.086,
+   "score": 0.1345,
+   "components": {
+    "age": 0.2,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.338
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 223,
+   "fault_name": "Las Tablas fault",
+   "lat": 36.577,
+   "lon": -106.018,
+   "score": 0.1322,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.529
+   },
+   "quartz_frac": 0.625
+  },
+  {
+   "rank": 224,
+   "fault_name": "Raft River Mountains fault",
+   "lat": 41.981,
+   "lon": -113.308,
+   "score": 0.1301,
+   "components": {
+    "age": 0.4,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.12
+   },
+   "quartz_frac": 1.0
+  },
+  {
+   "rank": 225,
+   "fault_name": "Leckie fault",
+   "lat": 42.647,
+   "lon": -109.358,
+   "score": 0.123,
+   "components": {
+    "age": 0.0,
+    "slip": 0.0,
+    "junction": 0.0,
+    "length": 0.492
+   },
+   "quartz_frac": 0.75
+  }
+ ],
+ "DISCLAIMER": "ORDERING IS UNVALIDATED. The four scoring legs separate the two declared controls by 0.19 in the WRONG direction. See reports/08-final-report.md section 2."
+}

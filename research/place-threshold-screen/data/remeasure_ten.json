@@ -1,0 +1,560 @@
+{
+ "controls": {
+  "Sandia fault": {
+   "declared": 0.875,
+   "measured": 0.875,
+   "n_pts": 8,
+   "segments": 56
+  },
+  "Hubbell Spring fault": {
+   "declared": 0.0,
+   "measured": 0.0,
+   "n_pts": 8,
+   "segments": 321
+  }
+ },
+ "remeasured": {
+  "House Range (west side) fault": {
+   "segments": 91,
+   "traced_km": 438.5,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 39.2201,
+     "lon": -113.4479,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.3014,
+     "lon": -113.4159,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.0693,
+     "lon": -113.4251,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.1941,
+     "lon": -113.4554,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2714,
+     "lon": -113.4291,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.4904,
+     "lon": -113.3957,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.4584,
+     "lon": -113.3905,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.3818,
+     "lon": -113.3925,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Kings Canyon fault zone": {
+   "segments": 45,
+   "traced_km": 124.1,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.25,
+   "fabric_frac": 0.0,
+   "rescued": true,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 39.1428,
+     "lon": -119.8228,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 39.1223,
+     "lon": -119.8387,
+     "tier": "TIER_PLUTONIC",
+     "term": "granite"
+    },
+    {
+     "lat": 39.1564,
+     "lon": -119.8213,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 39.1818,
+     "lon": -119.8157,
+     "tier": "TIER_PLUTONIC",
+     "term": "granite"
+    },
+    {
+     "lat": 39.1741,
+     "lon": -119.8073,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 39.1798,
+     "lon": -119.7969,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2032,
+     "lon": -119.7752,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2063,
+     "lon": -119.7624,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Eastern Edwards Creek Valley fault zone": {
+   "segments": 28,
+   "traced_km": 165.9,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 39.4486,
+     "lon": -117.7377,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.565,
+     "lon": -117.5976,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.4899,
+     "lon": -117.7277,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.5012,
+     "lon": -117.6665,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.5483,
+     "lon": -117.6007,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.5616,
+     "lon": -117.5518,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.5885,
+     "lon": -117.5489,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.6177,
+     "lon": -117.5135,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Japanese and Cal Valleys faults": {
+   "segments": 11,
+   "traced_km": 132.1,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 39.1445,
+     "lon": -112.0327,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.1878,
+     "lon": -112.03,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2049,
+     "lon": -112.0019,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2402,
+     "lon": -112.0062,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.173,
+     "lon": -112.0005,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.2729,
+     "lon": -112.0237,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.1138,
+     "lon": -111.9753,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 39.0256,
+     "lon": -111.9879,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Antelope Range fault": {
+   "segments": 8,
+   "traced_km": 109.3,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 37.6701,
+     "lon": -113.5959,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.6999,
+     "lon": -113.5972,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.654,
+     "lon": -113.5497,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.6969,
+     "lon": -113.5183,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.7826,
+     "lon": -113.4582,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.7587,
+     "lon": -113.4764,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.7997,
+     "lon": -113.4151,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.7372,
+     "lon": -113.4933,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Aquarius and Awapa Plateaus faults": {
+   "segments": 23,
+   "traced_km": 372.1,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 38.2592,
+     "lon": -111.8869,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.491,
+     "lon": -111.7826,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 38.3077,
+     "lon": -111.8426,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.0192,
+     "lon": -111.7645,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.1238,
+     "lon": -111.6739,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 38.0975,
+     "lon": -111.6362,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.1899,
+     "lon": -111.8619,
+     "tier": "TIER_VOLCANIC",
+     "term": "rhyolite"
+    },
+    {
+     "lat": 38.0672,
+     "lon": -111.8347,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Monitor Hills East fault": {
+   "segments": 6,
+   "traced_km": 32.5,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 37.9848,
+     "lon": -116.8708,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9648,
+     "lon": -116.8703,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9409,
+     "lon": -116.864,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9171,
+     "lon": -116.853,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9419,
+     "lon": -116.8583,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9495,
+     "lon": -116.8501,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.98,
+     "lon": -116.8439,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 37.9705,
+     "lon": -116.8414,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  },
+  "Salt and Cache Valleys faults": {
+   "segments": 37,
+   "traced_km": 444.6,
+   "n_pts": 8,
+   "n_unmeasured": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "geometry_source": "local layer-21 national pull",
+   "pts": [
+    {
+     "lat": 38.7676,
+     "lon": -109.6593,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.7061,
+     "lon": -109.5197,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.978,
+     "lon": -109.8724,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.9742,
+     "lon": -109.904,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.9228,
+     "lon": -109.839,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.7352,
+     "lon": -109.4671,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.9234,
+     "lon": -109.8131,
+     "tier": "NONE",
+     "term": null
+    },
+    {
+     "lat": 38.8011,
+     "lon": -109.6416,
+     "tier": "NONE",
+     "term": null
+    }
+   ],
+   "was": "network error (403 / timeout)"
+  }
+ },
+ "off_frame": {
+  "Tijeras-Canoncito (June's best RAW convergence, demoted)": {
+   "real_usgs_name": "Tijeras-Canoncito fault system (n-tilde)",
+   "slip_sense": "Left lateral",
+   "population_slip_sense": "Normal",
+   "verdict": "OUT OF POPULATION -- not measured, not refuted. The 0.000 it carried was a scope artifact, not a lithology result.",
+   "carried_from": "trace_lithology_survivors.json"
+  }
+ },
+ "notes": {},
+ "controls_reproduce": true,
+ "phantom": {
+  "ghost_key": "Wah Wah Mountains (south end near Lund) fault",
+  "ghost_row": {
+   "stage": "stage4b",
+   "segments": 0,
+   "traced_km": 0.0,
+   "n_pts": 0,
+   "quartz_frac": 0.0,
+   "fabric_frac": 0.0,
+   "rescued": false,
+   "age": "late Quaternary",
+   "age_rank": 3,
+   "total_fault_length": 41,
+   "lat": 37.971,
+   "lon": -113.485,
+   "pts": []
+  },
+  "survivor_key_repr": "'Wah Wah Mountains (south end near Lund) fault\\x0b'",
+  "survivor_row": {
+   "stage": "trace_lithology_national.json",
+   "segments": 23,
+   "traced_km": 154.6,
+   "n_pts": 8,
+   "quartz_frac": 0.0
+  },
+  "reconfirmed": {
+   "segments": 23,
+   "traced_km": 154.6,
+   "n_pts": 8,
+   "quartz_frac": 0.0
+  },
+  "agrees_with_survivor": true,
+  "action": "DELETE the clean-name row; it is a second measurement of the same fault that silently resolved to zero segments. The survivor's 0.0 is a real measurement over 8 points and stands."
+ },
+ "summary": {
+  "remeasured": 8,
+  "yielded_a_number": 8,
+  "newly_passing": 1,
+  "threshold": 0.25,
+  "phantom_rows_to_delete": 1,
+  "off_frame": 1,
+  "controls_reproduce_exactly": true
+ }
+}

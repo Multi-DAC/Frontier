@@ -1,0 +1,708 @@
+{
+ "designed": "2026-08-16",
+ "separation_km": 100.0,
+ "hypothesis": "H1: high physics rank -> heavier anomalous-light record",
+ "rubric": {
+  "T3": "named place-specific recurring record <=25km, non-listicle source",
+  "T2": "recurring record <=25km, web-aggregator only",
+  "T1": "isolated/one-off <=25km, or recurring at 25-60km",
+  "T0": "nothing under protocol"
+ },
+ "protocol_queries_per_site": 3,
+ "blind": false,
+ "blind_note": "query template/count/tiers frozen pre-lookup; scoring is not blind and is the weakest link",
+ "observer_proxy": "census places within 50 km (2023 gazetteer)",
+ "readout_rule": ">=1 full tier separation on the mean, predicted direction = SUPPORTED; else NOT SUPPORTED",
+ "pairs": [
+  {
+   "winner": {
+    "fault": "Madison fault",
+    "lat": 44.792,
+    "lon": -111.438,
+    "score": 0.837,
+    "L1": 1.0,
+    "components": {
+     "age": 1.0,
+     "slip": 0.389,
+     "junction": 1.0,
+     "length": 0.796
+    },
+    "strain": null,
+    "rank": 1,
+    "observer": {
+     "places_within_50km": 4,
+     "nearest_km": 19.7,
+     "nearest": [
+      {
+       "place": "Hebgen Lake Estates CDP",
+       "state": "MT",
+       "km": 19.7
+      },
+      {
+       "place": "Island Park city",
+       "state": "ID",
+       "km": 29.7
+      },
+      {
+       "place": "West Yellowstone town",
+       "state": "MT",
+       "km": 29.9
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Big Chino fault",
+    "lat": 35.193,
+    "lon": -112.782,
+    "score": 0.393,
+    "observer": {
+     "places_within_50km": 4,
+     "nearest_km": 16.3,
+     "nearest": [
+      {
+       "place": "Seligman CDP",
+       "state": "AZ",
+       "km": 16.3
+      },
+      {
+       "place": "Ash Fork CDP",
+       "state": "AZ",
+       "km": 26.5
+      },
+      {
+       "place": "Kaibab Estates West CDP",
+       "state": "AZ",
+       "km": 27.3
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 4,
+   "decoy_obs": 4
+  },
+  {
+   "winner": {
+    "fault": "Round Valley fault",
+    "lat": 37.542,
+    "lon": -118.726,
+    "score": 0.7324,
+    "L1": 0.5,
+    "components": {
+     "age": 0.8,
+     "slip": 0.739,
+     "junction": 1.0,
+     "length": 0.623
+    },
+    "strain": 88.6,
+    "rank": 2,
+    "observer": {
+     "places_within_50km": 16,
+     "nearest_km": 2.4,
+     "nearest": [
+      {
+       "place": "Aspen Springs CDP",
+       "state": "CA",
+       "km": 2.4
+      },
+      {
+       "place": "Crowley Lake CDP",
+       "state": "CA",
+       "km": 3.5
+      },
+      {
+       "place": "Sunny Slopes CDP",
+       "state": "CA",
+       "km": 5.4
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Thompson Valley fault",
+    "lat": 47.769,
+    "lon": -114.968,
+    "score": 0.4,
+    "observer": {
+     "places_within_50km": 15,
+     "nearest_km": 26.0,
+     "nearest": [
+      {
+       "place": "Lonepine CDP",
+       "state": "MT",
+       "km": 26.0
+      },
+      {
+       "place": "Weeksville CDP",
+       "state": "MT",
+       "km": 26.6
+      },
+      {
+       "place": "Hot Springs town",
+       "state": "MT",
+       "km": 28.5
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.061,
+   "winner_obs": 16,
+   "decoy_obs": 15
+  },
+  {
+   "winner": {
+    "fault": "Little Valley fault",
+    "lat": 39.237,
+    "lon": -119.886,
+    "score": 0.7112,
+    "L1": 0.875,
+    "components": {
+     "age": 0.8,
+     "slip": 0.389,
+     "junction": 1.0,
+     "length": 0.492
+    },
+    "strain": null,
+    "rank": 3,
+    "observer": {
+     "places_within_50km": 47,
+     "nearest_km": 6.1,
+     "nearest": [
+      {
+       "place": "Incline Village CDP",
+       "state": "NV",
+       "km": 6.1
+      },
+      {
+       "place": "Crystal Bay CDP",
+       "state": "NV",
+       "km": 10.0
+      },
+      {
+       "place": "Washoe Valley CDP",
+       "state": "NV",
+       "km": 11.2
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Bear River Range faults",
+    "lat": 41.604,
+    "lon": -111.561,
+    "score": 0.259,
+    "observer": {
+     "places_within_50km": 44,
+     "nearest_km": 22.3,
+     "nearest": [
+      {
+       "place": "Avon CDP",
+       "state": "UT",
+       "km": 22.3
+      },
+      {
+       "place": "Paradise town",
+       "state": "UT",
+       "km": 23.0
+      },
+      {
+       "place": "Millville city",
+       "state": "UT",
+       "km": 23.4
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.065,
+   "winner_obs": 47,
+   "decoy_obs": 44
+  },
+  {
+   "winner": {
+    "fault": "Helena valley fault",
+    "lat": 46.759,
+    "lon": -112.049,
+    "score": 0.624,
+    "L1": 1.0,
+    "components": {
+     "age": 0.6,
+     "slip": 0.0,
+     "junction": 1.0,
+     "length": 0.52
+    },
+    "strain": null,
+    "rank": 4,
+    "observer": {
+     "places_within_50km": 22,
+     "nearest_km": 3.4,
+     "nearest": [
+      {
+       "place": "Helena Valley Northwest CDP",
+       "state": "MT",
+       "km": 3.4
+      },
+      {
+       "place": "Helena Valley Northeast CDP",
+       "state": "MT",
+       "km": 10.2
+      },
+      {
+       "place": "Helena Valley West Central CDP",
+       "state": "MT",
+       "km": 11.0
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Bull Mountain western border fault",
+    "lat": 46.165,
+    "lon": -112.103,
+    "score": 0.257,
+    "observer": {
+     "places_within_50km": 22,
+     "nearest_km": 8.0,
+     "nearest": [
+      {
+       "place": "Boulder city",
+       "state": "MT",
+       "km": 8.0
+      },
+      {
+       "place": "Elkhorn CDP",
+       "state": "MT",
+       "km": 17.8
+      },
+      {
+       "place": "Basin CDP",
+       "state": "MT",
+       "km": 19.3
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 22,
+   "decoy_obs": 22
+  },
+  {
+   "winner": {
+    "fault": "Red Rock fault",
+    "lat": 44.66,
+    "lon": -112.698,
+    "score": 0.6168,
+    "L1": 0.5,
+    "components": {
+     "age": 0.8,
+     "slip": 0.389,
+     "junction": 0.75,
+     "length": 0.645
+    },
+    "strain": null,
+    "rank": 5,
+    "observer": {
+     "places_within_50km": 3,
+     "nearest_km": 7.4,
+     "nearest": [
+      {
+       "place": "Dell CDP",
+       "state": "MT",
+       "km": 7.4
+      },
+      {
+       "place": "Lima town",
+       "state": "MT",
+       "km": 8.7
+      },
+      {
+       "place": "Grant CDP",
+       "state": "MT",
+       "km": 48.6
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Lida faults",
+    "lat": 37.421,
+    "lon": -117.578,
+    "score": 0.4164,
+    "observer": {
+     "places_within_50km": 3,
+     "nearest_km": 37.8,
+     "nearest": [
+      {
+       "place": "Silver Peak CDP",
+       "state": "NV",
+       "km": 37.8
+      },
+      {
+       "place": "Goldfield CDP",
+       "state": "NV",
+       "km": 44.1
+      },
+      {
+       "place": "Dyer CDP",
+       "state": "NV",
+       "km": 47.5
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 3,
+   "decoy_obs": 3
+  },
+  {
+   "winner": {
+    "fault": "Sand Springs Range fault",
+    "lat": 39.19,
+    "lon": -118.338,
+    "score": 0.616,
+    "L1": 0.25,
+    "components": {
+     "age": 0.8,
+     "slip": 0.389,
+     "junction": 1.0,
+     "length": 0.641
+    },
+    "strain": null,
+    "rank": 6,
+    "observer": {
+     "places_within_50km": 3,
+     "nearest_km": 41.1,
+     "nearest": [
+      {
+       "place": "Fallon Station CDP",
+       "state": "NV",
+       "km": 41.1
+      },
+      {
+       "place": "Schurz CDP",
+       "state": "NV",
+       "km": 48.8
+      },
+      {
+       "place": "Fallon city",
+       "state": "NV",
+       "km": 49.3
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Lone Pine fault",
+    "lat": 44.263,
+    "lon": -113.955,
+    "score": 0.4132,
+    "observer": {
+     "places_within_50km": 3,
+     "nearest_km": 34.1,
+     "nearest": [
+      {
+       "place": "Clayton city",
+       "state": "ID",
+       "km": 34.1
+      },
+      {
+       "place": "Challis city",
+       "state": "ID",
+       "km": 34.6
+      },
+      {
+       "place": "Mackay city",
+       "state": "ID",
+       "km": 47.7
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 3,
+   "decoy_obs": 3
+  },
+  {
+   "winner": {
+    "fault": "Mosquito fault",
+    "lat": 39.327,
+    "lon": -106.14,
+    "score": 0.6134,
+    "L1": 1.0,
+    "components": {
+     "age": 0.6,
+     "slip": 0.0,
+     "junction": 0.75,
+     "length": 0.717
+    },
+    "strain": null,
+    "rank": 7,
+    "observer": {
+     "places_within_50km": 20,
+     "nearest_km": 7.6,
+     "nearest": [
+      {
+       "place": "Alma town",
+       "state": "CO",
+       "km": 7.6
+      },
+      {
+       "place": "Leadville city",
+       "state": "CO",
+       "km": 15.9
+      },
+      {
+       "place": "Blue River town",
+       "state": "CO",
+       "km": 16.2
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "unnamed faults west of Hungry Valley",
+    "lat": 39.809,
+    "lon": -119.8,
+    "score": 0.3924,
+    "observer": {
+     "places_within_50km": 20,
+     "nearest_km": 13.8,
+     "nearest": [
+      {
+       "place": "Lemmon Valley CDP",
+       "state": "NV",
+       "km": 13.8
+      },
+      {
+       "place": "Cold Springs CDP",
+       "state": "NV",
+       "km": 19.9
+      },
+      {
+       "place": "Spanish Springs CDP",
+       "state": "NV",
+       "km": 20.5
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 20,
+   "decoy_obs": 20
+  },
+  {
+   "winner": {
+    "fault": "Sandia fault",
+    "lat": 35.153,
+    "lon": -106.472,
+    "score": 0.6108,
+    "L1": 0.875,
+    "components": {
+     "age": 0.6,
+     "slip": 0.0,
+     "junction": 1.0,
+     "length": 0.579
+    },
+    "strain": null,
+    "rank": 8,
+    "observer": {
+     "places_within_50km": 59,
+     "nearest_km": 2.8,
+     "nearest": [
+      {
+       "place": "Sandia Heights CDP",
+       "state": "NM",
+       "km": 2.8
+      },
+      {
+       "place": "Cedar Crest CDP",
+       "state": "NM",
+       "km": 9.4
+      },
+      {
+       "place": "Sandia Park CDP",
+       "state": "NM",
+       "km": 9.7
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Picuris-Pecos fault",
+    "lat": 35.559,
+    "lon": -105.822,
+    "score": 0.3342,
+    "observer": {
+     "places_within_50km": 61,
+     "nearest_km": 3.1,
+     "nearest": [
+      {
+       "place": "Ca\u00f1oncito CDP",
+       "state": "NM",
+       "km": 3.1
+      },
+      {
+       "place": "Valencia CDP",
+       "state": "NM",
+       "km": 3.5
+      },
+      {
+       "place": "Ca\u00f1ada de los Alamos CDP",
+       "state": "NM",
+       "km": 5.1
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.033,
+   "winner_obs": 59,
+   "decoy_obs": 61
+  },
+  {
+   "winner": {
+    "fault": "Bear River fault zone",
+    "lat": 41.091,
+    "lon": -110.812,
+    "score": 0.6064,
+    "L1": 0.375,
+    "components": {
+     "age": 0.8,
+     "slip": 0.739,
+     "junction": 0.5,
+     "length": 0.618
+    },
+    "strain": null,
+    "rank": 9,
+    "observer": {
+     "places_within_50km": 6,
+     "nearest_km": 22.7,
+     "nearest": [
+      {
+       "place": "Evanston city",
+       "state": "WY",
+       "km": 22.7
+      },
+      {
+       "place": "Robertson CDP",
+       "state": "WY",
+       "km": 33.7
+      },
+      {
+       "place": "Bear River town",
+       "state": "WY",
+       "km": 37.4
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "Sweetwater fault",
+    "lat": 45.04,
+    "lon": -112.275,
+    "score": 0.4092,
+    "observer": {
+     "places_within_50km": 6,
+     "nearest_km": 33.9,
+     "nearest": [
+      {
+       "place": "Alder CDP",
+       "state": "MT",
+       "km": 33.9
+      },
+      {
+       "place": "Dillon city",
+       "state": "MT",
+       "km": 34.5
+      },
+      {
+       "place": "Virginia City town",
+       "state": "MT",
+       "km": 38.9
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 6,
+   "decoy_obs": 6
+  },
+  {
+   "winner": {
+    "fault": "Teton fault",
+    "lat": 44.013,
+    "lon": -110.682,
+    "score": 0.6016,
+    "L1": 0.75,
+    "components": {
+     "age": 0.8,
+     "slip": 0.0,
+     "junction": 0.75,
+     "length": 0.708
+    },
+    "strain": 19.6,
+    "rank": 10,
+    "observer": {
+     "places_within_50km": 5,
+     "nearest_km": 38.6,
+     "nearest": [
+      {
+       "place": "Alta CDP",
+       "state": "WY",
+       "km": 38.6
+      },
+      {
+       "place": "Kelly CDP",
+       "state": "WY",
+       "km": 43.7
+      },
+      {
+       "place": "Tetonia city",
+       "state": "ID",
+       "km": 44.1
+      }
+     ]
+    }
+   },
+   "decoy": {
+    "fault": "unnamed fault near Ovando",
+    "lat": 47.145,
+    "lon": -113.311,
+    "score": 0.407,
+    "observer": {
+     "places_within_50km": 5,
+     "nearest_km": 11.5,
+     "nearest": [
+      {
+       "place": "Seeley Lake CDP",
+       "state": "MT",
+       "km": 11.5
+      },
+      {
+       "place": "Ovando CDP",
+       "state": "MT",
+       "km": 16.7
+      },
+      {
+       "place": "Potomac CDP",
+       "state": "MT",
+       "km": 35.5
+      }
+     ]
+    }
+   },
+   "status": "MATCHED",
+   "observer_gap": 0.0,
+   "winner_obs": 5,
+   "decoy_obs": 5
+  }
+ ]
+}
