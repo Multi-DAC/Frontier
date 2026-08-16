@@ -1,0 +1,148 @@
+{
+ "frozen": "2026-08-16",
+ "rule": "L1 gate at 0.25 (necessary condition) THEN L1 also scores as a 5th equal term (degree); 50 km minimum separation between listed sites; complete-legs only",
+ "lore_status": "HELD OUT - not consulted, not looked up, no site chosen or excluded for it",
+ "population": 225,
+ "sites": [
+  {
+   "rank": 1,
+   "fault": "Madison fault",
+   "lat": 44.792,
+   "lon": -111.438,
+   "score": 0.837,
+   "L1": 1.0,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.796
+   }
+  },
+  {
+   "rank": 2,
+   "fault": "Round Valley fault",
+   "lat": 37.542,
+   "lon": -118.726,
+   "score": 0.7324,
+   "L1": 0.5,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 1.0,
+    "length": 0.623
+   }
+  },
+  {
+   "rank": 3,
+   "fault": "Little Valley fault",
+   "lat": 39.237,
+   "lon": -119.886,
+   "score": 0.7112,
+   "L1": 0.875,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.492
+   }
+  },
+  {
+   "rank": 4,
+   "fault": "Centennial fault",
+   "lat": 44.584,
+   "lon": -112.066,
+   "score": 0.6812,
+   "L1": 0.5,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.717
+   }
+  },
+  {
+   "rank": 5,
+   "fault": "Antelope Valley fault zone",
+   "lat": 38.677,
+   "lon": -119.548,
+   "score": 0.6244,
+   "L1": 0.25,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.683
+   }
+  },
+  {
+   "rank": 6,
+   "fault": "Helena valley fault",
+   "lat": 46.759,
+   "lon": -112.049,
+   "score": 0.624,
+   "L1": 1.0,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.52
+   }
+  },
+  {
+   "rank": 7,
+   "fault": "Fish Lake Valley fault zone",
+   "lat": 37.694,
+   "lon": -118.114,
+   "score": 0.6174,
+   "L1": 0.25,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.5,
+    "length": 0.798
+   }
+  },
+  {
+   "rank": 8,
+   "fault": "Red Rock fault",
+   "lat": 44.66,
+   "lon": -112.698,
+   "score": 0.6168,
+   "L1": 0.5,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.645
+   }
+  },
+  {
+   "rank": 9,
+   "fault": "Sand Springs Range fault",
+   "lat": 39.19,
+   "lon": -118.338,
+   "score": 0.616,
+   "L1": 0.25,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.641
+   }
+  },
+  {
+   "rank": 10,
+   "fault": "Mosquito fault",
+   "lat": 39.327,
+   "lon": -106.14,
+   "score": 0.6134,
+   "L1": 1.0,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.717
+   }
+  }
+ ]
+}

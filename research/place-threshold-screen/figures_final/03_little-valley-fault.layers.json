@@ -1,0 +1,58 @@
+{
+ "site": 3,
+ "name": "Little Valley fault",
+ "lat": 39.237,
+ "lon": -119.886,
+ "half_km": 18.0,
+ "bbox": [
+  -120.09476495583192,
+  39.07530398850162,
+  -119.67723504416807,
+  39.39869601149839
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 348060,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-120.09476495583192,39.07530398850162,-119.67723504416807,39.39869601149839&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 90458,
+   "how": "CACHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-120.09476495583192,39.07530398850162,-119.67723504416807,39.39869601149839&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 364383,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-120.92982477915965,38.42851994250809,-118.84217522084035,40.045480057491915&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 683,
+   "min_mGal": -204.38296941436073,
+   "max_mGal": -178.18504902474626,
+   "range_mGal": 26.197920389614467
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 14276,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=38.42851994250809&maxlatitude=40.045480057491915&minlongitude=-120.92982477915965&maxlongitude=-118.84217522084035&starttime=1900-01-01&minmagnitude=1.5&limit=20000&orderby=magnitude",
+   "note": "context bbox, ANSS/ComCat",
+   "minmag_requested": 1.0,
+   "minmag_plotted": 1.5,
+   "n_total_at_requested_floor": 28746,
+   "n_at_plotted_floor": 14276,
+   "n_returned": 14276,
+   "complete": true,
+   "starttime": "1900-01-01",
+   "limit": 20000
+  }
+ },
+ "built": "2026-08-16 14:04:22",
+ "output": "work/figures_final\\03_little-valley-fault.png"
+}

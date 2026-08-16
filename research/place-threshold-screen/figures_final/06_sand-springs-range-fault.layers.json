@@ -1,0 +1,58 @@
+{
+ "site": 6,
+ "name": "Sand Springs Range fault",
+ "lat": 39.19,
+ "lon": -118.338,
+ "half_km": 18.0,
+ "bbox": [
+  -118.54662526655834,
+  39.02830398850161,
+  -118.12937473344165,
+  39.35169601149838
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 366602,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-118.54662526655834,39.02830398850161,-118.12937473344165,39.35169601149838&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 77517,
+   "how": "CACHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-118.54662526655834,39.02830398850161,-118.12937473344165,39.35169601149838&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 271218,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-119.38112633279171,38.381519942508085,-117.29487366720828,39.99848005749191&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 685,
+   "min_mGal": -193.9616037755005,
+   "max_mGal": -160.17719654582757,
+   "range_mGal": 33.78440722967292
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 14903,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=38.381519942508085&maxlatitude=39.99848005749191&minlongitude=-119.38112633279171&maxlongitude=-117.29487366720828&starttime=1900-01-01&minmagnitude=1.0&limit=20000&orderby=magnitude",
+   "note": "context bbox, ANSS/ComCat",
+   "minmag_requested": 1.0,
+   "minmag_plotted": 1.0,
+   "n_total_at_requested_floor": 14903,
+   "n_at_plotted_floor": 14903,
+   "n_returned": 14903,
+   "complete": true,
+   "starttime": "1900-01-01",
+   "limit": 20000
+  }
+ },
+ "built": "2026-08-16 14:04:49",
+ "output": "work/figures_final\\06_sand-springs-range-fault.png"
+}

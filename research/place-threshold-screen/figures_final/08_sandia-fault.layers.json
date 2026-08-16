@@ -1,0 +1,58 @@
+{
+ "site": 8,
+ "name": "Sandia fault",
+ "lat": 35.153,
+ "lon": -106.472,
+ "half_km": 18.0,
+ "bbox": [
+  -106.66976486772265,
+  34.99130398850161,
+  -106.27423513227734,
+  35.314696011498384
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 368780,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-106.66976486772265,34.99130398850161,-106.27423513227734,35.314696011498384&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 65559,
+   "how": "CACHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-106.66976486772265,34.99130398850161,-106.27423513227734,35.314696011498384&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 256651,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-107.46082433861324,34.344519942508086,-105.48317566138675,35.96148005749191&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 710,
+   "min_mGal": -230.97091398988334,
+   "max_mGal": -168.27251192687203,
+   "range_mGal": 62.698402063011315
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 92,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=34.344519942508086&maxlatitude=35.96148005749191&minlongitude=-107.46082433861324&maxlongitude=-105.48317566138675&starttime=1900-01-01&minmagnitude=1.0&limit=20000&orderby=magnitude",
+   "note": "context bbox, ANSS/ComCat",
+   "minmag_requested": 1.0,
+   "minmag_plotted": 1.0,
+   "n_total_at_requested_floor": 92,
+   "n_at_plotted_floor": 92,
+   "n_returned": 92,
+   "complete": true,
+   "starttime": "1900-01-01",
+   "limit": 20000
+  }
+ },
+ "built": "2026-08-16 14:05:27",
+ "output": "work/figures_final\\08_sandia-fault.png"
+}

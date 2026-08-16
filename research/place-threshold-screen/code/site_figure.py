@@ -172,11 +172,51 @@ def gravity_field(bb, pad=0.35, nx=220):
     return Z, [w, e, s, n], stats
 
 
-def quakes(bb, minmag=1.0):
+QUAKE_START = "1900-01-01"
+LIMIT = 20000                      # FDSN's own maximum; anything at it is TRUNCATED
+
+
+def quakes(bb, minmag=1.0, starttime=QUAKE_START):
+    """ANSS/ComCat events in bb.
+
+    `starttime` IS NOT OPTIONAL IN PRACTICE. The FDSN event service defaults to the
+    **last 30 days** when starttime is omitted — it does not error, it does not warn, it
+    returns a small honest-looking number. Day 197: the Sandia panel printed
+    "ZERO catalogued events (a real, reportable result)" under a title reading
+    "all years". Re-run with starttime=1900-01-01: **92 events, M1.6-4.7.** The zero was
+    the instrument's default window, and the panel's own alarm branch dressed it as a
+    finding. Every figure built before this line existed carries the 30-day window under
+    an all-years caption.
+    """
     w, s, e, n = bb
-    url = ("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson"
-           f"&minlatitude={s}&maxlatitude={n}&minlongitude={w}&maxlongitude={e}"
-           f"&minmagnitude={minmag}&limit=2000&orderby=magnitude")
+    q = (f"minlatitude={s}&maxlatitude={n}&minlongitude={w}&maxlongitude={e}"
+         f"&starttime={starttime}")
+
+    def count_at(mm):
+        u = f"https://earthquake.usgs.gov/fdsnws/event/1/count?{q}&minmagnitude={mm}"
+        d, _ = fetch(u, tag="eqc")
+        return int(d.strip())
+
+    # SECOND cap defect, found the same hour as the first: FDSN maxes at limit=20000 and
+    # `orderby=magnitude` fills that quota with the LARGEST events. Four of the ten sites
+    # returned exactly 20000 — a round number naming a cap (this report's own method
+    # lesson #5), and the plotted set was a silent magnitude-truncation of the catalogue
+    # under a caption reading "M>=1". So: ask /count first, and raise the floor until the
+    # returned set is COMPLETE. The panel then states the floor it actually achieved.
+    total = count_at(minmag)
+    floor = minmag
+    for cand in (1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0):
+        if cand < minmag:
+            continue
+        if count_at(cand) <= LIMIT:
+            floor = cand
+            break
+    else:
+        floor = 4.0
+    n_at_floor = count_at(floor)
+
+    url = (f"https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&{q}"
+           f"&minmagnitude={floor}&limit={LIMIT}&orderby=magnitude")
     data, how = fetch(url, tag="eq")
     fc = json.loads(data)
     pts = []
@@ -185,7 +225,11 @@ def quakes(bb, minmag=1.0):
         p = f["properties"]
         pts.append((c[0], c[1], p.get("mag") or 0, c[2] if len(c) > 2 else None,
                     p.get("time")))
-    return pts, how, url
+    meta = {"minmag_requested": minmag, "minmag_plotted": floor,
+            "n_total_at_requested_floor": total, "n_at_plotted_floor": n_at_floor,
+            "n_returned": len(pts), "complete": len(pts) >= n_at_floor,
+            "starttime": starttime, "limit": LIMIT}
+    return pts, how, url, meta
 
 
 # ---------------------------------------------------------------- fault linework
@@ -306,12 +350,13 @@ def build(site, half_km=18.0, px=(760, 760), outdir="work/figures"):
                                             "source": GRAV_URL}
 
     try:
-        eq, how, equrl = quakes(bb_ctx, 1.0)
+        eq, how, equrl, eqmeta = quakes(bb_ctx, 1.0)
         man["layers"]["seismicity"] = {"status": "PRESENT", "n": len(eq), "how": how,
-                                       "url": equrl, "note": "context bbox, M>=1.0, ANSS"}
+                                       "url": equrl, "note": "context bbox, ANSS/ComCat",
+                                       **eqmeta}
         e_eq = None
     except Exception as exc:                                        # noqa: BLE001
-        eq, e_eq = [], f"{type(exc).__name__}"
+        eq, eqmeta, e_eq = [], {}, f"{type(exc).__name__}"
         man["layers"]["seismicity"] = {"status": "ABSENT", "detail": str(exc)}
 
     fig = plt.figure(figsize=(11.6, 10.2), dpi=170)
@@ -355,7 +400,9 @@ def build(site, half_km=18.0, px=(760, 760), outdir="work/figures"):
     star(axC, lat, lon)
 
     axD = fig.add_subplot(gs[1, 1])
-    panel(axD, f"D · instrumental seismicity M≥1 within {half_km*5:.0f} km (ANSS, all years)",
+    _fl = eqmeta.get("minmag_plotted", 1.0)
+    panel(axD, f"D · instrumental seismicity M≥{_fl:g} within {half_km*5:.0f} km "
+               f"(ANSS/ComCat, {QUAKE_START[:4]}–present)",
           bb_ctx, ctx_relief, e_eq)
     draw_faults(axD, bb_ctx, lw=0.7)
     if eq:
@@ -364,12 +411,16 @@ def build(site, half_km=18.0, px=(760, 760), outdir="work/figures"):
         ms = np.array([max(p[2], 0.1) for p in eq])
         axD.scatter(xs, ys, s=3 + (ms ** 2.6), c="#d0021b", alpha=0.42,
                     edgecolors="black", linewidths=0.25, zorder=5)
-        axD.text(0.015, 0.02, f"n = {len(eq)} events, M{min(ms):.1f}–{max(ms):.1f}",
+        _lab = (f"n = {len(eq)} events plotted, M{min(ms):.1f}–{max(ms):.1f}"
+                f"  ·  {eqmeta.get('n_total_at_requested_floor','?')} in catalogue at M≥1"
+                + ("" if eqmeta.get("complete", True) else "  ·  ⚠ TRUNCATED AT CAP"))
+        axD.text(0.015, 0.02, _lab,
                  transform=axD.transAxes, fontsize=7, va="bottom",
                  bbox=dict(boxstyle="round,pad=0.25", fc="white", ec="#999", alpha=0.9))
     else:
-        axD.text(0.5, 0.55, "ZERO catalogued events\n(a real, reportable result)",
-                 transform=axD.transAxes, ha="center", fontsize=10, color="#333")
+        axD.text(0.5, 0.55, f"ZERO catalogued events M≥1 since {QUAKE_START[:4]}\n"
+                            "— check network coverage before reading this as quiescence",
+                 transform=axD.transAxes, ha="center", fontsize=9.5, color="#333")
     # the inner bbox, so panel D's relation to A-C is explicit
     w, s, e, n = bb
     axD.plot([w, e, e, w, w], [s, s, n, n, s], color="#fff23a", lw=1.4, zorder=7)

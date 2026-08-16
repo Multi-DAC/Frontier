@@ -1,0 +1,225 @@
+{
+ "frozen": "2026-08-16",
+ "separation_km": 100.0,
+ "rule": "L1 gate at 0.25 (necessary) AND L1 as a 5th equal scoring term (degree); 100 km minimum separation; complete-legs only; greedy from the top",
+ "control": "50 km rebuild reproduced top10_frozen.json exactly before this list was generated",
+ "lore_status": "HELD OUT - not consulted, not looked up, no site chosen or excluded for it",
+ "population": 225,
+ "sites": [
+  {
+   "fault": "Madison fault",
+   "lat": 44.792,
+   "lon": -111.438,
+   "score": 0.837,
+   "L1": 1.0,
+   "components": {
+    "age": 1.0,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.796
+   },
+   "strain": null,
+   "rank": 1
+  },
+  {
+   "fault": "Round Valley fault",
+   "lat": 37.542,
+   "lon": -118.726,
+   "score": 0.7324,
+   "L1": 0.5,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 1.0,
+    "length": 0.623
+   },
+   "strain": 88.6,
+   "rank": 2
+  },
+  {
+   "fault": "Little Valley fault",
+   "lat": 39.237,
+   "lon": -119.886,
+   "score": 0.7112,
+   "L1": 0.875,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.492
+   },
+   "strain": null,
+   "rank": 3
+  },
+  {
+   "fault": "Helena valley fault",
+   "lat": 46.759,
+   "lon": -112.049,
+   "score": 0.624,
+   "L1": 1.0,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.52
+   },
+   "strain": null,
+   "rank": 4
+  },
+  {
+   "fault": "Red Rock fault",
+   "lat": 44.66,
+   "lon": -112.698,
+   "score": 0.6168,
+   "L1": 0.5,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 0.75,
+    "length": 0.645
+   },
+   "strain": null,
+   "rank": 5
+  },
+  {
+   "fault": "Sand Springs Range fault",
+   "lat": 39.19,
+   "lon": -118.338,
+   "score": 0.616,
+   "L1": 0.25,
+   "components": {
+    "age": 0.8,
+    "slip": 0.389,
+    "junction": 1.0,
+    "length": 0.641
+   },
+   "strain": null,
+   "rank": 6
+  },
+  {
+   "fault": "Mosquito fault",
+   "lat": 39.327,
+   "lon": -106.14,
+   "score": 0.6134,
+   "L1": 1.0,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.717
+   },
+   "strain": null,
+   "rank": 7
+  },
+  {
+   "fault": "Sandia fault",
+   "lat": 35.153,
+   "lon": -106.472,
+   "score": 0.6108,
+   "L1": 0.875,
+   "components": {
+    "age": 0.6,
+    "slip": 0.0,
+    "junction": 1.0,
+    "length": 0.579
+   },
+   "strain": null,
+   "rank": 8
+  },
+  {
+   "fault": "Bear River fault zone",
+   "lat": 41.091,
+   "lon": -110.812,
+   "score": 0.6064,
+   "L1": 0.375,
+   "components": {
+    "age": 0.8,
+    "slip": 0.739,
+    "junction": 0.5,
+    "length": 0.618
+   },
+   "strain": null,
+   "rank": 9
+  },
+  {
+   "fault": "Teton fault",
+   "lat": 44.013,
+   "lon": -110.682,
+   "score": 0.6016,
+   "L1": 0.75,
+   "components": {
+    "age": 0.8,
+    "slip": 0.0,
+    "junction": 0.75,
+    "length": 0.708
+   },
+   "strain": 19.6,
+   "rank": 10
+  }
+ ],
+ "suppressed_by_separation": [
+  {
+   "fault": "Red Canyon fault",
+   "score": 0.7698,
+   "suppressed_by": "Madison fault",
+   "km": 13.7,
+   "would_have_ranked_above": 2
+  },
+  {
+   "fault": "Hebgen fault",
+   "score": 0.767,
+   "suppressed_by": "Madison fault",
+   "km": 11.6,
+   "would_have_ranked_above": 2
+  },
+  {
+   "fault": "Centennial fault",
+   "score": 0.6812,
+   "suppressed_by": "Madison fault",
+   "km": 54.8,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "Silver Lake fault",
+   "score": 0.6592,
+   "suppressed_by": "Round Valley fault",
+   "km": 45.1,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "Kings Canyon fault zone",
+   "score": 0.6542,
+   "suppressed_by": "Little Valley fault",
+   "km": 11.8,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "West Fork fault",
+   "score": 0.6382,
+   "suppressed_by": "Madison fault",
+   "km": 12.6,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "Hartley Springs fault zone",
+   "score": 0.6368,
+   "suppressed_by": "Round Valley fault",
+   "km": 26.9,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "Antelope Valley fault zone",
+   "score": 0.6244,
+   "suppressed_by": "Little Valley fault",
+   "km": 68.8,
+   "would_have_ranked_above": 4
+  },
+  {
+   "fault": "Fish Lake Valley fault zone",
+   "score": 0.6174,
+   "suppressed_by": "Round Valley fault",
+   "km": 56.5,
+   "would_have_ranked_above": 5
+  }
+ ]
+}

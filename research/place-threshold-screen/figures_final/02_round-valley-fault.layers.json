@@ -1,0 +1,58 @@
+{
+ "site": 2,
+ "name": "Round Valley fault",
+ "lat": 37.542,
+ "lon": -118.726,
+ "half_km": 18.0,
+ "bbox": [
+  -118.92992812223123,
+  37.380303988501616,
+  -118.52207187776877,
+  37.70369601149839
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 452050,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-118.92992812223123,37.380303988501616,-118.52207187776877,37.70369601149839&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 57554,
+   "how": "CACHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-118.92992812223123,37.380303988501616,-118.52207187776877,37.70369601149839&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 391276,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-119.74564061115616,36.73351994250809,-117.70635938884384,38.350480057491914&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 700,
+   "min_mGal": -273.5281251099256,
+   "max_mGal": -200.12488443356108,
+   "range_mGal": 73.40324067636453
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 12051,
+   "how": "FETCHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=36.73351994250809&maxlatitude=38.350480057491914&minlongitude=-119.74564061115616&maxlongitude=-117.70635938884384&starttime=1900-01-01&minmagnitude=2.5&limit=20000&orderby=magnitude",
+   "note": "context bbox, ANSS/ComCat",
+   "minmag_requested": 1.0,
+   "minmag_plotted": 2.5,
+   "n_total_at_requested_floor": 175460,
+   "n_at_plotted_floor": 12051,
+   "n_returned": 12051,
+   "complete": true,
+   "starttime": "1900-01-01",
+   "limit": 20000
+  }
+ },
+ "built": "2026-08-16 14:03:48",
+ "output": "work/figures_final\\02_round-valley-fault.png"
+}
