@@ -312,8 +312,11 @@ Defects 1–3 run in the same direction and are unremoved. Every separation in �
 **Kept:**
 - A complete, reproducible national population — 1,399 nodes, 100% measured, controls exact.
 - A **gate** with two correct controls and a stated noise floor.
-- Three pre-registered lore experiments that ran as frozen and returned honest nulls, with
-  their base rates predicted in advance and confirmed.
+- Three pre-registered lore experiments that ran as frozen, with their base rates predicted in
+  advance and confirmed — and then **re-scored blind by nine independent scorers who moved
+  them by ≤ 0.1 tiers** (report 10). Two of the three return honest nulls sighted and blind;
+  H3 returns a null sighted and clears its own bar by exactly zero blind, which §3 and report
+  10 §4 treat as a fact about the bar.
 - The province-level observation that intraplate crystalline-cored rift and hotspot-flank
   terrain dominates the survivor list. That is a real statement about *what the gate selects*.
 
@@ -332,16 +335,18 @@ Defects 1–3 run in the same direction and are unremoved. Every separation in �
 |---|---|---|
 | H-0 | the screen may only measure its own instruments | **validated** for gates; **unsatisfied** for weights |
 | H-1 | dilatant rupture × quartz fabric predicts anomalous record | **NOT SUPPORTED** at n=10, three legs — holds under blind re-scoring (report 10) |
-| H-5 | the sighted searcher is the dominant uncontrolled term | **DISCONFIRMED** — ≤0.1 tiers, report 10 §3 |
-| H-6 | the cross-leg correlation is a common-scorer artifact | **DISCONFIRMED** — survives disjoint scorer panels, report 10 §6 |
 | H-2 | the convergence reflects sampling, not physics | **not killed; favoured on parsimony** |
 | H-3 | province, not site, carries the signal | Hypothesized, partially supported |
 | H-4 | the starting site ranks first in CONUS | **DISCONFIRMED** |
+| H-5 | the sighted searcher is the dominant uncontrolled term | **DISCONFIRMED** — ≤0.1 tiers, report 10 §3 |
+| H-6 | the cross-leg correlation is a common-scorer artifact | **DISCONFIRMED** — survives disjoint scorer panels, report 10 §6 |
 
 To be exact about H-1: it is **not refuted**. Three underpowered legs failing to clear a
 pre-declared bar is a failure to detect, not a demonstration of absence. What has been
-established is that **at this sample size, with this searcher, and with these confounds
-uncontrolled, there is nothing here to see.**
+established is that **at this sample size and with these confounds uncontrolled, there is
+nothing here to see.** *(The original clause read "with this searcher"; report 10 removed the
+searcher as an explanation, so it is struck rather than left to imply an excuse that has since
+been measured and found not to apply.)*
 
 ---
 
