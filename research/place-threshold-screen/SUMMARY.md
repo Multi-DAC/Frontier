@@ -2,7 +2,9 @@
 
 *Single point of truth. Refreshed whenever a grade moves, a hypothesis shifts status, or new
 primary evidence lands — not only at exit. Current as of **2026-08-16** (Day 197). The screen
-is complete; **`reports/08-final-report.md` is the narrative and this file is its index.***
+is complete; **`reports/08-final-report.md` is the narrative and this file is its index**,
+with **`reports/10-blind-rescore.md`** amending 08 §3 / §4.2 / §5 / §7.1 after the searcher
+was blinded.*
 
 ---
 
@@ -58,16 +60,23 @@ confounds running toward the wanted answer, there is nothing here to see.
 - Report 02's geodetic finding C, withdrawn by report 03: wrong velocity component, and the
   aperture widened past the fault's own 74 km length.
 - The four-leg ranking as a *ranking* (2026-08-16). Fails its controls.
+- **"The unblinded searcher is the dominant uncontrolled term" (2026-08-16, report 10).** Our
+  own claim, ours to retract: nine independent blind scorers put it at **<= 0.1 tiers**, and
+  blinding moved winners *down*. Report 08 §7.1 withdrawn as overstated.
+- **"The cross-leg correlation is a common-scorer artifact" (2026-08-16, report 10).** Three
+  disjoint scorer panels; mean rho 0.387 -> 0.361, largest pair rises. It is the sites.
 
 ## Hypothesis ledger
 
 | id | claim | standing |
 |---|---|---|
 | H-0 | the screen may only measure its own instruments | **validated** for gates, **unsatisfied** for weights |
-| H-1 | dilatant rupture × quartz fabric predicts anomalous record | **NOT SUPPORTED**, 3 legs, n=10 pairs — *failure to detect, not refutation* |
+| H-1 | dilatant rupture × quartz fabric predicts anomalous record | **NOT SUPPORTED**, 3 legs, n=10 pairs — *failure to detect, not refutation*. Holds under blind re-scoring: +0.7 / +0.2 / +1.0 (report 10). H3's leg clears a separation-only bar by exactly zero; the bar, not the hypothesis, is what that indicts |
 | H-2 | the lore convergence reflects sampling, not physics | **not killed; favoured on parsimony** |
 | H-3 | the province, not the site, carries the signal | Hypothesized, partially supported |
 | H-4 | the starting site ranks first in CONUS | **DISCONFIRMED** |
+| H-5 | the sighted searcher is the dominant uncontrolled term | **DISCONFIRMED** (report 10 §3) — <= 0.1 tiers |
+| H-6 | the cross-leg correlation is a common-scorer artifact | **DISCONFIRMED** (report 10 §6) — survives disjoint panels |
 
 ## Method lessons this case generated
 
@@ -75,21 +84,39 @@ confounds running toward the wanted answer, there is nothing here to see.
 2. **A control whose right and wrong answers coincide measures nothing** — only the positive
    control caught the geometry-ordering defect.
 3. **A max over independent units finds the worst datum**; repeated output across supposedly
-   independent units names a **shared cause** — and in the lore legs that cause is the scorer.
+   independent units names a **shared cause** — ~~and in the lore legs that cause is the
+   scorer~~. **The named suspect was wrong** (report 10 §6): disjoint blind panels deleted the
+   shared scorer and the correlation held. Naming a shared cause is not identifying it.
 4. **Pull domain values before writing a where-clause** (`late` vs `Late Quaternary`, 282
    features dropped, no error).
 5. **A returned count equal to a round number probably names a cap** (2,000 = `maxRecordCount`).
 6. **Widening an aperture past the structure's own length does not strengthen a null.**
 7. **Measure the pin, do not eyeball the panel** (Bouguer gradient 0.9%–77.1% of panel range).
-8. **Freezing the question does not blind the reader.** Pre-registration controls the protocol,
-   not the judgement calls the protocol still requires.
+8. **Freezing the question does not blind the reader** — *true, and worth <= 0.1 tiers here.*
+   The lesson survives; the magnitude I attached to it (report 08 §7.1) does not. An
+   unfalsified guess written in the register of a measurement is its own defect.
 9. **A threshold picked to summarize a number will pick the flattering side** unless it is a test.
+10. **A pre-declared bar is not a significance test.** H3 cleared ">= 1.0 separation" at
+    exactly 1.0 with sign-test p = 0.18 and a live confound. Bars should be conjunctive.
+11. **Never let a float decide a verdict at the boundary** — `2.3 - 1.3 >= 1.0` is `False`.
+    And note *why* it got caught: the error pointed toward the hypothesis. That is not a
+    search strategy that finds the ones pointing the other way.
+12. **Re-reading checks a document against itself; recomputing checks it against the world.**
+    Two transposed rho labels survived a same-day end-to-end re-read of report 08 and fell out
+    on the first recomputation from source.
 
 ## Watch conditions (where to point tools on reboot)
 
-- ⏳ **UNBUILT and now the top of the list:** a **blind** lore protocol — labels stripped, all 20
-  sites shuffled into one list, scored cold, unblinded only at readout. Until it runs, every
-  separation in report 08 §3 has an uncontrolled term larger than the effect. See §7.1.
+- ✅ **BUILT AND RUN (2026-08-16, report 10):** the blind lore protocol. Labels stripped, sites
+  shuffled at a committed seed, nine independent scorers, two pre-declared probe items per leg
+  gating each column, unblinded only at readout. **Result: the bias term is <= 0.1 tiers** and
+  report 08 §7.1's "uncontrolled term larger than the effect" is withdrawn.
+- ⏳ **UNBUILT, and now the top of the list:** re-run the *searches* blind, not just the
+  scoring. Blinding fixes the scorer; it cannot fix sighted **collection**, and the H1 notes
+  show winners' evidence running 1.51x longer than decoys' (report 10 §5). ~60 fresh queries.
+- ⏳ **UNBUILT:** a conjunctive readout bar for any successor leg — separation **and**
+  sign-test p **and** distance-matched pairs. H3 demonstrated that separation alone can be
+  cleared by a confound (report 10 §4.2).
 - ⏳ **UNBUILT:** distance-to-nearest-place as a *design-time* matching axis, not a post-hoc
   covariate.
 - ⏳ **UNBUILT:** a labelled set of 20–30 sites, or the written admission that this screen is a

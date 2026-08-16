@@ -4,6 +4,13 @@
 > it supersedes this README and reports 01–07 as the narrative. Short version: the **gate** works
 > and its controls are exact; the **ranker fails its own controls by 0.19 in the wrong direction**;
 > all three pre-registered lore legs come back **NOT SUPPORTED**.
+>
+> ⬛ **Then read [`reports/10-blind-rescore.md`](reports/10-blind-rescore.md)** — report 08's
+> largest self-declared defect ("the searcher was not blind") was built, run with nine
+> independent blind scorers, and **came back worth ≤ 0.1 tiers**, so 08 §7.1 is withdrawn as
+> overstated. Two surprises: the cross-leg correlation **survives** deleting the common
+> scorer, and **H3 crosses its pre-declared bar under blinding by exactly zero** — which
+> report 10 argues indicts the bar, not the hypothesis.
 
 **GRADE (current — 2026-08-16, Clawd, no decorrelated eye yet)**
 
@@ -11,7 +18,7 @@
 |---|---|
 | **Inputs** (fault trace, rupture age, slip sense, map lithology, Bouguer gravity, seismicity, GPS velocities) | **Documented** — USGS Qfaults, USGS SGMC2, USGS gravity, ANSS, MIDAS/Macrostrat. Pulled live; every layer records its own request URL in `figures/*.layers.json`. |
 | **The ranking** (four-term score, top 10) | **DISCONFIRMED as a ranking** (2026-08-16). It places the declared *negative* control at 14/1327 and the declared *positive* at 148/1327 — 0.19 of separation, backwards. Retained as a reproducible artifact, not a recommendation. |
-| **H-1** — dilatant Quaternary rupture through quartz-rich crystalline rock predicts an anomalous light/sound record | **NOT SUPPORTED** (2026-08-16), three pre-registered legs, n=10 matched pairs, separations +0.7 / +0.3 / +0.9 against a +1.0 bar. A **failure to detect, not a refutation** — and the scorer was not blind. |
+| **H-1** — dilatant Quaternary rupture through quartz-rich crystalline rock predicts an anomalous light/sound record | **NOT SUPPORTED** (2026-08-16), three pre-registered legs, n=10 matched pairs, separations +0.7 / +0.3 / +0.9 against a +1.0 bar. A **failure to detect, not a refutation**. ~~and the scorer was not blind~~ → **now re-run blind** (report 10): +0.7 / +0.2 / **+1.0**. H3 clears its bar by exactly zero under a separation-only rule that a live, uncontrolled town-proximity confound can clear on its own, with sign-test p = 0.18 and only 1 of 3 blind scorers at the bar. **Programme-level verdict unchanged: NOT SUPPORTED.** |
 | **"Sandia/Hubbell Spring ranks best in the continental US"** | **Disconfirmed as stated** (2026-08-15). Measured against the same criteria the junction lands ~9th. The weaker claim — that the terrain belongs to the right class, and that the class dominates the top of the list — survives intact. |
 | **The GATE** (along-trace lithology, 1399/1399, `quartz_frac ≥ 0.25`) | **Documented and validated** (2026-08-16). Both controls exact: Sandia 0.875 PASS, Hubbell Spring 0.000 FAIL. Carries ±0.125 sampling noise from vertex ordering — it gates, it cannot rank. |
 | **RESISTANCE** | **RAISED — the convergence was measured and it did not survive.** The suspicion recorded here on 2026-08-15 was that grade-A Native and documented-anomaly material at four of five printed sites slotted into our story too comfortably, with no base rate to price it against. Three matched-decoy legs then supplied that base rate: it is **20/20 on both sides**. The convergence was the density of the record, as suspected. Resistance did its job. |

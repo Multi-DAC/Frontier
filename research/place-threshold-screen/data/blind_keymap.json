@@ -1,0 +1,410 @@
+{
+ "L1": {
+  "L1-01": {
+   "key": "Sandia fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Albuquerque recurring record <25km; Kirtland AFB 1957 is a NAMED INCIDENT not a named recurring light -> T2 by rule"
+  },
+  "L1-02": {
+   "key": "Picuris-Pecos fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Santa Fe 'Spook Lane' / 'Shades of Death Path' devil-lights, NAMED, ~18km, tour-operator source"
+  },
+  "L1-03": {
+   "key": "Madison fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "1959 quake geology only; one 2003 light nr W Yellowstone (~30km, one-off) -> fails both T1 clauses"
+  },
+  "L1-04": {
+   "key": "Sand Springs Range fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Fallon 'UFO Capital of the West', recurring -- but 41-49km away, 25-60km clause"
+  },
+  "L1-05": {
+   "key": "Bull Mountain western border fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Elkhorn ghost TOWN, no light record"
+  },
+  "L1-06": {
+   "key": "Mosquito fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "'unusual white lights and strange buzzing' at Alma (7.6km), ghostsofamerica aggregator only"
+  },
+  "L1-07": {
+   "key": "Lone Pine fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "'Russian John' apparition Clayton ID (34km, recurring since 1920s); Salmon-Challis UFO tales, vague"
+  },
+  "L1-08": {
+   "key": "Lida faults",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Goldfield hauntings are apparitions in buildings, 44km, no light record"
+  },
+  "L1-09": {
+   "key": "Teton fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "glowing orbs nr Grand Teton + Teton Pass 'hotspot for strange lights', recurring; web-native attestation"
+  },
+  "L1-10": {
+   "key": "Bear River Range faults",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "1949 Sardine Canyon light+explosion, FBI/newspaper, ~25km, but a ONE-OFF event"
+  },
+  "L1-11": {
+   "key": "unnamed fault near Ovando",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "nothing at Seeley Lake"
+  },
+  "L1-12": {
+   "key": "Little Valley fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Lake Tahoe recurring UFO record <25km; local paper + Tahoetopia 'Lost Legend #5'; no NAMED light"
+  },
+  "L1-13": {
+   "key": "Thompson Valley fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "one 2014 orb at Hot Springs (28.5km, one-off)"
+  },
+  "L1-14": {
+   "key": "Helena valley fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Diamond City Light -- NAMED, but ~60km (Confederate Gulch), so 25-60km clause"
+  },
+  "L1-15": {
+   "key": "Bear River fault zone",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Yellow Creek unexplained lights, NAMED and recurring, ~20km -- but folklore-blog attestation"
+  },
+  "L1-16": {
+   "key": "Red Rock fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "nothing; Lima/Dell returned geology and one 2016 Beaverhead County orb, county-level not site-level"
+  },
+  "L1-17": {
+   "key": "unnamed faults west of Hungry Valley",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "nothing at Lemmon Valley"
+  },
+  "L1-18": {
+   "key": "Sweetwater fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Virginia City hauntings are apparitions, no lights"
+  },
+  "L1-19": {
+   "key": "probe_null",
+   "sighted": 0,
+   "probe": "probe_null",
+   "note_raw": "returned bedrock mapping reports and a state highway realignment notice only; no light, apparition or anomaly record of any kind at any distance"
+  },
+  "L1-20": {
+   "key": "Big Chino fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Seligman appears REPEATEDLY in FBI UFO files 1940s-60s (newspaper), 16.3km, recurring -- but no named light"
+  },
+  "L1-21": {
+   "key": "Round Valley fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Eastern Sierra / Owens Valley recurring sighting record at 25-60km (Bishop 2012, Lone Pine 1991)"
+  },
+  "L1-22": {
+   "key": "probe_pos",
+   "sighted": 3,
+   "probe": "probe_pos",
+   "note_raw": "recurring nocturnal light at a named locus 9 km out, logged 1931-present; attested in a 1974 county historical society volume and the local daily newspaper archive"
+  }
+ },
+ "L2": {
+  "L2-01": {
+   "key": "Red Rock fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Travel corridor + hunting grounds; 'Red Rock' from ochre paint beds. Nothing anomaly-shaped"
+  },
+  "L2-02": {
+   "key": "Bear River fault zone",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Shoshone encamped on Yellow Creek 1872 (historical). Bear River sacredness attaches to Boa Ogoi ~80km away"
+  },
+  "L2-03": {
+   "key": "Round Valley fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Payahuunadu/Nuumu; Volcanic Tableland petroglyphs 'fragile and sacred' but across the valley, not the fault"
+  },
+  "L2-04": {
+   "key": "Teton fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Teewinot; vision-quest stone structures in the upper Grand Teton; 'sacred peaks', creation stories. Mostly web-secondary first pass"
+  },
+  "L2-05": {
+   "key": "Madison fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Shoshone-Bannock ancestral, 'long revered as sacred' -- regional, no locus on the range"
+  },
+  "L2-06": {
+   "key": "Lone Pine fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Salmon corridor ceded lands, pictographs/burials/'other sacred sites' -- FWS source but no locus near Clayton"
+  },
+  "L2-07": {
+   "key": "Big Chino fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Yavapai territory, Big Chino Wash villages, 'spiritual ties to plateaus and washes' -- regional"
+  },
+  "L2-08": {
+   "key": "Little Valley fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Washoe Da ow aga / Cave Rock Water Babies -- named spirit-beings, shaman practice, folklore collections + USFS tribal history"
+  },
+  "L2-09": {
+   "key": "probe_pos",
+   "sighted": 3,
+   "probe": "probe_pos",
+   "note_raw": "named spirit-being said to inhabit a spring on this landform, avoidance taboo recorded; tribal cultural-resources office statement plus a 1961 university ethnography, 11 km"
+  },
+  "L2-10": {
+   "key": "unnamed faults west of Hungry Valley",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "N. Paiute spirit-beings (Wolf/Coyote/water babies) regional; no locus at Lemmon/Hungry Valley"
+  },
+  "L2-11": {
+   "key": "Bear River Range faults",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Old Main Hill / Logan Temple hill named sacred Shoshone loci <25km; student-paper attestation"
+  },
+  "L2-12": {
+   "key": "Sweetwater fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Washoe water babies (me-tsung) across territory; locus is Cave Rock ~40km, not Virginia City"
+  },
+  "L2-13": {
+   "key": "Mosquito fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Ute/Nuche ancestral hunting ground 8,000 yrs. Nothing anomaly-shaped returned"
+  },
+  "L2-14": {
+   "key": "Picuris-Pecos fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Pecos Pueblo kivas as communion with underworld spirits + 'The Drowning of Pecos' in a pre-1995 printed folk-story collection; NPS"
+  },
+  "L2-15": {
+   "key": "probe_null",
+   "sighted": 0,
+   "probe": "probe_null",
+   "note_raw": "documented ancestral hunting territory and a named seasonal camp within the area; nothing anomaly-shaped in any source returned"
+  },
+  "L2-16": {
+   "key": "Lida faults",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Shoshone/N. Paiute camp and gathering point at Lida Valley. Nothing anomaly-shaped"
+  },
+  "L2-17": {
+   "key": "Helena valley fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Gates of the Mountains ~16km: 50 pictograph sites, Blackfeet/Salish/Kootenai, ceremonial; first-pass sources part listicle"
+  },
+  "L2-18": {
+   "key": "Bull Mountain western border fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Boulder hot springs known to Native people (use, not anomaly). Sacred-mountain hit was Sweet Grass Hills, a search conflation"
+  },
+  "L2-19": {
+   "key": "Sandia fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Sandia Mtns sacred to Sandia Pueblo, Tiwa 'Bien Mur', active USFS sacred-sites claim. Tribal + newspaper"
+  },
+  "L2-20": {
+   "key": "unnamed fault near Ovando",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Cokalahishkit buffalo road, Semte'use presence, Camp Paxson stewardship. Nothing anomaly-shaped"
+  },
+  "L2-21": {
+   "key": "Thompson Valley fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "'Big Medicine' hot springs -- NAMED power/healing place, centuries of ceremonial use, CSKT + Montana Historic Landscapes"
+  },
+  "L2-22": {
+   "key": "Sand Springs Range fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Sand Mountain sacred to Fallon Paiute-Shoshone; Spirit Cave (mummy repatriated 2016), Grimes Point. BLM + Federal Register + congressional"
+  }
+ },
+ "L3": {
+  "L3-01": {
+   "key": "Bull Mountain western border fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "TOTAL CONFLATION: returned Bull Mountains coal field near Roundup (~200 km) and Boulder County COLORADO. Nothing on-target at Boulder MT"
+  },
+  "L3-02": {
+   "key": "Thompson Valley fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Lonepine PO 1911, Lower Dry Fork Reservoir 1921 (Reclamation) -- but at 26.0 km, so 25-60 km band. Thompson Valley hits were Tazewell Co, VIRGINIA -- conflation"
+  },
+  "L3-03": {
+   "key": "Hubbell Spring fault (control-)",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "Nothing returned. The instrument CAN return zero -- but Hubbell Spring is an obscure name 3.7 km from metro Albuquerque, so this zero may be name-obscurity rather than absence. Same contamination as the Bull Mountain HT0. Reported, EXCLUDED from the readout as pre-declared."
+  },
+  "L3-04": {
+   "key": "Lone Pine fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Clayton ID founded 1881 as smelter site, Clayton Silver Mine / Bayhorse district -- but 34.1 km, so 25-60 km band. No 'Lone Pine' locus near Clayton"
+  },
+  "L3-05": {
+   "key": "probe_null",
+   "sighted": 0,
+   "probe": "probe_null",
+   "note_raw": "nothing on-target returned; hits resolved to a same-named county in another state at several hundred km"
+  },
+  "L3-06": {
+   "key": "Mosquito fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Mosquito mining district within the Alma District; Alma's first town meeting 4 Dec 1873; 1879-80 silver; business district destroyed by fire 23 Mar 1937. Colorado Geological Survey + Park County Local History Digital Archive"
+  },
+  "L3-07": {
+   "key": "Sandia fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "POSITIVE CONTROL. Montezuma silver-boom settlement 1879-80 in Las Huertas Canon, claims registered at Albuquerque county seat; Sandia Man Cave; Turquoise Trail / Tijeras Canyon mine"
+  },
+  "L3-08": {
+   "key": "Lida faults",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Lida: 1867 mining district, town laid out 1872, PO + mill, 1905 Goldfield boom to pop 300, ~$1M produced. Ghost-town aggregators + Wikipedia = web-secondary"
+  },
+  "L3-09": {
+   "key": "Teton fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "~1900 160-acre placer claims filed Jackson Lake to Menor's Ferry (NPS, reaching me via buckrail = secondary); 1889 Teton Wilderness mine; 1886 Deadman's Bar murders at ~29 km"
+  },
+  "L3-10": {
+   "key": "Red Rock fault",
+   "sighted": 0,
+   "probe": null,
+   "note_raw": "CONFLATION: returned Red Lodge (Carbon Co, ~350 km) and Red Rock Mine in Fergus Co. Nothing on-target at Dell / Red Rock Valley"
+  },
+  "L3-11": {
+   "key": "Round Valley fault",
+   "sighted": 2,
+   "probe": null,
+   "note_raw": "Round Valley tungsten mine, Inyo Co (Western Mining History). NOTE: first pass mostly returned MENDOCINO Round Valley -- name conflation, massacres NOT credited"
+  },
+  "L3-12": {
+   "key": "Bear River fault zone",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Bear River City Riot, 19 Nov 1868 -- vigilante lynching, town torched; Almy coal mines opened 1868. HMdb markers + WyoHistory.org (Wyoming State Historical Society)"
+  },
+  "L3-13": {
+   "key": "Madison fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "1959 M7.5 Hebgen Lake quake + Madison Slide, 28 dead, Quake Lake; Hebgen Dam 1914-15 Montana Power. USGS + ASDSO"
+  },
+  "L3-14": {
+   "key": "Big Chino fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Big Chino Wash returned as geography + regional Yavapai use; Seligman railroad/Route 66 present but no locus-specific incident"
+  },
+  "L3-15": {
+   "key": "Helena valley fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Last Chance Gulch, July 1864 'Four Georgians', named Oct 1864, territorial capital 1875, $3.5bn in gold, 1937-class fire hazard. Montana Historical Society textbook"
+  },
+  "L3-16": {
+   "key": "Bear River Range faults",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Avon founded at forks of East Creek and Little Bear River, local history + USU thesis 'An Environmental History of the Bear River Range 1860-1910'. Boa Ogoi NOT credited -- ~60km"
+  },
+  "L3-17": {
+   "key": "probe_pos",
+   "sighted": 3,
+   "probe": "probe_pos",
+   "note_raw": "1887 powder-magazine explosion at a named townsite 12 km out, 9 dead; county history volume plus contemporaneous newspaper archive"
+  },
+  "L3-18": {
+   "key": "Sand Springs Range fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Sand Springs Pony Express Station built 1859-60, abandoned 1861, sand-buried a century, stabilized 1997 (SAH Archipedia, HMdb); PROJECT SHOAL 12 kt underground nuclear test in the range, 26 Oct 1963"
+  },
+  "L3-19": {
+   "key": "Little Valley fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Hobart & Marlette sawmill in Little Valley 1873; 1884 V-flume blowdown on an 80-ft trestle, rebuilt in 8 days; Little Valley Placers. Truckee-Donner Historical Society"
+  },
+  "L3-20": {
+   "key": "unnamed fault near Ovando",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Seeley Lake: logging 1892, first road 1895, Seely first ranger 1899-1900 Lewis & Clark Forest Reserve (USGS misspelled him onto the map), Big Blackfoot Milling 1906, USFS 50M board-ft sale to Anaconda. Montana History Portal"
+  },
+  "L3-21": {
+   "key": "Sweetwater fault",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Alder Gulch 1863, Montana's second major gold strike, Conrey Placer Mining Co -- but Alder is 33.9 km, 25-60 km band. 'Sweetwater Mines' hits were WYOMING/South Pass -- conflation"
+  },
+  "L3-22": {
+   "key": "unnamed faults west of Hungry Valley",
+   "sighted": 1,
+   "probe": null,
+   "note_raw": "Lemmon Valley: 19th-c cemetery, Evans Canyon miner's trail. No named place-specific incident, no archival attestation"
+  },
+  "L3-23": {
+   "key": "Picuris-Pecos fault",
+   "sighted": 3,
+   "probe": null,
+   "note_raw": "Canoncito = Glorieta Unit of Pecos National Historical Park, site of the Confederate Army camp (Glorieta Pass, Mar 1862). NPS, primary"
+  }
+ }
+}

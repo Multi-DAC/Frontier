@@ -1,0 +1,288 @@
+{
+ "L1": {
+  "leg": "L1",
+  "rubric": "T3  named place-specific recurring record within 25 km, non-listicle source\nT2  recurring record within 25 km, web-aggregator / blog / tourism source only\nT1  isolated or one-off event within 25 km, OR a recurring record at 25-60 km\nT0  nothing under the protocol",
+  "items": [
+   {
+    "id": "L1-01",
+    "evidence": "Albuquerque recurring record <25km; Kirtland AFB 1957 is a NAMED INCIDENT not a named recurring light"
+   },
+   {
+    "id": "L1-02",
+    "evidence": "Santa Fe 'Spook Lane' / 'Shades of Death Path' devil-lights, NAMED, ~18km, tour-operator source"
+   },
+   {
+    "id": "L1-03",
+    "evidence": "1959 quake geology only; one 2003 light nr W Yellowstone (~30km, one-off)"
+   },
+   {
+    "id": "L1-04",
+    "evidence": "Fallon 'UFO Capital of the West', recurring -- but 41-49km away"
+   },
+   {
+    "id": "L1-05",
+    "evidence": "Elkhorn ghost TOWN, no light record"
+   },
+   {
+    "id": "L1-06",
+    "evidence": "'unusual white lights and strange buzzing' at Alma (7.6km), ghostsofamerica aggregator only"
+   },
+   {
+    "id": "L1-07",
+    "evidence": "'Russian John' apparition Clayton ID (34km, recurring since 1920s); Salmon-Challis UFO tales, vague"
+   },
+   {
+    "id": "L1-08",
+    "evidence": "Goldfield hauntings are apparitions in buildings, 44km, no light record"
+   },
+   {
+    "id": "L1-09",
+    "evidence": "glowing orbs nr Grand Teton + Teton Pass 'hotspot for strange lights', recurring; web-native attestation"
+   },
+   {
+    "id": "L1-10",
+    "evidence": "1949 Sardine Canyon light+explosion, FBI/newspaper, ~25km, but a ONE-OFF event"
+   },
+   {
+    "id": "L1-11",
+    "evidence": "nothing at Seeley Lake"
+   },
+   {
+    "id": "L1-12",
+    "evidence": "Lake Tahoe recurring UFO record <25km; local paper + Tahoetopia 'Lost Legend #5'; no NAMED light"
+   },
+   {
+    "id": "L1-13",
+    "evidence": "one 2014 orb at Hot Springs (28.5km, one-off)"
+   },
+   {
+    "id": "L1-14",
+    "evidence": "Diamond City Light -- NAMED, but ~60km (Confederate Gulch)"
+   },
+   {
+    "id": "L1-15",
+    "evidence": "Yellow Creek unexplained lights, NAMED and recurring, ~20km -- but folklore-blog attestation"
+   },
+   {
+    "id": "L1-16",
+    "evidence": "nothing; Lima/Dell returned geology and one 2016 Beaverhead County orb, county-level not site-level"
+   },
+   {
+    "id": "L1-17",
+    "evidence": "nothing at Lemmon Valley"
+   },
+   {
+    "id": "L1-18",
+    "evidence": "Virginia City hauntings are apparitions, no lights"
+   },
+   {
+    "id": "L1-19",
+    "evidence": "returned bedrock mapping reports and a state highway realignment notice only; no light, apparition or anomaly record of any kind at any distance"
+   },
+   {
+    "id": "L1-20",
+    "evidence": "Seligman appears REPEATEDLY in FBI UFO files 1940s-60s (newspaper), 16.3km, recurring -- but no named light"
+   },
+   {
+    "id": "L1-21",
+    "evidence": "Eastern Sierra / Owens Valley recurring sighting record at 25-60km (Bishop 2012, Lone Pine 1991)"
+   },
+   {
+    "id": "L1-22",
+    "evidence": "recurring nocturnal light at a named locus 9 km out, logged 1931-present; attested in a 1974 county historical society volume and the local daily newspaper archive"
+   }
+  ]
+ },
+ "L2": {
+  "leg": "L2",
+  "rubric": "NT3  place-specific anomaly-shaped narrative tied to THIS landform or a named\n     feature on it, within 25 km, attested in ethnography, a tribal/nation source,\n     an academic treatment, a state historical society, or a pre-1995 printed\n     collection.\nNT2  same content, within 25 km, but attested only in modern web-native secondary\n     retellings (tourism pages, listicles, aggregators, blogs).\nNT1  anomaly-shaped narrative attributed to the broader region or nation without a\n     locus, OR a specific locus at 25-60 km.\nNT0  documented Indigenous association exists but nothing anomaly-shaped under the\n     protocol.\n(\"anomaly-shaped\" = lights/fire in the sky, sky-beings or star-people, a named\n power/medicine locus, taboo or avoidance, transformation, thunder/underworld\n association, emergence.)",
+  "items": [
+   {
+    "id": "L2-01",
+    "evidence": "Travel corridor + hunting grounds; 'Red Rock' from ochre paint beds. Nothing anomaly-shaped"
+   },
+   {
+    "id": "L2-02",
+    "evidence": "Shoshone encamped on Yellow Creek 1872 (historical). Bear River sacredness attaches to Boa Ogoi ~80km away"
+   },
+   {
+    "id": "L2-03",
+    "evidence": "Payahuunadu/Nuumu; Volcanic Tableland petroglyphs 'fragile and sacred' but across the valley, not the fault"
+   },
+   {
+    "id": "L2-04",
+    "evidence": "Teewinot; vision-quest stone structures in the upper Grand Teton; 'sacred peaks', creation stories. Mostly web-secondary first pass"
+   },
+   {
+    "id": "L2-05",
+    "evidence": "Shoshone-Bannock ancestral, 'long revered as sacred' -- regional, no locus on the range"
+   },
+   {
+    "id": "L2-06",
+    "evidence": "Salmon corridor ceded lands, pictographs/burials/'other sacred sites' -- FWS source but no locus near Clayton"
+   },
+   {
+    "id": "L2-07",
+    "evidence": "Yavapai territory, Big Chino Wash villages, 'spiritual ties to plateaus and washes' -- regional"
+   },
+   {
+    "id": "L2-08",
+    "evidence": "Washoe Da ow aga / Cave Rock Water Babies -- named spirit-beings, shaman practice, folklore collections + USFS tribal history"
+   },
+   {
+    "id": "L2-09",
+    "evidence": "named spirit-being said to inhabit a spring on this landform, avoidance taboo recorded; tribal cultural-resources office statement plus a 1961 university ethnography, 11 km"
+   },
+   {
+    "id": "L2-10",
+    "evidence": "N. Paiute spirit-beings (Wolf/Coyote/water babies) regional; no locus at Lemmon/Hungry Valley"
+   },
+   {
+    "id": "L2-11",
+    "evidence": "Old Main Hill / Logan Temple hill named sacred Shoshone loci <25km; student-paper attestation"
+   },
+   {
+    "id": "L2-12",
+    "evidence": "Washoe water babies (me-tsung) across territory; locus is Cave Rock ~40km, not Virginia City"
+   },
+   {
+    "id": "L2-13",
+    "evidence": "Ute/Nuche ancestral hunting ground 8,000 yrs. Nothing anomaly-shaped returned"
+   },
+   {
+    "id": "L2-14",
+    "evidence": "Pecos Pueblo kivas as communion with underworld spirits + 'The Drowning of Pecos' in a pre-1995 printed folk-story collection; NPS"
+   },
+   {
+    "id": "L2-15",
+    "evidence": "documented ancestral hunting territory and a named seasonal camp within the area; nothing anomaly-shaped in any source returned"
+   },
+   {
+    "id": "L2-16",
+    "evidence": "Shoshone/N. Paiute camp and gathering point at Lida Valley. Nothing anomaly-shaped"
+   },
+   {
+    "id": "L2-17",
+    "evidence": "Gates of the Mountains ~16km: 50 pictograph sites, Blackfeet/Salish/Kootenai, ceremonial; first-pass sources part listicle"
+   },
+   {
+    "id": "L2-18",
+    "evidence": "Boulder hot springs known to Native people (use, not anomaly). Sacred-mountain hit was Sweet Grass Hills, a search conflation"
+   },
+   {
+    "id": "L2-19",
+    "evidence": "Sandia Mtns sacred to Sandia Pueblo, Tiwa 'Bien Mur', active USFS sacred-sites claim. Tribal + newspaper"
+   },
+   {
+    "id": "L2-20",
+    "evidence": "Cokalahishkit buffalo road, Semte'use presence, Camp Paxson stewardship. Nothing anomaly-shaped"
+   },
+   {
+    "id": "L2-21",
+    "evidence": "'Big Medicine' hot springs -- NAMED power/healing place, centuries of ceremonial use, CSKT + Montana Historic Landscapes"
+   },
+   {
+    "id": "L2-22",
+    "evidence": "Sand Mountain sacred to Fallon Paiute-Shoshone; Spirit Cave (mummy repatriated 2016), Grimes Point. BLM + Federal Register + congressional"
+   }
+  ]
+ },
+ "L3": {
+  "leg": "L3",
+  "rubric": "HT3  named, place-specific historical incident or persistent local tradition\n     within 25 km in a primary/archival source (newspaper archive, county history,\n     USGS/military record, historical society).\nHT2  same within 25 km, web-secondary only.\nHT1  regional-level, OR 25-60 km.\nHT0  nothing under the protocol.",
+  "items": [
+   {
+    "id": "L3-01",
+    "evidence": "TOTAL CONFLATION: returned Bull Mountains coal field near Roundup (~200 km) and Boulder County COLORADO. Nothing on-target at Boulder MT"
+   },
+   {
+    "id": "L3-02",
+    "evidence": "Lonepine PO 1911, Lower Dry Fork Reservoir 1921 (Reclamation) -- but at 26.0 km. Thompson Valley hits were Tazewell Co, VIRGINIA -- conflation"
+   },
+   {
+    "id": "L3-03",
+    "evidence": "Nothing returned. but Hubbell Spring is an obscure name 3.7 km from metro Albuquerque, so this zero may be name-obscurity rather than absence"
+   },
+   {
+    "id": "L3-04",
+    "evidence": "Clayton ID founded 1881 as smelter site, Clayton Silver Mine / Bayhorse district -- but 34.1 km. No 'Lone Pine' locus near Clayton"
+   },
+   {
+    "id": "L3-05",
+    "evidence": "nothing on-target returned; hits resolved to a same-named county in another state at several hundred km"
+   },
+   {
+    "id": "L3-06",
+    "evidence": "Mosquito mining district within the Alma District; Alma's first town meeting 4 Dec 1873; 1879-80 silver; business district destroyed by fire 23 Mar 1937. Colorado Geological Survey + Park County Local History Digital Archive"
+   },
+   {
+    "id": "L3-07",
+    "evidence": "Montezuma silver-boom settlement 1879-80 in Las Huertas Canon, claims registered at Albuquerque county seat; Sandia Man Cave; Turquoise Trail / Tijeras Canyon mine"
+   },
+   {
+    "id": "L3-08",
+    "evidence": "Lida: 1867 mining district, town laid out 1872, PO + mill, 1905 Goldfield boom to pop 300, ~$1M produced. Ghost-town aggregators + Wikipedia = web-secondary"
+   },
+   {
+    "id": "L3-09",
+    "evidence": "~1900 160-acre placer claims filed Jackson Lake to Menor's Ferry (NPS, reaching me via buckrail = secondary); 1889 Teton Wilderness mine; 1886 Deadman's Bar murders at ~29 km"
+   },
+   {
+    "id": "L3-10",
+    "evidence": "CONFLATION: returned Red Lodge (Carbon Co, ~350 km) and Red Rock Mine in Fergus Co. Nothing on-target at Dell / Red Rock Valley"
+   },
+   {
+    "id": "L3-11",
+    "evidence": "Round Valley tungsten mine, Inyo Co (Western Mining History). NOTE: first pass mostly returned MENDOCINO Round Valley -- name conflation, massacres NOT credited"
+   },
+   {
+    "id": "L3-12",
+    "evidence": "Bear River City Riot, 19 Nov 1868 -- vigilante lynching, town torched; Almy coal mines opened 1868. HMdb markers + WyoHistory.org (Wyoming State Historical Society)"
+   },
+   {
+    "id": "L3-13",
+    "evidence": "1959 M7.5 Hebgen Lake quake + Madison Slide, 28 dead, Quake Lake; Hebgen Dam 1914-15 Montana Power. USGS + ASDSO"
+   },
+   {
+    "id": "L3-14",
+    "evidence": "Big Chino Wash returned as geography + regional Yavapai use; Seligman railroad/Route 66 present but no locus-specific incident"
+   },
+   {
+    "id": "L3-15",
+    "evidence": "Last Chance Gulch, July 1864 'Four Georgians', named Oct 1864, territorial capital 1875, $3.5bn in gold, 1937-class fire hazard. Montana Historical Society textbook"
+   },
+   {
+    "id": "L3-16",
+    "evidence": "Avon founded at forks of East Creek and Little Bear River, local history + USU thesis 'An Environmental History of the Bear River Range 1860-1910'. Boa Ogoi NOT credited -- ~60km"
+   },
+   {
+    "id": "L3-17",
+    "evidence": "1887 powder-magazine explosion at a named townsite 12 km out, 9 dead; county history volume plus contemporaneous newspaper archive"
+   },
+   {
+    "id": "L3-18",
+    "evidence": "Sand Springs Pony Express Station built 1859-60, abandoned 1861, sand-buried a century, stabilized 1997 (SAH Archipedia, HMdb); PROJECT SHOAL 12 kt underground nuclear test in the range, 26 Oct 1963"
+   },
+   {
+    "id": "L3-19",
+    "evidence": "Hobart & Marlette sawmill in Little Valley 1873; 1884 V-flume blowdown on an 80-ft trestle, rebuilt in 8 days; Little Valley Placers. Truckee-Donner Historical Society"
+   },
+   {
+    "id": "L3-20",
+    "evidence": "Seeley Lake: logging 1892, first road 1895, Seely first ranger 1899-1900 Lewis & Clark Forest Reserve (USGS misspelled him onto the map), Big Blackfoot Milling 1906, USFS 50M board-ft sale to Anaconda. Montana History Portal"
+   },
+   {
+    "id": "L3-21",
+    "evidence": "Alder Gulch 1863, Montana's second major gold strike, Conrey Placer Mining Co -- but Alder is 33.9 km. 'Sweetwater Mines' hits were WYOMING/South Pass -- conflation"
+   },
+   {
+    "id": "L3-22",
+    "evidence": "Lemmon Valley: 19th-c cemetery, Evans Canyon miner's trail. No named place-specific incident, no archival attestation"
+   },
+   {
+    "id": "L3-23",
+    "evidence": "Canoncito = Glorieta Unit of Pecos National Historical Park, site of the Confederate Army camp (Glorieta Pass, Mar 1862). NPS, primary"
+   }
+  ]
+ }
+}

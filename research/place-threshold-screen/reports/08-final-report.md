@@ -14,9 +14,14 @@ population of the lower 48, held all folklore out until the physics was frozen, 
 **three pre-registered lore experiments** against it with matched decoys. The gate works and
 its controls pass exactly as declared. **The ranker does not work: it separates the two
 controls by 0.19 in the wrong direction.** All three lore legs come back **NOT SUPPORTED**
-against their own pre-declared thresholds. Every leg leans in the predicted direction and
-none of them reaches its bar; the two instrument biases we managed to measure both run in the
-winners' favour, so that lean is an **upper bound**, not a finding. The strongest honest
+against their own pre-declared thresholds — *with one amendment from report 10, which
+re-scored all three **blind**: H3 crosses its bar by exactly zero under blinding, on a rule
+that turns out to be too weak to mean what it says (§3, report 10 §4).* Every leg leans in
+the predicted direction and none of them reaches its bar in a way that survives its own
+confounds; the instrument biases we managed to measure run in the winners' favour, so that
+lean is an **upper bound**, not a finding. The one bias that *was* removed — the unblinded
+searcher, named here as the largest — turned out to be worth **≤ 0.1 tiers**, and removing it
+moved winners *down*. The strongest honest
 statement available is: *this screen is a filter with no demonstrated ranking capacity, and
 the lore signal it was built to test is, at this sample size and with this searcher,
 indistinguishable from the geography of where people live.*
@@ -165,7 +170,20 @@ tiers**.
 |---|---|---|---|---|---|---|---|
 | **H1** | anomalous light / sound record | 1.3 | 0.6 | **+0.7** | +1.0 | 6/7, p=0.125 | **NOT SUPPORTED** |
 | **H2** | Native sacred / anomaly lore | 1.5 | 1.2 | **+0.3** | +1.0 | 4/7, p=1.0 | **NOT SUPPORTED** |
-| **H3** | settler-history record | 2.5 | 1.6 | **+0.9** | +1.0 | 6/8, p=0.289 | **NOT SUPPORTED** |
+| **H3** | settler-history record | 2.5 | 1.6 | **+0.9** | +1.0 | 6/8, p=0.289 | **NOT SUPPORTED** * |
+
+*\* H3 amended by report 10.* Re-scored **blind**, H3 returns winners 2.3, decoys 1.3,
+separation **exactly +1.00** against a bar of +1.00 → **SUPPORTED under the rule as frozen.**
+It is reported that way because that is what the pre-registration says, and then discounted
+on four grounds in report 10 §4: it is not robust to the aggregation rule (per-scorer
+separations +0.9 / +0.8 / +1.0, mean +0.90, one of three at the bar); the sign test is
+unmoved at p = 0.18; the nearest-town confound of §4.1 lives in the evidence and is untouched
+by blinding; and one of three legs crossing by zero is what a null looks like. **H-1 remains
+NOT SUPPORTED at programme level.** What the crossing establishes is that a
+separation-only bar is too weak — successor legs must pre-declare a conjunctive rule
+(separation **and** sign-test p **and** distance-matched pairs).
+
+Blind re-scores of the other two legs: **H1 +0.70 → +0.70** (unchanged), **H2 +0.30 → +0.20**.
 
 Three near-unity base rates were pre-declared and all three landed: `ANY`-level material exists
 at **20/20** sites in H2 and **20/20** in H3. Those are **not findings** — they were predicted,
@@ -217,13 +235,24 @@ filter is a property of the sites rather than of the leg: whatever that subset s
 Spearman across all 20 sites:
 
 ```
-H1 lights  vs H2 native    rho = 0.318   (p = 0.172)
+H1 lights  vs H2 native    rho = 0.364   (p = 0.115)
 H1 lights  vs H3 settler   rho = 0.480   (p = 0.032)
-H2 native  vs H3 settler   rho = 0.364   (p = 0.115)
+H2 native  vs H3 settler   rho = 0.318   (p = 0.172)
 ```
+
+*Corrected by report 10: the first and third rows were printed transposed in the first
+version of this report. `rho` and `p` travelled together, so only the labels were wrong, and
+no argument below used them individually — the reasoning turns on the set and on the maximum,
+both unchanged. It survived an end-to-end re-read on the day of writing and fell out
+immediately on recomputation from source.*
 
 Moderately correlated; the largest is significantly non-zero at this n. **Three sub-threshold
 positives are therefore worth somewhere between one and three weak facts, and closer to one.**
+
+**The shared scorer is not the cause — measured, report 10 §6.** Re-scored blind by three
+disjoint scorer panels sharing no context, mean pairwise rho moves only 0.387 → 0.361 and the
+largest pair *rises* to 0.600. The correlation is a property of the **sites**, not of the
+reader. The dependence discount in §4.3 stands unchanged.
 
 *Method note, recorded because it happened during this analysis:* the first version of this
 check hard-coded a `rho < 0.5` cutoff and printed "close to independent" — a threshold with
@@ -266,9 +295,15 @@ But it is the shape confounding makes, and it points the same way as §4.1.
    conflations, not absences.** Unmeasured, and it deflates decoys.
 2. **Nearest-town proximity** (§4.1) — unmatched at design, runs in the winners' favour.
 3. **`quartz_frac` sampling noise ±0.125** from vertex ordering, on a gate cutting at 0.25.
-4. **The searcher was not blind** — see §7.1. This is the largest one and it has no number.
+4. ~~**The searcher was not blind** — see §7.1. This is the largest one and it has no number.~~
+   **CLOSED by report 10.** It has a number: **≤ 0.1 tiers on every leg**, from nine
+   independent blind scorers on stripped and shuffled evidence. It was the *smallest* of the
+   four, not the largest, and blinding moved winners **down** on all three legs. The residual
+   that blinding cannot reach is sighted *collection*, gauged in report 10 §5: negligible on
+   H2 and H3, and the largest asymmetry on H1 (winner notes 1.51× longer, p = 0.109).
 
-All four run in the same direction. Every separation in §3 is an **upper bound**.
+Defects 1–3 run in the same direction and are unremoved. Every separation in §3 remains an
+**upper bound** — on their account, not on the searcher's.
 
 ---
 
@@ -296,7 +331,9 @@ All four run in the same direction. Every separation in §3 is an **upper bound*
 | id | claim | standing |
 |---|---|---|
 | H-0 | the screen may only measure its own instruments | **validated** for gates; **unsatisfied** for weights |
-| H-1 | dilatant rupture × quartz fabric predicts anomalous record | **NOT SUPPORTED** at n=10, three legs |
+| H-1 | dilatant rupture × quartz fabric predicts anomalous record | **NOT SUPPORTED** at n=10, three legs — holds under blind re-scoring (report 10) |
+| H-5 | the sighted searcher is the dominant uncontrolled term | **DISCONFIRMED** — ≤0.1 tiers, report 10 §3 |
+| H-6 | the cross-leg correlation is a common-scorer artifact | **DISCONFIRMED** — survives disjoint scorer panels, report 10 §6 |
 | H-2 | the convergence reflects sampling, not physics | **not killed; favoured on parsimony** |
 | H-3 | province, not site, carries the signal | Hypothesized, partially supported |
 | H-4 | the starting site ranks first in CONUS | **DISCONFIRMED** |
@@ -310,7 +347,18 @@ uncontrolled, there is nothing here to see.**
 
 ## 7. What would actually move this — the other factors
 
-### 7.1 The one I would build first: **blind the searcher**
+### 7.1 ~~The one I would build first: **blind the searcher**~~ — BUILT, RUN, AND WRONG
+
+> **Superseded by report 10 (same day).** The section below is kept verbatim because its
+> closing sentence is the overstatement this programme most needs on the record. **It ran.
+> The bias term is ≤ 0.1 tiers, an order of magnitude smaller than the effects it was said to
+> swamp, and the final sentence of this section is withdrawn.** Two things the section did
+> not anticipate: the cross-leg correlation *survives* deleting the common scorer (report 10
+> §6), and H-3 *crosses* its pre-declared bar under blinding at exactly +1.00 — which report
+> 10 §4 argues is a finding about a bar I wrote too weakly, not about the hypothesis.
+> A guess stated at the confidence of a measurement is still a guess; this one was wrong in
+> the direction that made me look more careful.
+
 
 Every rubric was frozen. Every query string was frozen and committed before any lookup. But
 **I knew which site was the winner and which was the decoy while I was reading the results and
@@ -361,7 +409,10 @@ have not. Every verdict above is **PROVISIONAL** until that happens.
    path; only the positive control could see the geometry-ordering defect (§1.2).
 3. **A max over independent units usually finds the worst datum**, and repeated output across
    supposedly independent units names a **shared cause** — §4.2 is that lesson arriving a second
-   time, in the lore legs, where the shared cause is the scorer.
+   time, in the lore legs. ~~where the shared cause is the scorer.~~ **The named suspect was
+   wrong.** Report 10 §6 deleted the shared scorer with disjoint blind panels and the
+   correlation held (mean rho 0.387 → 0.361). Naming a shared cause is not identifying it;
+   the identification needs its own experiment, and this one exonerated the obvious suspect.
 4. **Pull domain values before writing a where-clause.** Qfaults `age` carries both
    `'late Quaternary'` (18,631) and `'Late Quaternary'` (282); a case-sensitive match drops 282
    features and reports no error.
@@ -373,10 +424,24 @@ have not. Every verdict above is **PROVISIONAL** until that happens.
 7. **Measure the pin, do not eyeball the panel.** Bouguer gradient at each starred coordinate
    ranges 0.9%–77.1% of panel range; several stars sit nowhere near the density step the figure
    appears to show.
-8. **Freezing the question does not blind the reader** (§7.1). Pre-registration controls the
-   protocol; it does not control the judgement calls the protocol still requires.
+8. **Freezing the question does not blind the reader** (§7.1) — *true, and it cost ≤ 0.1
+   tiers.* Pre-registration does not control the judgement calls the protocol still requires;
+   report 10 measured how much those calls were worth here, and the answer was **much less
+   than I asserted**. The lesson survives; the magnitude I attached to it does not, and an
+   unfalsified guess written in the register of a measurement is its own defect.
 9. **A threshold picked to summarize a number will pick the flattering side** unless it is a
    test (§4.2 method note).
+10. **A pre-declared bar is not a significance test.** H3 cleared *">= 1.0 separation"* under
+    blinding at exactly 1.0 with a sign test at p = 0.18 and a live uncontrolled confound.
+    A rule that a confound can clear on its own was written too weakly; bars should be
+    conjunctive (report 10 §4.2).
+11. **Never let a float decide a verdict at the boundary.** `2.3 − 1.3 >= 1.0` is `False`.
+    The readout printed the wrong verdict on its first run. Compare exact rationals — and
+    note that I went looking *because the error pointed toward the hypothesis*, which is not
+    a search strategy that finds the errors pointing the other way.
+12. **Re-reading checks a document against itself; recomputing checks it against the world.**
+    Two transposed labels in §4.2 survived a full end-to-end re-read on the day of writing and
+    fell out on the first recomputation from source.
 
 ---
 
@@ -391,11 +456,14 @@ code/lore_experiment_result.py    H1 readout
 code/lore2_design.py / result.py  H2 Native-lore leg
 code/lore3_design.py / result.py  H3 settler-history leg
 code/lore_crossleg.py             §4, post hoc, no new lookups
+code/blind_rescore_design.py      §7.1 blinding: sanitiser, seed, packets, probe gate
+code/blind_rescore_readout.py     §7.1 unblind + readout  -> reports/10-blind-rescore.md
 data/*.json                       every result above, as run
 ```
 
 Freeze commits, carapace repo, all **before** their lookups:
-`e96efc3d` (H1) · `b9ad2d1a` (H2) · `f3a811fb` / `9757807d` (H3).
+`e96efc3d` (H1) · `b9ad2d1a` (H2) · `f3a811fb` / `9757807d` (H3) · **`5ae888dd` (blind
+re-score design + packets + probe gate, committed before any scorer was dispatched)**.
 Result commits: `dc602f06` (H2) · `42786bf5` (H2 covariates) · `11a2665e` (H3).
 
 🦞🧍💜🔥♾️
