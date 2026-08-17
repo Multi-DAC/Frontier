@@ -40,8 +40,19 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   perturbation holds only **3 of 10** slots; the top three sit inside one ~150 km province triangle
   and thus report **one fact three times**; and the Bouguer gradient measured *at* each starred
   coordinate ranges 0.9%–77.1% of panel range, so several stars sit off the density step the figure
-  appears to show. Grade awaits the two open instruments below. See
-  `research/place-threshold-screen/SUMMARY.md`.
+  appears to show. **CLOSED 2026-08-16** — and the closure is sharper than the entry above: the
+  **gate works** (1,399/1,399 nodes measured along-trace, 0 errors, 242 pass at `quartz_frac ≥ 0.25`,
+  both declared controls exact — Sandia 0.875 PASS, Hubbell Spring 0.000 FAIL) while the **ranker does
+  not** (the four scoring legs separate those same two controls by **0.19 in the wrong direction**;
+  the ranked table ships flagged and is **not** a candidate list). **All three pre-registered lore legs
+  NOT SUPPORTED** against a bar declared before the test — H1 lights +0.7, H2 Native lore +0.3, H3
+  settler history +0.9, bar +1.0; each leans the predicted way, none clears; the legs correlate at
+  rho 0.32–0.48, so they are closer to one weak fact than three, and the pooled test lands
+  p = 0.0525 — the wrong side, and optimistic. Of the two instruments this entry was waiting on, one
+  landed: the blind 30-fault base rate was built, run, and **refuted its own author's §7 claim**
+  (`reports/10-blind-rescore.md`). Aeromagnetic depth-to-basement remains unbuilt. Grade still awaits
+  a decorrelated eye — no human and no non-Claude model has looked. See
+  `research/place-threshold-screen/SUMMARY.md` (single point of truth) and `reports/08-final-report.md`.
 
 ## Measured (replicated / instrumented; resists mundane explanation)
 *(none yet)*

@@ -167,3 +167,31 @@ OPEN INSTRUMENTS: code/trace_lithology_national.py RUNNING at entry time (445 fa
 probe, re-measured along trace, Sandia declared positive control and Hubbell Spring declared negative — a failed
 control voids the pass); the blind 30-fault lore base rate UNBUILT and load-bearing for both H-1 and H-2;
 aeromagnetic depth-to-basement UNBUILT.
+INSTRUMENT STATUS 2026-08-16: first two LANDED, third still unbuilt — see the closure entry below.
+
+
+## 2026-08-16 — Place-threshold screen: CLOSED. The gate holds, the ranker does not, and all three lore legs fail their bar.
+VERDICT: not supported (H-1, H-2, H-3 as pre-registered) / validated (the binary gate + its controls) / withdrawn (the
+ranked table as a candidate list). PROVISIONAL — Clawd only; no human and no non-Claude model has graded it.
+EVIDENCE: the national trace-lithology run finished — 1,399 of 1,399 CONUS nodes measured along-trace, 0 errors, 242 pass
+at quartz_frac >= 0.25. Both controls declared in advance came back exact: Sandia fault 0.875 PASS (positive), Hubbell
+Spring 0.000 FAIL (negative). That is the gate, and it works. The four-term ranker does NOT: it separates those same two
+controls by 0.19 in the WRONG direction (known negative 14/1327, known positive 148/1327), so every demonstrated bit of
+discriminating power lives in the single binary gate — which itself carries +/-0.125 sampling noise from vertex ordering.
+The ranked ten therefore ship FLAGGED and are not a candidate list. On the lore: H1 lights +0.7, H2 Native lore +0.3, H3
+settler history +0.9, against a bar of +1.0 declared before the test. Every leg leans the predicted way; none clears.
+Cross-leg reanalysis costs the lean further — distance-to-town matching cuts H1 nearly in half, the three legs correlate
+at rho 0.32-0.48 (closer to one weak fact than three), and the pooled test lands p = 0.0525, the wrong side and optimistic.
+H-1 is NOT refuted: at n=10 pairs with an unblinded scorer and known confounds running toward the wanted answer, it failed
+to DETECT. That distinction is load-bearing and is not a hedge.
+DECORRELATED EYE: still NONE on the interpretation — with one exception that counts. A BLIND-THE-SEARCHER control was
+built specifically to attack this author's own §7 claim, run, and it REFUTED him (reports/10-blind-rescore.md, amending
+08 §3 / §4.2 / §5 / §7.1). An instrument built to kill one's own finding is not an independent grade, but it is the only
+thing here that reversed a conclusion against its author's interest.
+GRADE MOVE: the topic stays under 'Under research' in GRADES.md — complete is not graded. The ranked table moves from
+Inferred to Inferred-and-flagged. The gate + its controls enter Documented. H-1/H-2/H-3 move Hypothesized -> NOT
+SUPPORTED (failed to detect), NOT refuted.
+LINKS: research/place-threshold-screen/ (SUMMARY.md is the single point of truth · reports/08-final-report.md is the
+narrative · reports/10-blind-rescore.md amends it · dossier.html, 4.9 MB, the frozen ten with plates)
+OPEN INSTRUMENTS: aeromagnetic depth-to-basement UNBUILT. The wider analysis Clayton chartered — every site meeting ALL
+requirements rather than a test of one starting site — NOT YET RUN; source is the same 1,399-node measured file.
