@@ -1,0 +1,518 @@
+{
+ "leg": "A7 rank resolution",
+ "frozen": "Day 199, 2026-08-18, bars declared in rank_resolution.py docstring before any perturbation was run",
+ "seed": 20260818,
+ "draws": 10000,
+ "population": 225,
+ "control": {
+  "passed": true,
+  "rebuilt_top10": [
+   "Madison fault",
+   "Round Valley fault",
+   "Little Valley fault",
+   "Centennial fault",
+   "Antelope Valley fault zone",
+   "Helena valley fault",
+   "Fish Lake Valley fault zone",
+   "Red Rock fault",
+   "Sand Springs Range fault",
+   "Mosquito fault"
+  ]
+ },
+ "A7iv_effective_dof": {
+  "age": {
+   "n": 225,
+   "missing": 0,
+   "distinct": 6,
+   "sd": 0.2731,
+   "modal_value": 0.2,
+   "modal_share": 0.3733
+  },
+  "slip": {
+   "n": 225,
+   "missing": 0,
+   "distinct": 4,
+   "sd": 0.1641,
+   "modal_value": 0.0,
+   "modal_share": 0.8622
+  },
+  "junction": {
+   "n": 225,
+   "missing": 0,
+   "distinct": 5,
+   "sd": 0.3692,
+   "modal_value": 1.0,
+   "modal_share": 0.3244
+  },
+  "length": {
+   "n": 225,
+   "missing": 0,
+   "distinct": 75,
+   "sd": 0.1698,
+   "modal_value": 0.458,
+   "modal_share": 0.0489
+  },
+  "L1": {
+   "n": 225,
+   "missing": 0,
+   "distinct": 7,
+   "sd": 0.2811,
+   "modal_value": 0.25,
+   "modal_share": 0.3067
+  }
+ },
+ "A7i_leave_one_leg_out": {
+  "drop_age": {
+   "top10": [
+    "Madison fault",
+    "Round Valley fault",
+    "Little Valley fault",
+    "Centennial fault",
+    "Helena valley fault",
+    "East Gros Ventre fault",
+    "Mosquito fault",
+    "Sandia fault",
+    "unnamed faults along Sahwave Mountains",
+    "Antelope Valley fault zone"
+   ],
+   "jaccard": 0.5385,
+   "kept": 7,
+   "new": [
+    "East Gros Ventre fault",
+    "Sandia fault",
+    "unnamed faults along Sahwave Mountains"
+   ],
+   "lost": [
+    "Fish Lake Valley fault zone",
+    "Red Rock fault",
+    "Sand Springs Range fault"
+   ]
+  },
+  "drop_slip": {
+   "top10": [
+    "Madison fault",
+    "Little Valley fault",
+    "Helena valley fault",
+    "Mosquito fault",
+    "Sandia fault",
+    "Centennial fault",
+    "Teton fault",
+    "Southern Sangre de Cristo fault",
+    "Williams Fork Mountains fault",
+    "Round Valley fault"
+   ],
+   "jaccard": 0.4286,
+   "kept": 6,
+   "new": [
+    "Sandia fault",
+    "Teton fault",
+    "Southern Sangre de Cristo fault",
+    "Williams Fork Mountains fault"
+   ],
+   "lost": [
+    "Antelope Valley fault zone",
+    "Fish Lake Valley fault zone",
+    "Red Rock fault",
+    "Sand Springs Range fault"
+   ]
+  },
+  "drop_junction": {
+   "top10": [
+    "Madison fault",
+    "Round Valley fault",
+    "Hunter Mountain- Saline Valley fault zone",
+    "Mission fault",
+    "Fish Lake Valley fault zone",
+    "Sawatch fault",
+    "Little Valley fault",
+    "Bear River fault zone",
+    "Southern Sangre de Cristo fault",
+    "Emigrant fault"
+   ],
+   "jaccard": 0.25,
+   "kept": 4,
+   "new": [
+    "Hunter Mountain- Saline Valley fault zone",
+    "Mission fault",
+    "Sawatch fault",
+    "Bear River fault zone",
+    "Southern Sangre de Cristo fault",
+    "Emigrant fault"
+   ],
+   "lost": [
+    "Centennial fault",
+    "Antelope Valley fault zone",
+    "Helena valley fault",
+    "Red Rock fault",
+    "Sand Springs Range fault",
+    "Mosquito fault"
+   ]
+  },
+  "drop_length": {
+   "top10": [
+    "Madison fault",
+    "Little Valley fault",
+    "Round Valley fault",
+    "Centennial fault",
+    "Helena valley fault",
+    "McAfee Canyon fault",
+    "Sandia fault",
+    "Antelope Valley fault zone",
+    "Sand Springs Range fault",
+    "Red Rock fault"
+   ],
+   "jaccard": 0.6667,
+   "kept": 8,
+   "new": [
+    "McAfee Canyon fault",
+    "Sandia fault"
+   ],
+   "lost": [
+    "Fish Lake Valley fault zone",
+    "Mosquito fault"
+   ]
+  },
+  "drop_L1": {
+   "top10": [
+    "Madison fault",
+    "Round Valley fault",
+    "Kings Canyon fault zone",
+    "Centennial fault",
+    "Antelope Valley fault zone",
+    "Fish Lake Valley fault zone",
+    "Sand Springs Range fault",
+    "Bear River fault zone",
+    "Red Rock fault",
+    "Mono Lake fault"
+   ],
+   "jaccard": 0.5385,
+   "kept": 7,
+   "new": [
+    "Kings Canyon fault zone",
+    "Bear River fault zone",
+    "Mono Lake fault"
+   ],
+   "lost": [
+    "Little Valley fault",
+    "Helena valley fault",
+    "Mosquito fault"
+   ]
+  }
+ },
+ "A7ii_membership": {
+  "Madison fault": {
+   "p_top10": 1.0,
+   "p_gated_out": 0.0,
+   "rank_median": 1,
+   "rank_ci90": [
+    1,
+    1
+   ]
+  },
+  "Round Valley fault": {
+   "p_top10": 1.0,
+   "p_gated_out": 0.0,
+   "rank_median": 2,
+   "rank_ci90": [
+    2,
+    3
+   ]
+  },
+  "Little Valley fault": {
+   "p_top10": 1.0,
+   "p_gated_out": 0.0,
+   "rank_median": 3,
+   "rank_ci90": [
+    2,
+    4
+   ]
+  },
+  "Centennial fault": {
+   "p_top10": 1.0,
+   "p_gated_out": 0.0,
+   "rank_median": 4,
+   "rank_ci90": [
+    3,
+    4
+   ]
+  },
+  "Antelope Valley fault zone": {
+   "p_top10": 0.6724,
+   "p_gated_out": 0.3272,
+   "rank_median": 5,
+   "rank_ci90": [
+    5,
+    9
+   ]
+  },
+  "Helena valley fault": {
+   "p_top10": 0.7461,
+   "p_gated_out": 0.0,
+   "rank_median": 8,
+   "rank_ci90": [
+    6,
+    10
+   ]
+  },
+  "Fish Lake Valley fault zone": {
+   "p_top10": 0.5414,
+   "p_gated_out": 0.3338,
+   "rank_median": 6,
+   "rank_ci90": [
+    5,
+    10
+   ]
+  },
+  "Red Rock fault": {
+   "p_top10": 0.6737,
+   "p_gated_out": 0.0,
+   "rank_median": 7,
+   "rank_ci90": [
+    5,
+    10
+   ]
+  },
+  "Sand Springs Range fault": {
+   "p_top10": 0.5902,
+   "p_gated_out": 0.3368,
+   "rank_median": 7,
+   "rank_ci90": [
+    5,
+    10
+   ]
+  },
+  "Mosquito fault": {
+   "p_top10": 0.4088,
+   "p_gated_out": 0.0,
+   "rank_median": 9,
+   "rank_ci90": [
+    7,
+    10
+   ]
+  }
+ },
+ "A7ii_intruders_p_ge_005": {
+  "Sandia fault": 0.5045,
+  "Bear River fault zone": 0.4758,
+  "Mono Lake fault": 0.2724,
+  "McAfee Canyon fault": 0.2461,
+  "Teton fault": 0.4532,
+  "Southern Sangre de Cristo fault": 0.3409,
+  "Hunter Mountain- Saline Valley fault zone": 0.0678
+ },
+ "A7iii_adjacent_pairs": [
+  {
+   "above": "Madison fault",
+   "below": "Round Valley fault",
+   "both_present": 10000,
+   "p_order_holds": 1.0,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Round Valley fault",
+   "below": "Little Valley fault",
+   "both_present": 10000,
+   "p_order_holds": 0.6674,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Little Valley fault",
+   "below": "Centennial fault",
+   "both_present": 10000,
+   "p_order_holds": 0.8925,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Centennial fault",
+   "below": "Antelope Valley fault zone",
+   "both_present": 6724,
+   "p_order_holds": 1.0,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Antelope Valley fault zone",
+   "below": "Helena valley fault",
+   "both_present": 4831,
+   "p_order_holds": 1.0,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Helena valley fault",
+   "below": "Fish Lake Valley fault zone",
+   "both_present": 3888,
+   "p_order_holds": 0.3423,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Fish Lake Valley fault zone",
+   "below": "Red Rock fault",
+   "both_present": 3552,
+   "p_order_holds": 0.8114,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Red Rock fault",
+   "below": "Sand Springs Range fault",
+   "both_present": 3744,
+   "p_order_holds": 0.7236,
+   "basis": "conditional on both sites being on the list in that draw"
+  },
+  {
+   "above": "Sand Springs Range fault",
+   "below": "Mosquito fault",
+   "both_present": 2280,
+   "p_order_holds": 1.0,
+   "basis": "conditional on both sites being on the list in that draw"
+  }
+ ],
+ "A7v_contender_band": {
+  "rank10_score": 0.6134,
+  "one_vertex_score_delta": 0.025,
+  "n_within_one_vertex": 23,
+  "members": [
+   {
+    "fault": "Madison fault",
+    "score": 0.837,
+    "lat": 44.792,
+    "lon": -111.438
+   },
+   {
+    "fault": "Red Canyon fault",
+    "score": 0.7698,
+    "lat": 44.864,
+    "lon": -111.297
+   },
+   {
+    "fault": "Hebgen fault",
+    "score": 0.767,
+    "lat": 44.858,
+    "lon": -111.324
+   },
+   {
+    "fault": "Round Valley fault",
+    "score": 0.7324,
+    "lat": 37.542,
+    "lon": -118.726
+   },
+   {
+    "fault": "Little Valley fault",
+    "score": 0.7112,
+    "lat": 39.237,
+    "lon": -119.886
+   },
+   {
+    "fault": "Centennial fault",
+    "score": 0.6812,
+    "lat": 44.584,
+    "lon": -112.066
+   },
+   {
+    "fault": "Silver Lake fault",
+    "score": 0.6592,
+    "lat": 37.8,
+    "lon": -119.121
+   },
+   {
+    "fault": "Kings Canyon fault zone",
+    "score": 0.6542,
+    "lat": 39.143,
+    "lon": -119.823
+   },
+   {
+    "fault": "West Fork fault",
+    "score": 0.6382,
+    "lat": 44.863,
+    "lon": -111.313
+   },
+   {
+    "fault": "Hartley Springs fault zone",
+    "score": 0.6368,
+    "lat": 37.644,
+    "lon": -119.003
+   },
+   {
+    "fault": "Antelope Valley fault zone",
+    "score": 0.6244,
+    "lat": 38.677,
+    "lon": -119.548
+   },
+   {
+    "fault": "Helena valley fault",
+    "score": 0.624,
+    "lat": 46.759,
+    "lon": -112.049
+   },
+   {
+    "fault": "Fish Lake Valley fault zone",
+    "score": 0.6174,
+    "lat": 37.694,
+    "lon": -118.114
+   },
+   {
+    "fault": "Red Rock fault",
+    "score": 0.6168,
+    "lat": 44.66,
+    "lon": -112.698
+   },
+   {
+    "fault": "Sand Springs Range fault",
+    "score": 0.616,
+    "lat": 39.19,
+    "lon": -118.338
+   },
+   {
+    "fault": "Mosquito fault",
+    "score": 0.6134,
+    "lat": 39.327,
+    "lon": -106.14
+   },
+   {
+    "fault": "Sandia fault",
+    "score": 0.6108,
+    "lat": 35.153,
+    "lon": -106.472
+   },
+   {
+    "fault": "Bear River fault zone",
+    "score": 0.6064,
+    "lat": 41.091,
+    "lon": -110.812
+   },
+   {
+    "fault": "Teton fault",
+    "score": 0.6016,
+    "lat": 44.013,
+    "lon": -110.682
+   },
+   {
+    "fault": "White Mountains fault zone",
+    "score": 0.6008,
+    "lat": 37.867,
+    "lon": -118.465
+   },
+   {
+    "fault": "McAfee Canyon fault",
+    "score": 0.5962,
+    "lat": 37.686,
+    "lon": -117.968
+   },
+   {
+    "fault": "Southern Sangre de Cristo fault",
+    "score": 0.5936,
+    "lat": 36.849,
+    "lon": -105.551
+   },
+   {
+    "fault": "Mono Lake fault",
+    "score": 0.5918,
+    "lat": 38.079,
+    "lon": -119.181
+   }
+  ]
+ },
+ "bars": {
+  "i_membership_not_one_leg": false,
+  "ii_membership_resolved": false,
+  "iii_order_resolved": false
+ }
+}
