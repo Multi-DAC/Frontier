@@ -926,3 +926,74 @@ Output: `data/candidate_list.json`, `reports/CANDIDATE-LIST.md`. As of writing, 
 jurisdiction column reads `UNRUN` on every row because A8 is still querying; `code/watch_a8.py`
 is the trigger that rebuilds the deliverable when A8 lands, so the rebuild does not depend on
 a future breath remembering to do it.
+
+### A15 — Day 199. The radiogenic / radon term. Clayton asked for it; it comes back negative for radon and positive for granite.
+
+Pre-registered in `code/radon_leg.py` before the first sample: mechanism, three populations,
+a written prediction, and five bars. The prediction was that this leg would return a null on
+every bar carrying new information. **It did, and then went one better — the radon-specific
+statistic is significant in the direction OPPOSITE to the hypothesis.**
+
+**THE INSTRUMENT, AND THE THREE WRONG TURNS IT SURVIVED.** All three return plausible numbers
+rather than errors, and all three are recorded in `code/radiometric_grid.py` because the next
+person will take them too.
+
+1. **The service name that answers about a different dataset.** `mrdata.usgs.gov/services/nuresed?…GetCapabilities` returns a 349,783-byte well-formed WMS capabilities document — for the **mineral deposits** service, full of `mrds-` layers. A deliberately nonsense service name returns 1,511 bytes and no layers. So "it responded and it parsed" does **not** establish that you reached the dataset you named. The control is what separated them; the name actually used, `aerorad`, was read off the dataset's own page.
+2. **The file that looks like data and is a picture.** `data/NArad_U_geog83.tif` is 42.8 MB, is served as `image/tiff`, and is named for the element and the datum. It is **PIL mode RGB, 8 bits per channel, with no GeoTIFF transform tags at all** — a rendered colour map. Sampling it returns legend colours that can be reported as ppm uranium. The data is `NAMrad_U.zip` → a 4-byte-float ESRI binary raster.
+3. **The grid is not geographic.** `xllcorner -3501000, cellsize 2000` are metres in a projected frame. Parameters were read from the product's own `.flt.xml`, not assumed: spherical transverse Mercator, R = 6378206.4 m, k₀ = 0.926, central meridian −100°, datum NAD27 — the DNAG projection. The transform was then checked against ground truth **it was not built from**: the metadata separately declares the grid's geographic bounding box, and scanning the grid footprint recovers it to 0.51° against a 0.25° scan step. The discriminating fixture: **Grants NM, one of the largest uranium districts on the continent, returns 22.8 ppm eU = 15.8× the grid median**, and the deep Pacific returns no-data.
+
+**WHY eTh IS THE WHOLE DESIGN.** Airborne gamma spectrometry cannot see uranium; it sees the
+1.76 MeV line of Bi-214, a *daughter of Rn-222*, and back-calculates ppm assuming secular
+equilibrium — hence *equivalent* uranium. Thorium's gaseous daughter is Rn-220, half-life
+55 s against radon's 3.8 d, so thoron cannot migrate. eU and eTh track each other across rock
+types. Therefore **high in both = felsic lithology, which A13 already scores; high in eU
+*relative to* eTh = uranium decoupled from its rock-forming twin, which is the only new
+signal available.** Raw eU is a rock-type map wearing a radon label, and reporting it as
+"the radon term" would be this project's signature defect committed deliberately.
+
+**RESULTS.** 225 survivors · 400 random western points (same seed and bbox as A8/A12) · 326
+non-survivor stage-2 faults. Permutation test, 10,000 relabellings, difference of medians.
+
+| statistic | survivors | random ground | other faults | p vs random | p vs faults |
+|---|---|---|---|---|---|
+| eU (ppm) | 2.164 | 1.979 | 2.130 | **0.020** | 0.731 |
+| eU, 10 km mean | 2.318 | 2.051 | 2.164 | **0.0001** | 0.153 |
+| eTh (ppm) | 8.533 | 7.175 | 6.984 | **0.0001** | **0.0005** |
+| **eU/eTh** | **0.2619** | 0.2774 | 0.2710 | **0.015** | 0.149 |
+| **eU/eTh, 10 km** | **0.2585** | 0.2767 | 0.2736 | **0.0018** | **0.0067** |
+
+- **BAR 0 COVERAGE — passed, narrowly, and it is the bar that could have manufactured everything else.** The grid is 27.7% populated and the holes are not random: this is largely NURE-era flying, and **NURE flew where uranium was being prospected**, so coverage correlates with uranium prospectivity. Survivor coverage 98.7%, random ground 86.0% — a 12.7 pp gap against a 15 pp bar. It passes, but the gap is real and it runs one way only: the unflown ground excluded from the null is basin and plain, which is *low* in radioelements, so excluding it makes the null too high and the survivor contrast **conservative**. The direction is safe; the honesty is that it was checked before the values were compared, not after.
+- **BAR i ELEVATED — PASSED.** Survivors carry more eU than random western ground.
+- **BAR ii RADON-SPECIFIC — FAILED, and not by absence.** eU/eTh is **lower** on survivors than on random ground, p = 0.015 (10 km: p = 0.0018). Significant in the direction opposite to the hypothesis. "Failed" here does not mean "no effect"; it means the effect points the wrong way.
+- **BAR iii NOT-JUST-FAULTS — FAILED the same way.** The 10 km ratio does differ from other Quaternary faults (p = 0.0067) — again *lower*. And raw eU does **not** differ from other faults at all (p = 0.731).
+- **BAR iv INDEPENDENT — passed.** ρ(eU/eTh, screen score) = **−0.029** across survivors. The radiogenic term is essentially orthogonal to everything the screen already computes.
+
+**WHAT IT MEANS.** The largest effect in the table is **eTh**, not eU: +1.36 ppm over random
+ground and +1.55 over other faults, both at p ≤ 0.0005. Thorium is immobile and its daughter
+cannot travel. A screen that selects strongly on thorium has selected **felsic and alkaline
+crystalline rock** — which is a lithology finding, belongs to A13, and is not news. And
+because eTh rises faster than eU, the *ratio falls*: on the screen's own ground, uranium is
+**depleted relative to thorium**. Mechanistically that is the signature of uranium having
+been mobilised as the uranyl ion by oxidising groundwater and carried away — a **loss** of
+the radon parent, not a concentration of it.
+
+So the leg answers Clayton's question cleanly and against the project's interest: **the
+screen's sites are not radon-rich. They are thorium-rich, which is to say granitic, which the
+screen was already selecting for by other means.** Per the pre-registered rule for a BAR ii
+failure, this leg reports itself as **redundant with A13** and contributes no scoring term.
+
+**AND ONE THING IT DOES CONTRIBUTE, which is worth more than a term.** ρ = −0.029 means the
+radiogenic axis is genuinely independent of the screen. The top of the eU/eTh ordering
+(Sheep-East Desert Ranges 0.483, Tinajas Altas 0.467, Nacimiento 0.453) is drawn almost
+entirely from *low-ranked* survivors — ranks 166, 222, 39. Only **Sand Springs Range (rank
+10)** appears in the top fifteen. Using this as a re-ranking criterion would therefore
+reshuffle the list almost completely, and A7's tie-breaker rule forbids exactly that: a
+criterion may not reorder the 23-member band unless it has been tested *as a tie-breaker*
+against the band's measured resolution. It has not been, and on bars ii and iii it has no
+warrant to be. **It is a label, not a rank.**
+
+**A NOTE ON THE OTHER DIRECTION, because it is the honest half.** Radon is a documented
+neurotoxicant whose decay products are retained alpha emitters. Had this leg found high-radon
+ground, it would have strengthened the *ordinary* explanation for "places where people report
+feeling strange", not the extraordinary one. It found the opposite, which removes a mundane
+confound from the sites the screen names. That is a small, real, and unglamorous contribution.

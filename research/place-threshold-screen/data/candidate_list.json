@@ -251,7 +251,7 @@
   "75": 9
  },
  "areas_note": "Single-linkage at the frozen list's own 50 km separation scale. Member count inherits the junction term's mapping-density artefact and is not used to order areas.",
- "jurisdiction_status": "UNRUN",
+ "jurisdiction_status": "RUN",
  "basement_scoreability_status": "RUN",
  "rows": [
   {
@@ -265,10 +265,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Caribou-Targhee National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": []
   },
@@ -283,10 +284,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Humboldt-Toiyabe National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "basement-scoreable in only 32/40 variants"
@@ -303,10 +305,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Beaverhead-Deerlodge National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "basement-scoreable in only 32/40 variants"
@@ -323,10 +326,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Inyo National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": []
   },
@@ -341,10 +345,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.3272,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Humboldt-Toiyabe National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "falls out of the 225 entirely in 32.7% of L1 draws"
@@ -361,10 +366,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
+    "admin": "OUT",
+    "own": "OUT",
     "forest": null,
-    "eligible": "UNRUN"
+    "own_class": null,
+    "eligible": "OUT"
    },
    "caveats": [
     "UNSCOREABLE on the basement leg (no node in window)",
@@ -382,10 +388,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.3338,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Inyo National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "falls out of the 225 entirely in 33.4% of L1 draws"
@@ -402,10 +409,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Inyo National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "basement-scoreable in only 32/40 variants",
@@ -423,10 +431,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Custer Gallatin National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 11.6 km"
@@ -443,10 +452,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
+    "admin": "OUT",
+    "own": "OUT",
     "forest": null,
-    "eligible": "UNRUN"
+    "own_class": null,
+    "eligible": "OUT"
    },
    "caveats": []
   },
@@ -461,10 +471,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Humboldt-Toiyabe National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "basement-scoreable in only 32/40 variants",
@@ -482,10 +493,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
+    "admin": "OUT",
+    "own": "OUT",
     "forest": null,
-    "eligible": "UNRUN"
+    "own_class": null,
+    "eligible": "OUT"
    },
    "caveats": [
     "NOT on the frozen ten; enters it in 24.6% of L1 draws"
@@ -502,10 +514,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Humboldt-Toiyabe National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "NOT on the frozen ten; enters it in 27.2% of L1 draws"
@@ -522,10 +535,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Pike and San Isabel National Forests",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "UNSCOREABLE on the basement leg (no node in window)"
@@ -542,10 +556,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Custer Gallatin National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 13.7 km"
@@ -562,10 +577,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.0,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Beaverhead-Deerlodge National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": []
   },
@@ -580,10 +596,11 @@
    "p_in_top_ten_basis": "frozen",
    "p_gated_out": 0.3368,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
+    "admin": "OUT",
+    "own": "OUT",
     "forest": null,
-    "eligible": "UNRUN"
+    "own_class": null,
+    "eligible": "OUT"
    },
    "caveats": [
     "falls out of the 225 entirely in 33.7% of L1 draws"
@@ -600,10 +617,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Cibola National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "basement-scoreable in only 24/40 variants",
@@ -621,10 +639,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Inyo National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Round Valley fault scores 0.7324 at 45.1 km"
@@ -641,10 +660,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Carson National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "UNSCOREABLE on the basement leg (no node in window)",
@@ -662,10 +682,11 @@
    "p_in_top_ten_basis": "intruder",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Bridger-Teton National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "UNSCOREABLE on the basement leg (no node in window)",
@@ -683,10 +704,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "IN",
+    "own": "IN",
+    "forest": "Custer Gallatin National Forest",
+    "own_class": "USDA FOREST SERVICE",
+    "eligible": "IN"
    },
    "caveats": [
     "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 12.6 km"
@@ -703,10 +725,11 @@
    "p_in_top_ten_basis": "below_floor",
    "p_gated_out": null,
    "jurisdiction": {
-    "admin": "UNRUN",
-    "own": "UNRUN",
-    "forest": null,
-    "eligible": "UNRUN"
+    "admin": "OUT",
+    "own": "OUT",
+    "forest": "Inyo National Forest",
+    "own_class": null,
+    "eligible": "NEAR(<=10km)"
    },
    "caveats": [
     "basement-scoreable in only 32/40 variants",
@@ -737,8 +760,8 @@
   },
   {
    "path": "data/jurisdiction_leg.json",
-   "bytes": null,
-   "status": "ABSENT"
+   "bytes": 164850,
+   "status": "read"
   }
  ]
 }
