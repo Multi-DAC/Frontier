@@ -1,0 +1,3444 @@
+{
+ "source": "USGS OFR 2018-1115 (Shah & Boyd 2018), Dep2MzBasement_LLz.csv",
+ "sha256": "c30b20a4a407f47d487cf46338e1a966b46e87b5c4a26f73d994233d50b63ffd",
+ "form": "s = 1 - log10(clip(D,D_NEAR,D_FAR)/D_NEAR) / log10(D_FAR/D_NEAR)",
+ "D_NEAR": 100.0,
+ "D_FAR": 5000.0,
+ "constants_are": "A DECLARED WAGER. See ALTERNATES and the sensitivity sweep.",
+ "measured": 194,
+ "of": 225,
+ "nearest_node_km_max": 4.124,
+ "nodes_beyond_2km": 3,
+ "depth_m": {
+  "min": 0.1,
+  "p25": 8.0,
+  "median": 64.2,
+  "p75": 227.5,
+  "max": 3609.0
+ },
+ "leg_value": {
+  "min": 0.0833,
+  "p25": 0.7899,
+  "median": 1.0,
+  "p75": 1.0,
+  "max": 1.0,
+  "at_ceiling_1.0": 113,
+  "at_floor_0.0": 0
+ },
+ "rows": [
+  {
+   "fault_name": "Madison fault",
+   "rank_r1": 1,
+   "lat": 44.792,
+   "lon": -111.438,
+   "d2b_m": 1069.4,
+   "node_km": 0.359,
+   "status": "PASS",
+   "basement": 0.3942,
+   "alternates": {
+    "50.0_3000.0": 0.2519,
+    "100.0_5000.0": 0.3942,
+    "250.0_8000.0": 0.5806,
+    "500.0_10000.0": 0.7462
+   }
+  },
+  {
+   "fault_name": "Round Valley fault",
+   "rank_r1": 2,
+   "lat": 37.542,
+   "lon": -118.726,
+   "d2b_m": 32.6,
+   "node_km": 0.334,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Kings Canyon fault zone",
+   "rank_r1": 3,
+   "lat": 39.143,
+   "lon": -119.823,
+   "d2b_m": 2.2,
+   "node_km": 0.423,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Red Canyon fault",
+   "rank_r1": 4,
+   "lat": 44.864,
+   "lon": -111.297,
+   "d2b_m": 77.1,
+   "node_km": 0.289,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8943,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Hartley Springs fault zone",
+   "rank_r1": 5,
+   "lat": 37.644,
+   "lon": -119.003,
+   "d2b_m": 1332.9,
+   "node_km": 0.288,
+   "status": "PASS",
+   "basement": 0.338,
+   "alternates": {
+    "50.0_3000.0": 0.1981,
+    "100.0_5000.0": 0.338,
+    "250.0_8000.0": 0.5171,
+    "500.0_10000.0": 0.6727
+   }
+  },
+  {
+   "fault_name": "Centennial fault",
+   "rank_r1": 6,
+   "lat": 44.584,
+   "lon": -112.066,
+   "d2b_m": 14.0,
+   "node_km": 0.5,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Antelope Valley fault zone",
+   "rank_r1": 7,
+   "lat": 38.677,
+   "lon": -119.548,
+   "d2b_m": 75.6,
+   "node_km": 0.217,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.899,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Fish Lake Valley fault zone",
+   "rank_r1": 8,
+   "lat": 37.694,
+   "lon": -118.114,
+   "d2b_m": 165.1,
+   "node_km": 0.441,
+   "status": "PASS",
+   "basement": 0.8719,
+   "alternates": {
+    "50.0_3000.0": 0.7083,
+    "100.0_5000.0": 0.8719,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Hebgen fault",
+   "rank_r1": 9,
+   "lat": 44.858,
+   "lon": -111.324,
+   "d2b_m": 38.0,
+   "node_km": 0.346,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sand Springs Range fault",
+   "rank_r1": 10,
+   "lat": 39.19,
+   "lon": -118.338,
+   "d2b_m": 718.6,
+   "node_km": 0.289,
+   "status": "PASS",
+   "basement": 0.4959,
+   "alternates": {
+    "50.0_3000.0": 0.349,
+    "100.0_5000.0": 0.4959,
+    "250.0_8000.0": 0.6953,
+    "500.0_10000.0": 0.8789
+   }
+  },
+  {
+   "fault_name": "Silver Lake fault",
+   "rank_r1": 11,
+   "lat": 37.8,
+   "lon": -119.121,
+   "d2b_m": 2.5,
+   "node_km": 0.535,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "White Mountains fault zone",
+   "rank_r1": 12,
+   "lat": 37.867,
+   "lon": -118.465,
+   "d2b_m": 439.9,
+   "node_km": 0.447,
+   "status": "PASS",
+   "basement": 0.6213,
+   "alternates": {
+    "50.0_3000.0": 0.4689,
+    "100.0_5000.0": 0.6213,
+    "250.0_8000.0": 0.8369,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Little Valley fault",
+   "rank_r1": 13,
+   "lat": 39.237,
+   "lon": -119.886,
+   "d2b_m": 2.4,
+   "node_km": 0.498,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bear River fault zone",
+   "rank_r1": 14,
+   "lat": 41.091,
+   "lon": -110.812,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Red Rock fault",
+   "rank_r1": 15,
+   "lat": 44.66,
+   "lon": -112.698,
+   "d2b_m": 64.2,
+   "node_km": 0.163,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.939,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Mono Lake fault",
+   "rank_r1": 16,
+   "lat": 38.079,
+   "lon": -119.181,
+   "d2b_m": 107.7,
+   "node_km": 0.589,
+   "status": "PASS",
+   "basement": 0.9811,
+   "alternates": {
+    "50.0_3000.0": 0.8126,
+    "100.0_5000.0": 0.9811,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Hunter Mountain- Saline Valley fault zone",
+   "rank_r1": 17,
+   "lat": 36.759,
+   "lon": -117.894,
+   "d2b_m": 5.2,
+   "node_km": 0.371,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Gerlach fault zone",
+   "rank_r1": 18,
+   "lat": 40.702,
+   "lon": -119.349,
+   "d2b_m": 951.5,
+   "node_km": 0.489,
+   "status": "PASS",
+   "basement": 0.4241,
+   "alternates": {
+    "50.0_3000.0": 0.2805,
+    "100.0_5000.0": 0.4241,
+    "250.0_8000.0": 0.6144,
+    "500.0_10000.0": 0.7852
+   }
+  },
+  {
+   "fault_name": "West Cache fault zone",
+   "rank_r1": 19,
+   "lat": 41.965,
+   "lon": -112.109,
+   "d2b_m": 61.9,
+   "node_km": 0.353,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9477,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Lima Reservoir fault",
+   "rank_r1": 20,
+   "lat": 44.646,
+   "lon": -112.192,
+   "d2b_m": 260.4,
+   "node_km": 0.303,
+   "status": "PASS",
+   "basement": 0.7553,
+   "alternates": {
+    "50.0_3000.0": 0.5969,
+    "100.0_5000.0": 0.7553,
+    "250.0_8000.0": 0.9882,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sulphur Spring fault",
+   "rank_r1": 21,
+   "lat": 40.927,
+   "lon": -117.311,
+   "d2b_m": 132.9,
+   "node_km": 0.158,
+   "status": "PASS",
+   "basement": 0.9273,
+   "alternates": {
+    "50.0_3000.0": 0.7613,
+    "100.0_5000.0": 0.9273,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Granite Springs Valley fault zone",
+   "rank_r1": 22,
+   "lat": 40.164,
+   "lon": -119.062,
+   "d2b_m": 221.8,
+   "node_km": 0.125,
+   "status": "PASS",
+   "basement": 0.7963,
+   "alternates": {
+    "50.0_3000.0": 0.6361,
+    "100.0_5000.0": 0.7963,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "McAfee Canyon fault",
+   "rank_r1": 23,
+   "lat": 37.686,
+   "lon": -117.968,
+   "d2b_m": 1.6,
+   "node_km": 0.221,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Western Roberts Mountains fault",
+   "rank_r1": 24,
+   "lat": 39.75,
+   "lon": -116.384,
+   "d2b_m": 220.7,
+   "node_km": 0.532,
+   "status": "PASS",
+   "basement": 0.7976,
+   "alternates": {
+    "50.0_3000.0": 0.6373,
+    "100.0_5000.0": 0.7976,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Caballo fault",
+   "rank_r1": 25,
+   "lat": 33.121,
+   "lon": -107.286,
+   "d2b_m": 1273.2,
+   "node_km": 0.247,
+   "status": "PASS",
+   "basement": 0.3497,
+   "alternates": {
+    "50.0_3000.0": 0.2093,
+    "100.0_5000.0": 0.3497,
+    "250.0_8000.0": 0.5303,
+    "500.0_10000.0": 0.688
+   }
+  },
+  {
+   "fault_name": "Spanish Springs Valley fault",
+   "rank_r1": 26,
+   "lat": 39.663,
+   "lon": -119.732,
+   "d2b_m": 111.3,
+   "node_km": 0.265,
+   "status": "PASS",
+   "basement": 0.9727,
+   "alternates": {
+    "50.0_3000.0": 0.8046,
+    "100.0_5000.0": 0.9727,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Toiyabe Range fault zone",
+   "rank_r1": 27,
+   "lat": 38.5,
+   "lon": -117.309,
+   "d2b_m": 167.4,
+   "node_km": 0.167,
+   "status": "PASS",
+   "basement": 0.8683,
+   "alternates": {
+    "50.0_3000.0": 0.7049,
+    "100.0_5000.0": 0.8683,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Carson City fault",
+   "rank_r1": 28,
+   "lat": 39.092,
+   "lon": -119.822,
+   "d2b_m": 10.3,
+   "node_km": 0.248,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Cortez Mountains fault zone",
+   "rank_r1": 29,
+   "lat": 40.296,
+   "lon": -116.451,
+   "d2b_m": 599.1,
+   "node_km": 0.355,
+   "status": "PASS",
+   "basement": 0.5424,
+   "alternates": {
+    "50.0_3000.0": 0.3935,
+    "100.0_5000.0": 0.5424,
+    "250.0_8000.0": 0.7478,
+    "500.0_10000.0": 0.9397
+   }
+  },
+  {
+   "fault_name": "Teton fault",
+   "rank_r1": 30,
+   "lat": 44.013,
+   "lon": -110.682,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Rincon fault",
+   "rank_r1": 31,
+   "lat": 35.214,
+   "lon": -106.516,
+   "d2b_m": 1453.6,
+   "node_km": 0.57,
+   "status": "PASS",
+   "basement": 0.3158,
+   "alternates": {
+    "50.0_3000.0": 0.177,
+    "100.0_5000.0": 0.3158,
+    "250.0_8000.0": 0.4921,
+    "500.0_10000.0": 0.6438
+   }
+  },
+  {
+   "fault_name": "Paymaster Ridge fault",
+   "rank_r1": 32,
+   "lat": 37.794,
+   "lon": -117.493,
+   "d2b_m": 182.9,
+   "node_km": 0.449,
+   "status": "PASS",
+   "basement": 0.8456,
+   "alternates": {
+    "50.0_3000.0": 0.6832,
+    "100.0_5000.0": 0.8456,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Dry Mountain fault",
+   "rank_r1": 33,
+   "lat": 40.551,
+   "lon": -119.088,
+   "d2b_m": 97.8,
+   "node_km": 0.64,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8363,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "West Fork fault",
+   "rank_r1": 34,
+   "lat": 44.863,
+   "lon": -111.313,
+   "d2b_m": 75.5,
+   "node_km": 0.428,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8994,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Freds Mountain fault",
+   "rank_r1": 35,
+   "lat": 39.818,
+   "lon": -119.843,
+   "d2b_m": 120.6,
+   "node_km": 0.206,
+   "status": "PASS",
+   "basement": 0.9521,
+   "alternates": {
+    "50.0_3000.0": 0.7849,
+    "100.0_5000.0": 0.9521,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sandia fault",
+   "rank_r1": 36,
+   "lat": 35.153,
+   "lon": -106.472,
+   "d2b_m": 833.8,
+   "node_km": 2.358,
+   "status": "PASS",
+   "basement": 0.4579,
+   "alternates": {
+    "50.0_3000.0": 0.3127,
+    "100.0_5000.0": 0.4579,
+    "250.0_8000.0": 0.6524,
+    "500.0_10000.0": 0.8293
+   }
+  },
+  {
+   "fault_name": "Indian Hill fault",
+   "rank_r1": 37,
+   "lat": 39.049,
+   "lon": -119.829,
+   "d2b_m": 88.4,
+   "node_km": 0.264,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8608,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Crawford Mountains (west side) fault",
+   "rank_r1": 38,
+   "lat": 41.755,
+   "lon": -111.055,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Nacimiento fault",
+   "rank_r1": 39,
+   "lat": 35.499,
+   "lon": -106.858,
+   "d2b_m": 246.8,
+   "node_km": 0.415,
+   "status": "PASS",
+   "basement": 0.769,
+   "alternates": {
+    "50.0_3000.0": 0.61,
+    "100.0_5000.0": 0.769,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Petersen Mountain fault",
+   "rank_r1": 40,
+   "lat": 39.682,
+   "lon": -119.982,
+   "d2b_m": 88.8,
+   "node_km": 0.395,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8598,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "The Lava Beds fault",
+   "rank_r1": 41,
+   "lat": 40.509,
+   "lon": -118.963,
+   "d2b_m": 155.5,
+   "node_km": 0.139,
+   "status": "PASS",
+   "basement": 0.8871,
+   "alternates": {
+    "50.0_3000.0": 0.7228,
+    "100.0_5000.0": 0.8871,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Clayton Ridge fault",
+   "rank_r1": 42,
+   "lat": 37.569,
+   "lon": -117.537,
+   "d2b_m": 393.9,
+   "node_km": 0.303,
+   "status": "PASS",
+   "basement": 0.6495,
+   "alternates": {
+    "50.0_3000.0": 0.4959,
+    "100.0_5000.0": 0.6495,
+    "250.0_8000.0": 0.8688,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Helena valley fault",
+   "rank_r1": 43,
+   "lat": 46.759,
+   "lon": -112.049,
+   "d2b_m": 2.8,
+   "node_km": 0.112,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Southern Sierra Nevada fault zone",
+   "rank_r1": 44,
+   "lat": 36.807,
+   "lon": -118.314,
+   "d2b_m": 0.9,
+   "node_km": 0.66,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Boundary fault",
+   "rank_r1": 45,
+   "lat": 37.211,
+   "lon": -116.057,
+   "d2b_m": 48.7,
+   "node_km": 0.052,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Southern Sangre de Cristo fault",
+   "rank_r1": 46,
+   "lat": 36.849,
+   "lon": -105.551,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Antelope Range-Kingsley Mountains fault zone",
+   "rank_r1": 47,
+   "lat": 40.137,
+   "lon": -114.338,
+   "d2b_m": 29.5,
+   "node_km": 0.453,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Red Hills fault",
+   "rank_r1": 48,
+   "lat": 32.899,
+   "lon": -107.273,
+   "d2b_m": 334.6,
+   "node_km": 0.211,
+   "status": "PASS",
+   "basement": 0.6913,
+   "alternates": {
+    "50.0_3000.0": 0.5357,
+    "100.0_5000.0": 0.6913,
+    "250.0_8000.0": 0.9159,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Mosquito fault",
+   "rank_r1": 49,
+   "lat": 39.327,
+   "lon": -106.14,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "East Pintwater Range fault",
+   "rank_r1": 50,
+   "lat": 37.036,
+   "lon": -115.548,
+   "d2b_m": 3.4,
+   "node_km": 0.108,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Silver King Pass fault",
+   "rank_r1": 51,
+   "lat": 38.217,
+   "lon": -114.866,
+   "d2b_m": 111.0,
+   "node_km": 0.478,
+   "status": "PASS",
+   "basement": 0.9733,
+   "alternates": {
+    "50.0_3000.0": 0.8052,
+    "100.0_5000.0": 0.9733,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Spokane Hills fault",
+   "rank_r1": 52,
+   "lat": 46.562,
+   "lon": -111.74,
+   "d2b_m": 159.8,
+   "node_km": 0.389,
+   "status": "PASS",
+   "basement": 0.8802,
+   "alternates": {
+    "50.0_3000.0": 0.7163,
+    "100.0_5000.0": 0.8802,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Black Mountains fault zone",
+   "rank_r1": 53,
+   "lat": 36.467,
+   "lon": -116.832,
+   "d2b_m": 474.3,
+   "node_km": 0.451,
+   "status": "PASS",
+   "basement": 0.6021,
+   "alternates": {
+    "50.0_3000.0": 0.4505,
+    "100.0_5000.0": 0.6021,
+    "250.0_8000.0": 0.8152,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Wassuk Range fault zone",
+   "rank_r1": 54,
+   "lat": 38.445,
+   "lon": -118.643,
+   "d2b_m": 168.7,
+   "node_km": 0.484,
+   "status": "PASS",
+   "basement": 0.8663,
+   "alternates": {
+    "50.0_3000.0": 0.703,
+    "100.0_5000.0": 0.8663,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Mission fault",
+   "rank_r1": 55,
+   "lat": 47.833,
+   "lon": -114.164,
+   "d2b_m": 4.0,
+   "node_km": 0.348,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Montezuma Range fault",
+   "rank_r1": 56,
+   "lat": 37.58,
+   "lon": -117.475,
+   "d2b_m": 6.1,
+   "node_km": 0.441,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults north of Manzone Well",
+   "rank_r1": 57,
+   "lat": 38.743,
+   "lon": -115.369,
+   "d2b_m": 1.4,
+   "node_km": 0.453,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Williams Fork Mountains fault",
+   "rank_r1": 58,
+   "lat": 39.954,
+   "lon": -106.259,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "James Peak fault",
+   "rank_r1": 59,
+   "lat": 41.42,
+   "lon": -111.771,
+   "d2b_m": 60.8,
+   "node_km": 0.045,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.952,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Schell Creek Range fault",
+   "rank_r1": 60,
+   "lat": 39.793,
+   "lon": -114.641,
+   "d2b_m": 519.5,
+   "node_km": 0.17,
+   "status": "PASS",
+   "basement": 0.5788,
+   "alternates": {
+    "50.0_3000.0": 0.4283,
+    "100.0_5000.0": 0.5788,
+    "250.0_8000.0": 0.7889,
+    "500.0_10000.0": 0.9872
+   }
+  },
+  {
+   "fault_name": "Ogden Valley southwestern margin faults",
+   "rank_r1": 61,
+   "lat": 41.334,
+   "lon": -111.895,
+   "d2b_m": 2.1,
+   "node_km": 0.098,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Eastern Tuscarora Mountains fault zone",
+   "rank_r1": 62,
+   "lat": 40.812,
+   "lon": -116.332,
+   "d2b_m": 17.7,
+   "node_km": 0.469,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Arrowhead fault zone",
+   "rank_r1": 63,
+   "lat": 35.54,
+   "lon": -111.469,
+   "d2b_m": 13.8,
+   "node_km": 0.508,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "East Tonuco fault",
+   "rank_r1": 64,
+   "lat": 32.616,
+   "lon": -106.988,
+   "d2b_m": 791.5,
+   "node_km": 0.424,
+   "status": "PASS",
+   "basement": 0.4712,
+   "alternates": {
+    "50.0_3000.0": 0.3254,
+    "100.0_5000.0": 0.4712,
+    "250.0_8000.0": 0.6675,
+    "500.0_10000.0": 0.8467
+   }
+  },
+  {
+   "fault_name": "West Pintwater Range fault",
+   "rank_r1": 65,
+   "lat": 36.945,
+   "lon": -115.596,
+   "d2b_m": 31.7,
+   "node_km": 0.572,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults in the Pine Mountains",
+   "rank_r1": 66,
+   "lat": 38.92,
+   "lon": -119.521,
+   "d2b_m": 844.8,
+   "node_km": 0.587,
+   "status": "PASS",
+   "basement": 0.4545,
+   "alternates": {
+    "50.0_3000.0": 0.3095,
+    "100.0_5000.0": 0.4545,
+    "250.0_8000.0": 0.6487,
+    "500.0_10000.0": 0.8249
+   }
+  },
+  {
+   "fault_name": "Manzano fault",
+   "rank_r1": 67,
+   "lat": 34.476,
+   "lon": -106.501,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Emigrant fault",
+   "rank_r1": 68,
+   "lat": 45.217,
+   "lon": -110.876,
+   "d2b_m": 95.0,
+   "node_km": 0.405,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8432,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Northeastern Boundary fault system",
+   "rank_r1": 69,
+   "lat": 39.013,
+   "lon": -106.271,
+   "d2b_m": 0.1,
+   "node_km": 2.164,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "East Tahoe fault",
+   "rank_r1": 70,
+   "lat": 39.022,
+   "lon": -119.943,
+   "d2b_m": 17.5,
+   "node_km": 0.317,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "North Golden Gate fault",
+   "rank_r1": 71,
+   "lat": 38.283,
+   "lon": -115.293,
+   "d2b_m": 398.8,
+   "node_km": 0.184,
+   "status": "PASS",
+   "basement": 0.6464,
+   "alternates": {
+    "50.0_3000.0": 0.4929,
+    "100.0_5000.0": 0.6464,
+    "250.0_8000.0": 0.8653,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sawatch fault",
+   "rank_r1": 72,
+   "lat": 38.687,
+   "lon": -106.174,
+   "d2b_m": 1.4,
+   "node_km": 0.462,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Coyote fault",
+   "rank_r1": 73,
+   "lat": 35.006,
+   "lon": -106.474,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Lone Pine fault",
+   "rank_r1": 74,
+   "lat": 44.263,
+   "lon": -113.955,
+   "d2b_m": 1.5,
+   "node_km": 0.646,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Eastern Pine Forest Range fault zone",
+   "rank_r1": 75,
+   "lat": 41.881,
+   "lon": -118.653,
+   "d2b_m": 27.9,
+   "node_km": 0.176,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Gore Range frontal fault",
+   "rank_r1": 76,
+   "lat": 39.39,
+   "lon": -106.055,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Morgan fault",
+   "rank_r1": 77,
+   "lat": 41.091,
+   "lon": -111.676,
+   "d2b_m": 0.6,
+   "node_km": 0.377,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Broadmouth Canyon faults",
+   "rank_r1": 78,
+   "lat": 41.392,
+   "lon": -111.841,
+   "d2b_m": 21.7,
+   "node_km": 0.236,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Stumble fault",
+   "rank_r1": 79,
+   "lat": 37.358,
+   "lon": -115.813,
+   "d2b_m": 66.3,
+   "node_km": 0.296,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9311,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Fort Sage fault",
+   "rank_r1": 80,
+   "lat": 40.109,
+   "lon": -120.089,
+   "d2b_m": 86.6,
+   "node_km": 0.379,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8659,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Deep Springs fault",
+   "rank_r1": 81,
+   "lat": 37.271,
+   "lon": -118.026,
+   "d2b_m": 149.8,
+   "node_km": 0.482,
+   "status": "PASS",
+   "basement": 0.8968,
+   "alternates": {
+    "50.0_3000.0": 0.7321,
+    "100.0_5000.0": 0.8968,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "West Muddy Creek fault",
+   "rank_r1": 82,
+   "lat": 44.782,
+   "lon": -112.944,
+   "d2b_m": 0.7,
+   "node_km": 0.193,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Mile Creek",
+   "rank_r1": 83,
+   "lat": 44.81,
+   "lon": -111.486,
+   "d2b_m": 2590.3,
+   "node_km": 0.352,
+   "status": "PASS",
+   "basement": 0.1681,
+   "alternates": {
+    "50.0_3000.0": 0.0359,
+    "100.0_5000.0": 0.1681,
+    "250.0_8000.0": 0.3254,
+    "500.0_10000.0": 0.4509
+   }
+  },
+  {
+   "fault_name": "Big Chino fault",
+   "rank_r1": 84,
+   "lat": 35.193,
+   "lon": -112.782,
+   "d2b_m": 53.6,
+   "node_km": 0.362,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9829,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults west of Hungry Valley",
+   "rank_r1": 85,
+   "lat": 39.809,
+   "lon": -119.8,
+   "d2b_m": 3.5,
+   "node_km": 0.389,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Northern Windermere Hills fault",
+   "rank_r1": 86,
+   "lat": 41.21,
+   "lon": -114.742,
+   "d2b_m": 64.6,
+   "node_km": 0.331,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9376,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Selenite Range fault zone",
+   "rank_r1": 87,
+   "lat": 40.393,
+   "lon": -119.316,
+   "d2b_m": 511.2,
+   "node_km": 0.227,
+   "status": "PASS",
+   "basement": 0.5829,
+   "alternates": {
+    "50.0_3000.0": 0.4322,
+    "100.0_5000.0": 0.5829,
+    "250.0_8000.0": 0.7936,
+    "500.0_10000.0": 0.9926
+   }
+  },
+  {
+   "fault_name": "Towne Pass fault",
+   "rank_r1": 88,
+   "lat": 36.38,
+   "lon": -117.27,
+   "d2b_m": 92.9,
+   "node_km": 0.078,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8488,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Northern Sangre de Cristo fault",
+   "rank_r1": 89,
+   "lat": 37.858,
+   "lon": -105.59,
+   "d2b_m": 499.6,
+   "node_km": 0.247,
+   "status": "PASS",
+   "basement": 0.5888,
+   "alternates": {
+    "50.0_3000.0": 0.4378,
+    "100.0_5000.0": 0.5888,
+    "250.0_8000.0": 0.8002,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bitterroot fault",
+   "rank_r1": 90,
+   "lat": 45.947,
+   "lon": -114.172,
+   "d2b_m": 31.5,
+   "node_km": 0.534,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault zone southeastern Jackson Mountains",
+   "rank_r1": 91,
+   "lat": 41.16,
+   "lon": -118.525,
+   "d2b_m": 25.2,
+   "node_km": 0.223,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Cambridge Hills fault",
+   "rank_r1": 92,
+   "lat": 38.732,
+   "lon": -119.015,
+   "d2b_m": 113.0,
+   "node_km": 0.149,
+   "status": "PASS",
+   "basement": 0.9687,
+   "alternates": {
+    "50.0_3000.0": 0.8008,
+    "100.0_5000.0": 0.9687,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Central Pintwater Range faults",
+   "rank_r1": 93,
+   "lat": 37.04,
+   "lon": -115.572,
+   "d2b_m": 5.0,
+   "node_km": 0.2,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Wolf Hill",
+   "rank_r1": 94,
+   "lat": 38.748,
+   "lon": -108.849,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "unnamed faults east of Taylor Peak",
+   "rank_r1": 95,
+   "lat": 39.119,
+   "lon": -114.655,
+   "d2b_m": 8.8,
+   "node_km": 0.458,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault of Missouri Park",
+   "rank_r1": 96,
+   "lat": 38.509,
+   "lon": -106.079,
+   "d2b_m": 86.1,
+   "node_km": 0.52,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8672,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Monida",
+   "rank_r1": 97,
+   "lat": 44.568,
+   "lon": -112.341,
+   "d2b_m": 142.6,
+   "node_km": 0.209,
+   "status": "PASS",
+   "basement": 0.9093,
+   "alternates": {
+    "50.0_3000.0": 0.7441,
+    "100.0_5000.0": 0.9093,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults along Sahwave Mountains",
+   "rank_r1": 98,
+   "lat": 40.245,
+   "lon": -119.092,
+   "d2b_m": 11.7,
+   "node_km": 0.426,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Western Granite Range fault",
+   "rank_r1": 99,
+   "lat": 40.865,
+   "lon": -119.508,
+   "d2b_m": 593.0,
+   "node_km": 0.48,
+   "status": "PASS",
+   "basement": 0.545,
+   "alternates": {
+    "50.0_3000.0": 0.3959,
+    "100.0_5000.0": 0.545,
+    "250.0_8000.0": 0.7508,
+    "500.0_10000.0": 0.943
+   }
+  },
+  {
+   "fault_name": "Lemhi fault",
+   "rank_r1": 100,
+   "lat": 44.521,
+   "lon": -113.709,
+   "d2b_m": 231.5,
+   "node_km": 0.601,
+   "status": "PASS",
+   "basement": 0.7854,
+   "alternates": {
+    "50.0_3000.0": 0.6256,
+    "100.0_5000.0": 0.7854,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Safford fault zone",
+   "rank_r1": 101,
+   "lat": 32.694,
+   "lon": -109.75,
+   "d2b_m": 288.1,
+   "node_km": 0.413,
+   "status": "PASS",
+   "basement": 0.7295,
+   "alternates": {
+    "50.0_3000.0": 0.5722,
+    "100.0_5000.0": 0.7295,
+    "250.0_8000.0": 0.959,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Ogden Valley northeastern margin fault",
+   "rank_r1": 102,
+   "lat": 41.347,
+   "lon": -111.817,
+   "d2b_m": 1.5,
+   "node_km": 0.403,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults south of Leadville",
+   "rank_r1": 103,
+   "lat": 39.236,
+   "lon": -106.284,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "unnamed fault of West Buttes",
+   "rank_r1": 104,
+   "lat": 40.391,
+   "lon": -115.003,
+   "d2b_m": 248.9,
+   "node_km": 0.352,
+   "status": "PASS",
+   "basement": 0.7669,
+   "alternates": {
+    "50.0_3000.0": 0.608,
+    "100.0_5000.0": 0.7669,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "San Andres Mountains fault",
+   "rank_r1": 105,
+   "lat": 32.682,
+   "lon": -106.497,
+   "d2b_m": 234.1,
+   "node_km": 0.621,
+   "status": "PASS",
+   "basement": 0.7826,
+   "alternates": {
+    "50.0_3000.0": 0.623,
+    "100.0_5000.0": 0.7826,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Secondary faults in Jackson Hole valley",
+   "rank_r1": 106,
+   "lat": 43.533,
+   "lon": -110.706,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Bare Mountain fault",
+   "rank_r1": 107,
+   "lat": 36.845,
+   "lon": -116.639,
+   "d2b_m": 135.8,
+   "node_km": 0.512,
+   "status": "PASS",
+   "basement": 0.9218,
+   "alternates": {
+    "50.0_3000.0": 0.756,
+    "100.0_5000.0": 0.9218,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Franklin Mine Road fault",
+   "rank_r1": 108,
+   "lat": 46.652,
+   "lon": -112.073,
+   "d2b_m": 11.3,
+   "node_km": 0.21,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault zone between Kumiva and Sage Hen Valleys",
+   "rank_r1": 109,
+   "lat": 40.112,
+   "lon": -119.218,
+   "d2b_m": 116.6,
+   "node_km": 0.217,
+   "status": "PASS",
+   "basement": 0.9607,
+   "alternates": {
+    "50.0_3000.0": 0.7931,
+    "100.0_5000.0": 0.9607,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Gold Mountain fault",
+   "rank_r1": 110,
+   "lat": 37.234,
+   "lon": -117.424,
+   "d2b_m": 1.6,
+   "node_km": 0.325,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "McRae Canyon fault",
+   "rank_r1": 111,
+   "lat": 33.248,
+   "lon": -107.111,
+   "d2b_m": 5.2,
+   "node_km": 0.375,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Tule Canyon faults",
+   "rank_r1": 112,
+   "lat": 37.324,
+   "lon": -117.515,
+   "d2b_m": 11.4,
+   "node_km": 0.23,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault zone near Sheep Spring",
+   "rank_r1": 113,
+   "lat": 40.666,
+   "lon": -118.914,
+   "d2b_m": 27.6,
+   "node_km": 0.185,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Nightingale Mountains fault zone",
+   "rank_r1": 114,
+   "lat": 40.0,
+   "lon": -119.291,
+   "d2b_m": 61.8,
+   "node_km": 0.286,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9482,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Eastern Granite Range fault",
+   "rank_r1": 115,
+   "lat": 41.0,
+   "lon": -119.444,
+   "d2b_m": 894.9,
+   "node_km": 0.216,
+   "status": "PASS",
+   "basement": 0.4398,
+   "alternates": {
+    "50.0_3000.0": 0.2954,
+    "100.0_5000.0": 0.4398,
+    "250.0_8000.0": 0.632,
+    "500.0_10000.0": 0.8057
+   }
+  },
+  {
+   "fault_name": "unnamed fault in Coal Valley",
+   "rank_r1": 116,
+   "lat": 38.063,
+   "lon": -115.143,
+   "d2b_m": 2.2,
+   "node_km": 0.287,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "West Walker River fault zone",
+   "rank_r1": 117,
+   "lat": 38.337,
+   "lon": -119.48,
+   "d2b_m": 140.8,
+   "node_km": 0.502,
+   "status": "PASS",
+   "basement": 0.9125,
+   "alternates": {
+    "50.0_3000.0": 0.7471,
+    "100.0_5000.0": 0.9125,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "East Gros Ventre fault",
+   "rank_r1": 118,
+   "lat": 43.463,
+   "lon": -110.799,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Groom Range Central fault",
+   "rank_r1": 119,
+   "lat": 37.578,
+   "lon": -115.786,
+   "d2b_m": 275.6,
+   "node_km": 0.507,
+   "status": "PASS",
+   "basement": 0.7409,
+   "alternates": {
+    "50.0_3000.0": 0.5831,
+    "100.0_5000.0": 0.7409,
+    "250.0_8000.0": 0.9719,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sawtooth fault",
+   "rank_r1": 120,
+   "lat": 44.306,
+   "lon": -115.165,
+   "d2b_m": 1.6,
+   "node_km": 0.366,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults in southern Red Hills",
+   "rank_r1": 121,
+   "lat": 39.63,
+   "lon": -114.372,
+   "d2b_m": 24.3,
+   "node_km": 0.34,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults west of Peavine Peak",
+   "rank_r1": 122,
+   "lat": 39.589,
+   "lon": -119.988,
+   "d2b_m": 87.6,
+   "node_km": 0.674,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8629,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Hoback fault",
+   "rank_r1": 123,
+   "lat": 43.458,
+   "lon": -110.799,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Sand Flat graben faults",
+   "rank_r1": 124,
+   "lat": 38.885,
+   "lon": -109.055,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Beaver Creek fault zone",
+   "rank_r1": 125,
+   "lat": 42.804,
+   "lon": -124.322,
+   "d2b_m": 388.1,
+   "node_km": 0.254,
+   "status": "PASS",
+   "basement": 0.6534,
+   "alternates": {
+    "50.0_3000.0": 0.4995,
+    "100.0_5000.0": 0.6534,
+    "250.0_8000.0": 0.8731,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Blacktail fault",
+   "rank_r1": 126,
+   "lat": 45.006,
+   "lon": -112.538,
+   "d2b_m": 3.1,
+   "node_km": 0.526,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Red Rock Hills fault",
+   "rank_r1": 127,
+   "lat": 44.908,
+   "lon": -112.748,
+   "d2b_m": 315.7,
+   "node_km": 0.426,
+   "status": "PASS",
+   "basement": 0.7061,
+   "alternates": {
+    "50.0_3000.0": 0.5499,
+    "100.0_5000.0": 0.7061,
+    "250.0_8000.0": 0.9327,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault in Grass Valley Wash",
+   "rank_r1": 128,
+   "lat": 39.687,
+   "lon": -114.361,
+   "d2b_m": 23.0,
+   "node_km": 0.587,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Tin Mountain fault",
+   "rank_r1": 129,
+   "lat": 36.738,
+   "lon": -117.543,
+   "d2b_m": 4.0,
+   "node_km": 0.407,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Mesquite fault",
+   "rank_r1": 130,
+   "lat": 36.666,
+   "lon": -114.097,
+   "d2b_m": 47.8,
+   "node_km": 0.491,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault east of Buck Mountain",
+   "rank_r1": 131,
+   "lat": 39.606,
+   "lon": -115.625,
+   "d2b_m": 38.2,
+   "node_km": 0.35,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults northwest of Leadville",
+   "rank_r1": 132,
+   "lat": 39.388,
+   "lon": -106.271,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Marys Mountain fault",
+   "rank_r1": 133,
+   "lat": 40.696,
+   "lon": -116.26,
+   "d2b_m": 104.5,
+   "node_km": 0.314,
+   "status": "PASS",
+   "basement": 0.9888,
+   "alternates": {
+    "50.0_3000.0": 0.82,
+    "100.0_5000.0": 0.9888,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Delamar Mountains fault",
+   "rank_r1": 134,
+   "lat": 37.423,
+   "lon": -114.849,
+   "d2b_m": 1330.7,
+   "node_km": 0.555,
+   "status": "PASS",
+   "basement": 0.3384,
+   "alternates": {
+    "50.0_3000.0": 0.1986,
+    "100.0_5000.0": 0.3384,
+    "250.0_8000.0": 0.5176,
+    "500.0_10000.0": 0.6733
+   }
+  },
+  {
+   "fault_name": "East Franklin Mountains fault",
+   "rank_r1": 135,
+   "lat": 31.605,
+   "lon": -106.488,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Mineral Mountains (northeast side) fault",
+   "rank_r1": 136,
+   "lat": 38.606,
+   "lon": -112.801,
+   "d2b_m": 40.6,
+   "node_km": 0.289,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "East-Side Chase Gulch fault",
+   "rank_r1": 137,
+   "lat": 38.984,
+   "lon": -105.608,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Dry Hills faults",
+   "rank_r1": 138,
+   "lat": 40.411,
+   "lon": -116.511,
+   "d2b_m": 491.0,
+   "node_km": 0.546,
+   "status": "PASS",
+   "basement": 0.5932,
+   "alternates": {
+    "50.0_3000.0": 0.4421,
+    "100.0_5000.0": 0.5932,
+    "250.0_8000.0": 0.8053,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Boulder front fault",
+   "rank_r1": 139,
+   "lat": 43.816,
+   "lon": -114.591,
+   "d2b_m": 531.1,
+   "node_km": 0.58,
+   "status": "PASS",
+   "basement": 0.5731,
+   "alternates": {
+    "50.0_3000.0": 0.4229,
+    "100.0_5000.0": 0.5731,
+    "250.0_8000.0": 0.7826,
+    "500.0_10000.0": 0.9798
+   }
+  },
+  {
+   "fault_name": "unnamed fault on west side of Snake Range",
+   "rank_r1": 140,
+   "lat": 39.406,
+   "lon": -114.327,
+   "d2b_m": 4.0,
+   "node_km": 0.206,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Kissick fault",
+   "rank_r1": 141,
+   "lat": 44.908,
+   "lon": -112.998,
+   "d2b_m": 48.8,
+   "node_km": 0.313,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Slate Ridge faults",
+   "rank_r1": 142,
+   "lat": 37.314,
+   "lon": -117.355,
+   "d2b_m": 55.4,
+   "node_km": 0.156,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9752,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Los Pi\u00f1os fault",
+   "rank_r1": 143,
+   "lat": 34.347,
+   "lon": -106.608,
+   "d2b_m": 212.4,
+   "node_km": 0.569,
+   "status": "PASS",
+   "basement": 0.8075,
+   "alternates": {
+    "50.0_3000.0": 0.6468,
+    "100.0_5000.0": 0.8075,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Soup Creek fault",
+   "rank_r1": 144,
+   "lat": 46.813,
+   "lon": -111.808,
+   "d2b_m": 0.7,
+   "node_km": 0.609,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault west of Cave Valley",
+   "rank_r1": 145,
+   "lat": 38.387,
+   "lon": -114.953,
+   "d2b_m": 12.2,
+   "node_km": 0.519,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults near Twin Lakes Reservoir",
+   "rank_r1": 146,
+   "lat": 39.0,
+   "lon": -106.306,
+   "d2b_m": 0.1,
+   "node_km": 1.49,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults east of Austin",
+   "rank_r1": 147,
+   "lat": 39.494,
+   "lon": -117.015,
+   "d2b_m": 403.2,
+   "node_km": 0.472,
+   "status": "PASS",
+   "basement": 0.6436,
+   "alternates": {
+    "50.0_3000.0": 0.4902,
+    "100.0_5000.0": 0.6436,
+    "250.0_8000.0": 0.8621,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Peace Camp faults",
+   "rank_r1": 148,
+   "lat": 36.597,
+   "lon": -115.953,
+   "d2b_m": 319.6,
+   "node_km": 0.415,
+   "status": "PASS",
+   "basement": 0.703,
+   "alternates": {
+    "50.0_3000.0": 0.5469,
+    "100.0_5000.0": 0.703,
+    "250.0_8000.0": 0.9291,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Diamond Springs fault",
+   "rank_r1": 149,
+   "lat": 46.748,
+   "lon": -112.091,
+   "d2b_m": 3.5,
+   "node_km": 0.334,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Adobe Range fault",
+   "rank_r1": 150,
+   "lat": 41.04,
+   "lon": -115.825,
+   "d2b_m": 441.4,
+   "node_km": 0.368,
+   "status": "PASS",
+   "basement": 0.6204,
+   "alternates": {
+    "50.0_3000.0": 0.468,
+    "100.0_5000.0": 0.6204,
+    "250.0_8000.0": 0.8359,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Cricket Mountains (north end) faults",
+   "rank_r1": 151,
+   "lat": 39.081,
+   "lon": -112.851,
+   "d2b_m": 16.7,
+   "node_km": 0.654,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Ruby Range western border fault",
+   "rank_r1": 152,
+   "lat": 45.391,
+   "lon": -112.243,
+   "d2b_m": 192.2,
+   "node_km": 0.113,
+   "status": "PASS",
+   "basement": 0.833,
+   "alternates": {
+    "50.0_3000.0": 0.6711,
+    "100.0_5000.0": 0.833,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Jocko fault",
+   "rank_r1": 153,
+   "lat": 47.148,
+   "lon": -113.975,
+   "d2b_m": 227.5,
+   "node_km": 0.207,
+   "status": "PASS",
+   "basement": 0.7899,
+   "alternates": {
+    "50.0_3000.0": 0.63,
+    "100.0_5000.0": 0.7899,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault west of Toano Range",
+   "rank_r1": 154,
+   "lat": 41.072,
+   "lon": -114.316,
+   "d2b_m": 778.4,
+   "node_km": 0.535,
+   "status": "PASS",
+   "basement": 0.4755,
+   "alternates": {
+    "50.0_3000.0": 0.3295,
+    "100.0_5000.0": 0.4755,
+    "250.0_8000.0": 0.6723,
+    "500.0_10000.0": 0.8523
+   }
+  },
+  {
+   "fault_name": "Overton Arm faults",
+   "rank_r1": 155,
+   "lat": 36.162,
+   "lon": -114.361,
+   "d2b_m": 44.7,
+   "node_km": 0.459,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Swan fault",
+   "rank_r1": 156,
+   "lat": 48.412,
+   "lon": -114.142,
+   "d2b_m": 109.7,
+   "node_km": 0.298,
+   "status": "PASS",
+   "basement": 0.9763,
+   "alternates": {
+    "50.0_3000.0": 0.8081,
+    "100.0_5000.0": 0.9763,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Grouse Creek and Dove Creek Mountains faults",
+   "rank_r1": 157,
+   "lat": 41.807,
+   "lon": -113.744,
+   "d2b_m": 129.7,
+   "node_km": 0.462,
+   "status": "PASS",
+   "basement": 0.9335,
+   "alternates": {
+    "50.0_3000.0": 0.7671,
+    "100.0_5000.0": 0.9335,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "South Fork Flathead fault",
+   "rank_r1": 158,
+   "lat": 48.472,
+   "lon": -113.974,
+   "d2b_m": 22.4,
+   "node_km": 0.391,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Rampart Range fault",
+   "rank_r1": 159,
+   "lat": 39.028,
+   "lon": -104.911,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Horseshoe fault zone",
+   "rank_r1": 160,
+   "lat": 33.989,
+   "lon": -111.731,
+   "d2b_m": 293.3,
+   "node_km": 0.272,
+   "status": "PASS",
+   "basement": 0.725,
+   "alternates": {
+    "50.0_3000.0": 0.5679,
+    "100.0_5000.0": 0.725,
+    "250.0_8000.0": 0.9539,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Pine Mountain",
+   "rank_r1": 161,
+   "lat": 38.611,
+   "lon": -108.668,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "unnamed fault near Cliff Lake",
+   "rank_r1": 162,
+   "lat": 44.825,
+   "lon": -111.542,
+   "d2b_m": 3609.0,
+   "node_km": 0.549,
+   "status": "PASS",
+   "basement": 0.0833,
+   "alternates": {
+    "50.0_3000.0": 0.0,
+    "100.0_5000.0": 0.0833,
+    "250.0_8000.0": 0.2297,
+    "500.0_10000.0": 0.3402
+   }
+  },
+  {
+   "fault_name": "unnamed faults in northern Pancake Range",
+   "rank_r1": 163,
+   "lat": 39.331,
+   "lon": -115.771,
+   "d2b_m": 266.4,
+   "node_km": 0.254,
+   "status": "PASS",
+   "basement": 0.7495,
+   "alternates": {
+    "50.0_3000.0": 0.5914,
+    "100.0_5000.0": 0.7495,
+    "250.0_8000.0": 0.9817,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Arrow Canyon Range fault",
+   "rank_r1": 164,
+   "lat": 36.682,
+   "lon": -114.904,
+   "d2b_m": 122.9,
+   "node_km": 0.23,
+   "status": "PASS",
+   "basement": 0.9474,
+   "alternates": {
+    "50.0_3000.0": 0.7804,
+    "100.0_5000.0": 0.9474,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Boulder River valley western border fault",
+   "rank_r1": 165,
+   "lat": 46.187,
+   "lon": -112.069,
+   "d2b_m": 2.9,
+   "node_km": 0.427,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sheep-East Desert Ranges fault",
+   "rank_r1": 166,
+   "lat": 36.561,
+   "lon": -115.317,
+   "d2b_m": 32.9,
+   "node_km": 0.291,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bull Lake fault",
+   "rank_r1": 167,
+   "lat": 48.331,
+   "lon": -115.794,
+   "d2b_m": 0.9,
+   "node_km": 0.428,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Ruby Range northern border fault",
+   "rank_r1": 168,
+   "lat": 45.393,
+   "lon": -112.237,
+   "d2b_m": 192.2,
+   "node_km": 0.509,
+   "status": "PASS",
+   "basement": 0.833,
+   "alternates": {
+    "50.0_3000.0": 0.6711,
+    "100.0_5000.0": 0.833,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault north of Wells Station Summit",
+   "rank_r1": 169,
+   "lat": 38.643,
+   "lon": -115.359,
+   "d2b_m": 225.2,
+   "node_km": 0.19,
+   "status": "PASS",
+   "basement": 0.7925,
+   "alternates": {
+    "50.0_3000.0": 0.6325,
+    "100.0_5000.0": 0.7925,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "El Oro fault",
+   "rank_r1": 170,
+   "lat": 35.971,
+   "lon": -105.308,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Little Chino fault",
+   "rank_r1": 171,
+   "lat": 34.8,
+   "lon": -112.415,
+   "d2b_m": 22.4,
+   "node_km": 0.404,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Savage Lake fault",
+   "rank_r1": 172,
+   "lat": 48.436,
+   "lon": -115.795,
+   "d2b_m": 784.7,
+   "node_km": 0.305,
+   "status": "PASS",
+   "basement": 0.4734,
+   "alternates": {
+    "50.0_3000.0": 0.3275,
+    "100.0_5000.0": 0.4734,
+    "250.0_8000.0": 0.6699,
+    "500.0_10000.0": 0.8495
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Packer Station",
+   "rank_r1": 173,
+   "lat": 38.725,
+   "lon": -114.772,
+   "d2b_m": 21.6,
+   "node_km": 0.519,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Wildcat Wash fault",
+   "rank_r1": 174,
+   "lat": 36.88,
+   "lon": -114.872,
+   "d2b_m": 585.0,
+   "node_km": 0.076,
+   "status": "PASS",
+   "basement": 0.5485,
+   "alternates": {
+    "50.0_3000.0": 0.3993,
+    "100.0_5000.0": 0.5485,
+    "250.0_8000.0": 0.7547,
+    "500.0_10000.0": 0.9476
+   }
+  },
+  {
+   "fault_name": "unnamed fault west of Stag Mountain",
+   "rank_r1": 175,
+   "lat": 41.374,
+   "lon": -115.514,
+   "d2b_m": 273.5,
+   "node_km": 0.421,
+   "status": "PASS",
+   "basement": 0.7428,
+   "alternates": {
+    "50.0_3000.0": 0.5849,
+    "100.0_5000.0": 0.7428,
+    "250.0_8000.0": 0.974,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults in Williams Fork Valley",
+   "rank_r1": 176,
+   "lat": 39.972,
+   "lon": -106.188,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Sacrament Pass fault",
+   "rank_r1": 177,
+   "lat": 39.082,
+   "lon": -114.141,
+   "d2b_m": 140.5,
+   "node_km": 0.144,
+   "status": "PASS",
+   "basement": 0.9131,
+   "alternates": {
+    "50.0_3000.0": 0.7477,
+    "100.0_5000.0": 0.9131,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Wild Rose Spring fault",
+   "rank_r1": 178,
+   "lat": 37.371,
+   "lon": -117.651,
+   "d2b_m": 45.4,
+   "node_km": 0.146,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Ute Pass fault zone",
+   "rank_r1": 179,
+   "lat": 39.285,
+   "lon": -105.143,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Red Rocks fault",
+   "rank_r1": 180,
+   "lat": 38.558,
+   "lon": -107.744,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Eastern Columbus Salt Marsh fault",
+   "rank_r1": 181,
+   "lat": 38.099,
+   "lon": -117.895,
+   "d2b_m": 270.1,
+   "node_km": 0.358,
+   "status": "PASS",
+   "basement": 0.746,
+   "alternates": {
+    "50.0_3000.0": 0.588,
+    "100.0_5000.0": 0.746,
+    "250.0_8000.0": 0.9777,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Eleven Mile fault",
+   "rank_r1": 182,
+   "lat": 38.885,
+   "lon": -105.516,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "unnamed fault zone south of Bull Run Mountains",
+   "rank_r1": 183,
+   "lat": 41.649,
+   "lon": -116.165,
+   "d2b_m": 1.9,
+   "node_km": 0.412,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault zone west of Garden Valley",
+   "rank_r1": 184,
+   "lat": 38.2,
+   "lon": -115.534,
+   "d2b_m": 18.1,
+   "node_km": 0.455,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Rocker fault",
+   "rank_r1": 185,
+   "lat": 45.998,
+   "lon": -112.596,
+   "d2b_m": 24.5,
+   "node_km": 0.507,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near northern Fortification Range",
+   "rank_r1": 186,
+   "lat": 38.703,
+   "lon": -114.543,
+   "d2b_m": 8.7,
+   "node_km": 0.465,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Pilot Range faults",
+   "rank_r1": 187,
+   "lat": 41.281,
+   "lon": -114.03,
+   "d2b_m": 105.0,
+   "node_km": 0.444,
+   "status": "PASS",
+   "basement": 0.9874,
+   "alternates": {
+    "50.0_3000.0": 0.8187,
+    "100.0_5000.0": 0.9874,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Wolf Creek graben",
+   "rank_r1": 188,
+   "lat": 44.997,
+   "lon": -111.646,
+   "d2b_m": 137.8,
+   "node_km": 0.221,
+   "status": "PASS",
+   "basement": 0.918,
+   "alternates": {
+    "50.0_3000.0": 0.7524,
+    "100.0_5000.0": 0.918,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Lida faults",
+   "rank_r1": 189,
+   "lat": 37.421,
+   "lon": -117.578,
+   "d2b_m": 17.2,
+   "node_km": 0.378,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults in northeastern Paradise Valley",
+   "rank_r1": 190,
+   "lat": 41.589,
+   "lon": -117.493,
+   "d2b_m": 340.3,
+   "node_km": 0.256,
+   "status": "PASS",
+   "basement": 0.6869,
+   "alternates": {
+    "50.0_3000.0": 0.5316,
+    "100.0_5000.0": 0.6869,
+    "250.0_8000.0": 0.911,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "South Swisshelm fault",
+   "rank_r1": 191,
+   "lat": 31.64,
+   "lon": -109.501,
+   "d2b_m": 98.0,
+   "node_km": 0.371,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.8356,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "South Granite Mountains fault system",
+   "rank_r1": 192,
+   "lat": 42.479,
+   "lon": -108.252,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Sweetwater fault",
+   "rank_r1": 193,
+   "lat": 45.04,
+   "lon": -112.275,
+   "d2b_m": 0.8,
+   "node_km": 0.466,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bull Mountain western border fault",
+   "rank_r1": 194,
+   "lat": 46.165,
+   "lon": -112.103,
+   "d2b_m": 1.7,
+   "node_km": 0.44,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault near Ovando",
+   "rank_r1": 195,
+   "lat": 47.145,
+   "lon": -113.311,
+   "d2b_m": 283.9,
+   "node_km": 0.294,
+   "status": "PASS",
+   "basement": 0.7333,
+   "alternates": {
+    "50.0_3000.0": 0.5759,
+    "100.0_5000.0": 0.7333,
+    "250.0_8000.0": 0.9633,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Saleratus Creek fault",
+   "rank_r1": 196,
+   "lat": 41.236,
+   "lon": -111.267,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Gallatin Range fault",
+   "rank_r1": 197,
+   "lat": 45.622,
+   "lon": -110.94,
+   "d2b_m": 1.4,
+   "node_km": 0.55,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault south of Shavano Peak",
+   "rank_r1": 198,
+   "lat": 38.553,
+   "lon": -106.243,
+   "d2b_m": 60.8,
+   "node_km": 0.389,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.9521,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "South Horse Prairie basin fault",
+   "rank_r1": 199,
+   "lat": 44.764,
+   "lon": -113.191,
+   "d2b_m": 122.1,
+   "node_km": 0.478,
+   "status": "PASS",
+   "basement": 0.9489,
+   "alternates": {
+    "50.0_3000.0": 0.7819,
+    "100.0_5000.0": 0.9489,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Thompson Valley fault",
+   "rank_r1": 200,
+   "lat": 47.769,
+   "lon": -114.968,
+   "d2b_m": 16.3,
+   "node_km": 0.439,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Deadwood-Reeves Creek fault",
+   "rank_r1": 201,
+   "lat": 44.269,
+   "lon": -115.689,
+   "d2b_m": 1.2,
+   "node_km": 0.269,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Sugarloaf fault zone",
+   "rank_r1": 202,
+   "lat": 33.742,
+   "lon": -111.523,
+   "d2b_m": 11.0,
+   "node_km": 0.308,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Ninemile fault",
+   "rank_r1": 203,
+   "lat": 47.246,
+   "lon": -114.68,
+   "d2b_m": 0.9,
+   "node_km": 0.629,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Hilger fault",
+   "rank_r1": 204,
+   "lat": 46.906,
+   "lon": -112.147,
+   "d2b_m": 1.3,
+   "node_km": 0.17,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "O'Brien Creek fault",
+   "rank_r1": 205,
+   "lat": 48.547,
+   "lon": -115.9,
+   "d2b_m": 92.0,
+   "node_km": 0.483,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 0.851,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Wilkins fault",
+   "rank_r1": 206,
+   "lat": 41.515,
+   "lon": -114.686,
+   "d2b_m": 191.9,
+   "node_km": 0.413,
+   "status": "PASS",
+   "basement": 0.8333,
+   "alternates": {
+    "50.0_3000.0": 0.6715,
+    "100.0_5000.0": 0.8333,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bear River Range faults",
+   "rank_r1": 207,
+   "lat": 41.604,
+   "lon": -111.561,
+   "d2b_m": 29.5,
+   "node_km": 4.124,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault west of Buena Vista",
+   "rank_r1": 208,
+   "lat": 38.828,
+   "lon": -106.241,
+   "d2b_m": 0.9,
+   "node_km": 0.397,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed faults in southern Gillis Range",
+   "rank_r1": 209,
+   "lat": 38.654,
+   "lon": -118.495,
+   "d2b_m": 1.3,
+   "node_km": 0.607,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Bridger fault",
+   "rank_r1": 210,
+   "lat": 46.058,
+   "lon": -111.131,
+   "d2b_m": 3.1,
+   "node_km": 0.334,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Quebraditas fault zone",
+   "rank_r1": 211,
+   "lat": 35.808,
+   "lon": -105.417,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "unnamed faults east of Mount Lewis, Shoshone Range",
+   "rank_r1": 212,
+   "lat": 40.373,
+   "lon": -116.759,
+   "d2b_m": 8.0,
+   "node_km": 0.241,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Carefree fault zone",
+   "rank_r1": 213,
+   "lat": 33.845,
+   "lon": -111.854,
+   "d2b_m": 2.5,
+   "node_km": 0.278,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Eastern Battle Mountain faults",
+   "rank_r1": 214,
+   "lat": 40.548,
+   "lon": -117.083,
+   "d2b_m": 7.8,
+   "node_km": 0.048,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Picuris-Pecos fault",
+   "rank_r1": 215,
+   "lat": 35.559,
+   "lon": -105.822,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Bradley Creek fault",
+   "rank_r1": 216,
+   "lat": 45.562,
+   "lon": -111.753,
+   "d2b_m": 1.0,
+   "node_km": 0.294,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Carmichael fault",
+   "rank_r1": 217,
+   "lat": 45.607,
+   "lon": -111.819,
+   "d2b_m": 1.6,
+   "node_km": 0.62,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Elk Creek fault",
+   "rank_r1": 218,
+   "lat": 45.682,
+   "lon": -111.611,
+   "d2b_m": 307.3,
+   "node_km": 0.286,
+   "status": "PASS",
+   "basement": 0.713,
+   "alternates": {
+    "50.0_3000.0": 0.5565,
+    "100.0_5000.0": 0.713,
+    "250.0_8000.0": 0.9405,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Cedar Creek fault",
+   "rank_r1": 219,
+   "lat": 46.259,
+   "lon": -114.716,
+   "d2b_m": 1.0,
+   "node_km": 0.238,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "unnamed fault of Bonita Canyon",
+   "rank_r1": 220,
+   "lat": 34.965,
+   "lon": -107.946,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  },
+  {
+   "fault_name": "Fort Harrison fault",
+   "rank_r1": 221,
+   "lat": 46.613,
+   "lon": -112.119,
+   "d2b_m": 3.4,
+   "node_km": 0.376,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Tinajas Altas fault zone",
+   "rank_r1": 222,
+   "lat": 32.303,
+   "lon": -114.086,
+   "d2b_m": 30.4,
+   "node_km": 0.603,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Las Tablas fault",
+   "rank_r1": 223,
+   "lat": 36.577,
+   "lon": -106.018,
+   "d2b_m": 1049.2,
+   "node_km": 0.109,
+   "status": "PASS",
+   "basement": 0.3991,
+   "alternates": {
+    "50.0_3000.0": 0.2566,
+    "100.0_5000.0": 0.3991,
+    "250.0_8000.0": 0.5861,
+    "500.0_10000.0": 0.7526
+   }
+  },
+  {
+   "fault_name": "Raft River Mountains fault",
+   "rank_r1": 224,
+   "lat": 41.981,
+   "lon": -113.308,
+   "d2b_m": 10.8,
+   "node_km": 0.57,
+   "status": "PASS",
+   "basement": 1.0,
+   "alternates": {
+    "50.0_3000.0": 1.0,
+    "100.0_5000.0": 1.0,
+    "250.0_8000.0": 1.0,
+    "500.0_10000.0": 1.0
+   }
+  },
+  {
+   "fault_name": "Leckie fault",
+   "rank_r1": 225,
+   "lat": 42.647,
+   "lon": -109.358,
+   "d2b_m": null,
+   "node_km": null,
+   "status": "UNMEASURED",
+   "basement": null
+  }
+ ]
+}

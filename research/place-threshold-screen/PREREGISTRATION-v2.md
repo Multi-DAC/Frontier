@@ -254,4 +254,126 @@ reason; nothing above this line is edited.*
 
 ## Amendments
 
-*(none yet)*
+### A1 — Day 199, 2026-08-18. §7's coverage claim is WRONG, and the way it is wrong is the point.
+
+**What §7 says:** *"Coverage, measured Day 199 before any join was read: 225 of 225 survivors
+fall inside the grid extent. Zero coverage hole."*
+
+**What the join actually returned: 194 of 225 measured. 31 sites have no grid node within
+~5 km.** All 225 are inside the published bounding box and 31 of them are not in the grid.
+
+**An extent is a bounding box. It is not a coverage mask.** §7 checked containment and reported
+it in the vocabulary of coverage — and the metadata says so plainly in a sentence I had already
+fetched: *"Completeness depends upon locale."* The number was checked in advance, as claimed;
+it was the wrong number, checked carefully. It is corrected here rather than edited above,
+and it was also stated to Clayton before the join ran and is corrected to him directly.
+
+**The missingness is not random, and it runs toward the hypothesis.** The 31 unmeasured sites
+are almost entirely exposed-crystalline uplifts — Mosquito, Gore Range, Rampart Range, Ute
+Pass, Leadville, Sangre de Cristo, Picuris-Pecos, Teton, Jackson Hole, Bear River. Their mean
+quartz fraction is **0.645** against **0.529** for the measured 194 (medians 0.75 vs 0.375).
+The grid appears to be absent where there is no Cenozoic basin to have a depth *to*.
+
+If that reading is right, scoring these as UNMEASURED **drops from the leg exactly the sites
+the mechanism most favours**. Scoring them 1.0 instead would assert a value never measured.
+Neither is taken on the strength of the pattern. **Decisive test, declared before it is run:**
+join the companion product (`Sedthick_LLz.csv`, thickness of unconsolidated sediments, same
+authors, wider extent). If sediment thickness *is* defined at those 31 points and reads near
+zero, that is positive evidence of basement at surface and the sites are scored. If it is also
+absent, both grids have a hole there and the sites stay UNMEASURED. **The test is not run
+site-by-site with the option to stop when it is going well.**
+
+### A1-RESULT — Day 199. The declared test ran over all 225, not just the 31. It splits them.
+
+`Sedthick_LLz.csv` (202,303,052 bytes, sha256 `f79792c6…`), sampled at all 225 survivors —
+**both groups, so the test could not be stopped when it was going well**:
+
+| group | sediment defined | median | ≤ 50 m |
+|---|---|---|---|
+| the 31 with no basement value | 30 / 31 | 1.4 m | 26 |
+| the 194 with a basement value | 194 / 194 | 3.4 m | 176 |
+
+**The reading in A1 is supported for most of the 31 and refuted for three of them, which is
+why it was a test and not a pattern.** 27 of the 31 carry essentially no sediment (median
+1.4 m) — consistent with crystalline basement at surface, and with the fact that those are the
+Colorado / Wyoming / northern New Mexico uplifts. But:
+
+- **Southern Sangre de Cristo — 2,341 m of sediment and no basement value.**
+- **Coyote fault — 720 m. Manzano fault — 333 m.**
+- **East Franklin Mountains fault — absent from *both* grids.**
+
+Those four are deep-basin or no-data sites where the basement grid simply has no estimate.
+Had the test been run only on the 31 as a block and summarised by its median, all four would
+have been swept into "basement at surface" — the exact shape of a bucket derived by
+subtraction.
+
+**Resulting rule, and the status is a third value, not a promotion:**
+
+- 27 sites, sediment ≤ 200 m → `basement_min` inferred ≈ 0, status **`INFERRED`**, never
+  `PASS`. Every downstream figure is reported **both with and without** the inferred set, and
+  the two numbers are printed together. An inference does not get to become a measurement by
+  being reasonable.
+- 4 sites (Southern Sangre de Cristo, Coyote, Manzano, East Franklin Mountains) → stay
+  **`UNMEASURED`**.
+
+**One caveat that stops this being cleaner than it is:** the two grids measure different
+quantities. `Sedthick` is thickness of *unconsolidated* sediment; `D2B` is depth to
+*pre-Cenozoic* basement. Thin unconsolidated cover over thick consolidated Cenozoic section
+would read near-zero on the first and deep on the second. The inference for the 27 leans on
+the trace lithology agreeing (all 27 passed a quartz-at-trace gate), and it is labelled
+`INFERRED` for exactly this reason.
+
+### A2 — Day 199. The leg as specified in §7 ranks on the sampler. Re-specified.
+
+Measured after the join, over the 190 sites with ≥4 grid nodes within 2 km:
+
+| local spread of depth-to-basement within 2 km | sites |
+|---|---|
+| > 200 m | 76 of 190 (40%) |
+| > 500 m | 37 of 190 (19%) |
+| median spread | 141.8 m |
+
+**Madison fault — round 1's rank 1 — spans 0.6 m to 2,172 m of basement depth inside a 2 km
+radius.** Its point sample returned 1,069 m; the neighbourhood median is 648 m. That is a range
+front: **exposed crystalline footwall on one side, deep basin fill on the other, metres apart.**
+A point sample there does not measure the site. It measures which side of the fault the nearest
+grid node happened to land on.
+
+This is round 1's own lesson recurring in the leg built to fix round 1: *quartz_frac carries
+±0.125 from vertex ordering — ranking on a quantity with that much ordering noise is ranking on
+the sampler.* Same defect, new instrument, and it would have shipped as a number.
+
+**Re-specification, and it is a better leg, not a patched one.** The mechanically meaningful
+quantity at a dilatant range-front fault is not the depth at a point but the **juxtaposition**:
+
+- `basement_min` — shallowest basement within a declared radius: how near the surface
+  crystalline rock actually comes here;
+- `basement_contrast` — max − min within that radius: exposed crystalline against deep fill,
+  which *is* the "buried crystalline source with a permeable pathway to the surface"
+  configuration report 08 was reaching for when it asked for this leg;
+- the **point value is discarded** as sampler-dependent.
+
+Radius, and the functional form over these two quantities, are declared in
+`code/basement_leg.py` before the re-run, and the §7 sensitivity sweep applies unchanged.
+
+### A3 — Day 199. Two pre-declared consequences from §7 landed. Printed, not absorbed.
+
+§7 said: *"this leg re-ranks every basin-fill site downward, including Sandia — the declared
+positive control … If adding a mechanically-correct leg moves the positive control down, that
+is reported, not absorbed."*
+
+- **Sandia** (declared POSITIVE): 834 m, 12th deepest of 194. Point-form leg value 0.458. **Down.**
+- **Madison** (round 1's printed rank 1): 1,069 m, 7th deepest of 194. Point-form value 0.394.
+  **Down, and further than the control.**
+
+Both figures are from the point form that A2 has just retired, so they are provisional pending
+the re-run — but the *direction* is what was pre-declared, and it is recorded here before the
+re-run can adjust it.
+
+Also measured, and it deflates report 08's expectation for this leg: **only 22 of 194 measured
+survivors have basement deeper than 500 m.** Report 08 predicted the aeromagnetic version would
+"re-rank every basin-fill site in the study". It re-ranks a **minority** — because the gate
+already selected for quartz-rich rock at the trace point, which is largely a selection for
+crystalline at or near the surface. Median basement depth across the survivors is **64 m**. The
+new leg is substantially **redundant with the existing gate**, which is a real finding about the
+screen and was not anticipated by round 1 or by §7.
