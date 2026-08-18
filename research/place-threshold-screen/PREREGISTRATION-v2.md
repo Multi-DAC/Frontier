@@ -377,3 +377,157 @@ already selected for quartz-rich rock at the trace point, which is largely a sel
 crystalline at or near the surface. Median basement depth across the survivors is **64 m**. The
 new leg is substantially **redundant with the existing gate**, which is a real finding about the
 screen and was not anticipated by round 1 or by §7.
+
+### A3-CORRECTION — Day 199. A3's headline reversed under the re-specification it announced.
+
+A3 recorded, from the point form: *"Madison — 1,069 m, 7th deepest of 194, leg value 0.394.
+**Down, and further than the control.**"* It also said those figures were provisional pending the
+re-run. The re-run is now done (`code/basement_juxtaposition.py`), and **the direction reverses.**
+
+Madison's 2 km neighbourhood runs **0.6 m to 2,172 m**. The point sample landed on the deep side.
+Under the juxtaposition form Madison scores **0.951 — rank 2 of 190**, and across the stability
+sweep below it holds **ranks 1–11 (median 2)** in every one of the 32 variants where it is
+scoreable. Madison is not a basin-fill site being demoted; it is **the strongest expression of the
+juxtaposition the leg was built to measure** — a range front with crystalline footwall against
+deep fill, metres apart.
+
+The pre-declared consequence in §7 was real *for the form it was computed in*, and that form was
+wrong. Recorded here rather than by editing A3, so the sequence stays legible: **the prediction
+landed, the instrument that confirmed it was retired for cause, and the better instrument
+disagrees.**
+
+Also corrected: A3's closing sentence — *"the new leg is substantially redundant with the existing
+gate"* — is true of **one half of the leg and false of the other**, and the halves did not exist
+when it was written. `basement_min` is redundant to the point of inertia (155 of 190 measured
+sites sit at its **ceiling**; median value 1.000 — the quartz gate had already selected for
+crystalline at or near surface). `basement_contrast` is **not** redundant: it re-ranks hard, and
+it is what does all the ordering. One sentence, two legs, opposite verdicts.
+
+### A4 — Day 199. A fifth neighbourhood form, and the declaration is NOT blind. Stated as such.
+
+Declared in full in `code/basement_stability.py` and **committed before any variant was scored**
+(`ee23c76`). Summarised, not restated, because the module is the declaration:
+
+**The trigger was an instrument fault.** Four of the 194 D2B-measured survivors have fewer than 3
+grid nodes within 2 km, and **one of the four is the declared positive control**: Sandia's nearest
+node is at **2.358 km**. A 2 km radius misses it by 358 m. §6 requires the controls *"in the right
+direction or printed failing"* — both readings were unavailable, because the leg could not score
+its own control. 358 m of margin deciding a verdict is the boundary-float failure this project has
+already been bitten by.
+
+**The fifth form:** the **k = 13 nearest** nodes, k set to the *median node count inside the
+primary 2 km radius* (min 2, median 13, max 14) so the two forms carry comparable sample size —
+and not from which sites it moves. Capped at `MAX_K_KM = 6`: a neighbourhood that reaches 20 km to
+find 13 nodes is a coverage hole wearing a measurement's clothes. Fixed radius holds extent
+constant and lets sample size vary; k-nearest does the opposite. **Neither is obviously right,
+which is why both run and neither is called primary.**
+
+**Said plainly: this form was specified AFTER the R sweep was read.** It is therefore not a blind
+declaration and is not offered as one. What *is* blind is the readout rule: **40 variants** (5
+neighbourhood forms × 4 constant sets × 2 combination rules), and the head is *"never leaves the
+top ten in any of the 40"* — no tunable threshold, and **if it comes back short it is not topped
+up.**
+
+### A4-RESULT — Day 199. The head came back EMPTY, and that is the result.
+
+| head rule applied over | variants | sites that never leave the top ten |
+|---|---|---|
+| **all 40, as declared** | 40 | **0** |
+| drop R = 5 km | 32 | 2 — Gerlach, Savage Lake |
+| drop R = 5 km and R = 1 km | 24 | 4 — Gerlach, Madison, Savage Lake, Toano Range |
+| drop R = 1 km only | 32 | 0 |
+
+**No site in America survives the leg's own declared choice-space in the top ten.** The list is not
+topped up to ten, per A4. The ladder is the diagnosis, not a menu — and the honest reading of it is
+that **one variant family is doing nearly all the damage, and it is the one the declaration itself
+had already argued out of scope.** `basement_juxtaposition.py`'s docstring chose 2 km because it is
+*"not wide enough to reach a second structure."* By that reasoning 5 km reaches one — and the
+measurement agrees: R=5 km's stable top ten overlaps R=2 km's by **3 of 8**, R=1 km's by **1**, and
+k-nearest's by **2**, while R=2 / R=3 / k-nearest mutually overlap **5–6 of 7–8**. R=5 km is not a
+perturbation of the leg. It is a different quantity.
+
+**R=5 km is nevertheless NOT dropped from the declared 40.** It was in `R_SWEEP` before any value
+was read, and excluding it now — after seeing that it is what breaks the head — is relaxing the
+gauge that caught me. The 40-variant answer stands as the answer. The 24-variant row is reported as
+a clearly-labelled secondary, computed after the fact, with its reasoning stated so a reader can
+discount it as they see fit.
+
+**What the leg can and cannot say, stated as an interval and not an ordinal:**
+
+| site | round-1 rank | rank interval across variants | in top ten | scoreable in |
+|---|---|---|---|---|
+| Gerlach fault zone | 18 | **1–17** (median 2) | 34/40 | 40/40 |
+| Madison fault | 1 | **1–11** (median 2) | 28/40 | 32/40 |
+| Savage Lake fault | 172 | **1–14** (median 4) | 34/40 | 40/40 |
+| unnamed fault west of Toano Range | 154 | **3–13** (median 6) | 37/40 | 40/40 |
+| Sand Springs Range fault | 10 | 2–132 (median 10) | 25/40 | 40/40 |
+| Eastern Columbus Salt Marsh fault | 181 | 5–123 (median 10) | 22/40 | 40/40 |
+| unnamed fault near Cliff Lake | 162 | 1–125 (median 13) | 20/40 | 32/40 |
+| Caballo fault | 25 | 2–146 (median 15) | 17/40 | 32/40 |
+
+**Four sites are robustly high. Below them there is no resolvable ordering at all** — Caballo's
+interval is 2 to 146 of ~190. Any sentence of the form *"rank 4 versus rank 8"* on this leg is
+noise being read as signal. §6 asked for an ordering noise floor; the floor swallows everything
+below fourth place.
+
+**THE CONTROL, PRINTED FAILING.** Sandia fault — declared POSITIVE in round 1, rank 36 of 225 on
+the round-1 score:
+
+> scoreable in **24 of 40** variants (the 2 km and 1 km forms cannot reach it at all);
+> where scoreable, rank **52–193, median 134.5** of ~190; **in the top ten in 0 of 40.**
+
+§7 pre-declared: *"If adding a mechanically-correct leg moves the positive control down, that is
+reported, not absorbed."* It does not merely move it down. **It puts it in the bottom third, and it
+is consistent about that across every variant that can see it.** The leg's coarse verdict on its own
+positive control is stable even while its fine ordering is not.
+
+**Two readings, and this leg cannot choose between them:**
+
+1. **The leg is a poor instrument** — grid holes, sampler dependence, choice sensitivity — and its
+   verdict on Sandia is an artefact.
+2. **The leg is a sound instrument and Sandia was never an independent positive control.** It is
+   where the whole enquiry started; it was declared positive on the strength of the founding
+   hypothesis, not from a blind outside criterion. A criterion built from mechanism has no
+   obligation to rank it highly, and round 1's gate already gave it rank 36 of 225 — not a
+   commanding position either.
+
+Reading 2 is the one that would be comfortable to assert and it is **not** asserted. What
+distinguishes them is an *independent* positive control, which this screen does not have and cannot
+manufacture from its own labels. **Named as an open defect, carried into §3's labelled set as the
+question it now has to answer, and not resolved here.**
+
+**Consequence for Product A, which is the point of §6.** Product A cannot ship as *"the ten sites
+where the criterion is most strongly expressed."* It ships as: **four sites where the basement-
+juxtaposition criterion is robustly strongly expressed, no resolvable ordering below fourth, and a
+declared positive control in the bottom third.** That is a narrower and stranger product than §6
+anticipated, and it is what the measurement supports.
+
+**One methodological wrinkle, stated rather than swept:** variants score between 152 and 194 sites,
+so a rank of 17 is not identical across variants. Top-ten membership is unaffected (top ten is top
+ten), but the interval endpoints carry this and are read as approximate. Percentile-normalised
+intervals are the correct fix and are **not yet built**.
+
+### A5 — Day 199. Two figures in A1-RESULT and A2 are corrected by 0.1 m and 5.6 m. Kept anyway.
+
+`basement_juxtaposition.py` re-derives, in code, all 28 numerical figures stated in prose across
+A1 / A1-RESULT / A2 / A3, and prints a **PROSE CHECK** against them. It exists because a correct
+compressed note expands into a wrong sentence, and that expansion feels exactly like recall.
+
+**26 of 28 agree. Two differ, both from the median convention:**
+
+| figure | as written | recomputed |
+|---|---|---|
+| A1-RESULT, sediment median over the measured 194 | 3.4 m | **3.3 m** |
+| A2, median local spread of basement depth within 2 km | 141.8 m | **136.2 m** |
+
+The ad-hoc Day-199 run took the median as `v[n//2]`; the module averages the two central values on
+even *n*. Both are "a median"; only one was written down, and neither was written down **with its
+convention**, which is the actual defect. The convention is now stated in the output JSON.
+
+Neither figure changes a verdict. They are corrected here anyway, because a gauge that finds only
+the errors large enough to matter has not been tested against the ones that are not — and the run
+that produced these two also caught a real one: the first version of the module collapsed
+*"does the grid have an estimate here"* into *"are there nodes within 2 km"*, which moved **4 sites
+that had a measured basement value into `INFERRED`** — asserting basement-at-surface for sites whose
+basement had in fact been measured. The prose check caught it by printing 29 INFERRED against A1's
+27. **A cross-check whose only job is to reproduce old numbers found a new bug in fresh code.**
