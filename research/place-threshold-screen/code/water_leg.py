@@ -210,40 +210,33 @@ def elev_batch(points):
     return out
 
 
-def prefetch_relief(centres, chunk=200):
-    """Fill the relief cache for many sites in a few calls instead of one call per site.
+def prefetch_relief(centres, save_every=15):
+    """Fill the relief cache one SITE per call, and never more.
 
-    The per-site loop cost 5-6 s of which ~5 s was one 25-point elevation call, putting the
-    full 1,025-point run near two hours. Batching ACROSS sites is only safe because
-    elev_batch matches on the echoed coordinate rather than on position -- with the original
-    positional mapping this optimisation would have silently mixed one site's terrain into
-    another's, which is the same defect one order of magnitude worse. The fix is what
-    licensed the speedup; it is recorded here so the two are not separated later.
+    ! MEASURED, NOT ASSUMED, AND THE OBVIOUS OPTIMISATION IS THE WRONG ONE. The first version
+      of this batched 200 points (8 sites) per call, reasoning that fewer round trips is
+      faster. It is not: 3DEP getSamples cost is driven by THE NUMBER OF DEM TILES TOUCHED,
+      not by the point count. A 25-point grid spanning +/-5 km sits on one or two tiles and
+      returns in 4-5 s; 200 points scattered across eight sites in different states span many
+      tiles and did not return inside a 5-minute wall.
 
-    Points are deduplicated before sending and redistributed by coordinate afterwards, so a
-    coincidental overlap between two sites' grids costs one sample rather than corrupting one.
+      That failure is worse than slow. `_get` retries three times at a 90 s timeout, so a
+      stalled chunk burns 4.5 minutes and then returns None for all 200 points -- and a
+      site whose grid comes back mostly None is recorded as UNMEASURED relief. The run would
+      have completed, taken two hours, and reported a large field of honest-looking
+      unmeasured relief caused entirely by a batching choice. A timeout converting a red into
+      an unknown is the quiet version of this project's favourite defect.
+
+      Per-site it is: ~5 s each, and the cache is written every 15 sites so a kill costs
+      seconds rather than the run.
     """
     need = [c for c in centres
             if f"relief|{RELIEF_KM}|{RELIEF_N}|{c[0]:.4f},{c[1]:.4f}" not in _cache]
     if not need:
         return
-    grids = {c: relief_grid(*c) for c in need}
-    uniq = {}
-    for pts in grids.values():
-        for la, lo in pts:
-            uniq[(round(la, 6), round(lo, 6))] = None
-    keys = list(uniq)
-    print(f"   [relief] {len(need)} sites, {len(keys):,} unique points, "
-          f"{(len(keys) + chunk - 1) // chunk} calls", file=sys.stderr)
-    for i in range(0, len(keys), chunk):
-        part = keys[i:i + chunk]
-        for k, v in zip(part, elev_batch(part)):
-            uniq[k] = v
-        if (i // chunk) % 5 == 0:
-            print(f"   [relief] {min(i + chunk, len(keys)):,}/{len(keys):,}", file=sys.stderr)
-    for c, pts in grids.items():
-        ev = [uniq.get((round(la, 6), round(lo, 6))) for la, lo in pts]
-        ev = [e for e in ev if e is not None]
+    print(f"   [relief] {len(need)} sites, one call each", file=sys.stderr)
+    for i, c in enumerate(need, 1):
+        ev = [e for e in elev_batch(relief_grid(*c)) if e is not None]
         rel = None
         if len(ev) >= RELIEF_N * RELIEF_N * 0.8:
             mean = sum(ev) / len(ev)
@@ -251,6 +244,9 @@ def prefetch_relief(centres, chunk=200):
                        sd_m=round((sum((e - mean) ** 2 for e in ev) / len(ev)) ** 0.5, 1),
                        n=len(ev))
         _cache[f"relief|{RELIEF_KM}|{RELIEF_N}|{c[0]:.4f},{c[1]:.4f}"] = rel
+        if i % save_every == 0:
+            print(f"   [relief] {i}/{len(need)}", file=sys.stderr)
+            _save()
     _save()
 
 
