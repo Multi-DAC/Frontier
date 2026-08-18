@@ -1,0 +1,744 @@
+{
+ "built": "2026-08-18",
+ "what_this_is": "A search plan. Places ranked by a geophysical criterion whose predictive validity is UNDEMONSTRATED and, on the one external test run (A6), unsupported.",
+ "a6_verdict": "The screen's founding gate (R1 CONDUIT, <=10 km to a Quaternary normal fault) was asked once whether it fires where anomalous lights are independently reported. 0 of 6 control locales pass it; 34.4% of random western ground does. p=0.199 on the distance contrast, direction against the hypothesis. A fail at n=6 is not proof of absence, and it is not support either.",
+ "resolution": "A7: one integer position resolved, a head-set of 4 with unresolved internal order, a band of 23 the score cannot order. One L1 vertex = 0.025 score.",
+ "rules": {
+  "R_A": "integer position requires adjacent order >=0.95 on the FULL denominator, both sides",
+  "R_B": "tiers are membership; rows alphabetical within tier; score printed but does not set row order",
+  "R_C": "jurisdiction is a filter flag, never a score"
+ },
+ "resolved_positions": {
+  "Madison fault": 1
+ },
+ "tiers": {
+  "HEAD": [
+   "Centennial fault",
+   "Little Valley fault",
+   "Madison fault",
+   "Round Valley fault"
+  ],
+  "BAND": [
+   "Antelope Valley fault zone",
+   "Bear River fault zone",
+   "Fish Lake Valley fault zone",
+   "Hartley Springs fault zone",
+   "Hebgen fault",
+   "Helena valley fault",
+   "Kings Canyon fault zone",
+   "McAfee Canyon fault",
+   "Mono Lake fault",
+   "Mosquito fault",
+   "Red Canyon fault",
+   "Red Rock fault",
+   "Sand Springs Range fault",
+   "Sandia fault",
+   "Silver Lake fault",
+   "Southern Sangre de Cristo fault",
+   "Teton fault",
+   "West Fork fault",
+   "White Mountains fault zone"
+  ],
+  "FIELD_n": 202
+ },
+ "areas": [
+  {
+   "members": [
+    "Centennial fault"
+   ],
+   "n_members": 1,
+   "contains_head": [
+    "Centennial fault"
+   ],
+   "best_scoring": "Centennial fault",
+   "best_score": 0.6812,
+   "centroid": [
+    44.584,
+    -112.066
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Kings Canyon fault zone",
+    "Little Valley fault"
+   ],
+   "n_members": 2,
+   "contains_head": [
+    "Little Valley fault"
+   ],
+   "best_scoring": "Little Valley fault",
+   "best_score": 0.7112,
+   "centroid": [
+    39.19,
+    -119.855
+   ],
+   "extent_km": 11.8
+  },
+  {
+   "members": [
+    "Hebgen fault",
+    "Madison fault",
+    "Red Canyon fault",
+    "West Fork fault"
+   ],
+   "n_members": 4,
+   "contains_head": [
+    "Madison fault"
+   ],
+   "best_scoring": "Madison fault",
+   "best_score": 0.837,
+   "centroid": [
+    44.844,
+    -111.343
+   ],
+   "extent_km": 13.7
+  },
+  {
+   "members": [
+    "Fish Lake Valley fault zone",
+    "Hartley Springs fault zone",
+    "McAfee Canyon fault",
+    "Mono Lake fault",
+    "Round Valley fault",
+    "Silver Lake fault",
+    "White Mountains fault zone"
+   ],
+   "n_members": 7,
+   "contains_head": [
+    "Round Valley fault"
+   ],
+   "best_scoring": "Round Valley fault",
+   "best_score": 0.7324,
+   "centroid": [
+    37.759,
+    -118.654
+   ],
+   "extent_km": 115.1
+  },
+  {
+   "members": [
+    "Antelope Valley fault zone"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Antelope Valley fault zone",
+   "best_score": 0.6244,
+   "centroid": [
+    38.677,
+    -119.548
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Bear River fault zone"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Bear River fault zone",
+   "best_score": 0.6064,
+   "centroid": [
+    41.091,
+    -110.812
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Helena valley fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Helena valley fault",
+   "best_score": 0.624,
+   "centroid": [
+    46.759,
+    -112.049
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Mosquito fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Mosquito fault",
+   "best_score": 0.6134,
+   "centroid": [
+    39.327,
+    -106.14
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Red Rock fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Red Rock fault",
+   "best_score": 0.6168,
+   "centroid": [
+    44.66,
+    -112.698
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Sand Springs Range fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Sand Springs Range fault",
+   "best_score": 0.616,
+   "centroid": [
+    39.19,
+    -118.338
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Sandia fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Sandia fault",
+   "best_score": 0.6108,
+   "centroid": [
+    35.153,
+    -106.472
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Southern Sangre de Cristo fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Southern Sangre de Cristo fault",
+   "best_score": 0.5936,
+   "centroid": [
+    36.849,
+    -105.551
+   ],
+   "extent_km": 0.0
+  },
+  {
+   "members": [
+    "Teton fault"
+   ],
+   "n_members": 1,
+   "contains_head": [],
+   "best_scoring": "Teton fault",
+   "best_score": 0.6016,
+   "centroid": [
+    44.013,
+    -110.682
+   ],
+   "extent_km": 0.0
+  }
+ ],
+ "areas_link_sensitivity_km_to_count": {
+  "30": 16,
+  "40": 14,
+  "50": 13,
+  "60": 10,
+  "75": 9
+ },
+ "areas_note": "Single-linkage at the frozen list's own 50 km separation scale. Member count inherits the junction term's mapping-density artefact and is not used to order areas.",
+ "jurisdiction_status": "UNRUN",
+ "basement_scoreability_status": "RUN",
+ "rows": [
+  {
+   "site": "Centennial fault",
+   "tier": "HEAD",
+   "position": null,
+   "lat": 44.584,
+   "lon": -112.066,
+   "score_not_an_order": 0.6812,
+   "p_in_top_ten": 1.0,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": []
+  },
+  {
+   "site": "Little Valley fault",
+   "tier": "HEAD",
+   "position": null,
+   "lat": 39.237,
+   "lon": -119.886,
+   "score_not_an_order": 0.7112,
+   "p_in_top_ten": 1.0,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 32/40 variants"
+   ]
+  },
+  {
+   "site": "Madison fault",
+   "tier": "HEAD",
+   "position": 1,
+   "lat": 44.792,
+   "lon": -111.438,
+   "score_not_an_order": 0.837,
+   "p_in_top_ten": 1.0,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 32/40 variants"
+   ]
+  },
+  {
+   "site": "Round Valley fault",
+   "tier": "HEAD",
+   "position": null,
+   "lat": 37.542,
+   "lon": -118.726,
+   "score_not_an_order": 0.7324,
+   "p_in_top_ten": 1.0,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": []
+  },
+  {
+   "site": "Antelope Valley fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 38.677,
+   "lon": -119.548,
+   "score_not_an_order": 0.6244,
+   "p_in_top_ten": 0.6724,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.3272,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "falls out of the 225 entirely in 32.7% of L1 draws"
+   ]
+  },
+  {
+   "site": "Bear River fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 41.091,
+   "lon": -110.812,
+   "score_not_an_order": 0.6064,
+   "p_in_top_ten": 0.4758,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "UNSCOREABLE on the basement leg (no node in window)",
+    "NOT on the frozen ten; enters it in 47.6% of L1 draws"
+   ]
+  },
+  {
+   "site": "Fish Lake Valley fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 37.694,
+   "lon": -118.114,
+   "score_not_an_order": 0.6174,
+   "p_in_top_ten": 0.5414,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.3338,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "falls out of the 225 entirely in 33.4% of L1 draws"
+   ]
+  },
+  {
+   "site": "Hartley Springs fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 37.644,
+   "lon": -119.003,
+   "score_not_an_order": 0.6368,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 32/40 variants",
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Round Valley fault scores 0.7324 at 26.9 km"
+   ]
+  },
+  {
+   "site": "Hebgen fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 44.858,
+   "lon": -111.324,
+   "score_not_an_order": 0.767,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 11.6 km"
+   ]
+  },
+  {
+   "site": "Helena valley fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 46.759,
+   "lon": -112.049,
+   "score_not_an_order": 0.624,
+   "p_in_top_ten": 0.7461,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": []
+  },
+  {
+   "site": "Kings Canyon fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 39.143,
+   "lon": -119.823,
+   "score_not_an_order": 0.6542,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 32/40 variants",
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Little Valley fault scores 0.7112 at 11.8 km"
+   ]
+  },
+  {
+   "site": "McAfee Canyon fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 37.686,
+   "lon": -117.968,
+   "score_not_an_order": 0.5962,
+   "p_in_top_ten": 0.2461,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "NOT on the frozen ten; enters it in 24.6% of L1 draws"
+   ]
+  },
+  {
+   "site": "Mono Lake fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 38.079,
+   "lon": -119.181,
+   "score_not_an_order": 0.5918,
+   "p_in_top_ten": 0.2724,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "NOT on the frozen ten; enters it in 27.2% of L1 draws"
+   ]
+  },
+  {
+   "site": "Mosquito fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 39.327,
+   "lon": -106.14,
+   "score_not_an_order": 0.6134,
+   "p_in_top_ten": 0.4088,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "UNSCOREABLE on the basement leg (no node in window)"
+   ]
+  },
+  {
+   "site": "Red Canyon fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 44.864,
+   "lon": -111.297,
+   "score_not_an_order": 0.7698,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 13.7 km"
+   ]
+  },
+  {
+   "site": "Red Rock fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 44.66,
+   "lon": -112.698,
+   "score_not_an_order": 0.6168,
+   "p_in_top_ten": 0.6737,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.0,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": []
+  },
+  {
+   "site": "Sand Springs Range fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 39.19,
+   "lon": -118.338,
+   "score_not_an_order": 0.616,
+   "p_in_top_ten": 0.5902,
+   "p_in_top_ten_basis": "frozen",
+   "p_gated_out": 0.3368,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "falls out of the 225 entirely in 33.7% of L1 draws"
+   ]
+  },
+  {
+   "site": "Sandia fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 35.153,
+   "lon": -106.472,
+   "score_not_an_order": 0.6108,
+   "p_in_top_ten": 0.5045,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 24/40 variants",
+    "NOT on the frozen ten; enters it in 50.4% of L1 draws"
+   ]
+  },
+  {
+   "site": "Silver Lake fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 37.8,
+   "lon": -119.121,
+   "score_not_an_order": 0.6592,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Round Valley fault scores 0.7324 at 45.1 km"
+   ]
+  },
+  {
+   "site": "Southern Sangre de Cristo fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 36.849,
+   "lon": -105.551,
+   "score_not_an_order": 0.5936,
+   "p_in_top_ten": 0.3409,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "UNSCOREABLE on the basement leg (no node in window)",
+    "NOT on the frozen ten; enters it in 34.1% of L1 draws"
+   ]
+  },
+  {
+   "site": "Teton fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 44.013,
+   "lon": -110.682,
+   "score_not_an_order": 0.6016,
+   "p_in_top_ten": 0.4532,
+   "p_in_top_ten_basis": "intruder",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "UNSCOREABLE on the basement leg (no node in window)",
+    "NOT on the frozen ten; enters it in 45.3% of L1 draws"
+   ]
+  },
+  {
+   "site": "West Fork fault",
+   "tier": "BAND",
+   "position": null,
+   "lat": 44.863,
+   "lon": -111.313,
+   "score_not_an_order": 0.6382,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Madison fault scores 0.8370 at 12.6 km"
+   ]
+  },
+  {
+   "site": "White Mountains fault zone",
+   "tier": "BAND",
+   "position": null,
+   "lat": 37.867,
+   "lon": -118.465,
+   "score_not_an_order": 0.6008,
+   "p_in_top_ten": null,
+   "p_in_top_ten_basis": "below_floor",
+   "p_gated_out": null,
+   "jurisdiction": {
+    "admin": "UNRUN",
+    "own": "UNRUN",
+    "forest": null,
+    "eligible": "UNRUN"
+   },
+   "caveats": [
+    "basement-scoreable in only 32/40 variants",
+    "SUPPRESSED BY THE 50 km SEPARATION RULE, not by score \u2014 Round Valley fault scores 0.7324 at 42.8 km"
+   ]
+  }
+ ],
+ "provenance": [
+  {
+   "path": "data/rank_resolution.json",
+   "bytes": 10914,
+   "status": "read"
+  },
+  {
+   "path": "data/top10_frozen.json",
+   "bytes": 2766,
+   "status": "read"
+  },
+  {
+   "path": "data/stage5_join_summary.json",
+   "bytes": 61014,
+   "status": "read"
+  },
+  {
+   "path": "data/basement_stability.json",
+   "bytes": 88242,
+   "status": "read"
+  },
+  {
+   "path": "data/jurisdiction_leg.json",
+   "bytes": null,
+   "status": "ABSENT"
+  }
+ ]
+}
