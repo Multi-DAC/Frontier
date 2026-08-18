@@ -66,6 +66,10 @@ LAT0, LAT1 = 28.0, 50.0
 STEP = 5.0
 
 
+CAP = 40000          # qfaults_pull.pull_bbox stops paging past this offset
+MIN_STEP = 0.3125    # 5.0 / 16; four halvings. Below this a cap hit is reported, not hidden
+
+
 def tiles():
     lon = LON0
     while lon < LON1:
@@ -76,15 +80,52 @@ def tiles():
         lon += STEP
 
 
+def pull_adaptive(lo0, la0, lo1, la1, depth=0):
+    """Page a tile; if it comes back AT the paging cap, quarter it and recurse.
+
+    WHY THIS IS NOT A `[warn]`. The first layer-21 run printed `[warn] paging cap hit`
+    on the California/Nevada tile, kept going, and would have WRITTEN THE FILE with
+    41,000 of an unknown larger number of sections in the densest normal-fault province
+    in the country. A truncation that warns to stderr and then ships is a truncation.
+    The rule here is: a capped tile is not a result, it is a subdivision instruction,
+    and if subdivision bottoms out the run DIES rather than writing a short answer."""
+    pad = "  " * depth
+    cache = os.path.join(WORK, f"t_{lo0:.4f}_{la0:.4f}_{lo1:.4f}_{la1:.4f}.geojson")
+    legacy = os.path.join(WORK, f"t_{lo0:.0f}_{la0:.0f}.geojson")
+    if depth == 0 and not os.path.exists(cache) and os.path.exists(legacy):
+        os.rename(legacy, cache)     # same box, same layer, earlier naming scheme
+    fc = pull_bbox(lo0, la0, lo1, la1, cache=cache)
+    n = len(fc.get("features", []))
+    if n < CAP:
+        print(f"{pad}  [{lo0:8.3f},{la0:6.3f} -> {lo1:8.3f},{la1:6.3f}] {n:6d}",
+              flush=True)
+        return fc["features"]
+
+    if (lo1 - lo0) <= MIN_STEP or (la1 - la0) <= MIN_STEP:
+        raise SystemExit(
+            f"CAPPED AT MINIMUM TILE {lo0},{la0},{lo1},{la1}: {n} features at the "
+            f"{CAP} paging cap and the tile cannot be subdivided further. Refusing to "
+            f"write a truncated national pull.")
+
+    print(f"{pad}  [{lo0:8.3f},{la0:6.3f} -> {lo1:8.3f},{la1:6.3f}] {n:6d} == CAP, "
+          f"subdividing", flush=True)
+    os.remove(cache)     # a capped cache is a wrong answer; do not leave it to be reused
+    mlo, mla = (lo0 + lo1) / 2.0, (la0 + la1) / 2.0
+    out = []
+    for q in ((lo0, la0, mlo, mla), (mlo, la0, lo1, mla),
+              (lo0, mla, mlo, la1), (mlo, mla, lo1, la1)):
+        out.extend(pull_adaptive(*q, depth=depth + 1))
+    return out
+
+
 def main():
     os.makedirs(WORK, exist_ok=True)
     seen, feats = set(), []
     for i, (lo0, la0, lo1, la1) in enumerate(tiles()):
-        cache = os.path.join(WORK, f"t_{lo0:.0f}_{la0:.0f}.geojson")
-        fc = pull_bbox(lo0, la0, lo1, la1, cache=cache)
-        n = len(fc.get("features", []))
+        got = pull_adaptive(lo0, la0, lo1, la1)
+        n = len(got)
         new = 0
-        for ft in fc["features"]:
+        for ft in got:
             # tiles overlap at their shared edge; dedupe on the service's own object id
             oid = (ft.get("id")
                    or ft["properties"].get("objectid")

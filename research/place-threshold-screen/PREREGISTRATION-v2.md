@@ -531,3 +531,151 @@ that produced these two also caught a real one: the first version of the module 
 that had a measured basement value into `INFERRED`** — asserting basement-at-surface for sites whose
 basement had in fact been measured. The prose check caught it by printing 29 INFERRED against A1's
 27. **A cross-check whose only job is to reproduce old numbers found a new bug in fresh code.**
+
+### A6 — Day 199. The independent positive control A4-RESULT said could not be manufactured.
+
+Declared in full in `code/positive_control.py` and **committed before any value at any
+control coordinate was computed** (`10499ae`). Six locales with recurrent anomalous-light
+records from outside this project, inside the grid extent, graded by a stated rule; two
+bars; and — the point — an **assignment rule between A4-RESULT's two readings of the
+Sandia failure, written down before the numbers existed.** The module is the declaration
+and is not restated here.
+
+A4-RESULT said the screen "cannot manufacture [an independent positive] from its own
+labels." True, and narrower than it sounds: it can be handed one from outside. Three
+contaminations were named in the declaration rather than discovered afterwards — the
+earth-lights literature is itself fault-selected; the list is mine, assembled by someone
+who had already built the screen; and **observer density is unremoved, with its direction
+stated: toward the hypothesis.**
+
+**Two instrument faults were found and fixed before the result was read, and both are
+reported because the second one nearly cost a site.**
+
+1. `fetch_qfaults_west.py` inherited `qfaults_pull.EP`, which is **MapServer layer 12 —
+   New Mexico.** It returned 16,189 sections: plausible, non-empty and entirely New
+   Mexican. What caught it was only that the pull is **tiled and prints per-tile counts** —
+   Nevada 0, California 0, Idaho 0. A single-bbox pull would have handed back the same
+   16,189 features with nothing to read them against. Re-pointed at layer 21, with a
+   positive control on the pull itself that refuses to write the file if the densest
+   normal-fault provinces in the country come back empty. The first layer-21 run then hit
+   the service's 40,000-record paging cap on the California/Nevada tile, printed
+   `[warn] paging cap hit`, and **would have shipped anyway**; tiles that hit the cap are
+   now subdivided and recursed, and a cap hit at minimum tile size kills the run. Final
+   pull: **110,356 sections**, of which 53,301 carry a normal sense. Subdivision recovered
+   ~1,060 sections the cap had eaten.
+2. **The locality check failed on my query strings, not on the coordinates — and dropped a
+   site for it.** The first pass built each gazetteer query from the site's *display* name
+   ("Marfa lights viewing area, TX, USA"). Those name a *phenomenon*; a gazetteer holds
+   *places*. Three of six returned UNRESOLVED, a fourth resolved 1,304 km away, and **PC4
+   was dropped from the leg on the strength of it.** The probe and its subject were
+   mis-specified as a pair: the coordinates were never tested, only my ability to name
+   them. Each control now carries an explicit `gazetteer` field, the coordinates are
+   untouched, the bar has not moved, and the probe now runs **its own positive control**
+   (Albuquerque 0.0 km, Reno 0.3 km) so that UNRESOLVED can be distinguished from a probe
+   that cannot resolve anything. Second pass: 5 of 6 OK, PC2 UNRESOLVED — Toppenish Ridge
+   is a landform the gazetteer does not hold. PC2 is **kept and its coordinate is
+   unverified**, which is stated rather than smoothed.
+
+### A6-RESULT — Day 199. Both bars fail, and the base rate is the finding.
+
+**A6-i — THE GATE TEST.**
+
+| | median nearest Quaternary **normal** fault |
+|---|---|
+| the six control locales | **30.20 km**  (bootstrap 95% CI 19.0 – 79.3, n=6) |
+| 1,971 random covered western points | **20.07 km** |
+
+Mann-Whitney U = 4120, z = −1.284, **p = 0.199**. **BAR i: NOT SUPPORTED** — and the
+point estimate points the *wrong way*. The reported locales are **farther** from
+Quaternary normal faults than ordinary western ground, not closer.
+
+**THE BASE RATE, printed here for the first time in this project.** A requirement filters
+only to the extent that ordinary ground fails it, and nobody had ever measured what
+fraction of ordinary western ground passes round 1's R1 CONDUIT criterion:
+
+| within | random covered western ground | the six control locales |
+|---|---|---|
+| 5 km | 21.3 % | 0 of 6 |
+| **10 km — R1 CONDUIT as written** | **34.4 %** | **0 of 6** |
+| 25 km | 55.2 % | 2 of 6 |
+| 50 km | 73.4 % | 4 of 6 |
+
+Null distance quantiles (km): p5 0.84 · p10 2.0 · p25 6.24 · **p50 20.07** · p75 53.26 ·
+p90 90.06 · p95 116.5.
+
+**A third of the random western landscape already satisfies R1. None of the six
+independently-attested locales does.** Post-hoc binomial against the measured base rate,
+labelled post-hoc because it was not pre-declared: 0/6 at 10 km gives p = 0.080; 0/6 at
+5 km, p = 0.238; 2/6 at 25 km, p = 0.252. **Not one reaches p ≤ 0.05.** The direction is
+uniform and it is against the hypothesis; the evidence is weak, and n = 6 is why. §9's
+power statement was written in advance for exactly this outcome and is honoured: a fail
+is not proof of absence.
+
+One case is worth naming because it is checkable geology rather than statistics.
+**PC2, Toppenish Ridge, is 88.9 km from the nearest Quaternary normal fault because it is
+part of the Yakima fold belt — a compressional structure.** One of the two best-graded
+locales in the set sits in the wrong tectonic regime for the screen's own dilatancy
+mechanism.
+
+And the screen's own controls are not comparable to these, by construction: Sandia (0.32
+km) and Hubbell Spring (0.83 km) are at essentially zero distance from Quaternary normal
+faults because they **are** Quaternary normal faults. Comparing them to a set of places is
+comparing a definition to a measurement.
+
+**A6-ii — THE LEG TEST.** Pooled percentiles over all 40 variants, with the
+percentile-normalised axis A4-RESULT named as *"the correct fix and not yet built"* now
+built and applied to survivors and controls alike.
+
+| site | grade | scoreable | pooled percentile, median [min – max] |
+|---|---|---|---|
+| PC1 Marfa | B | **0/40** | UNSCOREABLE |
+| PC2 Toppenish Ridge | B | 40/40 | 0.280 [0.048 – 0.532] |
+| PC3 Silver Cliff | C | **0/40** | UNSCOREABLE |
+| PC4 San Luis Valley | C | 40/40 | 0.060 [0.003 – 0.477] |
+| PC5 Uinta Basin | D | **0/40** | UNSCOREABLE |
+| PC6 Trout Lake | D | 40/40 | 0.280 [0.048 – 0.532] |
+| SC1 **Sandia** (screen's declared positive) | own | 32/40 | 0.247 [0.008 – 0.737] |
+| SC2 Hubbell Spring (screen's declared negative) | own | 32/40 | 0.177 [0.003 – 0.864] |
+
+Variants in which the control set's median percentile reaches 0.60: **0 of 40.**
+**BAR ii: NOT SUPPORTED** (needed 30 of 40). Grade A/B secondary, n=2: 0.280.
+
+**THE CRUCIAL CONTRAST, assigned by the rule frozen in §4 before the numbers existed.**
+Control set median percentile **0.280**; Sandia **0.247**; the declared bottom-third line
+is 0.333. The rule returns **READING 1** — *the leg puts independently-attested places in
+the bottom third too, so its verdict on Sandia is not evidence about Sandia.*
+
+**And the rule's own denominator collapsed, which is reported in the same breath as the
+verdict rather than after it.** Four of six controls are scoreable, and **two of those four
+are the same site as far as this leg is concerned**: PC2 and PC6 return byte-identical
+percentiles across all 40 variants because both take only two distinct scores in the
+entire choice space — **0.0 conjunctive and 0.5 additive.** Basement is within a couple of
+metres of the surface at both and uniformly so, which pins `s_min` at its ceiling and
+`s_con` at its floor under every one of the four constant sets. The leg has **no
+resolution** at either place. So READING 1 is what the pre-declared rule says, on an
+effective n of three. The rule is honoured; its input is thin; both facts are printed.
+
+**DIFFERENTIAL COVERAGE, and it is the structural finding of A6.**
+
+| | no basement node within ±0.10° |
+|---|---|
+| the 225 survivors | 29 (**12.9 %**) |
+| the six controls | 2 (**33.3 %**) |
+
+Nearest basement node: Marfa **59.0 km**, Uinta Basin **104.1 km**, Silver Cliff 10.0 km —
+all three inside the published extent, none reachable within the scoring window. A1's
+finding was that the extent is a bounding box and not a coverage mask; here it bites the
+outside set **2.6× harder than the inside set**, and the reason is mechanical. **The grid
+is densest where Quaternary normal faults are, which is what the survivors were selected
+on.** Coverage is therefore correlated with the screen's own criterion, and *any*
+survivor-versus-outsider contrast on this leg inherits that correlation. A6-ii's
+comparison arm was chosen in §2 precisely so the fault confound would cancel; it does not
+cancel a coverage confound, and this one runs in the direction that favours the survivors.
+
+**What A6 settles and what it does not.** It settles that the leg does not rank
+independently-attested locales highly — every reading of that is bad for Product B's
+prospects, and none of it rescues Sandia. It does **not** settle whether the criterion is
+wrong or merely unmeasurable at the places that would test it, because at half the control
+set the instrument cannot see the ground at all. The honest position is that **the
+screen's founding gate has now been asked, once, whether it fires where the phenomenon is
+reported, and the answer came back "no, and not significantly no."**

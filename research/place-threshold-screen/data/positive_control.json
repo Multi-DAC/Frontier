@@ -1,0 +1,316 @@
+{
+ "declared_in": "positive_control.py",
+ "frozen": "Day 199, 2026-08-18, before any value at any control coordinate",
+ "seed": 20260818,
+ "bars": {
+  "i": "control median nearest-normal-fault distance < null median AND Mann-Whitney two-sided p <= 0.05",
+  "ii": "control median pooled percentile >= 0.6 in >= 30 of 40 variants"
+ },
+ "locality_verification": "NOT RUN (--verify not passed)",
+ "A6i": {
+  "rows": [
+   {
+    "id": "PC1",
+    "name": "Marfa lights viewing area",
+    "grade": "B",
+    "dist_km": 69.705,
+    "fault_name": "unnamed fault east of Santiago Peak",
+    "age": "undifferentiated Quaternary"
+   },
+   {
+    "id": "PC2",
+    "name": "Toppenish Ridge / Yakama Reservation",
+    "grade": "B",
+    "dist_km": 88.88,
+    "fault_name": "unnamed faults northwest of Condon",
+    "age": "class B"
+   },
+   {
+    "id": "PC3",
+    "name": "Silver Cliff cemetery",
+    "grade": "C",
+    "dist_km": 27.13,
+    "fault_name": "Northern Sangre de Cristo fault",
+    "age": "latest Quaternary"
+   },
+   {
+    "id": "PC4",
+    "name": "San Luis Valley (Crestone-Hooper corridor)",
+    "grade": "C",
+    "dist_km": 19.004,
+    "fault_name": "Northern Sangre de Cristo fault",
+    "age": "latest Quaternary"
+   },
+   {
+    "id": "PC5",
+    "name": "Uinta Basin / Skinwalker Ranch",
+    "grade": "D",
+    "dist_km": 19.078,
+    "fault_name": "Duchesne-Pleasant Valley fault system",
+    "age": "class B"
+   },
+   {
+    "id": "PC6",
+    "name": "Trout Lake / Mount Adams",
+    "grade": "D",
+    "dist_km": 33.28,
+    "fault_name": "Hood River fault zone",
+    "age": "undifferentiated Quaternary"
+   },
+   {
+    "id": "SC1",
+    "name": "Sandia fault",
+    "grade": "(screen's own)",
+    "declared": "POSITIVE (round 1, from the founding hypothesis -- NOT independent)",
+    "dist_km": 0.324,
+    "fault_name": "Sandia fault",
+    "age": "late Quaternary"
+   },
+   {
+    "id": "SC2",
+    "name": "Hubbell Spring fault",
+    "grade": "(screen's own)",
+    "declared": "NEGATIVE (round 1)",
+    "dist_km": 0.834,
+    "fault_name": "unnamed faults on the Llano de Manzano",
+    "age": "middle and late Quaternary"
+   }
+  ],
+  "control_median_km": 30.205,
+  "control_ci": [
+   19.041,
+   79.29249999999999
+  ],
+  "null_median_km": 20.066,
+  "null_n": 1971,
+  "null_quantiles_km": {
+   "p5": 0.84,
+   "p10": 2.0,
+   "p25": 6.24,
+   "p50": 20.07,
+   "p75": 53.26,
+   "p90": 90.06,
+   "p95": 116.5
+  },
+  "base_rate": {
+   "within_5km": {
+    "null_frac": 0.2131,
+    "control_frac": 0.0
+   },
+   "within_10km": {
+    "null_frac": 0.3445,
+    "control_frac": 0.0
+   },
+   "within_25km": {
+    "null_frac": 0.552,
+    "control_frac": 0.3333
+   },
+   "within_50km": {
+    "null_frac": 0.7336,
+    "control_frac": 0.6667
+   }
+  },
+  "mannwhitney": {
+   "U": 4120.0,
+   "z": -1.284,
+   "p": 0.19919,
+   "approx": "normal approximation with tie and continuity correction"
+  },
+  "bar_passed": false,
+  "contamination": "source literature is fault-selected; observer density unremoved, direction toward the hypothesis"
+ },
+ "coverage": {
+  "controls": {
+   "PC1": null,
+   "PC2": 0.51,
+   "PC3": 10.02,
+   "PC4": 0.56,
+   "PC5": null,
+   "PC6": 0.3
+  },
+  "control_missing": 2,
+  "control_n": 6,
+  "survivor_missing": 29,
+  "survivor_n": 225,
+  "note": "the grid is denser where Quaternary normal faults are, which is what the survivors were selected on. Coverage is therefore correlated with the screen's own criterion and any survivor-vs-outsider contrast on this leg inherits that."
+ },
+ "A6ii": {
+  "rows": [
+   {
+    "id": "PC1",
+    "name": "Marfa lights viewing area",
+    "grade": "B",
+    "scoreable": 0,
+    "pctl_median": null,
+    "pctl_min": null,
+    "pctl_max": null
+   },
+   {
+    "id": "PC2",
+    "name": "Toppenish Ridge / Yakama Reservation",
+    "grade": "B",
+    "scoreable": 40,
+    "pctl_median": 0.27977258742693056,
+    "pctl_min": 0.04773869346733668,
+    "pctl_max": 0.532258064516129
+   },
+   {
+    "id": "PC3",
+    "name": "Silver Cliff cemetery",
+    "grade": "C",
+    "scoreable": 0,
+    "pctl_median": null,
+    "pctl_min": null,
+    "pctl_max": null
+   },
+   {
+    "id": "PC4",
+    "name": "San Luis Valley (Crestone-Hooper corridor)",
+    "grade": "C",
+    "scoreable": 40,
+    "pctl_median": 0.06035919392882781,
+    "pctl_min": 0.002512562814070352,
+    "pctl_max": 0.4774193548387097
+   },
+   {
+    "id": "PC5",
+    "name": "Uinta Basin / Skinwalker Ranch",
+    "grade": "D",
+    "scoreable": 0,
+    "pctl_median": null,
+    "pctl_min": null,
+    "pctl_max": null
+   },
+   {
+    "id": "PC6",
+    "name": "Trout Lake / Mount Adams",
+    "grade": "D",
+    "scoreable": 40,
+    "pctl_median": 0.27977258742693056,
+    "pctl_min": 0.04773869346733668,
+    "pctl_max": 0.532258064516129
+   },
+   {
+    "id": "SC1",
+    "name": "Sandia fault",
+    "grade": "(screen's own)",
+    "declared": "POSITIVE (round 1, from the founding hypothesis -- NOT independent)",
+    "scoreable": 32,
+    "pctl_median": 0.24663947163947164,
+    "pctl_min": 0.007692307692307693,
+    "pctl_max": 0.7372448979591837
+   },
+   {
+    "id": "SC2",
+    "name": "Hubbell Spring fault",
+    "grade": "(screen's own)",
+    "declared": "NEGATIVE (round 1)",
+    "scoreable": 32,
+    "pctl_median": 0.17663170163170164,
+    "pctl_min": 0.002551020408163265,
+    "pctl_max": 0.8641025641025641
+   }
+  ],
+  "control_median_pctl": 0.27977258742693056,
+  "grade_AB_median_pctl": 0.27977258742693056,
+  "sandia_median_pctl": 0.24663947163947164,
+  "variants_passing": 0,
+  "variants_scored": 40,
+  "bar_passed": false,
+  "crucial_contrast": "READING 1 gains support -- the leg puts independently-attested places in the bottom third too, so its verdict on Sandia is not evidence about Sandia",
+  "percentile_note": "pooled over 225 survivors + controls per variant; this is the percentile-normalised axis A4-RESULT named as not yet built"
+ },
+ "controls": [
+  {
+   "id": "PC1",
+   "name": "Marfa lights viewing area",
+   "state": "TX",
+   "lat": 30.2727,
+   "lon": -103.8722,
+   "grade": "B",
+   "gazetteer": "Marfa, Presidio County, Texas, USA",
+   "record": "Reported since Ellison's 1883 account; continuous modern reporting; instrumented study by Texas State / SHSU physics groups 2004-2008.",
+   "conventional": "Bunnell's programme attributed the MAJORITY of observed events to vehicle headlights on US-67, with a documented unexplained residual. Grade B, not A, for exactly that reason.",
+   "coord_basis": "Official TxDOT viewing area on US-90 east of Marfa. Source region is Mitchell Flat, 5-15 km SW -- see section 5, coordinate error."
+  },
+  {
+   "id": "PC2",
+   "name": "Toppenish Ridge / Yakama Reservation",
+   "state": "WA",
+   "lat": 46.302,
+   "lon": -120.551,
+   "grade": "B",
+   "gazetteer": "Toppenish Ridge, Yakima County, Washington, USA",
+   "record": "W.J. Vogel, fire control officer for the Yakama Nation, logged recurrent luminous phenomena 1972-1974 in an agency capacity; the log was written up independently and is the single institutional primary record here.",
+   "conventional": "None established for the logged events.",
+   "coord_basis": "Toppenish Ridge, the ridge line named in the reports."
+  },
+  {
+   "id": "PC3",
+   "name": "Silver Cliff cemetery",
+   "state": "CO",
+   "lat": 38.1447,
+   "lon": -105.4272,
+   "grade": "C",
+   "gazetteer": "Silver Cliff, Custer County, Colorado, USA",
+   "record": "Lay reports from the 1880s mining era onward; National Geographic feature, 1969.",
+   "conventional": "Reflection of town and starlight off headstones is plausible and has never been established or excluded.",
+   "coord_basis": "The cemetery itself, which is the named locale."
+  },
+  {
+   "id": "PC4",
+   "name": "San Luis Valley (Crestone-Hooper corridor)",
+   "state": "CO",
+   "lat": 37.65,
+   "lon": -105.8,
+   "grade": "C",
+   "gazetteer": "Hooper, Alamosa County, Colorado, USA",
+   "record": "Sustained regional compilation by C. O'Brien, 1990s, plus lay reports.",
+   "conventional": "Not established. The record is regional rather than point-located, which is itself a weakness for a 2 km-radius leg.",
+   "coord_basis": "Valley floor midpoint of the corridor the compilation names."
+  },
+  {
+   "id": "PC5",
+   "name": "Uinta Basin / Skinwalker Ranch",
+   "state": "UT",
+   "lat": 40.2585,
+   "lon": -109.8878,
+   "grade": "D",
+   "gazetteer": "Fort Duchesne, Uintah County, Utah, USA",
+   "record": "Frank Salisbury's 1974 Uinta Basin compilation is the older and cleaner record; the ranch-specific material is later.",
+   "conventional": "Not established.",
+   "coord_basis": "The ranch parcel named in the later material. GRADE D: the modern record is entangled with a commercial interest, which is what the grade rule penalises, and the site is kept only because the rule is applied rather than the site chosen."
+  },
+  {
+   "id": "PC6",
+   "name": "Trout Lake / Mount Adams",
+   "state": "WA",
+   "lat": 46.008,
+   "lon": -121.525,
+   "grade": "D",
+   "gazetteer": "Trout Lake, Klickitat County, Washington, USA",
+   "record": "Recurrent reports from a single primary observer's property, 1990s on.",
+   "conventional": "Not established.",
+   "coord_basis": "Trout Lake valley, the named locale."
+  }
+ ],
+ "screen_controls": [
+  {
+   "id": "SC1",
+   "name": "Sandia fault",
+   "state": "NM",
+   "lat": 35.18,
+   "lon": -106.47,
+   "declared": "POSITIVE (round 1, from the founding hypothesis -- NOT independent)"
+  },
+  {
+   "id": "SC2",
+   "name": "Hubbell Spring fault",
+   "state": "NM",
+   "lat": 34.85,
+   "lon": -106.63,
+   "declared": "NEGATIVE (round 1)"
+  }
+ ],
+ "unremoved_confound": "observer density -- reports require observers; range fronts are where people are. Direction: TOWARD the hypothesis. Any positive here is an upper bound."
+}

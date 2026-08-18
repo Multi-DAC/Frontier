@@ -203,6 +203,7 @@ OUT = os.path.join(HERE, "..", "data", "positive_control.json")
 CONTROLS = [
     dict(id="PC1", name="Marfa lights viewing area", state="TX",
          lat=30.2727, lon=-103.8722, grade="B",
+         gazetteer="Marfa, Presidio County, Texas, USA",
          record="Reported since Ellison's 1883 account; continuous modern reporting; "
                 "instrumented study by Texas State / SHSU physics groups 2004-2008.",
          conventional="Bunnell's programme attributed the MAJORITY of observed events to "
@@ -212,6 +213,7 @@ CONTROLS = [
                      "is Mitchell Flat, 5-15 km SW -- see section 5, coordinate error."),
     dict(id="PC2", name="Toppenish Ridge / Yakama Reservation", state="WA",
          lat=46.3020, lon=-120.5510, grade="B",
+         gazetteer="Toppenish Ridge, Yakima County, Washington, USA",
          record="W.J. Vogel, fire control officer for the Yakama Nation, logged recurrent "
                 "luminous phenomena 1972-1974 in an agency capacity; the log was written "
                 "up independently and is the single institutional primary record here.",
@@ -219,6 +221,7 @@ CONTROLS = [
          coord_basis="Toppenish Ridge, the ridge line named in the reports."),
     dict(id="PC3", name="Silver Cliff cemetery", state="CO",
          lat=38.1447, lon=-105.4272, grade="C",
+         gazetteer="Silver Cliff, Custer County, Colorado, USA",
          record="Lay reports from the 1880s mining era onward; National Geographic "
                 "feature, 1969.",
          conventional="Reflection of town and starlight off headstones is plausible and "
@@ -226,12 +229,14 @@ CONTROLS = [
          coord_basis="The cemetery itself, which is the named locale."),
     dict(id="PC4", name="San Luis Valley (Crestone-Hooper corridor)", state="CO",
          lat=37.6500, lon=-105.8000, grade="C",
+         gazetteer="Hooper, Alamosa County, Colorado, USA",
          record="Sustained regional compilation by C. O'Brien, 1990s, plus lay reports.",
          conventional="Not established. The record is regional rather than point-located, "
                       "which is itself a weakness for a 2 km-radius leg.",
          coord_basis="Valley floor midpoint of the corridor the compilation names."),
     dict(id="PC5", name="Uinta Basin / Skinwalker Ranch", state="UT",
          lat=40.2585, lon=-109.8878, grade="D",
+         gazetteer="Fort Duchesne, Uintah County, Utah, USA",
          record="Frank Salisbury's 1974 Uinta Basin compilation is the older and cleaner "
                 "record; the ranch-specific material is later.",
          conventional="Not established.",
@@ -241,6 +246,7 @@ CONTROLS = [
                      "is applied rather than the site chosen."),
     dict(id="PC6", name="Trout Lake / Mount Adams", state="WA",
          lat=46.0080, lon=-121.5250, grade="D",
+         gazetteer="Trout Lake, Klickitat County, Washington, USA",
          record="Recurrent reports from a single primary observer's property, 1990s on.",
          conventional="Not established.",
          coord_basis="Trout Lake valley, the named locale."),
@@ -459,35 +465,127 @@ def load_normal_faults():
     return kept, dict(census), len(fc["features"])
 
 
-def nearest_normal(lat, lon, faults, cutoff_km=400.0):
-    best = (1e18, None, None)
+FCELL = 0.25            # ~27 km lat cell for the fault vertex index
+MAX_RING = 16           # gives up past ~430 km; a point that far from any Quaternary
+                        # normal fault is reported as such, never as a large number
+
+
+def index_faults(faults):
+    """Spatial hash of fault vertices. Without it, 2,000 null points against a national
+    vertex set is ~10^9 haversines -- and the tempting fix, sampling the null down to
+    something a brute force can chew, would shrink the very distribution the test reads.
+    Index the data, do not thin the sample."""
+    idx = defaultdict(list)
+    n = 0
     for name, age, pts in faults:
-        # cheap degree-box reject before the haversine loop
-        if all(abs(a - lat) > 4.0 or abs(b - lon) > 5.0 for a, b in pts[:1]):
-            pass
         for a, b in pts:
-            if abs(a - lat) > 4.0 or abs(b - lon) > 5.0:
-                continue
-            d = hav(lat, lon, a, b)
-            if d < best[0]:
-                best = (d, name, age)
+            idx[(int(math.floor(a / FCELL)), int(math.floor(b / FCELL)))].append(
+                (a, b, name, age))
+            n += 1
+    return idx, n
+
+
+def nearest_normal(lat, lon, idx):
+    """Nearest Quaternary normal-sense vertex, by expanding ring over the hash.
+
+    The ring must expand ONE STEP PAST the first hit before returning: a vertex found in
+    ring r can be further away than one in ring r+1, because a cell is a lat/lon box and
+    distance is not. Returning on first hit is the classic off-by-one-ring error and it
+    biases every distance UPWARD, which here would flatter the control set."""
+    r0 = int(math.floor(lat / FCELL))
+    c0 = int(math.floor(lon / FCELL))
+    best = (1e18, None, None)
+    found_ring = None
+    for ring in range(MAX_RING + 1):
+        if found_ring is not None and ring > found_ring + 1:
+            break
+        for dr in range(-ring, ring + 1):
+            for dc in range(-ring, ring + 1):
+                if ring and max(abs(dr), abs(dc)) != ring:
+                    continue          # perimeter only; interior was done in earlier rings
+                for a, b, name, age in idx.get((r0 + dr, c0 + dc), ()):
+                    d = hav(lat, lon, a, b)
+                    if d < best[0]:
+                        best = (d, name, age)
+        if best[1] is not None and found_ring is None:
+            found_ring = ring
     if best[1] is None:
         return dict(dist_km=None, fault_name=None, age=None,
-                    note=f"no normal-sense section within the {cutoff_km:g} km search box")
+                    note=f"no normal-sense vertex within {MAX_RING} cells "
+                         f"(~{MAX_RING * FCELL * 111:.0f} km)")
     return dict(dist_km=round(best[0], 3), fault_name=best[1], age=best[2])
 
 
 # --------------------------------------------------------------------------- null
-def draw_null(keep_mask_targets=None):
-    """NULL_N uniform points in the grid extent, kept only if the basement grid has a
-    node within NODE_MASK_KM. Uses no fault information of any kind, by construction."""
+def draw_null():
+    """Uniform candidates in the grid extent at SEED. Over-drawn because the coverage
+    mask below rejects; the RETAINED count is what NULL_N governs."""
     rng = random.Random(SEED)
-    cand = []
-    while len(cand) < NULL_N * 4:
-        lat = rng.uniform(29.0, 49.0)
-        lon = rng.uniform(-124.72, -102.73)
-        cand.append((round(lat, 5), round(lon, 5)))
-    return cand
+    return [(round(rng.uniform(29.0, 49.0), 5), round(rng.uniform(-124.72, -102.73), 5))
+            for _ in range(NULL_N * 6)]
+
+
+def mask_null(cand):
+    """Keep candidates with a basement-grid node within NODE_MASK_KM. Two passes over
+    the grid, because one pass done the obvious way is not affordable.
+
+    The obvious way -- hand all 12,000 candidates to stream_d2b -- asks it to retain
+    every grid node in ~300,000 cells, which at ~30 nodes a cell is order 10^7 tuples
+    and roughly a gigabyte. The tempting fix is to shrink the null. THAT WOULD SHRINK
+    THE DISTRIBUTION THE TEST READS, which is the thing being measured. So the fix goes
+    in the index, not the sample:
+
+      pass 1  stream the grid keeping only OCCUPIED CELL KEYS -- a set, not the values.
+      pass 2  coarse-reject candidates with no occupied cell adjacent, take the first
+              NULL_N survivors, then stream again for exact distances at SPAN 1 (+/-1
+              cell is +/-5.5 km, which covers a 5 km test).
+
+    Uses no fault information whatsoever, by construction -- that is what makes it a
+    legitimate null for a fault-distance test."""
+    occupied = set()
+    with open(D2B, newline="") as f:
+        rd = csv.reader(f)
+        next(rd)
+        for row in rd:
+            occupied.add((round(float(row[1]) / CELL), round(float(row[0]) / CELL)))
+
+    coarse = []
+    for la, lo in cand:
+        r0, c0 = round(la / CELL), round(lo / CELL)
+        if any((r0 + dr, c0 + dc) in occupied
+               for dr in (-1, 0, 1) for dc in (-1, 0, 1)):
+            coarse.append((la, lo))
+        if len(coarse) >= NULL_N:
+            break
+
+    want = set()
+    for la, lo in coarse:
+        r0, c0 = round(la / CELL), round(lo / CELL)
+        for dr in (-1, 0, 1):
+            for dc in (-1, 0, 1):
+                want.add((r0 + dr, c0 + dc))
+    keep = defaultdict(list)
+    with open(D2B, newline="") as f:
+        rd = csv.reader(f)
+        next(rd)
+        for row in rd:
+            k = (round(float(row[1]) / CELL), round(float(row[0]) / CELL))
+            if k in want:
+                keep[k].append((float(row[1]), float(row[0])))
+
+    out = []
+    for la, lo in coarse:
+        r0, c0 = round(la / CELL), round(lo / CELL)
+        best = 1e18
+        for dr in (-1, 0, 1):
+            for dc in (-1, 0, 1):
+                for a, b in keep.get((r0 + dr, c0 + dc), ()):
+                    d = hav(la, lo, a, b)
+                    if d < best:
+                        best = d
+        if best <= NODE_MASK_KM:
+            out.append((la, lo))
+    return out, len(cand), len(coarse), len(occupied)
 
 
 def sha(path, n=16):
@@ -499,9 +597,35 @@ def sha(path, n=16):
 
 
 # --------------------------------------------------------------------------- verify
+# Instrument positive control for the gazetteer probe itself, with answers that are not
+# in dispute. A verification step that returns UNRESOLVED tells you nothing until you
+# know the probe can resolve anything at all.
+VERIFY_POSITIVE = [("Albuquerque, Bernalillo County, New Mexico, USA", 35.084, -106.651),
+                   ("Reno, Washoe County, Nevada, USA", 39.529, -119.814)]
+
+
 def verify_localities():
     """D3's locality check against a public gazetteer. Network. Returns a per-site
-    verdict; a resolution further than VERIFY_KM is a CONFLATION and drops the site."""
+    verdict; a resolution further than VERIFY_KM is a CONFLATION and drops the site.
+
+    THE QUERY IS A DECLARED FIELD, NOT THE DISPLAY NAME, and this is a correction.
+
+    The first run built the query from the site's DISPLAY name -- "Marfa lights viewing
+    area, TX, USA", "Uinta Basin / Skinwalker Ranch, UT, USA". Those are names of a
+    PHENOMENON, and a gazetteer holds names of PLACES. Three of six came back UNRESOLVED
+    and a fourth resolved 1,304 km away, and PC4 WAS DROPPED FROM THE LEG on the strength
+    of it. The probe and the thing it was probing were mis-specified as a pair: the
+    coordinates were never tested, only my ability to name them.
+
+    So each control now carries an explicit `gazetteer` field -- an ordinary place name
+    the gazetteer can be expected to hold -- and the test is unchanged and still
+    falsifiable: does that place resolve within VERIFY_KM of the DECLARED COORDINATE?
+    The coordinates themselves are untouched. Both runs are reported.
+
+    The correction was made AFTER seeing the first run fail, which is stated rather than
+    hidden. What keeps it from being a relaxation is that the bar did not move: a
+    gazetteer name that resolves far from its declared coordinate still fails, and PC4
+    has to earn its way back by passing, not by being re-queried until it does."""
     import time
     import urllib.parse
     import urllib.request
@@ -510,9 +634,29 @@ def verify_localities():
         truststore.inject_into_ssl()
     except Exception as e:
         print(f"[warn] truststore: {e}", file=sys.stderr)
-    out = {}
+
+    def ask(q):
+        url = ("https://nominatim.openstreetmap.org/search?"
+               + urllib.parse.urlencode(dict(q=q, format="json", limit=1)))
+        req = urllib.request.Request(
+            url, headers={"User-Agent": "place-threshold-screen/A6 (research)"})
+        return json.load(urllib.request.urlopen(req, timeout=45))
+
+    out = {"_instrument_positive_control": []}
+    for q, la, lo in VERIFY_POSITIVE:
+        try:
+            js = ask(q)
+            d = hav(la, lo, float(js[0]["lat"]), float(js[0]["lon"])) if js else None
+        except Exception as e:
+            d = None
+            js = [{"err": str(e)}]
+        out["_instrument_positive_control"].append(
+            dict(query=q, dist_km=None if d is None else round(d, 2),
+                 status="OK" if (d is not None and d <= VERIFY_KM) else "PROBE FAILED"))
+        time.sleep(1.2)
+
     for c in CONTROLS:
-        q = f"{c['name'].split('(')[0].strip()}, {c['state']}, USA"
+        q = c.get("gazetteer") or f"{c['name'].split('(')[0].strip()}, {c['state']}, USA"
         url = ("https://nominatim.openstreetmap.org/search?"
                + urllib.parse.urlencode(dict(q=q, format="json", limit=1)))
         try:
@@ -558,11 +702,18 @@ def main():
               f"{VERIFY_KM:g} km\n")
         v = verify_localities()
         report["locality_verification"] = v
+        for r in v["_instrument_positive_control"]:
+            print(f"  [probe control] {r['query'][:44]:44s} {r['status']:14s} "
+                  f"{('%.1f km' % r['dist_km']) if r.get('dist_km') is not None else ''}")
+        print()
         for cid, r in v.items():
+            if cid.startswith("_"):
+                continue
             nm = next(c["name"] for c in CONTROLS if c["id"] == cid)
             print(f"  {cid} {nm[:44]:44s} {r['status']:14s} "
                   f"{('%.1f km' % r['dist_km']) if r.get('dist_km') is not None else ''}")
-        dropped = [k for k, r in v.items() if r["status"] == "CONFLATION"]
+        dropped = [k for k, r in v.items()
+                   if not k.startswith("_") and r["status"] == "CONFLATION"]
         if dropped:
             print(f"\n  DROPPED AS CONFLATIONS: {dropped}")
     else:
@@ -585,8 +736,10 @@ def main():
         report["A6i"] = "UNRUN -- qfaults_west.geojson absent"
     else:
         faults, census, nfeat = load_normal_faults()
+        fidx, nvert = index_faults(faults)
         print(f"\n  Qfaults west  : {nfeat} sections, sha {sha(QF)}")
         print(f"  NORMAL filter : kept {len(faults)} on `slip_sense` containing 'normal'")
+        print(f"  vertex index  : {nvert} vertices in {len(fidx)} cells of {FCELL} deg")
         print("  slip_sense census (top 6):")
         for k, n in sorted(census.items(), key=lambda kv: -kv[1])[:6]:
             print(f"      {n:6d}  {k}")
@@ -596,31 +749,24 @@ def main():
               f"masked to grid coverage next")
 
         # land/coverage mask from the basement grid itself -- no fault information
-        mask_keep = stream_d2b(null_pts + [(c["lat"], c["lon"]) for c in live]
-                               + [(s["lat"], s["lon"]) for s in SCREEN_CONTROLS])
-        null_ok = []
-        for la, lo in null_pts:
-            nn = nbrs(mask_keep, la, lo)
-            if nn and nn[0][0] <= NODE_MASK_KM:
-                null_ok.append((la, lo))
-            if len(null_ok) >= NULL_N:
-                break
-        print(f"  null retained : {len(null_ok)} of {len(null_pts)} candidates pass the "
-              f"{NODE_MASK_KM:g} km grid-coverage mask")
+        null_ok, n_cand, n_coarse, n_cells = mask_null(null_pts)
+        print(f"  grid cells    : {n_cells} occupied cells of {CELL} deg (pass 1)")
+        print(f"  null retained : {len(null_ok)} of {n_coarse} coarse-passed of "
+              f"{n_cand} drawn -- {NODE_MASK_KM:g} km grid-coverage mask")
 
         cd, nd = [], []
         rows_i = []
         for c in live:
-            r = nearest_normal(c["lat"], c["lon"], faults)
+            r = nearest_normal(c["lat"], c["lon"], fidx)
             rows_i.append(dict(id=c["id"], name=c["name"], grade=c["grade"], **r))
             if r["dist_km"] is not None:
                 cd.append(r["dist_km"])
         for s in SCREEN_CONTROLS:
-            r = nearest_normal(s["lat"], s["lon"], faults)
+            r = nearest_normal(s["lat"], s["lon"], fidx)
             rows_i.append(dict(id=s["id"], name=s["name"], grade="(screen's own)",
                                declared=s["declared"], **r))
         for la, lo in null_ok:
-            r = nearest_normal(la, lo, faults)
+            r = nearest_normal(la, lo, fidx)
             if r["dist_km"] is not None:
                 nd.append(r["dist_km"])
 
@@ -643,8 +789,41 @@ def main():
         passed_i = bool(mw and mc is not None and mn is not None
                         and mc < mn and mw["p"] <= 0.05)
         print(f"\n  BAR i: {'SUPPORTED' if passed_i else 'NOT SUPPORTED'}")
+
+        # ---- THE BASE RATE, which is the number this screen has never printed -------
+        # Round 1's R1 CONDUIT requirement is "an active Quaternary fault within 10 km".
+        # A requirement is only a filter to the extent that ordinary ground FAILS it.
+        # Nobody has ever measured what fraction of ordinary western ground passes.
+        nds = sorted(nd)
+        qs = {f"p{p}": round(nds[min(len(nds) - 1, int(p / 100 * len(nds)))], 2)
+              for p in (5, 10, 25, 50, 75, 90, 95)}
+        base = {}
+        for thr in (5.0, 10.0, GATE_KM, 50.0):
+            f_null = sum(1 for d in nd if d <= thr) / len(nd)
+            f_ctrl = sum(1 for d in cd if d <= thr) / len(cd) if cd else None
+            base[f"within_{thr:g}km"] = dict(null_frac=round(f_null, 4),
+                                             control_frac=None if f_ctrl is None
+                                             else round(f_ctrl, 4))
+        print("\n  THE BASE RATE -- what fraction of ORDINARY covered western ground is")
+        print("  already within each distance of a Quaternary normal fault:")
+        print(f"    null distance quantiles (km): {qs}")
+        for k, v in base.items():
+            cf = ("n/a" if v["control_frac"] is None
+                  else f"{100 * v['control_frac']:5.1f}%")
+            print(f"    {k:16s}  random ground {100 * v['null_frac']:5.1f}%   "
+                  f"controls {cf}")
+        print("\n  Round 1's R1 CONDUIT requirement is 'an active Quaternary fault "
+              "within 10 km'.")
+        print("  A requirement filters only to the extent that ordinary ground fails "
+              "it. That")
+        print("  number is printed here for the first time and it is not a ranking "
+              "result --")
+        print("  it is a property of the criterion, and it was one query away the whole "
+              "time.")
+
         report["A6i"] = dict(rows=rows_i, control_median_km=mc, control_ci=ci,
                              null_median_km=mn, null_n=len(nd),
+                             null_quantiles_km=qs, base_rate=base,
                              mannwhitney=mw, bar_passed=passed_i,
                              contamination="source literature is fault-selected; "
                                            "observer density unremoved, direction "
@@ -667,6 +846,37 @@ def main():
     surv_v = [variants_for(s["lat"], s["lon"]) for s in sites]
     ctrl_v = [variants_for(c["lat"], c["lon"]) for c in live]
     scrn_v = [variants_for(s["lat"], s["lon"]) for s in SCREEN_CONTROLS]
+
+    # ---- COVERAGE, AS A NUMBER. A1's finding was that the published extent is a
+    # bounding box and not a coverage mask. UNSCOREABLE printed as a word invites a
+    # reader to imagine a near miss; printed as a distance it can be argued with.
+    # Reported for controls AND survivors, because the comparison between the two is
+    # the whole of A6-ii and differential coverage would confound it.
+    def nearest_node_km(lat, lon):
+        nn = nbrs(keep, lat, lon)
+        return round(nn[0][0], 2) if nn else None
+
+    cov_ctrl = {c["id"]: nearest_node_km(c["lat"], c["lon"]) for c in live}
+    surv_cov = [nearest_node_km(s["lat"], s["lon"]) for s in sites]
+    surv_miss = sum(1 for d in surv_cov if d is None or d > SPAN * CELL * 111)
+    print(f"\n  GRID COVERAGE (nearest basement node, +/-{SPAN * CELL:.2f} deg window)")
+    for c in live:
+        d = cov_ctrl[c["id"]]
+        print(f"    {c['id']} {c['name'][:36]:36s} "
+              f"{'no node in window' if d is None else '%8.2f km' % d}")
+    print(f"    survivors: {surv_miss} of {len(sites)} have no node in the same window "
+          f"({100.0 * surv_miss / len(sites):.1f}%)")
+    n_ctrl_miss = sum(1 for d in cov_ctrl.values() if d is None)
+    print(f"    controls : {n_ctrl_miss} of {len(live)} "
+          f"({100.0 * n_ctrl_miss / max(1, len(live)):.1f}%)  <-- DIFFERENTIAL COVERAGE")
+    report["coverage"] = dict(controls=cov_ctrl, control_missing=n_ctrl_miss,
+                              control_n=len(live), survivor_missing=surv_miss,
+                              survivor_n=len(sites),
+                              note="the grid is denser where Quaternary normal faults "
+                                   "are, which is what the survivors were selected on. "
+                                   "Coverage is therefore correlated with the screen's "
+                                   "own criterion and any survivor-vs-outsider contrast "
+                                   "on this leg inherits that.")
 
     vkeys = sorted(surv_v[0].keys())
     ctrl_p = {c["id"]: [] for c in live}
