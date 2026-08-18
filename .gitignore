@@ -24,3 +24,6 @@ node_modules/
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# place-threshold-screen: large re-pullable geophysical grids (see PREREGISTRATION-v2.md §7)
+research/place-threshold-screen/work/
