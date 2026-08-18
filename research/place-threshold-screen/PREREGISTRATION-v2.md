@@ -679,3 +679,156 @@ wrong or merely unmeasurable at the places that would test it, because at half t
 set the instrument cannot see the ground at all. The honest position is that **the
 screen's founding gate has now been asked, once, whether it fires where the phenomenon is
 reported, and the answer came back "no, and not significantly no."**
+
+### A7 — Day 199. Is the top ten a RANKING, or ten members of one band? Three bars, three fails.
+
+Declared in full in `code/rank_resolution.py` and committed before any perturbation was
+run. Clayton's D199 ask moved the target: **the list is the deliverable, not the method.**
+So this leg asks the question that has to be answered before any further criterion is
+added, because it decides whether adding criteria can help at all — *given the measurement
+noise the instruments have already declared about themselves, how many distinct rank
+positions does this score actually resolve?*
+
+**No new noise model was invented.** Every perturbation is read off a note written by the
+leg that produced the number, before this question was asked: `remeasure_ten.py`'s own
+docstring recording that `quartz_frac` carries ±1/8 sampling noise from vertex ordering
+alone (the *measured* instance — Sandia read 0.875 down the paged live path and 1.000 down
+the local path, same fault, same eight points, different segment concatenation order); and
+`site_rank.py`'s own docstring recording that fault-name density is partly a mapping
+artefact. The frozen list uses L1 as a fifth **equal** scoring term anyway. That conflict
+is what this leg prices.
+
+**CONTROL, run first: PASSED.** The 5-term score plus the 50 km separation rule rebuilt
+`data/top10_frozen.json` exactly — same ten faults, same order, scores within 1e-3. A
+perturbation of a list I cannot rebuild is a perturbation of the wrong list.
+
+**BAR i — MEMBERSHIP IS REAL. NOT SUPPORTED.** Needed Jaccard ≥ 0.7 against the frozen set
+in ≥ 4 of 5 leave-one-leg-out variants. Achieved in **0 of 5.**
+
+| leg dropped | Jaccard | kept of 10 |
+|---|---|---|
+| length | 0.667 | 8 |
+| age | 0.538 | 7 |
+| L1 quartz | 0.538 | 7 |
+| slip | 0.429 | 6 |
+| junction | **0.250** | **4** |
+
+Removing junction density — the term whose own author recorded it as "partly a mapping
+artefact" — replaces six of the ten. No leg can be removed without changing the list.
+
+**BAR ii — MEMBERSHIP IS RESOLVED. NOT SUPPORTED.** Needed ≥ 7 of the frozen ten at
+P(in top ten) ≥ 0.80 under one-vertex L1 resampling, 10,000 draws. Achieved: **4.**
+
+| frozen rank | site | P(top 10) | P(gated out entirely) |
+|---|---|---|---|
+| 1 | Madison fault | **1.000** | 0 |
+| 2 | Round Valley fault | **1.000** | 0 |
+| 3 | Little Valley fault | **1.000** | 0 |
+| 4 | Centennial fault | **1.000** | 0 |
+| 5 | Antelope Valley fault zone | 0.672 | **0.327** |
+| 6 | Fish Lake Valley fault zone | 0.541 | **0.334** |
+| 7 | Red Rock fault | 0.674 | 0 |
+| 8 | Helena valley fault | 0.746 | 0 |
+| 9 | Sand Springs Range fault | 0.590 | **0.337** |
+| 10 | Mosquito fault | 0.409 | 0 |
+
+The `p_gated_out` column is a distinct failure from the `p_top10` one and is separated on
+purpose. Three of the frozen ten sit at `quartz_frac` = 0.25 — exactly the gate — so a
+one-vertex wobble does not demote them, it **removes them from the 225 altogether**, about
+a third of the time. They are not marginal members of the list; they are marginal members
+of the *population the list is drawn from*.
+
+**And the intruders are the sharper half of this bar.** Sites outside the frozen ten that
+enter it under the same wobble, P ≥ 0.05:
+
+| site | P(enters top 10) | site | P(enters top 10) |
+|---|---|---|---|
+| **Sandia fault** | **0.505** | S. Sangre de Cristo fault | 0.341 |
+| Bear River fault zone | 0.476 | Mono Lake fault | 0.272 |
+| Teton fault | 0.453 | McAfee Canyon fault | 0.246 |
+| | | Hunter Mtn–Saline Valley fz | 0.068 |
+
+**Sandia — the screen's own declared positive control, and the site A4 and A6 spent two
+legs failing to rescue — is a coin flip for membership in the top ten.** It is not on the
+frozen list and it is in the top ten in 50.5% of draws. Nothing about the physics changed;
+one vertex of one layer did.
+
+**BAR iii — ORDER IS RESOLVED. NOT SUPPORTED.** Needed ≥ 5 of the 9 adjacent pairs holding
+their printed order in ≥ 95% of draws *in which both sites were on the list at all.*
+Achieved: **4 of 9** — and the conditioning is the finding.
+
+| pair | P(order holds) | draws with both present |
+|---|---|---|
+| Madison > Round Valley | 1.000 | 10,000 |
+| Round Valley > Little Valley | 0.667 | 10,000 |
+| Little Valley > Centennial | 0.893 | 10,000 |
+| Centennial > Antelope Valley | 1.000 | 6,724 |
+| Antelope Valley > Helena valley | 1.000 | 4,831 |
+| Helena valley > Fish Lake Valley | **0.342** | 3,888 |
+| Fish Lake Valley > Red Rock | 0.811 | 3,552 |
+| Red Rock > Sand Springs Range | 0.724 | 3,744 |
+| Sand Springs Range > Mosquito | 1.000 | 2,280 |
+
+**Three of the four pairs that "hold perfectly" hold on a shrinking subsample** — the last
+one on 22.8% of draws. The denominator was split out precisely so a membership failure
+could not launder itself into an order success, and here it earns its keep: a pair that
+never once swaps, in the quarter of draws where both sites still exist, is a much weaker
+statement than the 1.000 makes it look. The one unconditioned 1.000 is Madison > Round
+Valley.
+
+**A7-iv — WHY, and it is arithmetic rather than interpretation.** Effective degrees of
+freedom of the five equally-weighted terms across all 225 survivors:
+
+| term | distinct values | modal value | modal share | sd |
+|---|---|---|---|---|
+| slip | 4 | 0.0 | **86.2 %** | 0.164 |
+| junction | 5 | 1.0 | 32.4 % | 0.369 |
+| age | 6 | 0.2 | 37.3 % | 0.273 |
+| L1 quartz | 7 | 0.25 | 30.7 % | 0.281 |
+| length | **75** | 0.458 | 4.9 % | 0.170 |
+
+**One of the five terms is the same number for 86% of the field.** Three more are coarse
+ordinals with five to seven levels. Exactly one term — fault length, the one carrying the
+least physical claim — is near-continuous. The composite is therefore a **coarse lattice**,
+and a difference smaller than one lattice step is not a difference. This is not a
+criticism of any one leg; each was built to *filter*, and four of the five are being asked
+to *rank*, which is a strictly harder job that nothing ever checked they could do.
+
+**A7-v — WHAT THE LIST ACTUALLY RESOLVES.** Rank 10 scores 0.6134. One L1 vertex is worth
+0.025 of composite score. **23 of the 225 survivors sit within one vertex of the rank-10
+line.** The top-ten cut is not a cut; it is a line drawn through the middle of a
+23-member band by a quantity finer than the instrument.
+
+**And the head of the raw ranking is one place.** Before the 50 km separation rule is
+applied, ranks 1–3 of all 225 are:
+
+| score | site | distance from Madison |
+|---|---|---|
+| 0.8370 | Madison fault | — |
+| 0.7698 | Red Canyon fault | 13.7 km |
+| 0.7670 | Hebgen fault | 11.6 km |
+
+All three are the 1959 M7.3 **Hebgen Lake** surface rupture. Seven of the 225 survivors lie
+within 50 km of Madison. The separation rule collapses them to one entry, correctly — but
+it means the screen's single strongest signal is **one 1959 earthquake, counted three
+times**, and the frozen list's ranks 2 and 3 are the second and third best scores *more than
+50 km from a better one*, which is a different quantity from the second and third best
+scores. Frozen rank 4, Centennial fault, clears the separation rule by **4.8 km**.
+
+**WHAT A7 SETTLES.** Not "the ranking is wrong" — the ranking is *finer than the
+measurement*. The defensible product is:
+
+- **one resolved position**: Madison fault (Hebgen Lake), P(top 10) = 1.000, the only
+  adjacent order relation that holds on a full denominator, and separated from the rest by
+  0.10 of score — four lattice steps;
+- **a head-set of four** (Madison, Round Valley, Little Valley, Centennial): membership
+  certain under L1 wobble, **internal order not resolved** — Round Valley > Little Valley
+  holds only 66.7% of the time;
+- **a band of 23** the score cannot order, which includes Sandia, Teton and Bear River, and
+  from which three current members can vanish entirely.
+
+Printing 1..10 asserts nine order relations the instrument can support four of, three of
+those on a quarter of the sample. **The report must print a head, a set and a band — not a
+league table.** Any further criterion added to break the band's ties must be declared and
+tested *as a tie-breaker*, against this measured resolution, or it will merely add a fifth
+coarse ordinal to four others and move names around at random.
