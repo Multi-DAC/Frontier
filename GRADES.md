@@ -114,3 +114,13 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   stated) — **withdrawn 2026-08-15 by its own author.** The aperture sweep profiled the wrong
   velocity component, and widening the swath past the fault's measured 74 km length produced a
   tighter number about a different subject — the rift, not the fault.
+- **"Skywatcher's 'dog whistle' tech operates at 1.6 GHz (/1.8 GHz)"** — **fell 2026-08-17**
+  (traced D196, settled D197, retired D198 at Clayton's call). Not disproven-as-physics —
+  **misattributed**: 1.6 GHz is Brandon Fugal's *received, unidentified* signal at Skinwalker
+  Ranch, a different program, an observation rather than a device spec. The Barber "dog whistle"
+  transcript that should carry it returns zero hits for GHz / Hz / frequency / radio / RF / antenna.
+  ⚠ **This item entered the registry only on the day it died.** A two-day investigation, a
+  chain-of-custody audit and a formal retirement all ran outside Frontier while a build manual was
+  written on the number — so the registry that exists to make grades checkable had nothing to check.
+  The finding is worth less than that gap. What Skywatcher's tech actually runs at is now
+  **unsourced**, and must not re-fill from the same summaries that produced this.

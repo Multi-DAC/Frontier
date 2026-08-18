@@ -195,3 +195,26 @@ LINKS: research/place-threshold-screen/ (SUMMARY.md is the single point of truth
 narrative · reports/10-blind-rescore.md amends it · dossier.html, 4.9 MB, the frozen ten with plates)
 OPEN INSTRUMENTS: aeromagnetic depth-to-basement UNBUILT. The wider analysis Clayton chartered — every site meeting ALL
 requirements rather than a test of one starting site — NOT YET RUN; source is the same 1,399-node measured file.
+
+---
+
+## 2026-08-17 — "Skywatcher's 'dog whistle' tech operates at 1.6 GHz (/1.8 GHz)"
+VERDICT: disconfirmed — attribution error. The frequency is real; the attribution was not.
+EVIDENCE: The figure was carried for months as a Skywatcher *transmit* spec and used to size a build. Traced D196
+and settled D197 by machine-sweeping all 8 Skywatcher transcripts Clayton had shared: the Vetted transcript titled
+"Jake Barber Reveals NEW Details About Skywatcher's 'Dog Whistle' Tech" — the one document that should carry it —
+returns GHz:0, Hz:0, frequency:0, radio:0, RF:0, antenna:0. Zero hits, not a weak hit. The number's actual source is
+the Skinwalker Ranch interview with owner **Brandon Fugal** (YouTube uYyXpx7ADJQ), where 1.6 GHz is a **RECEIVED,
+unidentified** signal — "we have yet to identify the source" — i.e. an observation at a site, not a device
+specification, and from a different program entirely. Retired D198 at Clayton's call.
+DECORRELATED EYE: **Clayton** (case-holder, made the retirement call against a lead he had been invested in) +
+a **machine sweep of primary transcripts** — grep over the sources, not recall over the summaries. The instrument
+that killed it was built to search for the claim's own support and found none.
+GRADE MOVE: Hypothesized → **Disconfirmed**. ⚠ It never had a row here to move. See the note in GRADES.md: a
+two-day investigation that produced a formal retirement ran entirely outside this registry, which is the defect
+worth more than the finding.
+LINKS: carapace `Research/builds/BUILD_MANUAL.md` (the build spec the number sized) · store rows
+"SKYWATCHER 'DOG WHISTLE' — the 1.6 GHz number's real provenance" (D197) and "UAP EM-signalling investigation —
+LEAD STATUS" (D197–198)
+OPEN: what, if anything, Skywatcher's tech actually runs at is now **unsourced** — the retirement removed a number
+and did not supply one. Do not let the absence re-fill from the same summaries.
