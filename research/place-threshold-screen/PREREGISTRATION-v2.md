@@ -832,3 +832,97 @@ those on a quarter of the sample. **The report must print a head, a set and a ba
 league table.** Any further criterion added to break the band's ties must be declared and
 tested *as a tie-breaker*, against this measured resolution, or it will merely add a fifth
 coarse ordinal to four others and move names around at random.
+
+### A9 — Day 199. The deliverable, built to A7's measured resolution rather than the score's printed one.
+
+Not a leg. It measures nothing new and must not. `code/candidate_list.py` renders the one
+artefact Clayton asked for — the places, with their uncertainty attached rather than
+stripped off — and it exists because A7 left the previous rendering indefensible.
+Reprinting "rank 1..10" with "but see A7" underneath is not a fix; it is the shape of the
+defect this project keeps catching in other people's work. The fix is to print the
+structure that was measured.
+
+**THREE RULES, declared in the module before it was first run.**
+
+- **R-A — an integer position requires a full denominator.** A site gets a printed rank only
+  if the order relations on *both* sides of it hold at ≥ 0.95 across all 10,000 draws with
+  both sites present. A pair that never swaps in the 22.8% of draws where both still exist
+  is a resolved order *conditional on a membership failure*, which is a different claim.
+  The rule is derived, not fitted: if a future re-run resolves more pairs, more positions
+  print with no edit. Applied to the current data it yields **exactly one integer: Madison
+  fault = 1.**
+- **R-B — tiers are membership, not rank.** HEAD = P(top ten) 1.000 and never gated out
+  (**4 sites**). BAND = within one L1 vertex of the rank-10 line and not in HEAD
+  (**19 sites**). FIELD = the remaining **202**. Rows are emitted **alphabetically** inside a
+  tier. The score is still printed — hiding it would be its own dishonesty — but it does not
+  set the row order and is labelled as not resolving one.
+- **R-C — jurisdiction is a filter flag, never a score.** National Forest land raises no
+  physical probability of anything. It can make a site *eligible* for the founding claim. It
+  cannot make a site better.
+
+**FIVE GUARDS, each present because its absence has already cost this project something.**
+G1 aborts if A7's reproduction control did not pass. G2 aborts on any name present in one
+source and missing from another, because a quiet inner-join drop shortens the deliverable
+and looks like a shorter deliverable. **G3 — the absent column**: if a leg has not run, its
+column is emitted as the literal `UNRUN` on every row plus a top-level status, and is never
+omitted; an omitted constraint column reads as *no constraint applied*, which is the exact
+shape of every absence-as-result defect logged here. **G4 — the order guard runs against the
+emitted rows, not against my intention**: at most the sites R-A resolved may carry a
+position, and no tier may come out in score order, so an edit that reintroduces the league
+table fails the build instead of shipping. G5 records the path and byte length of every
+input read.
+
+**THE EMITTER'S OWN FIRST DEFECT, found and fixed in the same sitting, and reported because
+it is the module's own lecture turned back on it.** A7 publishes membership probabilities in
+*two* tables — `A7ii_membership` for the frozen ten and `A7ii_intruders_p_ge_005` for
+everyone else above the 5% reporting floor. The first draft read only the first and printed
+an em dash for the rest. That put a blank where a measurement existed, and it blanked it
+hardest for **Sandia at 0.505** — the single most consequential cell in the file. Fixed:
+both tables are read, and below the floor the cell reads `<0.05`, which means
+measured-and-small rather than unknown.
+
+**SEPARATION SUPPRESSION, now named per row.** A band member can carry a high score and
+P(top ten) < 0.05 for a reason unrelated to its score: a better-scoring survivor sits within
+50 km and the frozen rule keeps one per neighbourhood. **Red Canyon scores 0.7698 — second
+highest of all 225 — and never appears, because Madison is 13.7 km away.** Printing `<0.05`
+beside `0.7698` with no explanation invites the reader to conclude the score is noise. Six
+band members carry this flag.
+
+**AREAS — the coarser question, and the one Clayton actually asked.** The screen emits
+faults; A7 says the fault-level order is not resolved. Single-linkage clustering of head and
+band at **the frozen list's own 50 km separation scale** — deliberately not a new free
+parameter — collapses the 23 named structures into **13 areas**, four of them containing a
+head site:
+
+| area | centroid | extent | structures |
+|---|---|---|---|
+| Madison fault (Hebgen Lake) | 44.844, −111.343 | 13.7 km | 4 |
+| Round Valley fault (Sierra front / Walker Lane) | 37.759, −118.654 | **115.1 km** | 7 |
+| Little Valley fault (Carson Range) | 39.190, −119.855 | 11.8 km | 2 |
+| Centennial fault | 44.584, −112.066 | 0 km | 1 |
+
+Nine further areas hold one structure each, including Sandia, Teton and Bear River.
+
+**Two properties of that view are printed rather than smoothed.** First, **member count is
+not evidence** — it inherits the identical mapping-density artefact A7-iv priced in the
+junction term, so it never orders the areas. What clustering buys is the opposite: it stops
+the same place being counted several times. Second, **single linkage chains**, and the chain
+is visible in the extent column rather than hidden by it: the Round Valley "area" is 115 km
+across, which is a **corridor, not a locality**, and is named as one. Sensitivity of the
+area count to the link scale, printed because Centennial separates from Madison by 4.8 km of
+margin:
+
+| link | 30 km | 40 km | 50 km | 60 km | 75 km |
+|---|---|---|---|---|---|
+| areas | 16 | 14 | 13 | **10** | 9 |
+
+**WHAT THE ARTEFACT CARRIES IN ITS HEADER, not in a footnote.** A6's verdict — the founding
+gate was asked once whether it fires where anomalous lights are independently reported, and
+0 of 6 control locales pass it while 34.4% of random western ground does. The list is
+therefore **a search plan, not a finding**: places ranked by a geophysical criterion whose
+predictive validity is undemonstrated and, on the one external test run so far, unsupported.
+
+Output: `data/candidate_list.json`, `reports/CANDIDATE-LIST.md`. As of writing, the
+jurisdiction column reads `UNRUN` on every row because A8 is still querying; `code/watch_a8.py`
+is the trigger that rebuilds the deliverable when A8 lands, so the rebuild does not depend on
+a future breath remembering to do it.
