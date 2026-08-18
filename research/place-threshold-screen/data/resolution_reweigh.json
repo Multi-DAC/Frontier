@@ -1,0 +1,541 @@
+{
+ "leg": "A11 resolution reweigh",
+ "frozen": "Day 199, 2026-08-18; bars in resolution_reweigh.py docstring, written before any term was scored",
+ "seed": 20260818,
+ "draws": 10000,
+ "population": 225,
+ "dead_weight_bar": 0.5,
+ "p_bar": 0.8,
+ "A11i_separation": {
+  "age": {
+   "n": 225,
+   "distinct": 6,
+   "sep": 0.7475,
+   "modal_value": 0.2,
+   "modal_share": 0.3733,
+   "pairs_separated": 18837,
+   "verdict": "RESOLVES"
+  },
+  "slip": {
+   "n": 225,
+   "distinct": 4,
+   "sep": 0.2445,
+   "modal_value": 0.0,
+   "modal_share": 0.8622,
+   "pairs_separated": 6160,
+   "verdict": "DEAD WEIGHT"
+  },
+  "junction": {
+   "n": 225,
+   "distinct": 5,
+   "sep": 0.7794,
+   "modal_value": 1.0,
+   "modal_share": 0.3244,
+   "pairs_separated": 19641,
+   "verdict": "RESOLVES"
+  },
+  "length": {
+   "n": 225,
+   "distinct": 75,
+   "sep": 0.9785,
+   "modal_value": 0.458,
+   "modal_share": 0.0489,
+   "pairs_separated": 24658,
+   "verdict": "RESOLVES"
+  },
+  "L1": {
+   "n": 225,
+   "distinct": 7,
+   "sep": 0.8156,
+   "modal_value": 0.25,
+   "modal_share": 0.3067,
+   "pairs_separated": 20553,
+   "verdict": "RESOLVES"
+  }
+ },
+ "dead_weight": [
+  "slip"
+ ],
+ "surviving_terms": [
+  "age",
+  "junction",
+  "length",
+  "L1"
+ ],
+ "A11ii_variants": {
+  "FROZEN": {
+   "weights": {
+    "age": 1.0,
+    "slip": 1.0,
+    "junction": 1.0,
+    "length": 1.0,
+    "L1": 1.0
+   },
+   "top10": [
+    "Madison fault",
+    "Round Valley fault",
+    "Little Valley fault",
+    "Centennial fault",
+    "Antelope Valley fault zone",
+    "Helena valley fault",
+    "Fish Lake Valley fault zone",
+    "Red Rock fault",
+    "Sand Springs Range fault",
+    "Mosquito fault"
+   ],
+   "jaccard_vs_frozen": 1.0,
+   "n_resolved": 4,
+   "order_holds": 6,
+   "order_holds_strict": 4,
+   "n_pairs": 9,
+   "per_site": {
+    "Madison fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 1
+    },
+    "Round Valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 2
+    },
+    "Little Valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 3
+    },
+    "Centennial fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 4
+    },
+    "Antelope Valley fault zone": {
+     "p_top10": 0.6724,
+     "p_gated_out": 0.3272,
+     "rank_median": 5
+    },
+    "Helena valley fault": {
+     "p_top10": 0.7461,
+     "p_gated_out": 0.0,
+     "rank_median": 8
+    },
+    "Fish Lake Valley fault zone": {
+     "p_top10": 0.5414,
+     "p_gated_out": 0.3338,
+     "rank_median": 6
+    },
+    "Red Rock fault": {
+     "p_top10": 0.6737,
+     "p_gated_out": 0.0,
+     "rank_median": 7
+    },
+    "Sand Springs Range fault": {
+     "p_top10": 0.5902,
+     "p_gated_out": 0.3368,
+     "rank_median": 7
+    },
+    "Mosquito fault": {
+     "p_top10": 0.4088,
+     "p_gated_out": 0.0,
+     "rank_median": 9
+    }
+   },
+   "order_rows": [
+    {
+     "above": "Madison fault",
+     "below": "Round Valley fault",
+     "both_present": 10000,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Round Valley fault",
+     "below": "Little Valley fault",
+     "both_present": 10000,
+     "p_order_holds": 0.6674
+    },
+    {
+     "above": "Little Valley fault",
+     "below": "Centennial fault",
+     "both_present": 10000,
+     "p_order_holds": 0.8925
+    },
+    {
+     "above": "Centennial fault",
+     "below": "Antelope Valley fault zone",
+     "both_present": 6724,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Antelope Valley fault zone",
+     "below": "Helena valley fault",
+     "both_present": 4831,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Helena valley fault",
+     "below": "Fish Lake Valley fault zone",
+     "both_present": 3888,
+     "p_order_holds": 0.3423
+    },
+    {
+     "above": "Fish Lake Valley fault zone",
+     "below": "Red Rock fault",
+     "both_present": 3552,
+     "p_order_holds": 0.8114
+    },
+    {
+     "above": "Red Rock fault",
+     "below": "Sand Springs Range fault",
+     "both_present": 3744,
+     "p_order_holds": 0.7236
+    },
+    {
+     "above": "Sand Springs Range fault",
+     "below": "Mosquito fault",
+     "both_present": 2280,
+     "p_order_holds": 1.0
+    }
+   ],
+   "intruders": {
+    "Sandia fault": 0.5045,
+    "Bear River fault zone": 0.4758,
+    "Mono Lake fault": 0.2724,
+    "McAfee Canyon fault": 0.2461,
+    "Teton fault": 0.4532,
+    "Southern Sangre de Cristo fault": 0.3409,
+    "Hunter Mountain- Saline Valley fault zone": 0.0678
+   }
+  },
+  "R1_equal_on_survivors": {
+   "weights": {
+    "age": 1.0,
+    "junction": 1.0,
+    "length": 1.0,
+    "L1": 1.0
+   },
+   "top10": [
+    "Madison fault",
+    "Little Valley fault",
+    "Helena valley fault",
+    "Mosquito fault",
+    "Sandia fault",
+    "Centennial fault",
+    "Teton fault",
+    "Southern Sangre de Cristo fault",
+    "Williams Fork Mountains fault",
+    "Round Valley fault"
+   ],
+   "jaccard_vs_frozen": 0.4286,
+   "n_resolved": 5,
+   "order_holds": 4,
+   "order_holds_strict": 3,
+   "n_pairs": 9,
+   "per_site": {
+    "Madison fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 1
+    },
+    "Round Valley fault": {
+     "p_top10": 0.5235,
+     "p_gated_out": 0.0,
+     "rank_median": 7
+    },
+    "Little Valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 2
+    },
+    "Centennial fault": {
+     "p_top10": 0.9095,
+     "p_gated_out": 0.0,
+     "rank_median": 6
+    },
+    "Antelope Valley fault zone": {
+     "p_top10": 0.0872,
+     "p_gated_out": 0.3272,
+     "rank_median": 10
+    },
+    "Helena valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 4
+    },
+    "Fish Lake Valley fault zone": {
+     "p_top10": 0.0,
+     "p_gated_out": 0.3338,
+     "rank_median": null
+    },
+    "Red Rock fault": {
+     "p_top10": 0.0126,
+     "p_gated_out": 0.0,
+     "rank_median": 10
+    },
+    "Sand Springs Range fault": {
+     "p_top10": 0.0033,
+     "p_gated_out": 0.3368,
+     "rank_median": 10
+    },
+    "Mosquito fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 5
+    }
+   },
+   "order_rows": [
+    {
+     "above": "Madison fault",
+     "below": "Round Valley fault",
+     "both_present": 5235,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Round Valley fault",
+     "below": "Little Valley fault",
+     "both_present": 5235,
+     "p_order_holds": 0.2141
+    },
+    {
+     "above": "Little Valley fault",
+     "below": "Centennial fault",
+     "both_present": 9095,
+     "p_order_holds": 0.8818
+    },
+    {
+     "above": "Centennial fault",
+     "below": "Antelope Valley fault zone",
+     "both_present": 872,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Antelope Valley fault zone",
+     "below": "Helena valley fault",
+     "both_present": 872,
+     "p_order_holds": 0.0
+    },
+    {
+     "above": "Helena valley fault",
+     "below": "Fish Lake Valley fault zone",
+     "both_present": 0,
+     "p_order_holds": null
+    },
+    {
+     "above": "Fish Lake Valley fault zone",
+     "below": "Red Rock fault",
+     "both_present": 0,
+     "p_order_holds": null
+    },
+    {
+     "above": "Red Rock fault",
+     "below": "Sand Springs Range fault",
+     "both_present": 1,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Sand Springs Range fault",
+     "below": "Mosquito fault",
+     "both_present": 33,
+     "p_order_holds": 0.0
+    }
+   ],
+   "intruders": {
+    "Sandia fault": 0.9667,
+    "Silver Lake fault": 0.2736,
+    "Dry Mountain fault": 0.3384,
+    "Teton fault": 0.8799,
+    "Williams Fork Mountains fault": 0.6422,
+    "Freds Mountain fault": 0.2835,
+    "Hartley Springs fault zone": 0.0657,
+    "Southern Sangre de Cristo fault": 0.7635,
+    "Caballo fault": 0.06,
+    "The Lava Beds fault": 0.1542
+   }
+  },
+  "R2_separation_weighted": {
+   "weights": {
+    "age": 0.7475,
+    "slip": 0.2445,
+    "junction": 0.7794,
+    "length": 0.9785,
+    "L1": 0.8156
+   },
+   "top10": [
+    "Madison fault",
+    "Little Valley fault",
+    "Centennial fault",
+    "Round Valley fault",
+    "Helena valley fault",
+    "Mosquito fault",
+    "Sandia fault",
+    "Teton fault",
+    "Southern Sangre de Cristo fault",
+    "Williams Fork Mountains fault"
+   ],
+   "jaccard_vs_frozen": 0.4286,
+   "n_resolved": 5,
+   "order_holds": 3,
+   "order_holds_strict": 3,
+   "n_pairs": 9,
+   "per_site": {
+    "Madison fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 1
+    },
+    "Round Valley fault": {
+     "p_top10": 0.6766,
+     "p_gated_out": 0.0,
+     "rank_median": 3
+    },
+    "Little Valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 3
+    },
+    "Centennial fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 4
+    },
+    "Antelope Valley fault zone": {
+     "p_top10": 0.3377,
+     "p_gated_out": 0.3272,
+     "rank_median": 9
+    },
+    "Helena valley fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 6
+    },
+    "Fish Lake Valley fault zone": {
+     "p_top10": 0.0,
+     "p_gated_out": 0.3338,
+     "rank_median": null
+    },
+    "Red Rock fault": {
+     "p_top10": 0.222,
+     "p_gated_out": 0.0,
+     "rank_median": 10
+    },
+    "Sand Springs Range fault": {
+     "p_top10": 0.0822,
+     "p_gated_out": 0.3368,
+     "rank_median": 10
+    },
+    "Mosquito fault": {
+     "p_top10": 1.0,
+     "p_gated_out": 0.0,
+     "rank_median": 7
+    }
+   },
+   "order_rows": [
+    {
+     "above": "Madison fault",
+     "below": "Round Valley fault",
+     "both_present": 6766,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Round Valley fault",
+     "below": "Little Valley fault",
+     "both_present": 6766,
+     "p_order_holds": 0.4362
+    },
+    {
+     "above": "Little Valley fault",
+     "below": "Centennial fault",
+     "both_present": 10000,
+     "p_order_holds": 0.6662
+    },
+    {
+     "above": "Centennial fault",
+     "below": "Antelope Valley fault zone",
+     "both_present": 3377,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Antelope Valley fault zone",
+     "below": "Helena valley fault",
+     "both_present": 3377,
+     "p_order_holds": 0.0
+    },
+    {
+     "above": "Helena valley fault",
+     "below": "Fish Lake Valley fault zone",
+     "both_present": 0,
+     "p_order_holds": null
+    },
+    {
+     "above": "Fish Lake Valley fault zone",
+     "below": "Red Rock fault",
+     "both_present": 0,
+     "p_order_holds": null
+    },
+    {
+     "above": "Red Rock fault",
+     "below": "Sand Springs Range fault",
+     "both_present": 87,
+     "p_order_holds": 1.0
+    },
+    {
+     "above": "Sand Springs Range fault",
+     "below": "Mosquito fault",
+     "both_present": 822,
+     "p_order_holds": 0.0
+    }
+   ],
+   "intruders": {
+    "Sandia fault": 0.847,
+    "Silver Lake fault": 0.3234,
+    "Dry Mountain fault": 0.1894,
+    "Teton fault": 0.7667,
+    "Williams Fork Mountains fault": 0.5975,
+    "Freds Mountain fault": 0.1493,
+    "Southern Sangre de Cristo fault": 0.712,
+    "The Lava Beds fault": 0.0526
+   }
+  }
+ },
+ "A11iii_verdicts": {
+  "R1_equal_on_survivors": {
+   "BAR_A_resolution_gain": {
+    "passed": true,
+    "was": 4,
+    "now": 5
+   },
+   "BAR_B_order_gain": {
+    "passed": false,
+    "lost": true,
+    "was": 6,
+    "now": 4,
+    "was_strict": 4,
+    "now_strict": 3
+   },
+   "BAR_C_stealth_shuffle": {
+    "triggered": true,
+    "jaccard": 0.4286
+   },
+   "summary": "TRADE, NOT A GAIN -- one bar up, the other down and over half the list changed"
+  },
+  "R2_separation_weighted": {
+   "BAR_A_resolution_gain": {
+    "passed": true,
+    "was": 4,
+    "now": 5
+   },
+   "BAR_B_order_gain": {
+    "passed": false,
+    "lost": true,
+    "was": 6,
+    "now": 3,
+    "was_strict": 4,
+    "now_strict": 3
+   },
+   "BAR_C_stealth_shuffle": {
+    "triggered": true,
+    "jaccard": 0.4286
+   },
+   "summary": "TRADE, NOT A GAIN -- one bar up, the other down and over half the list changed"
+  }
+ }
+}
