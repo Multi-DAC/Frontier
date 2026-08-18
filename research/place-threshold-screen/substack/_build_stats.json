@@ -1,9 +1,23 @@
 {
-  "blocks": 175,
-  "images": 13,
-  "tables_imaged": 3,
-  "tables_reflowed": 44,
-  "words": 6729,
-  "post_bytes": 4312514,
-  "text_only_bytes": 54040
+  "POST.html": {
+    "blocks": 158,
+    "words": 12515,
+    "images": 13,
+    "post_bytes": 4353909,
+    "text_bytes": 87451
+  },
+  "POST-part1.html": {
+    "blocks": 48,
+    "words": 5332,
+    "images": 3,
+    "post_bytes": 385650,
+    "text_bytes": 36524
+  },
+  "POST-part2.html": {
+    "blocks": 112,
+    "words": 7315,
+    "images": 10,
+    "post_bytes": 3970510,
+    "text_bytes": 53178
+  }
 }
