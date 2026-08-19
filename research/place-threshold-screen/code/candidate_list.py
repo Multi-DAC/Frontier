@@ -60,6 +60,7 @@ renderer therefore carries A6's verdict in its header rather than in a footnote.
 a ranking of places by a geophysical criterion whose predictive validity is UNDEMONSTRATED
 and, on the one external test run so far, unsupported. It is a search plan, not a finding.
 """
+import datetime as dt
 import json, math, os, sys
 from datetime import date
 
@@ -109,11 +110,34 @@ def load(path, required=True):
     if not os.path.exists(path):
         if required:
             sys.exit(f"G5 ABORT: declared input missing and no G3 status: {path}")
-        PROV.append(dict(path=path, bytes=None, status="ABSENT"))
+        PROV.append(dict(path=path, bytes=None, mtime=None, status="ABSENT"))
         return None
     b = os.path.getsize(path)
-    PROV.append(dict(path=path, bytes=b, status="read"))
+    PROV.append(dict(path=path, bytes=b,
+                     mtime=dt.datetime.fromtimestamp(os.path.getmtime(path)).isoformat(
+                         timespec="seconds"),
+                     status="read"))
     return json.load(open(path, encoding="utf-8"))
+
+
+def unread_inputs():
+    """G5b: data/*.json that exist and were NOT read by this build.
+
+    G5 as written only proved every number traces to a file. It could not see a
+    file that landed AFTER the last build and was never consulted -- which is the
+    way this deliverable actually goes stale: a leg completes, its result sits in
+    data/, and the list keeps rendering without it and without saying so.
+    """
+    read = {os.path.normpath(p["path"]) for p in PROV}
+    out = []
+    for fn in sorted(os.listdir("data")):
+        if not fn.endswith(".json"):
+            continue
+        p = os.path.normpath(os.path.join("data", fn))
+        if p in read or fn == "candidate_list.json":
+            continue
+        out.append((fn, dt.datetime.fromtimestamp(os.path.getmtime(p))))
+    return out
 
 
 def main():
@@ -453,6 +477,57 @@ def main():
              "rupture supplies the three highest raw scores in the whole 225 (Madison, Red "
              "Canyon, Hebgen — 11.6 and 13.7 km apart). The 50 km separation rule prints it "
              "once. The screen's strongest signal is one earthquake, counted three times.")
+
+    # ------------------------------------------------- G5b: rendered provenance
+    # PROV was collected since the first build and written only into
+    # data/candidate_list.json. Nobody reads that. The staleness this guard
+    # exists to catch is only visible if it reaches the human-facing document.
+    unread = unread_inputs()
+    L.append("")
+    L.append("## Provenance — what this build read, and what it did not")
+    L.append("")
+    L.append(f"Built {dt.datetime.now().isoformat(timespec='seconds')}. "
+             "This block is generated, not asserted.")
+    L.append("")
+    L.append("| input | status | bytes | last written |")
+    L.append("|---|---|---|---|")
+    for p in PROV:
+        L.append(f"| `{p['path']}` | {p['status']} | "
+                 f"{'' if p['bytes'] is None else format(p['bytes'], ',')} | "
+                 f"{p['mtime'] or '—'} |")
+    L.append("")
+    # The discriminating cut is not read-vs-unread -- most of data/ is upstream
+    # input to other legs and always unread here.
+    #
+    # A single "newer than the newest input I read" cut was the obvious rule and it
+    # UNDER-REPORTS: a leg landing at 15:14 hides behind an input read at 15:46
+    # even though this build never consulted it. The cut that does not hide one is
+    # SAME DAY AS THE BUILD -- every result produced in the working session that
+    # this document does not carry. It over-reports (some same-day files are
+    # deliberately not inputs here), and over-reporting is the safe direction:
+    # a named file a reader dismisses costs a glance, an omitted one costs the claim.
+    now = dt.datetime.now()
+    read_m = [p["mtime"] for p in PROV if p["mtime"]]
+    cut = max(read_m) if read_m else None
+    pending = [(fn, m) for fn, m in unread if m.date() == now.date()]
+    if pending:
+        L.append(f"⚠ **{len(pending)} result file(s) in `data/` were written today and "
+                 "were NOT read by this build.** No number above reflects them. A leg "
+                 "completing does not update this document; only a rebuild does, and only "
+                 "for the inputs `main()` declares. Some of these are deliberately not "
+                 "inputs to the list — the guard cannot tell intent, so it names them all.")
+        L.append("")
+        L.append("| written today, unread here | last written | postdates every input read? |")
+        L.append("|---|---|---|")
+        for fn, m in sorted(pending, key=lambda x: x[1], reverse=True):
+            iso = m.isoformat(timespec="seconds")
+            L.append(f"| `data/{fn}` | {iso} | {'yes' if cut and iso > cut else 'no'} |")
+    else:
+        L.append("No `data/*.json` was written today and left unread by this build.")
+    L.append("")
+    L.append(f"*({len(unread) - len(pending)} further `data/*.json` are unread and predate "
+             "today — upstream inputs to other legs, not results of this session.)*")
+
     open("reports/CANDIDATE-LIST.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
 
     print(f"HEAD {len(head)} · BAND {len(band_only)} · FIELD {out['tiers']['FIELD_n']}",

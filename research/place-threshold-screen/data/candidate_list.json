@@ -741,26 +741,31 @@
   {
    "path": "data/rank_resolution.json",
    "bytes": 10914,
+   "mtime": "2026-08-18T14:14:33",
    "status": "read"
   },
   {
    "path": "data/top10_frozen.json",
    "bytes": 2766,
+   "mtime": "2026-08-16T14:11:02",
    "status": "read"
   },
   {
    "path": "data/stage5_join_summary.json",
    "bytes": 61014,
+   "mtime": "2026-08-16T12:56:53",
    "status": "read"
   },
   {
    "path": "data/basement_stability.json",
    "bytes": 88242,
+   "mtime": "2026-08-18T13:19:08",
    "status": "read"
   },
   {
    "path": "data/jurisdiction_leg.json",
    "bytes": 164850,
+   "mtime": "2026-08-18T15:46:24",
    "status": "read"
   }
  ]

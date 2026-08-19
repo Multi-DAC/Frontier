@@ -84,3 +84,29 @@ The screen emits faults; A7 says the fault-level order is not resolved. Single-l
 3. Three-valued. UNMEASURED is not OUT. UNRUN is not 'unconstrained'.
 
 **Not in this table and belonging in the report:** the 1959 Hebgen Lake rupture supplies the three highest raw scores in the whole 225 (Madison, Red Canyon, Hebgen — 11.6 and 13.7 km apart). The 50 km separation rule prints it once. The screen's strongest signal is one earthquake, counted three times.
+
+## Provenance — what this build read, and what it did not
+
+Built 2026-08-18T17:48:59. This block is generated, not asserted.
+
+| input | status | bytes | last written |
+|---|---|---|---|
+| `data/rank_resolution.json` | read | 10,914 | 2026-08-18T14:14:33 |
+| `data/top10_frozen.json` | read | 2,766 | 2026-08-16T14:11:02 |
+| `data/stage5_join_summary.json` | read | 61,014 | 2026-08-16T12:56:53 |
+| `data/basement_stability.json` | read | 88,242 | 2026-08-18T13:19:08 |
+| `data/jurisdiction_leg.json` | read | 164,850 | 2026-08-18T15:46:24 |
+
+⚠ **7 result file(s) in `data/` were written today and were NOT read by this build.** No number above reflects them. A leg completing does not update this document; only a rebuild does, and only for the inputs `main()` declares. Some of these are deliberately not inputs to the list — the guard cannot tell intent, so it names them all.
+
+| written today, unread here | last written | postdates every input read? |
+|---|---|---|
+| `data/jurisdiction4_leg.json` | 2026-08-18T16:17:17 | yes |
+| `data/charge_term.json` | 2026-08-18T16:17:07 | yes |
+| `data/radon_leg.json` | 2026-08-18T15:51:17 | yes |
+| `data/resolution_reweigh.json` | 2026-08-18T15:14:43 | no |
+| `data/positive_control.json` | 2026-08-18T13:47:14 | no |
+| `data/basement_juxtaposition.json` | 2026-08-18T13:15:16 | no |
+| `data/basement_leg.json` | 2026-08-18T12:59:31 | no |
+
+*(30 further `data/*.json` are unread and predate today — upstream inputs to other legs, not results of this session.)*
