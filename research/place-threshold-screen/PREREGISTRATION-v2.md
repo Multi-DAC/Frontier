@@ -1473,12 +1473,21 @@ for the wrong reason, and then its message misdirects the diagnosis it has just 
 2. **The correct control is rebuilt.** `data/null_fault_true.json`; A15 re-derived, A14
    re-running.
 3. **Bar iv is UNRUN until the charge term covers the gate's populations.** The rebuild is
-   launched and resumable. Its wall-clock estimate is **not yet trustworthy** — the first
-   figure quoted (~2.4 h, extrapolated from A13's original 384-fault run) is running well
-   behind at the first check, and the honest statement is that the rate is being measured,
-   not that it is known. Option (2) — ship with bar iv declared UNRUN — is the fallback and
-   costs nothing, because a bar recorded as unrun can be filled later without retracting a
-   word.
+   launched, detached and resumable. **Rate measured rather than extrapolated:** 22 faults
+   scored in 180 s of wall-clock = **8.18 s/fault** (four readings, one per minute,
+   12:38:59 → 12:41:59). 957 pending at the last reading → **~2.2 h, ETA ≈ 14:52 local**.
+   The a-priori estimate (~2.4 h, extrapolated from A13's original 384-fault run) was good
+   to within 10%.
+
+   > ⚠ An earlier version of this clause said the rebuild was *"running well behind at the
+   > first check."* **That was false, and it was not a measurement.** I read a progress index
+   > and paired it with a wall-clock time I had *assumed* rather than read; the real elapsed
+   > was 4 minutes, not 6, and the index counts skipped already-done rows as well as scored
+   > ones. Two errors, both in the direction of alarm. Corrected the same hour, by running
+   > `date` next to `tail` four times instead of once.
+
+   Option (2) — ship with bar iv declared UNRUN — remains the fallback and costs nothing,
+   because a bar recorded as unrun can be filled later without retracting a word.
 4. **Bar iv is NOT to be run on the 65 covered survivors.** That subset is exactly the
    regionally-concentrated draw this whole finding is about. It would answer the question by
    re-committing the error, and it would look like a result.
