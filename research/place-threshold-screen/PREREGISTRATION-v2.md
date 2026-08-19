@@ -927,6 +927,192 @@ jurisdiction column reads `UNRUN` on every row because A8 is still querying; `co
 is the trigger that rebuilds the deliverable when A8 lands, so the rebuild does not depend on
 a future breath remembering to do it.
 
+> **STATUS UPDATE, Day 199 15:46:54 — the trigger fired.** `work/a8_chain.log`: `data/jurisdiction_leg.json`
+> landed at 164,850 bytes, `candidate_list.py` re-ran at exit 0, `HEAD 4 · BAND 19 · FIELD 202`,
+> `jurisdiction: RUN`. The paragraph above is left standing as written rather than edited, because
+> what it describes — a mechanism with a clock attached — is the thing that worked, and rewriting
+> it to the past tense would erase the evidence that it did.
+
+### A8 — Day 199. The founding constraint, applied for the first time. It is decisive and it does not discriminate.
+
+The screen was born from a Forest Service observation. **It had never once been asked whether
+Forest Service land is where its own survivors are.** `code/jurisdiction_leg.py`, two independent
+USFS services — the administrative-boundary layer (`EDW_ForestSystemBoundaries_01`) and the basic
+ownership layer (`EDW_BasicOwnership_01`) — against 400 random western points drawn inside the
+survivors' own bounding box, seed 20260818.
+
+**Both bars declared before the first query, and they split.**
+
+| | survivors (n = 225) | random western ground (n = 400) | contrast |
+|---|---|---|---|
+| ADMIN boundary | 25.78% | 18.75% | **+7.0 pp** |
+| OWNership | 25.78% | 19.25% | +6.5 pp |
+
+**BAR i (discriminates): FAILS at +7.0 pp.** **BAR ii (decisive for the band): PASSES, and hard —
+it removes 13 of the 23 contender-band sites**, including Madison (rank 1), Centennial, Antelope
+Valley, Fish Lake Valley, Sand Springs Range, White Mountains, Bear River, Red Rock, Mono Lake,
+McAfee Canyon, Teton, Helena valley and Southern Sangre de Cristo.
+
+**That combination is the finding, and it is uncomfortable.** A criterion that barely separates
+survivors from random ground but deletes 57% of the shortlist is not measuring the hypothesis —
+it is measuring land tenure and then reshuffling the answer with it. **Recorded as a flag on each
+row, never as a score and never as a gate**, which is rule 3 of A9's deliverable, now with the
+measurement that earns it.
+
+**The confound is stated in the artefact itself, not discovered later:** National Forest land is
+mountainous public land, and Quaternary range-front normal faults are mountainous. The correlation
+runs *toward* the hypothesis, which is the entire reason the matched null exists.
+
+### A11 — Day 199. Drop the dead weight. One term dies, and dropping it is a TRADE, not a gain.
+
+Clayton's direction: *"drop the dead weight and reweigh on terms with actual resolution."*
+**Resolution measure declared before scoring:** `sep(term) = 1 − Σ share²` — exactly the probability
+that two randomly drawn sites get different values from that term. No free parameter. **Dead-weight
+bar: sep < 0.5**, justified as the best a perfectly balanced binary flag can do.
+
+| term | sep | distinct | modal share | verdict |
+|---|---|---|---|---|
+| length | 0.9785 | 75 | 0.049 | RESOLVES |
+| L1 (quartz) | 0.8156 | 7 | 0.307 | RESOLVES |
+| junction | 0.7794 | 5 | 0.324 | RESOLVES |
+| age | 0.7475 | 6 | 0.373 | RESOLVES |
+| **slip** | **0.2445** | 4 | **0.862** | **DEAD WEIGHT** |
+
+**The bar killed exactly one term and did not over-kill** — worth stating, because a bar that kills
+everything is not a bar. `slip` separates 24% of site pairs; its value for 86.2% of the field is one
+number, and the 14% that differ differ by a **USGS slip-rate reporting-class boundary**, which is a
+mapper's binning decision rather than a measured rate.
+
+**Both reweighings then failed to buy anything.** 10,000 draws, two variants — R1 equal-weight on
+survivors, R2 separation-weighted:
+
+| variant | BAR A (resolution gain) | BAR B (order gain) | BAR C (stealth shuffle) |
+|---|---|---|---|
+| R1 equal | **PASS** 4 → 5 resolved | **FAIL** — order pairs 6 → 4 | **TRIGGERED**, Jaccard 0.4286 |
+| R2 sep-weighted | **PASS** 4 → 5 resolved | **FAIL** — order pairs 6 → 3 | **TRIGGERED**, Jaccard 0.4286 |
+
+**Verdict: TRADE, NOT A GAIN.** One bar up, the other down, and **over half the shortlist changes
+membership** for it. Removing a term that resolves nothing still moves names, because it was
+contributing a constant that the other terms were being read against. Filed as measured; the frozen
+list is not re-cut on this.
+
+### A12 — Day 199. Jurisdiction on Clayton's four classes. The prediction held, and the class he named most confidently runs backwards.
+
+Clayton's direction: *"it's very likely all sites will sit in either government, federal, military,
+or Native land."* A8 (USFS only) stays; A12 widens to the four. Classes mapped onto **BLM National
+Surface Management Agency layer 1** (`ADMIN_DEPT_CODE` / `ADMIN_AGENCY_CODE`) and **TIGERweb AIANNHA
+layers 2/3/4**. **Layers 7–10 deliberately excluded**: Oklahoma Tribal / State Designated / Tribal
+Designated *Statistical* Areas are census geographies, not land tenure, and counting them as Native
+land would silently double the class across eastern Oklahoma. Null borrowed from A8 — same seed,
+same bbox, same sequence — so the two legs stand on identical ground.
+
+**The prediction, declared first, was that the filter would NOT discriminate**, because federal
+ownership alone is roughly half the eleven western states.
+
+**The positive control caught two defects before the leg ran.** (1) My own docstring was false: it
+claimed the "without PriUnk" service excludes private parcels, so an empty response meant
+no-public-agency — the service returns `PVT` as a feature, on 2 of 5 control points. (2) **I had
+hand-guessed the agency codes and guessed wrong — `FS` where the service says `USFS`.** Every Forest
+Service point, the founding claim's own class, would have scored `federal = False`. Fixed by pulling
+`returnDistinctValues`: 33 authoritative (dept, agency) pairs. **One query removed the need to be
+lucky**, and `unmapped_agency_codes` is emitted as a field — currently `[]` — so a future
+classification miss cannot read as a class absence.
+
+| class | survivors | random western ground | contrast |
+|---|---|---|---|
+| federal | 68.44% | 50.25% | **+18.19 pp** |
+| **union of all four** | **74.22%** | **55.50%** | **+18.72 pp** |
+| military | 3.56% | 1.75% | +1.81 pp |
+| govt (state/local) | 4.89% | 3.75% | +1.14 pp |
+| **tribal** | **1.78%** | **8.50%** | **−6.72 pp** |
+| private | 26.22% | 32.00% | −5.78 pp |
+| union **within 10 km** | **98.28%** | **69.10%** | **+29.18 pp** |
+
+**BAR i (discriminates): PASSES.** **BAR ii (decisive): FAILS** — 5 of the 23-band removed, 21.7%.
+**BAR iii (fallback becomes a class label): FAILS**, which is the good outcome: the 10 km buffer is
+reported as its own field and never merged into `union`, because "on federal land" and "within 10 km
+of federal land" are different claims and merging them launders the weaker one.
+
+**Three consequences, two of them against the hypothesis as stated.**
+
+1. **Tribal land is ANTI-correlated with this screen's survivors** — 1.78% against a base rate of
+   8.50%, the only negative class, inverted by nearly a factor of five. Three of Clayton's four
+   hold; the fourth does not. This is a real fact about where Quaternary normal faults sit, not a
+   layer defect.
+2. **The union cannot be decisive, exactly as predicted.** At 10 km it passes 98.28% of survivors.
+   A filter that removes 1.7% of what it filters is a description, not a screen.
+3. **And the strict version removes the head of the list.** The five it drops — **Madison (rank 1),
+   Centennial (6), Antelope Valley (7), Bear River (14), Helena valley (43)** — are every one `PVT`
+   at their own coordinate and every one `near10_union = True`, with BLM / State / USFS inside 10 km.
+   The choice is between a filter that deletes the only site A7 resolves to an integer position and
+   a filter that deletes almost nothing.
+
+### A13 — Day 199. The charge term, generalised past quartz. All three bars fire, and the incumbent gate was excluding almost the whole top of the new term.
+
+Clayton asked whether anything other than quartz is piezoelectrically or electromagnetically active.
+**There is — and the answer is worse than "there are others": the strongest lab result in the
+literature points at rock this screen currently scores as a NEGATIVE.** `code/lithology_probe.py:45`
+lists `basalt`, `gabbro` and `ophiolite` among the terms a site is penalised for containing.
+
+Freund and colleagues loaded air-dry tiles of granite, anorthosite, gabbro, limestone and marble and
+measured stress-activated current out of the stressed volume; **anorthosite and gabbro produced
+10–50× the current of granite.** The carriers are positive holes activated from **peroxy defects
+`O₃X–OO–XO₃`, X = Si or Al** — a defect of the *silicate framework*, present in igneous and
+high-grade metamorphic rock generally. Quartz is not required.
+
+> **EVIDENCE GRADE: SECONDARY, carried as a field in `charge_term.json` rather than a footnote.**
+> Two independent reads returned the same rock ordering and the same order of magnitude, but both
+> paraphrase the same body of work and the primary text could not be read (ScienceDirect 403s; the
+> arXiv PDF returned binary the fetcher could not decode). The 10–50× figure is **unconfirmed against
+> primary source** and is deliberately **encoded at 2.5×**, because letting one unread paper set a
+> weight would let it dominate the ranking. Enough to justify measuring the rock; not enough to rank on.
+
+**A second incumbent defect nobody in this project had stated:** bulk piezoelectric response requires
+crystallographic alignment. Randomly oriented quartz grains in a granite largely cancel. The
+classifier already half-knows this — it separates `TIER_FABRIC` from `TIER_PLUTONIC` and says at
+`lithology_probe.py:25` that the distinction is deliberate — **and then the screen collapses both
+into one `quartz_frac` and ranks on the sum. The distinction was measured and then discarded.**
+
+**Six pathways, weights declared before any node was scored**, scored as a **weighted max, not a sum**
+(a sum would let a rock mediocre on four pathways outscore one excellent on the strongest, which is an
+additivity claim nobody has evidence for):
+
+| pathway | w | signature |
+|---|---|---|
+| P1a peroxy, mafic | 1.00 | gabbro, anorthosite, norite, diabase, basalt, granulite, amphibolite |
+| P2 piezo, **aligned** | 0.75 | quartzite, mylonite, quartz vein, schist, orthogneiss, tourmaline pegmatite |
+| P4 piezomagnetic | 0.50 | magnetite, iron formation, serpentinite, ultramafic, skarn |
+| P5 conductive channel | 0.50 | graphite, black shale, sulphide, pyrite, serpentinite |
+| P1b peroxy, felsic | 0.40 | granite, granodiorite, gneiss, monzonite, syenite |
+| P3 piezo, **unaligned** | 0.25 | granite, rhyolite, aplite — the incumbent term at the weight its own cancellation argument implies |
+
+**The P1 split was forced by the smoke test**, which is why it exists: on one P1 list granite scored
+1.00 exactly as gabbro did, and BAR iii could never have fired.
+
+**Population: all 507 stage-2 nodes (392 distinct faults), NOT the 225 gate survivors.** This is the
+whole point and not an efficiency choice — scoring a generalised term only on rock that already passed
+a *quartz* gate builds the fixture where the right and wrong answers agree.
+
+**RESULTS. 384 of 392 scored; 8 errors, reported not absorbed.**
+
+| bar | declared before scoring | measured | verdict |
+|---|---|---|---|
+| i — **distinct** from the incumbent | Spearman ρ(charge, quartz) < 0.7 | **ρ = 0.2547** | **PASSES** |
+| ii — **consequential** | the terms disagree about the head | **49 of the top 50 by charge were gated OUT by quartz** | **PASSES** |
+| iii — **mafic actually moves** | the rock Freund points at rises | **n = 157 mafic, median rank move = 132 places** | **PASSES** |
+
+**ρ = 0.25 is the number that matters.** The two terms are very nearly orthogonal — not two
+measurements of one property, two different properties, of which this screen has only ever measured
+one. **49 of the top 50 sites on the new term never entered the old ranking at all**: not ranked low,
+*gated out*.
+
+**Every claim here is about which rock the term selects, which is measured. None of it is about how
+much current that rock makes, which is not.**
+
+**And the top site loses ground on its own generalisation.** Madison at `quartz = 1.00 → charge = 0.75`
+— its gneiss is felsic-peroxy and aligned-piezo rather than mafic. The pre-registered prediction
+survived contact with the site that had most to lose from it.
+
 ### A15 — Day 199. The radiogenic / radon term. Clayton asked for it; it comes back negative for radon and positive for granite.
 
 Pre-registered in `code/radon_leg.py` before the first sample: mechanism, three populations,
