@@ -87,7 +87,7 @@ The screen emits faults; A7 says the fault-level order is not resolved. Single-l
 
 ## Provenance — what this build read, and what it did not
 
-Built 2026-08-18T17:48:59. This block is generated, not asserted.
+Built 2026-08-18T19:08:08. This block is generated, not asserted.
 
 | input | status | bytes | last written |
 |---|---|---|---|
@@ -97,10 +97,11 @@ Built 2026-08-18T17:48:59. This block is generated, not asserted.
 | `data/basement_stability.json` | read | 88,242 | 2026-08-18T13:19:08 |
 | `data/jurisdiction_leg.json` | read | 164,850 | 2026-08-18T15:46:24 |
 
-⚠ **7 result file(s) in `data/` were written today and were NOT read by this build.** No number above reflects them. A leg completing does not update this document; only a rebuild does, and only for the inputs `main()` declares. Some of these are deliberately not inputs to the list — the guard cannot tell intent, so it names them all.
+⚠ **8 result file(s) in `data/` were written today and were NOT read by this build.** No number above reflects them. A leg completing does not update this document; only a rebuild does, and only for the inputs `main()` declares. Some of these are deliberately not inputs to the list — the guard cannot tell intent, so it names them all.
 
 | written today, unread here | last written | postdates every input read? |
 |---|---|---|
+| `data/water_leg.json` | 2026-08-18T18:17:19 | yes |
 | `data/jurisdiction4_leg.json` | 2026-08-18T16:17:17 | yes |
 | `data/charge_term.json` | 2026-08-18T16:17:07 | yes |
 | `data/radon_leg.json` | 2026-08-18T15:51:17 | yes |
