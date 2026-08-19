@@ -1183,3 +1183,115 @@ neurotoxicant whose decay products are retained alpha emitters. Had this leg fou
 ground, it would have strengthened the *ordinary* explanation for "places where people report
 feeling strange", not the extraordinary one. It found the opposite, which removes a mundane
 confound from the sites the screen names. That is a small, real, and unglamorous contribution.
+
+---
+
+# A14 — THE WATER / ELECTROKINETIC TERM
+
+**Landed 2026-08-18 18:17:44 (Day 199), 2h05m after launch. Pre-registered in
+`code/water_leg.py`'s docstring before the first query: mechanism, sign of sigma,
+populations, prediction and five bars.** Filed by the evening-integration drive,
+which found it had landed and found the amendment's own status table still saying
+`RUNNING` — the mechanism-with-a-clock fired and logged, and nothing owned the
+filing. Same shape as A8. Named here rather than quietly fixed.
+
+## The declared prediction, and what happened to it
+
+The docstring committed to this, in these words: *"Survivors will show substantially
+more springs and more relief than NULL-RANDOM (near-tautological) and will show NO
+significant difference from NULL-FAULT on any of the three terms. I expect this leg
+to return a null on every bar that carries information."*
+
+| bar | test | result |
+|---|---|---|
+| **i LEAKS** | springs vs NULL-RANDOM | **PASS** — 70 vs 30.0, p=0.0001. Expected; means little. |
+| **ii DISCRIMINATES** | springs vs NULL-FAULT | **FAIL** — 70 vs 61.5, diff +8.5, **p=0.4051** |
+| **iii GRADIENT** | relief vs NULL-FAULT | **PASS** — 733.1 m vs 439.1 m, +294 m, p=0.0001 |
+| **iv PERENNIAL** | perennial flowlines vs NULL-FAULT | **PASS** — 55 vs 11, +44, p=0.0001 |
+| **v INDEPENDENT** | rho(water, screen) below 0.7 | **PASS** — rho = **0.0832**, near-orthogonal |
+
+n: survivors 225, NULL-FAULT 326, NULL-RANDOM 400 for the NHD terms and **370 for the
+two 3DEP terms** — 30 random points returned no elevation sample. The denominators
+differ *within one table* and are printed per row rather than stated once at the top.
+
+Read off that table alone, A14 is the project's first strong positive: two of three
+information-carrying bars fire hard against the matched control, and the term is
+orthogonal to the incumbent score. **Both of the next two sections take that away.**
+
+## THE TIE-BREAKER CLAIM IS DEAD — and it died of a units mismatch I wrote myself
+
+A7 imposed a constraint on every new criterion: it may only reorder the 23-member
+contender band if it separates that band by more than the band's own score wobble.
+The leg's own emitted answer looked emphatic —
+
+    water_score_spread = 0.6934      screen_score_spread = 0.2797
+
+— a 2.5x separation. **It is not a comparison.** `water_score` is *rank-normalised
+over the 225 survivors* (`rank_norm`, `code/water_leg.py:457`), so it spans 0 to 1 by
+construction and is uniform by construction. `score` is the screen's raw composite.
+The two spreads are in different units and their ratio means nothing. I wrote both
+lines, in the same function, and the emitted note (*"Reported, not asserted"*) did
+not save me from reading it as a result.
+
+**The test it should have run, run now.** Permute `water_score` across the 225 and
+recompute the band's spread — 20,000 draws, seed 20260818:
+
+    observed band spread          0.6934
+    null median                   0.6845      5th pct 0.5476   95th pct 0.8110
+    P(random relabelling <= obs)  0.5404
+
+The observed separation sits at the **54th percentile of a random relabelling of its
+own values.** A14 does not separate the band. It is a **LABEL**, exactly as the
+docstring's fallback clause required, and the incumbent ordering stands.
+
+And there is a second, worse problem with the comparison as specified: the contender
+band was *defined by A7 as the set of near-ties on the screen score.* Its screen-score
+spread is small **by construction**. Any other variable on earth will look more
+separating on that set. The comparison was circular before it was mis-united, and the
+permutation null is the only version of it that carries information.
+
+## AND BAR iv DOES NOT SURVIVE ITS OWN CONFOUND
+
+Bars iii and iv are not two findings. Relief discriminates at +294 m; perennial water
+follows relief, because water runs downhill from where the head is. Stratifying the
+survivor / NULL-FAULT comparison by pooled relief quartile:
+
+| relief quartile | n surv | n fault | surv median | fault median | diff | p |
+|---|---|---|---|---|---|---|
+| Q1 (below 300.8 m) | 22 | 116 | 27.5 | 0.0 | **+27.5** | **0.0037** |
+| Q2 (300.8–559.8) | 43 | 95 | 8.0 | 18.0 | −10.0 | 0.4755 |
+| Q3 (559.8–867.4) | 81 | 57 | 48.0 | 29.0 | +19.0 | 0.5183 |
+| Q4 (above 867.4 m) | 79 | 58 | 111.0 | 88.0 | +23.0 | 0.3123 |
+
+**Three of four strata are null and one points the wrong way.** The p=0.0001 in the
+headline table is Simpson's paradox: 160 of 225 survivors sit in the top two relief
+quartiles against 115 of 326 matched faults, and perennial mileage tracks relief. The
+unstratified test was measuring *terrain*, and terrain is what A7 already knows the
+screen selects. The one surviving stratum is the thinnest survivor bucket (n=22)
+against a fault median of exactly **0.0** — a floor, not a contrast.
+
+## What A14 actually returns
+
+**The pre-registration was right and my first reading of the bar table was wrong, in
+the direction that flattered the project.** The honest statement:
+
+1. The screen did **not** select wetter faults. Spring density is a fault property,
+   not a screen property (bar ii, p=0.41).
+2. The perennial-water advantage is **terrain re-labelled**, and does not survive
+   relief stratification.
+3. The water score is genuinely orthogonal to the screen score (rho=0.08) and
+   genuinely **useless as a tie-breaker** (permutation p=0.54). Orthogonality is not
+   information; a fair coin is orthogonal to everything.
+4. What remains standing is **relief**, which is not a water result. It is the
+   observation that this screen selects high, steep ground — already priced by A7,
+   and a confound that A8 (USFS land is mountainous) and A12 (jurisdiction tracks
+   terrain) both flagged from their own directions. Three legs now converge on the
+   same nuisance variable.
+
+The correct use of A14 in the rewrite is one sentence in the methods and one line in
+the limitations. **It does not change a single name or a single position on the list.**
+Its value is that it was pre-registered, so its failure is interpretable — the sign of
+sigma was declared before the query, and a version of this leg that scored salinity
+positively would have produced a confident, ranked, physically-backwards result.
+
+**A14 closes the leg set. Every leg is now landed and filed.**
