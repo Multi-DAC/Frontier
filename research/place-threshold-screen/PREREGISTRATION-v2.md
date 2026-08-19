@@ -1294,4 +1294,191 @@ Its value is that it was pre-registered, so its failure is interpretable — the
 sigma was declared before the query, and a version of this leg that scored salinity
 positively would have produced a confident, ranked, physically-backwards result.
 
-**A14 closes the leg set. Every leg is now landed and filed.**
+**A14 closed the leg set as it stood on Day 199.**
+
+> ⚠ **SUPERSEDED, Day 200 / 2026-08-19.** That sentence was true when written and
+> stopped being true the next morning. A14 and A15 were both **re-derived on a rebuilt
+> control**, and a sixth leg (A16, Clayton's current/hydroelectric term) was written.
+> See **A16/A17** below — the control this leg compared itself against was drawn from
+> the wrong sampling frame, and the relief result quoted above is the most exposed
+> number in the whole round.
+
+---
+
+# A16 / A17 — THE CONTROL WAS DRAWN FROM THE WRONG FRAME, AND THE GUARD THAT CAUGHT IT WAS WATCHING SOMETHING ELSE
+
+**Day 200 / 2026-08-19. Not a leg. A finding about the control population two landed legs
+had already used, found while wiring a sixth leg Clayton asked for, by an abort written for
+an unrelated reason.** Filed here rather than left in `work/` — the D199 filing of
+A8/A11/A12/A13 had to be rescued from exactly that ignored directory, and this amendment is
+the rescue happening once instead of twice.
+
+## What A14 and A15 declared, and what they built
+
+Both docstrings, in these words:
+
+> `NULL-FAULT  400 stage-2 nodes that FAILED the L1 gate. THE BAR THAT MATTERS.`
+
+`code/water_leg.py:423-437` took survivors from **stage 5** and built the control by
+subtracting survivor *names* from **stage 2**. Those are different draws:
+
+| | file | population |
+|---|---|---|
+| survivors (treatment) | `data/stage5_join_summary.json` | 1,399 screened; 242 passed; **1,157 failed** |
+| NULL-FAULT (control) | `data/transport_screen_stage2.json` | 507 nodes → **392** distinct faults |
+
+**159 of 225 survivors — 71% — were never in the file the control was drawn from.**
+`nm in surv_names` cannot tell *"tested by the gate and failed"* from *"never in the gate's
+roster at all"*; both fall through the same `continue`. The gate's real 1,157 failures were
+never used.
+
+Measured after recovery, which sharpens rather than softens the diagnosis: of the old
+control's 326 members, **318 had genuinely failed the gate**, 5 were never screened, and
+**3 had actually PASSED it**. The members were mostly legitimate. The defect is that they
+are a **27.5% subset of the true failure population, drawn from an earlier, narrower,
+regionally-concentrated draw** — precisely the shape that manufactures a terrain difference
+out of nothing.
+
+**Most exposed: A14's relief result**, survivors 733.1 m vs NULL-FAULT 439.1 m, p=0.0001.
+A regional-versus-national draw difference *is* a terrain difference, and A14 spent its
+entire closing analysis attributing that number to Simpson's paradox across relief
+quartiles. The frame mismatch was a competing explanation for the same table, and A14 never
+weighed it because A14 believed its control was matched.
+
+## Why it survived a re-read, and how it was actually caught
+
+Both populations are western Quaternary faults: same schema, same field names, plausible
+values throughout. Nothing errored, nothing was empty, every downstream number was finite
+and orderable. **A population defect has no signature at the row level.**
+
+It was not caught by reading A14. It was caught by an abort put into `code/current_leg.py`
+for an unrelated reason — *if the A13 charge join covers under 50% of a population, stop,
+because bar iv would otherwise report a null that is a JOIN FAILURE rather than a physics
+result.* It fired at 65/225 on the first real run. Asking **why 65** is what surfaced the
+frame mismatch.
+
+**A guard on a join found a defect in a population.** Write the coverage guard even when the
+join is obviously fine; it reads a variable nothing else in the pipeline reads.
+
+## A correction this amendment makes to its own first draft
+
+The pre-flight memo recorded that the gate's 1,157 failures were *"not stored as a roster
+anywhere on disk"* — checked, and written next to the word *checked*. **False.** The search
+was scoped to this project's `data/` directory; the full 1,399-row stage-5 join table had
+been on disk the whole time in the **carapace** repo's `work/stage5_join.json`, where the
+pipeline originally ran before the project moved. Verified same-run rather than same-shape:
+its 225 complete ungated rows are name-identical and score-identical (0 mismatches) to
+`survivors_ranked`.
+
+A **negative existence claim silently inherits the scope of the search that produced it.**
+It cost a correct diagnosis an incorrect price tag — hours of refetching quoted for something
+that was a file read away, and the rebuild then took four minutes.
+
+Recovered as `data/stage5_join_rows.json`; the correct control as `data/null_fault_true.json`.
+`water_leg.py` and `radon_leg.py` both draw from it, each with a `len(pool) >= 1000` abort so
+a silent collapse back to a small pool cannot recur.
+
+## Re-derivation on the true control — A15 / radon
+
+**Every bar verdict unchanged.** The numbers moved exactly as a frame artefact should when it
+is removed, and nothing flipped:
+
+| statistic | vs NULL-FAULT, old control | vs NULL-FAULT, true control |
+|---|---|---|
+| eU | diff +0.034, p=0.73 | diff −0.041, p=0.68 |
+| eU/eTh ratio | diff −0.0091, p=0.15 | diff −0.0144, p=0.067 |
+| eTh | diff +1.548, **p=0.0005** | diff +0.894, **p=0.014** |
+| ratio @10 km | diff −0.0151, p=0.0067 | diff −0.0148, p=0.0075 |
+
+Coverage rose 0.963 → 0.983 and n rose 314 → 393, so the new control is also better measured.
+The eTh contrast survives but is **halved** — the old control was thorium-poor relative to the
+true failure population, a regional-draw artefact behaving exactly as predicted.
+
+## A17 — the rebuild does NOT unblock A16, and the pre-flight said it did
+
+The pre-flight's standing decision read: *"the leg is blocked on a correct NULL-FAULT, not on
+its own design."* **The second clause is false.** The abort fired on **survivors, 65/225** —
+the arm the control rebuild does not touch. Rebuilding NULL-FAULT changes the other loop
+iteration and nothing else, so A16 would have aborted at the identical line after A14 landed.
+
+The blocker is A13's charge term, and A13 is **not** at fault. `code/charge_term.py:89`
+declares its population in capitals, before any query: *"all 507 stage-2 nodes, NOT the 225
+gate survivors"* — a deliberate choice, because scoring a generalised term only on rock that
+already passed a quartz gate builds the fixture where right and wrong agree. Set arithmetic
+confirms it kept its word: all **384** of its keys lie inside stage-2's 392 distinct faults,
+**zero outside**; only **66** survivors are in stage-2 at all, and 65 of those 66 are scored.
+Survivor coverage is capped at 29% **by construction**.
+
+The declaration existed. The consumer never read it. **The defect is in A16's design.**
+
+### The part worth keeping: coverage asymmetry is a direct gauge of the frame defect
+
+Control-arm coverage over treatment-arm coverage:
+
+    OLD control   97.5% / 28.9%  =  3.38x
+    TRUE control  25.2% / 28.9%  =  0.87x
+
+A covariate that covers 98% of one arm and 29% of the other is **not a covariate with missing
+data. It is a proxy for arm membership** — its missingness pattern carries the group label, so
+any interaction built on it is partly a contrast between two draws. That is the same artefact
+A16 exists to detect, arriving through the covariate instead of through the outcome.
+
+The collapse to 0.87x is an **independent confirmation that the control rebuild worked**, from
+a quantity nobody was watching and no bar was declared on. *(The 25.2% figure was a
+**prediction** at filing time, computed by replicating the draw — `random.Random(SEED+1)` over
+the same pool with the same name-normalisation, first 400 — and is checkable against
+`data/water_leg.json` once A14 lands.)*
+
+### How close this came to shipping silently
+
+The 50% floor that fired was written to catch a **name-join** failure; its abort message said
+so, and that wording sent the diagnosis to string-matching for twenty minutes. It caught a
+**population** mismatch by luck of magnitude — 28.9% is far below 50%. Had A13 covered, say,
+60% of the survivors, bar iv would have run, produced a finite interaction coefficient on a
+coverage-asymmetric covariate, and reported it as physics.
+
+**The threshold that fired was not measuring the thing that was wrong.** A guard can be right
+for the wrong reason, and then its message misdirects the diagnosis it has just enabled.
+
+## What changed in the code
+
+`code/current_leg.py`
+- **Both arms are measured before either guard fires.** The original `sys.exit()`ed on the
+  first arm, which hid the second arm's number and is the direct cause of the pre-flight's
+  wrong sentence.
+- **New coverage-ASYMMETRY guard at 2.0x**, checked *before* the floor because it names the
+  real defect.
+- **Bar iv degrades to UNRUN-with-reason** instead of killing the leg. Bars i/ii/iii/v read
+  flow, not charge, and `may_reorder_list` never consulted bar iv — so the leg can answer
+  Clayton's actual question, which was about water, with one bar explicitly unrun. This
+  follows the project's G3 convention: an absent leg emits UNRUN on every row, never an
+  omitted column.
+- `bars.bar_iv_status` added, so a `null` is not read as a FAIL.
+- Docstring: *"same 326 NULL-FAULT"* corrected, and the count deliberately **not** restated —
+  a docstring is narration and would rot again; `data/water_leg.json` is the state.
+
+`code/charge_term.py`
+- Roster widened to stage-2 ∪ the full 1,399-row stage-5 join ∪ the 1,157 true failures =
+  **1,405 distinct faults, 1,014 pending**. A **superset, not a retreat**: every original
+  member and every original score is kept, and the reasoning in the POPULATION docstring is
+  unchanged. Anything scored before the change is byte-identical after it.
+- `--roster-only` added. A roster costs hours to discover a defect in and seconds to print.
+- Note: `state["done"]` holds 392 entries against 384 rows. The gap is the leg's own
+  `errors: 8` — attempted, failed, marked done, never retried. They stay unscored.
+
+## Standing decisions
+
+1. **Nothing ships claiming a vs-NULL-FAULT result on the old control.** Clayton's call,
+   taken D200: hold and ship **one complete report**, not a clean part-one plus a part-two.
+2. **The correct control is rebuilt.** `data/null_fault_true.json`; A15 re-derived, A14
+   re-running.
+3. **Bar iv is UNRUN until the charge term covers the gate's populations.** The rebuild is
+   launched and resumable. Its wall-clock estimate is **not yet trustworthy** — the first
+   figure quoted (~2.4 h, extrapolated from A13's original 384-fault run) is running well
+   behind at the first check, and the honest statement is that the rate is being measured,
+   not that it is known. Option (2) — ship with bar iv declared UNRUN — is the fallback and
+   costs nothing, because a bar recorded as unrun can be filled later without retracting a
+   word.
+4. **Bar iv is NOT to be run on the 65 covered survivors.** That subset is exactly the
+   regionally-concentrated draw this whole finding is about. It would answer the question by
+   re-committing the error, and it would look like a result.

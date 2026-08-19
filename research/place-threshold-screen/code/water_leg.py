@@ -57,7 +57,12 @@ points:
   SURVIVORS   the 225 that passed the L1 gate.
   NULL-RANDOM 400 points, SAME SEED and SAME bbox derivation as A8/A12/A15 -- shared draw,
               not shared verdict. Reported, but it is the WEAK comparison and is labelled so.
-  NULL-FAULT  400 stage-2 nodes that FAILED the L1 gate. THE BAR THAT MATTERS.
+  NULL-FAULT  400 faults drawn from the 1,157 that FAILED the L1 gate. THE BAR THAT MATTERS.
+              REBUILT D200: this line used to read "400 stage-2 nodes that FAILED the L1
+              gate" and the code did not build that. It subtracted survivor names from an
+              earlier 392-fault regional draw, which cannot distinguish "failed the gate"
+              from "was never in the roster". The gate's real 1,157 failures are now used;
+              see the note at the construction site and data/null_fault_true.json.
 
 AND THE SECOND CONFOUND, which A7-iv already priced for the junction term and which applies
 here unchanged: NHD spring density is a MAPPING density. Springs are recorded where someone
@@ -420,16 +425,29 @@ if __name__ == "__main__":
     print(f"[A14] null-random={N_NULL} in bbox {tuple(round(b,2) for b in bbox)}", file=sys.stderr)
     null_r = run(rpts, "null-rand")
 
-    surv_names = {s["fault_name"] for s in surv}
+    # NULL-FAULT -- REBUILT D200. The original construction subtracted survivor NAMES from
+    # data/transport_screen_stage2.json, an EARLIER AND NARROWER regional draw (392 distinct
+    # faults) than the stage-5 gate's national population (1,399). Measured: only 66 of the
+    # 225 survivors were in stage-2 at all, so 71% of the treatment group was never in the
+    # file the control came from, and `nm in surv_names` cannot tell "tested and failed" from
+    # "never in the roster". Of the 326 it produced, 318 had genuinely failed the gate, 5 were
+    # never screened, and 3 had actually PASSED it -- so the members were mostly legitimate;
+    # the defect is that they were a 27.5% REGIONALLY-CONCENTRATED subset of the true failure
+    # population, which is exactly the shape that manufactures a terrain difference.
+    # The real roster was recovered from the full stage-5 row table -- see
+    # data/null_fault_true.json provenance. Draw is now from all 1,157 L1 failures.
+    true_ctrl = json.load(open("data/null_fault_true.json"))
+    surv_names = {" ".join(s["fault_name"].split()) for s in surv}
     pool, seen = [], set()
-    for n in stage2:
-        nm = (n.get("fault_name") or "").strip()
+    for n in true_ctrl["rows"]:
+        nm = " ".join((n.get("fault_name") or "").split())
         if not nm or nm in surv_names or nm in seen:
             continue
         if n.get("lat") is None or n.get("lon") is None:
             continue
         seen.add(nm)
         pool.append(dict(fault=nm, lat=n["lat"], lon=n["lon"]))
+    assert len(pool) >= 1000, f"[A14] NULL-FAULT pool collapsed to {len(pool)}; expected ~1157"
     rnd2 = random.Random(SEED + 1)
     rnd2.shuffle(pool)
     print(f"[A14] null-fault={min(N_NULL,len(pool))} of {len(pool)} non-survivor faults",

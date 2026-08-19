@@ -86,12 +86,21 @@ once by the incumbent quartz map and once by the pathway map. Paired, on identic
 The incumbent's Macrostrat cache was lost with an untracked work/ directory, so this run
 rebuilds it as a side effect.
 
-POPULATION: all 507 stage-2 nodes, NOT the 225 gate survivors.
+POPULATION: originally all 507 stage-2 nodes, NOT the 225 gate survivors.
   This is the whole point and it is not an efficiency choice. The L1 gate passed 242 and
   failed 1157. If the generalised term is scored only on rock that already passed a
   QUARTZ gate, it can confirm the gate and can never overturn it -- the fixture would be
   built where the right and wrong answers agree. The mafic rock the Freund result points at
   is, by construction, on the far side of that gate.
+
+  ! WIDENED D200 / 2026-08-19, and the reasoning above is UNCHANGED -- this is a superset,
+    not a retreat. The roster is now stage-2 UNION the full 1,399-row stage-5 join table
+    UNION the 1,157 true L1 failures (see __main__). Reason: the stage-2-only roster was
+    correct for A13's OWN question and unusable as a covariate for A16's, which draws from
+    stage 5 -- it covered 65/225 survivors against 318/326 of the old control, a 3.4x
+    coverage asymmetry that makes missingness a proxy for arm membership. Widening keeps
+    every original member and every original score; it only adds. Anything scored before
+    this change is byte-identical after it. work/a17_charge_coverage_frame.md.
 
 DECLARED BEFORE THE FIRST QUERY:
 
@@ -210,17 +219,49 @@ def spearman(xs, ys):
 
 
 if __name__ == "__main__":
-    nodes = json.load(open("data/transport_screen_stage2.json"))["all"]
-    seen, todo = set(), []
-    for n in nodes:
-        nm = (n.get("fault_name") or "").strip()
-        if not nm or nm in seen:
+    # ROSTER -- CHANGED D200 / 2026-08-19, and the docstring's POPULATION line above changed
+    # with it. The original roster was stage-2 alone, which was HONEST (it said so in caps)
+    # and made this leg unusable as a covariate for anything drawn from stage 5: it covers
+    # only 65 of the 225 gate survivors, because only 66 of them are in stage-2 at all.
+    # A16's bar iv needs the charge term over the GATE's populations, so the roster is now
+    # the union of three rosters, each named in the provenance below. Nothing already scored
+    # is refetched -- state["done"] is keyed by fault name and skipped.
+    # See work/a17_charge_coverage_frame.md.
+    ROSTERS = [
+        ("stage-2 nodes  ", "data/transport_screen_stage2.json", "all"),
+        ("stage-5 rows   ", "data/stage5_join_rows.json", None),
+        ("true L1 failures", "data/null_fault_true.json", "rows"),
+    ]
+    seen, todo, prov = set(), [], []
+    for label, path, key in ROSTERS:
+        if not os.path.exists(path):
+            print(f"[A13] roster MISSING, skipped: {path}", file=sys.stderr)
+            prov.append(f"{label} MISSING {path}")
             continue
-        seen.add(nm)
-        todo.append(n)
+        blob = json.load(open(path))
+        rows = blob if isinstance(blob, list) else (blob[key] if key else
+               (blob.get("rows") or blob.get("all") or blob.get("survivors_ranked") or []))
+        added = 0
+        for n in rows:
+            nm = (n.get("fault_name") or n.get("fault") or "").strip()
+            if not nm or nm in seen:
+                continue
+            seen.add(nm)
+            todo.append({"fault_name": nm})
+            added += 1
+        print(f"[A13] roster {label}: {len(rows)} rows -> {added} new distinct faults",
+              file=sys.stderr)
+        prov.append(f"{label} {path}: {len(rows)} rows, {added} new")
     state = json.load(open(OUT)) if os.path.exists(OUT) else {"done": {}}
-    print(f"[A13] {len(todo)} distinct faults from {len(nodes)} stage-2 nodes; "
-          f"{len(state['done'])} already done", file=sys.stderr)
+    pending = sum(1 for n in todo if n["fault_name"] not in state["done"])
+    print(f"[A13] {len(todo)} distinct faults across {len(ROSTERS)} rosters; "
+          f"{len(state['done'])} already done, {pending} to score", file=sys.stderr)
+    if "--roster-only" in sys.argv:
+        # Check the roster WITHOUT paying for the run. Exists because the run costs hours
+        # and a roster defect is the kind that only shows up at the end.
+        print(json.dumps({"rosters": prov, "distinct": len(todo),
+                          "already_done": len(state["done"]), "pending": pending}, indent=1))
+        sys.exit(0)
 
     for i, n in enumerate(todo, 1):
         nm = n["fault_name"]

@@ -65,7 +65,9 @@ THREE POPULATIONS, because two would not separate the two things that could be t
   NULL-RANDOM 400 points, SAME SEED and SAME bbox derivation as A8 and A12, so the three
               legs are computed on identical ground and their retentions can be compared.
               Answers: is this ground special versus the western US at large?
-  NULL-FAULT  points drawn from the stage-2 nodes that FAILED the L1 gate. Answers the
+  NULL-FAULT  points drawn from the 1,157 faults that FAILED the L1 gate (REBUILT D200; this
+              said "stage-2 nodes" and the code built a 27.5% regionally-concentrated subset
+              of the true failures -- see water_leg.py's construction note). Answers the
               question NULL-RANDOM cannot: is this special versus OTHER MAPPED QUATERNARY
               FAULTS? Without it, any positive result is confounded with "faults are mapped
               in mountains and mountains are crystalline", and the leg would be measuring
@@ -227,23 +229,28 @@ if __name__ == "__main__":
     print(f"[A15] null-random={len(null_r)} in bbox {tuple(round(b,2) for b in bbox)}",
           file=sys.stderr)
 
-    # NULL-FAULT: stage-2 nodes that are NOT survivors. Drawn with an independent stream so
+    # NULL-FAULT: the gate's ACTUAL 1,157 L1 failures. Drawn with an independent stream so
     # the random-ground draw above is bit-for-bit identical to A8's and A12's.
-    surv_names = {s["fault_name"] for s in surv}
+    # REBUILT D200 -- was `stage2 minus survivor names`, a 392-fault regional draw that
+    # yielded a 27.5% geographically-concentrated subset of the true failures (and 3 faults
+    # that had actually PASSED). See water_leg.py's construction note.
+    true_ctrl = json.load(open("data/null_fault_true.json"))
+    surv_names = {" ".join(s["fault_name"].split()) for s in surv}
     pool, seen = [], set()
-    for n in stage2:
-        nm = (n.get("fault_name") or "").strip()
+    for n in true_ctrl["rows"]:
+        nm = " ".join((n.get("fault_name") or "").split())
         if not nm or nm in surv_names or nm in seen:
             continue
         if n.get("lat") is None or n.get("lon") is None:
             continue
         seen.add(nm)
         pool.append(n)
+    assert len(pool) >= 1000, f"[A15] NULL-FAULT pool collapsed to {len(pool)}; expected ~1157"
     rnd2 = random.Random(SEED + 1)
     rnd2.shuffle(pool)
     null_f = [dict(fault=n["fault_name"], lat=n["lat"], lon=n["lon"],
                    **probe(n["lat"], n["lon"])) for n in pool[:N_NULL]]
-    print(f"[A15] null-fault={len(null_f)} of {len(pool)} non-survivor stage-2 faults",
+    print(f"[A15] null-fault={len(null_f)} of {len(pool)} true L1-failed faults",
           file=sys.stderr)
 
     def cov(rs):
