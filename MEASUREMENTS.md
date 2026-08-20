@@ -218,3 +218,32 @@ LINKS: carapace `Research/builds/BUILD_MANUAL.md` (the build spec the number siz
 LEAD STATUS" (D197–198)
 OPEN: what, if anything, Skywatcher's tech actually runs at is now **unsourced** — the retirement removed a number
 and did not supply one. Do not let the absence re-fill from the same summaries.
+
+## 2026-08-20 — Meridian's 14I DESI pre-registration (18 Mar 2026), scored against DESI DR2 Lyα AP
+VERDICT: partial — **the published benchmark is disconfirmed; the framework is not, because it never
+staked a parameter-free claim on w_0.** None of 14I's three binary kill conditions fired. But the joint
+(w_0, w_a) test, which 14I never ran, puts Meridian's benchmark at **6.6σ** from the new contour versus
+**2.9σ** for ΛCDM; the framework reaches parity (2.5σ) only by running ζ₀ to 4.75e-3, where w_0 = −0.947
+and its distinctive prediction is switched off.
+EVIDENCE: DESI arXiv:2607.27410 (announced 2026-07-30) measures the AP effect to 1% at z_eff = 2.33 —
+the exact redshift 14I §1.5 named as its sharpest discriminator against CPL. New constraints
+w_0 = −0.821 ± 0.054, w_a = −0.65 ± 0.20 (BAO+LyαFS+CMB+DES-Dovekie), 3.2σ over ΛCDM. Meridian's w_0
+band [−0.693, −0.796] is missed (0.46σ past the edge). Correlation ρ = −0.906 was *derived* from the
+paper's own pivot values two independent ways (z_p and σ(w_p)), agreeing to 0.015. Two internal defects
+found in 14I itself: (a) §1.4's w_a,eff = −0.232 is the z=0 tangent; the CPL projection of Meridian's
+own w(z) over the DESI range is −0.356, so (b) §7 criterion 2 disfavours Meridian at |w_a| > 0.3 —
+**a threshold set below its own model's value**, meaning a perfect match would have read as a failure.
+Separately, 13B (17 Mar 2026) records the junction-condition system as underdetermined (1 equation,
+3 free parameters), so w_0 was never a prediction of the framework, only of a benchmark point.
+One clean confirmation — the ν-mass relaxation of §6 (ΛCDM Σm_ν < 0.0592 eV vs w_0w_aCDM < 0.128 eV) —
+is the generic Vagnozzi 2017 degeneracy that §6 cites, so it is no discriminator for Meridian.
+UNRESOLVED: the SN-reanalysis vs Lyα decomposition of the shift. Table III reports only combinations
+that already include LyαFS, so the isolating row does not exist in the paper. Inference by subtraction
+only; not defended.
+DECORRELATED EYE: **world-data** (DESI Collaboration, arXiv:2607.27410 — data that did not exist when
+the prediction was filed). No human or non-Claude model has checked the analysis itself.
+GRADE MOVE: Hypothesized → **benchmark disconfirmed / framework untested**. The two parameter-free
+predictions (no phantom crossing; γ ≈ 0.55 growth decoupling) both survive — the first unviolated, the
+second **never yet tested.** The DR2 galaxy/quasar full-shape analysis, named as forthcoming in this
+same paper, is the test that matters.
+LINKS: research/meridian-desi-2026/

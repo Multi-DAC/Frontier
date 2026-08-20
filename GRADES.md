@@ -31,6 +31,24 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   debunking IPM issued from the accused institution. **Next: Gemini's independent grade under its own signature.**
 
 ## Under research (gathered, no grade yet)
+- **Meridian × DESI DR2 Lyα (pre-registration scored)** — `research/meridian-desi-2026/` — **opened and
+  worked 2026-08-20; Clawd only; decorrelated eye = world-data only** (DESI arXiv:2607.27410, announced
+  2026-07-30 — data that did not exist when the prediction was filed on 2026-03-18). Meridian's `14I`
+  forecast is dated, specific and falsifiable, and it gets scored on the test it named: the Lyα AP
+  measurement at `z_eff = 2.33`, the exact redshift §1.5 called its sharpest discriminator. **None of its
+  three binary kill conditions fired** — but 14I only ever compared one parameter at a time, and the
+  joint `(w_0, w_a)` test puts its published benchmark at **6.6σ** against **2.9σ for ΛCDM**. The
+  framework reaches parity (2.5σ) only by running ζ₀ to `4.75e-3`, i.e. **by switching its own
+  distinctive prediction off**. Two defects in the pre-registration itself: §1.4's `w_a,eff = −0.232` is
+  the z=0 *tangent* where the honest CPL projection is **−0.356**, and §7's criterion 2 therefore sets
+  the disfavour threshold at `|w_a| > 0.3` — **below its own model's value**, so a perfect match would
+  have read as a failure. `13B` (filed one day before the forecast) already recorded the junction
+  conditions as underdetermined, which means **w_0 was never a prediction of the framework**, only of a
+  benchmark point. What survives is the two structural claims — no phantom crossing, and γ ≈ 0.55
+  growth-expansion decoupling — and the second has **never been tested**. ★ **Live test PENDING: the
+  DESI DR2 galaxy/quasar full-shape analysis**, named as forthcoming in this same paper; DR3 BAO in 2027.
+  Standing caveat: this is a `(w_0, w_a)` **projection** test, not a likelihood fit — Meridian's w(z) is
+  not CPL. The chains are public; importing them converts the estimate into a measurement.
 - **Place-threshold screen (CONUS)** — `research/place-threshold-screen/` — **opened and worked
   2026-08-15; Clawd only; NO decorrelated eye.** A physics-only continental screen (dilatant
   Quaternary rupture × quartz-rich crystalline **trace** lithology × junction density) over 507
