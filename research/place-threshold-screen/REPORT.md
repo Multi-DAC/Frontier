@@ -25,10 +25,12 @@ predictive validity is undemonstrated. Nothing below licenses the sentence *"the
 likely to carry an anomalous record."* That claim was pre-registered as a separate product, was tested,
 and was not earned.
 
-**3 · The strongest structural result in the project is a confound, not a signal.** Four independent
-legs — rank resolution, land tenure, jurisdiction, and water — converge on the same nuisance variable:
-**this screen selects high, steep, mountainous public ground.** Every apparent positive so far has, on
-stratification, turned out to be terrain wearing a different label.
+**3 · The strongest structural result in the project is a confound, not a signal.** Five independent
+legs — rank resolution, land tenure, jurisdiction, static water, and now flow (§9) — converge on the same
+nuisance variable: **this screen selects high, steep, mountainous public ground.** Every apparent positive
+so far has, on stratification or residualisation, turned out to be terrain wearing a different label. The
+newest one is the cleanest example: stream power separated survivors from the control at p = 0.0025 and
+went to p = 0.121 the moment drainage area and relief were held fixed.
 
 What survives all three is a modest thing and it is stated plainly: **a set of places where a specific
 piece of physics is most strongly expressed, with its uncertainty attached rather than stripped off.**
@@ -523,7 +525,10 @@ read away, and the rebuild then took four minutes.
 
 ---
 
-## 9 · What is still running, declared rather than omitted
+## 9 · The current term — landed, and it is a third negative result
+
+*This section was written as "still running" and amended in place at 22:30 on Day 200 when the leg
+landed, per the convention below. Nothing above the amendment line was retracted.*
 
 **A16 — the current / electrokinetic-flow term.** Clayton's contribution, arrived Day 200: *rushing
 water, rivers, anything with a current, alongside electromagnetically active minerals — hydroelectricity,
@@ -531,14 +536,65 @@ as it were.* That is, independently and cold, the leading prosaic hypothesis for
 colleagues have argued a variant of it for years), and it is a sharper question than the static-water leg
 A14 asked, because it puts the *flow* rather than the *presence* of water in the mechanism.
 
-Pre-registered and running at the time of writing. Its coverage guards pass — charge coverage 92.0% on
-survivors against 92.8% on the control, an asymmetry of **1.01×** against a guard that fires above 2.0×,
-which is itself the clean confirmation that the control rebuild in §7 worked. **Its result is not in this
-report.** Per this project's convention, an unrun leg is emitted as `UNRUN` with a reason on every row and
-is never silently omitted, because an omitted constraint column reads as *no constraint applied*.
+Pre-registered before it ran. Its coverage guards pass — charge coverage 92.0% on survivors against 92.8%
+on the control, an asymmetry of **1.01×** against a guard that fires above 2.0×, which is itself the clean
+confirmation that the control rebuild in §7 worked. Populations, seed and radii inherited unchanged from
+A14; two-tailed by declaration; 20,000 permutations; 225 survivors against 400 null-fault and 400
+null-random. Flow terms are NHDPlus HR EROM within 10 km: peak velocity, peak discharge, and stream power
+Ω = ρg·Q·S paired **on the same reach**, because taking max(Q) against max(S) across different reaches
+invents a reach that does not exist.
 
-**This report ships without it, and will be amended rather than rewritten when it lands.** A bar recorded
-as unrun can be filled later without retracting a word.
+### The result
+
+**No bar passed, and no name moves.** The declared guard was that A16 may not reorder the list unless bars
+ii, iii and v all pass. Velocity does not separate survivors from the fault control (median 1.578 vs 1.487
+ft/s, *p* = 0.087), and it does not leak against the random control either (*p* = 0.205), which is the
+clean half — a flow term that separated survivors from *random ground* but not from *other faults* would
+have been measuring faults, not flow.
+
+One contrast did come out positive, and it is the reason this section is longer than a null deserves.
+**Stream power separates survivors from the fault control at *p* = 0.0025** — median 471 W/m against
+173 W/m, a factor of 2.7. Taken alone that is the strongest single number Clayton's hypothesis has
+produced anywhere in this project.
+
+**It does not survive its own confound control.** Stream power is discharge times slope; both scale with
+catchment size and terrain, which is the same nuisance variable §4 spent four legs on. Residualised on
+drainage area and relief, the contrast falls to ***p* = 0.121** (n = 966 pooled points). The 2.7× was
+mountains.
+
+### The deviation, declared rather than buried
+
+The pre-registration froze the residual control set as [log₁₀(area), **petma**, relief] — petma being
+NHDPlus HR's mean annual potential evapotranspiration, the precipitation proxy. **That field is served as
+literal zero on every reach in the country.** A count query returns 24,264,177 rows where `petma IS NOT
+NULL`, and every one of them is 0. The pipeline's own NODATA guard reads 0 as *not a measurement* rather
+than as *no evapotranspiration* — correctly — so the control was `None` on 1,025 of 1,025 rows in all
+three arms, the regression excluded every point, and **the primary declared statistic returned n = 0 and
+labelled itself `insufficient n`.**
+
+That is the shape this project is most afraid of: the leg would have read as a clean null while the one
+significant number sat in it with its control silently unrun. It did not fabricate — it reported its own
+gap — but a reader seeing five failed bars would not have gone looking.
+
+**The deviation: PET is dropped and the residual is fitted on the two controls that exist in the data**
+(area and relief). That is a departure from the frozen design and is recorded as such in
+`data/current_leg_a16b.json`, with both fits printed — the pre-registered three-control model at n = 0,
+and the two-control model at n = 966. It does not touch the bar arithmetic: bars i, ii, iii and v all read
+velocity, not stream power, so `may_reorder_list` was already `false` before this amendment and is `false`
+after it. **The deviation changes an untested null into a tested one. It does not change the verdict.**
+
+Bar iv (the water × charge interaction) remains `UNRUN` for a separate and previously declared reason —
+the A13 charge population is stage-2 rather than the gate survivors, a population mismatch documented in
+§7 and priced at a ~1,003-fault rebuild. The marginal charge contrast that *can* be computed is reported
+without a causal reading.
+
+Per this project's convention, an unrun bar is emitted as `UNRUN` with a reason on every row and is never
+silently omitted, because an omitted constraint column reads as *no constraint applied*.
+
+**So: Clayton asked for the water and the rock, and got three negative results.** The flow hypothesis is
+not refuted as physics — Hessdalen is one valley and this is a screen over 1,399 American fault sections
+with no anomaly labels on it. What is refuted is that flow, measured this way at this scale, carries any
+signal that reorders this list.
 
 ---
 
@@ -577,7 +633,7 @@ it with its date.
 ---
 
 *Place-threshold screen, round 2. Written Day 200, 2026-08-19. Clawd Iggulden-Schnell, with Clayton
-Iggulden-Schnell, who asked for the water and the rock and got two negative results and one running leg
+Iggulden-Schnell, who asked for the water and the rock and got three negative results
 for his trouble.*
 
 🦞🧍💜🔥♾️

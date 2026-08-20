@@ -1491,3 +1491,58 @@ for the wrong reason, and then its message misdirects the diagnosis it has just 
 4. **Bar iv is NOT to be run on the 65 covered survivors.** That subset is exactly the
    regionally-concentrated draw this whole finding is about. It would answer the question by
    re-committing the error, and it would look like a result.
+
+---
+
+## A16 — RESULT, Day 200 / 2026-08-19 22:26. The current / electrokinetic-flow term comes back negative.
+
+Landed `data/current_leg.json` (507,278 B, 19:26). 225 survivors vs 400 null-fault vs 400 null-random,
+seed 20260818, 20,000 permutations, two-tailed by declaration, populations and radii inherited unchanged
+from A14.
+
+**Bars, as declared before the result existed:**
+
+| bar | test | result |
+|---|---|---|
+| i — does not leak | v_max vs null-**random** | p = 0.2046 — **no leak** (this is the clean half) |
+| ii — discriminates | v_max vs null-**fault** | p = 0.0872 — FAIL |
+| iii — survives relief | v_max stratified on relief quartiles | 2 of 4 significant, **signs disagree** — FAIL |
+| iv — interacts with charge | x_raw residual, survivors vs null-fault | **UNRUN** (population mismatch, §7; declared before the run) |
+| v — not band relabelling | rank-normalised spread of the top-23 band | p = 1.0 — FAIL |
+
+`may_reorder_list = false`. **A16 moves no name.** The guard was declared before the result and is
+honoured without argument.
+
+### The one positive contrast, and its control
+
+Stream power Ω = ρg·Q·S (paired on the same reach) separated survivors from the fault control at
+**p = 0.0025**, median 471 vs 173 W/m — a 2.7× ratio and the strongest single number the flow hypothesis
+produced anywhere. Residualised on drainage area and relief: **p = 0.1211**, n = 966. It was terrain.
+
+### A16b — DEVIATION from the frozen control set, declared
+
+A16 froze the residual controls as `[log10(area_max_km2), petma, relief_m]`. **`petma` is served as
+literal 0 on every NHDPlus HR reach in the country** — `MapServer/3/query?where=petma IS NOT
+NULL&returnCountOnly` returns 24,264,177, all zero. `current_leg.py:_pos()` correctly rejects 0 as NODATA
+rather than accepting it as "no evapotranspiration", so `pet_mean` was `None` on **1,025 of 1,025 rows in
+all three arms**, `residualise()` excluded every point, and the **primary declared statistic returned
+n = 0 / `insufficient n`**.
+
+The leg did not fabricate — it printed its own gap. But five bars reading FAIL is a shape a reader
+accepts, and the one significant number would have sat inside it with its control silently unrun.
+
+**Deviation:** PET is dropped; the residual is fitted on the two controls that exist in the data. Both
+fits are recorded in `data/current_leg_a16b.json` — the pre-registered three-control model at n = 0, and
+the two-control model at n = 966, β = [-0.07926, 0.69724, 0.00095].
+
+**Scope of the deviation, stated so it cannot creep:** bars i, ii, iii and v all read `v_max_fps`, not
+stream power. `may_reorder_list` was `false` before this amendment and is `false` after it. The deviation
+converts an *untested* null into a *tested* one. It does not touch the verdict, and it does not move a
+name.
+
+### Standing decision 5
+
+**A16 is closed negative.** It is not a refutation of the flow hypothesis as physics — Hessdalen is one
+valley, this is a screen over 1,399 American fault sections carrying no anomaly labels. It refutes that
+flow, measured this way at this scale, carries signal that reorders this list. It joins rank resolution,
+land tenure, jurisdiction and static water as the **fifth** leg to converge on terrain.

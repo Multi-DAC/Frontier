@@ -1,0 +1,80 @@
+{
+ "amendment": "A16b -- DEVIATION from A16 pre-registration, declared not silent",
+ "why": "A16 froze the residual control set as [log10(area), petma, relief]. petma (NHDPlus HR EROM mean annual potential evapotranspiration) is served as literal 0 on every reach nationwide (MapServer/3 returnCountOnly where petma IS NOT NULL = 24,264,177, all zero). current_leg.py:_pos() correctly reads 0 as NODATA rather than a measurement, so pet_mean is None on 1,025/1,025 rows in all three arms, residualise() excluded every point, and the PRIMARY declared statistic returned n=0 / \"insufficient n\". The bars that decide may_reorder_list (i, ii, iii, v) read v_max_fps, not stream power, so the LEG VERDICT is unaffected and stands as computed. What was left untested is the single contrast that came out positive.",
+ "deviation": "PET dropped from the control set. Controls are the two that exist in the data: log10(area_max_km2), relief_m.",
+ "preregistered_3_control": {
+  "controls": [
+   "log10(area_max_km2)",
+   "petma",
+   "relief_m"
+  ],
+  "n": 0,
+  "beta": null,
+  "status": "UNRUN -- control variable absent at source"
+ },
+ "deviation_2_control": {
+  "controls": [
+   "log10(area_max_km2)",
+   "relief_m"
+  ],
+  "n": 966,
+  "beta": [
+   -0.07926,
+   0.69724,
+   0.00095
+  ]
+ },
+ "source_of_input": {
+  "path": "C:\\Users\\Wasch\\Frontier\\research\\place-threshold-screen\\data\\current_leg.json",
+  "bytes": 507278,
+  "mtime": "2026-08-19T19:26:02"
+ },
+ "n_perm": 20000,
+ "seed": 20260818,
+ "two_tailed": true,
+ "statistics": {
+  "omega_max_wpm": {
+   "vs_null_random": {
+    "n_a": 225,
+    "n_b": 348,
+    "med_a": 470.9082,
+    "med_b": 264.9667,
+    "diff": 205.9415,
+    "p": 0.0957,
+    "two_tailed": true
+   },
+   "vs_null_fault": {
+    "n_a": 225,
+    "n_b": 397,
+    "med_a": 470.9082,
+    "med_b": 173.4678,
+    "diff": 297.4405,
+    "p": 0.0025,
+    "two_tailed": true
+   }
+  },
+  "omega_max_wpm_resid": {
+   "vs_null_random": {
+    "n_a": 225,
+    "n_b": 348,
+    "med_a": 0.001,
+    "med_b": 0.0757,
+    "diff": -0.0747,
+    "p": 0.4851,
+    "two_tailed": true
+   },
+   "vs_null_fault": {
+    "n_a": 225,
+    "n_b": 393,
+    "med_a": 0.001,
+    "med_b": -0.126,
+    "diff": 0.127,
+    "p": 0.1211,
+    "two_tailed": true
+   }
+  }
+ },
+ "verdict": "The raw stream-power contrast survivors vs null-fault (p=0.0025) does NOT survive its own confound control: residualised on drainage area and relief, p=0.1211. The advantage was catchment size and terrain, which is the same nuisance variable \u00a74 spent four legs on. A16 moves no name. This is now a TESTED null rather than an untested one.",
+ "may_reorder_list": false,
+ "guard_restated": "A16 may not move a name unless bars ii, iii and v all pass. They did not. This amendment does not touch that arithmetic."
+}
