@@ -1,0 +1,2606 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  20 AUG 2026 14:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./meridian_monograph.tex
+(meridian_monograph.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen149
+))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count289
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks20
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks21
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count296
+\calc@Bcount=\count297
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count298
+\calc@Cskip=\skip59
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count299
+\l_MT_multwidth_dim=\dimen160
+\origjot=\skip60
+\l_MT_shortvdotswithinadjustabove_dim=\dimen161
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen162
+\l_MT_above_intertext_sep=\dimen163
+\l_MT_below_intertext_sep=\dimen164
+\l_MT_above_shortintertext_sep=\dimen165
+\l_MT_below_shortintertext_sep=\dimen166
+\xmathstrut@box=\box55
+\xmathstrut@dim=\dimen167
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
+\Gm@dimlist=\toks31
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count303
+)
+\MT@toks=\toks32
+\MT@tempbox=\box56
+\MT@count=\count304
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks33
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen176
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count305
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip61
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count306
+\@cmidlb=\count307
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count308
+\@lastruleclass=\count309
+\@thisrulewidth=\dimen189
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count310
+\LTcapwidth=\dimen190
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count311
+\LT@rows=\count312
+\c@LT@tables=\count313
+\c@LT@chunks=\count314
+\LT@p@ftn=\toks34
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen191
+\ar@mcellbox=\box62
+\extrarowheight=\dimen192
+\NC@list=\toks35
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box63
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count315
+\multirow@dima=\skip69
+\bigstrutjot=\dimen193
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen194
+\Gin@req@width=\dimen195
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count316
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+145.
+
+\mult@box=\box64
+\multicol@leftmargin=\dimen196
+\c@unbalance=\count317
+\c@collectmore=\count318
+\doublecol@number=\count319
+\multicoltolerance=\count320
+\multicolpretolerance=\count321
+\full@width=\dimen197
+\page@free=\dimen198
+\premulticols=\dimen199
+\postmulticols=\dimen256
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box65
+\last@line=\box66
+\mc@boxedresult=\box67
+\maxbalancingoverflow=\dimen257
+\mult@rightbox=\box68
+\mult@grightbox=\box69
+\mult@firstbox=\box70
+\mult@gfirstbox=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\c@minrows=\count322
+\c@columnbadness=\count323
+\c@finalcolumnbadness=\count324
+\last@try=\dimen258
+\multicolovershoot=\dimen259
+\multicolundershoot=\dimen260
+\mult@nat@firstbox=\box108
+\colbreak@box=\box109
+\mc@col@check@num=\count325
+\g__mc_curr_col_int=\count326
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip72
+\f@nch@offset@elh=\skip73
+\f@nch@offset@erh=\skip74
+\f@nch@offset@olh=\skip75
+\f@nch@offset@orh=\skip76
+\f@nch@offset@elf=\skip77
+\f@nch@offset@erf=\skip78
+\f@nch@offset@olf=\skip79
+\f@nch@offset@orf=\skip80
+\f@nch@height=\skip81
+\f@nch@footalignment=\skip82
+\f@nch@widthL=\skip83
+\f@nch@widthC=\skip84
+\f@nch@widthR=\skip85
+\@temptokenb=\toks36
+)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
+y
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
+g.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count327
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen261
+\Hy@linkcounter=\count328
+\Hy@pagecounter=\count329
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count330
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count331
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen262
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count332
+\Field@Width=\dimen263
+\Fld@charsize=\dimen264
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring ON on input line 6102.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count333
+\c@Item=\count334
+\c@Hfootnote=\count335
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count336
+\c@bookmark@seq@number=\count337
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
+sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
+sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip86
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box110
+\beforetitleunit=\skip87
+\aftertitleunit=\skip88
+\ttl@plus=\dimen265
+\ttl@minus=\dimen266
+\ttl@toksa=\toks37
+\titlewidth=\dimen267
+\titlewidthlast=\dimen268
+\titlewidthfirst=\dimen269
+)
+\c@theorem=\count338
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count339
+)
+(meridian_monograph.aux)
+\openout1 = `meridian_monograph.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(46.97505pt, 503.55777pt, 46.97505pt)
+* v-part:(T,H,B)=(46.97505pt, 751.09674pt, 46.97505pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=503.55777pt
+* \textheight=751.09674pt
+* \oddsidemargin=-25.29494pt
+* \evensidemargin=-25.29494pt
+* \topmargin=-82.86243pt
+* \headheight=40.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=48.0pt
+* \marginparsep=10.0pt
+* \columnsep=18.06749pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 112.
+Package microtype Info: Applying patch `item' on input line 112.
+Package microtype Info: Applying patch `toc' on input line 112.
+Package microtype Info: Applying patch `eqnum' on input line 112.
+Package microtype Info: Applying patch `footnote' on input line 112.
+Package microtype Info: Applying patch `verbatim' on input line 112.
+LaTeX Info: Redefining \microtypesetup on input line 112.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count340
+\scratchdimen=\dimen270
+\scratchbox=\box111
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen271
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks39
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring ON on input line 112.
+
+(meridian_monograph.out) (meridian_monograph.out)
+\@outlinefile=\write3
+\openout3 = `meridian_monograph.out'.
+
+ [1
+
+
+
+{C:/Users/Wasch/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Fi
+les/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [2
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+41.
+ (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+41.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+141.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+141.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 141.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 141.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 141.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 141
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 141
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+52.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiK
+TeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm
+-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2] [3
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 208.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 208.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 243.
+ [4
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] (meridian_monograph
+.toc [5
+
+] [6] [7] [8]
+[9] [10] [11])
+\tf@toc=\write4
+\openout4 = `meridian_monograph.toc'.
+
+ [12] (meridian_monograph.lof)
+\tf@lof=\write5
+\openout5 = `meridian_monograph.lof'.
+
+
+Underfull \vbox (badness 1092) has occurred while \output is active []
+
+ [13
+
+]
+[14]
+Underfull \hbox (badness 1515) in paragraph at lines 274--275
+\OML/lmm/m/it/10 M[]=\OT1/lmr/m/n/10 (+20) (2\OML/lmm/m/it/10 k\OT1/lmr/m/n/10 
+(+20) )$ \T1/lmr/m/n/10 (+20) through-out (Randall--Sundrum con-ven-tion). The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+[]|\T1/lmr/m/n/10 (+20) Chapter [][]1[][] in-ter-me-di-ate cou-pling, $\OML/lmm
+/m/it/10 F[] \OT1/lmr/m/n/10 (+20) =
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [15
+
+] [16] (chapter0_basin.tex
+Chapter 0.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ...aph{Axiom A2: Cuscuton Kinetic Structure.}
+                                                   [1
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.202 
+       [2] [3]
+<../figures/fig0_derivation_chain.pdf, id=2339, 491.96799pt x 571.53528pt>
+File: ../figures/fig0_derivation_chain.pdf Graphic file (type pdf)
+<use ../figures/fig0_derivation_chain.pdf>
+Package pdftex.def Info: ../figures/fig0_derivation_chain.pdf  used on input li
+ne 365.
+(pdftex.def)             Requested size: 443.13329pt x 514.83047pt.
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
+[]|\T1/lmr/m/n/9 (+20) Consistent ($\OT1/lmr/m/n/9 (+20) ^^A\OML/lmm/m/it/9 ^^_
+[] \OT1/lmr/m/n/9 (+20) =
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 552.
+
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [5]
+[6]) [7] [8 <../figures/fig0_derivation_chain.pdf>] (chapter1_foundation.tex
+Chapter 1.
+[9
+
+
+
+]
+Underfull \hbox (badness 2401) in paragraph at lines 58--59
+[]\T1/lmr/bx/n/10 (+20) CMB bench-mark \T1/lmr/m/n/10 (+20) ($\OML/lmm/m/it/10 
+^^P[] \OMS/lmsy/m/n/10 ^^Y \OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/
+n/10 (+20) 037$\T1/lmr/m/n/10 (+20) , from the
+ []
+
+[10] [11]
+Overfull \hbox (1.78073pt too wide) detected at line 188
+ []$[] \OMS/lmsy/m/n/8 ^^@ \OT1/lmr/m/n/8 (\OML/lmm/m/it/8 M[] \OMS/lmsy/m/n/8 
+^^@ \OML/lmm/m/it/8 ^^X \OT1/lmr/m/n/8 ^^H[]) \OML/lmm/m/it/8 e[][]\OT1/lmr/m/n
+/8 8\OML/lmm/m/it/8 A[] \OT1/lmr/m/n/8 + 20(\OML/lmm/m/it/8 A[]\OT1/lmr/m/n/8 )
+[][] + \OML/lmm/m/it/8 e[][]P\OT1/lmr/m/n/8 (\OML/lmm/m/it/8 X; \OT1/lmr/m/n/8 
+^^H) \OMS/lmsy/m/n/8 ^^@ \OML/lmm/m/it/8 V\OT1/lmr/m/n/8 (^^H) \OMS/lmsy/m/n/8 
+^^@ \OT1/lmr/m/n/8 ^^C[][][] \OML/lmm/m/it/8 :$ []  
+ []
+
+[12]
+Underfull \vbox (badness 1824) has occurred while \output is active []
+
+ [13]
+Overfull \hbox (4.49738pt too wide) detected at line 376
+[][][]\OML/lmm/m/it/8 P[] \OT1/lmr/m/n/8 + 2\OML/lmm/m/it/8 X P[] \OT1/lmr/m/n/
+8 = 2\OML/lmm/m/it/8 na \OT1/lmr/m/n/8 (2\OML/lmm/m/it/8 X\OT1/lmr/m/n/8 )[][]1
+ + 2(\OML/lmm/m/it/8 n \OMS/lmsy/m/n/8 ^^@ \OT1/lmr/m/n/8 1)[] = 2\OML/lmm/m/it
+/8 na \OT1/lmr/m/n/8 (2\OML/lmm/m/it/8 X\OT1/lmr/m/n/8 )[](2\OML/lmm/m/it/8 n \
+OMS/lmsy/m/n/8 ^^@ \OT1/lmr/m/n/8 1) \OML/lmm/m/it/8 :
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 386--388
+\T1/lmr/m/n/10 (+20) This quan-tity ap-pears in the Hamil-to-nian con-
+ []
+
+[14]
+Underfull \hbox (badness 1931) in paragraph at lines 463--464
+\T1/lmr/m/n/10 (+20) al-ge-braic con-straint [] pro-vides ad-di-tional
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 463--464
+\T1/lmr/m/n/10 (+20) flexibility---the bulk pro-file $\OT1/lmr/m/n/10 (+20) ^^H
+(\OML/lmm/m/it/10 y\OT1/lmr/m/n/10 (+20) )$ \T1/lmr/m/n/10 (+20) ad-justs to
+ []
+
+[15]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16] [17]
+Overfull \hbox (9.56657pt too wide) in paragraph at lines 630--640
+ [] 
+ []
+
+[18] [19] [20] [21]
+Underfull \hbox (badness 1320) in paragraph at lines 913--914
+[]\T1/lmr/m/n/10 (+20) On the max-i-mally sym-met-ric $[][]$ back-ground:
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 927--928
+[] []$\OML/lmm/b/it/10 a[]$ \T1/lmr/bx/n/10 (+20) (Brane-lo-cal-ized Ein-stein-
+-Hilbert).[] \T1/lmr/m/n/10 (+20) The
+ []
+
+[22]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.07819pt too wide) detected at line 994
+[]
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 1032--1032
+|[]\T1/lmr/bx/n/14.4 (+20) Dark En-ergy Equa-tion of
+ []
+
+[23]
+<figures/fig1_w0_zeta0.pdf, id=2937, 510.9903pt x 371.70871pt>
+File: figures/fig1_w0_zeta0.pdf Graphic file (type pdf)
+<use figures/fig1_w0_zeta0.pdf>
+Package pdftex.def Info: figures/fig1_w0_zeta0.pdf  used on input line 1084.
+(pdftex.def)             Requested size: 428.02718pt x 311.37106pt.
+ [24] [25 <./figures/fig1_w0_zeta0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+[] []\T1/lmr/bx/n/10 (+20) Step 4: As-sem-bly.[] \T1/lmr/m/n/10 (+20) From [], 
+[],
+ []
+
+[26] [27]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1369.
+ [28]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 1455--1456
+[] []\T1/lmr/bx/n/10 (+20) Cus-cu-ton de-cou-pling ar-gu-ment.[] \T1/lmr/m/n/10
+ (+20) The growth--
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 1455--1456
+\T1/lmr/m/n/10 (+20) the cus-cu-ton's con-straint char-ac-ter. The ki-netic
+ []
+
+[29] [30]
+Underfull \hbox (badness 1014) in paragraph at lines 1559--1559
+|[]\T1/lmr/bx/n/12 (+20) Prediction 8: Fermion Sec-tor
+ []
+
+[31] [32]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 1655--1655
+|[]\T1/lmr/bx/n/12 (+20) Comparison with Other Ap-
+ []
+
+[33] [34]
+Underfull \hbox (badness 6252) in paragraph at lines 1753--1754
+\T1/lmr/m/n/10 (+20) boundary con-di-tions from the dis-tri-bu-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1754--1755
+[]\T1/lmr/m/n/10 (+20) The \T1/lmr/m/it/10 (+20) 5D Hamil-to-nian con-straint\T
+1/lmr/m/n/10 (+20) ---the $\OT1/lmr/m/n/10 (+20) (55)$\T1/lmr/m/n/10 (+20) -
+ []
+
+[35]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1841.
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 1845--1846
+[]\T1/lmr/m/n/10 (+20) The co-ef-fi-cient $\OML/lmm/m/it/10 F[] \OT1/lmr/m/n/10
+ (+20) = (1 + \OML/lmm/m/it/10 q[]\OT1/lmr/m/n/10 (+20) )[] 
+[]\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) [8(1 \OMS/lmsy/m/n/10 ^^@
+ []
+
+[36]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+857.
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 1297) in paragraph at lines 1857--1858
+\T1/lmr/m/n/10 (+20) --- self-tuning ver-i-fi-ca-tion, multi-probe $\OML/lmm/m/
+it/10 ^^_[]$ \T1/lmr/m/n/10 (+20) anal-y-sis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1857--1858
+\T1/lmr/m/n/10 (+20) spec-tral ac-tion cou-pling ra-tios, growth fac-tor
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 1857--1858
+\T1/lmr/m/n/10 (+20) in the project repos-i-tory. Key scripts in-clude:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1857--1858
+\T1/lmr/m/n/10 (+20) (Seeley--DeWitt co-ef-fi-cient com-pu-ta-tion), and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1857--1858
+\T1/lmtt/m/n/10 c1_symbolic_gb_kk.py \T1/lmr/m/n/10 (+20) (sym-bolic GB junc-ti
+on
+ []
+
+) (chapter2_observational.tex [37
+
+]
+Chapter 2.
+
+Underfull \hbox (badness 4096) in paragraph at lines 6--6
+|\T1/lmr/bx/n/24.88 (+20) Observational Con-fronta-tion of Five-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38
+
+]
+Underfull \hbox (badness 3724) in paragraph at lines 44--44
+|[]\T1/lmr/bx/n/12 (+20) Key Re-sults from Com-pan-ion
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 65.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 65.
+
+[39]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 130.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 130.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 130.
+
+[40]
+Underfull \hbox (badness 8075) in paragraph at lines 228--228
+|[]\T1/lmr/bx/n/14.4 (+20) Multi-Probe Ob-ser-va-tional
+ []
+
+
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+ [41]
+Underfull \hbox (badness 4543) in paragraph at lines 248--249
+[]\T1/lmr/bx/n/10 (+20) 4. Hiramatsu--Kobayashi CMB con-straint
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+\T1/lmr/m/n/10 (+20) con-strained the ef-fec-tive grav-i-ta-tional strength
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 248--249
+\T1/lmr/m/n/10 (+20) mod-i-fi-ca-tion pa-ram-e-ter $\OML/lmm/m/it/10 ^^L[] \OT1
+/lmr/m/n/10 (+20) = \OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10
+ :\OT1/lmr/m/n/10 (+20) 037 \OMS/lmsy/m/n/10 ^^F \OT1/lmr/m/n/10 (+20) 0\OML/lm
+m/m/it/10 :\OT1/lmr/m/n/10 (+20) 0095$
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 248--249
+\T1/lmr/m/n/10 (+20) from Planck CMB tem-per-a-ture and po-lar-iza-tion
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 248--249
+\T1/lmr/m/n/10 (+20) data. In the Merid-ian frame-work, this maps to
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\chi' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 252.
+
+<figures/fig3_chi2_comparison.pdf, id=3521, 469.44917pt x 318.7427pt>
+File: figures/fig3_chi2_comparison.pdf Graphic file (type pdf)
+<use figures/fig3_chi2_comparison.pdf>
+Package pdftex.def Info: figures/fig3_chi2_comparison.pdf  used on input line 2
+83.
+(pdftex.def)             Requested size: 428.02718pt x 290.6205pt.
+[42] [43 <./figures/fig3_chi2_comparison.pdf>]
+Overfull \hbox (0.77126pt too wide) in paragraph at lines 290--291
+\T1/lmr/m/n/10 (-20) multi-probe re-sults both with and with-out the Hiramatsu-
+-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 325.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 325.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 358.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 358.
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 361--362
+\T1/lmr/m/n/10 (+20) The CMB con-straint [] and the $\OML/lmm/m/it/10 H\OT1/lmr
+/m/n/10 (+20) (\OML/lmm/m/it/10 z\OT1/lmr/m/n/10 (+20) )$ \T1/lmr/m/n/10 (+20) 
+con-
+ []
+
+[44]
+Underfull \hbox (badness 2443) in paragraph at lines 375--375
+|[]\T1/lmr/bx/n/12 (+20) Two Anal-y-sis Regimes: Com-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 382.
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+[]\T1/lmr/m/n/10 (+20) The CMB Bayes fac-tor [] is prior-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+\T1/lmr/m/n/10 (+20) dependent through the Savage--Dickey for-mula
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 468--469
+[]\T1/lmr/bx/n/10 (+20) Sensitivity to $\OML/lmm/m/it/10 ^^P[]$ \T1/lmr/bx/n/10
+ (+20) value. \T1/lmr/m/n/10 (+20) The Bayes fac-tors
+ []
+
+[46]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+<figures/fig9_bao_residuals.pdf, id=3702, 470.3353pt x 342.77122pt>
+File: figures/fig9_bao_residuals.pdf Graphic file (type pdf)
+<use figures/fig9_bao_residuals.pdf>
+Package pdftex.def Info: figures/fig9_bao_residuals.pdf  used on input line 523
+.
+(pdftex.def)             Requested size: 428.02718pt x 311.94846pt.
+ [47]
+[48 <./figures/fig9_bao_residuals.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 537.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 537.
+
+[49]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 608.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Phi' on input line 608.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 608.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 608.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 738.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 738.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 738.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 738.
+
+[50] [51]
+Underfull \hbox (badness 4168) in paragraph at lines 749--749
+|[]\T1/lmr/bx/n/12 (+20) Qualitative Model Com-par-i-son
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 757--758
+[]\T1/lmr/bx/n/10 (+20) Meridian's redshift-dependent for-mula is
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 757--758
+\T1/lmr/m/n/10 (+20) per-tur-ba-tive equa-tion of state $\OML/lmm/m/it/10 w\OT1
+/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 z\OT1/lmr/m/n/10 (+20) ) = \OMS/lmsy/m/n/10
+ ^^@\OT1/lmr/m/n/10 (+20) 1 +
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+|[]\T1/lmr/bx/n/14.4 (+20) Pre-Data Pre-dic-tions for
+ []
+
+
+Overfull \hbox (1.9712pt too wide) in paragraph at lines 793--794
+\T1/lmr/m/n/10 (-20) the prod-uct heat ker-nel on the warped orb-ifold with Eul
+er--
+ []
+
+<figures/fig2_wz_comparison.pdf, id=3851, 519.97699pt x 370.9559pt>
+File: figures/fig2_wz_comparison.pdf Graphic file (type pdf)
+<use figures/fig2_wz_comparison.pdf>
+Package pdftex.def Info: figures/fig2_wz_comparison.pdf  used on input line 861
+.
+(pdftex.def)             Requested size: 428.02718pt x 305.35748pt.
+
+Underfull \vbox (badness 3746) has occurred while \output is active []
+
+ [53]
+[54] [55 <./figures/fig2_wz_comparison.pdf>] [56] [57]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1085.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1085.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1085.
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 1088--1089
+\T1/lmr/m/n/10 (+20) We per-form four in-de-pen-dent tests of the $\OML/lmm/m/i
+t/10 w[] \OT1/lmr/m/n/10 (+20) =
+ []
+
+
+Overfull \hbox (14.44673pt too wide) in paragraph at lines 1097--1106
+ [][] 
+ []
+
+[58]
+Underfull \hbox (badness 1810) in paragraph at lines 1193--1194
+[]$\OML/lmm/m/it/10 ^^P[]$\T1/lmr/m/n/10 (+20) , which is con-strained pri-mar-
+ily by \T1/lmr/bx/n/10 (+20) CMB
+ []
+
+<figures/fig7_forecast.pdf, id=4020, 540.44408pt x 309.90028pt>
+File: figures/fig7_forecast.pdf Graphic file (type pdf)
+<use figures/fig7_forecast.pdf>
+Package pdftex.def Info: figures/fig7_forecast.pdf  used on input line 1224.
+(pdftex.def)             Requested size: 428.02718pt x 245.43799pt.
+[59] [60 <./figures/fig7_forecast.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1267
+|[]\T1/lmr/bx/n/14.4 (+20) Additional Ob-ser-va-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1328--1330
+\T1/lmr/m/n/10 (+20) where $\OML/lmm/m/it/10 r[]$ \T1/lmr/m/n/10 (+20) is the S
+chwarzschild ra-dius and
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 1328--1330
+\OML/lmm/m/it/10 L[] \OMS/lmsy/m/n/10 ^^X \OML/lmm/m/it/10 M[]=\OT1/lmr/m/n/10 
+(+20) (\OML/lmm/m/it/10 r[] M[]\OT1/lmr/m/n/10 (+20) )$ \T1/lmr/m/n/10 (+20) is
+ the DGP crossover scale.
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 1328--1330
+\T1/lmr/m/n/10 (+20) post-Newtonian mod-i-fi-ca-tions be-low the Cassini
+ []
+
+[61]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1373.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1373.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 1373.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1373.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1373.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\approx' on input line 1382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\approx' on input line 1391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1391.
+
+[62]
+Underfull \hbox (badness 1406) in paragraph at lines 1431--1431
+|[]\T1/lmr/bx/n/12 (+20) Prediction 7: Neu-trino Mass
+ []
+
+
+Underfull \hbox (badness 6078) in paragraph at lines 1436--1437
+[]\T1/lmr/m/n/10 (+20) Meridian's $\OML/lmm/m/it/10 w[] \OMS/lmsy/m/n/10 ^^Y ^^
+@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 76$ \T1/lmr/m/n
+/10 (+20) (per-tur-ba-tive; non-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1458.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1458.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1458.
+
+[63] [64]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1556.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 1556.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1556.
+
+[65]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1590.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1590.
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 1595--1596
+\T1/lmr/m/n/10 (+20) Table [][]2.27[][] presents the com-plete $\OML/lmm/m/it/1
+0 H\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 z\OT1/lmr/m/n/10 (+20) )$ \T1/lmr/m/
+n/10 (+20) ex-pan-sion
+ []
+
+[66]) (chapter3_nogo.tex [67
+
+]
+Chapter 3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68
+
+]
+Underfull \hbox (badness 3590) in paragraph at lines 36--37
+[] []\T1/lmr/bx/n/10 (+20) No-ta-tion.[] \T1/lmr/m/n/10 (+20) We fol-low the co
+n-ven-tions of Chap-
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+|[]\T1/lmr/bx/n/14.4 (+20) Perturbative Back-ground
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 153--154
+\T1/lmr/m/n/10 (+20) A dif-fer-en-tial con-for-mal cou-pling be-tween bulk-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 153--154
+\T1/lmr/m/n/10 (+20) by the con-for-mal fac-tor $\OML/lmm/m/it/10 ^^L\OT1/lmr/m
+/n/10 (+20) (\OML/lmm/m/it/10 ^^^\OT1/lmr/m/n/10 (+20) )$\T1/lmr/m/n/10 (+20) ,
+ pro-duces en-ergy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+[]\T1/lmr/m/n/10 (+20) Furthermore, di-rect non-gravitational cou-pling
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 181--182
+[]\T1/lmr/m/n/10 (+20) We per-formed a sys-tem-atic scan over $\OML/lmm/m/it/10
+ r[]$ \T1/lmr/m/n/10 (+20) in
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 181--182
+\OT1/lmr/m/n/10 (+20) [142\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 68\OML/lmm/m/
+it/10 ;  \OT1/lmr/m/n/10 (+20) 151\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 50]$ 
+\T1/lmr/m/n/10 (+20) Mpc with the Planck CMB prior
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+[]\T1/lmr/bx/n/10 (+20) Modified sound hori-zon: $\OML/lmm/m/it/10 ^^Nr[]=r[] \
+OMS/lmsy/m/n/10 ^^X
+ []
+
+[70]
+Underfull \hbox (badness 1314) in paragraph at lines 234--235
+\T1/lmr/m/n/10 (+20) The Iyonaga--Takahashi--Kobayashi (ITK) clas-si-fi-ca-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 253.
+
+[71]
+Underfull \hbox (badness 1320) in paragraph at lines 344--345
+[] []\T1/lmr/bx/n/10 (+20) NCG con-straint.[] \T1/lmr/m/n/10 (+20) The Stan-dar
+d Model spec-tral
+ []
+
+[72] [73]
+Underfull \hbox (badness 1205) in paragraph at lines 486--487
+[] []\T1/lmr/bx/n/10 (+20) Horn-deski $\OML/lmm/m/it/10 G[]$\T1/lmr/bx/n/10 (+2
+0) :[] \T1/lmr/m/n/10 (+20) The scalar-tensor cou-pling $\OMS/lmsy/m/n/10 L /
+ []
+
+[74]
+Underfull \hbox (badness 1019) in paragraph at lines 534--535
+[][]\T1/lmr/bx/n/10 (+20) Conjecture 3.4 \T1/lmr/m/n/10 (+20) (Horn-deski Dilem
+ma (em-pir-i-cally
+ []
+
+[75] [76]
+Underfull \hbox (badness 1571) in paragraph at lines 684--685
+[] []\T1/lmr/bx/n/10 (+20) (e) Sym-me-try-based can-cel-la-tions.[] \T1/lmr/m/n
+/10 (+20) Con-for-mal
+ []
+
+[77] [78] [79]) (chapter4_ncg.tex [80] [81]
+Chapter 4.
+[82
+
+] [83] [84]
+Overfull \hbox (9.3566pt too wide) detected at line 325
+[][][][]\OT1/lmr/m/n/8 (\OT1/lmr/bx/n/8 1\OT1/lmr/m/n/8 ) = 4\OML/lmm/m/it/8 ; 
+ []\OT1/lmr/m/n/8 (\OML/lmm/m/it/8 E\OT1/lmr/m/n/8 ) = \OMS/lmsy/m/n/8 ^^@\OML/
+lmm/m/it/8 R;  []\OT1/lmr/m/n/8 (\OML/lmm/m/it/8 E[]\OT1/lmr/m/n/8 ) = [] \OML/
+lmm/m/it/8 R[];  []\OT1/lmr/m/n/8 (
+[]) = \OMS/lmsy/m/n/8 ^^@[] \OML/lmm/m/it/8 R[]:
+ []
+
+[85]
+Underfull \hbox (badness 2285) in paragraph at lines 331--333
+\T1/lmr/m/n/10 (+20) Converting to the $\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10
+ C[]; \OMS/lmsy/m/n/10 E[]\OML/lmm/m/it/10 ; R[]\OT1/lmr/m/n/10 (+20) )$ \T1/lm
+r/m/n/10 (+20) ba-sis re-quires the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[] []\T1/lmr/bx/n/10 (+20) Co-ef-fi-cient $\OML/lmm/m/it/10 a[]$ \T1/lmr/bx/n/1
+0 (+20) (Brane-lo-cal-ized Ein-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+\T1/lmr/bx/n/10 (+20) stein--Hilbert).[] \T1/lmr/m/n/10 (+20) The $\OML/lmm/m/i
+t/10 a[]$ \T1/lmr/m/n/10 (+20) co-ef-fi-cient pro-duces
+ []
+
+[86]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 504.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 504.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 504.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 504.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 504.
+
+[87]
+Overfull \hbox (3.47218pt too wide) detected at line 560
+[][][]\OML/lmm/m/it/8 K \OT1/lmr/m/n/8 = \OML/lmm/m/it/8 h[]K[] \OT1/lmr/m/n/8 
+= \OMS/lmsy/m/n/8 ^^@\OT1/lmr/m/n/8 4\OML/lmm/m/it/8 k;  K[] K[] \OT1/lmr/m/n/8
+ = \OML/lmm/m/it/8 k[] h[];  K[] K[] \OT1/lmr/m/n/8 = 4\OML/lmm/m/it/8 k[]:
+ []
+
+[88]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 1137) in paragraph at lines 731--731
+|[]\T1/lmr/bx/n/14.4 (+20) Chern--Simons Terms from
+ []
+
+[89]
+Underfull \hbox (badness 1067) in paragraph at lines 858--859
+[] []\T1/lmr/bx/n/10 (+20) Cos-mo-log-i-cal value:[] $[]\OML/lmm/m/it/10 =\OT1/
+lmr/m/n/10 (+20) (\OML/lmm/m/it/10 H[] M[]\OT1/lmr/m/n/10 (+20) ) \OMS/lmsy/m/n
+/10 ^^X \OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 065$ \T1
+/lmr/m/n/10 (+20) (sup-
+ []
+
+[90] [91]
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1114
+[] []\T1/lmr/bx/n/10 (+20) Sen-si-tiv-ity anal-y-sis.[] \T1/lmr/m/n/10 (+20) Fr
+om the D2 anal-y-sis,
+ []
+
+[92]
+Underfull \hbox (badness 2426) in paragraph at lines 1137--1137
+|[]\T1/lmr/bx/n/14.4 (+20) The Oc-to-nionic Ex-ten-sion:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1137
+\T1/lmr/bx/n/14.4 (+20) Three Gen-er-a-tions from
+ []
+
+
+Overfull \hbox (2.30525pt too wide) in paragraph at lines 1147--1149
+\OT1/lmr/m/n/10 (-20) (\OMS/lmsy/m/n/10 T[]\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 
+H[]\OML/lmm/m/it/10 ; D[]; J[]; ^^M[]\OT1/lmr/m/n/10 (-20) )$ \T1/lmr/m/n/10 (-
+20) sat-is-fies all seven NCG axioms---
+ []
+
+[93] [94]
+Underfull \hbox (badness 3646) in paragraph at lines 1288--1289
+[]\T1/lmr/m/it/10 (+20) The as-so-cia-tive en-ve-lope of the oc-to-nions is
+ []
+
+[95]
+Underfull \hbox (badness 2326) in paragraph at lines 1292--1293
+[]\T1/lmr/m/it/10 (+20) The in-ter-sec-tion form is non-degenerate, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1316--1317
+\T1/lmr/m/n/10 (+20) The ori-entabil-ity ax-iom for a spec-tral triple
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 1321--1322
+[][]\T1/lmr/bx/n/10 (+20) Theorem 4.19 \T1/lmr/m/n/10 (+20) (Ori-entabil-ity of
+ the Oc-to-nionic
+ []
+
+[96]
+Underfull \hbox (badness 3439) in paragraph at lines 1386--1387
+[] []\T1/lmr/bx/n/10 (+20) The mod-i-fied first-order con-di-tion: im-pli-
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 1386--1387
+\T1/lmr/bx/n/10 (+20) ca-tions and caveats.[] \T1/lmr/m/n/10 (+20) The first-or
+der con-di-tion
+ []
+
+[97] [98] [99]
+<figures/fig5_fermion_profiles.pdf, id=5091, 513.57808pt x 344.19843pt>
+File: figures/fig5_fermion_profiles.pdf Graphic file (type pdf)
+<use figures/fig5_fermion_profiles.pdf>
+Package pdftex.def Info: figures/fig5_fermion_profiles.pdf  used on input line 
+1662.
+(pdftex.def)             Requested size: 428.02718pt x 286.86632pt.
+
+Underfull \hbox (badness 1281) in paragraph at lines 1674--1674
+|[]\T1/lmr/bx/n/12 (+20) Bulk Mass Pa-ram-e-ters for All
+ []
+
+[100
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.11
+8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1705 \begin{enumerate}
+                        ] [101 <./figures/fig5_fermion_profiles.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1707
+[]\T1/lmr/m/it/10 (+20) The ef-fec-tive 4D Yukawa cou-pling is
+ []
+
+[102]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1836.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1836.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1836.
+
+
+Underfull \vbox (badness 1960) has occurred while \output is active []
+
+ [103]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 1964.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1964.
+
+[104]
+Underfull \hbox (badness 3536) in paragraph at lines 2018--2019
+[]\T1/lmr/m/n/10 (+20) The SM Yukawa RGE has the struc-ture
+ []
+
+[105]
+Underfull \hbox (badness 10000) in paragraph at lines 2108--2108
+|[]\T1/lmr/bx/n/14.4 (+20) NCG--Asymptotic Safety
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2111.
+
+[106]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2126.
+
+
+Overfull \hbox (6.09955pt too wide) detected at line 2167
+[][][]\OML/lmm/m/it/8 b[] \OT1/lmr/m/n/8 = [][]\OML/lmm/m/it/8 N\OT1/lmr/m/n/8 
+(5\OML/lmm/m/it/8 R[] \OMS/lmsy/m/n/8 ^^@ \OT1/lmr/m/n/8 2\OML/lmm/m/it/8 R[] \
+OT1/lmr/m/n/8 + 2\OML/lmm/m/it/8 R[]\OT1/lmr/m/n/8 ) + 60\OML/lmm/m/it/8 R [] E
+ \OT1/lmr/m/n/8 + 180 [] \OML/lmm/m/it/8 E[] \OT1/lmr/m/n/8 + 30 [] 
+[][] \OML/lmm/m/it/8 :
+ []
+
+[107]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2233.
+
+[108]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2268.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2268.
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 2324--2325
+[]\T1/lmr/m/n/10 (+20) The pre-dic-tions are ob-ser-va-tion-ally iden-ti-cal to
+
+ []
+
+<figures/fig4_inflation_nsr.pdf, id=5355, 466.90059pt x 371.37935pt>
+File: figures/fig4_inflation_nsr.pdf Graphic file (type pdf)
+<use figures/fig4_inflation_nsr.pdf>
+Package pdftex.def Info: figures/fig4_inflation_nsr.pdf  used on input line 232
+8.
+(pdftex.def)             Requested size: 428.02718pt x 340.47179pt.
+[109] [110 <./figures/fig4_inflation_nsr.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2386.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2386.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2386.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2399--2401
+\T1/lmr/m/n/10 (+20) for the nat-u-ral mod-u-lus mass range
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 2399--2401
+\OML/lmm/m/it/10 m[] \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 (+20) [200\OML/lmm/m/it
+/10 ;  \OT1/lmr/m/n/10 (+20) 2000] []$\T1/lmr/m/n/10 (+20) . This de-ter-mines 
+the
+ []
+
+
+Overfull \hbox (12.96045pt too wide) detected at line 2405
+[][][]\OML/lmm/m/it/8 N[] \OMS/lmsy/m/n/8 ^^Y \OT1/lmr/m/n/8 53[]56  =[]\OMS/lm
+sy/m/n/8 )  \OML/lmm/m/it/8 n[] \OT1/lmr/m/n/8 = 0\OML/lmm/m/it/8 :\OT1/lmr/m/n
+/8 9634 \OMS/lmsy/m/n/8 ^^F \OT1/lmr/m/n/8 0\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 000
+9\OML/lmm/m/it/8 ;  r \OT1/lmr/m/n/8 = 0\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 0040 \O
+MS/lmsy/m/n/8 ^^F \OT1/lmr/m/n/8 0\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 0002 \OML/lmm
+/m/it/8 ;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2414--2415
+\T1/lmr/m/n/10 (+20) deconfinement phase tran-si-tion (Hawking--Page
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 2414--2415
+\T1/lmr/m/n/10 (+20) type)---as ar-gued in [[], []] but not com-puted
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 2414--2415
+\T1/lmr/m/n/10 (+20) within this framework---the tran-si-tion tem-per-a-ture
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2437.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 2437.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2437.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\det' on input line 2453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2453.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2463.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2463.
+
+
+Overfull \hbox (8.1693pt too wide) detected at line 2480
+[][][]\OML/lmm/m/it/8 ^^M \OT1/lmr/m/n/8 = 0\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 065
+\OML/lmm/m/it/8 ;  ^^R \OT1/lmr/m/n/8 = 0\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 78[]  
+(\OML/lmm/m/it/8 m[] \OT1/lmr/m/n/8 = 300 [])\OML/lmm/m/it/8 ;  ^^T[] \OMS/lmsy
+/m/n/8 ^^@ \OT1/lmr/m/n/8 1 = 8\OML/lmm/m/it/8 :\OT1/lmr/m/n/8 0 \OMS/lmsy/m/n/
+8 ^^B \OT1/lmr/m/n/8 10[] \OML/lmm/m/it/8 :
+ []
+
+[111] [112]
+Underfull \hbox (badness 1342) in paragraph at lines 2638--2639
+[]\T1/lmr/m/n/10 (+20) The gauge--graviton mass ra-tio $\OML/lmm/m/it/10 m[]=m[
+] \OT1/lmr/m/n/10 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2644--2644
+\T1/lmr/bx/n/14.4 (+20) Ten-sion and Res-o-lu-tion
+ []
+
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [113]
+Underfull \hbox (badness 1248) in paragraph at lines 2708--2709
+[] []\T1/lmr/bx/n/10 (+20) Zero 1: Non-per-tur-ba-tive sup-pres-sion.[] \T1/lmr
+/m/n/10 (+20) The
+ []
+
+[114]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2751.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2751.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2751.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2756--2757
+[][]\T1/lmr/bx/n/10 (+20) Theorem 4.37 \T1/lmr/m/n/10 (+20) ($\OML/lmm/m/it/10 
+S[]$\T1/lmr/m/n/10 (+20) -Breaking)\T1/lmr/bx/n/10 (+20) . []\T1/lmr/m/it/10 (+
+20) On the res-o-lu-
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 2756--2757
+\T1/lmr/m/it/10 (+20) tion of the $\U/msb/m/n/10 Z[]$ \T1/lmr/m/it/10 (+20) orb
+-ifold $\OML/lmm/m/it/10 T[]=\U/msb/m/n/10 Z[]$\T1/lmr/m/it/10 (+20) , the Wil-
+son line
+ []
+
+[115] [116] [117]
+Overfull \hbox (0.59583pt too wide) in paragraph at lines 2979--2980
+\T1/lmr/m/n/10 (-20) tral ac-tion to re-pro-duce $\OML/lmm/m/it/10 M[]$\T1/lmr/
+m/n/10 (-20) . This is self-consistent---
+ []
+
+[118]
+Underfull \hbox (badness 10000) in paragraph at lines 3011--3012
+[]\T1/lmr/bx/n/10 (+20) Anomaly can-cel-la-tion from oc-to-nionic
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 3011--3012
+[]\OT1/lmr/m/n/10 (+20) (10)$\T1/lmr/bx/n/10 (+20) : \T1/lmr/m/n/10 (+20) All s
+ix in-de-pen-dent 4D anomaly
+ []
+
+[119]
+Underfull \hbox (badness 10000) in paragraph at lines 3036--3036
+|[]\T1/lmr/bx/n/12 (+20) CP Vi-o-la-tion from Brane-
+ []
+
+
+Overfull \hbox (12.44539pt too wide) detected at line 3088
+[][][][][]\OT1/lmr/m/n/8 (\OML/lmm/m/it/8 ^^M[] F[] \OMS/lmsy/m/n/8 ^ \OML/lmm/
+m/it/8 F[]\OT1/lmr/m/n/8 ) = [] [][](\OML/lmm/m/it/8 F[] \OMS/lmsy/m/n/8 ^ \OML
+/lmm/m/it/8 F[]\OT1/lmr/m/n/8 ) \OMS/lmsy/m/n/8 ^^@ [] [][]\OT1/lmr/m/n/8 (\OML
+/lmm/m/it/8 F[] \OMS/lmsy/m/n/8 ^ \OML/lmm/m/it/8 F[]\OT1/lmr/m/n/8 ) = 0\OML/l
+mm/m/it/8 :
+ []
+
+[120]
+Underfull \hbox (badness 10000) in paragraph at lines 3095--3096
+[] []\T1/lmr/bx/n/10 (+20) Mech-a-nism 3: Per-tur-ba-tive pro-tec-tion
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 3095--3096
+\T1/lmr/bx/n/10 (+20) (Adler--Bardeen).[] \T1/lmr/m/n/10 (+20) Since $\OML/lmm/
+m/it/10 ^^R[] \OT1/lmr/m/n/10 (+20) = 0$\T1/lmr/m/n/10 (+20) , the Adler--
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 3104--3105
+[] []\T1/lmr/bx/n/10 (+20) Fal-si-fi-able pre-dic-tion.[] \T1/lmr/m/n/10 (+20) 
+The frame-work pre-dicts:
+ []
+
+[121]
+Overfull \hbox (6.61578pt too wide) detected at line 3213
+[][][][]
+ []
+
+[122]
+Underfull \hbox (badness 4927) in paragraph at lines 3248--3249
+[]\T1/lmr/bx/n/10 (+20) Coincidence prob-lem (ame-lio-rated, not
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 3248--3249
+\T1/lmr/m/n/10 (+20) con-stant prob-lem via self-tuning and pre-dicts
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 3248--3249
+\T1/lmr/m/n/10 (+20) ameliorated---the dy-nam-i-cal equa-tion of state
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 3248--3249
+\T1/lmr/m/n/10 (+20) (top-quark dom-i-nance), the as-so-ci-a-tor car-ries
+ []
+
+) (chapter5_sound_speed.tex [123]
+Chapter 5.
+[124
+
+]
+Underfull \hbox (badness 2922) in paragraph at lines 97--97
+|[]\T1/lmr/bx/n/12 (+20) Evaluating on the Friedmann--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\T1/lmr/bx/n/12 (+20) Robertson--Walker (FRW)
+ []
+
+[125]
+<figures/fig6_goldilocks.pdf, id=5812, 567.915pt x 343.88475pt>
+File: figures/fig6_goldilocks.pdf Graphic file (type pdf)
+<use figures/fig6_goldilocks.pdf>
+Package pdftex.def Info: figures/fig6_goldilocks.pdf  used on input line 179.
+(pdftex.def)             Requested size: 428.02718pt x 259.18275pt.
+
+Underfull \hbox (badness 1688) in paragraph at lines 193--193
+|[]\T1/lmr/bx/n/12 (+20) From In-fi-nite to Fi-nite Sound
+ []
+
+[126]
+Underfull \vbox (badness 4872) has occurred while \output is active []
+
+ [127 <./figures/fig6_goldilocks.pdf>]
+Overfull \hbox (5.12573pt too wide) in paragraph at lines 265--275
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
+\T1/lmr/m/n/10 (+20) On the FRW back-ground ($\OML/lmm/m/it/10 u[] \OT1/lmr/m/n
+/10 (+20) = \OML/lmm/m/it/10 ^^N[]$\T1/lmr/m/n/10 (+20) ,
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 307--309
+\OML/lmm/m/it/10 g[] \OT1/lmr/m/n/10 (+20) = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/
+n/10 (+20) 1\OML/lmm/m/it/10 ; a[]; a[]; a[]\OT1/lmr/m/n/10 (+20) )$\T1/lmr/m/n
+/10 (+20) ), this yields the char-
+ []
+
+[128]
+Overfull \hbox (15.1083pt too wide) detected at line 368
+[][][]\OML/lmm/m/it/8 ^^U[] \OT1/lmr/m/n/8 = \OML/lmm/m/it/8 c[] [] \OMS/lmsy/m
+/n/8 ^^X [] ^^X [] [] ^^X \OT1/lmr/m/n/8 50[]000[]65[]000 [] \OML/lmm/m/it/8 :
+ []
+
+[129]
+Overfull \hbox (8.35428pt too wide) detected at line 402
+[][][]\OML/lmm/m/it/8 ^^N[] \OT1/lmr/m/n/8 + [] \OML/lmm/m/it/8 ^^N[] \OT1/lmr/
+m/n/8 + [] \OML/lmm/m/it/8 ^^N[] \OT1/lmr/m/n/8 = \OMS/lmsy/m/n/8 ^^@[] \OML/lm
+m/m/it/8 ^^N[] ;
+ []
+
+<figures/fig8_sound_speed.pdf, id=5978, 560.8955pt x 344.52779pt>
+File: figures/fig8_sound_speed.pdf Graphic file (type pdf)
+<use figures/fig8_sound_speed.pdf>
+Package pdftex.def Info: figures/fig8_sound_speed.pdf  used on input line 486.
+(pdftex.def)             Requested size: 428.02718pt x 262.92152pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
+[] []\T1/lmr/bx/n/10 (+20) k-essence with DBI--type ki-net-ics.[] \T1/lmr/m/n/1
+0 (+20) DBI
+ []
+
+[130] [131 <./figures/fig8_sound_speed.pdf>]
+Underfull \hbox (badness 2285) in paragraph at lines 573--573
+|[]\T1/lmr/bx/n/12 (+20) Future Dis-crim-i-nat-ing Ob-ser-va-
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 610--610
+[]\T1/lmr/bx/n/10 (+20) Conditional pre-dic-tion. \T1/lmr/m/n/10 (+20) All LISA
+ SNR and
+ []
+
+
+Underfull \vbox (badness 1067) has occurred while \output is active []
+
+ [132]
+Underfull \hbox (badness 1024) in paragraph at lines 634--635
+[]\T1/lmr/m/n/10 (+20) The spec-tral shape fol-lows a bro-ken power law
+ []
+
+) [133] [134] (appendix_computations.tex
+Appendix A.
+[135
+
+
+
+] [136]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 172.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 172.
+
+[137]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 229.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 274.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 274.
+
+[138] [139]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 380.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\chi' on input line 380.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 380.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 380.
+
+[140]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 467.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 467.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 467.
+
+[141] [142]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 589.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 589.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 589.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 589.
+
+[143] [144]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 782.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 782.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 782.
+
+[145]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 786.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 786.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 786.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 786.
+
+[146] [147] [148] [149]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1136.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 1136.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1136.
+
+[150]) (appendix_prediction_registry.tex [151]
+Appendix B.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 13.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 13.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\T1/lmr/m/n/9 (+20) Consistent: cos-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\T1/lmr/m/n/9 (+20) graphic anal-y-ses
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 32--32
+\T1/lmr/m/n/9 (+20) find $\OML/lmm/m/it/9 w \OT1/lmr/m/n/9 (+20) = \OMS/lmsy/m/
+n/9 ^^@\OT1/lmr/m/n/9 (+20) 1$ \T1/lmr/m/n/9 (+20) is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\T1/lmr/m/n/9 (+20) DESI DR2 CPL:
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 39--39
+\OML/lmm/m/it/9 w[] \OT1/lmr/m/n/9 (+20) = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 (+
+20) 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 (+20) 62 \OMS/lmsy/m/n/9 ^^F \OT1/lmr/m/n/
+9 (+20) 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 (+20) 26$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\T1/lmr/m/n/9 (+20) ($\OT1/lmr/m/n/9 (+20) 2\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 (+2
+0) 4\OML/lmm/m/it/9 ^^[$\T1/lmr/m/n/9 (+20) ); model-
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 39--39
+\T1/lmr/m/n/9 (+20) independent anal-y-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\T1/lmr/m/n/9 (+20) Euclid + Ru-bin:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\T1/lmr/m/n/9 (+20) Verified:
+ []
+
+
+Overfull \hbox (10.96265pt too wide) in paragraph at lines 53--53
+\T1/lmr/m/n/9 (-20) GW170817/GRB170817A
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 60--60
+[]|\T1/lmr/m/n/9 (+20) Consistent with cur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/9 (+20) Euclid + Ru-bin
+ []
+
+
+Underfull \hbox (badness 6268) in paragraph at lines 73--73
+[]|\T1/lmr/m/n/9 (+20) Cuscuton $\OML/lmm/m/it/9 P\OT1/lmr/m/n/9 (+20) (\OML/lm
+m/m/it/9 X\OT1/lmr/m/n/9 (+20) ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\T1/lmr/m/n/9 (+20) Structural the-o-rem;
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 74--74
+\T1/lmr/m/n/9 (+20) not di-rectly mea-sur-
+ []
+
+
+Underfull \vbox (badness 1152) has occurred while \output is active []
+
+ [152
+
+]
+Underfull \hbox (badness 1478) in paragraph at lines 101--101
+[]|$\OML/lmm/m/it/9 w[] \OT1/lmr/m/n/9 (+20) = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/
+9 (+20) 1 + \OML/lmm/m/it/9 C[]=^^P[]$\T1/lmr/m/n/9 (+20) ;
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 102--102
+\OT1/lmr/m/n/9 (+20) 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 (+20) 016 \OMS/lmsy/m/n/9
+ ^^F \OT1/lmr/m/n/9 (+20) 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 (+20) 002$\T1/lmr/m/
+n/9 (+20) , $\OML/lmm/m/it/9 w[] \OT1/lmr/m/n/9 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]|\T1/lmr/m/n/9 (+20) Euclid + Ru-bin
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 110--110
+\T1/lmr/m/n/9 (+20) all scales); LISA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T1/lmr/m/n/9 (+20) (GW dis-per-sion,
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 136--136
+\T1/lmr/m/n/9 (+20) X-ray line at $\OML/lmm/m/it/9 E \OT1/lmr/m/n/9 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]|\T1/lmr/m/n/9 (+20) XRISM, Athena
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 143--143
+[]|\T1/lmr/m/n/9 (+20) Normal hi-er-ar-chy; $\OML/lmm/m/it/9 S[]$
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (appendix_code_reference.tex [153] [154]
+Appendix C.
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/lmtt/m/n/8 meridian/spectral-action/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\T1/lmtt/m/n/8 meridian/spectral-action/
+ []
+
+) (appendix_value_table.tex [155
+
+]
+Appendix D.
+
+Underfull \hbox (badness 1281) in paragraph at lines 117--117
+[]|\T1/lmr/m/n/9 (+20) Quantum sta-bil-i-sa-tion (99.7% from
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]|\T1/lmr/m/n/9 (+20) Four-probe inverse-variance
+ []
+
+[156
+
+]) (appendix_gw_computation.tex [157]
+Appendix E.
+[158
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 96.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varepsilon' on input line 96.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 96.
+
+[159]) [160] (bibliography.tex [161
+
+
+] [162
+
+] [163]
+Overfull \hbox (0.8488pt too wide) in paragraph at lines 434--437
+[]\T1/lmr/m/n/9 (-20) A. Pezzotta et al., ``The VIMOS Public Extragalactic Reds
+hift Survey (VIPERS): The growth of structure at $\OT1/lmr/m/n/9 (-20) 0\OML/lm
+m/m/it/9 :\OT1/lmr/m/n/9 (-20) 5 \OML/lmm/m/it/9 < z < \OT1/lmr/m/n/9 (-20) 1\O
+ML/lmm/m/it/9 :\OT1/lmr/m/n/9 (-20) 2$\T1/lmr/m/n/9 (-20) ,''
+ []
+
+[164] [165] [166] [167] [168] [169] [170]) [171] (meridian_monograph.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `meridian_monograph.out' has not changed.
+(rerunfilecheck)             Checksum: BDA3FBC53D6092FB3ACB87ECC15F16DA;91681.
+ ) 
+Here is how much of TeX's memory you used:
+ 19943 strings out of 467867
+ 311243 string characters out of 5428402
+ 837328 words of memory out of 5000000
+ 45801 multiletter control sequences out of 15000+600000
+ 822883 words of font info for 566 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,19n,79p,2317b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbsy10.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lm
+bx6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmib7.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/font
+s/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy9.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/lm/lmtt9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on meridian_monograph.pdf (189 pages, 3522834 bytes).
+PDF statistics:
+ 7156 PDF objects out of 7423 (max. 8388607)
+ 1870 named destinations out of 2073 (max. 500000)
+ 95067 words of extra memory for PDF output out of 106986 (max. 10000000)
+

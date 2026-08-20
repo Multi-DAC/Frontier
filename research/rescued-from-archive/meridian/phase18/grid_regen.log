@@ -1,0 +1,42 @@
+Generating CAMB grid: 100x100 = 10000 points
+  Om: [0.1, 0.6]
+  H0: [50.0, 85.0]
+  Fixed: ombh2=0.02237, Neff=3.046
+
+  [  500/10000] 16.5s elapsed, ETA 314s, 0 errors
+  [ 1000/10000] 33.9s elapsed, ETA 305s, 0 errors
+  [ 1500/10000] 50.2s elapsed, ETA 284s, 0 errors
+  [ 2000/10000] 67.5s elapsed, ETA 270s, 0 errors
+  [ 2500/10000] 83.5s elapsed, ETA 251s, 0 errors
+  [ 3000/10000] 101.2s elapsed, ETA 236s, 0 errors
+  [ 3500/10000] 117.4s elapsed, ETA 218s, 0 errors
+  [ 4000/10000] 133.6s elapsed, ETA 200s, 0 errors
+  [ 4500/10000] 150.8s elapsed, ETA 184s, 0 errors
+  [ 5000/10000] 166.9s elapsed, ETA 167s, 0 errors
+  [ 5500/10000] 184.0s elapsed, ETA 151s, 0 errors
+  [ 6000/10000] 201.1s elapsed, ETA 134s, 0 errors
+  [ 6500/10000] 219.9s elapsed, ETA 118s, 0 errors
+  [ 7000/10000] 236.5s elapsed, ETA 101s, 0 errors
+  [ 7500/10000] 253.3s elapsed, ETA 84s, 0 errors
+  [ 8000/10000] 269.6s elapsed, ETA 67s, 0 errors
+  [ 8500/10000] 287.0s elapsed, ETA 51s, 0 errors
+  [ 9000/10000] 303.6s elapsed, ETA 34s, 0 errors
+  [ 9500/10000] 320.9s elapsed, ETA 17s, 0 errors
+  [10000/10000] 336.9s elapsed, ETA 0s, 0 errors
+
+Done in 336.9s (5.6 min)
+  Valid points: 10000/10000
+  Errors: 0
+  rd range:      [104.85, 199.21] Mpc
+  rs_star range: [103.03, 195.11] Mpc
+  dc_star range: [8467.07, 28526.09] Mpc
+  z_star range:  [1076.28, 1108.37]
+  z_drag range:  [1048.58, 1075.00]
+
+  Fiducial check (Om=0.317, H0=67.3):
+    rd = 146.74 Mpc (expect ~147.09)
+    rs_star = 144.08 Mpc (expect ~144.4)
+    dc_star = 13821.00 Mpc (expect ~13870)
+
+Saved to /mnt/c/Users/mercu/clawd/projects/Project Meridian/phase18/camb_grid_100x100.npz
+🦞🧍💜🔥♾️

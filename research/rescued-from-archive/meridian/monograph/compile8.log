@@ -1,0 +1,1786 @@
+pdflatex: security risk: running with elevated privileges
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(meridian_monograph.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\bk10.clo))
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/mathtools\mathtools.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/mathtools\mhsetup.sty))
+(C:\Program Files\MiKTeX\tex/latex/tools\bm.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def)))
+(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+145.
+
+) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty)
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
+y) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty)))
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
+g.sty (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty)
+)) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty)))
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
+sty
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
+sty))) (C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty)
+(C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def)
+(meridian_monograph.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg))
+(meridian_monograph.out) (meridian_monograph.out) [1{C:/Users/Wasch/AppData/Loc
+al/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/
+lm/lm-ec.enc}] [2] (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd)
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\Wasch\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd) [1{C:/Program Files/MiKTeX/fon
+ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm
+.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program File
+s/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2] [3] (meridian_monograph.toc
+[4] [5] [6] [7] [8] [9]) [10] (meridian_monograph.lof) [11]
+Underfull \hbox (badness 1515) in paragraph at lines 202--203
+\OML/lmm/m/it/10 M[]=\OT1/lmr/m/n/10 (+20) (2\OML/lmm/m/it/10 k\OT1/lmr/m/n/10 
+(+20) )$ \T1/lmr/m/n/10 (+20) through-out (Randall--Sundrum con-ven-tion). The
+
+Underfull \hbox (badness 3386) in paragraph at lines 233--235
+[]|\T1/lmr/m/n/10 (+20) Chapter  efch:foundation in-ter-me-di-ate cou-pling, $\
+OML/lmm/m/it/10 F[] \OT1/lmr/m/n/10 (+20) =
+ [12] [13] [14] (chapter1_foundation.tex
+Chapter 1.
+
+Underfull \hbox (badness 2318) in paragraph at lines 10--12
+[]\T1/lmr/bx/n/10 (+20) Abstract. \T1/lmr/m/n/10 (+20) We de-rive a dark en-erg
+y
+
+Underfull \hbox (badness 4341) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) equa-tion of state from two ge-o-met-ric
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) axioms---a five-dimensional braneworld
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) and a non-minimally cou-pled bulk
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) scalar (A2)---supplemented by four
+
+Underfull \hbox (badness 3547) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) se-ques-ter-ing (A3), the non-com-mu-ta-tive
+
+Underfull \hbox (badness 2285) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) ge-om-e-try (NCG) spec-tral ac-tion prin-ci-
+
+Underfull \hbox (badness 2556) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) and a lin-ear tad-pole $\OML/lmm/m/it/10 V \OT1/lmr/m/n/10
+ (+20) = \OML/lmm/m/it/10 c \OT1/lmr/m/n/10 (+20) ^^H$ \T1/lmr/m/n/10 (+20) (A6
+).
+
+Underfull \hbox (badness 1264) in paragraph at lines 10--12
+\OML/lmm/m/it/10 w \OT1/lmr/m/n/10 (+20) = \OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 
+(+20) 1$ \T1/lmr/m/n/10 (+20) ex-actly. Kaluza--Klein (KK)
+
+Underfull \hbox (badness 1472) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) junction-condition bench-mark, $\OML/lmm/m/it/10 [] \OT1/
+lmr/m/n/10 (+20) = 0$
+
+Underfull \hbox (badness 8019) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) (con-sis-tent with zero); the com-bined
+
+Underfull \hbox (badness 1107) in paragraph at lines 10--12
+\T1/lmr/m/n/10 (+20) multi-probe anal-y-sis ($\OML/lmm/m/it/10 ^^_[] \OT1/lmr/m
+/n/10 (+20) = 24\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 6$ \T1/lmr/m/n/10 (+20)
+ across
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 
+      [1]
+Overfull \hbox (12.6034pt too wide) detected at line 45
+[][][][]
+
+Underfull \hbox (badness 1038) in paragraph at lines 56--57
+[]\T1/lmr/bx/n/10 (+20) CMB bench-mark \T1/lmr/m/n/10 (+20) ($\OML/lmm/m/it/10 
+^^P[] \OMS/lmsy/m/n/10 ^^Y \OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/
+n/10 (+20) 037$\T1/lmr/m/n/10 (+20) , from the
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 
+      [2]
+Overfull \hbox (84.77037pt too wide) detected at line 117
+[][][]\OT1/lmr/m/n/9 ^^@[] = [] \OML/lmm/m/it/9 G[][]@[]G[] \OT1/lmr/m/n/9 + \O
+ML/lmm/m/it/9 @[]G[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 @[]G[][] \OT1/lmr/m/n/
+9 = [] \OML/lmm/m/it/9 e[] g[][]\OT1/lmr/m/n/9 0 + 2\OML/lmm/m/it/9 A[] e[] g[]
+ \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 0[] = \OML/lmm/m/it/9 A[] ^^N[] :
+
+Underfull \hbox (badness 1596) in paragraph at lines 129--131
+\T1/lmr/m/n/10 (+20) Summing these with the 4D Ricci con-tri-bu-tion
+[3{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (25.89796pt too wide) detected at line 180
+ []$[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 (\OML/lmm/m/it/9 M[] \OMS/lmsy/m/n/9 
+^^@ \OML/lmm/m/it/9 ^^X \OT1/lmr/m/n/9 ^^H[]) \OML/lmm/m/it/9 e[][]\OT1/lmr/m/n
+/9 8\OML/lmm/m/it/9 A[] \OT1/lmr/m/n/9 + 20(\OML/lmm/m/it/9 A[]\OT1/lmr/m/n/9 )
+[][] + \OML/lmm/m/it/9 e[][]P\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 X; \OT1/lmr/m/n/9 
+^^H) \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 V\OT1/lmr/m/n/9 (^^H) \OMS/lmsy/m/n/9 
+^^@ \OT1/lmr/m/n/9 ^^C[][][] \OML/lmm/m/it/9 :$ []  
+
+Overfull \hbox (88.31694pt too wide) detected at line 189
+[][][]\OML/lmm/m/it/9 S[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@ [] [] \OML/lmm/m
+/it/9 d[]x [][]^^[[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 [] \OT1/lmr/m/n/9 ^^H[][
+] + 2 [] \OML/lmm/m/it/9 ^^O[] [] d[]x [] F\OT1/lmr/m/n/9 (^^H[]) \OML/lmm/m/it
+/9 K[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 S[] ;
+
+Overfull \hbox (20.58168pt too wide) detected at line 203
+[][][]\OML/lmm/m/it/9 S[] \OT1/lmr/m/n/9 = \OML/lmm/m/it/9 ^^U[]^^[\OT1/lmr/m/n
+/9 (\OML/lmm/m/it/9 ^^V\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^@ [] \OML/lmm/m/it/9 
+d[]x [][] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 ^^T[]^^\\OT1/lmr/m/n/9 (\OML/lmm/m/i
+t/9 ^^V\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^@ [] \OML/lmm/m/it/9 d[]x [] F\OT1/lm
+r/m/n/9 (^^H) \OML/lmm/m/it/9 R[][] ;
+
+Overfull \hbox (18.45113pt too wide) detected at line 249
+[][][]\OT1/lmr/m/n/9 3\OML/lmm/m/it/9 F[]A[] \OT1/lmr/m/n/9 + 2(\OML/lmm/m/it/9
+ A[]\OT1/lmr/m/n/9 )[][] + \OML/lmm/m/it/9 ^^X[]\OT1/lmr/m/n/9 2(^^H[])[] + 2^^
+H^^H[] + 6\OML/lmm/m/it/9 A[]\OT1/lmr/m/n/9 ^^H^^H[][] = \OMS/lmsy/m/n/9 ^^@[]\
+OML/lmm/m/it/9 P[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 V \OMS/lmsy/m/n/9 ^^@ \O
+T1/lmr/m/n/9 ^^C[][] \OML/lmm/m/it/9 ;
+[4]
+Overfull \hbox (9.02864pt too wide) detected at line 263
+[][][]\OML/lmm/m/it/9 @[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 P[]\OT1/lmr/m/n/9 ^^H[
+]) + 4\OML/lmm/m/it/9 A[] P[]\OT1/lmr/m/n/9 ^^H[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/
+m/it/9 P[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 V[]\OT1/lmr/m/n/9 (^^H) \OMS/lmsy/m
+/n/9 ^^@ \OT1/lmr/m/n/9 2\OML/lmm/m/it/9 ^^X \OT1/lmr/m/n/9 ^^H[]8\OML/lmm/m/it
+/9 A[] \OT1/lmr/m/n/9 + 20(\OML/lmm/m/it/9 A[]\OT1/lmr/m/n/9 )[][] = 0 \OML/lmm
+/m/it/9 :
+
+Overfull \hbox (82.42152pt too wide) detected at line 269
+[][][]\OML/lmm/m/it/9 @[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 P[]\OT1/lmr/m/n/9 ^^H[
+]) = \OML/lmm/m/it/9 P[]\OT1/lmr/m/n/9 ^^H[] + []\OML/lmm/m/it/9 P[]\OT1/lmr/m/
+n/9 ^^H[]^^H[] + \OML/lmm/m/it/9 P[] \OT1/lmr/m/n/9 ^^H[][]^^H[] = (\OML/lmm/m/
+it/9 P[] \OT1/lmr/m/n/9 + 2\OML/lmm/m/it/9 X P[]\OT1/lmr/m/n/9 ) ^^H[] + \OML/l
+mm/m/it/9 P[] \OT1/lmr/m/n/9 (^^H[])[] \OML/lmm/m/it/9 :
+
+Overfull \hbox (2.96579pt too wide) detected at line 305
+[][][][] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@[] \OML/lmm/m/it/9 ;  [] \OMS/lmsy
+/m/n/9 j\OML/lmm/m/it/9 Q\OMS/lmsy/m/n/9 j \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@
+[] [] \OML/lmm/m/it/9 X \OT1/lmr/m/n/9 + [] \OML/lmm/m/it/9 ;  Q \OT1/lmr/m/n/9
+ = [] \OML/lmm/m/it/9 ;
+
+Overfull \hbox (87.83342pt too wide) detected at line 324
+[][][]\OML/lmm/m/it/9 P[] \OT1/lmr/m/n/9 = [] \OML/lmm/m/it/9 ;  P[] \OT1/lmr/m
+/n/9 = \OMS/lmsy/m/n/9 ^^@[] \OML/lmm/m/it/9 ;  P[] \OT1/lmr/m/n/9 + 2\OML/lmm/
+m/it/9 X P[] \OT1/lmr/m/n/9 = [] \OMS/lmsy/m/n/9 ^^@ [] \OT1/lmr/m/n/9 = 0 \OML
+/lmm/m/it/9 :
+
+Overfull \hbox (30.33736pt too wide) detected at line 331
+[][][]\OML/lmm/m/it/9 P[] \OT1/lmr/m/n/9 + 2\OML/lmm/m/it/9 X P[] \OT1/lmr/m/n/
+9 = 2\OML/lmm/m/it/9 na \OT1/lmr/m/n/9 (2\OML/lmm/m/it/9 X\OT1/lmr/m/n/9 )[][]1
+ + 2(\OML/lmm/m/it/9 n \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 1)[] = 2\OML/lmm/m/it
+/9 na \OT1/lmr/m/n/9 (2\OML/lmm/m/it/9 X\OT1/lmr/m/n/9 )[](2\OML/lmm/m/it/9 n \
+OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 1) \OML/lmm/m/it/9 :
+
+Underfull \hbox (badness 2065) in paragraph at lines 341--343
+\T1/lmr/m/n/10 (+20) This quan-tity ap-pears in the Hamil-to-nian con-
+
+Overfull \hbox (48.31223pt too wide) detected at line 355
+[][][]\OML/lmm/m/it/9 P[]\OT1/lmr/m/n/9 (^^H[])[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/
+m/it/9 P[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 V \OT1/lmr/m/n/9 + ^^C[] = []\OML/l
+mm/m/it/9 P[] \OMS/lmsy/m/n/9 ^^A \OT1/lmr/m/n/9 2\OML/lmm/m/it/9 X \OMS/lmsy/m
+/n/9 ^^@ \OML/lmm/m/it/9 P[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 V \OT1/lmr/m/n/9 
++ ^^C[] = \OML/lmm/m/it/9 K[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 V \OT1/lmr/m/n/9
+ + ^^C[] = \OML/lmm/m/it/9 V \OT1/lmr/m/n/9 + ^^C[] \OML/lmm/m/it/9 :
+[5]
+Overfull \hbox (12.89015pt too wide) detected at line 372
+[][][]\OML/lmm/m/it/9 @[][]^^V[]\OT1/lmr/m/n/9 (^^H)[] + 4\OML/lmm/m/it/9 A[] ^
+^V[]\OT1/lmr/m/n/9 (^^H) \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 P[] \OT1/lmr/m/n/9
+ + \OML/lmm/m/it/9 V[]\OT1/lmr/m/n/9 (^^H) \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 2
+\OML/lmm/m/it/9 ^^X \OT1/lmr/m/n/9 ^^H[]8\OML/lmm/m/it/9 A[] \OT1/lmr/m/n/9 + 2
+0(\OML/lmm/m/it/9 A[]\OT1/lmr/m/n/9 )[][] = 0 \OML/lmm/m/it/9 :
+
+Underfull \hbox (badness 1142) in paragraph at lines 384--384
+|[]\T1/lmr/bx/n/12 (+20) The Au-tonomous Phase-Plane
+
+Underfull \hbox (badness 1102) in paragraph at lines 418--419
+[]\T1/lmr/bx/n/10 (+20) Brane tad-pole \T1/lmr/m/n/10 (+20) (lo-cal): A lin-ear
+ po-ten-tial
+[6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
+|[]\T1/lmr/bx/n/14.4 (+20) Kaluza--Klein Re-duc-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
+\T1/lmr/bx/n/14.4 (+20) and the One-Parameter
+[7]
+Overfull \hbox (3.34196pt too wide) detected at line 515
+[][][]\OML/lmm/m/it/9 ^^Z[] \OMS/lmsy/m/n/9 ^^X \OML/lmm/m/it/9 c \OMS/lmsy/m/n
+/9 ^^A \OT1/lmr/m/n/9 ^^H[] \OMS/lmsy/m/n/9 ^^A \OML/lmm/m/it/9 e[] \OMS/lmsy/m
+/n/9 ^^X \OML/lmm/m/it/9 c \OMS/lmsy/m/n/9 ^^A \OT1/lmr/m/n/9 ^^H[] \OMS/lmsy/m
+/n/9 ^^A [][] ^^X \OT1/lmr/m/n/9 10[] (\OML/lmm/m/it/9 M[] []\OT1/lmr/m/n/9 )[]
+ \OML/lmm/m/it/9 :
+
+Overfull \hbox (9.28925pt too wide) detected at line 555
+[][][]\OML/lmm/m/it/9 V[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 y[]\OT1/lmr/m/n/9 ) = 
+0 \OML/lmm/m/it/9 ;  V[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 y[]\OT1/lmr/m/n/9 ) = \
+OML/lmm/m/it/9 C[] e[]  [][] > \OT1/lmr/m/n/9 0 \OML/lmm/m/it/9 :
+[8] [9] [10]
+Underfull \hbox (badness 4752) in paragraph at lines 685--687
+\T1/lmr/m/n/10 (+20) where $\OML/lmm/m/it/10 a[]$ \T1/lmr/m/n/10 (+20) are the 
+Seeley--DeWitt coefficients---
+[11]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (26.15271pt too wide) detected at line 814
+[]
+[12]
+Underfull \hbox (badness 2809) in paragraph at lines 841--842
+[]\T1/lmr/bx/n/10 (+20) Modified bulk grav-ity ($\OML/lmm/m/it/10 f\OT1/lmr/m/n
+/10 (+20) (\OML/lmm/m/it/10 R[]\OT1/lmr/m/n/10 (+20) )$\T1/lmr/bx/n/10 (+20) , 
+Chern--
+[13] [14] [15 <./figures/fig1_w0_zeta0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1046
+\T1/lmr/m/n/10 (+20) Note that $\OML/lmm/m/it/10 F[]$ \T1/lmr/m/n/10 (+20) is $
+\OML/lmm/m/it/10 ^^P[]$\T1/lmr/m/n/10 (+20) -dependent. Chap-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1046
+\T1/lmr/m/n/10 (+20) ter  efch:observational (Chap-ter [][]2[][]) de-fines
+
+Overfull \hbox (11.06342pt too wide) detected at line 1078
+[][][][]
+[16]
+Overfull \hbox (14.61613pt too wide) detected at line 1131
+[]
+[17]
+Overfull \hbox (47.1777pt too wide) detected at line 1203
+[][][]\OML/lmm/m/it/9 S[] \OT1/lmr/m/n/9 = \OML/lmm/m/it/9 []  []  d[]x dy [] 
+\OMS/lmsy/m/n/9 E[]  ^^[  \OML/lmm/m/it/9 []  []  d[]x [] \OMS/lmsy/m/n/9 G[] 
+ [][]  \OML/lmm/m/it/9 dy e[];
+
+Overfull \hbox (73.93297pt too wide) detected at line 1237
+[]
+[18]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (15.95264pt too wide) detected at line 1278
+[][][]\OML/lmm/m/it/9 K[] \OT1/lmr/m/n/9 = 0   =[]\OMS/lmsy/m/n/9 )   []   \OT1
+/lmr/m/n/9 =[]\OMS/lmsy/m/n/9 )   \OML/lmm/m/it/9 G[] \OT1/lmr/m/n/9 = \OML/lmm
+/m/it/9 G[] :
+[19]
+Underfull \hbox (badness 2134) in paragraph at lines 1343--1343
+|[]\T1/lmr/bx/n/12 (+20) Prediction 5: No Phan-tom
+
+Underfull \hbox (badness 6978) in paragraph at lines 1348--1349
+[] []\T1/lmr/bx/n/10 (+20) Cur-rent sta-tus:[] \T1/lmr/m/n/10 (+20) Al-ready te
+stable. Model-
+
+Underfull \hbox (badness 2221) in paragraph at lines 1348--1349
+\T1/lmr/m/n/10 (+20) cross-ing, con-sis-tent with our pre-dic-tion. The
+[20]
+Underfull \hbox (badness 4096) in paragraph at lines 1385--1386
+[]\T1/lmr/bx/n/10 (+20) Normal neu-trino hi-er-ar-chy. \T1/lmr/m/n/10 (+20) The
+ $\OML/lmm/m/it/10 S[]$\T1/lmr/m/n/10 (+20) -
+
+Overfull \hbox (66.25798pt too wide) detected at line 1405
+[][][][]
+[21]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 1469--1470
+\T1/lmr/m/n/10 (+20) the Merid-ian pre-dic-tion $\OML/lmm/m/it/10 w[] \OT1/lmr/
+m/n/10 (+20) = \OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT
+1/lmr/m/n/10 (+20) 865$ \T1/lmr/m/n/10 (+20) (non-
+
+Underfull \hbox (badness 3930) in paragraph at lines 1469--1470
+\T1/lmr/m/n/10 (+20) con-straint at $\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\
+OT1/lmr/m/n/10 (+20) 6\OML/lmm/m/it/10 ^^[$\T1/lmr/m/n/10 (+20) . For the CMB-c
+onstraint
+
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1473
+|[]\T1/lmr/bx/n/12 (+20) Comparison with Other
+[22]
+Underfull \hbox (badness 1303) in paragraph at lines 1483--1484
+[]\T1/lmr/bx/n/10 (+20) Horndeski and beyond-Horndeski the-o-
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1513
+[] []\T1/lmr/bx/n/10 (+20) 2. Csak-i--Er-lich---Gro-jean--Hol-lowood [[]].[]
+[24]
+Underfull \hbox (badness 6412) in paragraph at lines 1572--1573
+[]\T1/lmr/m/n/10 (+20) The \T1/lmr/m/it/10 (+20) 5D Hamil-to-nian con-straint\T
+1/lmr/m/n/10 (+20) ---the $\OT1/lmr/m/n/10 (+20) (55)$\T1/lmr/m/n/10 (+20) -
+
+Overfull \hbox (57.49524pt too wide) detected at line 1608
+[][][][]
+[25]
+Overfull \hbox (2.94795pt too wide) in paragraph at lines 1643--1644
+\T1/lmr/m/n/10 (-20) try (A1) and a non-minimally cou-pled bulk scalar (A2)---
+
+Overfull \hbox (50.69427pt too wide) detected at line 1661
+[][][][]
+
+Underfull \hbox (badness 1596) in paragraph at lines 1664--1665
+[]\T1/lmr/m/n/10 (+20) The co-ef-fi-cient $\OML/lmm/m/it/10 F[] \OT1/lmr/m/n/10
+ (+20) = (1 + \OML/lmm/m/it/10 q[]\OT1/lmr/m/n/10 (+20) )[] 
+[]\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) [8(1 \OMS/lmsy/m/n/10 ^^@
+(C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
+\T1/lmr/m/n/10 (+20) All nu-mer-i-cal com-pu-ta-tions re-ported in this
+
+Underfull \hbox (badness 1173) in paragraph at lines 1676--1677
+\T1/lmr/m/n/10 (+20) fac-tor in-te-gra-tion, and Fisher fore-casts --- were
+
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
+\T1/lmr/m/n/10 (+20) in-clude: \T1/lmtt/m/n/10 d1_self_tuning_demonstration.py
+
+Underfull \hbox (badness 1226) in paragraph at lines 1676--1677
+\T1/lmr/m/n/10 (+20) (self-tuning scan), \T1/lmtt/m/n/10 meridian_cosmology.py 
+\T1/lmr/m/n/10 (+20) (mod-
+
+Underfull \hbox (badness 2310) in paragraph at lines 1676--1677
+\T1/lmr/m/n/10 (+20) i-fied Fried-mann solver and multi-probe fit-ting),
+
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1677
+\T1/lmtt/m/n/10 step1_spectral_ratios.py \T1/lmr/m/n/10 (+20) (Seeley--DeWitt
+) (chapter2_observational.tex [26]
+Chapter 2.
+
+Underfull \hbox (badness 1406) in paragraph at lines 6--6
+|\T1/lmr/bx/n/24.88 (+20) Observational Con-fronta-tion of Five-
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \hbox (6.29861pt too wide) detected at line 26
+[][][][]
+[27]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 74.
+
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 141.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 141.
+
+
+Overfull \hbox (89.0414pt too wide) detected at line 148
+[][][][]  \OMS/lmsy/m/n/9 !  []  !  \OML/lmm/m/it/9 b[]  \OMS/lmsy/m/n/9 !  \OM
+L/lmm/m/it/9 []  \OMS/lmsy/m/n/9 !  []  !  \OML/lmm/m/it/9 ^^P[]  \OMS/lmsy/m/
+n/9 !  \OML/lmm/m/it/9 w[] ;
+
+Underfull \vbox (badness 10000) has occurred while \output is active [29]
+Overfull \hbox (2.78426pt too wide) in paragraph at lines 211--212
+\T1/lmr/m/n/10 (-20) tion of the ef-fec-tive grav-i-ta-tional strength from $\O
+T1/lmr/m/n/10 (-20) ^^C$\T1/lmr/m/n/10 (-20) CDM---
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+[]\T1/lmr/bx/n/10 (+20) 3. CMB $\OML/lmm/m/it/10 H[]$ \T1/lmr/bx/n/10 (+20) con
+-straint \T1/lmr/m/n/10 (+20) (1 data
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+\T1/lmr/m/n/10 (+20) point). The Planck 2018 mea-sure-ment
+
+Underfull \hbox (badness 2951) in paragraph at lines 257--258
+\OML/lmm/m/it/10 H[] \OT1/lmr/m/n/10 (+20) = 67\OML/lmm/m/it/10 :\OT1/lmr/m/n/1
+0 (+20) 36 \OMS/lmsy/m/n/10 ^^F \OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/l
+mr/m/n/10 (+20) 54 []$ \T1/lmr/m/n/10 (+20) [[]], used
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\chi' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Overfull \hbox (1.9773pt too wide) in paragraph at lines 266--267
+\T1/lmr/m/n/10 (-20) nui-sance pa-ram-e-ters $\OT1/lmr/m/n/10 (-20) (\OML/lmm/m
+/it/10 H[]; \OT1/lmr/m/n/10 (-20) 
+[])$ \T1/lmr/m/n/10 (-20) are pro-filed us-ing Nelder--
+
+LaTeX Warning: Float too large for page by 551.9232pt on input line 291.
+
+[31] [32 <./figures/fig3_chi2_comparison.pdf>]
+Overfull \hbox (15.8597pt too wide) detected at line 317
+[][][]\OML/lmm/m/it/9 ^^P[] \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 0
+37 \OMS/lmsy/m/n/9 ^^F \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 010 ([])
+ \OML/lmm/m/it/9 :
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+[]\T1/lmr/bx/n/10 (+20) Modified-gravity sec-tor: \T1/lmr/m/n/10 (+20) Hiramats
+u--
+
+Underfull \hbox (badness 2418) in paragraph at lines 322--323
+\T1/lmr/m/n/10 (+20) modified-gravity sec-tors not present in our
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 326.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 326.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+\T1/lmr/m/n/10 (+20) The CMB con-straint [] and the $\OML/lmm/m/it/10 H\OT1/lmr
+/m/n/10 (+20) (\OML/lmm/m/it/10 z\OT1/lmr/m/n/10 (+20) )$
+[33]
+Underfull \hbox (badness 2326) in paragraph at lines 376--376
+\T1/lmr/bx/n/12 (+20) pressed Like-li-hood vs. Multi-
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 383.
+
+[34]
+Overfull \hbox (20.37968pt too wide) detected at line 411
+[][][]\OML/lmm/m/it/9 w[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 0\
+OML/lmm/m/it/9 :\OT1/lmr/m/n/9 989[] (1\OML/lmm/m/it/9 ^^[\OT1/lmr/m/n/9 ) \OML
+/lmm/m/it/9 ;  w[] \OMS/lmsy/m/n/9 2 \OT1/lmr/m/n/9 [\OMS/lmsy/m/n/9 ^^@\OT1/lm
+r/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 996\OML/lmm/m/it/9 ;  \OMS/lmsy/m/n/9 
+^^@\OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 986] (95% []) \OML/lmm/m/it/
+9 :
+
+Underfull \hbox (badness 2573) in paragraph at lines 445--446
+[]\T1/lmr/bx/n/10 (+20) CMB con-straint alone. \T1/lmr/m/n/10 (+20) The Hiramat
+su--
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+[]\T1/lmr/m/n/10 (+20) The CMB Bayes fac-tor [] is prior-
+
+Underfull \hbox (badness 5970) in paragraph at lines 459--460
+\T1/lmr/m/n/10 (+20) dependent through the Savage--Dickey for-mula
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
+|[]\T1/lmr/bx/n/12 (+20) Full Multi-Probe Data
+
+Overfull \hbox (83.42126pt too wide) detected at line 485
+[][][]\OML/lmm/m/it/9 w[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 0\
+OML/lmm/m/it/9 :\OT1/lmr/m/n/9 993 \OML/lmm/m/it/9 ;  ^^P[] \OT1/lmr/m/n/9 = 0\
+OML/lmm/m/it/9 :\OT1/lmr/m/n/9 020 \OML/lmm/m/it/9 ;  H[] \OT1/lmr/m/n/9 = 67\O
+ML/lmm/m/it/9 :\OT1/lmr/m/n/9 7 [] \OML/lmm/m/it/9 ;  \OT1/lmr/m/n/9 
+[] = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 311 \OML/lmm/m/it/9 ;
+[36] [37 <./figures/fig9_bao_residuals.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 577.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Phi' on input line 577.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 577.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 577.
+
+[38]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 707.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 707.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 707.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 707.
+
+
+Overfull \hbox (2.29839pt too wide) in paragraph at lines 721--722
+\T1/lmr/m/n/10 (-20) attempted using our pipeline. However, all five models---
+[39] [40]
+Underfull \hbox (badness 3930) in paragraph at lines 759--759
+|[]\T1/lmr/bx/n/14.4 (+20) Pre-Data Pre-dic-tions for
+
+Underfull \hbox (badness 1009) in paragraph at lines 843--844
+\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+
+20) 232$\T1/lmr/m/n/10 (+20) , com-pared to CPL's $\OML/lmm/m/it/10 w[] \OT1/lm
+r/m/n/10 (+20) = \OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\
+OT1/lmr/m/n/10 (+20) 86$\T1/lmr/m/n/10 (+20) ---
+[41] [42] [43 <./figures/fig2_wz_comparison.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 937--938
+[]\T1/lmr/bx/n/10 (+20) 5. Cos-mo-graphic anal-y-sis (Man-dal et
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--938
+\T1/lmr/bx/n/10 (+20) al. [[]]). \T1/lmr/m/n/10 (+20) Model-independent cos-mo-
+graphic
+[44] [45] [46]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1049.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1049.
+
+
+Underfull \vbox (badness 1102) has occurred while \output is active [47]
+[48 <./figures/fig7_forecast.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+|[]\T1/lmr/bx/n/14.4 (+20) Additional Ob-ser-va-tional
+
+Overfull \hbox (19.8394pt too wide) detected at line 1219
+[]
+[49]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 1287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\approx' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1305.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1305.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\approx' on input line 1305.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1305.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1314
+|[]\T1/lmr/bx/n/12 (+20) Prediction 4: Growth--
+
+Underfull \hbox (badness 2134) in paragraph at lines 1323--1323
+|[]\T1/lmr/bx/n/12 (+20) Prediction 5: No Phan-tom
+[50]
+Underfull \hbox (badness 3088) in paragraph at lines 1350--1351
+[]\T1/lmr/m/n/10 (+20) Meridian's $\OML/lmm/m/it/10 w[] \OMS/lmsy/m/n/10 ^^Y ^^
+@\OT1/lmr/m/n/10 (+20) 0\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (+20) 76$ \T1/lmr/m/n
+/10 (+20) (per-tur-ba-tive; non-
+
+Underfull \hbox (badness 2134) in paragraph at lines 1359--1360
+[] []\T1/lmr/bx/n/10 (+20) Sig-nif-i-cance.[] \T1/lmr/m/n/10 (+20) The $\OT1/lm
+r/m/n/10 (+20) ^^C$\T1/lmr/m/n/10 (+20) CDM-based neu-trino mass
+
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1371
+[] []\T1/lmr/bx/n/10 (+20) In-stru-ments:[] \T1/lmr/m/n/10 (+20) XRISM (op-er-a
+-tional), Athena
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1372.
+
+[51]
+Underfull \hbox (badness 1231) in paragraph at lines 1408--1408
+|[]\T1/lmr/bx/n/12 (+20) What the Frame-work De-ter-
+[52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1464.
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 1470--1471
+\OML/lmm/m/it/10 w[]\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 ^^P[]\OT1/lmr/m/n/1
+0 (+20) )$ \T1/lmr/m/n/10 (+20) as a curve with iden-ti-fied ob-ser-va-tional
+
+Underfull \hbox (badness 2772) in paragraph at lines 1470--1471
+\T1/lmr/m/n/10 (+20) pow-er-ful than any single-number claim. The
+
+Underfull \hbox (badness 4441) in paragraph at lines 1470--1471
+\T1/lmr/m/n/10 (+20) frame-work's the-o-ret-i-cal ar-chi-tec-ture (self-tuning,
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1472.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 1472.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1472.
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1497
+[]\T1/lmr/m/n/10 (+20) The full nu-mer-i-cal multi-probe anal-y-sis
+
+Underfull \hbox (badness 2680) in paragraph at lines 1505--1505
+|\T1/lmr/bx/n/14.4 (+20) Appendix A: $\OML/lmm/m/it/14.4 H\OT1/lmr/m/n/14.4 (+2
+0) (\OML/lmm/m/it/14.4 z\OT1/lmr/m/n/14.4 (+20) )$ \T1/lmr/bx/n/14.4 (+20) Ex-p
+an-sion
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1507.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1507.
+
+[54]) (chapter3_nogo.tex [55]
+Chapter 3.
+
+Underfull \hbox (badness 1132) in paragraph at lines 9--12
+\T1/lmr/m/n/10 (+20) zero ki-netic en-ergy the-o-rem --- $\OML/lmm/m/it/10 K[] 
+\OT1/lmr/m/n/10 (+20) =
+[56]
+Underfull \hbox (badness 1087) in paragraph at lines 38--40
+[] []\T1/lmr/bx/n/10 (+20) No-ta-tion.[] \T1/lmr/m/n/10 (+20) We fol-low the co
+n-ven-tions of Chap-
+[57]
+Overfull \hbox (9.27322pt too wide) detected at line 115
+[][][]\OML/lmm/m/it/9 K[] \OT1/lmr/m/n/9 = 2\OML/lmm/m/it/9 XP[] \OMS/lmsy/m/n/
+9 ^^@ \OML/lmm/m/it/9 P \OT1/lmr/m/n/9 = 2\OML/lmm/m/it/9 X  [] \OMS/lmsy/m/n/9
+ ^^@ \OML/lmm/m/it/9 ^^V[][] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 ^^O[]X \OT1/lm
+r/m/n/9 = \OML/lmm/m/it/9 ^^O[]X:
+
+Overfull \hbox (66.7327pt too wide) detected at line 124
+[][][]\OML/lmm/m/it/9 w[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 (\OMS/lmsy/m/n/9 ^
+^@\OT1/lmr/m/n/9 1) = [] = [] \OMS/lmsy/m/n/9 ^^Y []
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+|[]\T1/lmr/bx/n/14.4 (+20) Perturbative Back-ground
+
+Underfull \hbox (badness 3989) in paragraph at lines 143--144
+[] []\T1/lmr/bx/n/10 (+20) Time-de-pen-dent con-tri-bu-tion.[] \T1/lmr/m/n/10 (
++20) The evolv-ing
+
+Underfull \hbox (badness 2245) in paragraph at lines 160--161
+\T1/lmr/m/n/10 (+20) A dif-fer-en-tial con-for-mal cou-pling be-tween bulk-
+
+Underfull \hbox (badness 1895) in paragraph at lines 160--161
+\T1/lmr/m/n/10 (+20) by the con-for-mal fac-tor $\OML/lmm/m/it/10 ^^L\OT1/lmr/m
+/n/10 (+20) (\OML/lmm/m/it/10 ^^^\OT1/lmr/m/n/10 (+20) )$\T1/lmr/m/n/10 (+20) ,
+ pro-duces en-ergy
+
+Underfull \hbox (badness 2401) in paragraph at lines 181--182
+[]\T1/lmr/m/n/10 (+20) Furthermore, di-rect non-gravitational cou-pling
+
+Underfull \hbox (badness 2343) in paragraph at lines 188--189
+[]\T1/lmr/m/n/10 (+20) We per-formed a sys-tem-atic scan over $\OML/lmm/m/it/10
+ r[]$ \T1/lmr/m/n/10 (+20) in
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+[]\T1/lmr/bx/n/10 (+20) Modified sound hori-zon: $\OML/lmm/m/it/10 ^^Nr[]=r[] \
+OMS/lmsy/m/n/10 ^^X
+[58]
+Overfull \hbox (14.12405pt too wide) detected at line 254
+[][][]\OML/lmm/m/it/9 ^^P[] \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 0
+38 ([])\OML/lmm/m/it/9 ;  ^^M[] \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n
+/9 019\OML/lmm/m/it/9 ;  ^^U[] \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Overfull \hbox (51.3776pt too wide) detected at line 273
+[][][]\OML/lmm/m/it/9 w[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 ^^P[][]\OT1/lmr/m/n/9 
+0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 001) = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 0\OML
+/lmm/m/it/9 :\OT1/lmr/m/n/9 865\OML/lmm/m/it/9 ;  w[]\OT1/lmr/m/n/9 (\OML/lmm/m
+/it/9 ^^P[][]\OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 037) = \OMS/lmsy/m
+/n/9 ^^@\OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 996\OML/lmm/m/it/9 ;  w
+[] \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 +0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 01\OML/
+lmm/m/it/9 :
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+[]\T1/lmr/bx/n/10 (+20) Cosmological re-lax-ation/clockwork:
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 438--438
+|[]\T1/lmr/bx/n/12 (+20) Local Non-Cosmological
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+[] []\T1/lmr/bx/n/10 (+20) Mod-uli spec-trum.[] \T1/lmr/m/n/10 (+20) Shape mod-
+uli (rel-a-tive
+[62]
+Underfull \hbox (badness 1205) in paragraph at lines 565--566
+\T1/lmr/m/n/10 (+20) di-tions con-strain these to ef-fec-tive cus-cu-ton
+[63] [64]
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
+[] []\T1/lmr/bx/n/10 (+20) (b) An-thropic/landscape se-lec-tion.[] \T1/lmr/m/n/
+10 (+20) The
+
+Underfull \hbox (badness 1688) in paragraph at lines 685--686
+\T1/lmr/m/n/10 (+20) gen-er-at-ing a land-scape: the fi-nite ge-om-e-try is
+
+Underfull \hbox (badness 1701) in paragraph at lines 685--686
+\T1/lmr/m/n/10 (+20) con-di-tions ad-mit a sin-gle root for $\OT1/lmr/m/n/10 (+
+20) ^^H[]$ \T1/lmr/m/n/10 (+20) (ver-i-fied
+
+Underfull \hbox (badness 1033) in paragraph at lines 701--701
+|[]\T1/lmr/bx/n/12 (+20) Necessity of Con-for-mal Cou-
+[65]
+Underfull \vbox (badness 2961) has occurred while \output is active [66]
+Overfull \hbox (189.60168pt too wide) detected at line 801
+[][][][]
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 849--849
+|[]\T1/lmr/bx/n/12 (+20) Bounded But Un-com-puted
+) (chapter4_ncg.tex [68] [69]
+Chapter 4.
+
+Underfull \hbox (badness 1067) in paragraph at lines 5--5
+\T1/lmr/bx/n/24.88 (+20) Warped Orb-ifolds: Topo-log-i-cal Cou-
+
+Overfull \hbox (2.16583pt too wide) in paragraph at lines 9--10
+\T1/lmr/m/it/9 (-20) terms from $\OML/lmm/m/it/9 a[]$\T1/lmr/m/it/9 (-20) , top
+o-log-i-cally locked by the Atiyah--
+
+Underfull \vbox (badness 10000) has occurred while \output is active [70]
+Underfull \hbox (badness 3724) in paragraph at lines 32--33
+[]\T1/lmr/bx/n/10 (+20) Boundary con-tri-bu-tions. \T1/lmr/m/n/10 (+20) The orb
+-ifold
+
+Underfull \hbox (badness 6741) in paragraph at lines 32--33
+\T1/lmr/m/n/10 (+20) fixed points (branes) con-tribute bound-ary
+
+Underfull \hbox (badness 3199) in paragraph at lines 32--33
+\T1/lmr/m/n/10 (+20) Seeley--DeWitt co-ef-fi-cients $\OML/lmm/m/it/10 a[]$ \T1/
+lmr/m/n/10 (+20) pro-duc-ing
+
+Underfull \hbox (badness 2990) in paragraph at lines 32--33
+\T1/lmr/m/n/10 (+20) brane-localized grav-i-ta-tional and topo-log-i-cal
+[71]
+Underfull \hbox (badness 2573) in paragraph at lines 163--164
+[][]\T1/lmr/bx/n/10 (+20) Proposition 4.2 \T1/lmr/m/n/10 (+20) (Odd--Di-men-sio
+n Ob-struc-tion)\T1/lmr/bx/n/10 (+20) .
+
+Underfull \hbox (badness 2426) in paragraph at lines 194--196
+[]\T1/lmr/bx/n/10 (+20) Coupling: \T1/lmr/m/n/10 (+20) Is-rael junc-tion con-di
+-tions (Chap-
+[72]
+Underfull \hbox (badness 1097) in paragraph at lines 216--217
+\T1/lmr/m/n/10 (+20) dimension 6). All ax-ioms in-volv-ing $\OML/lmm/m/it/10 D$
+ \T1/lmr/m/n/10 (+20) are ho-
+
+Underfull \hbox (badness 1028) in paragraph at lines 216--217
+\T1/lmr/m/n/10 (+20) mo-ge-neous: $\OT1/lmr/m/n/10 (+20) [[\OML/lmm/m/it/10 cD;
+ a\OT1/lmr/m/n/10 (+20) ]\OML/lmm/m/it/10 ; Jb[]J[]\OT1/lmr/m/n/10 (+20) ] = \O
+ML/lmm/m/it/10 c \OT1/lmr/m/n/10 (+20) [[\OML/lmm/m/it/10 D; a\OT1/lmr/m/n/10 (
++20) ]\OML/lmm/m/it/10 ; Jb[]J[]\OT1/lmr/m/n/10 (+20) ]$\T1/lmr/m/n/10 (+20) ,
+
+Overfull \hbox (72.18933pt too wide) detected at line 289
+[][][]\OML/lmm/m/it/9 a[] \OT1/lmr/m/n/9 = (4\OML/lmm/m/it/9 ^^Y\OT1/lmr/m/n/9 
+)[] [][] [](\OT1/lmr/bx/n/9 1\OT1/lmr/m/n/9 ) [] \OML/lmm/m/it/9 d[]x \OT1/lmr/
+m/n/9 = (4\OML/lmm/m/it/9 ^^Y\OT1/lmr/m/n/9 )[] \OML/lmm/m/it/9 d[] [][] [] d[]
+x [][] e[] dy;
+[73]
+Underfull \hbox (badness 1092) in paragraph at lines 319--320
+\OMS/lmsy/m/n/10 ^^@r[] \OT1/lmr/m/n/10 (+20) + \OML/lmm/m/it/10 E$ \T1/lmr/m/n
+/10 (+20) on a $\OML/lmm/m/it/10 d$\T1/lmr/m/n/10 (+20) -dimensional man-i-fold
+ con-tains
+
+Overfull \hbox (122.87848pt too wide) detected at line 326
+[][][]\OML/lmm/m/it/9 a[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 x; P\OT1/lmr/m/n/9 ) =
+ [] [][]2 \OML/lmm/m/it/9 R[] \OT1/lmr/bx/n/9 1 \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/
+n/9 2 \OML/lmm/m/it/9 R[] \OT1/lmr/bx/n/9 1 \OT1/lmr/m/n/9 + 5 \OML/lmm/m/it/9 
+R[] \OT1/lmr/bx/n/9 1 \OT1/lmr/m/n/9 + 60 \OML/lmm/m/it/9 R E \OMS/lmsy/m/n/9 ^
+^@ \OT1/lmr/m/n/9 180 \OML/lmm/m/it/9 E[] \OT1/lmr/m/n/9 + 30 
+[] + (\OMS/lmsy/m/n/9 r[]\OT1/lmr/m/n/9 )[]\OML/lmm/m/it/9 :
+
+Overfull \hbox (36.42583pt too wide) detected at line 334
+[][][][]\OT1/lmr/m/n/9 (\OT1/lmr/bx/n/9 1\OT1/lmr/m/n/9 ) = 4\OML/lmm/m/it/9 ; 
+ []\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 E\OT1/lmr/m/n/9 ) = \OMS/lmsy/m/n/9 ^^@\OML/
+lmm/m/it/9 R;  []\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 E[]\OT1/lmr/m/n/9 ) = [] \OML/
+lmm/m/it/9 R[];  []\OT1/lmr/m/n/9 (
+[]) = \OMS/lmsy/m/n/9 ^^@[] \OML/lmm/m/it/9 R[]:
+
+Overfull \hbox (10.2296pt too wide) detected at line 351
+[][][]\OML/lmm/m/it/9 R[] \OT1/lmr/m/n/9 = [] \OML/lmm/m/it/9 C[] \OMS/lmsy/m/n
+/9 ^^@ [] E[] \OT1/lmr/m/n/9 + [] \OML/lmm/m/it/9 R[];  R[] \OT1/lmr/m/n/9 = []
+(\OML/lmm/m/it/9 C[] \OMS/lmsy/m/n/9 ^^@ E[]\OT1/lmr/m/n/9 ) + [] \OML/lmm/m/it
+/9 R[]:
+
+Overfull \hbox (17.40945pt too wide) detected at line 369
+[][][]\OMS/lmsy/m/n/9 E[] \OT1/lmr/m/n/9 = (\OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 2
+0\OML/lmm/m/it/9 k[]\OT1/lmr/m/n/9 )[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 4(80\
+OML/lmm/m/it/9 k[]\OT1/lmr/m/n/9 ) + 40\OML/lmm/m/it/9 k[] \OT1/lmr/m/n/9 = 400
+\OML/lmm/m/it/9 k[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 320\OML/lmm/m/it/9 k[] \
+OT1/lmr/m/n/9 + 40\OML/lmm/m/it/9 k[] \OT1/lmr/m/n/9 = 120\OML/lmm/m/it/9 k[]:
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+[] []\T1/lmr/bx/n/10 (+20) Co-ef-fi-cient $\OML/lmm/m/it/10 a[]$ \T1/lmr/bx/n/1
+0 (+20) (Brane-lo-cal-ized Ein-
+[74]
+Underfull \hbox (badness 1584) in paragraph at lines 408--410
+\T1/lmr/m/n/10 (+20) in short-distance grav-ity ex-per-i-ments (Eöt-Wash
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+[] []\T1/lmr/bx/n/10 (+20) Co-ef-fi-cient $\OML/lmm/m/it/10 a[]$ \T1/lmr/bx/n/1
+0 (+20) (Chern--Si-mons).[] \T1/lmr/m/n/10 (+20) The
+
+Underfull \hbox (badness 3019) in paragraph at lines 449--450
+[][]\T1/lmr/bx/n/10 (+20) Approximately Uni-ver-sal Scal-ing Re-la-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+\T1/lmr/bx/n/10 (+20) 4.6 \T1/lmr/m/n/10 (+20) (Ap-prox-i-mately Uni-ver-sal Ga
+uss--Bon-net
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+\T1/lmr/m/n/10 (+20) Cou-pling)\T1/lmr/bx/n/10 (+20) . []\T1/lmr/m/n/10 (+20) T
+he di-men-sion-less Gauss--Bonnet
+
+Overfull \hbox (102.6105pt too wide) detected at line 458
+[][][]\OML/lmm/m/it/9 a[] \OT1/lmr/m/n/9 = (4\OML/lmm/m/it/9 ^^Y\OT1/lmr/m/n/9 
+)[] [][] []  [] [] \OML/lmm/m/it/9 d[]x;
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+[]\T1/lmr/m/n/10 (+20) The ra-tio $\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 d \O
+T1/lmr/m/n/10 (+20) = 6)\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/
+10 d \OT1/lmr/m/n/10 (+20) = 5)$ \T1/lmr/m/n/10 (+20) of the
+
+Overfull \hbox (22.91391pt too wide) detected at line 495
+[][][][] \OT1/lmr/m/n/9 = [] \OMS/lmsy/m/n/9 ^^A \OML/lmm/m/it/9 d[]\OT1/lmr/m/
+n/9 (\OML/lmm/m/it/9 d\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^A [][][]\OT1/lmr/m/n/9
+ 360 \OMS/lmsy/m/n/9 ^^A \OML/lmm/m/it/9 d[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 d\O
+T1/lmr/m/n/9 )[] = [] \OMS/lmsy/m/n/9 ^^A []\OML/lmm/m/it/9 :
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 511.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 511.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 511.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 511.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 511.
+
+
+Overfull \hbox (68.65697pt too wide) detected at line 530
+[]  [] []  [] \OML/lmm/m/it/9 w[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 ^^P[]\OT1/lmr/
+m/n/9 )\OML/lmm/m/it/9 :
+[75]
+Overfull \hbox (43.47433pt too wide) detected at line 545
+[][][]\OML/lmm/m/it/9 S[] \OT1/lmr/m/n/9 = [] \OML/lmm/m/it/9 d[]x [] [][][]M[]
+ \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 ^^X^^^[][]R[] \OT1/lmr/m/n/9 + ^^C[] + \OM
+L/lmm/m/it/9 [] \OMS/lmsy/m/n/9 E[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 P\OT1/lmr
+/m/n/9 (\OML/lmm/m/it/9 X[]; ^^^\OT1/lmr/m/n/9 )[] + \OML/lmm/m/it/9 S[];
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--548
+\T1/lmr/m/n/10 (+20) is the cus-cu-ton ki-netic func-tion (Chap-
+
+Overfull \hbox (14.57178pt too wide) detected at line 559
+[][][][]\OML/lmm/m/it/9 K[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 K h[][] \OT1/lm
+r/m/n/9 + 2\OML/lmm/m/it/9 [][]\OT1/lmr/m/n/9 3\OML/lmm/m/it/9 J[] \OMS/lmsy/m
+/n/9 ^^@ \OML/lmm/m/it/9 J h[] \OT1/lmr/m/n/9 + 2 \OML/lmm/m/it/9 P[] K[][] \OT
+1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@[] \OML/lmm/m/it/9 S[];
+
+Overfull \hbox (28.66585pt too wide) detected at line 569
+[][][]\OML/lmm/m/it/9 K \OT1/lmr/m/n/9 = \OML/lmm/m/it/9 h[]K[] \OT1/lmr/m/n/9 
+= \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 4\OML/lmm/m/it/9 k;  K[] K[] \OT1/lmr/m/n/9
+ = \OML/lmm/m/it/9 k[] h[];  K[] K[] \OT1/lmr/m/n/9 = 4\OML/lmm/m/it/9 k[]:
+
+Overfull \hbox (16.29584pt too wide) detected at line 576
+[]
+
+Overfull \hbox (91.42848pt too wide) detected at line 588
+[][][]\OT1/lmr/m/n/9 2\OML/lmm/m/it/9 [][]\OT1/lmr/m/n/9 3\OML/lmm/m/it/9 J[] 
+\OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 J h[] \OT1/lmr/m/n/9 + 2 \OML/lmm/m/it/9 P[
+] K[][] \OT1/lmr/m/n/9 = 2\OML/lmm/m/it/9 [][]\OT1/lmr/m/n/9 6\OML/lmm/m/it/9 
+k[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 8\OML/lmm/m/it/9 k[] \OMS/lmsy/m/n/9 ^^@
+ \OT1/lmr/m/n/9 6\OML/lmm/m/it/9 k[][] h[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@
+\OT1/lmr/m/n/9 16 \OML/lmm/m/it/9 [] k[] h[]:
+
+Overfull \hbox (52.83067pt too wide) detected at line 625
+[][][]\OML/lmm/m/it/9 K[] \OT1/lmr/m/n/9 = 2\OML/lmm/m/it/9 X \OT1/lmr/m/n/9 (\
+OML/lmm/m/it/9 P[]\OT1/lmr/m/n/9 )[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 P[] \O
+T1/lmr/m/n/9 = 2\OML/lmm/m/it/9 X  [] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 ^^V[]
+[] \OMS/lmsy/m/n/9 ^^@ \OML/lmm/m/it/9 ^^O[]X \OT1/lmr/m/n/9 = \OML/lmm/m/it/9 
+^^O[] X \OMS/lmsy/m/n/9 6\OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :
+[76]
+Overfull \hbox (6.18509pt too wide) in paragraph at lines 662--674
+ [] 
+[77]
+Overfull \hbox (13.56856pt too wide) detected at line 798
+[][][][]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 D[]\OT1/lmr/m/n/9 ) = [][] [](\OML/lmm/
+m/it/9 R[]\OT1/lmr/m/n/9 ) [](\OML/lmm/m/it/9 F\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9
+ ^^@ [][]\OML/lmm/m/it/9 ^^Q\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 D[]\OT1/lmr/m/n/9 )
+ + [] [] \OML/lmm/m/it/9 D[][];
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 861--861
+|[]\T1/lmr/bx/n/14.4 (+20) Electromagnetic-Gravity
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
+\T1/lmr/m/n/10 (+20) re-pro-duces the Stan-dard Model through the
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--986
+\T1/lmr/m/n/10 (+20) Chamseddine--Connes con-struc-tion [[], []],
+[80]
+Underfull \hbox (badness 5217) in paragraph at lines 1101--1102
+[] []\T1/lmr/bx/n/10 (+20) Sen-si-tiv-ity anal-y-sis.[] \T1/lmr/m/n/10 (+20) Fr
+om the D2 anal-y-sis,
+[81]
+Underfull \hbox (badness 2443) in paragraph at lines 1140--1140
+|[]\T1/lmr/bx/n/12 (+20) The Dixon Al-ge-bra and the
+[82] [83]
+Underfull \hbox (badness 1270) in paragraph at lines 1275--1276
+[]\T1/lmr/m/it/10 (+20) The as-so-cia-tive en-ve-lope of the oc-to-nions is
+
+Underfull \hbox (badness 6094) in paragraph at lines 1303--1304
+\T1/lmr/m/n/10 (+20) The ori-entabil-ity ax-iom for a spec-tral triple
+[84]
+Underfull \hbox (badness 1983) in paragraph at lines 1310--1312
+[]\T1/lmr/bx/it/10 (+20) Proof A (As-so-cia-tive en-ve-lope sur-jec-tiv-
+
+Underfull \hbox (badness 2486) in paragraph at lines 1310--1312
+\T1/lmr/m/it/10 (+20) The bi-mod-ule map $\OML/lmm/m/it/10 ^^V [] [] \U/msb/m/n
+/10 O \OMS/lmsy/m/n/10 
+[] \U/msb/m/n/10 O[] \OMS/lmsy/m/n/10 ! [][]\OT1/lmr/m/n/10 (+20) (\U/msb/m/n/1
+0 O\OT1/lmr/m/n/10 (+20) )$\T1/lmr/m/it/10 (+20) ,
+
+Underfull \hbox (badness 1067) in paragraph at lines 1342--1343
+\T1/lmr/m/n/10 (+20) is basis-independent: for any or-thonor-mal ba-sis
+
+Underfull \hbox (badness 1231) in paragraph at lines 1373--1374
+[] []\T1/lmr/bx/n/10 (+20) The mod-i-fied first-order con-di-tion: im-pli-
+[85]
+Overfull \hbox (10.1883pt too wide) detected at line 1440
+[][][]\OML/lmm/m/it/9 G[] \OT1/lmr/m/n/9 = [][](\OML/lmm/m/it/9 e[]\OT1/lmr/m/n
+/9 ) \OMS/lmsy/m/n/9 ^^B []\OT1/lmr/m/n/9 (\U/msb/m/n/9 H\OT1/lmr/m/n/9 ) \OMS/
+lmsy/m/n/9 ^^B []\OT1/lmr/m/n/9 (\U/msb/m/n/9 C\OT1/lmr/m/n/9 ) = [](3) \OMS/lm
+sy/m/n/9 ^^B []\OT1/lmr/m/n/9 (2) \OMS/lmsy/m/n/9 ^^B \OT1/lmr/m/n/9 U(1)\OML/l
+mm/m/it/9 ;
+[86]
+Overfull \hbox (74.91313pt too wide) detected at line 1507
+[][][][][]
+
+Underfull \hbox (badness 1609) in paragraph at lines 1515--1515
+|[]\T1/lmr/bx/n/12 (+20) Chern--Simons In-flow Con-sis-
+
+Underfull \hbox (badness 4927) in paragraph at lines 1544--1544
+|[]\T1/lmr/bx/n/14.4 (+20) Fermion Mass Hi-er-ar-chy
+
+Underfull \hbox (badness 6725) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) The oc-to-nionic demo-cratic ma-trix $\OML/lmm/m/it/10 M[]
+$ \T1/lmr/m/n/10 (+20) (Sec-
+
+Underfull \hbox (badness 7486) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) tion [][]4.8[][]) pro-duces de-gen-er-ate inter-generation
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) cou-plings with eigen-val-ues $\OMS/lmsy/m/n/10 f\OT1/lmr/
+m/n/10 (+20) 1\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) 2\OML/lmm/m/it/10 ;  \OT1
+/lmr/m/n/10 (+20) 1\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) 2\OML/lmm/m/it/10 ; 
+ \OT1/lmr/m/n/10 (+20) 2\OMS/lmsy/m/n/10 g$\T1/lmr/m/n/10 (+20) . The
+
+Underfull \hbox (badness 6268) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) ob-served mass hierarchy---spanning more than
+
+Underfull \hbox (badness 2302) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) mech-a-nism. In the Merid-ian frame-work, this
+
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1548
+\T1/lmr/m/n/10 (+20) mech-a-nism is the Gherghetta--Pomarol (GP)
+[87] [88] [89 <./figures/fig5_fermion_profiles.pdf>]
+Overfull \hbox (66.09169pt too wide) detected at line 1687
+[][][]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 Y[]\OT1/lmr/m/n/9 )[] = \OML/lmm/m/it/9 Y
+[] \OT1/lmr/m/n/9 (\OML/lmm/m/it/9 M[]\OT1/lmr/m/n/9 )[] \OML/lmm/m/it/9 g\OT1/
+lmr/m/n/9 (\OML/lmm/m/it/9 c[]\OT1/lmr/m/n/9 ) \OML/lmm/m/it/9 g\OT1/lmr/m/n/9 
+(\OML/lmm/m/it/9 c[]\OT1/lmr/m/n/9 ) \OML/lmm/m/it/9 ;  \OT1/lmr/m/n/9 (\OML/lm
+m/m/it/9 Y[]\OT1/lmr/m/n/9 )[] = \OML/lmm/m/it/9 Y[] \OT1/lmr/m/n/9 (\OML/lmm/m
+/it/9 M[]\OT1/lmr/m/n/9 )[] \OML/lmm/m/it/9 g\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 c[
+]\OT1/lmr/m/n/9 ) \OML/lmm/m/it/9 g\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 c[]\OT1/lmr/
+m/n/9 ) \OML/lmm/m/it/9 ;
+
+Overfull \hbox (0.8719pt too wide) in paragraph at lines 1735--1737
+\T1/lmr/m/n/10 (-20) oc-to-nionic struc-ture con-stants and ra-dia-tive KK loop
+s---
+[90]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1753.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1753.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1753.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1779--1779
+|[]\T1/lmr/bx/n/12 (+20) Tribimaximal Mix-ing as
+
+Overfull \hbox (24.75252pt too wide) detected at line 1798
+[][][][][] \OML/lmm/m/it/9 ^^R[] \OT1/lmr/m/n/9 = [] = 0\OML/lmm/m/it/9 :\OT1/l
+mr/m/n/9 333\OML/lmm/m/it/9 ;  [][] ^^R[] \OT1/lmr/m/n/9 = [] = 0\OML/lmm/m/it/
+9 :\OT1/lmr/m/n/9 500\OML/lmm/m/it/9 ;  [][] ^^R[] \OT1/lmr/m/n/9 = 0 \OML/lmm/
+m/it/9 :
+
+Underfull \hbox (badness 1558) in paragraph at lines 1802--1803
+[]\T1/lmr/m/n/10 (+20) In the $\OML/lmm/m/it/10 S[]$\T1/lmr/m/n/10 (+20) -symme
+tric limit, $\OML/lmm/m/it/10 m[]$ \T1/lmr/m/n/10 (+20) and $\OML/lmm/m/it/10 M
+[]$
+
+Overfull \hbox (65.55878pt too wide) detected at line 1819
+[][][][][]
+[91]
+Underfull \hbox (badness 1552) in paragraph at lines 1850--1850
+|[]\T1/lmr/bx/n/12 (+20) Conditional Neu-trino Pre-dic-
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1881.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nu' on input line 1881.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1881.
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1916
+\T1/lmr/m/n/10 (+20) where $\OML/lmm/m/it/10 K[] \OT1/lmr/m/n/10 (+20) = ^^@[]\
+OML/lmm/m/it/10 =H\OMS/lmsy/m/n/10 j[]$ \T1/lmr/m/n/10 (+20) and
+
+Underfull \hbox (badness 2050) in paragraph at lines 1914--1916
+\OML/lmm/m/it/10 ^^^[] \OT1/lmr/m/n/10 (+20) = ^^A\OML/lmm/m/it/10 M[]M[]=\OT1/
+lmr/m/n/10 (+20) (4 \OMS/lmsy/m/n/10 ^^B \OT1/lmr/m/n/10 (+20) 3\OML/lmm/m/it/1
+0 :\OT1/lmr/m/n/10 (+20) 15 \OMS/lmsy/m/n/10 ^^B \OT1/lmr/m/n/10 (+20) 1\OML/lm
+m/m/it/10 :\OT1/lmr/m/n/10 (+20) 66 [] \OML/lmm/m/it/10 T[]\OT1/lmr/m/n/10 (+20
+) )$ \T1/lmr/m/n/10 (+20) is
+
+Underfull \hbox (badness 2277) in paragraph at lines 1914--1916
+\T1/lmr/m/n/10 (+20) the Merid-ian pa-ram-e-ters, the en-ve-lope of $\OMS/lmsy/
+m/n/10 j\OML/lmm/m/it/10 ^^Q[]\OMS/lmsy/m/n/10 j$
+
+Underfull \hbox (badness 1259) in paragraph at lines 1914--1916
+\T1/lmr/m/n/10 (+20) reaches $\OMS/lmsy/m/n/10 ^^X \OT1/lmr/m/n/10 (+20) 7 \OMS
+/lmsy/m/n/10 ^^B \OT1/lmr/m/n/10 (+20) 10[]$\T1/lmr/m/n/10 (+20) , \T1/lmr/m/it
+/10 (+20) over-shoot-ing \T1/lmr/m/n/10 (+20) the ob-served
+
+Underfull \hbox (badness 1348) in paragraph at lines 1935--1936
+[]\T1/lmr/m/n/10 (+20) The SM Yukawa RGE has the struc-ture
+[93]
+Overfull \hbox (61.44214pt too wide) detected at line 2006
+[][][]\OT1/lmr/m/n/9 ^^@(\OML/lmm/m/it/9 ^^W[]  \OMS/lmsy/m/n/9 !  \OML/lmm/m/i
+t/9 ^^W[] \OT1/lmr/m/n/9 + \OML/lmm/m/it/9 ^^M\OT1/lmr/m/n/9 ) = []  [][] 2\OML
+/lmm/m/it/9 ^^R m[] \OMS/lmsy/m/n/9 ' \OT1/lmr/m/n/9 1\OML/lmm/m/it/9 :\OT1/lmr
+/m/n/9 5  \OMS/lmsy/m/n/9 ^^B  \OT1/lmr/m/n/9 10[] [][][] [][][][]s[]\OML/lmm/m
+/it/9 ;
+
+Underfull \hbox (badness 4479) in paragraph at lines 2024--2024
+|[]\T1/lmr/bx/n/14.4 (+20) NCG--Asymptotic Safety
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2027.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2027.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2027.
+
+
+Underfull \vbox (badness 3250) has occurred while \output is active [94]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2042.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2042.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2042.
+
+
+Overfull \hbox (32.7174pt too wide) detected at line 2083
+[][][]\OML/lmm/m/it/9 b[] \OT1/lmr/m/n/9 = [][]\OML/lmm/m/it/9 N\OT1/lmr/m/n/9 
+(5\OML/lmm/m/it/9 R[] \OMS/lmsy/m/n/9 ^^@ \OT1/lmr/m/n/9 2\OML/lmm/m/it/9 R[] \
+OT1/lmr/m/n/9 + 2\OML/lmm/m/it/9 R[]\OT1/lmr/m/n/9 ) + 60\OML/lmm/m/it/9 R [] E
+ \OT1/lmr/m/n/9 + 180 [] \OML/lmm/m/it/9 E[] \OT1/lmr/m/n/9 + 30 [] 
+[][] \OML/lmm/m/it/9 :
+[95]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2147.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2147.
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 2217--2217
+|[]\T1/lmr/bx/n/12 (+20) Primordial B-Mode Fore-cast
+[96] [97 <./figures/fig4_inflation_nsr.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2265.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2280
+\T1/lmr/m/n/10 (+20) for the nat-u-ral mod-u-lus mass range
+
+Underfull \hbox (badness 1565) in paragraph at lines 2278--2280
+\OML/lmm/m/it/10 m[] \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 (+20) [200\OML/lmm/m/it
+/10 ;  \OT1/lmr/m/n/10 (+20) 2000] []$\T1/lmr/m/n/10 (+20) . This de-ter-mines 
+the
+
+Overfull \hbox (43.83897pt too wide) detected at line 2284
+[][][]\OML/lmm/m/it/9 N[] \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 53[]56  =[]\OMS/lm
+sy/m/n/9 )  \OML/lmm/m/it/9 n[] \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n
+/9 9634 \OMS/lmsy/m/n/9 ^^F \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 000
+9\OML/lmm/m/it/9 ;  r \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 0040 \O
+MS/lmsy/m/n/9 ^^F \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 0002 \OML/lmm
+/m/it/9 ;
+
+Overfull \hbox (77.91687pt too wide) detected at line 2300
+[][][]\OML/lmm/m/it/9 f[] \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :
+\OT1/lmr/m/n/9 3 [] [][][] [][][]\OML/lmm/m/it/9 ;  \OT1/lmr/m/n/9 
+[] \OML/lmm/m/it/9 h[] \OMS/lmsy/m/n/9 ^^X \OT1/lmr/m/n/9 10[] [][][][] [][][]\
+OML/lmm/m/it/9 ;
+
+Underfull \hbox (badness 10000) in paragraph at lines 2303--2304
+[] []\T1/lmr/bx/n/10 (+20) De-tec-tion prospects.[] \T1/lmr/m/n/10 (+20) The pe
+ak fre-quency
+[98]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 2317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2333.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\det' on input line 2333.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2333.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2343.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2343.
+
+
+Overfull \hbox (51.92651pt too wide) detected at line 2351
+[][][]\OML/lmm/m/it/9 d \OT1/lmr/m/n/9 = [] \OML/lmm/m/it/9 ^^R \OT1/lmr/m/n/9 
++ \OML/lmm/m/it/9 ^^M  [] ^^R \OT1/lmr/m/n/9 ([]\OML/lmm/m/it/9 VV\OT1/lmr/m/n/
+9 )\OML/lmm/m/it/9 ;  c \OT1/lmr/m/n/9 = [] \OML/lmm/m/it/9 ^^R \OT1/lmr/m/n/9 
+([]\OML/lmm/m/it/9 f[]\OT1/lmr/m/n/9 ) \OML/lmm/m/it/9 :
+
+Overfull \hbox (37.17384pt too wide) detected at line 2359
+[][][]\OML/lmm/m/it/9 ^^M \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 065
+\OML/lmm/m/it/9 ;  ^^R \OT1/lmr/m/n/9 = 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 78[]  
+(\OML/lmm/m/it/9 m[] \OT1/lmr/m/n/9 = 300 [])\OML/lmm/m/it/9 ;  ^^T[] \OMS/lmsy
+/m/n/9 ^^@ \OT1/lmr/m/n/9 1 = 8\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 0 \OMS/lmsy/m/n/
+9 ^^B \OT1/lmr/m/n/9 10[] \OML/lmm/m/it/9 :
+[99]
+Overfull \hbox (64.07526pt too wide) detected at line 2409
+[][][][]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 r \OMS/lmsy/m/n/9 ! \OML/lmm/m/it/9 WW\
+OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m
+/n/9 63\OML/lmm/m/it/9 ;  []\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 r \OMS/lmsy/m/n/9 !
+ \OML/lmm/m/it/9 ZZ\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML/lm
+m/m/it/9 :\OT1/lmr/m/n/9 28\OML/lmm/m/it/9 ;  []\OT1/lmr/m/n/9 (\OML/lmm/m/it/9
+ r \OMS/lmsy/m/n/9 ! \OML/lmm/m/it/9 gg\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y \OT
+1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 07 \OML/lmm/m/it/9 ;
+
+Overfull \hbox (163.64702pt too wide) detected at line 2483
+[][][][]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 r \OMS/lmsy/m/n/9 ! \OML/lmm/m/it/9 b[]
+\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/
+m/n/9 68\OML/lmm/m/it/9 ;  []\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 r \OMS/lmsy/m/n/9 
+! \OML/lmm/m/it/9 WW[]\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML
+/lmm/m/it/9 :\OT1/lmr/m/n/9 14\OML/lmm/m/it/9 ;  []\OT1/lmr/m/n/9 (\OML/lmm/m/i
+t/9 r \OMS/lmsy/m/n/9 ! \OML/lmm/m/it/9 gg\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^Y 
+\OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 10\OML/lmm/m/it/9 ;  []\OT1/lmr
+/m/n/9 (\OML/lmm/m/it/9 r \OMS/lmsy/m/n/9 ! \OML/lmm/m/it/9 ^^\[]\OT1/lmr/m/n/9
+ ) \OMS/lmsy/m/n/9 ^^Y \OT1/lmr/m/n/9 0\OML/lmm/m/it/9 :\OT1/lmr/m/n/9 06 \OML/
+lmm/m/it/9 ;
+[100]
+Overfull \hbox (39.14381pt too wide) detected at line 2498
+[][][]\OML/lmm/m/it/9 m[] \OT1/lmr/m/n/9 = \OML/lmm/m/it/9 x[]\OT1/lmr/m/n/9 (\
+OML/lmm/m/it/9 J[]\OT1/lmr/m/n/9 ) \OML/lmm/m/it/9 k e[] \OT1/lmr/m/n/9 (1 + \O
+ML/lmm/m/it/9 ^^P[]\OT1/lmr/m/n/9 )\OML/lmm/m/it/9 ;  m[] \OT1/lmr/m/n/9 = \OML
+/lmm/m/it/9 x[]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 J[]\OT1/lmr/m/n/9 ) \OML/lmm/m/i
+t/9 k e[] \OT1/lmr/m/n/9 (1 + \OML/lmm/m/it/9 ^^P[]\OT1/lmr/m/n/9 ) \OML/lmm/m/
+it/9 :
+
+Underfull \hbox (badness 1360) in paragraph at lines 2524--2524
+|[]\T1/lmr/bx/n/14.4 (+20) Gauge Cou-pling Uni-fi-ca-
+[101] [102]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2631.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2631.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2631.
+
+[103]
+Underfull \hbox (badness 10000) in paragraph at lines 2732--2732
+|[]\T1/lmr/bx/n/14.4 (+20) Experimental Fore-cast:
+
+Underfull \hbox (badness 3281) in paragraph at lines 2783--2784
+[]\T1/lmr/bx/n/10 (+20) Chern--Simons terms are topo-log-i-cally
+
+Underfull \hbox (badness 1394) in paragraph at lines 2783--2784
+\T1/lmr/m/n/10 (+20) to com-pen-sate each other un-der con-tin-u-ous
+[104] [105]
+Underfull \hbox (badness 3907) in paragraph at lines 2809--2810
+[]\T1/lmr/bx/n/10 (+20) Anomaly can-cel-la-tion from oc-to-nionic
+
+Underfull \hbox (badness 1533) in paragraph at lines 2809--2810
+[]\OT1/lmr/m/n/10 (+20) (10)$\T1/lmr/bx/n/10 (+20) : \T1/lmr/m/n/10 (+20) All s
+ix in-de-pen-dent 4D anomaly
+
+Underfull \hbox (badness 10000) in paragraph at lines 2840--2840
+|[]\T1/lmr/bx/n/12 (+20) CP Vi-o-la-tion from Brane-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2849--2850
+[] []\T1/lmr/bx/n/10 (+20) Why $\OML/lmm/m/it/10 M[]$ \T1/lmr/bx/n/10 (+20) is 
+real.[] \T1/lmr/m/n/10 (+20) The demo-cratic inter-
+[106]
+Overfull \hbox (33.80838pt too wide) detected at line 2892
+[][][][][]\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 ^^M[] F[] \OMS/lmsy/m/n/9 ^ \OML/lmm/
+m/it/9 F[]\OT1/lmr/m/n/9 ) = [] [][](\OML/lmm/m/it/9 F[] \OMS/lmsy/m/n/9 ^ \OML
+/lmm/m/it/9 F[]\OT1/lmr/m/n/9 ) \OMS/lmsy/m/n/9 ^^@ [] [][]\OT1/lmr/m/n/9 (\OML
+/lmm/m/it/9 F[] \OMS/lmsy/m/n/9 ^ \OML/lmm/m/it/9 F[]\OT1/lmr/m/n/9 ) = 0\OML/l
+mm/m/it/9 :
+
+Underfull \hbox (badness 10000) in paragraph at lines 2899--2900
+[] []\T1/lmr/bx/n/10 (+20) Mech-a-nism 3: Per-tur-ba-tive pro-tec-tion
+[107]
+Underfull \hbox (badness 1675) in paragraph at lines 2911--2911
+|[]\T1/lmr/bx/n/12 (+20) Brane Pa-ram-e-ter De-ter-mi-na-
+
+Overfull \hbox (67.05798pt too wide) detected at line 2961
+\U/msb/m/n/9 O  []  []  []  \OML/lmm/m/it/9 []  []  ^^V[]  []  ^^P[]  []  w[]:
+
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 2979--2980
+[]\T1/lmr/bx/n/10 (+20) Non-associative K-theory (par-tially
+
+Underfull \hbox (badness 6348) in paragraph at lines 2979--2980
+\T1/lmr/m/n/10 (+20) spec-tral triple is es-tab-lished through the
+
+Underfull \hbox (badness 2503) in paragraph at lines 2979--2980
+\T1/lmr/m/n/10 (+20) com-pu-ta-tion (the module-splitting ar-gu-ment
+
+Underfull \hbox (badness 2547) in paragraph at lines 2979--2980
+\T1/lmr/m/n/10 (+20) from oc-to-nionic com-plex struc-ture over-laps,
+
+Underfull \hbox (badness 1087) in paragraph at lines 2985--2986
+[]\T1/lmr/bx/n/10 (+20) Coincidence prob-lem (ame-lio-rated, not
+) (chapter5_sound_speed.tex [109]
+Chapter 5.
+
+Underfull \hbox (badness 2735) in paragraph at lines 40--41
+\T1/lmr/m/n/10 (+20) space-time with Randall--Sundrum warp-ing [[]]
+
+Underfull \hbox (badness 1331) in paragraph at lines 40--41
+\T1/lmr/m/n/10 (+20) (Kaloper--Padilla se-ques-ter-ing, the NCG spec-tral
+
+Underfull \hbox (badness 1810) in paragraph at lines 40--41
+\T1/lmr/m/n/10 (+20) ac-tion, con-for-mal cou-pling $\OML/lmm/m/it/10 ^^X \OT1/
+lmr/m/n/10 (+20) = 1\OML/lmm/m/it/10 =\OT1/lmr/m/n/10 (+20) 6$\T1/lmr/m/n/10 (+
+20) , and the
+
+Underfull \hbox (badness 5374) in paragraph at lines 40--41
+\T1/lmr/m/n/10 (+20) non-singular self-tuning so-lu-tion in braneworld
+
+Underfull \hbox (badness 6300) in paragraph at lines 40--41
+\T1/lmr/m/n/10 (+20) set-tings with bulk $\OML/lmm/m/it/10 P\OT1/lmr/m/n/10 (+2
+0) (\OML/lmm/m/it/10 X; ^^^\OT1/lmr/m/n/10 (+20) )$ \T1/lmr/m/n/10 (+20) [[]], 
+which has
+[110] [111] [112]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \hbox (82.9124pt too wide) in paragraph at lines 254--264
+ [] 
+[113 <./figures/fig6_goldilocks.pdf>]
+Underfull \hbox (badness 3302) in paragraph at lines 271--272
+[]\T1/lmr/bx/n/10 (+20) Evasion 3 \T1/lmr/m/n/10 (+20) (FRW weak-en-ing) de-pen
+ds on
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+\T1/lmr/m/n/10 (+20) On the FRW back-ground ($\OML/lmm/m/it/10 u[] \OT1/lmr/m/n
+/10 (+20) = \OML/lmm/m/it/10 ^^N[]$\T1/lmr/m/n/10 (+20) ,
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+\OML/lmm/m/it/10 g[] \OT1/lmr/m/n/10 (+20) = [](\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/
+n/10 (+20) 1\OML/lmm/m/it/10 ; a[]; a[]; a[]\OT1/lmr/m/n/10 (+20) )$\T1/lmr/m/n
+/10 (+20) ), this yields the
+[114]
+Overfull \hbox (34.85757pt too wide) detected at line 383
+[][][]\OML/lmm/m/it/9 ^^N[] \OT1/lmr/m/n/9 + [] \OML/lmm/m/it/9 ^^N[] \OT1/lmr/
+m/n/9 + [] \OML/lmm/m/it/9 ^^N[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@[] \OML/lm
+m/m/it/9 ^^N[] ;
+[115]
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
+[] []\T1/lmr/bx/n/10 (+20) k-essence with DBI--type ki-net-ics.[] \T1/lmr/m/n/1
+0 (+20) DBI
+
+Underfull \hbox (badness 4072) in paragraph at lines 491--492
+[] []\T1/lmr/bx/n/10 (+20) Galileon mod-els.[] \T1/lmr/m/n/10 (+20) Cer-tain cu
+-bic and quar-tic
+[116] [117 <./figures/fig8_sound_speed.pdf>] [118]) [119] [120]
+(appendix_computations.tex
+Appendix A.
+[121] [122]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 148.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 174.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 174.
+
+[123]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+[124]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 277.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 277.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 277.
+
+[125]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\chi' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
+
+Underfull \vbox (badness 2932) has occurred while \output is active [126]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 471.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 471.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 471.
+
+[127] [128]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 594.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 594.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 594.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 594.
+
+[129] [130]
+Overfull \hbox (12.65797pt too wide) in paragraph at lines 708--723
+ [] 
+[131]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 788.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 788.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 788.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\zeta' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+Overfull \hbox (7.14037pt too wide) in paragraph at lines 796--805
+ [] 
+[132] [133]
+Underfull \hbox (badness 1107) in paragraph at lines 957--958
+\T1/lmr/m/n/10 (+20) The orb-ifold thresh-old cor-rec-tion (non-universal part)
+ is $[]\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 ^^^\OT1/lmr/m/n/10 (+20) ) = 9 \
+OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 z[]\OT1/lmr/m/n/10 (+2
+0) ) + 9 \OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (+20) (\OML/lmm/m/it/10 z[]\OT1/lmr/
+m/n/10 (+20) )$\T1/lmr/m/n/10 (+20) , where $\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 
+(+20) (\OML/lmm/m/it/10 z\OT1/lmr/m/n/10 (+20) ) =
+[134] [135]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1082.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\xi' on input line 1082.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1082.
+
+) [136] [137] (bibliography.tex [138] [139] [140] [141] [142] [143] [144]
+[145] [146] [147]) [148] (meridian_monograph.aux) )
+(see the transcript file for additional information)<C:/Program Files/MiKTeX/fo
+nts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/l
+mbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx6.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:
+/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/lm/lmmib7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
+lic/lm/lmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Pro
+gram Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/lm/lmri8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/lm/lmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
+lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Program Files/Mi
+KTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/sym
+bols/msbm7.pfb>
+Output written on meridian_monograph.pdf (164 pages, 2932844 bytes).
+Transcript written on meridian_monograph.log.
