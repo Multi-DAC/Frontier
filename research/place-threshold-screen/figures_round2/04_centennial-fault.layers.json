@@ -1,0 +1,58 @@
+{
+ "site": 4,
+ "name": "Centennial fault",
+ "lat": 44.584,
+ "lon": -112.066,
+ "half_km": 18.0,
+ "bbox": [
+  -112.29303032147912,
+  44.42230398850162,
+  -111.83896967852088,
+  44.74569601149839
+ ],
+ "layers": {
+  "relief": {
+   "status": "PRESENT",
+   "bytes": 315250,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-112.29303032147912,44.42230398850162,-111.83896967852088,44.74569601149839&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "geology_sgmc2": {
+   "status": "PRESENT",
+   "bytes": 67396,
+   "how": "CACHED",
+   "url": "https://mrdata.usgs.gov/services/sgmc2?service=WMS&version=1.1.1&request=GetMap&layers=sgmc2&styles=&SRS=EPSG:4326&bbox=-112.29303032147912,44.42230398850162,-111.83896967852088,44.74569601149839&width=760&height=760&format=image/png&transparent=true"
+  },
+  "context_relief": {
+   "status": "PRESENT",
+   "bytes": 326466,
+   "how": "CACHED",
+   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSShadedReliefOnly/MapServer/export?bbox=-113.20115160739557,43.77551994250809,-110.93084839260443,45.392480057491916&bboxSR=4326&imageSR=4326&size=760,760&format=png32&transparent=false&f=image"
+  },
+  "gravity_bouguer": {
+   "status": "PRESENT",
+   "source": "https://mrdata.usgs.gov/gravity/bouguer/bouguer.xyz.gz",
+   "n_stations_in_pad": 653,
+   "min_mGal": -212.98094516703367,
+   "max_mGal": -184.41130880832318,
+   "range_mGal": 28.569636358710483
+  },
+  "seismicity": {
+   "status": "PRESENT",
+   "n": 12338,
+   "how": "CACHED",
+   "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minlatitude=43.77551994250809&maxlatitude=45.392480057491916&minlongitude=-113.20115160739557&maxlongitude=-110.93084839260443&starttime=1900-01-01&minmagnitude=1.0&limit=20000&orderby=magnitude",
+   "note": "context bbox, ANSS/ComCat",
+   "minmag_requested": 1.0,
+   "minmag_plotted": 1.0,
+   "n_total_at_requested_floor": 12338,
+   "n_at_plotted_floor": 12338,
+   "n_returned": 12338,
+   "complete": true,
+   "starttime": "1900-01-01",
+   "limit": 20000
+  }
+ },
+ "built": "2026-08-20 12:04:42",
+ "output": "work/figures_round2\\04_centennial-fault.png"
+}

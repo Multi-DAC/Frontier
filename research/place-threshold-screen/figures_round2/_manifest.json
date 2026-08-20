@@ -1,0 +1,22 @@
+{
+ "n": 2,
+ "n_expected": 2,
+ "sites": [
+  {
+   "name": "Centennial fault",
+   "rank": 4,
+   "score": 0.6812,
+   "output": "work/figures_round2\\04_centennial-fault.png",
+   "layers_failed": [],
+   "layers_n": 5
+  },
+  {
+   "name": "Antelope Valley fault zone",
+   "rank": 5,
+   "score": 0.6244,
+   "output": "work/figures_round2\\05_antelope-valley-fault-zone.png",
+   "layers_failed": [],
+   "layers_n": 5
+  }
+ ]
+}

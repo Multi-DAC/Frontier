@@ -160,13 +160,14 @@ PROGRAMME = dict(
 TITLE = "The Ground Under the Lights"
 
 DECK = (
-    "A continental screen for one specific physical conjunction — a recently ruptured "
-    "extensional fault cutting quartz-rich crystalline rock — run over every normal fault "
-    "the United States Geological Survey has mapped in the lower forty-eight, with all "
-    "folklore held out of the arithmetic until the physics was frozen. Ten sites came out. "
-    "Then three pre-registered experiments asked whether those ten carry a heavier anomalous "
-    "record than matched decoys. This is the full report, including the parts that did not go "
-    "our way, which is most of them."
+    "Ten areas in the western United States where one specific, measurable piece of crustal "
+    "physics is most strongly expressed — a recently ruptured extensional fault cutting "
+    "quartz-rich crystalline rock — found by screening every normal fault the United States "
+    "Geological Survey has mapped in the lower forty-eight, with every piece of folklore held "
+    "out of the arithmetic. Two rounds of work, seventeen measured legs, one external test. "
+    "This is the full report and the list it produced: if you were going to go and look for "
+    "anomalous lights with instruments, this is where we would send you, and this is exactly "
+    "how much the recommendation is worth."
 )
 
 # ==========================================================================
