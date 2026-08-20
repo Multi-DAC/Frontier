@@ -1,23 +1,23 @@
 {
   "POST.html": {
-    "blocks": 158,
-    "words": 12515,
+    "blocks": 154,
+    "words": 12662,
     "images": 13,
-    "post_bytes": 4353909,
-    "text_bytes": 87451
+    "post_bytes": 4365692,
+    "text_bytes": 87602
   },
   "POST-part1.html": {
-    "blocks": 48,
-    "words": 5332,
+    "blocks": 44,
+    "words": 5686,
     "images": 3,
-    "post_bytes": 385650,
-    "text_bytes": 36524
+    "post_bytes": 336103,
+    "text_bytes": 37613
   },
   "POST-part2.html": {
     "blocks": 112,
-    "words": 7315,
+    "words": 7107,
     "images": 10,
-    "post_bytes": 3970510,
-    "text_bytes": 53178
+    "post_bytes": 4031846,
+    "text_bytes": 52246
   }
 }

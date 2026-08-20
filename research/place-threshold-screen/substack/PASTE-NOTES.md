@@ -22,9 +22,9 @@ artifact. This one is the article.
 
 | file | words | text KB | images | what |
 |---|---|---|---|---|
-| `POST.html` | 12,515 | 85 | 13 | the whole report, one post |
-| `POST-part1.html` | 5,332 | 36 | 3 | the report **without** the ten site dossiers |
-| `POST-part2.html` | 7,315 | 52 | 10 | the ten site dossiers alone |
+| `POST.html` | 12,662 | 86 | 13 | the whole report, one post |
+| `POST-part1.html` | 5,686 | 37 | 3 | the report **without** the ten site dossiers |
+| `POST-part2.html` | 7,107 | 51 | 10 | the ten site dossiers alone |
 
 **Gmail clips any email over 102 KB** with a *"[Message clipped]"* link. The web
 version is never affected. `POST.html` goes over that; part 1 on its own does
@@ -41,43 +41,58 @@ not. So:
 
 **Subtitle** — pick one:
 
-- A continental screen for the physics of anomalous places, with the folklore
-  held out until the physics was frozen — and the null printed in full.
-- Ten faults, four geophysical layers each, three pre-registered lore
-  experiments, nine blind scorers, and a result that did not go our way.
+- Ten areas in the western United States where the physics of anomalous places is
+  most strongly expressed — screened from every mapped normal fault in the lower
+  forty-eight, with the folklore held out of the arithmetic.
+- A continental screen for the ground under the lights: 110,356 mapped sections,
+  1,399 nodes, 242 through the gate, thirteen areas, ten printed.
 
-If you publish it as two, part 2's title: **The Ground Under the Lights — the ten sites**.
+If you publish it as two, part 2's title: **The Ground Under the Lights — the ten areas**.
 
-## What this build does that the old one did not
+## Round 2 — what changed in this build
 
-| | old (`build_substack.py`) | this |
-|---|---|---|
-| structure | the internal dossier's | question → method → rigour → results → sites |
-| lore | tier tables per site | **narrative prose per site**, tiers stated inline |
-| framing | none — opens on a results table | opens on the observation and the conjecture |
-| method | scattered through captions | its own section, plus a rigour section |
-| tables | 3 imaged + 44 reflowed | 3 imaged, the rest written into the prose |
-| numbers | rendered from data | rendered from data **and asserted against it** |
+The deliverable is **ten AREAS at the 50 km separation scale**, driven from
+`data/candidate_list.json`. The round-1 article shipped ten *faults* at 100 km,
+scraped out of `dossier.html` — which coupled the article's membership to a stale
+artefact. It no longer does. Two areas are new (Centennial Valley, Antelope
+Valley) and two dropped below the cut (Bear River, Teton).
+
+Both new areas were measured through the same along-trace probe as the other
+eight, with both declared controls run first and required to reproduce exactly
+(`code/l1_detail_round2.py`), and their plates are built by the same
+`site_figure.build()` as the rest (`code/plates_round2.py`). Neither has a lore
+entry: they entered after the three experiments were frozen, and a sighted
+post-hoc lookup is the contamination the pre-registration exists to prevent.
+
+Register: confounds and controls are stated **once**, in the method section, and
+the rest of the article presents findings.
+
+## What is checked at build time
 
 Every measurement quoted in the prose — score, gate reading, trace length,
-segment count, junction count, mapped length, nearest place — is checked against
-`dossier.html` and `data/top10_frozen_100km.json` at build time. A typo fails
-the build rather than shipping.
+segment count, junction count, mapped length, nearest place — against
+`dossier.html` for the eight round-1 areas and against
+`stage5_join_rows.json` + `l1_detail_round2.json` + the plate's own layers
+manifest for the two round-2 ones. Plus: **membership and order of the ten**
+against `candidate_list.json`, the cut gap and head gap recomputed, every
+superlative in the prose recomputed across the ten, all lore tiers against the
+frozen result files, and the headline programme figures against the summaries.
+A typo fails the build rather than shipping.
 
 ## Assets, in paste order
 
 | # | file | size | what |
 |---|---|---|---|
 | 01 | `01_the-three-lore-legs-at-a-glance.jpg` | 57 KB | the three lore legs at a glance |
-| 02 | `02_the-ten-with-their-five-scoring-terms.jpg` | 112 KB | the ten with their five scoring terms |
-| 03 | `03_faults-suppressed-by-the-100-km-rule.jpg` | 86 KB | faults suppressed by the 100 km rule |
+| 02 | `02_the-ten-areas-with-their-measured-terms.jpg` | 126 KB | the ten areas with their measured terms |
+| 03 | `03_the-three-areas-immediately-below-the-cut.jpg` | 35 KB | the three areas immediately below the cut |
 | 04 | `04_four-panel-geophysical-plate-for-madison-fau.jpg` | 275 KB | four-panel geophysical plate for Madison fault |
 | 05 | `05_four-panel-geophysical-plate-for-round-valle.jpg` | 331 KB | four-panel geophysical plate for Round Valley fault |
 | 06 | `06_four-panel-geophysical-plate-for-little-vall.jpg` | 355 KB | four-panel geophysical plate for Little Valley fault |
-| 07 | `07_four-panel-geophysical-plate-for-helena-vall.jpg` | 245 KB | four-panel geophysical plate for Helena valley fault |
-| 08 | `08_four-panel-geophysical-plate-for-red-rock-fa.jpg` | 247 KB | four-panel geophysical plate for Red Rock fault |
-| 09 | `09_four-panel-geophysical-plate-for-sand-spring.jpg` | 325 KB | four-panel geophysical plate for Sand Springs Range fault |
-| 10 | `10_four-panel-geophysical-plate-for-mosquito-fa.jpg` | 285 KB | four-panel geophysical plate for Mosquito fault |
-| 11 | `11_four-panel-geophysical-plate-for-sandia-faul.jpg` | 237 KB | four-panel geophysical plate for Sandia fault |
-| 12 | `12_four-panel-geophysical-plate-for-bear-river-.jpg` | 259 KB | four-panel geophysical plate for Bear River fault zone |
-| 13 | `13_four-panel-geophysical-plate-for-teton-fault.jpg` | 311 KB | four-panel geophysical plate for Teton fault |
+| 07 | `07_four-panel-geophysical-plate-for-centennial-.jpg` | 262 KB | four-panel geophysical plate for Centennial fault |
+| 08 | `08_four-panel-geophysical-plate-for-antelope-va.jpg` | 354 KB | four-panel geophysical plate for Antelope Valley fault zone |
+| 09 | `09_four-panel-geophysical-plate-for-helena-vall.jpg` | 245 KB | four-panel geophysical plate for Helena valley fault |
+| 10 | `10_four-panel-geophysical-plate-for-red-rock-fa.jpg` | 247 KB | four-panel geophysical plate for Red Rock fault |
+| 11 | `11_four-panel-geophysical-plate-for-sand-spring.jpg` | 325 KB | four-panel geophysical plate for Sand Springs Range fault |
+| 12 | `12_four-panel-geophysical-plate-for-mosquito-fa.jpg` | 285 KB | four-panel geophysical plate for Mosquito fault |
+| 13 | `13_four-panel-geophysical-plate-for-sandia-faul.jpg` | 237 KB | four-panel geophysical plate for Sandia fault |

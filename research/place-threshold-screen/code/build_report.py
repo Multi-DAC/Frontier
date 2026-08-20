@@ -110,16 +110,203 @@ def parse_sites(soup):
         )
     if len(sites) != 10:
         raise SystemExit(f"expected 10 sites, parsed {len(sites)}")
-    return sites
+    return {s["name"]: s for s in sites}
 
 
-def verify(sites, frozen):
+# ------------------------------------------------------- round-2 site assembly
+
+
+def areas_from_candidate_list():
+    """The deliverable's membership and order, read from the artefact that owns it.
+
+    report_text.ROUND2 is authored; this is measured. They must agree or the build
+    stops. The failure this prevents is the one that opened round 2: two frozen ten-
+    lists on disk under near-identical names, both stamped the same day, disagreeing
+    about three of ten sites, with no artefact stating which fork the article was on.
+    """
+    doc = json.loads((ROOT / "data" / "candidate_list.json").read_text(encoding="utf-8"))
+    ranked = sorted(doc["areas"], key=lambda a: -a["best_score"])
+    return doc, ranked
+
+
+def check_membership(problems):
+    """Assert report_text.ROUND2 against candidate_list.json, in order."""
+    doc, ranked = areas_from_candidate_list()
+    n = 0
+    if len(T.ROUND2) != T.PROGRAMME["areas_shown"]:
+        problems.append(f"ROUND2 has {len(T.ROUND2)} rows, PROGRAMME says "
+                        f"{T.PROGRAMME['areas_shown']}")
+    if len(doc["areas"]) != T.PROGRAMME["areas_total"]:
+        problems.append(f"candidate_list has {len(doc['areas'])} areas, prose says "
+                        f"{T.PROGRAMME['areas_total']}")
+    for i, row in enumerate(T.ROUND2):
+        n += 1
+        if i >= len(ranked):
+            problems.append(f"ROUND2 #{row['rank']} has no area at that rank")
+            continue
+        if row["rank"] != i + 1:
+            problems.append(f"ROUND2 row {i} declares rank {row['rank']}")
+        got = ranked[i]["best_scoring"]
+        if got != row["fault"]:
+            problems.append(f"rank {i + 1}: ROUND2 says '{row['fault']}', "
+                            f"candidate_list says '{got}'")
+        elif abs(ranked[i]["best_score"] - T.CHECK[row["fault"]]["score"]) > 5e-5:
+            problems.append(f"{got}: CHECK score {T.CHECK[row['fault']]['score']}, "
+                            f"candidate_list best_score {ranked[i]['best_score']}")
+    for i, (name, score, _where) in enumerate(T.BELOW_LINE):
+        n += 1
+        a = ranked[len(T.ROUND2) + i]
+        if a["best_scoring"] != name or abs(a["best_score"] - score) > 5e-5:
+            problems.append(f"BELOW_LINE #{i}: prose says {name} {score}, "
+                            f"candidate_list says {a['best_scoring']} {a['best_score']}")
+    # the cut gap the prose names, recomputed rather than trusted
+    n += 1
+    gap = ranked[9]["best_score"] - ranked[10]["best_score"]
+    if abs(gap - T.PROGRAMME["cut_gap"]) > 5e-5:
+        problems.append(f"cut_gap: prose says {T.PROGRAMME['cut_gap']}, computed {gap:.4f}")
+    n += 1
+    hgap = ranked[0]["best_score"] - ranked[1]["best_score"]
+    if abs(hgap - T.PROGRAMME["head_gap"]) > 5e-5:
+        problems.append(f"head_gap: prose says {T.PROGRAMME['head_gap']}, computed {hgap:.4f}")
+    return n
+
+
+def check_superlatives(problems):
+    """Every 'the most / the lowest / behind only X' claim about the ten, recomputed.
+
+    Written after four such claims in one drafting pass turned out to be false —
+    'the highest junction count', 'the second-longest', 'the lowest gate reading',
+    'the most accessible by a wide margin'. Three of the four were ties and one had
+    the wrong site entirely. A superlative reads exactly like a measurement and has
+    no gauge behind it unless one is built, so this is the gauge.
+
+    Each entry is (key, kind, sites) where `sites` is every fault that ties for the
+    extreme. A claim naming a unique winner where there is a tie fails here.
+    """
+    ten = [r["fault"] for r in T.ROUND2]
+    val = lambda k: {f: T.CHECK[f][k] for f in ten}  # noqa: E731
+    claims = [
+        # (label, key, extreme, the sites the prose says hold it)
+        ("Madison length", "length_km", "max", ["Madison fault"]),
+        ("Little Valley junctions", "junctions", "max", ["Little Valley fault"]),
+        ("lowest gate reading", "q", "min",
+         ["Antelope Valley fault zone", "Sand Springs Range fault"]),
+        ("Centennial/Mosquito length rank 2", "length_km", "max2",
+         ["Centennial fault", "Mosquito fault"]),
+        ("Antelope/Round Valley junction rank 2", "junctions", "max2",
+         ["Antelope Valley fault zone", "Round Valley fault"]),
+    ]
+    # "the one site in the ten whose fault ruptured in front of witnesses" / "the only
+    # site whose fault ruptured historically" — said twice, in the Madison entry and in
+    # the recommendation. It rests on Madison being the only 'historic' rupture age.
+    n = 1
+    historic = sorted(f for f in ten if "historic" in str(T.CHECK[f].get("age", "")).lower())
+    if historic != ["Madison fault"]:
+        problems.append(f"superlative 'only historic rupture': recomputed {historic}")
+
+    for label, key, kind, want in claims:
+        n += 1
+        v = val(key)
+        if kind in ("max", "min"):
+            target = max(v.values()) if kind == "max" else min(v.values())
+            got = sorted(f for f in v if v[f] == target)
+        else:  # max2 — the joint holders of the second-highest distinct value
+            second = sorted(set(v.values()), reverse=True)[1]
+            got = sorted(f for f in v if v[f] == second)
+        if got != sorted(want):
+            problems.append(f"superlative '{label}': prose says {sorted(want)}, "
+                            f"recomputed {got}")
+    return n
+
+
+def round2_site(row):
+    """Build a site dict for an area with no round-1 dossier entry.
+
+    Same shape parse_sites() returns, sourced from the round-2 artefacts instead:
+    legs from stage5_join_rows.json, along-trace L1 detail from l1_detail_round2.json
+    (measured through the same probe, both controls run first), gravity and seismicity
+    from the plate's own layers manifest, plate from figures_round2/.
+    """
+    name = row["fault"]
+    s5 = {r["fault_name"]: r
+          for r in json.loads((ROOT / "data" / "stage5_join_rows.json")
+                              .read_text(encoding="utf-8"))["rows"]}[name]
+    l1 = json.loads((ROOT / "data" / "l1_detail_round2.json")
+                    .read_text(encoding="utf-8"))["sites"][name]
+    stem = f"{row['rank']:02d}_{slug(name)}"
+    fig = ROOT / "figures_round2"
+    png = fig / f"{stem}.png"
+    lay = fig / f"{stem}.layers.json"
+    for p in (png, lay):
+        if not p.exists():
+            raise SystemExit(f"{name}: missing round-2 artefact {p}")
+    man = json.loads(lay.read_text(encoding="utf-8"))
+    return dict(rank=row["rank"], name=name, plate=png.read_bytes(),
+                legs=s5["legs"], l1=l1, layers=man["layers"],
+                coord=(f"{s5['lat']:.4f}", f"{s5['lon']:.4f}"),
+                measurements=render_round2_measurements(s5, l1, man["layers"]))
+
+
+def render_round2_measurements(s5, l1, layers):
+    """The per-site 'Measured:' bullets, in the same shape the dossier's eight print.
+
+    One deliberate difference. The dossier writes `quartz_frac 0.875 = 7/8 vertices —
+    7x granite`, where the vertex count and the named-rock list coincide because every
+    named rock at those eight sites qualified. Both round-2 sites return a rhyolite:
+    measured, named, volcanic, and NOT counted toward the gate. Printing the dossier's
+    shorthand here would inflate the gate reading by a vertex under a label that says
+    quartz_frac, so the qualifying and non-qualifying terms are printed separately.
+    """
+    legs = s5["legs"]
+    q = " · ".join(f"{c}× {t}" for t, c in l1["terms_qualifying"])
+    other = " · ".join(f"{c}× {t}" for t, c in l1["terms_not_qualifying"])
+    g, sm = layers["gravity_bouguer"], layers["seismicity"]
+    floor = (f"M≥{sm['minmag_plotted']:g}"
+             + ("" if sm["minmag_plotted"] == sm["minmag_requested"]
+                else f" (raised from M≥{sm['minmag_requested']:g} to stay inside the "
+                     f"service's {sm['limit']:,}-record cap)"))
+    items = [
+        ("L1 · trace lithology <strong>(THE GATE)</strong>", legs["L1_lithology"]["status"],
+         f"quartz_frac <b>{l1['quartz_frac']}</b> = {l1['vertices_qualifying']}/"
+         f"{l1['n_pts']} qualifying vertices — {q}<br>"
+         f"also sampled, not qualifying: {other}<br>"
+         f"along {l1['traced_km']} km of trace, {l1['segments']} segments · gate cuts at "
+         f"0.25 · sampling noise ±0.125 from vertex ordering"),
+        ("L2 · rupture age", legs["L2_age"]["status"], esc(legs["L2_age"]["age"])),
+        ("L3 · slip rate", legs["L3_slip"]["status"], esc(legs["L3_slip"]["class"])),
+        ("L4 · junction density", legs["L4_junction"]["status"],
+         f"{legs['L4_junction']['value']} dilatant systems within 15 km<br>"
+         + esc("; ".join(legs["L4_junction"]["systems"]))),
+        ("L6 · structural scale", legs["L6_length"]["status"],
+         f"{legs['L6_length']['value']} km total mapped length"),
+        ("L5 · GPS strain <em>(annotates only, may promote, never demotes)</em>",
+         legs["L5_strain"]["status"], esc(legs["L5_strain"]["why"])),
+        ("Bouguer gravity <em>(panel C)</em>", g["status"],
+         f"{g['min_mGal']:.0f} to {g['max_mGal']:.0f} mGal (range "
+         f"{g['range_mGal']:.0f}) from {g['n_stations_in_pad']:,} stations in the padded box"),
+        ("Instrumental seismicity <em>(panel D)</em>", sm["status"],
+         f"<b>{sm['n_at_plotted_floor']:,}</b> catalogued events {floor} since 1900 in the "
+         f"context box; all plotted, no truncation"),
+    ]
+    return "<ul>" + "".join(
+        f"<li><strong>{lab}</strong> — <strong>{st}</strong><br>{txt}</li>"
+        for lab, st, txt in items) + "</ul>"
+
+
+def verify(dossier_sites):
     """Assert every measurement quoted in report_text.py against its source.
 
     The lesson this implements: a count written into prose from a quick scan is
     a count with no controls. Run the check before the number sets.
+
+    Round 2 splits the sourcing. The eight areas whose best-scoring member has a
+    round-1 dossier entry are still checked against dossier.html. The two that do
+    not are checked against stage5_join_rows.json, l1_detail_round2.json and their
+    plate's own layers manifest. The SCORE for all ten is checked against
+    candidate_list.json, which is the artefact the deliverable's membership and
+    order come from — not against either frozen ten-list, because neither of those
+    files is the deliverable and the two of them disagree.
     """
-    fz = {s["fault"]: s for s in frozen["sites"]}
     problems = []
     checked = [0]
 
@@ -130,11 +317,22 @@ def verify(sites, frozen):
         elif abs(float(got) - float(exp)) > 1e-6:
             problems.append(f"{name}: {key} prose says {exp}, source says {got}")
 
-    for s in sites:
-        n = s["name"]
+    for row in T.ROUND2:
+        n = row["fault"]
         c = T.CHECK.get(n)
         if c is None:
             problems.append(f"{n}: no CHECK entry in report_text.py")
+            continue
+        if n not in T.PLACE:
+            problems.append(f"{n}: no PLACE entry")
+        if n not in T.SITES:
+            problems.append(f"{n}: no narrative in report_text.SITES")
+        if row["plate"] == "round2":
+            verify_round2(n, c, problems, checked)
+            continue
+        s = dossier_sites.get(n)
+        if s is None:
+            problems.append(f"{n}: ROUND2 says plate='dossier' but the dossier has no such site")
             continue
         h = s["head"]
 
@@ -175,22 +373,9 @@ def verify(sites, frozen):
                     if c["grav"][i] is not None:
                         want(n, label, gm.group(i + 1), c["grav"][i])
 
-        # and against the frozen list, which is the artifact the ten came from
-        if n not in fz:
-            problems.append(f"{n}: absent from top10_frozen_100km.json")
-        else:
-            want(n, "score (frozen)", fz[n]["score"], c["score"])
-            want(n, "quartz_frac (frozen)", fz[n]["L1"], c["q"])
-
-        if n not in T.PLACE:
-            problems.append(f"{n}: no PLACE entry")
-        if n not in T.SITES:
-            problems.append(f"{n}: no narrative in report_text.SITES")
-
-    for n in T.CHECK:
-        if n not in {s["name"] for s in sites}:
-            problems.append(f"{n}: CHECK entry names a site the dossier does not have")
-
+    areas_table_html(problems)          # CHECK vs the join, on age and slip
+    checked[0] += check_membership(problems)
+    checked[0] += check_superlatives(problems)
     checked[0] += verify_tiers(problems)
     checked[0] += verify_programme(problems)
 
@@ -199,10 +384,101 @@ def verify(sites, frozen):
         for p in problems:
             print("  ·", p)
         raise SystemExit(1)
-    print(f"verified {checked[0]} quoted values (site measurements, tiers, programme "
-          f"headline figures) against dossier.html, top10_frozen_100km.json, "
-          f"stage5_join_summary.json, lore*_result.json, lore_crossleg.json and "
-          f"blind_rescore_result.json — clean")
+    print(f"verified {checked[0]} quoted values (site measurements, membership and order, "
+          f"superlatives, tiers, programme headline figures) against dossier.html, "
+          f"candidate_list.json, stage5_join_rows.json, l1_detail_round2.json, "
+          f"figures_round2/*.layers.json, stage5_join_summary.json, lore*_result.json, "
+          f"lore_crossleg.json and blind_rescore_result.json — clean")
+
+
+def verify_round2(name, c, problems, checked):
+    """The two areas with no dossier entry, against the artefacts they were built from."""
+    s5 = {r["fault_name"]: r
+          for r in json.loads((ROOT / "data" / "stage5_join_rows.json")
+                              .read_text(encoding="utf-8"))["rows"]}.get(name)
+    l1d = json.loads((ROOT / "data" / "l1_detail_round2.json").read_text(encoding="utf-8"))
+    l1 = l1d["sites"].get(name)
+    if s5 is None or l1 is None:
+        problems.append(f"{name}: no stage5 row and/or no l1_detail_round2 entry")
+        return
+    if not l1d.get("controls_reproduce"):
+        problems.append("l1_detail_round2.json: controls did not reproduce")
+
+    stem = f"{[r['rank'] for r in T.ROUND2 if r['fault'] == name][0]:02d}_{slug(name)}"
+    lay = ROOT / "figures_round2" / f"{stem}.layers.json"
+    if not lay.exists():
+        problems.append(f"{name}: no layers manifest at {lay}")
+        return
+    layers = json.loads(lay.read_text(encoding="utf-8"))["layers"]
+    dead = [k for k, v in layers.items() if v.get("status") != "PRESENT"]
+    if dead:
+        problems.append(f"{name}: plate has non-PRESENT layers {dead}")
+
+    pairs = [
+        ("quartz_frac", c["q"], l1["quartz_frac"], 1e-9),
+        ("quartz_frac (stage5)", c["q"], s5["legs"]["L1_lithology"]["value"], 1e-9),
+        ("qualifying vertices", c["vhit"], l1["vertices_qualifying"], 0),
+        ("trace_km", c["trace_km"], l1["traced_km"], 5e-2),
+        ("segments", c["segments"], l1["segments"], 0),
+        ("junctions", c["junctions"], s5["legs"]["L4_junction"]["value"], 0),
+        ("length_km", c["length_km"], s5["legs"]["L6_length"]["value"], 0),
+        ("seismicity", c["seis"], layers["seismicity"]["n_at_plotted_floor"], 0),
+        # CHECK must carry the value the BULLET PRINTS, which is round(), not trunc().
+        # At tol=1.0 a CHECK of -212 passed against a source of -212.98 while the bullet
+        # rendered -213 — so the prose and the table beside it disagreed by one and the
+        # gauge stayed green. Compare against the rendered value, exactly.
+        ("grav_min", c["grav"][0], round(layers["gravity_bouguer"]["min_mGal"]), 0),
+        ("grav_max", c["grav"][1], round(layers["gravity_bouguer"]["max_mGal"]), 0),
+        ("grav_range", c["grav"][2], round(layers["gravity_bouguer"]["range_mGal"]), 0),
+    ]
+    # near_km is the one quoted number with no frozen artefact behind it — it is
+    # recomputed here from the Census gazetteer through the same observer() the lore
+    # design used, so the site header line is measured rather than remembered. The
+    # free control is that the same call reproduces Madison's dossier value of 19.7.
+    try:
+        import lore_experiment_design as LED
+        places = LED.load_places()
+        obs = LED.observer(places, s5["lat"], s5["lon"])
+        ctl = LED.observer(places, 44.792, -111.438)     # Madison, from top10_frozen
+        pairs.append(("near_km", c["near_km"], obs["nearest_km"], 0.05))
+        pairs.append(("near_km control (Madison)", T.CHECK["Madison fault"]["near_km"],
+                      ctl["nearest_km"], 0.05))
+    except FileNotFoundError:
+        problems.append(f"{name}: near_km unverifiable — code/gaz_place.zip is absent, so "
+                        f"the site header would print an unchecked number")
+
+    for label, said, real, tol in pairs:
+        checked[0] += 1
+        if real is None:
+            problems.append(f"{name} {label}: source value is null")
+        elif abs(float(said) - float(real)) > tol:
+            problems.append(f"{name} {label}: prose says {said}, source says {real}")
+
+    for key, leg, field in (("age", "L2_age", "age"), ("slip", "L3_slip", "class")):
+        checked[0] += 1
+        if c[key].lower() not in str(s5["legs"][leg][field]).lower():
+            problems.append(f"{name}: prose {key} '{c[key]}' absent from "
+                            f"{leg} '{s5['legs'][leg][field]}'")
+
+    for cnt, term in c["terms"]:
+        checked[0] += 1
+        if [term, cnt] not in [list(x) for x in l1["terms_qualifying"]]:
+            problems.append(f"{name}: prose says {cnt}x {term} qualifying; probe reports "
+                            f"{l1['terms_qualifying']}")
+    for cnt, term in c.get("terms_other", []):
+        checked[0] += 1
+        if [term, cnt] not in [list(x) for x in l1["terms_not_qualifying"]]:
+            problems.append(f"{name}: prose says {cnt}x {term} non-qualifying; probe reports "
+                            f"{l1['terms_not_qualifying']}")
+
+    # these two are deliberately unscored on lore; a stray narrative would be contamination
+    checked[0] += 1
+    if "record" in T.SITES[name]:
+        problems.append(f"{name}: has a `record` narrative, but it entered after the lore "
+                        f"experiments were frozen and was never scored")
+    checked[0] += 1
+    if name in T.TIERS:
+        problems.append(f"{name}: has a TIERS entry but was never in the lore experiment")
 
 
 def grab(pat, s):
@@ -316,11 +592,62 @@ def verify_programme(problems):
         ("collection_ratio_h1", p["collection_ratio_h1"], bl["collection_bias"]["L1"]["ratio"], 5e-3),
         ("h3_per_scorer_mean", p["h3_per_scorer_mean"], bl["legs"]["L3"]["per_scorer_separation_mean"], 1e-9),
     ]
+    # -- round 2. Every key added to PROGRAMME for this build gets a row here; a
+    # PROGRAMME key with no pair is an unchecked number that reads exactly like a
+    # checked one.
+    pc = j("positive_control.json")["A6i"]
+    cl = json.loads((ROOT / "data" / "candidate_list.json").read_text(encoding="utf-8"))
+    rows5 = {r["fault_name"]: r for r in j("stage5_join_rows.json")["rows"]}
+
+    def five_term(name):
+        r = rows5[name]
+        c = r["components"]
+        return (c["age"] + c["slip"] + c["junction"] + c["length"]
+                + r["legs"]["L1_lithology"]["value"]) / 5
+
+    s5f, hbf = five_term("Sandia fault"), five_term("Hubbell Spring fault")
+    pairs += [
+        ("ranked_complete", p["ranked_complete"], s5["ranked_complete"], 0),
+        ("ranked_partial", p["ranked_partial"], s5["ranked_partial"], 0),
+        ("areas_total", p["areas_total"], len(cl["areas"]), 0),
+        ("areas_shown", p["areas_shown"], len(T.ROUND2), 0),
+        ("head_n", p["head_n"], len(cl["tiers"]["HEAD"]), 0),
+        ("band_n", p["band_n"], len(cl["tiers"]["BAND"]), 0),
+        ("field_n", p["field_n"], cl["tiers"]["FIELD_n"], 0),
+        ("a6_control_median", p["a6_control_median"], pc["control_median_km"], 5e-3),
+        ("a6_null_median", p["a6_null_median"], pc["null_median_km"], 5e-3),
+        ("a6_null_n", p["a6_null_n"], pc["null_n"], 0),
+        ("a6_p", p["a6_p"], pc["mannwhitney"]["p"], 5e-5),
+        ("a6_null_within10", p["a6_null_within10"], pc["base_rate"]["within_10km"]["null_frac"], 5e-5),
+        ("a6_control_within10", p["a6_control_within10"], pc["base_rate"]["within_10km"]["control_frac"], 1e-9),
+        ("a6_n_controls", p["a6_n_controls"], sum(1 for r in j("positive_control.json")["A6i"]["rows"]
+                                                  if r["id"].startswith("PC")), 0),
+        ("sandia_five", p["sandia_five"], s5f, 5e-4),
+        ("hubbell_five", p["hubbell_five"], hbf, 5e-4),
+        ("five_term_gap", p["five_term_gap"], s5f - hbf, 5e-4),
+        # one L1 vertex = 1/8 of one of five equal terms
+        ("vertex_step", p["vertex_step"], 1 / 8 / 5, 1e-9),
+    ]
+
     for i, leg in enumerate(("L1", "L2", "L3")):
         pairs.append((f"sep_sighted[{leg}]", p["sep_sighted"][i], bl["legs"][leg]["SIGHTED"]["separation"], 1e-9))
         pairs.append((f"sep_blind[{leg}]", p["sep_blind"][i], bl["legs"][leg]["BLIND_consensus"]["separation"], 1e-9))
     for _leg, fname, *_ in LEGS:
         pairs.append((f"bar ({fname})", p["bar"], j(fname)["required"], 1e-9))
+
+    # META-GAUGE. Every key in PROGRAMME must appear in a pair above. Adding a
+    # headline number to the prose and forgetting to wire its check produces a
+    # number that reads exactly like a checked one and is not — which is what
+    # happened on this build's first pass, to eighteen keys at once.
+    # Checked in check_membership() instead, against candidate_list.json, because
+    # they are recomputed from the area ranking rather than read from a summary.
+    # Named here so the exemption is visible rather than implicit.
+    ELSEWHERE = {"cut_gap", "head_gap"}
+    covered = {lab.split("[")[0].split(" ")[0] for lab, *_ in pairs} | ELSEWHERE
+    orphan = sorted(k for k in p if k not in covered)
+    n += 1
+    if orphan:
+        problems.append(f"PROGRAMME keys with no build-time check: {orphan}")
 
     for label, said, real, tol in pairs:
         n += 1
@@ -332,25 +659,77 @@ def verify_programme(problems):
 
 
 def find_tables(soup):
-    """The three tables where the grid IS the argument, keyed by slug."""
+    """Tables lifted from the dossier where the grid IS the argument, keyed by slug.
+
+    Round 2 takes only the lore-legs table from here. The old `ten` and `suppressed`
+    tables are NOT reused: both describe the 100 km fault list, which is not the
+    deliverable any more, and scraping them was how the article's membership came to
+    be coupled to a stale artefact in the first place. The areas table is now built
+    from candidate_list.json by areas_table_html().
+    """
     jobs, seen = [], {}
-    captions = {
-        "legs": "The three pre-registered lore experiments, sighted and blind",
-        "ten": "The ten, with the five terms that selected them",
-        "suppressed": "Suppressed by the 100 km separation rule",
-    }
+    captions = {"legs": "The three pre-registered lore experiments, sighted and blind"}
     for t in soup.find_all("table"):
         k = classify(t)
         if k.startswith("img:"):
             slug = k.split(":", 1)[1]
-            if slug in seen:
+            if slug not in captions or slug in seen:
                 continue
             seen[slug] = True
-            jobs.append((slug, captions.get(slug, ""), str(t)))
+            jobs.append((slug, captions[slug], str(t)))
     missing = set(captions) - seen.keys()
     if missing:
         raise SystemExit(f"tables not found in dossier: {sorted(missing)}")
     return jobs
+
+
+def areas_table_html(problems=None):
+    """The ten areas, built from candidate_list.json — the artefact that owns them.
+
+    Rupture age and slip class come from stage5_join_rows.json, NOT from CHECK.
+    CHECK carries them only where a site's prose happens to quote them, so driving
+    the table off it printed an em-dash in three of ten age cells and three of ten
+    slip cells — a blank that reads as 'not measured' for a leg every one of these
+    faults passed. Where CHECK does carry the value it is asserted to agree.
+    """
+    _doc, ranked = areas_from_candidate_list()
+    by_best = {a["best_scoring"]: a for a in ranked}
+    legs = {r["fault_name"]: r["legs"]
+            for r in json.loads((ROOT / "data" / "stage5_join_rows.json")
+                                .read_text(encoding="utf-8"))["rows"]}
+    head = ("<tr><th>#</th><th>area</th><th>best-scoring structure</th><th>score</th>"
+            "<th>gate</th><th>rupture age</th><th>slip mm/yr</th><th>junctions</th>"
+            "<th>length km</th><th>extent km</th><th>structures</th></tr>")
+    rows = []
+    for r in T.ROUND2:
+        c, a, lg = T.CHECK[r["fault"]], by_best[r["fault"]], legs[r["fault"]]
+        age = lg["L2_age"]["age"]
+        slip = re.sub(r"\s*mm/yr$", "", lg["L3_slip"]["class"])
+        if problems is not None:
+            for key, val in (("age", age), ("slip", slip)):
+                if key in c and c[key].lower() not in val.lower():
+                    problems.append(f"areas table {r['fault']}: CHECK {key} '{c[key]}' "
+                                    f"disagrees with the join's '{val}'")
+        rows.append(
+            f"<tr><td>{r['rank']}</td><td>{esc(r['area'])}</td>"
+            f"<td>{esc(r['fault'])}</td><td>{c['score']:.4f}</td>"
+            f"<td>{c['q']}</td><td>{esc(age)}</td><td>{esc(slip)}</td>"
+            f"<td>{c['junctions']}</td><td>{c['length_km']}</td>"
+            f"<td>{a['extent_km']:.1f}</td><td>{a['n_members']}</td></tr>")
+    return f"<table>{head}{''.join(rows)}</table>"
+
+
+def below_line_html():
+    """The three areas immediately under the cut, printed rather than dropped."""
+    _doc, ranked = areas_from_candidate_list()
+    by_best = {a["best_scoring"]: a for a in ranked}
+    head = "<tr><th>#</th><th>structure</th><th>where</th><th>score</th><th>below #10 by</th></tr>"
+    tenth = T.CHECK[T.ROUND2[-1]["fault"]]["score"]
+    rows = "".join(
+        f"<tr><td>{11 + i}</td><td>{esc(name)}</td><td>{esc(where)}</td>"
+        f"<td>{score:.4f}</td><td>{tenth - by_best[name]['best_score']:.4f}</td></tr>"
+        for i, (name, score, where) in enumerate(T.BELOW_LINE))
+    return f"<table>{head}{rows}</table>"
 
 
 # ------------------------------------------------------------------- assembly
@@ -408,23 +787,23 @@ def head_doc(shots):
     d.h2("How the screen was built")
     d.add(T.METHOD)
 
-    d.h2("Methodological rigour, and where it caught us")
+    d.h2("How it was controlled")
     d.add(T.RIGOUR)
 
     d.rule()
-    d.h2("Result one — the gate works")
+    d.h2("What the screen found")
     d.add(T.RESULT_GATE)
 
-    d.h2("Result two — the ranking does not")
+    d.h2("How to read the list")
     d.add(T.RESULT_RANKER)
 
-    d.h2("Result three — the three lore experiments")
+    d.h2("What is already written about this ground")
     d.add(T.RESULT_LORE_INTRO)
     d.image(shots["legs"], "the three lore legs at a glance",
             "All three legs, sighted and blind, against their pre-declared bar of +1.0 tiers.")
     d.add(T.RESULT_LORE_AFTER)
 
-    d.h2("The verdict, stated as plainly as it can be")
+    d.h2("What this report claims")
     d.add(T.VERDICT)
     return d
 
@@ -432,25 +811,25 @@ def head_doc(shots):
 def ten_table_doc(shots):
     d = Doc()
     d.rule()
-    d.h2("The ten sites the physics chose")
+    d.h2("The ten areas")
     d.add(
         "<p>Selected on rock, rupture age, slip rate, junction density and structural scale, "
-        "with every one of those quantities measured from institutional records before a single "
-        "piece of folklore was looked up. Read them as ten members of a qualifying class. "
-        "<strong>The ordering is not validated and this is not a ranking.</strong></p>"
+        "every one of those measured from institutional records over a complete national "
+        "population, before a single piece of folklore was looked up. Each area is a cluster of "
+        "qualifying structures at 50 km, scored by its best-scoring member; <em>extent</em> is "
+        "how far across the area runs and <em>structures</em> is how many qualifying faults it "
+        "contains.</p>"
     )
-    d.image(shots["ten"], "the ten with their five scoring terms",
-            "The ten, with the five measured terms that selected them.")
-    d.h3("Nine faults the separation rule suppressed")
+    d.image(shots["areas"], "the ten areas with their measured terms",
+            "The ten areas, with the measured quantities that selected them.")
+    d.h3("And the three immediately below the cut")
     d.add(
-        "<p>Sites were required to sit 100 km apart, taken greedily from the top. Nine faults "
-        "were removed by that rule, and several scored higher than sites that remain on the "
-        "list. They are printed because a suppression rule you cannot see is a thumb on the "
-        "scale — three of these sit inside a 14 km circle around Hebgen Lake, which is one "
-        "place, not three.</p>"
+        "<p>The gap between tenth and eleventh is 0.0044 — about a fifth of the smallest step "
+        "this instrument takes. A cut that fine runs through the middle of a band rather than "
+        "between two tiers, so the next three are printed by name instead of disappearing.</p>"
     )
-    d.image(shots["suppressed"], "faults suppressed by the 100 km rule",
-            "Nine faults removed by the separation rule, with what suppressed each one.")
+    d.image(shots["below"], "the three areas immediately below the cut",
+            "Printed rather than dropped: the three areas immediately under the tenth line.")
     return d
 
 
@@ -459,15 +838,16 @@ def sites_doc(sites):
     d.add(T.TEN_INTRO)
     for s in sites:
         n = s["name"]
+        row = next(r for r in T.ROUND2 if r["fault"] == n)
         narrative = T.SITES[n]
         d.rule()
-        d.h2(f"#{s['rank']} · {n}")
+        d.h2(f"#{s['rank']} · {row['area']}")
         lat, lon = s["coord"]
         d.add(
             f"<p><strong>{esc(T.PLACE[n])}</strong> · <code>{lat}, {lon}</code> · "
-            f"physics score {T.CHECK[n]['score']:.4f} · gate reading "
-            f"<code>{T.CHECK[n]['q']}</code> · nearest census place "
-            f"{T.CHECK[n]['near_km']} km</p>"
+            f"best-scoring structure <strong>{esc(n)}</strong> · score "
+            f"{T.CHECK[n]['score']:.4f} · gate reading <code>{T.CHECK[n]['q']}</code> · "
+            f"nearest census place {T.CHECK[n]['near_km']} km</p>"
         )
         d.image(s["plate"], f"four-panel geophysical plate for {n}",
                 f"{n}. <strong>A</strong> relief with Quaternary traces coloured by rupture age · "
@@ -477,25 +857,29 @@ def sites_doc(sites):
         d.add(narrative["ground"])
         d.add("<p><strong>Measured:</strong></p>")
         d.add(s["measurements"])
-        d.h3("The record")
-        d.add(narrative["record"])
+        if "record" in narrative:
+            d.h3("The record")
+            d.add(narrative["record"])
+        else:
+            d.h3("The record")
+            d.add(
+                "<p><em>None taken, deliberately. This area entered the deliverable after the "
+                "three lore experiments had been designed, frozen and run, so it was never "
+                "scored. Looking it up now — sighted, knowing it is on the list — is exactly "
+                "the contamination the pre-registration exists to prevent. The blank is the "
+                "honest entry.</em></p>"
+            )
     return d
 
 
 def tail_doc():
     d = Doc()
     d.rule()
-    d.h2("What a reader has to hold against all ten of these")
-    d.add(T.HOLD_AGAINST)
-
-    d.h2("Two defects found in our own instruments")
-    d.add(T.DEFECTS)
-
-    d.h2("What survives, and what would move it")
+    d.h2("Where we would point an instrument")
     d.add(T.WHAT_SURVIVES)
 
     d.rule()
-    d.h2("Why print a negative result at all")
+    d.h2("Why a list and not an argument")
     d.add(T.CLOSING)
 
     d.h2("Provenance and standing")
@@ -568,28 +952,43 @@ not. So:
 
 **Subtitle** — pick one:
 
-- A continental screen for the physics of anomalous places, with the folklore
-  held out until the physics was frozen — and the null printed in full.
-- Ten faults, four geophysical layers each, three pre-registered lore
-  experiments, nine blind scorers, and a result that did not go our way.
+- Ten areas in the western United States where the physics of anomalous places is
+  most strongly expressed — screened from every mapped normal fault in the lower
+  forty-eight, with the folklore held out of the arithmetic.
+- A continental screen for the ground under the lights: 110,356 mapped sections,
+  1,399 nodes, 242 through the gate, thirteen areas, ten printed.
 
-If you publish it as two, part 2's title: **{title} — the ten sites**.
+If you publish it as two, part 2's title: **{title} — the ten areas**.
 
-## What this build does that the old one did not
+## Round 2 — what changed in this build
 
-| | old (`build_substack.py`) | this |
-|---|---|---|
-| structure | the internal dossier's | question → method → rigour → results → sites |
-| lore | tier tables per site | **narrative prose per site**, tiers stated inline |
-| framing | none — opens on a results table | opens on the observation and the conjecture |
-| method | scattered through captions | its own section, plus a rigour section |
-| tables | 3 imaged + 44 reflowed | 3 imaged, the rest written into the prose |
-| numbers | rendered from data | rendered from data **and asserted against it** |
+The deliverable is **ten AREAS at the 50 km separation scale**, driven from
+`data/candidate_list.json`. The round-1 article shipped ten *faults* at 100 km,
+scraped out of `dossier.html` — which coupled the article's membership to a stale
+artefact. It no longer does. Two areas are new (Centennial Valley, Antelope
+Valley) and two dropped below the cut (Bear River, Teton).
+
+Both new areas were measured through the same along-trace probe as the other
+eight, with both declared controls run first and required to reproduce exactly
+(`code/l1_detail_round2.py`), and their plates are built by the same
+`site_figure.build()` as the rest (`code/plates_round2.py`). Neither has a lore
+entry: they entered after the three experiments were frozen, and a sighted
+post-hoc lookup is the contamination the pre-registration exists to prevent.
+
+Register: confounds and controls are stated **once**, in the method section, and
+the rest of the article presents findings.
+
+## What is checked at build time
 
 Every measurement quoted in the prose — score, gate reading, trace length,
-segment count, junction count, mapped length, nearest place — is checked against
-`dossier.html` and `data/top10_frozen_100km.json` at build time. A typo fails
-the build rather than shipping.
+segment count, junction count, mapped length, nearest place — against
+`dossier.html` for the eight round-1 areas and against
+`stage5_join_rows.json` + `l1_detail_round2.json` + the plate's own layers
+manifest for the two round-2 ones. Plus: **membership and order of the ten**
+against `candidate_list.json`, the cut gap and head gap recomputed, every
+superlative in the prose recomputed across the ten, all lore tiers against the
+frozen result files, and the headline programme figures against the summaries.
+A typo fails the build rather than shipping.
 
 ## Assets, in paste order
 
@@ -599,30 +998,42 @@ the build rather than shipping.
 """
 
 PART1_TAILNOTE = (
-    "<hr><p><em><strong>The ten sites themselves — plates, measurements and the record at each "
-    "one told as narrative — are in the companion piece.</strong> This half is the question, the "
-    "method and the result; that half is the field guide.</em></p>"
+    "<hr><p><em><strong>The ten areas themselves — plates, measurements and what the record says "
+    "at each one — are in the companion piece.</strong> This half is the question, the method and "
+    "the result; that half is the field guide.</em></p>"
 )
 
 PART2_HEAD = (
-    "<p><em>This is the companion half of <strong>{title}</strong>, which sets out the "
-    "conjecture under test, how the continental screen was built, what was done to try to kill "
-    "the result, and what the three pre-registered lore experiments returned. The short version "
-    "of that half: the gate works and its two declared controls are exact; the ranking fails its "
-    "own controls by 0.19 in the wrong direction; and all three lore experiments come back NOT "
-    "SUPPORTED. Read the ten below as ten members of a qualifying class, not as a "
-    "ranking.</em></p>"
+    "<p><em>This is the companion half of <strong>{title}</strong>, which sets out the conjecture "
+    "under test, how the continental screen was built over every mapped normal fault in the lower "
+    "forty-eight, and what it controls for. The short version: 1,399 nodes measured along-trace, "
+    "242 through the gate, both declared controls exact, thirteen areas at the 50 km scale, ten "
+    "printed here. Position one is resolved; the rest of the order is not asserted. Every area is "
+    "on this list because of what the rock does there, not because anyone saw anything.</em></p>"
 )
 
 
 def main():
     soup = BeautifulSoup(SRC.read_text(encoding="utf-8"), "html.parser")
-    frozen = json.loads((ROOT / "data" / "top10_frozen_100km.json").read_text(encoding="utf-8"))
 
-    sites = parse_sites(soup)
-    verify(sites, frozen)
+    dossier_sites = parse_sites(soup)
+    verify(dossier_sites)
+
+    sites = []
+    for row in T.ROUND2:
+        if row["plate"] == "round2":
+            sites.append(round2_site(row))
+        else:
+            s = dict(dossier_sites[row["fault"]])
+            s["rank"] = row["rank"]      # area rank, not the round-1 fault rank
+            sites.append(s)
 
     shots = shoot_tables(find_tables(soup))
+    # the areas grid is eleven columns; at the default 980 px the last header clips
+    shots.update(shoot_tables([
+        ("areas", "The ten areas, ordered by best-scoring member", areas_table_html()),
+        ("below", "The three areas immediately below the cut", below_line_html()),
+    ], width=1180))
 
     head = head_doc(shots)
     tent = ten_table_doc(shots)

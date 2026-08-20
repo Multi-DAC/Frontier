@@ -69,7 +69,13 @@ os.chdir(HERE)
 
 VERTEX = 0.025          # one L1 vertex, in composite score units (A7-v)
 ORDER_BAR = 0.95        # R-A
-SEP_KM = 50.0           # the frozen list's own separation rule
+# The separation rule of data/top10_frozen.json SPECIFICALLY. There are TWO frozen
+# ten-lists on disk, both stamped "frozen": "2026-08-16", and they disagree about three
+# of ten sites: top10_frozen.json is 50 km and top10_frozen_100km.json is 100 km. Saying
+# "the frozen list's own separation rule" was true of one file and false of the other,
+# and the round-1 article shipped the 100 km membership while this script assumed the
+# 50 km one. Name the file, not "the frozen list".
+SEP_KM = 50.0
 PROV = []               # G5
 R_EARTH = 6371.0
 
@@ -82,9 +88,10 @@ def hav(a, b, c, d):
 
 
 def clusters(points, link_km):
-    """Single-linkage at link_km. Deliberately the SAME scale as the frozen list's own
-    separation rule, so an AREA is exactly 'the neighbourhood the ranking was already
-    deduplicating over' -- not a new free parameter chosen to make the picture look good."""
+    """Single-linkage at link_km. Deliberately the SAME scale as data/top10_frozen.json's
+    own separation rule (50 km -- NOT the 100 km of top10_frozen_100km.json), so an AREA
+    is exactly 'the neighbourhood the ranking was already deduplicating over' -- not a new
+    free parameter chosen to make the picture look good."""
     names = list(points)
     parent = {n: n for n in names}
 

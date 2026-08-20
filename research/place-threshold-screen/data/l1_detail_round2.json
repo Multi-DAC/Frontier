@@ -1,0 +1,117 @@
+{
+ "controls": {
+  "Sandia fault": {
+   "declared": 0.875,
+   "measured": 0.875,
+   "n_pts": 8,
+   "segments": 56,
+   "agree": true
+  },
+  "Hubbell Spring fault": {
+   "declared": 0.0,
+   "measured": 0.0,
+   "n_pts": 8,
+   "segments": 321,
+   "agree": true
+  }
+ },
+ "sites": {
+  "Centennial fault": {
+   "quartz_frac": 0.5,
+   "fabric_frac": 0.5,
+   "vertices_any_term": 5,
+   "vertices_qualifying": 4,
+   "n_pts": 8,
+   "traced_km": 254.7,
+   "segments": 25,
+   "terms": [
+    [
+     "no qualifying unit",
+     3
+    ],
+    [
+     "gneiss",
+     2
+    ],
+    [
+     "quartzite",
+     1
+    ],
+    [
+     "rhyolite",
+     1
+    ],
+    [
+     "schist",
+     1
+    ]
+   ],
+   "terms_qualifying": [
+    [
+     "gneiss",
+     2
+    ],
+    [
+     "quartzite",
+     1
+    ],
+    [
+     "schist",
+     1
+    ]
+   ],
+   "terms_not_qualifying": [
+    [
+     "no qualifying unit",
+     3
+    ],
+    [
+     "rhyolite",
+     1
+    ]
+   ],
+   "agrees_with_stage5": true
+  },
+  "Antelope Valley fault zone": {
+   "quartz_frac": 0.25,
+   "fabric_frac": 0.0,
+   "vertices_any_term": 4,
+   "vertices_qualifying": 2,
+   "n_pts": 8,
+   "traced_km": 529.0,
+   "segments": 94,
+   "terms": [
+    [
+     "no qualifying unit",
+     4
+    ],
+    [
+     "granite",
+     2
+    ],
+    [
+     "rhyolite",
+     2
+    ]
+   ],
+   "terms_qualifying": [
+    [
+     "granite",
+     2
+    ]
+   ],
+   "terms_not_qualifying": [
+    [
+     "no qualifying unit",
+     4
+    ],
+    [
+     "rhyolite",
+     2
+    ]
+   ],
+   "agrees_with_stage5": true
+  }
+ },
+ "controls_reproduce": true
+}
