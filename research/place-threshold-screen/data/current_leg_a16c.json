@@ -1,0 +1,82 @@
+{
+ "preregistered_3_control": {
+  "controls": [
+   "log10(area_max_km2)",
+   "pet_mean",
+   "relief_m"
+  ],
+  "omega_residual_n": 0,
+  "omega_residual_beta": null,
+  "interaction_fit_n": 0,
+  "interaction_beta": null,
+  "dropped_by_truthiness_filter": 0,
+  "test": {
+   "n_a": 0,
+   "n_b": 0,
+   "p": null,
+   "note": "insufficient n"
+  },
+  "marginal_charge": {
+   "n_a": 207,
+   "n_b": 371,
+   "med_a": 0.5625,
+   "med_b": 0.0938,
+   "diff": 0.4687,
+   "p": 0.0,
+   "two_tailed": true
+  },
+  "bar_iv_passes": false,
+  "bar_iv_status": "UNRUN -- statistic not computable"
+ },
+ "deviation_2_control": {
+  "controls": [
+   "log10(area_max_km2)",
+   "relief_m"
+  ],
+  "omega_residual_n": 966,
+  "omega_residual_beta": [
+   -0.07926,
+   0.69724,
+   0.00095
+  ],
+  "interaction_fit_n": 570,
+  "interaction_beta": [
+   -2.13458,
+   1.3136,
+   1.22983
+  ],
+  "dropped_by_truthiness_filter": 2,
+  "test": {
+   "n_a": 207,
+   "n_b": 363,
+   "med_a": 0.0905,
+   "med_b": 0.0248,
+   "diff": 0.0658,
+   "p": 0.0086,
+   "two_tailed": true
+  },
+  "marginal_charge": {
+   "n_a": 207,
+   "n_b": 371,
+   "med_a": 0.5625,
+   "med_b": 0.0938,
+   "diff": 0.4687,
+   "p": 0.0,
+   "two_tailed": true
+  },
+  "bar_iv_passes": true,
+  "bar_iv_status": "PASS"
+ },
+ "leg": "A16c -- bar iv run under A16b's declared control-set deviation",
+ "source": {
+  "path": "C:\\Users\\Wasch\\Frontier\\research\\place-threshold-screen\\data\\current_leg.json",
+  "bytes": 507278,
+  "charge_join_coverage": {
+   "survivors": "207/225",
+   "null-fault": "371/400"
+  }
+ },
+ "seed": 20260818,
+ "n_perm": 20000,
+ "two_tailed": true
+}

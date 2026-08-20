@@ -1,0 +1,18 @@
+{
+ "leg": "A16c calibration -- within-arm charge shuffle, interaction zero by construction",
+ "n_iter": 200,
+ "n_perm": 2000,
+ "n_usable": 200,
+ "observed_p": 0.0065,
+ "false_positive_rate_at_0.05": 1.0,
+ "null_p_quantiles": {
+  "0.01": 0.0005,
+  "0.05": 0.0005,
+  "0.1": 0.0005,
+  "0.25": 0.0005,
+  "0.5": 0.0005
+ },
+ "null_runs_at_or_below_observed_p": 196,
+ "empirical_p_of_observed": 0.9800995024875622,
+ "seed": 20260917
+}

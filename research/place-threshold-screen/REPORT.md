@@ -583,13 +583,63 @@ and the two-control model at n = 966. It does not touch the bar arithmetic: bars
 velocity, not stream power, so `may_reorder_list` was already `false` before this amendment and is `false`
 after it. **The deviation changes an untested null into a tested one. It does not change the verdict.**
 
-Bar iv (the water × charge interaction) remains `UNRUN` for a separate and previously declared reason —
-the A13 charge population is stage-2 rather than the gate survivors, a population mismatch documented in
-§7 and priced at a ~1,003-fault rebuild. The marginal charge contrast that *can* be computed is reported
-without a causal reading.
+### Bar iv — run on Day 201, and the reason it was carried as unrun was already stale
+
+*This subsection replaces a paragraph that said bar iv "remains `UNRUN`" because the A13 charge population
+was stage-2 rather than the gate survivors, "priced at a ~1,003-fault rebuild." **That paragraph
+contradicted this section's own opening 47 lines above it,** which reports the coverage guards passing at
+92.0% / 92.8%. Both sentences could not be true. The rebuild it priced had already been done — Day 200,
+14:53, a 1,405-fault roster — four and a half hours before A16 ran. The guard did not fire and bar iv did
+not stop there. The correction is recorded rather than silently swapped, because a wrong reason on a
+shipped page is worse than a missing result: it tells the next reader the repair is expensive when it is
+already paid for.*
+
+**What actually stopped it was `petma` — the same defect, one consumer further down.** Bar iv is built on
+`omega_max_wpm_resid`, the residual the amendment above rebuilt. The amendment refit the *contrast* on the
+two controls that exist and did not propagate to bar iv, which is the only other consumer of that field.
+So the interaction inherited the n = 0 residual and emitted `{"n": 0, "beta": null, "insufficient n"}` —
+and `current_leg.py` then rendered that as `bar_iv_status: "FAIL"` rather than `UNRUN`, because the status
+line tests `bar_iv is None` while the comparison had already collapsed a null *p* to `False`. **An
+untestable statistic printed as a failed test.** That mapping is a defect in a frozen file; it is filed,
+not silently patched, and it is named here because the reader is entitled to know the data file and this
+prose disagreed.
+
+Run under the amendment's already-declared deviation — no new fetch, no new deviation, an offline refit of
+the frozen construction with the control set changed and nothing else — **bar iv comes out PASS at
+*p* = 0.0086** (n = 207 survivors against 363 controls). That would be the first bar in A16 to pass
+anything.
+
+**It is an artefact, and the control that says so was built before the result was believed.** The frozen
+construction rank-normalises both marginals, multiplies them, and regresses log₁₀ of the product on the
+two marginals *unlogged*. Since log(a·b) = log a + log b, the residual is a curved deterministic function
+of the marginals — and the marginals are wildly unbalanced between arms (median charge score 0.5625 on
+survivors against 0.0938 on the control). Evaluating a curve at systematically different places in two
+groups produces a difference with no interaction present.
+
+The test for that corrupts exactly one thing: permute `charge_score` **within each arm**, which preserves
+every arm's charge distribution, its coverage count and all flow values, and destroys only the pairing
+between a fault's charge and its own flow residual. Under that shuffle the interaction is zero by
+construction. **In 200 such runs the test fired at *p* < 0.05 two hundred times** — median null *p* =
+0.0005, the permutation floor. The observed 0.0086 sits at the **98th percentile** of a null distribution
+built from data with no interaction in it; 196 of 200 no-signal runs were *more* significant than the real
+one.
+
+**So bar iv's honest status is neither `UNRUN` nor `PASS`: the statistic as pre-registered cannot
+distinguish an interaction from a marginal shift, and on this data it does not.** Water × charge is a
+null, reported as one. `data/current_leg_a16c.json` and `data/current_leg_a16c_calibration.json` carry both
+fits and the full calibration; `code/a16c_bar_iv_calibration.py` is a two-sided instrument that could have
+cleared the bar and did not.
+
+One suspicion of mine died in the same pass and is recorded because it was wrong: I expected the marginal
+charge gap to be circular — the control arm is drawn from the 1,157 faults that *failed* the L1 quartz
+gate, and the charge term scores quartz-bearing rock among its five pathways. A13 had already measured
+that and declared a bar on it: Spearman ρ between `charge_score` and `quartz_frac` is **0.2802**, against
+an independence bar set at < 0.7. The charge term is not the quartz gate restated. The marginal gap is
+reported, as before, without a causal reading — but not for the reason I assumed.
 
 Per this project's convention, an unrun bar is emitted as `UNRUN` with a reason on every row and is never
-silently omitted, because an omitted constraint column reads as *no constraint applied*.
+silently omitted, because an omitted constraint column reads as *no constraint applied*. Bar iv is no
+longer unrun; it is run, calibrated, and null.
 
 **So: Clayton asked for the water and the rock, and got three negative results.** The flow hypothesis is
 not refuted as physics — Hessdalen is one valley and this is a screen over 1,399 American fault sections
