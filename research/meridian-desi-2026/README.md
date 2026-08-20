@@ -31,7 +31,7 @@ below is the DR2-era interim.
 
 | # | 14I's criterion | Status as of 2026-08-20 | Note |
 |---|---|---|---|
-| 1 | Phantom crossing at >3σ → **FALSIFIED** | **NOT TRIGGERED** | Paper says w(z) "still favors a phantom-crossing-like behaviour", but the crossing itself is not detected at >3σ: pivot w_p = −1.030 ± 0.040 (z_p = 0.55, DESI+CMB) and w_p = −0.981 ± 0.022 (z_p = 0.32, +SNe). The 3.2σ is a preference for *evolution*, not for *crossing*. |
+| 1 | Phantom crossing at >3σ → **FALSIFIED** | **NOT TRIGGERED BY THIS PAPER — but see §"Is the crossing real?" below; the closest published measurement of exactly this quantity says 3.1–5.2σ** | DESI says w(z) "still favors a phantom-crossing-like behaviour". Its own 3.2σ is a model-comparison preference for *evolution* (w₀wₐCDM vs ΛCDM), not a significance on w < −1. DESI does not quote a crossing significance. ~~pivot w_p = −1.030 ± 0.040~~ — **struck, see correction below.** |
 | 2 | \|w_a\| > 0.3 at >3σ → **DISFAVORED** | **NOT TRIGGERED** — and the gauge is mis-specified (see below) | w_a = −0.65 ± 0.20 → \|w_a\| > 0.3 at **1.75σ**. |
 | 3 | fσ8 deviating from ΛCDM by >2% → **FALSIFIED** | **UNTESTED** | The DR2 galaxy/quasar full-shape analysis is explicitly "forthcoming" in this paper. Meridian's unique structural prediction has not yet met data. |
 | 4 | w_0 in [−0.693, −0.796] | **OUT OF BAND** | w_0 = −0.821 ± 0.054. Outside the band, but only 0.46σ past its edge; 1.22σ from the JC benchmark point. 14I itself says this revises ζ₀ rather than killing the framework. |
@@ -179,6 +179,47 @@ But this is the generic w_0–m_ν degeneracy (Vagnozzi et al. 2017), which 14I 
 applied a known mechanism; it did not predict one. **It is a hit for dynamical dark energy in general,
 and no discriminator for Meridian in particular.** Recording it as a Meridian success would be exactly
 the kind of laundering this repo exists to catch.
+
+---
+
+## Is the crossing real? — and a correction to this document's own criterion-1 row
+
+*Added 2026-08-20 later the same day, prompted by Clayton asking whether the "phantom crossing may be a
+parametrization artefact" objection ever got settled. Checking it broke my own row.*
+
+**The correction first.** The original criterion-1 row used the pivot value w_p = −1.030 ± 0.040 as
+evidence that "the crossing itself is not detected at >3σ." That inference is invalid, and the paper
+says so in the very sentence the number comes from: *"we expect w_p to be close to −1 since the pivot
+redshift is close to the crossing redshift."* Under the crossing hypothesis w_p ≈ −1 is the **expected**
+value, not a null result. I used a quantity as a discriminator between two hypotheses that both predict
+it. The row is amended above. The direction of the error flattered Meridian.
+
+**What the right test says.** The quantity 14I §7 criterion 1 actually names — is w(z) < −1 somewhere,
+at >3σ — is not computed by DESI. It has been computed by others on DR2-era data:
+
+| source | method | verdict on crossing |
+|---|---|---|
+| Özülker, Di Valentino & Giarè 2025 (arXiv:2506.19053) | built CPL variants that *forbid* crossing (CPL_>ac, CPL_<ac), fit them against CPL | no-crossing excluded at **3.1σ–5.2σ** across dataset combinations; CPL best in all of them |
+| Keeley, Shafieloo & Matthewson 2025 (arXiv:2506.15091) | 1,000 MC realisations of a *non-crossing* fiducial (algebraic quintessence) | **3.2%** of non-crossing universes reproduce the real-data χ² improvement — a ~2σ "we could be fooled" rate |
+| DESI DR2 extended analysis, Lodha et al. 2025, PRD 112 083511 — cited as [124] in 2607.27410 | binning, Gaussian processes, alternative w(z) forms | non-parametric reconstructions "converge to the same conclusions as the CPL parameterization" |
+| Cataneo & Koyama 2025 (arXiv:2512.13691, updated 2026-07-10) | non-parametric EFT scan of kinetic gravity braiding | viable *stable* crossing models exist — removes the "phantom is unphysical, therefore artefact" argument |
+
+**So the parametrisation objection is weakened but not dead, and the supernova objection largely is.**
+Efstathiou's 2024 "Evolving Dark Energy or Supernovae Systematics?" (arXiv:2408.07175) was the strongest
+version of the artefact case. 2607.27410 reports that the 2026 SN reanalyses (Popovic et al. 2026,
+Rubin/Hoyt 2026; DESY5 → DES-Dovekie, Union3 → Union3.1) "mitigated discrepancies between different SNe
+samples, leaving results essentially unchanged regardless of which SNe dataset is chosen" — 3.0σ / 3.2σ /
+3.5σ for Pantheon+ / Dovekie / Union3.1. The sample-dependence that powered that objection is gone.
+
+**Why this matters more to Meridian than w₀ does.** Meridian's structural, parameter-free prediction is
+**w(z) > −1 at all z** (14I §2.1, from the sign of the cuscuton kinetic coefficient). If the crossing is
+genuine, that prediction is violated and no choice of ζ₀ saves it — unlike w₀, which is a benchmark
+artefact of an underdetermined junction-condition system. **The artefact debate is therefore not a
+side-issue for Meridian: it is the debate Meridian's survival is contingent on.** On the current
+published numbers it is losing that debate at 3.1–5.2σ, with a 3.2% escape hatch.
+
+That is a substantially worse position for Meridian than this document's original criterion-1 row implied,
+and I found it only because Clayton asked the question from outside.
 
 ---
 
