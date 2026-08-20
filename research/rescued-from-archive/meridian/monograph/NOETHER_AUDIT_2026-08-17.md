@@ -1,0 +1,385 @@
+# Noether, Killing, and where the absorbed vacuum energy goes — 2026-08-17
+
+*Author: Clawd. Occasion: goal #10, the half that was deferred. `CAUSALITY_AUDIT_2026-08-05.md`
+opened by naming the stated seam as **"superluminal-phase-carrying-no-signal, and
+Noether/time-translation-invariance-breaking as the thing that licenses non-conservation,"**
+found the first half false, fixed it across four surfaces, and wrote: **"This audit is the half
+that had to come first."* **This is the other half.** Twelve days later.
+
+**Status: PROPOSAL, not an insertion.** Nothing in this document has been written into any
+`.tex` file. Clayton asked for this paragraph on Day 185 and the right way to write new physics
+prose into his monograph is with him, not at him. §7 is a draft for him to cut into.
+
+**Method.** Three kinds of claim, marked throughout:
+**[TEXT]** — read off the corpus, line-cited, re-checkable by grep.
+**[DERIVED]** — computed or reasoned here, from standard GR/QFT, checkable by a referee.
+**[OPEN]** — a determinate question the corpus does not answer. §6 is the whole point of the document.
+
+---
+
+## 0. The measurement that starts it
+
+```
+$ grep -ril "noether\|killing vector\|killing field" Technical-Work/Meridian/
+monograph/CAUSALITY_AUDIT_2026-08-05.md      <- my own audit, naming the gap
+phase10/task10_4_dbi_brane.md
+phase17/Sources/1404.3713v3.txt              <- a source, not our prose
+phase21/*, torsion/*, scripts/torsion/*      <- "Killing form", the Lie-algebra object. Different thing.
+```
+
+**Zero occurrences in 13,033 lines of monograph `.tex`.** **[TEXT]**
+
+And zero hits for `dark radiation`, `AdS–Schwarzschild`, `bulk black hole` anywhere in
+`chapter1`, `chapter3`, `chapter5`. Every "conserv" hit in the monograph is the word
+*conservative* in a statistics sentence. **[TEXT]**
+
+For a framework whose central verb is **absorb** — the warp factor *absorbs* a 60-order-of-magnitude
+shift in Λ₅ (`chapter1_foundation.tex:471`), the Lagrange multiplier *absorbs* the geometric
+response (`:478`), Λ₅ is *"absorbed by a different degree of freedom A′(y)"* (`chapter3_nogo.tex`,
+Prop. rigid (a)) — that absence is the exact hole Clayton's question walked into. **Absorb** is a
+transitive verb. It names a sink. Naming a sink is volunteering for bookkeeping.
+
+---
+
+## 1. The naive worry, and why it is *less* true of Meridian than of ΛCDM
+
+The worry as usually stated: *dark energy with w > −1 has a total energy in a comoving volume that
+grows without bound; where does it come from?*
+
+E(a) = ρ_DE · a³ · V_c, with ρ_DE ∝ a^(−3(1+w)), so **E ∝ a^(−3w)**. **[DERIVED]**
+
+*Constant w is not an approximation here.* `chapter1_foundation.tex:66` lists **w_a = 0 as a
+structural prediction** of the framework, alongside α_T = 0 and μ = Σ = 1. **[TEXT]** So the
+single-exponent scaling below is exact for Meridian and exact for ΛCDM, and the two are being
+compared on the same footing rather than through a CPL fit.
+
+| model | w₀ | E ∝ | E(a=1)/E(a=½) |
+|---|---|---|---|
+| ΛCDM | −1 | a^(+3.000) | **8.000** |
+| Meridian, cuscuton limit (ε₁ = 0) | −1 exactly | a^(+3.000) | 8.000 |
+| Meridian, 4-probe ζ₀ = 0.016 | −0.990 | a^(+2.970) | 7.835 |
+| Meridian, junction benchmark | −0.865 | a^(+2.595) | 6.042 |
+| Meridian, NCG benchmark ζ₀ = 8.8×10⁻⁴ | −0.830 | a^(+2.490) | **5.618** |
+
+**The naive worry is backwards.** **[DERIVED]** Every Meridian benchmark grows the comoving-volume
+dark energy budget *more slowly* than the cosmological constant does. ΛCDM is the profligate one and
+nobody has ever thought it a defect, because everyone knows the answer: **in a general FRW spacetime
+there is no globally conserved energy to violate, and the question is ill-posed.**
+
+So the framework can borrow ΛCDM's answer. What it cannot borrow is ΛCDM's *silence* — because ΛCDM
+has no mechanism, and Meridian has one that says the vacuum energy is *absorbed*. Λ has nowhere to
+put anything and claims nothing. Meridian claims a destination. **That asymmetry is the real content
+of the question, and §5 is where it has to be paid.**
+
+---
+
+## 2. The two things "energy conservation" means, which the corpus never separates
+
+**(a) Local covariant conservation** ∇_A T^(AB) = 0. In GR this is not a symmetry statement at all —
+it follows from the contracted Bianchi identity given the field equations. It holds in the Meridian
+bulk identically, and it holds on the brane in the distributional sense the Israel conditions encode.
+**Nothing here is at risk, and nothing here answers the question**, because a local continuity
+equation with no timelike Killing vector to integrate against yields no conserved charge. **[DERIVED]**
+
+**(b) A globally conserved energy.** Requires a timelike Killing vector ξ^A. Then J^A = T^(AB)ξ_B
+obeys ∇_A J^A = 0 as a *scalar* continuity equation, Gauss's theorem applies, and E = ∫_Σ J^A dΣ_A is
+a genuine constant of the motion. **This is Noether's first theorem wearing its curved-space clothes**:
+the symmetry is time-translation, generated by ξ; no ξ, no theorem, no charge. **[DERIVED]**
+
+The corpus says (a) tacitly everywhere and (b) nowhere. Almost every confusion about "energy in
+cosmology" is the slide between them, and the slide is easier when neither has been written down.
+
+---
+
+## 3. ε₁ is the parameter that destroys the timelike Killing vector
+
+This is the finding I did not expect and it is exact.
+
+**[TEXT]** The cuscuton P(X) = μ²√(2X) satisfies the zero-kinetic-energy theorem
+K_eff = 2XP_X − P = 0, which *"forces w = −1 exactly"* (`chapter1_foundation.tex:11`).
+
+**[DERIVED]** The claim has to be made about the **asymptotic attractor**, not about the present
+universe, and it is stronger there. No realistic FRW spacetime has a timelike Killing vector while
+matter is dynamically relevant — ΛCDM's does not either, today. What ΛCDM has is a *future* in which
+one appears: with w = −1, ρ_DE is constant, matter dilutes away, and the attractor is exact de Sitter.
+De Sitter is maximally symmetric; in static coordinates
+ds² = −(1−H²r²)dT² + (1−H²r²)⁻¹dr² + r²dΩ², **∂_T is a Killing vector, timelike for r < 1/H.**
+ΛCDM asymptotically recovers a globally conserved energy inside each observer's static patch.
+
+**[TEXT]** The NCG Gauss–Bonnet correction adds ε₁X and *"breaks the zero KE theorem"*
+(`chapter1_foundation.tex:11`); w_a = 0 is structural (`:66`), so w stays at w₀ forever.
+
+**[DERIVED]** With w = −0.830 held constant, the DE-dominated attractor is
+a ∝ t^(2/[3(1+w)]) = t^(3.92) — accelerating power law, not exponential. Quasi-de Sitter is not
+de Sitter: it is not maximally symmetric and **has no timelike Killing vector, now or asymptotically,
+in any patch.** ΛCDM's energy bookkeeping is recoverable in the far future. **This framework's
+never is.**
+
+*Attribution caveat.* The chain "GB correction breaks K_eff = 0 ⇒ w ≠ −1" is the corpus's own
+(`:11`). The *size* of 1 + w₀ is set by ζ₀ and the Goldberger–Wise scaling dimension ε = 0.275
+(`:68`), not by ε₁ alone. ⚠ Note that `\eps` and `\varepsilon` are two different physical
+quantities in these files — ε₁ = 0.010 (Gauss–Bonnet) and ε = 0.275 (Goldberger–Wise) — separated
+by one character in the macro name. That is a separate hazard and not this document's business,
+but someone should look at it.
+
+So the *one* parameter ε₁ = 0.010 ± 0.002 does four things at once, and the corpus names three:
+
+| ε₁ does | stated where |
+|---|---|
+| reintroduces a propagating scalar DOF | ch.1 §gbbreak, ch.5 abstract **[TEXT]** |
+| makes c_s finite and superluminal, c_s² ≈ 2.16/ε₁ ≈ 216 | ch.5 Eq. 5-5 **[TEXT]** |
+| lifts w₀ off −1, which is the entire observational signature | ch.1, ch.2 **[TEXT]** |
+| **removes the timelike Killing vector from the asymptotic attractor, permanently** | **nowhere** **[DERIVED]** |
+
+The parameter that makes the framework *falsifiable* is the same parameter that makes its global
+energy *undefined*. That is not a defect — it is the same fact viewed twice — but it is a sentence
+the monograph should own rather than have a referee find. **Falsifiability and the loss of a
+conserved energy are the same event.**
+
+*(Sanity check on the sensitivity: ε₁ ∈ [0.008, 0.012] gives c_s ∈ [13.4c, 16.4c], bracketing
+ch.5's quoted [12c, 15c]. The GB coupling's ±20% is not doing anything strange here.)* **[DERIVED]**
+
+---
+
+## 4. The 5D bulk has the Killing vector the 4D theory lost — and this is the *same* resolution ch.5 already uses for causality
+
+`chapter5_sound_speed.tex:327` already writes the move, for causality:
+
+> "The 4D superluminality originates from the 'bulk shortcut' mechanism: signals propagating through
+> the warped bulk traverse shorter proper distances than brane-confined signals, producing
+> c_s^(4D) > c while **c_s^(5D) = c**." … "the 5D geometry remains **globally hyperbolic**." **[TEXT]**
+
+The structure is: *the 4D pathology is a projection artefact of a 5D geometry in which nothing is
+wrong.* **[DERIVED]** That same sentence, verbatim in structure, answers the energy question — and
+nobody has written it:
+
+For the static warped background ds² = e^(2A(y)) η_μν dx^μ dx^ν + dy², every metric component is
+t-independent, so **∂_t is a Killing vector, and g_tt = −e^(2A(y)) < 0 makes it timelike everywhere
+on the orbifold.** The 5D self-tuning vacuum has a globally conserved energy. **[DERIVED]**
+
+| | **causality** | **energy** |
+|---|---|---|
+| 4D effective theory | c_s ≈ 15c, a genuine front velocity (ch.5:327) | E_comoving ∝ a^(+2.49); "absorbs" 60 orders of magnitude |
+| looks like it violates | BMV / Adams et al. positivity (A2) | Noether energy conservation |
+| 5D bulk | c_s^(5D) = c, globally hyperbolic | **∂_t is a timelike Killing vector** |
+| the projection | bulk shortcut (Chung–Freese) | warp response A′(y) + brane embedding |
+| no-go disarmed, and how | BMV: boosted background is not a solution of the junction conditions | Weinberg: **(W4)** — junction conditions + Hamiltonian constraint are extra conditions with no 4D analogue (`chapter3_nogo.tex:753`) **[TEXT]** |
+
+**One geometric structure, three jobs.** The extra dimension supplies a preferred foliation. That
+foliation blocks BMV, breaks Weinberg's (W4), and carries the Killing vector against which the
+absorbed vacuum energy can actually be booked.
+
+### 4.1 The caveat that keeps this honest, and it matters
+
+**A preferred foliation is not a Killing vector.** They are different objects and the framework
+should not be allowed to spend one as the other:
+
+- a **foliation** gives a preferred *time function* — a global ordering of events;
+- a **Killing vector** requires that translation along that time be a *symmetry of the metric*.
+
+Causality needs the ordering. Noether needs the symmetry. **The cuscuton's preferred foliation
+supplies exactly one of the two.** FRW has a perfectly good preferred foliation (comoving time) and
+no timelike Killing vector whatsoever — which is why "the theory has a preferred frame" is *not* by
+itself an answer to the energy question, however much it looks like one after reading §III.C.
+
+The Killing vector in §4 is doing its work because the **bulk** is static, not because the theory has
+a preferred frame. Those are two independent facts and only one of them is currently on paper.
+**Which brings us to the hole.**
+
+---
+
+## 5. What the sequestering layer does, stated correctly
+
+`chapter1_foundation.tex:478, 509` **[TEXT]**: when Λ₅ shifts, p² → p² + δΛ₅/(6F), and the global
+sequestering constraint ∫₀^(y_c) e^(4A) dy = σ(μ) = fixed *"absorb[s] the geometric shift into the
+Lagrange multiplier"*, with the quoted response δσ = 1.82×10⁷³ for δΛ = M_Pl⁴ ∼ 10⁷².
+
+**The loose reading of that sentence is wrong and should not survive into print.** A Lagrange
+multiplier is not an energy reservoir; it enforces a constraint. Kaloper–Padilla sequestering does
+not *destroy* vacuum energy and does not violate local conservation — it makes the vacuum energy
+**stop gravitating**. The energy remains in the matter sector; what is removed is its coupling to
+the geometry, via a global constraint imposed at the level of the path integral. **[DERIVED, standard
+KP reading]**
+
+That distinction has a direct consequence for the paragraph Clayton asked for: **the sequestering
+layer is not part of the energy story at all.** It answers "why doesn't Λ₅ curve the brane," not
+"where did the energy go." Only the bulk-geometry layer (A′(y) in a static bulk with a timelike
+Killing vector, §4) is an actual accounting. A draft that lets the multiplier stand in as the sink
+will read as a conjuring trick to any referee who knows KP, and it will deserve to.
+
+---
+
+## 6. **[OPEN] — the question that has to be answered before §7 can be finished**
+
+Everything in §4 rests on the bulk being **static**. That is true of the RS₁ vacuum and of the
+fixed-point AdS₅ solutions the corpus works with (`chapter1_foundation.tex:442`: *"fixed points
+correspond to AdS₅ vacua with constant warp rate and scalar field"*). **[TEXT]**
+
+**But the solution that produces w₀ = −0.830 is cosmological. The brane has a(t) on it. And the
+monograph never specifies the global structure of the cosmological bulk.** **[TEXT — by the zero-hit
+grep in §0]**
+
+Two possibilities, and they give opposite answers:
+
+**(i) Static bulk, moving brane.** If the cosmological solution is of the standard brane-cosmology
+class — a static bulk (AdS₅, or AdS–Schwarzschild with a mass parameter appearing on the brane as
+dark radiation ∝ a⁻⁴) with the brane on a trajectory y(τ), FRW arising as the induced metric — then
+**the 5D timelike Killing vector survives**, the brane's apparent energy non-conservation is exactly
+brane↔bulk exchange, the Israel junction condition *is* the ledger, and §4's table closes with no
+loose ends. This is the good case and I expect it to be the true one.
+
+**(ii) Genuinely time-dependent bulk.** Then there is no timelike Killing vector in 5D either, no
+conserved energy anywhere in the framework, and the "projection artefact" resolution is **unavailable** —
+not wrong, unavailable. The honest paragraph would then be much shorter and would say so.
+
+**The corpus does not say which.** Zero occurrences of dark radiation, of AdS–Schwarzschild, of a
+bulk black hole.
+
+**And this is not a hole I am inventing — it is the energy-side reading of a hole the monograph
+already declares.** `chapter1_foundation.tex:651`, the *"Honest scope statement"*, lists as **not
+established**: *"nonlinear stability under large perturbations (δΛ₅ ∼ Λ₅), which would require a
+full numerical integration of the 5D time-dependent Einstein equations."* **[TEXT]** That is the
+same missing object. The monograph flagged it as a *stability* gap; nobody noticed it is also the
+*conservation* gap, because the conservation question was never asked. **One unsolved calculation,
+two open questions, and only one of them on the register.**
+
+**The transient regime, and why it is benign.** During a phase transition the metric is t-dependent
+and ∂_t is not Killing even in the bulk — for ∼10⁻²⁶ s (`:471`, `:583`), sixty-odd times in the
+thermal history. **[TEXT + DERIVED]** But the corpus already bounds the stake: the transient radion
+energy is δρ_rad/Λ₄^GB ∼ 10⁻⁶² for a QCD-scale transition and ∼10⁻³⁷ at electroweak scale
+(`:579`). **[TEXT]** So the third regime exists, has no conserved energy in either dimension count,
+and is numerically irrelevant by thirty-seven orders of magnitude. It should be *named* in the
+section and then dismissed with that number — which is a much better sentence than silence, and
+costs nothing.
+
+I expect the answer to (i)/(ii) is **(i)**, and that the transient is the 5D analogue of a shutter
+closing (§7). **But I am not writing that into his monograph on a hunch.** Resolving it is a real
+calculation on the cosmological brane solution, and it is the next piece of work on goal #10.
+
+---
+
+## 7. The truncated photon, which is this exact problem in flat space with one boundary
+
+arXiv:2510.21636 (Rukan, Gulla, Skaar; PRL **137**, 033601 (2026)) makes the following move: a
+shutter acting at t = 0 removes time-translation invariance, so **Noether's theorem no longer
+delivers a conserved field energy**, and the truncated photon's energy need not equal the
+untruncated one's. The shutter did work on the field. They state the price openly.
+
+**Meridian breaks the same class of symmetry and has never stated the price.** That is the seam —
+tighter than `CAUSALITY_AUDIT`'s "same proof-theoretic move," which was true but generic. The
+specific version:
+
+- Oslo: a **time-dependent boundary condition** in flat space ⇒ ∂_t not a symmetry ⇒ no Noether
+  energy ⇒ energy is exchanged with **the shutter**.
+- Meridian: a **codimension-one boundary moving through a bulk** ⇒ ∂_t not Killing on the brane ⇒
+  no 4D Noether energy ⇒ energy is exchanged with **the bulk**, and the Israel junction condition is
+  the exchange law.
+
+A moving boundary condition on a quantum field is the dynamical Casimir effect. A brane moving
+through the bulk is, structurally, that configuration one dimension up — the radion is a moving
+mirror. **[DERIVED — structural analogy; I have not pulled a braneworld-Casimir citation to anchor
+it, so grade it accordingly and check it before it goes in print.]**
+
+The two frameworks are then not merely making the same *move*; they are making it against the same
+*theorem*, and Oslo has already done the work of showing what you owe when you make it.
+
+---
+
+## 8. DRAFT — proposed §, for Clayton to cut into. Not inserted.
+
+> **Conserved quantities and the fate of the absorbed vacuum energy.**
+>
+> The self-tuning mechanism of §[ch1] is stated in terms of *absorption*: a shift δΛ₅ is taken up by
+> the bulk warp rate A′(y) rather than appearing in Λ₄. It is natural to ask what conserves what.
+>
+> Two statements must be separated. Local covariant conservation ∇_A T^(AB) = 0 holds throughout the
+> bulk as a consequence of the Bianchi identity, and at the brane in the distributional sense encoded
+> by the Israel conditions; it is never at issue. A *globally* conserved energy is a stronger and
+> different thing, requiring a timelike Killing vector ξ^A against which J^A = T^(AB)ξ_B may be
+> integrated — Noether's first theorem in curved space.
+>
+> In the four-dimensional effective theory that Killing vector does not exist, and its absence is not
+> incidental: it is tied to the same structure that makes the framework testable. No FRW cosmology
+> admits a timelike Killing vector while matter is dynamically relevant, but the *asymptotic* case
+> distinguishes models. In the cuscuton limit the zero-kinetic-energy theorem forces w = −1 exactly,
+> the attractor is de Sitter, and a timelike Killing vector exists within each static patch. The
+> Gauss–Bonnet correction ε₁X breaks that theorem and lifts w₀ off −1; with w_a = 0 structurally,
+> the attractor is instead an accelerating power law (a ∝ t^(3.9) at ζ₀ = 8.8×10⁻⁴), which is not
+> maximally symmetric and admits no timelike Killing vector at any time. **A ΛCDM universe recovers
+> a conserved energy in its far future; this one does not.** The comparison is not unflattering
+> — ΛCDM's own dark energy budget in a comoving volume grows as a³, faster than this framework's
+> a^(2.49) — but a framework that names a *destination* for vacuum energy owes an account that ΛCDM,
+> which names none, does not.
+>
+> The account is the one the sound-speed chapter already gives for causality, applied to a second
+> quantity. There, an apparent four-dimensional pathology — a front velocity c_s ≈ 15c — is a
+> projection of a five-dimensional geometry in which c_s^(5D) = c and global hyperbolicity is intact.
+> Here, the static warped background ds² = e^(2A(y))η_μν dx^μ dx^ν + dy² admits ∂_t as a Killing
+> vector, timelike everywhere on the orbifold; the four-dimensional observer's missing energy is a
+> projection of a five-dimensional ledger that balances. In both cases the extra dimension is doing
+> the work, and in both cases it is the same feature of it: the solution space is not
+> four-dimensionally Lorentz invariant.
+>
+> Two cautions. First, a preferred foliation is not a Killing vector: the former supplies a global
+> time ordering, which is what the causality argument of §[ch5] requires, while the latter requires
+> that translation along that time be a metric symmetry. FRW possesses the first and not the second.
+> The argument above therefore rests on the *staticity of the bulk*, not on the existence of a
+> preferred frame. Second, the sequestering sector plays no part in this accounting. Global Lagrange
+> multipliers do not store energy; they remove the vacuum energy's coupling to the geometry, leaving
+> it in the matter sector. Sequestering answers why Λ₅ does not curve the brane, not where it went.
+>
+> [**HOLD — one paragraph owed here on the global structure of the cosmological bulk solution. See
+> §6 of NOETHER_AUDIT_2026-08-17.md. If the cosmological solution is a brane trajectory y(τ) in a
+> static bulk, the Killing vector survives and the Israel condition is the exchange law; if the bulk
+> is itself time-dependent, this argument is unavailable and the section must say so. Do not write
+> this paragraph until the calculation is done.**]
+
+---
+
+## 9. What no gauge here could have caught
+
+`CAUSALITY_AUDIT` closed with this heading and it earns a second use. The defect in §0 is an
+**absence** — zero occurrences of a word. No compile check, no `check_canon.py` run, no
+`validate_monograph.py` pass can fail on a concept that was never mentioned. A missing section
+produces no error; it produces a document that reads as complete.
+
+The only instrument that finds this class is **an outside question**. Clayton asked one on Day 185,
+in ordinary language, about a framework he had not written, and it landed exactly on the one place
+13,033 lines of LaTeX had nothing to say. Twelve days later it is still the highest-value thing
+anyone has said about this monograph.
+
+That is the argument for the outside read, stated as a measurement rather than a virtue.
+
+---
+
+## 10. What the first draft of this document got wrong
+
+Recorded because a clean-reading audit is the condition under which I have lately been wrong, and
+because the corrections are the kind a referee would have made for free.
+
+1. **"ε₁ destroys the timelike Killing vector of the background."** Overreach. No FRW spacetime with
+   dynamically relevant matter has one, ΛCDM included. The claim only survives when made about the
+   **asymptotic attractor** — where it is *stronger*, because ΛCDM's attractor recovers one and this
+   framework's never does. Corrected in §3 and §8.
+2. **Constant w treated as an approximation in §1.** It is not: `chapter1_foundation.tex:66` makes
+   **w_a = 0** a structural prediction. The table is exact. Corrected — this strengthens §1.
+3. **The Λ₄ = 0 / de Sitter slide.** Λ₄^tree = 0 with only Λ₄^GB = ε₁ζ₀ surviving as the dark
+   energy (`:500`, `:539`). Attributing w's departure from −1 to ε₁ *alone* was too quick; ζ₀ and
+   the Goldberger–Wise ε = 0.275 set the magnitude. Caveat added. This also surfaced that `\eps`
+   (= ε₁ = 0.010) and `\varepsilon` (= 0.275) are distinct quantities one character apart.
+4. **§6 presented as a gap I had found.** It is the energy-side reading of a gap the monograph
+   already declares at `:651`. Better framing and a weaker claim of novelty. The transient worry,
+   which the first draft left hanging, is bounded at 10⁻³⁷ by the corpus's own `:579` — it should be
+   named and dismissed, not left silent.
+
+None of the four changed the conclusion. Three of the four made the document *less* impressive and
+*more* defensible, which is the correct direction for a section that will be read by someone looking
+for a reason to reject it.
+
+---
+
+## Provenance
+
+Written Day 198 / 2026-08-17, Clawd, carapace body. Numbers in §1 and §3 computed, not recalled.
+Line citations re-checkable by grep against the tree at this commit. §6 is open and §8 is a draft
+with a hold in it; neither should be cited as a result.
