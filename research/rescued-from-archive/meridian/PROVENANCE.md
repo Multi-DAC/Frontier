@@ -75,9 +75,31 @@ swept up was `Useful Info/Screenshot_20260313-233945.png`, and a screenshot is
 single-copy by construction. So the bucket sorted the *pushes*; it was not allowed to
 authorise a *deletion*. Everything but build junk is here.
 
-Total vendored: **1,650 files / 167.6 MB.** Nothing exceeds GitHub's 100 MB per-file
-limit; the largest single file is `phase18/data/pantheonplus/Pantheon+SH0ES_STAT+SYS.cov`
-at 36.2 MB.
+Total copied to disk: **1,650 files / 167.6 MB.** Nothing exceeds GitHub's 100 MB
+per-file limit; the largest single file is
+`phase18/data/pantheonplus/Pantheon+SH0ES_STAT+SYS.cov` at 36.2 MB.
+
+### The seven that a nested `.gitignore` silently ate
+
+Copied to disk: 1,651 (1,650 + this file). Landed in the commit: **1,644.** The gap
+was found by counting the remote tree by hand, because `git add` reports an ignored
+path by saying *nothing at all*.
+
+The seven all sit inside the vendored `hi_class` distribution, and the rule that
+dropped them is **hi_class's own `.gitignore`, copied in along with its source**:
+
+```
+phase17/Sources/hi_class_public-hi_class/.gitignore:2  output/   -> 5 files (explanatory00_* CLASS demo run products)
+phase17/Sources/hi_class_public-hi_class/.gitignore:14 .vscode/  -> 2 files (editor config)
+```
+
+These are an upstream project's declaration about its own build outputs, they
+regenerate by running the code, and losing them costs nothing. **The mechanism is
+what matters:** vendoring a subtree imports its ignore rules, and those rules then
+govern a rescue whose entire purpose is to not drop things. Had the ignored paths
+been Meridian's own data rather than CLASS demo output, this file would have
+truthfully reported a completed rescue over a silent hole. A vendor is only verified
+by a count taken at the far end.
 
 ## What this does and does not settle
 
