@@ -22,9 +22,9 @@ artifact. This one is the article.
 
 | file | words | text KB | images | what |
 |---|---|---|---|---|
-| `POST.html` | 12,662 | 86 | 13 | the whole report, one post |
-| `POST-part1.html` | 5,686 | 37 | 3 | the report **without** the ten site dossiers |
-| `POST-part2.html` | 7,107 | 51 | 10 | the ten site dossiers alone |
+| `POST.html` | 13,722 | 92 | 13 | the whole report, one post |
+| `POST-part1.html` | 5,883 | 38 | 3 | the report **without** the ten site dossiers |
+| `POST-part2.html` | 7,970 | 56 | 10 | the ten site dossiers alone |
 
 **Gmail clips any email over 102 KB** with a *"[Message clipped]"* link. The web
 version is never affected. `POST.html` goes over that; part 1 on its own does

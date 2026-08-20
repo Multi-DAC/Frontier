@@ -471,14 +471,29 @@ def verify_round2(name, c, problems, checked):
             problems.append(f"{name}: prose says {cnt}x {term} non-qualifying; probe reports "
                             f"{l1['terms_not_qualifying']}")
 
-    # these two are deliberately unscored on lore; a stray narrative would be contamination
+    # These two are printed WITH their history and WITHOUT a score, and the gauge
+    # enforces both halves. Day 201: Clayton's ruling is that the record is anecdote
+    # reinforcing a physics claim, not evidence for it, so a missing history made the
+    # article incomplete rather than clean — the narrative is now REQUIRED. What stays
+    # forbidden is a tier. A sighted, post-hoc score on a site already known to be a
+    # winner is the contamination the pre-registration exists to prevent, and unlike
+    # prose it would enter arithmetic that is frozen and already published.
     checked[0] += 1
-    if "record" in T.SITES[name]:
-        problems.append(f"{name}: has a `record` narrative, but it entered after the lore "
-                        f"experiments were frozen and was never scored")
+    if not T.SITES[name].get("record", "").strip():
+        problems.append(f"{name}: no `record` narrative. Round-2 areas are printed with their "
+                        f"history for completeness; the blank was retired on Day 201")
     checked[0] += 1
     if name in T.TIERS:
         problems.append(f"{name}: has a TIERS entry but was never in the lore experiment")
+
+    # The real contamination guard, now that prose is allowed: no tier token may appear
+    # in an unscored area's record. verify_tiers() only walks sites that ARE in TIERS,
+    # so without this a fabricated <code>T3</code> here would meet no checker at all.
+    checked[0] += 1
+    stray = re.findall(r"<code>(N?H?T\d)</code>", T.SITES[name].get("record", ""))
+    if stray:
+        problems.append(f"{name}: record prose writes tier token(s) {sorted(set(stray))}, but "
+                        f"this area was never scored in any lore experiment")
 
 
 def grab(pat, s):
@@ -857,18 +872,17 @@ def sites_doc(sites):
         d.add(narrative["ground"])
         d.add("<p><strong>Measured:</strong></p>")
         d.add(s["measurements"])
-        if "record" in narrative:
-            d.h3("The record")
-            d.add(narrative["record"])
-        else:
-            d.h3("The record")
+        d.h3("The record")
+        if n not in T.TIERS:
+            # Added this round, so there is history but no score. Say so once, here,
+            # rather than repeating the caveat inside the narrative.
             d.add(
-                "<p><em>None taken, deliberately. This area entered the deliverable after the "
-                "three lore experiments had been designed, frozen and run, so it was never "
-                "scored. Looking it up now — sighted, knowing it is on the list — is exactly "
-                "the contamination the pre-registration exists to prevent. The blank is the "
-                "honest entry.</em></p>"
+                "<p><em>Added to the deliverable this round, after the three lore experiments "
+                "were frozen and run. The history below is printed for completeness and carries "
+                "no tier and no score — it took no part in any experiment and moved nothing on "
+                "the list.</em></p>"
             )
+        d.add(narrative["record"])
     return d
 
 

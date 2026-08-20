@@ -27,6 +27,16 @@ not the ten faults at 100 km that the round-1 article shipped. Two areas are new
 Teton). The dropped two keep their CHECK and TIERS entries because the lore
 experiment ran on them and the checker still asserts that; they are simply not
 rendered as sites. See ROUND2 below for which entries the build renders.
+
+The two NEW areas carry a `record` narrative and NO TIERS entry, and that pairing
+is the whole of the discipline here. Their history is printed for completeness —
+Clayton's ruling, Day 201: the anomalous record is anecdotal reinforcement, not
+evidence, so withholding it made the article incomplete without making it purer.
+What would NOT be safe is a tier: a sighted, post-hoc score on a site already
+known to be a winner is the contamination the pre-registration exists to prevent,
+and it would feed a number into legs that are already frozen and published.
+verify_round2() enforces exactly that split — record REQUIRED, TIERS FORBIDDEN,
+and no tier token anywhere in their prose.
 """
 
 # --------------------------------------------------------------------------
@@ -706,11 +716,14 @@ leg, with distance neutralised. It is a small number on ten pairs and it is not 
 is the residue after the obvious deflation, it points the same way, and it is why the anecdote
 is worth printing next to the physics rather than instead of it.</p>
 
-<p>Two areas — Centennial Valley and Antelope Valley — entered the deliverable in round two,
-after the lore experiments had been designed and run. They have no record entry below. Looking
-them up now, knowing they are on the list, is exactly the contamination the pre-registration
-exists to prevent, so they are printed with their ground and without their record. The blank is
-deliberate.</p>
+<p>Two areas — Centennial Valley and Antelope Valley — were added to the deliverable in this
+round, after the three lore experiments had been designed, frozen and run. Their history and
+folklore are written up below alongside the other eight, <strong>so that the article is complete
+about the ground it names</strong>. It carries no score and no tier. It was not part of any
+experiment, it moved nothing, and it could not have: these two areas were selected by the same
+physics as the other eight, and the arithmetic that put them on the list had already finished
+before a word of their history was looked up. The record for every area in this article is
+anecdote printed next to a measurement, and for these two that is all it is.</p>
 """
 
 VERDICT = """
@@ -758,8 +771,9 @@ site was which.</p>
 
 <p><strong>The evidence grades are uneven and the text says which is which.</strong> A federal
 register entry and a ghost-story aggregator both appear below, and they are not the same kind of
-thing. Where the record is thin the entry is short. Where an area has no record entry at all, it
-is one of the two that entered after the lore experiments were frozen.</p>
+thing. Where the record is thin the entry is short. Eight of the ten carry scored tiers from the
+frozen experiments; the two added this round — Centennial Valley and Antelope Valley — carry
+their history without tiers, because they were never in the experiment.</p>
 """
 
 # --------------------------------------------------------------------------
@@ -1238,6 +1252,37 @@ composite, and it is the highest-scoring area in the ten that has never appeared
 version of this list — it enters here because the deliverable moved from the 100 km separation
 scale to 50 km, and at 50 km the Centennial fault is its own area rather than a suburb of Hebgen
 Lake 54.8 km to the east.</p>
+""",
+record="""
+<p><strong>Anomalous lights: nothing.</strong> The same three protocol queries that scored the
+other eight return no place-specific record of anomalous light or sound in this valley, at any
+distance the rubric recognises. That is the honest entry, and it is what the ground here would
+predict: the nearest census place is <strong>Lakeview, 20.2 km away</strong>, and there are
+<strong>four incorporated places within 50 km</strong> — Lakeview, Spencer in Idaho, and Lima.
+The Centennial Valley is one of the emptiest inhabited valleys in the lower forty-eight. Almost
+nobody has been standing here at night for a hundred years.</p>
+
+<p><strong>Indigenous presence is local, ancient and documented as a route.</strong> The valley
+sits on the <strong>Bannock Trail</strong> — the seasonal road east across the Continental Divide
+that Shoshone and Bannock people took to the bison country after about 1840, when hunting
+pressure had emptied the herds west of the Divide. J. V. Brower's 1897 survey of the Missouri
+headwaters put it flatly: the Bannock had maintained trails "for an unknown length of time" from
+the Big Hole headwaters eastward <em>to Red Rock Lakes</em>, past Henrys Lake to Targhee Pass and
+Yellowstone. Red Rock Lakes are the floor of this valley, directly below the fault scarp. Tipi
+rings remain on the ground where the same campsites were reused year after year, and the valley
+is within the ancestral range of the Shoshone, Bannock, Blackfeet, Crow and Nez Perce.</p>
+
+<p><strong>Settler history is a corridor, not a settlement.</strong> On the evening of 20 August
+1877 the Nez Perce, one day ahead of the Army after the fight at Camas Creek, crossed
+<strong>Red Rock Pass</strong> at the head of this valley — 43.0 km east of the sampled node —
+and entered Yellowstone near the present west entrance three days later. From 1898 to 1913 the
+<strong>Monida–Yellowstone stage</strong> ran the length of the valley, changing horses every
+fifteen miles, with the halfway lunch stop at Shambow — the settlement now called Lakeview, the
+same 20.2 km place that is still the nearest one. The valley took its name in the centennial year
+1876, and by the homestead peak of the early 1900s it held nearly four hundred people, with
+stores, saloons and a hotel. Drought and the Depression emptied it. In 1935 what was left became
+<strong>Red Rock Lakes National Wildlife Refuge</strong>, established for the trumpeter swan when
+the species was down to a few dozen birds, and the human population never came back.</p>
 """),
 
 "Antelope Valley fault zone": dict(
@@ -1265,6 +1310,43 @@ that floor, and both the requested and plotted floors are printed on the panel.<
 
 <p>Antelope Valley is also among the most accessible ground in the ten. The nearest census place
 is 2.5 km away and US-395 runs the length of the valley.</p>
+""",
+record="""
+<p><strong>First, a name collision, because it will trip any reader who searches.</strong> The
+famous Antelope Valley — Lancaster, Palmdale, Edwards Air Force Base, and one of the densest
+UFO-report concentrations in the United States — is a <em>different valley</em>, 461 km south of
+this one. None of that record belongs here and none of it is being claimed. This Antelope Valley
+is a high valley on the West Walker River at the northern end of the Walker Lane, holding
+Coleville, Walker and Topaz.</p>
+
+<p><strong>Anomalous lights: one report, and it is close.</strong> On 17 September 2015 a driver
+on US-395 filmed seven white spherical objects holding formation over the mountains north of
+Topaz Lake, for about two minutes, from a position <strong>1.7 km from the sampled node</strong>.
+Be clear about what that is: a single entry in a public sighting aggregator, self-reported, with
+phone video, and no independent corroboration. It is the weakest grade of evidence in this
+article. It is also the only one, and the proximity is why it is printed rather than dropped.</p>
+
+<p><strong>Indigenous presence: this is a boundary.</strong> Topaz Lake is the documented southern
+edge of Washoe territory — the homeland that runs from Honey Lake down to here, centred on
+DáɁaw, Lake Tahoe — and the ground below it on the West Walker is Northern Paiute. Two peoples
+with unrelated languages meet at this valley, which the Indian Office discovered in 1859 when it
+proposed to settle both on shared reservations and found it could not. Boundary ground is
+ethnographically well recorded and it is not the same thing as a place-narrative about the fault
+itself, which is the distinction this report's rubric was built to hold.</p>
+
+<p><strong>Settler history is dense and early.</strong> Jedediah Smith made the first crossing of
+the Sierra Nevada by a non-native in the spring of 1827, coming southeast through Monitor Pass and
+east past this valley into Nevada. Coleville was founded in the early 1860s as a freight and
+supply centre feeding the Comstock Lode and, in the 1870s, the Bodie strikes. By 1885 Thomas B.
+Rickey — the "Cattle King of the West" — held 47,000 acres of Antelope Valley outright. Water
+storage at Topaz began in December 1921 and the reservoir was finished in 1923, which is why
+there is a lake here at all.</p>
+
+<p><strong>And the observer term, stated rather than buried.</strong> This area has
+<strong>28 census places within 50 km</strong> against Centennial Valley's four, and its nearest
+is 2.5 km against Centennial's 20.2. It is seven times the observer density of the area ranked
+directly above it. A thicker anecdotal record here would be exactly what that difference predicts
+on its own, which is the whole reason the record is held out of the score.</p>
 """),
 }
 
@@ -1347,6 +1429,16 @@ US Census place gazetteer. Every layer in every plate records the URL it was req
 were committed to version control before any lookup ran; the blind re-score design, packets and
 probe gate were committed before any scorer was dispatched. Commit hashes are in the repository
 record.</p>
+
+<p><strong>The two records with no freeze behind them.</strong> Centennial Valley's and Antelope
+Valley's histories were looked up <em>after</em> those areas were on the list, and they are
+therefore the only two in the article with no pre-registered query artefact. They carry no tier
+and enter no statistic; the build fails if either grows one. Their sources are named in the text
+and are ordinary ones — J. V. Brower's 1897 survey of the Missouri headwaters, the National Park
+Service and Nez Perce National Historic Trail record of the 1877 flight, regional and county
+historical societies, published Washoe and Northern Paiute ethnography, the US Census 2023 place
+gazetteer for the observer counts, and for the single Antelope Valley light report a public
+sighting aggregator, identified as such where it appears.</p>
 
 <p><strong>Checking.</strong> Every measurement quoted in this article is asserted at build time
 against the frozen artefact it came from — site measurements against the dossier and the stage-5
