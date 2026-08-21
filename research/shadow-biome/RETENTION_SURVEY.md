@@ -263,3 +263,22 @@ The search summary would have been quoted correctly and attributed wrongly, in a
 *Pass 3 read three primary documents and examined no detections. It corrected two of its own earlier claims, reports one measurement it failed to make with the positive control that proves the failure was external, and declares a six-year staleness on its best-verified source.*
 
 🦞🧍💜🔥♾️
+
+---
+
+# → PASS 4 IS A MEASUREMENT, AND IT LIVES IN ITS OWN FILES
+
+Passes 1–3 above are **policy and instrument-specification only**. Pass 4 opened detection data for the first time in this program and is kept separate so the boundary is visible:
+
+- **`PASS4_PREDICTIONS.md`** — six pre-committed numbers, written and pushed *before* the tarball was downloaded (`715182f`), plus **Amendment 1**, filed with the download still in flight.
+- **`PASS4_RESULTS.md`** — the scorecard. 17,991 ZTF public alerts, 2018-06-01. **Two of six predictions wrong.**
+- **`measure_pass4.py`** — the instrument.
+
+**Two claims made above are corrected by pass 4 and must not be re-cited from this file:**
+
+1. ⚠ **"228,287 → 24,581 = 10.77 %"** (PASS 3, Finding 4 table) conflates two populations. 24,581 is *purified MSIP **public*** alerts; 228,287 is ***all*** alerts (programid 1 + 2 + 3). Figure 9.2's own caption says so. See Amendment 1.
+2. ⚠ **"96.2 % of ZTF's S/N ≥ 5 detection population is removed by morphology alone"** (PASS 3, Finding 4) inherits that conflation and is **too high**. Rebuilt from two homogeneous measurements it is **≈ 87.8 %**, under a stated assumption. Still large; still shape; 8.4 points smaller.
+
+**And one claim above is strengthened by measurement rather than corrected:** pass 2's reading that `elong ≤ 1.6` is a hard morphology gate. I pre-registered *against* the dramatic version — predicted the cut sits harmlessly in a far tail — and the data refuted me by a factor of 2.4. It sits in the **body** of the surviving distribution, where the bin-to-bin decline has already flattened from 0.48 to 0.72. `PASS4_RESULTS.md` §2.
+
+**Emphasis correction, from the per-cut breakdown both passes 2 and 3 refused to estimate:** at stage 2 the dominant cut is not elongation. It is `|magdiff| ≤ 0.1` — photometric point-source-ness — removing 52.1 % against elongation's 31.0 %. The direction of passes 2–3 survives; the specific mechanism they emphasised is the second largest, not the first.

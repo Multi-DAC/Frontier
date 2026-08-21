@@ -1,0 +1,43 @@
+{
+  "n_avro_files": 17991,
+  "n_parse_fail": 0,
+  "n_usable": 17991,
+  "programid": {
+    "1": 17991
+  },
+  "packaging_violations": {
+    "nbad<=4": 0,
+    "fwhm<=7": 0,
+    "elong<=1.6": 2,
+    "magdiff in [-0.4,0.75]": 0
+  },
+  "M1_joint_survivors": 6207,
+  "M1_S": 0.3450058362514591,
+  "M3": {
+    "nbad=0": {
+      "one_at_a_time": 17925,
+      "leave_one_out": 6246
+    },
+    "fwhm<=5": {
+      "one_at_a_time": 17179,
+      "leave_one_out": 6443
+    },
+    "elong<=1.2": {
+      "one_at_a_time": 12409,
+      "leave_one_out": 8127
+    },
+    "|magdiff|<=0.1": {
+      "one_at_a_time": 8622,
+      "leave_one_out": 11973
+    }
+  },
+  "M2_bins": {
+    "1.0-1.1": 6915,
+    "1.1-1.2": 5494,
+    "1.2-1.3": 2633,
+    "1.3-1.4": 1427,
+    "1.4-1.5": 886,
+    "1.5-1.6": 634
+  },
+  "M2_R": 0.24078997341435623
+}
