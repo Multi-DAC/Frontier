@@ -18,9 +18,18 @@ The useful axis is not "big archive / small archive". It is **where the classifi
 
 | Archive | What is kept | Access | Status |
 |---|---|---|---|
-| **NEXRAD Level II** | Full-resolution base moments from every US weather radar, **June 1991 → present**, raw from the RDA, no class filtering | Free, AWS S3 open data, plus real-time | ✅ |
+| **NEXRAD Level II** | Full-resolution base moments from every US weather radar, **June 1991 → present**, raw from the RDA, no class filtering | Free, AWS S3 open data, plus real-time | ⛔ **THE ✅ ON THIS ROW IS WITHDRAWN — see `PREREG-TERRESTRIAL.md §0`** |
 | **Australian Acoustic Observatory (A2O)** | ~360 sensors recording **24/7 continuously** across Australian ecosystems, ~2 PB over 5 years; 585,503 recordings across 341 sensor points | Open access, `data.acousticobservatory.org` | ⚠ |
 | Seismic / infrasound continuous waveform archives (IRIS/EarthScope, IMS) | Continuous, un-triggered | Open (IRIS); IMS restricted | ⚠ — not fetched this pass |
+
+> ⚠ **D202 AMENDMENT — the row above is wrong and the paragraph below is right for the wrong reason.**
+> Level II is **post-filter**: the WSR-88D clutter filter runs in the signal processor and the archived
+> moments are recalculated from clutter-filtered echoes. What is archived is **`CFP` — Clutter Filter
+> Power Removed** (one of seven Level II moments; `pyart/io/nexrad_level2.py:237`). **The bin has a
+> counter on it and nothing in it.** Aeroecology recovered birds from what *survived* the filter and was
+> being discarded by *attention*, not from a stored discard pile. NEXRAD is an existence proof about
+> attention, not about archives. Full accounting and the test built on CFP: `PREREG-TERRESTRIAL.md §0, §1`.
+> Also: the AWS bucket moved, `noaa-nexrad-level2` → `unidata-nexrad-level2`, legacy frozen 2025-09-01.
 
 **NEXRAD is the exemplar, and it is the one that should discipline our expectations.** During some periods most of the reflectivity a weather radar sees is *biological* — birds, bats and insects — and it is hard to remove automatically. For decades that was "clutter": the literal rejection bin of a network built for something else. Somebody took the bin seriously and it became **radar aeroecology**, a whole discipline, and the operational bird-migration forecasts at BirdCast.
 
