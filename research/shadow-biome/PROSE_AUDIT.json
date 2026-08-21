@@ -1,0 +1,2325 @@
+{
+ "haystack_files": [
+  "PASS4_RESULTS.json",
+  "PASS5_BIAS.json",
+  "PASS5_BIASCORR.json",
+  "PASS5_DIAG.json",
+  "PASS5_ORDER_PROBE.json",
+  "PASS5_RESULTS.json",
+  "PASS6_DIAG.json",
+  "PASS6_RESULTS.json",
+  "PASS6_VERIFY.json"
+ ],
+ "engine_disagreements": 0,
+ "total_tokens": 957,
+ "excused": 168,
+ "live": 789,
+ "grounded_all": 603,
+ "grounded_own": 488,
+ "candidates": [
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 239,
+   "tok": "715182",
+   "in_own": false,
+   "ctx": "EDICTIONS.md` (+ Amendment 1), both committed and pushed before the tarball was opened \u2014 `715182f` and the amendment commit, and the download timestamps are in the same session's shell h"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 366,
+   "tok": "20180601",
+   "in_own": false,
+   "ctx": "d the download timestamps are in the same session's shell history.  **Data:** `ztf_public_20180601.tar.gz`, 804,057,887 bytes, from `ztf.uw.edu/alerts/public/`. **17,991 alert packets, 0 p"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 384,
+   "tok": "804,057,887",
+   "in_own": false,
+   "ctx": "estamps are in the same session's shell history.  **Data:** `ztf_public_20180601.tar.gz`, 804,057,887 bytes, from `ztf.uw.edu/alerts/public/`. **17,991 alert packets, 0 parse failures, 0 rows"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 635,
+   "tok": "10,453",
+   "in_own": false,
+   "ctx": "ramid = 1` (MSIP public), confirming the population is what Amendment 1 assumed. Filters: 10,453 `r`, 7,538 `g`.  Instrument: `measure_pass4.py`, committed alongside. Every threshold in "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 647,
+   "tok": "7,538",
+   "in_own": false,
+   "ctx": "MSIP public), confirming the population is what Amendment 1 assumed. Filters: 10,453 `r`, 7,538 `g`.  Instrument: `measure_pass4.py`, committed alongside. Every threshold in it is quote"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 761,
+   "tok": "9.1",
+   "in_own": false,
+   "ctx": "`measure_pass4.py`, committed alongside. Every threshold in it is quoted from Supplement \u00a79.1, not chosen here.  ---  ## 0. The built-in positive control worked, and it rules out one "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1184,
+   "tok": "9.1",
+   "in_own": false,
+   "ctx": "cuts are supposed to hold for **every row in the file** and I checked:  | packaging cut (\u00a79.1) | rows violating | of n = 17,991 | |---|---|---| | `nbad \u2264 4` | 0 | 0.0000 % | | `fwhm \u2264"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1318,
+   "tok": "0.75",
+   "in_own": false,
+   "ctx": "|---|---| | `nbad \u2264 4` | 0 | 0.0000 % | | `fwhm \u2264 7` | 0 | 0.0000 % | | `\u22120.4 \u2264 magdiff \u2264 0.75` (`magdiff = magap \u2212 magpsf`) | 0 | 0.0000 % | | `elong \u2264 1.6` | 2 \u2192 **0, see \u00a70a** | 0.0"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1381,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "00 % | | `\u22120.4 \u2264 magdiff \u2264 0.75` (`magdiff = magap \u2212 magpsf`) | 0 | 0.0000 % | | `elong \u2264 1.6` | 2 \u2192 **0, see \u00a70a** | 0.0111 % \u2192 0 |  **Zero violations across four independently-compu"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1409,
+   "tok": "0.0111",
+   "in_own": false,
+   "ctx": ".75` (`magdiff = magap \u2212 magpsf`) | 0 | 0.0000 % | | `elong \u2264 1.6` | 2 \u2192 **0, see \u00a70a** | 0.0111 % \u2192 0 |  **Zero violations across four independently-computed cuts is a positive control "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1683,
+   "tok": "0.75",
+   "in_own": false,
+   "ctx": "n or the two magnitude fields wrong, it would not sit inside an asymmetric window `[\u22120.4, 0.75]` for all 17,991 rows. So M1's second failure mode is ruled out, and its failure below is"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 1925,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "fied.  ### 0a. The finding I was about to report, and why it is not one  The two `elong > 1.6` rows looked like counterexamples to a verbatim claim in an observatory's own documentati"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2287,
+   "tok": "1.600000023841858",
+   "in_own": false,
+   "ctx": " going to report it with its *n*.  I opened the two packets first. Both have:  > `elong = 1.600000023841858`  That is **1.6 in float32**, promoted to float64. `numpy.float32(1.6) == 1.6000000238418"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2317,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "n*.  I opened the two packets first. Both have:  > `elong = 1.600000023841858`  That is **1.6 in float32**, promoted to float64. `numpy.float32(1.6) == 1.60000002384185791015625`, whi"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2371,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "ong = 1.600000023841858`  That is **1.6 in float32**, promoted to float64. `numpy.float32(1.6) == 1.60000002384185791015625`, which is greater than Python's `1.6`. ZTF's threshold was"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2379,
+   "tok": "1.60000002384185791015625",
+   "in_own": false,
+   "ctx": "600000023841858`  That is **1.6 in float32**, promoted to float64. `numpy.float32(1.6) == 1.60000002384185791015625`, which is greater than Python's `1.6`. ZTF's threshold was applied in the pipeline's own"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2439,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "oat64. `numpy.float32(1.6) == 1.60000002384185791015625`, which is greater than Python's `1.6`. ZTF's threshold was applied in the pipeline's own precision; my comparison was made in "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 2781,
+   "tok": "2.3",
+   "in_own": false,
+   "ctx": "a_verdict_at_the_boundary` firing on its own subject \u2014 the lesson's canonical example is `2.3 \u2212 1.3 >= 1.0` evaluating False, and its sting was *\"I only checked because it flattered t"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3093,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " than flattery and is the one to keep.  Effect on M2: those two rows belong in the `[1.5, 1.6]` bin. R moves from 0.2408 to **0.2416**. It changes nothing and is stated because a corr"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3129,
+   "tok": "0.2416",
+   "in_own": false,
+   "ctx": "p.  Effect on M2: those two rows belong in the `[1.5, 1.6]` bin. R moves from 0.2408 to **0.2416**. It changes nothing and is stated because a correction that changes nothing still has t"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3482,
+   "tok": "76,096",
+   "in_own": false,
+   "ctx": "= 34.501 %** (6,207 / 17,991) | \u274c **FAILED, HIGH** | | **M1b** | N(2018-06-01 public) **< 76,096** | **17,991** | \u2705 HELD | | **M1c-count** | purified-MSIP for the night **\u2208 [4,000, 14,00"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3566,
+   "tok": "4,000",
+   "in_own": false,
+   "ctx": ") **< 76,096** | **17,991** | \u2705 HELD | | **M1c-count** | purified-MSIP for the night **\u2208 [4,000, 14,000]** | **6,207** | \u2705 HELD | | **M1c-survival** | **\u2208 [10 %, 35 %] and strictly > 10"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3659,
+   "tok": "10.77",
+   "in_own": false,
+   "ctx": "00, 14,000]** | **6,207** | \u2705 HELD | | **M1c-survival** | **\u2208 [10 %, 35 %] and strictly > 10.77 %** | **34.501 %** | \u2705 HELD | | **M2** | boundary ratio **R < 0.10** | **R = 0.2416** | \u274c"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3742,
+   "tok": "0.2416",
+   "in_own": false,
+   "ctx": "ctly > 10.77 %** | **34.501 %** | \u2705 HELD | | **M2** | boundary ratio **R < 0.10** | **R = 0.2416** | \u274c **REFUTED** | | **M3** | `\\|magdiff\\| \u2264 0.1` is the largest single killer, beating "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3847,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "REFUTED** | | **M3** | `\\|magdiff\\| \u2264 0.1` is the largest single killer, beating `elong \u2264 1.2` | magdiff 47.92 % vs elong 68.97 % one-at-a-time survival | \u2705 HELD | | M1d | *no predict"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3862,
+   "tok": "47.92",
+   "in_own": false,
+   "ctx": "*M3** | `\\|magdiff\\| \u2264 0.1` is the largest single killer, beating `elong \u2264 1.2` | magdiff 47.92 % vs elong 68.97 % one-at-a-time survival | \u2705 HELD | | M1d | *no prediction offered* | se"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 3879,
+   "tok": "68.97",
+   "in_own": false,
+   "ctx": "f\\| \u2264 0.1` is the largest single killer, beating `elong \u2264 1.2` | magdiff 47.92 % vs elong 68.97 % one-at-a-time survival | \u2705 HELD | | M1d | *no prediction offered* | see \u00a73 | \u2014 unscored"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4242,
+   "tok": "0.499",
+   "in_own": false,
+   "ctx": "being right, not M1 being rescued; the miss stands on the board. - **M1c-survival held by 0.499 percentage points.** It landed just inside its own upper edge, in the same direction M1 b"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4738,
+   "tok": "1.1",
+   "in_own": false,
+   "ctx": "erts, n = 17,991:  | bin | n | % of n | ratio to previous bin | |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4753,
+   "tok": "38.44",
+   "in_own": false,
+   "ctx": "1:  | bin | n | % of n | ratio to previous bin | |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 |"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4770,
+   "tok": "1.1",
+   "in_own": false,
+   "ctx": " of n | ratio to previous bin | |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) |"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4775,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": " | ratio to previous bin | |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,42"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4790,
+   "tok": "30.54",
+   "in_own": false,
+   "ctx": "vious bin | |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.54"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4800,
+   "tok": "0.794",
+   "in_own": false,
+   "ctx": "| |---|---|---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4811,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "---|---| | [1.0, 1.1) | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4831,
+   "tok": "14.64",
+   "in_own": false,
+   "ctx": ") | 6,915 | 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 |"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4841,
+   "tok": "0.479",
+   "in_own": false,
+   "ctx": "| 38.44 % | \u2014 | | [1.1, 1.2) | 5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5,"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4872,
+   "tok": "7.93",
+   "in_own": false,
+   "ctx": "5,494 | 30.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %**"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4881,
+   "tok": "0.542",
+   "in_own": false,
+   "ctx": "0.54 % | 0.794 | | [1.2, 1.3) | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4910,
+   "tok": "4.93",
+   "in_own": false,
+   "ctx": " | 2,633 | 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4919,
+   "tok": "0.621",
+   "in_own": false,
+   "ctx": "| 14.64 % | 0.479 | | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4937,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "| | [1.3, 1.4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered p"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4948,
+   "tok": "636",
+   "in_own": false,
+   "ctx": ".4) | 1,427 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered prediction w"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4958,
+   "tok": "3.54",
+   "in_own": false,
+   "ctx": "7 | 7.93 % | 0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered prediction was **R < 0."
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4971,
+   "tok": "0.718",
+   "in_own": false,
+   "ctx": "0.542 | | [1.4, 1.5) | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered prediction was **R < 0.10**. **REFUTE"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 4990,
+   "tok": "636",
+   "in_own": false,
+   "ctx": ") | 886 | 4.93 % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered prediction was **R < 0.10**. **REFUTED by a factor of "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5004,
+   "tok": "0.2416",
+   "in_own": false,
+   "ctx": " % | 0.621 | | **[1.5, 1.6]** | **636** | **3.54 %** | **0.718** |  > **R = 636 / 2,633 = 0.2416.** Pre-registered prediction was **R < 0.10**. **REFUTED by a factor of 2.4.**  I predict"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5083,
+   "tok": "2.4",
+   "in_own": false,
+   "ctx": " / 2,633 = 0.2416.** Pre-registered prediction was **R < 0.10**. **REFUTED by a factor of 2.4.**  I predicted the `elong \u2264 1.6` cut sits in the far tail \u2014 that a survey would not plac"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5116,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "ed prediction was **R < 0.10**. **REFUTED by a factor of 2.4.**  I predicted the `elong \u2264 1.6` cut sits in the far tail \u2014 that a survey would not place a threshold where it mutilates "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5272,
+   "tok": "3.5",
+   "in_own": false,
+   "ctx": "reshold where it mutilates its own science population. It does not sit in the far tail. **3.5 % of the surviving public alert stream sits in the last 0.1 of allowed elongation**, hard"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5586,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": " as observation, not finding:** the bin-to-bin survival ratio *rises monotonically* after 1.2 \u2014 0.479, 0.542, 0.621, 0.718. The distribution is **decelerating toward a plateau exactly"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5592,
+   "tok": "0.479",
+   "in_own": false,
+   "ctx": "servation, not finding:** the bin-to-bin survival ratio *rises monotonically* after 1.2 \u2014 0.479, 0.542, 0.621, 0.718. The distribution is **decelerating toward a plateau exactly where t"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5599,
+   "tok": "0.542",
+   "in_own": false,
+   "ctx": "on, not finding:** the bin-to-bin survival ratio *rises monotonically* after 1.2 \u2014 0.479, 0.542, 0.621, 0.718. The distribution is **decelerating toward a plateau exactly where the cut "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5606,
+   "tok": "0.621",
+   "in_own": false,
+   "ctx": " finding:** the bin-to-bin survival ratio *rises monotonically* after 1.2 \u2014 0.479, 0.542, 0.621, 0.718. The distribution is **decelerating toward a plateau exactly where the cut is plac"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5613,
+   "tok": "0.718",
+   "in_own": false,
+   "ctx": "g:** the bin-to-bin survival ratio *rises monotonically* after 1.2 \u2014 0.479, 0.542, 0.621, 0.718. The distribution is **decelerating toward a plateau exactly where the cut is placed**. A"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 5908,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "rd one.  ### What that does and does not license  **Does not:** estimate what lies beyond 1.6. Pass 3 wrote the limit before the data and it binds here \u2014 *a truncated distribution can"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 6520,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "* kill the reassuring version of pass 2's story. I had two readings available \u2014 \"`elong \u2264 1.6` drops anything trailed\" (dramatic) and \"it's a far-tail cut that costs almost nothing\" ("
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7134,
+   "tok": "643,860",
+   "in_own": false,
+   "ctx": "eakdown passes 2 and 3 both refused to estimate  Delivered for **stage 2 only**. Stage 1 (643,860 \u2192 228,287) still requires difference-image re-extraction and is **not attempted**. Partia"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7144,
+   "tok": "228,287",
+   "in_own": false,
+   "ctx": "sses 2 and 3 both refused to estimate  Delivered for **stage 2 only**. Stage 1 (643,860 \u2192 228,287) still requires difference-image re-extraction and is **not attempted**. Partial, and lab"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7380,
+   "tok": "99.633",
+   "in_own": false,
+   "ctx": "| one-at-a-time survival | leave-one-out survival | |---|---|---| | `nbad = 0` | 17,925 \u2014 99.633 % | 6,246 \u2014 34.717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7399,
+   "tok": "34.717",
+   "in_own": false,
+   "ctx": "vival | leave-one-out survival | |---|---|---| | `nbad = 0` | 17,925 \u2014 99.633 % | 6,246 \u2014 34.717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.9"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7434,
+   "tok": "95.487",
+   "in_own": false,
+   "ctx": "--|---|---| | `nbad = 0` | 17,925 \u2014 99.633 % | 6,246 \u2014 34.717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|ma"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7453,
+   "tok": "35.812",
+   "in_own": false,
+   "ctx": " = 0` | 17,925 \u2014 99.633 % | 6,246 \u2014 34.717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7475,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "3 % | 6,246 \u2014 34.717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | **8,622 \u2014 47.924 %*"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7491,
+   "tok": "68.973",
+   "in_own": false,
+   "ctx": ".717 % | | `fwhm \u2264 5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | **8,622 \u2014 47.924 %** | **11,973 \u2014 66.5"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7510,
+   "tok": "45.173",
+   "in_own": false,
+   "ctx": "5` | 17,179 \u2014 95.487 % | 6,443 \u2014 35.812 % | | `elong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | **8,622 \u2014 47.924 %** | **11,973 \u2014 66.550 %** | | all four"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7559,
+   "tok": "47.924",
+   "in_own": false,
+   "ctx": "ong \u2264 1.2` | 12,409 \u2014 68.973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | **8,622 \u2014 47.924 %** | **11,973 \u2014 66.550 %** | | all four jointly | **6,207 \u2014 34.501 %** | \u2014 |  `|magdiff|"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7583,
+   "tok": "66.550",
+   "in_own": false,
+   "ctx": ".973 % | 8,127 \u2014 45.173 % | | **`\\|magdiff\\| \u2264 0.1`** | **8,622 \u2014 47.924 %** | **11,973 \u2014 66.550 %** | | all four jointly | **6,207 \u2014 34.501 %** | \u2014 |  `|magdiff| \u2264 0.1` is the largest s"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7726,
+   "tok": "52.1",
+   "in_own": false,
+   "ctx": "* | \u2014 |  `|magdiff| \u2264 0.1` is the largest single killer, as predicted: it alone removes **52.1 %** of the packaged public stream. `elong \u2264 1.2` removes **31.0 %**. `nbad = 0` and `fwhm"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7775,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "killer, as predicted: it alone removes **52.1 %** of the packaged public stream. `elong \u2264 1.2` removes **31.0 %**. `nbad = 0` and `fwhm \u2264 5` are nearly free at 0.4 % and 4.5 %.  **Thi"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 7855,
+   "tok": "4.5",
+   "in_own": false,
+   "ctx": " `elong \u2264 1.2` removes **31.0 %**. `nbad = 0` and `fwhm \u2264 5` are nearly free at 0.4 % and 4.5 %.  **This is a genuine correction to the emphasis of passes 2\u20133.** The story those passe"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 8540,
+   "tok": "7,078",
+   "in_own": false,
+   "ctx": "t, not pre-registered, reported with n:** the survey's suggested `rb \u2265 0.65` alone leaves 7,078 / 17,991 = **39.34 %** \u2014 a bigger single killer than any shape cut. It is excluded from e"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 8559,
+   "tok": "39.34",
+   "in_own": false,
+   "ctx": "ed, reported with n:** the survey's suggested `rb \u2265 0.65` alone leaves 7,078 / 17,991 = **39.34 %** \u2014 a bigger single killer than any shape cut. It is excluded from every number above b"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 8668,
+   "tok": "9.2",
+   "in_own": false,
+   "ctx": "r single killer than any shape cut. It is excluded from every number above because Figure 9.2 is explicitly computed *without* it, and it is mentioned here so that nobody reads \u00a73 as "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 8872,
+   "tok": "7,718",
+   "in_own": false,
+   "ctx": "damage in ZTF's recommended recipe.\" It does not. The real/bogus classifier does. Also: **7,718 / 17,991 = 42.90 %** of public alerts are *negative* subtractions (`isdiffpos = f`), whic"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 8889,
+   "tok": "42.90",
+   "in_own": false,
+   "ctx": "ecommended recipe.\" It does not. The real/bogus classifier does. Also: **7,718 / 17,991 = 42.90 %** of public alerts are *negative* subtractions (`isdiffpos = f`), which is a fact about"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9110,
+   "tok": "96.2",
+   "in_own": false,
+   "ctx": "r of my earlier passes mentioned.  ---  ## 4. THE CORRECTED HEADLINE \u2014 replacing pass 3's 96.2 %  Pass 3 said: *\"96.2 % of ZTF's S/N \u2265 5 detection population is removed by morphology a"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9133,
+   "tok": "96.2",
+   "in_own": false,
+   "ctx": "mentioned.  ---  ## 4. THE CORRECTED HEADLINE \u2014 replacing pass 3's 96.2 %  Pass 3 said: *\"96.2 % of ZTF's S/N \u2265 5 detection population is removed by morphology alone.\"* Amendment 1 est"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9479,
+   "tok": "35.457",
+   "in_own": false,
+   "ctx": " survival | source | |---|---|---|---| | raw events \u2192 packaged | all alerts, 3 nights | **35.457 %** (228,287 / 643,860) | Suppl. Fig 9.1, both curves \"All alerts\" | | packaged \u2192 purity "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9491,
+   "tok": "228,287",
+   "in_own": false,
+   "ctx": "source | |---|---|---|---| | raw events \u2192 packaged | all alerts, 3 nights | **35.457 %** (228,287 / 643,860) | Suppl. Fig 9.1, both curves \"All alerts\" | | packaged \u2192 purity cuts | **publ"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9501,
+   "tok": "643,860",
+   "in_own": false,
+   "ctx": "---|---|---|---| | raw events \u2192 packaged | all alerts, 3 nights | **35.457 %** (228,287 / 643,860) | Suppl. Fig 9.1, both curves \"All alerts\" | | packaged \u2192 purity cuts | **public alerts,"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9523,
+   "tok": "9.1",
+   "in_own": false,
+   "ctx": " events \u2192 packaged | all alerts, 3 nights | **35.457 %** (228,287 / 643,860) | Suppl. Fig 9.1, both curves \"All alerts\" | | packaged \u2192 purity cuts | **public alerts, 1 night** | **34."
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9682,
+   "tok": "12.233",
+   "in_own": false,
+   "ctx": "lerts, 1 night** | **34.501 %** (6,207 / 17,991) | **measured here** | | combined | \u2014 | **12.233 %** | product |  > **\u2248 87.8 % of ZTF's S/N \u2265 5 detection population is removed by morphol"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9712,
+   "tok": "87.8",
+   "in_own": false,
+   "ctx": "* (6,207 / 17,991) | **measured here** | | combined | \u2014 | **12.233 %** | product |  > **\u2248 87.8 % of ZTF's S/N \u2265 5 detection population is removed by morphology alone** \u2014 not 96.2 %.  *"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 9796,
+   "tok": "96.2",
+   "in_own": false,
+   "ctx": "> **\u2248 87.8 % of ZTF's S/N \u2265 5 detection population is removed by morphology alone** \u2014 not 96.2 %.  **\u26a0 The assumption that makes the product legal, stated rather than buried:** it trea"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10218,
+   "tok": "87.8",
+   "in_own": false,
+   "ctx": "ng the combined number is wrong**, and the two stages are individually sound regardless.  87.8 % is still a large number and the direction of passes 2\u20133 is intact. It is 8.4 points sma"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10298,
+   "tok": "8.4",
+   "in_own": false,
+   "ctx": "ardless.  87.8 % is still a large number and the direction of passes 2\u20133 is intact. It is 8.4 points smaller than the sentence I would have kept quoting.  ### The independent cross-ch"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10613,
+   "tok": "10.77",
+   "in_own": false,
+   "ctx": " is retrofitted**):  - **Implied**, from the Supplement's ratio and my measured survival: 10.77 % \u00f7 34.501 % = **31.2 %**. - **Direct**, scaling one night to three: (3 \u00d7 17,991) \u00f7 228,2"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10636,
+   "tok": "31.2",
+   "in_own": false,
+   "ctx": "**Implied**, from the Supplement's ratio and my measured survival: 10.77 % \u00f7 34.501 % = **31.2 %**. - **Direct**, scaling one night to three: (3 \u00d7 17,991) \u00f7 228,287 = **23.6 %**.  They"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10703,
+   "tok": "228,287",
+   "in_own": false,
+   "ctx": "10.77 % \u00f7 34.501 % = **31.2 %**. - **Direct**, scaling one night to three: (3 \u00d7 17,991) \u00f7 228,287 = **23.6 %**.  They disagree by a quarter of their own size. The likeliest cause is that "
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10715,
+   "tok": "23.6",
+   "in_own": false,
+   "ctx": ".501 % = **31.2 %**. - **Direct**, scaling one night to three: (3 \u00d7 17,991) \u00f7 228,287 = **23.6 %**.  They disagree by a quarter of their own size. The likeliest cause is that 2018-06-0"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 10985,
+   "tok": "8,194",
+   "in_own": false,
+   "ctx": "er and commissioning gaps, and consistent with M1c-count landing at 6,207 against a naive 8,194. **I am not resolving it and neither number should be quoted as ZTF's public-time fractio"
+  },
+  {
+   "file": "PASS4_RESULTS.md",
+   "pos": 13316,
+   "tok": "8.4",
+   "in_own": false,
+   "ctx": "re-committed predictions and got two wrong, corrected its own pass-3 headline downward by 8.4 points, and retracted a counterexample it had already drafted because the number was floa"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 911,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "he same difference images puts **48.50 % (4,136 / 8,528)** of detections    past `elong = 1.6` \u2014 the boundary above which ZTF packages nothing. 2. **The boring explanation was pre-reg"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 1846,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "ations.  ---  ## 1. What was done  Pass 4 ended by refusing to say what lay past `elong = 1.6`, on the correct ground that a truncation is invisible from the surviving side. **Pass 5 "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 2139,
+   "tok": "2018",
+   "in_own": false,
+   "ctx": "mages the alerts were extracted from* are not. They are public at IRSA, ~7.7 MB each, and 2018 has no proprietary period. The detections were discarded. **The pixels were not.**  - **2"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 2290,
+   "tok": "1,687",
+   "in_own": false,
+   "ctx": ". **The pixels were not.**  - **24 images** selected by a rule fixed before download: the 1,687 distinct   `pdiffimfilename` values in the 2018-06-01 public alert set, sorted lexicograp"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 2758,
+   "tok": "10,273",
+   "in_own": false,
+   "ctx": "nd `\u2212data` and unioned, because ZTF's own stream is 42.9 %   negative-subtraction alerts (10,273 `t` / 7,718 `f` on the night) and a positive-only   catalogue would not be comparable. **"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 2771,
+   "tok": "7,718",
+   "in_own": false,
+   "ctx": "d unioned, because ZTF's own stream is 42.9 %   negative-subtraction alerts (10,273 `t` / 7,718 `f` on the night) and a positive-only   catalogue would not be comparable. **8,528 detect"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4556,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "orrected for rather than waved at:  | boundary | far-side fraction | |---|---| | `elong > 1.6` (raw) | **48.50 %** (4,136 / 8,528) | | `> 1.6375` (median-bias corrected) | **44.01 %**"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4604,
+   "tok": "1.6375",
+   "in_own": false,
+   "ctx": " far-side fraction | |---|---| | `elong > 1.6` (raw) | **48.50 %** (4,136 / 8,528) | | `> 1.6375` (median-bias corrected) | **44.01 %** | | `> 1.6556` (mean-bias corrected) | **42.13 %**"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4657,
+   "tok": "1.6556",
+   "in_own": false,
+   "ctx": "| **48.50 %** (4,136 / 8,528) | | `> 1.6375` (median-bias corrected) | **44.01 %** | | `> 1.6556` (mean-bias corrected) | **42.13 %** | | `> 1.7` (deliberately harsh) | **37.64 %** |  **"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4708,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": "n-bias corrected) | **44.01 %** | | `> 1.6556` (mean-bias corrected) | **42.13 %** | | `> 1.7` (deliberately harsh) | **37.64 %** |  **The conclusion does not depend on the correction"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4738,
+   "tok": "37.64",
+   "in_own": false,
+   "ctx": "* | | `> 1.6556` (mean-bias corrected) | **42.13 %** | | `> 1.7` (deliberately harsh) | **37.64 %** |  **The conclusion does not depend on the correction.** Even pushed to 1.7 the far s"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4820,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": "sh) | **37.64 %** |  **The conclusion does not depend on the correction.** Even pushed to 1.7 the far side is more than a third of the catalogue.  ---  ## 3. The measurement  ### 3a. "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 4995,
+   "tok": "1.1",
+   "in_own": false,
+   "ctx": "### 3a. The distribution, no shape cut (n = 8,528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5007,
+   "tok": "5.09",
+   "in_own": false,
+   "ctx": "distribution, no shape cut (n = 8,528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5016,
+   "tok": "1.1",
+   "in_own": false,
+   "ctx": "ion, no shape cut (n = 8,528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9."
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5020,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": " no shape cut (n = 8,528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5032,
+   "tok": "7.34",
+   "in_own": false,
+   "ctx": "t (n = 8,528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6*"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5041,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "528)  | elong | n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5057,
+   "tok": "8.82",
+   "in_own": false,
+   "ctx": "n | % | |---|---|---| | 1.0\u20131.1 | 434 | 5.09 | | 1.1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23**"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5107,
+   "tok": "9.22",
+   "in_own": false,
+   "ctx": ".1\u20131.2 | 626 | 7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5122,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "7.34 | | 1.2\u20131.3 | 752 | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5144,
+   "tok": "12.23",
+   "in_own": false,
+   "ctx": " | 8.82 | | 1.3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 54"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5158,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "3\u20131.4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5162,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": "4 | 751 | 8.81 | | 1.4\u20131.5 | 786 | 9.22 | | **1.5\u20131.6** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5215,
+   "tok": "10.86",
+   "in_own": false,
+   "ctx": "** | **1,043** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5227,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": "** | **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5231,
+   "tok": "1.8",
+   "in_own": false,
+   "ctx": " **12.23** | | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.8"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5243,
+   "tok": "6.39",
+   "in_own": false,
+   "ctx": " | **1.6\u20131.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5252,
+   "tok": "1.8",
+   "in_own": false,
+   "ctx": "1.7** \u2190 *first bin ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5268,
+   "tok": "9.74",
+   "in_own": false,
+   "ctx": "in ZTF never packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310."
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5281,
+   "tok": "2.5",
+   "in_own": false,
+   "ctx": "packages* | **926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.4"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5295,
+   "tok": "12.83",
+   "in_own": false,
+   "ctx": "926** | **10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 3"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5305,
+   "tok": "2.5",
+   "in_own": false,
+   "ctx": "10.86** | | 1.7\u20131.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5321,
+   "tok": "4.84",
+   "in_own": false,
+   "ctx": "1.8 | 545 | 6.39 | | 1.8\u20132.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD**"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5346,
+   "tok": "2.98",
+   "in_own": false,
+   "ctx": "2.0 | 831 | 9.74 | | 2.0\u20132.5 | 1,094 | 12.83 | | 2.5\u20133.0 | 413 | 4.84 | | 3.0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD** \u2014 `n[1.6,1.7) / n[1.5,1."
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5421,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": ".0\u20135.0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD** \u2014 `n[1.6,1.7) / n[1.5,1.6) = 0.8878`. No step at 1.6 in my data. This is the   check that my catal"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5425,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": ".0 | 254 | 2.98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD** \u2014 `n[1.6,1.7) / n[1.5,1.6) = 0.8878`. No step at 1.6 in my data. This is the   check that my catalogue"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5438,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "98 | | 5.0\u201310.0 | 37 | 0.43 | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD** \u2014 `n[1.6,1.7) / n[1.5,1.6) = 0.8878`. No step at 1.6 in my data. This is the   check that my catalogue did not inhe"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5465,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " | | \u2265 10.0 | 36 | 0.42 |  - **P4 HELD** \u2014 `n[1.6,1.7) / n[1.5,1.6) = 0.8878`. No step at 1.6 in my data. This is the   check that my catalogue did not inherit a cut from somewhere; w"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5644,
+   "tok": "5.8",
+   "in_own": false,
+   "ctx": "e; without it, nothing else here   would be safe to read. - **P5 HELD, and by a factor of 5.8** \u2014 pass 4's boundary statistic `n[1.5,1.6]/n[1.2,1.3)` is   **0.2408** on the packaged s"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5687,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " safe to read. - **P5 HELD, and by a factor of 5.8** \u2014 pass 4's boundary statistic `n[1.5,1.6]/n[1.2,1.3)` is   **0.2408** on the packaged stream and **1.3870** on the uncut one. The "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 5694,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "o read. - **P5 HELD, and by a factor of 5.8** \u2014 pass 4's boundary statistic `n[1.5,1.6]/n[1.2,1.3)` is   **0.2408** on the packaged stream and **1.3870** on the uncut one. The package"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 6565,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "onfidence.  So D1a was written and committed: *restrict to S/N \u2265 20 and the fraction past 1.6 drops below 25 %.*  | cut | n | past 1.6 | fraction | |---|---|---|---| | all | 8,528 | 4"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 6606,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "ted: *restrict to S/N \u2265 20 and the fraction past 1.6 drops below 25 %.*  | cut | n | past 1.6 | fraction | |---|---|---|---| | all | 8,528 | 4,136 | **48.50 %** | | S/N \u2265 10 | 8,473 |"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 7297,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "urvives the S/N cut (0.8013). **D1d HELD, hard** \u2014 only **0.17 %** (7 / 4,136) of my past-1.6 detections lie within 2 px of a ZTF alert. The far-side population is essentially disjoin"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 7444,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "de population is essentially disjoint from what ZTF packaged, which is what a real cut at 1.6 plus an `elong` that agrees to 0.08 predicts.  ---  ## 4. The finding nobody was looking "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 7732,
+   "tok": "404",
+   "in_own": false,
+   "ctx": " than shrugged at, and it is not a per-file gap \u2014 **the entire `filefracday` directory is 404 at IRSA.** So the question became: how much of that night is missing?  - fracday director"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 7863,
+   "tok": "450",
+   "in_own": false,
+   "ctx": "w much of that night is missing?  - fracday directories present at IRSA for 2018-06-01: **450** - fracdays referenced by the night's public alerts: **55** - **referenced but ABSENT fr"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 8037,
+   "tok": "1,037",
+   "in_own": false,
+   "ctx": "ABSENT from the archive: 15 (27.3 %)** - **alerts whose source image cannot be retrieved: 1,037 of 17,991 (5.76 %)**  **For 5.76 % of that night's public alerts, the alert survives and "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 8054,
+   "tok": "5.76",
+   "in_own": false,
+   "ctx": "rchive: 15 (27.3 %)** - **alerts whose source image cannot be retrieved: 1,037 of 17,991 (5.76 %)**  **For 5.76 % of that night's public alerts, the alert survives and the image it was"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 8071,
+   "tok": "5.76",
+   "in_own": false,
+   "ctx": "%)** - **alerts whose source image cannot be retrieved: 1,037 of 17,991 (5.76 %)**  **For 5.76 % of that night's public alerts, the alert survives and the image it was extracted from d"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 8526,
+   "tok": "5.76",
+   "in_own": false,
+   "ctx": "and only the first is about ZTF:  1. **The recoverability established in \u00a73 is partial by 5.76 % on this night**, and pass 6's    coverage must be quoted against the retrievable popula"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9317,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "9.31 % | | P2 | median \\|\u0394elong\\| < 0.10 | **HELD** | 0.0799 | | P3 | 15 % \u2264 frac(elong > 1.6) \u2264 45 % | **REFUTED** | 48.50 % | | P4 | `n[1.6,1.7)/n[1.5,1.6) > 0.5` | **HELD** | 0.887"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9365,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "D** | 0.0799 | | P3 | 15 % \u2264 frac(elong > 1.6) \u2264 45 % | **REFUTED** | 48.50 % | | P4 | `n[1.6,1.7)/n[1.5,1.6) > 0.5` | **HELD** | 0.8878 | | P5 | R\u2032 > 0.241 | **HELD** | 1.3870 | | P6"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9369,
+   "tok": "1.7",
+   "in_own": false,
+   "ctx": "| 0.0799 | | P3 | 15 % \u2264 frac(elong > 1.6) \u2264 45 % | **REFUTED** | 48.50 % | | P4 | `n[1.6,1.7)/n[1.5,1.6) > 0.5` | **HELD** | 0.8878 | | P5 | R\u2032 > 0.241 | **HELD** | 1.3870 | | P6 | f"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9380,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "| P3 | 15 % \u2264 frac(elong > 1.6) \u2264 45 % | **REFUTED** | 48.50 % | | P4 | `n[1.6,1.7)/n[1.5,1.6) > 0.5` | **HELD** | 0.8878 | | P5 | R\u2032 > 0.241 | **HELD** | 1.3870 | | P6 | far side bri"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9616,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " | P7 | < 200 MB and < 5 min extraction | **HELD** | 160.9 MB / 7.7 s | | D1a | frac past 1.6 < 25 % at S/N \u2265 20 | **REFUTED** | 46.01 % | | D1b | recovery > 75 % against high-S/N | *"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9684,
+   "tok": "75",
+   "in_own": false,
+   "ctx": "s | | D1a | frac past 1.6 < 25 % at S/N \u2265 20 | **REFUTED** | 46.01 % | | D1b | recovery > 75 % against high-S/N | **REFUTED** | 46.81 % | | D1c | step ratio > 0.5 at S/N \u2265 20 | **HEL"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 9821,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " | D1c | step ratio > 0.5 at S/N \u2265 20 | **HELD** | 0.8013 | | D1d | matched share of past-1.6 < 8 % | **HELD** | 0.17 % |  ---  ## 6. What this establishes, and what it does not  **Es"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 10320,
+   "tok": "5.8",
+   "in_own": false,
+   "ctx": "is not a clipped copy of the underlying distribution; the boundary   statistic differs by 5.8\u00d7.  **Does NOT establish \u2014 and this is not modesty, it is the pre-registration:** - **That"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 10636,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "trails, dipole subtraction residuals, cosmic   rays and chip-edge artefacts all live past 1.6, and **the count is not the interesting   quantity.** Nothing in pass 5 separates them. T"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 12199,
+   "tok": "8.85",
+   "in_own": false,
+   "ctx": "till deferred on measured cost, with the reason attached: replication across years       (8.85 / 14.9 / 9.89 GB per night; prefix sampling ruled out at \u03c1 = 0.977). - [ ] Still open fro"
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 12206,
+   "tok": "14.9",
+   "in_own": false,
+   "ctx": "ferred on measured cost, with the reason attached: replication across years       (8.85 / 14.9 / 9.89 GB per night; prefix sampling ruled out at \u03c1 = 0.977). - [ ] Still open from pass "
+  },
+  {
+   "file": "PASS5_RESULTS.md",
+   "pos": 12625,
+   "tok": "5.76",
+   "in_own": false,
+   "ctx": "nd had it refuted, corrected its own boundary for a measured +0.0375 bias, and found that 5.76 % of the night's alerts point at images the archive no longer holds.*  \ud83e\udd9e\ud83e\uddcd\ud83d\udc9c\ud83d\udd25\u267e\ufe0f "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 188,
+   "tok": "685",
+   "in_own": false,
+   "ctx": "Scored against `PASS6_PREDICTIONS.md` (`f3c51a5`) and `PASS6_DIAGNOSTIC_PREDICTIONS.md` (`685fa0c`), both committed and pushed before the code that produced the numbers below was run."
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 502,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "tablished that **48.50%** of detections in ZTF difference images lie past ZTF's `elong <= 1.6` packaging cut, that the fraction is flat to S/N >= 100 (so not a noise skirt), and that "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 1602,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": " It is, in the main, one artefact class counted twice. **On this evidence ZTF's `elong <= 1.6` cut is doing its job.**  ### And the size was never a fixed number anyway  `minarea` \u2014 a"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 3373,
+   "tok": "0.90",
+   "in_own": false,
+   "ctx": "ce to nearest bright source | 397.33 px | 430.29 px | **REFUTED** (ratio 0.9234, needed < 0.90) | | P4 | per-frame `frac_far` IQR | 0.1076 | \u2014 | HELD (needed > 0.10) |  **P1.** I predi"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 3599,
+   "tok": "1.2",
+   "in_own": false,
+   "ctx": "far side more axis-aligned than the kept side by >= 5 pp. It is **less** axis-aligned, by 1.2 pp. Both sides sit above the 22.22% chance rate, which is the pixel-grid quantisation of "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 4305,
+   "tok": "0.0076",
+   "in_own": false,
+   "ctx": "ails the threshold I committed to. Reported as refuted; not rescued.  **P4** held, but by 0.0076 \u2014 a hair over the line. Recorded as narrow, not clean. `frac_far` per frame runs 0.1795 t"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 5029,
+   "tok": "32.18",
+   "in_own": false,
+   "ctx": "| |---|---|---| | RECOVERED | 223 | 59.31% | | **UNEXTRACTED_DESPITE_FLUX** | **121** | **32.18%** | | BELOW_THRESHOLD | 31 | 8.24% | | NEAR_MISS_RADIUS | 1 | 0.27% | | OUT_OF_BOUNDS / "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 5065,
+   "tok": "8.24",
+   "in_own": false,
+   "ctx": "59.31% | | **UNEXTRACTED_DESPITE_FLUX** | **121** | **32.18%** | | BELOW_THRESHOLD | 31 | 8.24% | | NEAR_MISS_RADIUS | 1 | 0.27% | | OUT_OF_BOUNDS / MASKED | 0 | 0.00% |  - **P5 HELD.*"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 5657,
+   "tok": "79.1",
+   "in_own": false,
+   "ctx": "the informative one.** Only 20.26% of misses are   below threshold; I predicted >= 60%. **79.1% of misses have >= 5 sigma of flux   at the alert position and produced no detection with"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 7202,
+   "tok": "4.67",
+   "in_own": false,
+   "ctx": "* | **HELD** | | D2a-3 | opposite-sign more anti-collinear than same-sign by >= 10 deg | +4.67 deg | **REFUTED** | | D2b-1 | recovery at `minarea=2` >= 80% | 73.14% | REFUTED | | D2b-2"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 7719,
+   "tok": "4.67",
+   "in_own": false,
+   "ctx": "rnally-controlled test.** Same-sign close pairs are also anti-collinear (73.33 deg), only 4.67 deg less than opposite-sign pairs. I named D2a-3 in advance as \"the one that matters\" bec"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 7936,
+   "tok": "106",
+   "in_own": false,
+   "ctx": "he honest reading: with 96% of close pairs being opposite-sign, the same-sign sample is n=106 and is plausibly contaminated by multi-lobe groupings where the *nearest* neighbour happe"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 9786,
+   "tok": "4.65",
+   "in_own": false,
+   "ctx": "hind it post-hoc, in the same breath as the test, with no justification, and it passed by 4.65 pp. \"Enriched\" is the defensible word. \"Specific\" is not.  ### V1 \u2014 `sep` does not return"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10090,
+   "tok": "0.023",
+   "in_own": false,
+   "ctx": "ea=5`; `diag_pass6.py` reported 8,526 with what should be identical extraction. Chasing a 0.023% gap found something larger:  - Re-running the **same** code path on one image (`590_zr_c"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10324,
+   "tok": "1012",
+   "in_own": false,
+   "ctx": "nistic. - Re-running the same code path on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *sa"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10336,
+   "tok": "1014",
+   "in_own": false,
+   "ctx": "-running the same code path on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *same variant t"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10342,
+   "tok": "1014",
+   "in_own": false,
+   "ctx": "ng the same code path on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *same variant twice i"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10348,
+   "tok": "1015",
+   "in_own": false,
+   "ctx": " same code path on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *same variant twice in a ro"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10354,
+   "tok": "1015",
+   "in_own": false,
+   "ctx": "code path on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *same variant twice in a row givi"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10360,
+   "tok": "1016",
+   "in_own": false,
+   "ctx": "ath on a **different** image (`687_zr_c14_o_q1`):   **1012, 1013, 1014, 1014, 1015, 1015, 1016** across 8 runs of four variants,   including the *same variant twice in a row giving 101"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10451,
+   "tok": "1015",
+   "in_own": false,
+   "ctx": "016** across 8 runs of four variants,   including the *same variant twice in a row giving 1015 then 1014*. - All buffers 64-byte aligned in every run, so **alignment is not the cause**"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10461,
+   "tok": "1014",
+   "in_own": false,
+   "ctx": "ss 8 runs of four variants,   including the *same variant twice in a row giving 1015 then 1014*. - All buffers 64-byte aligned in every run, so **alignment is not the cause**.   The pa"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 10674,
+   "tok": "300,000",
+   "in_own": false,
+   "ctx": "to-run, tiny \u2014 is what reading uninitialised   memory looks like. `sep` 1.4.1, `pixstack` 300,000, images carrying NaN masks.  **Magnitude: ~0.4% on one image, ~0.05% in total.** No concl"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 11888,
+   "tok": "1.6",
+   "in_own": false,
+   "ctx": "tration.  ---  ## 5. WHAT SURVIVES  - ZTF's alert stream really is shape-cut at `elong <= 1.6`, and the far side of   that cut really is reachable from the difference images. **Pass 5"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 12564,
+   "tok": "03",
+   "in_own": false,
+   "ctx": "it removes, is **well chosen**.  ## 6. THE FORBIDDEN MOVE, HONOURED  In writing since `0ae03d9`: *a null in the device-detectable branch STAYS in that branch and may never be reframe"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 13849,
+   "tok": "2019",
+   "in_own": false,
+   "ctx": "calar.** 5. Do **not** replicate across years until 1\u20133 are settled. Cost is measured    (2019: 8.85 GB, 2022: 14.9 GB, 2026: 9.89 GB) and replicating a number that    is 2/3 artefact "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 13864,
+   "tok": "2022",
+   "in_own": false,
+   "ctx": "**not** replicate across years until 1\u20133 are settled. Cost is measured    (2019: 8.85 GB, 2022: 14.9 GB, 2026: 9.89 GB) and replicating a number that    is 2/3 artefact buys nothing.  "
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 13879,
+   "tok": "2026",
+   "in_own": false,
+   "ctx": "te across years until 1\u20133 are settled. Cost is measured    (2019: 8.85 GB, 2022: 14.9 GB, 2026: 9.89 GB) and replicating a number that    is 2/3 artefact buys nothing.  ## 8. Provenanc"
+  },
+  {
+   "file": "PASS6_RESULTS.md",
+   "pos": 14080,
+   "tok": "8,52",
+   "in_own": false,
+   "ctx": "8-06-01), 20 difference images, 15 zr / 5 zg by the selection rule rather than by design, 8,52x detections, `sep` 1.4.1 at 5 sigma. Every number is `sep` on ZTF's pixels, not a stateme"
+  }
+ ],
+ "mutation_control": [
+  {
+   "orig": "1.5",
+   "mutant": "1.1",
+   "survived": false
+  },
+  {
+   "orig": "19.379",
+   "mutant": "19.371",
+   "survived": false
+  },
+  {
+   "orig": "8,528",
+   "mutant": "8,525",
+   "survived": false
+  },
+  {
+   "orig": "0.27",
+   "mutant": "0.20",
+   "survived": true
+  },
+  {
+   "orig": "58.9",
+   "mutant": "58.7",
+   "survived": false
+  },
+  {
+   "orig": "77",
+   "mutant": "72",
+   "survived": true
+  },
+  {
+   "orig": "4",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "4",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "48.50",
+   "mutant": "48.52",
+   "survived": false
+  },
+  {
+   "orig": "0.0000",
+   "mutant": "0.0003",
+   "survived": false
+  },
+  {
+   "orig": "20",
+   "mutant": "21",
+   "survived": true
+  },
+  {
+   "orig": "10",
+   "mutant": "17",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "15",
+   "mutant": "16",
+   "survived": true
+  },
+  {
+   "orig": "62.77",
+   "mutant": "62.71",
+   "survived": false
+  },
+  {
+   "orig": "3",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "27",
+   "mutant": "29",
+   "survived": true
+  },
+  {
+   "orig": "493.7",
+   "mutant": "493.4",
+   "survived": false
+  },
+  {
+   "orig": "3",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "590",
+   "mutant": "592",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "31.0",
+   "mutant": "31.9",
+   "survived": false
+  },
+  {
+   "orig": "6,915",
+   "mutant": "6,916",
+   "survived": false
+  },
+  {
+   "orig": "0.10",
+   "mutant": "0.15",
+   "survived": true
+  },
+  {
+   "orig": "1.5",
+   "mutant": "1.4",
+   "survived": true
+  },
+  {
+   "orig": "0",
+   "mutant": "1",
+   "survived": true
+  },
+  {
+   "orig": "0.241",
+   "mutant": "0.247",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "0.10",
+   "mutant": "0.14",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "0.0799",
+   "mutant": "0.0798",
+   "survived": false
+  },
+  {
+   "orig": "2",
+   "mutant": "1",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "6",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "47.21",
+   "mutant": "47.22",
+   "survived": false
+  },
+  {
+   "orig": "100",
+   "mutant": "103",
+   "survived": false
+  },
+  {
+   "orig": "0.0310",
+   "mutant": "0.0317",
+   "survived": false
+  },
+  {
+   "orig": "6",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "34.501",
+   "mutant": "34.506",
+   "survived": false
+  },
+  {
+   "orig": "8",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "3,100",
+   "mutant": "3,102",
+   "survived": false
+  },
+  {
+   "orig": "73.14",
+   "mutant": "73.16",
+   "survived": false
+  },
+  {
+   "orig": "1.3870",
+   "mutant": "1.3877",
+   "survived": false
+  },
+  {
+   "orig": "35",
+   "mutant": "32",
+   "survived": true
+  },
+  {
+   "orig": "0.4",
+   "mutant": "0.2",
+   "survived": true
+  },
+  {
+   "orig": "3.0",
+   "mutant": "3.9",
+   "survived": false
+  },
+  {
+   "orig": "4,392",
+   "mutant": "4,390",
+   "survived": false
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,992",
+   "survived": false
+  },
+  {
+   "orig": "2",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "4,136",
+   "mutant": "4,132",
+   "survived": false
+  },
+  {
+   "orig": "1.0",
+   "mutant": "1.6",
+   "survived": false
+  },
+  {
+   "orig": "1.4",
+   "mutant": "1.9",
+   "survived": false
+  },
+  {
+   "orig": "20",
+   "mutant": "26",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "545",
+   "mutant": "544",
+   "survived": false
+  },
+  {
+   "orig": "0.243",
+   "mutant": "0.245",
+   "survived": true
+  },
+  {
+   "orig": "786",
+   "mutant": "783",
+   "survived": false
+  },
+  {
+   "orig": "98.41",
+   "mutant": "98.48",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "0.1795",
+   "mutant": "0.1790",
+   "survived": false
+  },
+  {
+   "orig": "14",
+   "mutant": "11",
+   "survived": true
+  },
+  {
+   "orig": "7.7",
+   "mutant": "7.0",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "2",
+   "survived": true
+  },
+  {
+   "orig": "4,167",
+   "mutant": "4,160",
+   "survived": false
+  },
+  {
+   "orig": "0",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "50",
+   "mutant": "52",
+   "survived": false
+  },
+  {
+   "orig": "201",
+   "mutant": "205",
+   "survived": true
+  },
+  {
+   "orig": "8",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "7,424",
+   "mutant": "7,427",
+   "survived": false
+  },
+  {
+   "orig": "6",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "20",
+   "mutant": "23",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "97",
+   "mutant": "95",
+   "survived": false
+  },
+  {
+   "orig": "60",
+   "mutant": "64",
+   "survived": true
+  },
+  {
+   "orig": "0.5070",
+   "mutant": "0.5071",
+   "survived": false
+  },
+  {
+   "orig": "6",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,994",
+   "survived": false
+  },
+  {
+   "orig": "0",
+   "mutant": "1",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "48.45",
+   "mutant": "48.46",
+   "survived": false
+  },
+  {
+   "orig": "9",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "59.31",
+   "mutant": "59.30",
+   "survived": false
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,994",
+   "survived": false
+  },
+  {
+   "orig": "70",
+   "mutant": "76",
+   "survived": true
+  },
+  {
+   "orig": "1,043",
+   "mutant": "1,049",
+   "survived": false
+  },
+  {
+   "orig": "45.60",
+   "mutant": "45.69",
+   "survived": false
+  },
+  {
+   "orig": "3",
+   "mutant": "2",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "100",
+   "mutant": "108",
+   "survived": false
+  },
+  {
+   "orig": "3.0",
+   "mutant": "3.3",
+   "survived": false
+  },
+  {
+   "orig": "20",
+   "mutant": "23",
+   "survived": true
+  },
+  {
+   "orig": "1.3",
+   "mutant": "1.4",
+   "survived": true
+  },
+  {
+   "orig": "25",
+   "mutant": "20",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "2",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "1033",
+   "mutant": "1031",
+   "survived": false
+  },
+  {
+   "orig": "5,494",
+   "mutant": "5,493",
+   "survived": false
+  },
+  {
+   "orig": "1.3",
+   "mutant": "1.8",
+   "survived": false
+  },
+  {
+   "orig": "6,246",
+   "mutant": "6,240",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,994",
+   "survived": false
+  },
+  {
+   "orig": "24",
+   "mutant": "26",
+   "survived": true
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,993",
+   "survived": false
+  },
+  {
+   "orig": "5",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "6",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "96",
+   "mutant": "99",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "48.50",
+   "mutant": "48.59",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "4",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "45",
+   "mutant": "46",
+   "survived": true
+  },
+  {
+   "orig": "44.01",
+   "mutant": "44.07",
+   "survived": false
+  },
+  {
+   "orig": "4",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "0.243",
+   "mutant": "0.246",
+   "survived": false
+  },
+  {
+   "orig": "2",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "12",
+   "mutant": "15",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "1.5",
+   "mutant": "1.2",
+   "survived": false
+  },
+  {
+   "orig": "687",
+   "mutant": "682",
+   "survived": false
+  },
+  {
+   "orig": "0.0799",
+   "mutant": "0.0792",
+   "survived": false
+  },
+  {
+   "orig": "11,973",
+   "mutant": "11,971",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "34.501",
+   "mutant": "34.508",
+   "survived": false
+  },
+  {
+   "orig": "8,526",
+   "mutant": "8,520",
+   "survived": false
+  },
+  {
+   "orig": "13",
+   "mutant": "15",
+   "survived": true
+  },
+  {
+   "orig": "73.14",
+   "mutant": "73.18",
+   "survived": false
+  },
+  {
+   "orig": "48.50",
+   "mutant": "48.52",
+   "survived": false
+  },
+  {
+   "orig": "68.4",
+   "mutant": "68.9",
+   "survived": true
+  },
+  {
+   "orig": "59.31",
+   "mutant": "59.30",
+   "survived": false
+  },
+  {
+   "orig": "223",
+   "mutant": "225",
+   "survived": false
+  },
+  {
+   "orig": "6",
+   "mutant": "1",
+   "survived": true
+  },
+  {
+   "orig": "2,633",
+   "mutant": "2,632",
+   "survived": false
+  },
+  {
+   "orig": "20",
+   "mutant": "25",
+   "survived": true
+  },
+  {
+   "orig": "0.10",
+   "mutant": "0.14",
+   "survived": true
+  },
+  {
+   "orig": "0.0000",
+   "mutant": "0.0001",
+   "survived": false
+  },
+  {
+   "orig": "48.50",
+   "mutant": "48.59",
+   "survived": false
+  },
+  {
+   "orig": "0.4",
+   "mutant": "0.7",
+   "survived": true
+  },
+  {
+   "orig": "4",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "0.08",
+   "mutant": "0.00",
+   "survived": true
+  },
+  {
+   "orig": "8",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "45.60",
+   "mutant": "45.63",
+   "survived": false
+  },
+  {
+   "orig": "1",
+   "mutant": "2",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "1.4",
+   "mutant": "1.9",
+   "survived": false
+  },
+  {
+   "orig": "48.50",
+   "mutant": "48.54",
+   "survived": false
+  },
+  {
+   "orig": "20",
+   "mutant": "29",
+   "survived": true
+  },
+  {
+   "orig": "0.2897",
+   "mutant": "0.2898",
+   "survived": false
+  },
+  {
+   "orig": "3",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "5",
+   "survived": true
+  },
+  {
+   "orig": "52.57",
+   "mutant": "52.51",
+   "survived": true
+  },
+  {
+   "orig": "913",
+   "mutant": "914",
+   "survived": false
+  },
+  {
+   "orig": "0.17",
+   "mutant": "0.10",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "0.08",
+   "mutant": "0.07",
+   "survived": false
+  },
+  {
+   "orig": "5",
+   "mutant": "8",
+   "survived": true
+  },
+  {
+   "orig": "8,526",
+   "mutant": "8,528",
+   "survived": true
+  },
+  {
+   "orig": "97.31",
+   "mutant": "97.33",
+   "survived": false
+  },
+  {
+   "orig": "2,633",
+   "mutant": "2,635",
+   "survived": false
+  },
+  {
+   "orig": "201",
+   "mutant": "203",
+   "survived": false
+  },
+  {
+   "orig": "0.9234",
+   "mutant": "0.9237",
+   "survived": false
+  },
+  {
+   "orig": "1,427",
+   "mutant": "1,426",
+   "survived": false
+  },
+  {
+   "orig": "223",
+   "mutant": "222",
+   "survived": false
+  },
+  {
+   "orig": "0.05",
+   "mutant": "0.01",
+   "survived": true
+  },
+  {
+   "orig": "0",
+   "mutant": "9",
+   "survived": true
+  },
+  {
+   "orig": "5",
+   "mutant": "3",
+   "survived": true
+  },
+  {
+   "orig": "34.501",
+   "mutant": "34.505",
+   "survived": false
+  },
+  {
+   "orig": "51",
+   "mutant": "59",
+   "survived": true
+  },
+  {
+   "orig": "27",
+   "mutant": "26",
+   "survived": true
+  },
+  {
+   "orig": "1.0",
+   "mutant": "1.3",
+   "survived": true
+  },
+  {
+   "orig": "27.3",
+   "mutant": "27.1",
+   "survived": false
+  },
+  {
+   "orig": "14.65",
+   "mutant": "14.64",
+   "survived": false
+  },
+  {
+   "orig": "100",
+   "mutant": "103",
+   "survived": false
+  },
+  {
+   "orig": "5",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "73.14",
+   "mutant": "73.11",
+   "survived": false
+  },
+  {
+   "orig": "0.5",
+   "mutant": "0.1",
+   "survived": true
+  },
+  {
+   "orig": "36.17",
+   "mutant": "36.14",
+   "survived": false
+  },
+  {
+   "orig": "6,207",
+   "mutant": "6,200",
+   "survived": false
+  },
+  {
+   "orig": "0",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "2",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "1",
+   "mutant": "7",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "4",
+   "survived": true
+  },
+  {
+   "orig": "17,991",
+   "mutant": "17,993",
+   "survived": false
+  },
+  {
+   "orig": "65.81",
+   "mutant": "65.89",
+   "survived": false
+  },
+  {
+   "orig": "37",
+   "mutant": "34",
+   "survived": true
+  },
+  {
+   "orig": "3",
+   "mutant": "0",
+   "survived": true
+  },
+  {
+   "orig": "1.464",
+   "mutant": "1.468",
+   "survived": false
+  },
+  {
+   "orig": "0.1",
+   "mutant": "0.2",
+   "survived": true
+  },
+  {
+   "orig": "22",
+   "mutant": "21",
+   "survived": true
+  }
+ ]
+}

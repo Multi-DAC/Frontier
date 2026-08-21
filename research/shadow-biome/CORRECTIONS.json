@@ -1,0 +1,36 @@
+{
+ "_what": "Supersessions applied to emitted JSON in PROSE and never written back to the artifact. The emitted *_RESULTS.json files are deliberately NOT mutated - that would destroy the provenance claim 'this is what the code produced'. This sidecar is the carrier the correction never had.",
+ "_why": "D202 prose-vs-JSON audit. The standing rule 'read numbers off the JSON, not off this prose' (PASS5_RESULTS.md:11, and the handoff for pass 6) is INVERTED for any value listed here: for these, the prose is the corrected carrier and the JSON is stale. A precedence rule with a permanent winner cannot express that. Check this file before quoting any emitted scalar.",
+ "_found_by": "PROSE_AUDIT_RESULTS.md, prose_audit.py, prereg f15863dc",
+ "corrections": [
+  {
+   "artifact": "PASS4_RESULTS.json",
+   "path": "/M2_bins/1.5-1.6",
+   "emitted": 634,
+   "corrected": 636,
+   "authority": "PASS4_RESULTS.md:36",
+   "reason": "The 2 alerts recorded in packaging_violations['elong<=1.6'] belong in the [1.5,1.6] bin. Note sum(M2_bins) == 17989 == n_usable - 2, which is the emitted (uncorrected) state.",
+   "propagates_to": ["/M2_R", "bin share of the last bin", "final bin-to-bin survival ratio"],
+   "material": false
+  },
+  {
+   "artifact": "PASS4_RESULTS.json",
+   "path": "/M2_R",
+   "emitted": 0.24078997341435623,
+   "corrected": 0.24154956323585264,
+   "authority": "PASS4_RESULTS.md:36,48,72",
+   "reason": "636/2633 rather than 634/2633.",
+   "material": false,
+   "note": "PASS4_RESULTS.md prints this as 0.2416 in three places. 0.241549... rounds to 0.2415. Immaterial to the M2 verdict (pre-registered R < 0.10; REFUTED either way) but the printed digit is wrong."
+  }
+ ],
+ "unnarrated_but_load_bearing": [
+  {
+   "artifact": "PASS5_RESULTS.json",
+   "path": "/sign_split",
+   "value": {"positive": 3694, "negative": 4834},
+   "issue": "Present in the emitted JSON, never quoted in PASS5_RESULTS.md. Pass 5's prose quotes ZTF's ALERT-level sign split (10273 t / 7718 f) and is silent on its own DETECTION-level split. This is the quantity pass 6's headline kill turned on - the manufactured +/- doubling - and it was in pass 5's own output the whole time.",
+   "class": "prose silent about JSON (distinct from prose contradicting JSON)"
+  }
+ ]
+}
