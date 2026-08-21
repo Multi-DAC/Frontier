@@ -1,0 +1,47 @@
+{
+  "Q1": {
+    "groups": {
+      "positive, paired": {
+        "n": 2329,
+        "frac_far": 0.5822241305281236
+      },
+      "positive, unpaired": {
+        "n": 1365,
+        "frac_far": 0.49157509157509155
+      },
+      "negative, paired": {
+        "n": 2329,
+        "frac_far": 0.49076857020180337
+      },
+      "negative, unpaired": {
+        "n": 2505,
+        "frac_far": 0.38562874251497004
+      }
+    },
+    "n_extra": 2505,
+    "frac_far_extra": 0.38562874251497004,
+    "frac_far_all": 0.4849906191369606,
+    "verdict": "accounts for the gap; B2 remains REFUTED (prereg sec.3)"
+  },
+  "Q2": {
+    "image": "ztf_20180601434769_000687_zr_c14_o_q1_scimrefdiffimg.fits.fz",
+    "docstring_image_present": true,
+    "same_process": [
+      1014,
+      1014,
+      1015,
+      1014,
+      1016,
+      1012
+    ],
+    "fresh_processes": [
+      1014,
+      1014,
+      1014,
+      1014
+    ],
+    "spread": 4,
+    "deterministic_here": false,
+    "status": "ONE IMAGE. Not a refutation of sec.9a yet -- a contradiction against it that is now measured instead of assumed."
+  }
+}

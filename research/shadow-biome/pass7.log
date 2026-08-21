@@ -1,0 +1,98 @@
+==============================================================================
+A  SINGLE-SIGN  (frozen PASS6_catalog.npz, minarea=5)
+==============================================================================
+  n = 8528   sign=+1: 3694   sign=-1: 4834   (GIVEN-1, seen before the prereg -- observation, NOT a held prediction)
+  frac_far  union   = 0.484991   (GIVEN-2 published 0.484991)
+  frac_far  +only   = 0.548728
+  frac_far  -only   = 0.436285
+  union -> +only drop = -6.374 pp
+  A1 +only below union 0.48499              -> REFUTED
+  A2 far side survives, +only >= 0.35       -> HELD
+  A3 DIRECTIONAL: -side more elongated by >=3.0 pp : -11.244 pp  -> REFUTED
+
+==============================================================================
+B  PAIR-COLLAPSE  (mutual NN <= 10.0 px, opposite sign, keep + geometry)
+==============================================================================
+  detections with no neighbour <= 10 px : 3391
+  had a neighbour but not mutual              : 381
+  mutual pairs, SAME sign     (kept whole)    : 49
+  mutual pairs, OPPOSITE sign (collapsed)     : 2329
+  n_collapsed = 6199   frac_far = 0.482820
+  B1 collapsed below union 0.48499          -> HELD
+  B2 |collapsed - +only| <= 4.0 pp : 6.591 pp  -> REFUTED
+  B3 CONTROL identity n_coll == n - n_pairs -> HOLDS   (may NOT be counted in any held-total, prereg sec.3)
+  ** B2 REFUTED: A1/A2 and B1 are UNINTERPRETABLE (prereg sec.3) **
+
+==============================================================================
+A4 ladder + C  residual misses at minarea=2  (re-extraction, 20 images)
+==============================================================================
+    526_zr_c01_o_q1_scimre done
+    577_zr_c02_o_q4_scimre done
+    576_zr_c05_o_q2_scimre done
+    525_zr_c06_o_q4_scimre done
+    524_zr_c08_o_q2_scimre done
+    575_zr_c10_o_q1_scimre done
+    672_zr_c11_o_q4_scimre done
+    531_zr_c05_o_q4_scimre done
+    580_zr_c05_o_q4_scimre done
+    628_zr_c11_o_q1_scimre done
+    533_zr_c09_o_q2_scimre done
+    631_zr_c12_o_q3_scimre done
+    482_zr_c09_o_q1_scimre done
+    590_zr_c13_o_q4_scimre done
+    687_zr_c14_o_q1_scimre done
+    591_zg_c12_o_q1_scimre done
+    639_zg_c15_o_q3_scimre done
+    539_zg_c09_o_q4_scimre done
+    640_zg_c02_o_q3_scimre done
+    687_zg_c07_o_q2_scimre done
+
+   minarea  ff_union   ff_plus   drop_pp
+         2    0.5893    0.6331    -4.383
+         3    0.5070    0.5583    -5.133
+         5    0.4845    0.5479    -6.337
+         8    0.4830    0.5647    -8.172
+        12    0.5148    0.6052    -9.031
+  A4 span of the drop across the ladder : 4.648 pp  -> HELD (<=5.0)
+
+  minarea=2: 376 alerts, 275 recovered (73.14%), 101 residual
+    RECOVERED                    275
+    UNEXTRACTED_DESPITE_FLUX      68
+    BELOW_THRESHOLD               31
+    NEAR_MISS_RADIUS               2
+  C1 recovery within 2.0 pp of 0.7314: +0.000 pp  -> HELD
+  C2 largest residual class = UNEXTRACTED_DESPITE_FLUX (is UNEXTRACTED_DESPITE_FLUX)  -> HELD
+  C3 DIRECTIONAL: d_mag = +1.124 mag (need >=1.0)  -> HELD
+  C4 residual spread across 20/20 frames (need >=12)  -> HELD
+
+==============================================================================
+R2  UNEXERCISED-PRECONDITION GAUGE
+==============================================================================
+  A_sign_plus_selection              in=   8528 kept=   3694 rejected=   4834
+  A_wall_far_minarea5                in=   8528 kept=   4136 rejected=   4392
+  B_mutual_nn                        in=   5137 kept=   4756 rejected=    381
+  B_opposite_sign                    in=   2378 kept=   2329 rejected=     49
+  B_within_pair_radius               in=   8528 kept=   5137 rejected=   3391
+  C_alert_has_position               in=    376 kept=    376 rejected=      0  <== REJECTED NOTHING
+  reextract_b_positive_minarea12     in=   3100 kept=   3100 rejected=      0  <== REJECTED NOTHING
+  reextract_b_positive_minarea2      in=  14202 kept=  14202 rejected=      0  <== REJECTED NOTHING
+  reextract_b_positive_minarea3      in=  11649 kept=  11649 rejected=      0  <== REJECTED NOTHING
+  reextract_b_positive_minarea5      in=   8526 kept=   8526 rejected=      0  <== REJECTED NOTHING
+  reextract_b_positive_minarea8      in=   5429 kept=   5429 rejected=      0  <== REJECTED NOTHING
+
+  ** R3 WARNING: 6 precondition(s) rejected NOTHING. A precondition that has never rejected anything is not observably a precondition. **
+     - C_alert_has_position
+     - reextract_b_positive_minarea12
+     - reextract_b_positive_minarea2
+     - reextract_b_positive_minarea3
+     - reextract_b_positive_minarea5
+     - reextract_b_positive_minarea8
+
+  I1 an instrument defect surfaced         -> HELD
+  I2 R2's gauge surfaced it, not my eye   -> HELD
+
+==============================================================================
+=== 9/12 pre-registered predictions HELD (B3 excluded: identity control, prereg sec.3) ===
+    B3 identity: HOLDS
+wrote PASS7_RESULTS.json + PASS7_MISSES.json
+R1 satisfied: a verdict key exists for every registered prediction letter

@@ -1,0 +1,215 @@
+{
+  "prereg": "PASS7_PREDICTIONS.md",
+  "prereg_commit": "da25f0c",
+  "A": {
+    "n": 8528,
+    "n_plus": 3694,
+    "n_minus": 4834,
+    "frac_far_union": 0.4849906191369606,
+    "frac_far_plus": 0.5487276664861939,
+    "frac_far_minus": 0.43628465039304926,
+    "drop_pp": -6.373704734923324,
+    "a3_gap_pp": -11.24430160931446
+  },
+  "B": {
+    "pair_radius": 10.0,
+    "n_no_neighbour": 3391,
+    "n_not_mutual": 381,
+    "n_mutual_same": 49,
+    "n_mutual_opp": 2329,
+    "n_collapsed": 6199,
+    "frac_far_collapsed": 0.4828198096467172,
+    "b2_gap_pp": 6.590785683947664
+  },
+  "A4": {
+    "ladder": {
+      "2": {
+        "n_p": 6299,
+        "far_p": 3988,
+        "n_m": 7903,
+        "far_m": 4381,
+        "frac_far_union": 0.5892831995493593,
+        "frac_far_plus": 0.6331163676774091,
+        "drop_pp": -4.383316812804983
+      },
+      "3": {
+        "n_p": 5126,
+        "far_p": 2862,
+        "n_m": 6523,
+        "far_m": 3044,
+        "frac_far_union": 0.5069963086960254,
+        "frac_far_plus": 0.5583300819352321,
+        "drop_pp": -5.133377323920674
+      },
+      "5": {
+        "n_p": 3696,
+        "far_p": 2025,
+        "n_m": 4830,
+        "far_m": 2106,
+        "frac_far_union": 0.48451794510907814,
+        "frac_far_plus": 0.5478896103896104,
+        "drop_pp": -6.337166528053223
+      },
+      "8": {
+        "n_p": 2350,
+        "far_p": 1327,
+        "n_m": 3079,
+        "far_m": 1295,
+        "frac_far_union": 0.4829618714312028,
+        "frac_far_plus": 0.5646808510638298,
+        "drop_pp": -8.171897963262703
+      },
+      "12": {
+        "n_p": 1398,
+        "far_p": 846,
+        "n_m": 1702,
+        "far_m": 750,
+        "frac_far_union": 0.5148387096774194,
+        "frac_far_plus": 0.6051502145922747,
+        "drop_pp": -9.03115049148553
+      }
+    },
+    "drops_pp": {
+      "2": -4.383316812804983,
+      "3": -5.133377323920674,
+      "5": -6.337166528053223,
+      "8": -8.171897963262703,
+      "12": -9.03115049148553
+    },
+    "span_pp": 4.647833678680547
+  },
+  "C": {
+    "minarea": 2,
+    "n_alerts": 376,
+    "n_recovered": 275,
+    "recovery": 0.7313829787234043,
+    "classes": {
+      "RECOVERED": 275,
+      "BELOW_THRESHOLD": 31,
+      "UNEXTRACTED_DESPITE_FLUX": 68,
+      "NEAR_MISS_RADIUS": 2
+    },
+    "largest_residual_class": "UNEXTRACTED_DESPITE_FLUX",
+    "median_magpsf_recovered": 18.26667594909668,
+    "median_magpsf_unrecovered": 19.390199661254883,
+    "delta_mag": 1.1235237121582031,
+    "frames_with_residual": 20,
+    "n_frames": 20
+  },
+  "I": {
+    "unexercised": [
+      "C_alert_has_position",
+      "reextract_b_positive_minarea12",
+      "reextract_b_positive_minarea2",
+      "reextract_b_positive_minarea3",
+      "reextract_b_positive_minarea5",
+      "reextract_b_positive_minarea8"
+    ],
+    "rejection_table": {
+      "A_sign_plus_selection": {
+        "n_in": 8528,
+        "n_kept": 3694,
+        "n_rejected": 4834,
+        "note": "7(a): keep sign=+1 only. measure_pass6.py:84-95 gives each sign its own background from its own array, so this subset IS a +data-only extraction."
+      },
+      "A_wall_far_minarea5": {
+        "n_in": 8528,
+        "n_kept": 4136,
+        "n_rejected": 4392,
+        "note": "elong > 1.6, ZTF's own packaging cut, on the frozen catalogue"
+      },
+      "B_within_pair_radius": {
+        "n_in": 8528,
+        "n_kept": 5137,
+        "n_rejected": 3391,
+        "note": "has a nearest neighbour <= 10.0 px"
+      },
+      "B_mutual_nn": {
+        "n_in": 5137,
+        "n_kept": 4756,
+        "n_rejected": 381,
+        "note": "mutual nearest-neighbour requirement"
+      },
+      "B_opposite_sign": {
+        "n_in": 2378,
+        "n_kept": 2329,
+        "n_rejected": 49,
+        "note": "mutual pairs must be OPPOSITE sign to be a dipole"
+      },
+      "reextract_b_positive_minarea2": {
+        "n_in": 14202,
+        "n_kept": 14202,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "reextract_b_positive_minarea3": {
+        "n_in": 11649,
+        "n_kept": 11649,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "reextract_b_positive_minarea5": {
+        "n_in": 8526,
+        "n_kept": 8526,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "reextract_b_positive_minarea8": {
+        "n_in": 5429,
+        "n_kept": 5429,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "reextract_b_positive_minarea12": {
+        "n_in": 3100,
+        "n_kept": 3100,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "C_alert_has_position": {
+        "n_in": 376,
+        "n_kept": 376,
+        "n_rejected": 0,
+        "note": "alert carries x/y in PASS5_alert_index.json"
+      }
+    },
+    "gauge_surfaced_something": true,
+    "provisional": true,
+    "note": "PROVISIONAL ON THIS RUN. I1/I2 are set from the gauge's own output only. If the gauge found nothing and I later find a defect BY EYE, that flips I1 to HELD and I2 to REFUTED, and it must be entered as a dated amendment rather than by editing these keys -- the by-eye find is exactly what I2 predicts against, so it may not be laundered into agreement."
+  },
+  "verdicts": {
+    "A1": false,
+    "A2": true,
+    "A3": false,
+    "A4": true,
+    "B1": true,
+    "B2": false,
+    "B3": true,
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": true,
+    "I1": true,
+    "I2": true
+  },
+  "R1": {
+    "registered": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "B1",
+      "B2",
+      "B3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "I1",
+      "I2"
+    ],
+    "missing": [],
+    "extra": [],
+    "ok": true
+  }
+}
