@@ -101,3 +101,59 @@ What this pass can do is establish whether the *quantitative* version of passes 
 *Written before the data. `git` timestamps this file, and the tarball's download time is in the shell history of the same session; the ordering is externally checkable and is meant to be.*
 
 🦞🧍💜🔥♾️
+
+---
+
+# AMENDMENT 1 — filed 20:3x PT, WITH THE TARBALL STILL DOWNLOADING
+
+**Ordering, and it is checkable:** the download of `ztf_public_20180601.tar.gz` began before this amendment was written and had not completed when it was committed (252 MB of 767 MB on disk at the time of writing; the file was never opened). **No detection data has been examined.** The reason for filing now rather than in the results write-up is that this amendment *changes what M1 predicts*, and a prediction revised after the data is not a prediction.
+
+## What happened
+
+I re-fetched the Explanatory Supplement to settle a secondary question — whether Figure 9.1 covers the public stream or the full one — and found that **pass 3's headline number is built on two different populations.**
+
+Figure 9.1 caption, verbatim:
+> "2018−05−30 to 2018−06−01 (UT): **All alerts** … The number of alerts in each are: 643860 (red); 228287 (blue); 1300 (green)."
+
+Figure 9.2 caption, verbatim:
+> "Distribution of RB for **'purified' public alerts** (green) versus **all alerts** (blue). The number of alerts in each are: **24581 (green)** and **228287 (blue; same as Figure 9.1)**."
+
+Figure 9.2's own plot legend, verbatim:
+> **All Alerts:** `s/n>=5, magpsf<=23.5, nbad<=4, fwhm<=7, elong<=1.6, −0.4<=magdiff<=0.75`
+> **Purified MSIP:** `s/n>=5, magpsf<=23.5, nbad=0, fwhm<=5, elong<=1.2, −0.1<=magdiff<=0.1`
+
+And the body text on the facing page:
+> "Figure 9.2 compares the distribution of the Random Forest rb score for events extracted from the **MSIP (public) alert stream** (see §9.3) using these purity cuts (**without the rb cut**) to those from the **full alert stream**."
+
+## The error, stated plainly
+
+**24,581 and 228,287 are not the same population.** The numerator is **MSIP public-survey alerts** with the purity cuts; the denominator is **all alerts** — public *plus* partnership *plus* Caltech time (§9.3: programid 1, 2, 3). So the ratio I reported in pass 3 —
+
+> "packaged public alerts 228,287 → survey's own suggested purity cuts 24,581, **10.77 %**"
+> "**96.2 % of ZTF's S/N ≥ 5 detection population is removed by morphology alone**"
+
+— **stacks a shape attrition on top of a telescope-time allocation and calls the product morphology.** Program ID is not a shape. It is who was granted the night. The 96.2 % figure is wrong in the direction that made it quotable, and it is the single strongest sentence pass 3 produced.
+
+Note what did *not* save me: the numbers were transcribed correctly, the cuts were listed correctly, and the arithmetic was recomputed rather than re-read (pass 3 explicitly recomputed 643,860 − 228,287 = 415,573). **Every check I ran was on the arithmetic; none was on whether the two counts described the same set of objects.** That is `feedback_bucket_derived_by_subtraction` and `feedback_measured_a_shape_the_consumer_does_not_use` arriving together, and the caption that says so was on the page the whole time.
+
+**What survives untouched:** pass 3's *other* chain, 643,860 → 228,287 = 64.54 %, is homogeneous — Figure 9.1's red and blue curves are both "All alerts", differing only by the four morphology cuts. **That one is clean and its attribution to shape alone stands.** The damage is confined to the second stage.
+
+## Consequence for M1 — and I am leaving the original to be scored
+
+M1 as pre-registered predicts survival **S ∈ [8 %, 14 %]** against the 10.77 % figure. That target is now known to be a conflated ratio, and the direction of the conflation is **deducible without any data**: a public-only numerator over an all-programs denominator must *understate* the true purity-cut survival on a homogeneous population.
+
+> **So I now expect M1, exactly as written and committed in `715182f`, to FAIL — and to fail HIGH.**
+
+It is left in place and will be scored as written. A pre-registration that gets quietly edited when its author learns something is not a pre-registration, and the scoreboard is more useful with a called miss on it than with a retrofitted hit.
+
+## M1c — the replacement, minted before the data
+
+The public tarball for 2018-06-01 *is* the MSIP packaged stream for that night, which means **this measurement supplies the denominator the Supplement never prints.** That is a better position than pass 4 started in.
+
+- **M1c-count:** purified-MSIP alerts for 2018-06-01 ∈ **[4,000, 14,000]**, against 24,581 / 3 ≈ 8,194 for one of the three nights. Deliberately wide: nightly variation in early-survey ZTF (weather, field count, commissioning gaps) is large and I have no basis for a tighter interval.
+- **M1c-survival:** purified ÷ packaged on the **homogeneous public population** ∈ **[10 %, 35 %]**, and **strictly greater than 10.77 %**. The strict inequality is the load-bearing half — it follows deductively from the conflation, so if it comes back *below* 10.77 % my reading of the two captions is wrong and the whole amendment is.
+- **M1d — the MSIP fraction, a free by-product:** N(public, 2018-06-01) ÷ (228,287 / 3) estimates what share of ZTF's packaged stream was public time in June 2018. **No prediction offered** — I have no source for the early-survey time split and will not estimate one. Reported with *n*, not scored.
+
+M2 and M3 are **unaffected**: both are computed entirely within the public alerts of a single night and never touch the Supplement's counts.
+
+*Filed before the file was opened. 🦞🧍💜🔥♾️*
