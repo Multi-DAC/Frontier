@@ -1,0 +1,90 @@
+M = 1687 distinct difference images; step = 70; chosen = 24
+  [ 1/24]   7.75 MB  ztf_20180601167662_000526_zr_c01_o_q1_scimrefdiffimg.fits
+  [ 2/24]   7.42 MB  ztf_20180601168113_000577_zr_c02_o_q4_scimrefdiffimg.fits
+  [ 3/24]   7.32 MB  ztf_20180601169954_000576_zr_c05_o_q2_scimrefdiffimg.fits
+  [ 4/24]   7.25 MB  ztf_20180601170417_000525_zr_c06_o_q4_scimrefdiffimg.fits
+  [ 5/24]   7.53 MB  ztf_20180601171319_000524_zr_c08_o_q2_scimrefdiffimg.fits
+  [ 6/24]   7.35 MB  ztf_20180601171794_000575_zr_c10_o_q1_scimrefdiffimg.fits
+  [ 7/24]   7.07 MB  ztf_20180601174595_000672_zr_c11_o_q4_scimrefdiffimg.fits
+  [ 8/24]   8.44 MB  ztf_20180601298993_000531_zr_c05_o_q4_scimrefdiffimg.fits
+  [ 9/24] DOWNLOAD FAILED ztf_20180601299468_000582_zr_c14_o_q3_scimrefdiffimg.fits: HTTPError
+  [10/24]   8.18 MB  ztf_20180601300394_000580_zr_c05_o_q4_scimrefdiffimg.fits
+  [11/24]   7.72 MB  ztf_20180601300856_000628_zr_c11_o_q1_scimrefdiffimg.fits
+  [12/24]   8.28 MB  ztf_20180601315556_000533_zr_c09_o_q2_scimrefdiffimg.fits
+  [13/24] DOWNLOAD FAILED ztf_20180601316539_000583_zr_c16_o_q2_scimrefdiffimg.fits: HTTPError
+  [14/24] DOWNLOAD FAILED ztf_20180601317975_000530_zr_c02_o_q1_scimrefdiffimg.fits: HTTPError
+  [15/24]   8.04 MB  ztf_20180601318438_000631_zr_c12_o_q3_scimrefdiffimg.fits
+  [16/24]   8.67 MB  ztf_20180601336968_000482_zr_c09_o_q1_scimrefdiffimg.fits
+  [17/24] DOWNLOAD FAILED ztf_20180601338843_000632_zr_c10_o_q2_scimrefdiffimg.fits: HTTPError
+  [18/24]   8.84 MB  ztf_20180601402257_000590_zr_c13_o_q4_scimrefdiffimg.fits
+  [19/24]   7.51 MB  ztf_20180601434769_000687_zr_c14_o_q1_scimrefdiffimg.fits
+  [20/24]   8.77 MB  ztf_20180601441875_000591_zg_c12_o_q1_scimrefdiffimg.fits
+  [21/24]   8.59 MB  ztf_20180601442338_000639_zg_c15_o_q3_scimrefdiffimg.fits
+  [22/24]   8.96 MB  ztf_20180601443252_000539_zg_c09_o_q4_scimrefdiffimg.fits
+  [23/24]   8.62 MB  ztf_20180601457928_000640_zg_c02_o_q3_scimrefdiffimg.fits
+  [24/24]   8.62 MB  ztf_20180601475926_000687_zg_c07_o_q2_scimrefdiffimg.fits
+download: 20/24 images, 160.9 MB, 314.8 s
+    ztf_20180601167662_000526_zr_c01_o_q1_scimre  det=   190  alerts=   9  rec=   3
+    ztf_20180601168113_000577_zr_c02_o_q4_scimre  det=   243  alerts=  17  rec=   3
+    ztf_20180601169954_000576_zr_c05_o_q2_scimre  det=   174  alerts=   9  rec=   5
+    ztf_20180601170417_000525_zr_c06_o_q4_scimre  det=   189  alerts=   6  rec=   0
+    ztf_20180601171319_000524_zr_c08_o_q2_scimre  det=   273  alerts= 140  rec= 104
+    ztf_20180601171794_000575_zr_c10_o_q1_scimre  det=   141  alerts=   7  rec=   3
+    ztf_20180601174595_000672_zr_c11_o_q4_scimre  det=   164  alerts=   2  rec=   1
+    ztf_20180601298993_000531_zr_c05_o_q4_scimre  det=   244  alerts=   4  rec=   2
+    ztf_20180601300394_000580_zr_c05_o_q4_scimre  det=   176  alerts=   3  rec=   1
+    ztf_20180601300856_000628_zr_c11_o_q1_scimre  det=   107  alerts=   1  rec=   0
+    ztf_20180601315556_000533_zr_c09_o_q2_scimre  det=   382  alerts=   4  rec=   1
+    ztf_20180601318438_000631_zr_c12_o_q3_scimre  det=   307  alerts=   4  rec=   0
+    ztf_20180601336968_000482_zr_c09_o_q1_scimre  det=   621  alerts=   3  rec=   0
+    ztf_20180601402257_000590_zr_c13_o_q4_scimre  det=  1033  alerts=  56  rec=  37
+    ztf_20180601434769_000687_zr_c14_o_q1_scimre  det=  1013  alerts=  14  rec=   8
+    ztf_20180601441875_000591_zg_c12_o_q1_scimre  det=   303  alerts=  13  rec=   8
+    ztf_20180601442338_000639_zg_c15_o_q3_scimre  det=  1155  alerts=  50  rec=  34
+    ztf_20180601443252_000539_zg_c09_o_q4_scimre  det=   289  alerts=  11  rec=   5
+    ztf_20180601457928_000640_zg_c02_o_q3_scimre  det=   784  alerts=  19  rec=   7
+    ztf_20180601475926_000687_zg_c07_o_q2_scimre  det=   740  alerts=   4  rec=   1
+
+extraction: 7.7 s   total detections n = 8528
+
+--- CONTROL (decides whether anything below is interpretable) ---
+  alerts on these images      : n = 376
+  recovered within 2.0 px      : 223  -> 59.31%
+  median nearest-neighbour distance, 0-indexed : 1.464 px
+  median nearest-neighbour distance, 1-indexed : 0.243 px
+  median |delta elong| on matched : 0.0799  (n = 223)
+  PRE-COMMITTED KILL CONDITION -> PASS, results interpretable
+
+--- ELONGATION DISTRIBUTION, NO SHAPE CUT ---
+  elong [ 1.00,  1.10) : n =      434  ( 5.089% of n=8528)
+  elong [ 1.10,  1.20) : n =      626  ( 7.341% of n=8528)
+  elong [ 1.20,  1.30) : n =      752  ( 8.818% of n=8528)
+  elong [ 1.30,  1.40) : n =      751  ( 8.806% of n=8528)
+  elong [ 1.40,  1.50) : n =      786  ( 9.217% of n=8528)
+  elong [ 1.50,  1.60) : n =     1043  (12.230% of n=8528)
+  elong [ 1.60,  1.70) : n =      926  (10.858% of n=8528)
+  elong [ 1.70,  1.80) : n =      545  ( 6.391% of n=8528)
+  elong [ 1.80,  2.00) : n =      831  ( 9.744% of n=8528)
+  elong [ 2.00,  2.50) : n =     1094  (12.828% of n=8528)
+  elong [ 2.50,  3.00) : n =      413  ( 4.843% of n=8528)
+  elong [ 3.00,  5.00) : n =      254  ( 2.978% of n=8528)
+  elong [ 5.00, 10.00) : n =       37  ( 0.434% of n=8528)
+  elong [10.00,   inf) : n =       36  ( 0.422% of n=8528)
+
+  fraction with elong > 1.6 : 4136 / 8528 = 48.499%
+  n[1.6,1.7)/n[1.5,1.6) = 0.8878
+  R' = n[1.5,1.6)/n[1.2,1.3) = 1.3870   (pass 4 packaged stream: 0.2408)
+  median peak, elong>1.6 : 493.7259 (n=4136)
+  median peak, elong<=1.6: 569.3503 (n=4392)
+  sign split: +3694 / -4834
+
+--- PRE-REGISTERED PREDICTIONS, SCORED ---
+  P1_recovery_ge_80pct         REFUTED  (59.31%)
+  P2_median_delong_lt_0.10     HELD     (0.0799)
+  P3_frac_past_15_to_45pct     REFUTED  (48.499%)
+  P4_step_ratio_gt_0.5         HELD     (0.8878)
+  P5_Rprime_gt_0.241           HELD     (1.3870)
+  P6_past_is_brighter          REFUTED  (493.7259 vs 569.3503)
+  P7_cost                      HELD     (160.9 MB / 7.7 s)
+
+wrote PASS5_RESULTS.json
