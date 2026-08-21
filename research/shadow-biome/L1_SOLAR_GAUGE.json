@@ -1,0 +1,143 @@
+{
+ "written_utc": "2026-08-21T20:19:32+00:00",
+ "library": "astral 3.2",
+ "all_pass": true,
+ "negative_control": {
+  "subject": "the D1 hand-rolled NOAA routine, verbatim (J2000 half-day double-counted)",
+  "gauges_that_fire": [
+   "G2_equation_of_time"
+  ],
+  "gauges_that_pass_on_known_bad": [
+   "G1_ordering",
+   "G3_seasonal",
+   "G4_latitude_amplitude",
+   "G5_longitude"
+  ],
+  "detection_ratio": "1/5",
+  "per_gauge": {
+   "G1_ordering": true,
+   "G2_equation_of_time": false,
+   "G3_seasonal": true,
+   "G4_latitude_amplitude": true,
+   "G5_longitude": true
+  },
+  "diagnostics": {
+   "noon_dev_max_min": 729.5,
+   "lon_offset_min": 19.6
+  },
+  "reading": "ONE gauge of five is load-bearing against this fault. A half-day offset moves all three anchors together, so G1's ordering survives it and G3/G4's day LENGTHS are differences the offset cancels out of. The count of gauges is not the strength of the gauge.",
+  "why_it_mattered": "T4 is directional -- dawn/dusk vs noon. A 12 h offset swaps its arms and returns a clean inverted result with no error anywhere."
+ },
+ "gauges": {
+  "G1_ordering": {
+   "claim": "sunrise < solar_noon < sunset for every radar-date",
+   "pass": true,
+   "kills": "the J2000 half-day error, and the UTC day-wrap that stamps a 01:21Z sunset with the previous calendar date"
+  },
+  "G2_equation_of_time": {
+   "claim": "|solar noon - local MEAN solar noon| < 20 min at all dates",
+   "measured_max_min": 14.48,
+   "pass": true,
+   "kills": "an arbitrary constant offset; the residual it leaves is the equation of time, which peaks near +14 min in mid-October -- and mid-October is where the maximum lands"
+  },
+  "G3_seasonal": {
+   "claim": "summer day length > winter day length at BOTH radars",
+   "pass": true,
+   "kills": "a declination sign error"
+  },
+  "G4_latitude_amplitude": {
+   "claim": "the higher-latitude radar (KDDC 37.8N) is more extreme in BOTH directions: longer summer day AND shorter winter day than KHGX (29.5N)",
+   "pass": true,
+   "kills": "latitude entering with the wrong sign or being ignored -- and unlike G3 it cannot be satisfied by getting one season right"
+  },
+  "G5_longitude": {
+   "claim": "UTC solar-noon offset between the two sites equals their longitude difference",
+   "predicted_min": 19.56,
+   "measured_min": 19.55,
+   "pass": true,
+   "kills": "longitude dropped entirely. NOTE: it does NOT catch D1 -- the broken routine scores 19.6 min here too. My original tell ('the radars landed 17 s apart, so longitude is being dropped') was a wrong diagnosis of a real symptom."
+  }
+ },
+ "anchors": [
+  {
+   "radar": "KHGX",
+   "season": "autumn",
+   "date": "2024-10-16",
+   "sunrise_utc": "2024-10-16T12:23:00+00:00",
+   "solar_noon_utc": "2024-10-16T18:05:51+00:00",
+   "sunset_utc": "2024-10-16T23:47:58+00:00",
+   "day_length_h": 11.416,
+   "noon_dev_from_mean_solar_min": 14.47
+  },
+  {
+   "radar": "KHGX",
+   "season": "winter",
+   "date": "2025-01-15",
+   "sunrise_utc": "2025-01-15T13:16:00+00:00",
+   "solar_noon_utc": "2025-01-15T18:29:38+00:00",
+   "sunset_utc": "2025-01-15T23:44:00+00:00",
+   "day_length_h": 10.467,
+   "noon_dev_from_mean_solar_min": 9.32
+  },
+  {
+   "radar": "KHGX",
+   "season": "spring",
+   "date": "2025-04-16",
+   "sunrise_utc": "2025-04-16T11:52:43+00:00",
+   "solar_noon_utc": "2025-04-16T18:20:09+00:00",
+   "sunset_utc": "2025-04-17T00:47:05+00:00",
+   "day_length_h": 12.906,
+   "noon_dev_from_mean_solar_min": 0.17
+  },
+  {
+   "radar": "KHGX",
+   "season": "summer",
+   "date": "2025-07-16",
+   "sunrise_utc": "2025-07-16T11:31:36+00:00",
+   "solar_noon_utc": "2025-07-16T18:26:24+00:00",
+   "sunset_utc": "2025-07-17T01:21:26+00:00",
+   "day_length_h": 13.831,
+   "noon_dev_from_mean_solar_min": 6.08
+  },
+  {
+   "radar": "KDDC",
+   "season": "autumn",
+   "date": "2024-10-16",
+   "sunrise_utc": "2024-10-16T12:50:00+00:00",
+   "solar_noon_utc": "2024-10-16T18:25:24+00:00",
+   "sunset_utc": "2024-10-16T23:59:57+00:00",
+   "day_length_h": 11.166,
+   "noon_dev_from_mean_solar_min": 14.48
+  },
+  {
+   "radar": "KDDC",
+   "season": "winter",
+   "date": "2025-01-15",
+   "sunrise_utc": "2025-01-15T13:54:09+00:00",
+   "solar_noon_utc": "2025-01-15T18:49:11+00:00",
+   "sunset_utc": "2025-01-15T23:45:04+00:00",
+   "day_length_h": 9.849,
+   "noon_dev_from_mean_solar_min": 9.31
+  },
+  {
+   "radar": "KDDC",
+   "season": "spring",
+   "date": "2025-04-16",
+   "sunrise_utc": "2025-04-16T12:03:04+00:00",
+   "solar_noon_utc": "2025-04-16T18:39:43+00:00",
+   "sunset_utc": "2025-04-17T01:15:42+00:00",
+   "day_length_h": 13.211,
+   "noon_dev_from_mean_solar_min": 0.16
+  },
+  {
+   "radar": "KDDC",
+   "season": "summer",
+   "date": "2025-07-16",
+   "sunrise_utc": "2025-07-16T11:31:17+00:00",
+   "solar_noon_utc": "2025-07-16T18:45:57+00:00",
+   "sunset_utc": "2025-07-17T02:00:56+00:00",
+   "day_length_h": 14.494,
+   "noon_dev_from_mean_solar_min": 6.07
+  }
+ ]
+}
