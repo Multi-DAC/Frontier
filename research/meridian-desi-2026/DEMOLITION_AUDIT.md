@@ -1,8 +1,21 @@
-# Meridian — demolition audit, pass 1
+# Meridian — demolition audit
 
-**Opened Day 201 / 2026-08-20, on Clayton's ruling** (Telegram, 16:1x): proceed with the
-audit-then-ride sequence; the blank drawing board *with new axioms* is parked until this is
-done. This file is step (a) of that sequence.
+**Passes 1–4, all Day 201 / 2026-08-20.** *(This heading read "pass 1" through three
+further passes — the file's own title was the stalest line in it, which is the exact defect
+D-7 catalogues in the monograph. Fixed pass 4; a title is a citation site too.)*
+
+**Opened on Clayton's ruling** (Telegram, 16:1x): proceed with the audit-then-ride
+sequence; the blank drawing board *with new axioms* is parked until this is done. This file
+is step (a) of that sequence.
+
+**WHERE IT STANDS AFTER PASS 4 — read this before the findings.** The column *"derived,
+zero free parameters, and different from ΛCDM"* is **empty**. It had one entry, `c_s ∈
+[12c,15c]`; pass 4 struck it, because the prediction is unmeasurable in the entire
+observable universe (**D-13**, 0.037σ all-sky). Exactly one candidate is left to refill it —
+the LISA stochastic GW background from the RS phase transition — and it is **gated on a
+bounce action the monograph states twice was never computed** (**D-16**). That calculation,
+not any of the editorial repairs, is now the action that decides the program (next action
+**#9**).
 
 **Purpose.** Partition every registered claim of the Meridian monograph into:
 
@@ -381,13 +394,269 @@ universal, and I would not have found the exception if I had stopped at the firs
 
 ---
 
+# Pass 4 — settling D-3, the last candidate for *derived and different* (next action #2)
+
+**Sources, all first-hand:** `chapter5_sound_speed.tex` (691 lines: §§5-signatures,
+5-clustering, 5-isw, 5-perturbation-growth, 5-comparison, 5-landscape,
+5-superluminal-comparison, 5-discriminating, 5-detection, 5-direct,
+5-detection-summary, 5-conclusions) · `appendix_prediction_registry.tex:106–110, :229` ·
+`appendix_computations.tex:39, :95, :425, :489, :547, :565, :801, :817, :1132–1134` ·
+`meridian_monograph.tex:156, :165`. **All numbers reproduced by `cs_discriminability.py`
+in this directory** (output committed as `cs_discriminability_output.txt`).
+
+**Method note — the controls did the work again.** Two positive controls, and both
+failed on the first run, which is the only reason the rest is trustworthy:
+
+- **Control 1** (w → −1 must reproduce the ΛCDM growth factor) came back 5% off, and
+  when I "fixed" the initial condition it got *worse* — 33% off. That is the signature
+  of a mis-specified gauge, not a mis-specified IC: `D(a)` tracks the **comoving**-gauge
+  density contrast and I was grading the **Newtonian**-gauge one near horizon crossing.
+  Fixed by comparing `Δ_m = δ_m + 3(Hc/k²)θ_m` between two epochs both deep inside the
+  horizon → 0.991, PASS. *The control moving when I touched something unrelated is what
+  exposed it.*
+- **Control 2** (the signal must be large where physics says it is) I first placed at
+  `k = 0.01 h/Mpc` — **30× inside both sound horizons, where the two hypotheses agree**.
+  A control sited where right and wrong give the same answer tests nothing. Moved to
+  `k = 1e-4 h/Mpc`, between the two sound horizons → 30% effect, PASS.
+
+**And the controls changed the physics I was willing to claim.** Control 2 surfaced that
+the fluid equations at `c_s² = 216` are *anti-damped* — the friction coefficient
+`−(1−3c_s²)` is **+647** — so I do not trust a direct superluminal integration. The whole
+of Leg 2 was therefore rebuilt as a **bound**: compare `c_s = c` (the most strongly
+clustering subluminal alternative) against **exactly smooth** DE (the `c_s → ∞` cuscuton
+limit, which is Meridian's own S7). Meridian's `c_s = 14.7c` lies between them and much
+nearer the smooth end, so that difference is a strict *upper bound* on any
+`14.7c` vs `c` signal. Bounding costs nothing here and removes the numerics I distrust.
+
+## Finding D-13 — the `c_s` prediction is unmeasurable **in the entire observable
+## universe**. Chapter 5 says so itself, in bold; the registry and the front matter
+## do not carry it. `CHECKED`
+
+**First, credit, because it inverts the finding.** `chapter5_sound_speed.tex` §5-direct
+already states the conclusion, in the author's own bold:
+
+> ***"Direct detection of dark energy perturbations at c_s = 15c is not feasible with any
+> planned experiment."***
+
+and Table 5.4 lists the channel as `DE clustering | δ_DE/δ_m | 10⁻⁷–10⁻⁹ | Far future |
+**No**`. Chapter 5 is the most careful chapter in the book. It computes the Jeans length
+(`λ_J ~ 50,000–65,000 Mpc`, eq 5-18), notes it *exceeds the observable universe*, and
+enumerates its comparison set with citations. **D-3's suspicion was right and it was not
+a discovery — the book got there first.**
+
+**Cross-check against the book's own analytic result, before adding anything to it.**
+Chapter 5's eq (5-22) gives `δ_DE/δ_m ≈ −[3(1+w)/2]/(c_s²k²/(aH)²)` quasi-statically.
+Against my integration, at `w = −0.99`, `c_s = c`:
+
+| `k` [h/Mpc] | `k/aH` | this code | eq (5-22) | ratio |
+|---|---|---|---|---|
+| 0.01 | 30 | 5.31e-6 | 1.67e-5 | **3.14** |
+| 0.03 | 90 | 5.85e-7 | 1.85e-6 | **3.17** |
+| 0.10 | 300 | 5.26e-8 | 1.67e-7 | **3.17** |
+
+The ratio is **constant to three figures across three decades in `k`** — the two methods
+agree on the scaling law exactly, and differ only by a fixed prefactor, which is the
+quasi-static approximation's own known error (eq 5-21 is driven by `δ_m′`; eq 5-22
+substitutes `δ_m`, overstating the response by `1/f ≈ 1.9` at `z = 0`, with the neglected
+`δ″` and friction terms supplying the rest). **Direction: the exact result is *smaller*
+than the book's estimate**, so chapter 5's already-negative feasibility verdict was, if
+anything, generous to itself. My instrument and the book's analysis are the same
+instrument.
+
+**What the computation adds.** Three things chapter 5 does not say:
+
+**(i) It is volume-limited, not sensitivity-limited.** Every mode a survey can measure
+is bounded below by the fundamental mode of its own volume, `k_min = 2π/V^(1/3)`:
+
+| survey | V [(Gpc/h)³] | `k_min` [h/Mpc] | `k_min/k_s(c_s=c)` | `k_min/k_s(14.7c)` |
+|---|---|---|---|---|
+| Euclid spectroscopic | 20 | 2.32e-3 | **6.9** | 102 |
+| Rubin LSST | 100 | 1.35e-3 | 4.1 | 60 |
+| Euclid + Rubin | 150 | 1.18e-3 | 3.5 | 52 |
+| **the entire observable universe** | 3513 | 4.13e-4 | **1.2** | 18 |
+
+Every ratio exceeds 1, including the last. **Even `c_s = c` has its sound horizon outside
+the largest mode that can exist in a survey**, so "zero clustering at all scales" is the
+prediction of *both* hypotheses everywhere either can be looked at. No integration time,
+detector, or systematics budget touches this — it is the survey volume, and the last row
+is the universe.
+
+**(ii) A hard ceiling on the significance, which chapter 5 leaves as "not feasible".**
+Summing all 45 log-spaced bands from `k_min` to the edge of the linear regime, in
+quadrature, with the DE-clustering-vs-smooth difference as signal and cosmic variance as
+noise:
+
+| `w_0` | provenance | S/N (Euclid+Rubin) | **S/N, ALL-SKY** | volume for 3σ |
+|---|---|---|---|---|
+| −0.990 | registry P1's own weighted mean | 7.7e-3 | **0.037σ** | 1.5e5 × V |
+| −0.930 | chapter 4 alternative | 5.7e-2 | 0.27σ | 2.8e3 × V |
+| −0.830 | status map `:221`, fitted ε_GW | 1.5e-1 | **0.73σ** | 4.0e2 × V |
+
+"ALL-SKY" replaces the survey with **the entire observable universe** — the largest galaxy
+survey physically constructible, ever, by anyone. It is **below 1σ at every `w_0` Meridian
+quotes**, and **0.04σ** at the registry's own value. A 3σ detection at the registry's
+value needs ~150,000 × the assumed volume, i.e. **~6,500 observable universes.**
+
+**(iii) The signature shrinks as the fit improves — they are anti-correlated.** Every DE
+perturbation carries a factor `(1+w)` exactly (`δ_de = (1+w)·D` by construction). The
+framework's own fit drives `ζ_0` up and `w_0 → −1`:
+
+| `w_0` | −0.830 | −0.930 | −0.990 | −0.993 | −1.000 |
+|---|---|---|---|---|---|
+| `(1+w_0)` | 0.170 | 0.070 | 0.010 | **0.007** | 0 |
+
+`−0.993` is the Day-201 best fit to DESI DR2. **The better Meridian fits the expansion
+data, the smaller its one unique perturbation signature becomes.** Chapter 5's eq (5-26)
+contains the `(1+w)` and never remarks on this; it is the same anti-correlation D-2 found
+in `w_0` itself, now in a second observable.
+
+**What is actually broken, then, is not chapter 5 — it is the two layers above it.**
+
+| layer | what it says about `c_s` | verdict |
+|---|---|---|
+| `chapter5:§5-direct` + Table 5.4 | **"not feasible with any planned experiment"**, `No` | **correct** |
+| `appendix_prediction_registry.tex:110` | decisive test = "Euclid + Rubin (zero clustering at all scales)" | **contradicts it** — lists an unfeasible test in the decisive-test column |
+| `meridian_monograph.tex:165` | "Chapter 5 provides **the orthogonal observational signature**" | **void** by chapter 5's own analysis |
+
+`:165` is the book's architecture paragraph — the sentence that explains why the five
+chapters are one work rather than five papers. It assigns chapter 5 the role of supplying
+the orthogonal *observational* signature, and chapter 5's own detection section says the
+signature cannot be observed. **This is D-7's shape a second time** (the book supersedes
+itself internally and the correction does not reach the citing sites) — and this time it
+reaches the front matter's statement of what the book *is*.
+
+⚠ **Fairness, owed.** `c_s ~ 15c` is not empty of all discriminating power: per chapter 5
+§5-clustering it *does* exclude clustering-DE models with `c_s ≪ c`, which do predict
+detectable effects below ~100 Mpc. That is a real, if modest, exclusion. It buys nothing
+**against the incumbent**, because ΛCDM, quintessence, phantom and f(R) all sit at
+`c_s² = 1` in the book's own Table 5-3 — and Leg 2 shows `c_s² = 1` is itself
+indistinguishable from `c_s² = 216`. The discrimination runs only against a class that is
+not the one Meridian must beat.
+
+## Finding D-14 — the uniqueness claim is defensible in the chapter and false in the
+## registry, and the escalation happens in exactly one step. `CHECKED`
+
+The same claim appears at three scope levels. The ladder is the finding:
+
+| site | claim | scope | status |
+|---|---|---|---|
+| `ch5:§5-superluminal-comparison` | "No other model in the literature produces a specific numerical value for the superluminal sound speed **from first principles**" | qualified: *from first principles*; enumerated against DBI k-essence, pure cuscuton, extended cuscuton (Iyonaga/Gao), Galileons, ghost condensate — **with citations** | **defensible** |
+| `ch5:§5-discriminating` | "a unique fingerprint that cannot be mimicked by **any model in Table 5-3**" | qualified: a named 7-row table | **defensible** |
+| `registry:229` | "unique to the cuscuton mechanism **within five-dimensional self-tuning cosmology**. **No other dark energy model or modified gravity theory produces this specific pattern.**" | first sentence qualified — **second sentence drops the qualifier entirely** | **false** |
+
+Two adjacent sentences, and the escalation is the second one: a claim about **how the
+number was derived** (true, checkable, and to the book's credit) becomes a claim about
+**what can be observed** (false, by chapter 5's own detection analysis). The audit-the-last-
+clause pattern, in its purest form — the qualifier is present, one sentence earlier.
+
+Concretely, at least two models reproduce the whole `:229` fingerprint observationally:
+the **pure cuscuton** (`c_s = ∞`, zero DOF, `μ=Σ=1`, `α_T=0`, `w>−1`) — which the book
+itself names as its own uncorrected limit — and **thawing quintessence with an ultra-flat
+potential** (`w_0 ≳ −1`, `|w_a|` inside Meridian's own S2 bound, `μ=Σ=1` and `α_T=0`
+exactly, `c_s = c`). Each differs from Meridian *only* in `c_s`, and D-13 is the statement
+that `c_s` cannot be measured. Note also that **Table 5-3 is drawn in the one coordinate
+no experiment can read**: it sorts models by the value of `c_s²`, which is precisely the
+axis along which they are observationally degenerate.
+
+⚠ **Instrument note, and it nearly cost the finding.** I began the enumeration with
+`mcp__paper-search-mcp__search_arxiv`. It **ignores the query and returns the newest arXiv
+submissions**, with no error: `"dark energy"` returned hexagonal-lattice charge-density
+waves, spin-1 Kitaev magnets and 8-D heterotic strings. Had I skimmed those titles and
+seen nothing on cuscutons, the natural conclusion is *"the literature does not contain
+this"* — **a fabricated null that CONFIRMS the superlative under audit.** I caught it only
+because I was searching for something I already knew existed. The enumeration above comes
+from chapter 5's own citation list, read first-hand.
+
+## Finding D-15 — `ζ_0`, the framework's single free parameter, carries **four live
+## values spanning a factor of 42**, and the registry's is a weighted mean of two things
+## that are not measurements of the same quantity. `CHECKED`
+
+| value | site | `w_0` | what it is |
+|---|---|---|---|
+| `9.64e-4` | `appendix:39, :547, :817` | −0.865 | **junction-condition benchmark** — the framework's own *derivation* |
+| `8.8e-4` | `meridian_monograph.tex:221` (status map) | −0.830 | fitted `ε_GW = 0.275` |
+| `0.016 ± 0.002` | `registry:102` (P1 status cell) | −0.990 | **"weighted mean"** — of what, unstated |
+| `0.037` | `appendix:39, :162, :204, :618` | −0.996 | **CMB-constraint benchmark** (Hiramatsu–Kobayashi) |
+| ~~`0.038`~~ | historical | ~~−0.995~~ | **explicitly superseded** — artefact of `Φ_0 = 0.477` |
+
+The registry's `0.016` sits between the JC benchmark (`0.001`) and the CMB benchmark
+(`0.037`) and is quoted nowhere else in the book. A weighted mean of those two is not a
+meaningful average: **one is a theory-side derivation and the other is a data constraint.**
+Averaging them is the accommodation move stated as a measurement — and it lands in
+**registry P1**, which per **D-2** is the row carrying *all* of Meridian's confirmatory
+power.
+
+**Credit, and it is substantial.** `appendix_computations.tex` is the most disciplined
+layer in the book. It flags the `Φ_0 = 0.477 → 0.076` factor-of-six error as a *historical
+note* (`:95`), marks the `B_10 = 171:1` Bayes factor **"Superseded … should not be cited as
+current evidence"** (`:565`), and states plainly at `:801` that with the corrected
+benchmark **"individual DESI detection significance is ≲ 0.3σ"**. That is better hygiene
+than most published cosmology, and it is the book auditing itself correctly.
+
+**Which sharpens the real structural finding of this whole audit.** Across four passes the
+layers disagree in *both* directions — D-5: the status map is right and chapter 4 is
+wrong; D-13: chapter 5 is right and the registry is wrong; D-15: the appendix is right and
+the registry is wrong. **There is no layer of this book that can be trusted by position.**
+Front matter, status map, registry, chapter, appendix, code — each has been the correct one
+against some other, and the registry has now been wrong three times. The operational
+consequence for "take what's useful from Meridian" is concrete: **no row may be selected by
+reading a summary table. Every row has to be traced to its chapter and then to its code.**
+That is what this audit has been doing; it now has a reason rather than a habit.
+
+## Finding D-16 — the one candidate that survives D-2, and it is gated on a computation
+## the book says was never performed. `CHECKED`
+
+Next action #7 asked whether any sector is left that is both derived *and* different.
+Reading chapter 5 for D-13 turned one up, and it partially refutes my own framing:
+
+`ch5:Table 5-4` lists a **sixth channel** — the **stochastic gravitational-wave background
+from the RS stabilisation phase transition** — as `SNR 18–643 | LISA (~2037) | **Yes
+(65–99%)**`. That is not a ΛCDM value, not a pre-established fact, and not unmeasurable.
+It has an instrument and a date.
+
+**This does not refute D-2 as worded** — D-2 is about the structural predictions S1–S7,
+and this is not one of them. It *does* refute the looser reading I have been leaning on in
+conversation ("Meridian buys nothing that can be checked"), and I am recording that against
+myself rather than quietly narrowing the claim.
+
+**The gate.** `ch5:609` and `appendix_computations.tex:1132–1134`, both the book's own
+words:
+
+> *"A dedicated bounce-action computation for the cuscuton stabilisation mechanism has not
+> been performed. If the transition is a smooth crossover, the stochastic GW background is
+> absent and Channel 5 yields a null result."*
+> *"Whether this conclusion holds for the cuscuton stabilisation mechanism … remains an
+> open question."*
+
+The first-order claim is inherited from Creminelli et al. (2002) / Nardini et al. (2007)
+for **Goldberger–Wise** stabilisation. Meridian's radion potential has, in the book's own
+description, *"a qualitatively different origin (algebraic over-determination rather than a
+slowly-varying bulk scalar."* The inheritance is therefore exactly the kind of import
+this audit has been cataloguing — except that here **the book flags it itself**, twice.
+
+**This is the highest-value open computation in the corpus, and it is well-posed:** a
+bounce action for the Meridian radion potential, which either returns a barrier (→ Meridian
+has one falsifiable, non-ΛCDM, instrumented prediction) or does not (→ D-2 stands with no
+qualification, and the framework's entire falsification surface is one-sided). Its two
+free parameters `α, β/H` keep it category **B** at best — but B with an instrument and a
+date beats every A in the book, all of which agree with the incumbent.
+
+⚠ Also noted, and it belongs to goal #17 rather than here:
+`appendix_computations.tex:1154` gives the code-availability URL as
+`github.com/Multi-DAC/Corpus-Perspectival` under `meridian/` — **the archived, read-only
+repository**. The monograph's reproducibility statement points at a tree that can no
+longer be pushed to.
+
+---
+
 ## Running partition (pass 1, structural + parametric registry only)
 
 | Category | Rows |
 |---|---|
-| **A — derived, 0 free, and *different from ΛCDM*** | `c_s ∈ [12c,15c]` — and see D-3 |
+| **A — derived, 0 free, and *different from ΛCDM*** | ~~`c_s ∈ [12c,15c]`~~ — **STRUCK, pass 4.** Derived: yes. Different: **not observably**, at 0.037σ all-sky (**D-13**). This column is now **EMPTY.** |
+| **The only live candidate for that empty column** *(added pass 4)* | RS stabilisation phase transition → LISA stochastic GW background (`ch5:Table 5-4`, SNR 18–643, 65–99%). Category **B** (`α`, `β/H` free), and **gated on a bounce action the book says was never computed** (**D-16**, next action #9) |
 | **A — derived, 0 free, *same as ΛCDM/GR*** | S2, S3, S4, S5, `w_a = 0`, `α_T = 0`, `α_B = α_M = 0`, `μ = Σ = 1`, ghost-freedom, `R² = 0`, `C_GB = 2/3`, cuscuton uniqueness, self-tuning, `N_g ≤ 3` |
-| **B — benchmark-dependent** | `C_KK`, `ε₁` (both printed A — **D-1**), `w_0(ζ_0)`, best-fit `w_0 = -0.993`, `ζ_0 = 8.8e-4 / w_0 = -0.830` |
+| **B — benchmark-dependent** | `C_KK`, `ε₁` (both printed A — **D-1**), `w_0(ζ_0)`, best-fit `w_0 = -0.993`, `ζ_0 = 8.8e-4 / w_0 = -0.830`; **`ζ_0` itself** — four live values `9.64e-4 / 8.8e-4 / 0.016 / 0.037` spanning **42×**, and the registry's is a "weighted mean" of a derivation and a data constraint (**D-15**, pass 4) |
 | **C — imported or asserted** | GST relation `\|V_us\| ≈ √(m_d/m_s)` (map's own footnote :245: "the standard Randall–Sundrum flavor result, **not specific to the Meridian framework**"); `N_g ≥ 3`; ξ = 1/6 derivation 3 |
 | **B — benchmark-dependent** *(added pass 2)* | modulus inflation `n_s`, `r` — printed `Derived / 0 free` at `:236`; `N_*` is free **as computed** and its own code says so (**D-6**), the published value is stale by a factor of four (**D-7**) and formula-inconsistent (**D-8**) |
 | **→ A, *same as ΛCDM/GR*** *(revised pass 3)* | modulus inflation, **after repair**: `m_σ` is fixed by COBE normalisation, so `N_* = 51.5–55.6`, `n_s = 0.9627–0.9653`, `r = 0.0034–0.0040`, **0 free parameters** (**D-11**) — but identical to Starobinsky R² inflation, so it moves from column B to the *unhelpful* half of column A. `120 GeV → N_*` is refuted (**D-10**) |
@@ -396,7 +665,18 @@ universal, and I would not have found the exception if I had stopped at the firs
 ## Next actions
 
 1. **Refute D-2 before spending a month on it.** It is the load-bearing finding and it is mine alone.
-2. Compute the D-3 sound-horizon argument; enumerate the uniqueness set.
+   ▷ **Pass 4 partially did this to itself** (**D-16**): the LISA / RS-phase-transition
+   channel is a real candidate for *derived and different*, and I had been overstating D-2
+   in conversation as "nothing checkable". D-2 as **worded** (about S1–S7) still stands.
+   Still owed: a decorrelated eye. ⚠ Note the correlation — D-14 and D-16 are *my* second
+   and third readings of the same book, not independent witnesses.
+2. ✅ **Done — pass 4 above. Answer: NO, and the book already knew.** `c_s` is
+   unmeasurable in the entire observable universe (all-sky S/N **0.037σ** at the registry's
+   own `w_0`); chapter 5 §5-direct says so in bold and the registry `:110` and front matter
+   `:165` contradict it (**D-13**). The uniqueness superlative is defensible in the chapter
+   and false in the registry, one sentence apart (**D-14**). **`c_s` is struck from the
+   "derived and different" column** — the last A-row candidate is gone, and what replaces it
+   as the only live candidate is D-16's bounce action.
 3. ✅ **Done — pass 2 above.** The modulus-inflation row is D-1's shape a third time, and it
    turned up the audit's first constructive result (D-9).
 4. ✅ **Done — pass 3 above. Answer: NO.** The oscillation mass is `2H_inf = 3.16e13 GeV`,
@@ -418,3 +698,25 @@ universal, and I would not have found the exception if I had stopped at the firs
 8. Cheap and mechanical, same family as #5: the `N_*` labels in 15E §6.2 are wrong by 4.3
    (**D-12b**) and 16H's `N_*` is high by 3–5 (**D-12a**). Any future use of either table
    must go through `close_nstar.py`, not the printed columns.
+9. **★ THE ONE THAT DECIDES THE PROGRAM (new, pass 4, from D-16).** Compute the **bounce
+   action for the Meridian radion potential** and settle whether the RS stabilisation
+   transition is first-order. The book says twice, in its own words, that this was never
+   done and that the first-order claim is inherited from Goldberger–Wise — a mechanism it
+   describes as *qualitatively different* from its own. The outcome is binary and it decides
+   the framework's fate: **barrier →** Meridian has exactly one falsifiable, non-ΛCDM
+   prediction with an instrument and a date (LISA, ~2037); **crossover →** Channel 5 is null
+   by the book's own statement, and **D-2 stands with no qualification** — the entire
+   falsification surface is one-sided and nothing Meridian predicts differs from ΛCDM in a
+   measurable way. Everything else in this list is bookkeeping next to this.
+10. **Sequencing note, which pass 4 changed.** Actions #5–#8 are editorial repairs to a
+    book whose central question is now open in one calculation (#9). **Do #9 first.** A
+    stale `n_s` on nine pages does not matter if the answer to #9 is *crossover*; and if it
+    is *barrier*, the repair list gets written against a framework that has something to
+    defend. Rewriting the citation sites before #9 is optimising the packaging of an
+    unresolved object.
+11. **Structural, and it is the audit's own working rule now (from D-13/D-15).** There is
+    **no layer of this book that can be trusted by position** — the registry has been wrong
+    three times against three different layers, and each of front matter, status map,
+    chapter, appendix and code has been the *correct* one in some pair. Any future
+    selection from Meridian must trace a row to its chapter **and** to its code. Do not
+    select by reading a summary table.

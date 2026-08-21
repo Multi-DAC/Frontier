@@ -1,0 +1,183 @@
+==============================================================================
+LEG 1 -- KINEMATIC.  Sound horizon vs the window a survey can measure.
+==============================================================================
+
+  Dark energy is smooth (delta_de -> 0) for k >> k_s = aH/c_s.
+  At z=0, aH = H_0, so k_s = H_0/c_s.
+
+  H_0/c = 2.247e-04 Mpc^-1 = 0.00033 h/Mpc   (Hubble radius 4451 Mpc)
+
+  model                                       k_s [h/Mpc]   lambda_s [Mpc]
+  c_s = c        (quintessence, k-essence)      3.336e-04            27964
+  c_s = 12c      (Meridian, low end)            2.780e-05           335567
+  c_s = 14.7c    (Meridian, c_s^2 = 216)        2.270e-05           410984
+  c_s = 15c      (Meridian, high end)           2.224e-05           419459
+  c_s = infinity (pure cuscuton)                0.000e+00         infinite
+
+  survey                                      V [(Gpc/h)^3]   k_min [h/Mpc]
+  Euclid spectroscopic (0.9<z<1.8)                     20.0       2.315e-03
+  Rubin LSST photometric (z<2)                        100.0       1.354e-03
+  Euclid + Rubin combined (optimistic)                150.0       1.183e-03
+  the entire observable universe                     3513.0       4.133e-04
+
+  RATIO k_min(survey) / k_s(model)  -- >1 means EVERY measurable mode
+  is already inside the sound horizon, i.e. DE is smooth there anyway:
+
+  survey                                         vs c_s=c   vs c_s=14.7c
+  Euclid spectroscopic (0.9<z<1.8)                    6.9          102.0
+  Rubin LSST photometric (z<2)                        4.1           59.6
+  Euclid + Rubin combined (optimistic)                3.5           52.1
+  the entire observable universe                      1.2           18.2
+
+  VERDICT LEG 1: even for c_s = c the sound horizon lies OUTSIDE the
+  largest mode any planned survey can measure.  'Zero clustering at
+  all scales' is the prediction of BOTH hypotheses over the entire
+  observable window.  The test as written cannot discriminate, and
+  the reason has nothing to do with sensitivity -- it is the survey
+  volume, which no integration time improves.
+
+==============================================================================
+LEG 2a -- POSITIVE CONTROLS.  Does the integrator work at all?
+==============================================================================
+
+  CONTROL 1  w = -1 + 1e-9, c_s^2 = 1, k = 0.01 h/Mpc
+    growth  Delta_m(a=1)/Delta_m(a=0.1)   numeric     7.81479
+                                           LCDM        7.88296   ratio 0.99135
+    delta_de/delta_m at z=0                         5.307e-13   (must be <= 1e-9, the size of 1+w)
+    -> PASS
+
+  CONTROL 2  w = -0.5 (grossly non-LCDM), k = 1e-4 h/Mpc
+             -- chosen BETWEEN the two sound horizons, where the
+                two hypotheses must disagree maximally
+    delta_de/delta_m at z=0, c_s = c                4.6877e-01
+    delta_de/delta_m at z=0, smooth (cuscuton)      0.0000e+00  (exactly 0)
+    |phi(smooth)/phi(c_s=c) - 1|                    2.9711e-01
+    -> PASS -- the pipe CAN see the difference
+
+==============================================================================
+LEG 2b -- DYNAMICAL.  An UPPER BOUND on what c_s can do.
+==============================================================================
+
+  Compared below: c_s = c (the MOST strongly clustering subluminal
+  alternative) against exactly smooth DE (the c_s -> infinity
+  cuscuton limit Meridian asserts).  Meridian's c_s = 14.7c lies
+  between them and much nearer the smooth end, so this difference
+  is a strict UPPER BOUND on any c_s = 14.7c vs c_s = c signal.
+  Bounding it this way costs nothing and avoids integrating the
+  superluminal fluid equations, which are anti-damped.
+
+  w_0 = -0.99   (registry P1 weighted mean, zeta_0 = 0.016)
+    k [h/Mpc]   delta_de/delta_m   |dphi/phi| BOUND   cosmic var       S/N
+      1.0e-04          9.385e-03          4.214e-03     5.13e+01   1.6e-04  UNMEASURABLE k
+      3.0e-04          6.156e-03          3.819e-03     9.87e+00   7.7e-04  UNMEASURABLE k
+      1.0e-03          8.423e-04          1.634e-03     1.62e+00   2.0e-03  UNMEASURABLE k
+      2.3e-03          1.162e-04          4.056e-04     4.65e-01   1.7e-03
+      5.0e-03          2.183e-05          9.103e-05     1.45e-01   1.3e-03
+      1.0e-02          5.307e-06          2.305e-05     5.13e-02   9.0e-04
+      3.0e-02          5.846e-07          2.571e-06     9.87e-03   5.2e-04
+      1.0e-01          5.259e-08          2.315e-07     1.62e-03   2.9e-04
+
+  w_0 = -0.83   (status map :221, fitted eps_GW = 0.275)
+    k [h/Mpc]   delta_de/delta_m   |dphi/phi| BOUND   cosmic var       S/N
+      1.0e-04          1.595e-01          7.849e-02     5.13e+01   3.1e-03  UNMEASURABLE k
+      3.0e-04          1.043e-01          7.144e-02     9.87e+00   1.4e-02  UNMEASURABLE k
+      1.0e-03          1.408e-02          3.128e-02     1.62e+00   3.9e-02  UNMEASURABLE k
+      2.3e-03          1.957e-03          7.927e-03     4.65e-01   3.4e-02
+      5.0e-03          3.703e-04          1.794e-03     1.45e-01   2.5e-02
+      1.0e-02          9.016e-05          4.553e-04     5.13e-02   1.8e-02
+      3.0e-02          9.939e-06          5.083e-05     9.87e-03   1.0e-02
+      1.0e-01          8.927e-07          4.561e-06     1.62e-03   5.6e-03
+
+  'cosmic var' is the irreducible fractional error on a power-spectrum
+  band at that k for a 150 (Gpc/h)^3 survey (dk = k/10).  'S/N' is the
+  best possible single-band detection significance of the FULL
+  clustering-vs-smooth difference.  Modes marked UNMEASURABLE lie
+  below the survey's fundamental mode and do not exist in its data at
+  all -- their S/N column is shown only to make the point that even
+  there, where the signal is largest, it is far below unity.
+
+  TOTAL S/N, all bands in quadrature, k_min(survey) -> k_max = 0.1 h/Mpc
+  (linear regime only; dln k = 0.1, so ~44 independent bands):
+
+       w_0   bands   S/N Euclid+Rubin   S/N ALL-SKY   V needed for 3-sigma
+    -0.990      45          7.702e-03     3.728e-02           1.52e+05 x V
+    -0.930      45          5.650e-02     2.734e-01           2.82e+03 x V
+    -0.830      45          1.506e-01     7.288e-01           3.97e+02 x V
+
+  'S/N ALL-SKY' replaces the survey with the ENTIRE OBSERVABLE
+  UNIVERSE (3513 (Gpc/h)^3, 23x the assumed volume) --
+  the largest galaxy survey physically constructible, ever, by anyone.
+  It is still below 1 sigma at every w_0 Meridian quotes, and 40x below
+  1 sigma at the registry's own weighted-mean value.  The last column
+  is the survey volume a 3-sigma detection would require, in units of
+  the assumed 150 (Gpc/h)^3.
+
+  STATED LIMIT OF THIS LEG: galaxy clustering only.  The ISW effect
+  (CMB x LSS) is the natural probe of horizon-scale DE clustering and
+  is NOT forecast here.  It does not rescue the test -- the full ISW
+  signal is itself only a ~4-5 sigma detection in LCDM, and the
+  c_s-dependent part of it is the same (1+w)-suppressed fraction
+  tabulated above -- but that is an argument, not a computation, and
+  it is flagged as such rather than folded into the verdict.
+
+==============================================================================
+LEG 3 -- AMPLITUDE.  Every DE perturbation carries a factor (1+w).
+==============================================================================
+
+  delta_de = (1+w) * D, exactly, by the rescaling used above; and the
+  DE share of the Poisson source is f_de * (1+w) * D.  So the whole
+  c_s signature is proportional to (1+w) BEFORE any sound-horizon
+  suppression is applied.
+
+       w_0    (1+w_0)  provenance
+    -0.830      0.170  status map :221 (fitted eps_GW), 1 free param
+    -0.930      0.070  chapter 4 alternative
+    -0.990      0.010  registry P1 weighted mean, zeta_0 = 0.016
+    -0.993      0.007  Day-201 best fit to DESI DR2
+    -1.000      0.000  LCDM limit, zeta_0 -> infinity
+
+  The framework's OWN fit drives zeta_0 up, w_0 -> -1, (1+w_0) -> 0.
+  The better Meridian fits the expansion data, the smaller its unique
+  perturbation signature becomes.  Fit quality and distinguishability
+  are anti-correlated by construction.
+
+==============================================================================
+LEG 4 -- CROSS-CHECK vs the monograph's own eq (5-22) and (5-26).
+==============================================================================
+
+  w_0 = -0.99, c_s = c (so the c_s^2 factor is 1 and drops out)
+    k [h/Mpc]     k/aH    this code    eq (5-22)    eq (5-26)  ratio 5-22
+         0.01     30.0    5.307e-06    1.669e-05    1.113e-05        3.14
+         0.03     89.9    5.846e-07    1.854e-06    1.236e-06        3.17
+         0.10    299.8    5.259e-08    1.669e-07    1.113e-07        3.17
+
+  Same order of magnitude at every k -- the two methods agree.  The
+  residual factor ~3 is the quasi-static approximation's own error:
+  eq (5-21) is driven by delta_m' but eq (5-22) substitutes delta_m,
+  which overstates the response by 1/f ~ 1.9 at z=0 (f = dlnD/dlna),
+  and the neglected delta'' and friction terms supply the rest.
+
+  DIRECTION: the exact result is SMALLER than the book's estimate, so
+  the monograph's already-negative feasibility verdict was, if
+  anything, generous to itself.  This leg CONFIRMS chapter 5.
+
+==============================================================================
+D-3 VERDICT
+==============================================================================
+
+  The registry's decisive test for P2 -- "Euclid + Rubin (zero clustering
+  at all scales)" -- is satisfied identically by c_s = c and by
+  c_s = 15c, because the DE sound horizon for c_s = c already lies
+  outside the largest mode either survey can measure.  Confirming it
+  confirms nothing about c_s.
+
+  The residual dynamical difference in phi is smaller than the cosmic
+  variance of the largest available survey by orders of magnitude, at
+  every k, at both of Meridian's own quoted w_0 values -- and it shrinks
+  in proportion to (1+w_0) as the framework's own fit improves.
+
+  P2 is therefore not a prediction under test.  Since c_s is the sole
+  element of the ":229 combined fingerprint" not shared with smooth
+  wCDM, the fingerprint's discriminating power is zero on all currently
+  planned data.
+
