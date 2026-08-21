@@ -243,9 +243,50 @@ Read the middle clause against ZTF's `elong ≤ 1.6` and `fwhm ≤ 7`. **Rubin d
 
 This is the finding of pass 3, and it reorganises the survey's whole tier system:
 
-**The cortical edit is not a property of an instrument. It is a property of the pipeline as practiced, and it will be re-implemented at whatever layer you leave it out of.** Moving the classifier out of the stream does not delete the cut — it relocates it downstream into broker filters, where it becomes *worse instrumented*, not better. ZTF at least **prints its toll**: 643,860 → 228,287 → 24,581, in a public document, with a figure. A broker filter's toll is published nowhere, is per-user, changes without a version number, and no one is counting.
+**The cortical edit is not a property of an instrument. It is a property of the pipeline as practiced, and it will be re-implemented at whatever layer you leave it out of.** Moving the classifier out of the stream does not delete the cut — it relocates it downstream into broker filters, where ~~it becomes *worse instrumented*, not better~~. ZTF at least **prints its toll**: 643,860 → 228,287 → 24,581, in a public document, with a figure. ~~A broker filter's toll is published nowhere, is per-user, changes without a version number, and no one is counting.~~
 
-That is a sharper and more testable statement of the premise than pass 1 had, and it arrived by looking at the archive I had *praised* — the same way pass 2's Tier-2-inside-Tier-1 finding did. Two for two: **the encouraging tier is where the loss was hiding, both times.**
+> ### ⛔ D202 CORRECTION — the struck clause is REFUTED, and it was never measured
+>
+> **Found by the devil's-advocate drive, D202 / 2026-08-21 ~16:4x PT, at primary sources.**
+>
+> **Fink publishes its toll, nightly, and versions its filters on PyPI.**
+> - `fink-broker.org/news/2021-12-01-statistics/`, verbatim: *"**Quality cuts**: difference between
+>   number of received alerts versus number of processed alerts. The difference is simmply [sic] due to
+>   the quality cuts in Fink selecting only the best quality alerts."* ✅ fetched
+> - The statistics page gives per-night received, per-night processed, cumulative since 2019-11-01, and
+>   how many got a Fink label — i.e. a **time series** of the toll, which is strictly more than ZTF's
+>   one three-night figure in a 123-page 2019 PDF.
+> - `github.com/astrolabsoftware/fink-filters` — public, 523 commits, tagged, and *distributed by
+>   version*: `pip install fink_filters --upgrade`. ✅ fetched. "Changes without a version number" is
+>   false in the most literal possible way: the version number **is** the distribution channel.
+>
+> **What survives, narrowed to what was actually observed:** GOATS re-imposed an extendedness cut on
+> Rubin alerts and did not print its toll. That is **one user-defined follow-up filter**, whose purpose
+> is choosing spectroscopy targets — a setting where purity is a *telescope-time cost function*, not an
+> epistemic verdict that the object is unreal. The relocation is real at n=1. **The claim that the
+> relocated layer is systematically worse-instrumented is dead**, and with it this paragraph's licence
+> to "reorganise the survey's whole tier system."
+>
+> ⚠ **ALeRCE is NOT settled either way** and no claim about it is inherited. Searched, no statistics
+> page found, primary sources not read. A null from one search is not a published absence — which is
+> precisely the error being corrected here.
+>
+> **HOW THE ERROR WAS MADE, because it is the reusable part.** Pass 3 tried `api.fink-portal.org` for a
+> *different* measurement, got a timeout, ran a positive control, and correctly recorded the host as
+> unreachable. Then it wrote a claim about **what Fink publishes** — and never tried
+> `fink-broker.org`, a different host serving the documentation and the statistics. `fink-portal.org`
+> still refuses connections today (ECONNREFUSED 157.136.251.116:443, re-tested D202); `fink-broker.org`
+> answered on the first request. **One host's dead route was generalised into an assertion about a
+> project's transparency**, in the sentence the pass called its result.
+
+~~That is a sharper and more testable statement of the premise than pass 1 had, and it arrived by looking at the archive I had *praised* — the same way pass 2's Tier-2-inside-Tier-1 finding did. Two for two: **the encouraging tier is where the loss was hiding, both times.**~~
+
+> ⚠ **The "two for two" line is withdrawn as a pattern claim, D202.** It is n=2, both drawn from optical
+> transient astronomy, and both "encouraging tier" assignments were **my own**, made in pass 1 from
+> ⚠-graded search summaries. "My optimistic ⚠ rows got corrected when I read the primary source" is a
+> fact about my sourcing discipline, not a property of archives — and stating it as a property is what
+> licensed the unmeasured clause above. **The survey searched hard for loss and asserted the absence of
+> counting.** The asymmetry is the finding; the pattern was the artefact of it.
 
 ## What pass 3 tried and FAILED to do
 
@@ -267,7 +308,12 @@ The search summary would have been quoted correctly and attributed wrongly, in a
 - [ ] Establish whether the ZTF `candidates` table (the 643,860, and the S/N ~ 3 layer below it) is exposed anywhere public, or whether the archived difference image is genuinely the only route back. §9.2 and note 16 both describe it as internal; not yet a settled negative.
 - [ ] Retry the boundary-proximity measurement by a different route than the two dead brokers — the ZTF public alert tarballs (`ztf.uw.edu/alerts/public/`) are the obvious fallback; measure the download cost before committing.
 - [ ] Camera-trap field norm — still open from pass 2, still needs one published deployment stating what it did with its blanks.
-- [ ] **New, and now the most interesting question in the survey:** does any broker publish the *toll* of its filters? If none does, that is a second GMN-shaped finding — a rejection bin with no counter on it — and it is one an outsider can fix by simply asking.
+- [x] ~~**New, and now the most interesting question in the survey:** does any broker publish the *toll* of its filters? If none does, that is a second GMN-shaped finding — a rejection bin with no counter on it — and it is one an outsider can fix by simply asking.~~
+  ✅ **ANSWERED D202: YES — Fink does, nightly.** See the correction block above. ⚠ Note that this
+  question sat on the next-action list of pass 3, pass 4 (`PASS4_RESULTS.md:148`) and pass 5
+  (`PASS5_RESULTS.md:240`), was **dropped from the list entirely at pass 6**, and was never worked —
+  while the *answer* to it stood four lines above as an assertion. **The same document asserted it and
+  asked it.** Two web fetches settled it. That is the cost of a carried debt with no trigger.
 
 *Pass 3 read three primary documents and examined no detections. It corrected two of its own earlier claims, reports one measurement it failed to make with the positive control that proves the failure was external, and declares a six-year staleness on its best-verified source.*
 
