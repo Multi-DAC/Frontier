@@ -18,77 +18,18 @@ import numpy as np
 import sep
 from astropy.io import fits
 
+# Statistics live in pass6_stats so diag_pass6.py reuses the SAME functions by
+# import rather than by copy (PASS6_DIAGNOSTIC_PREDICTIONS.md, Controls).
+from pass6_stats import (AXIS_DEG, BRIGHT_PCT, NN_RADIUS,
+                         axial_R, axis_fraction, collinearity, bright_proximity)
+
 # ------------------------------------------------ PASS6_PREDICTIONS.md sec.1
 THRESH, MINAREA, MATCH = 5.0, 5, 2.0
-AXIS_DEG    = 10.0     # +/- window around 0 and 90 deg; chance = 22.22%
-BRIGHT_PCT  = 95.0     # per-frame percentile of peak defining "bright"
-NN_RADIUS   = 100.0    # px, collinearity neighbour search
 BOX         = 2        # half-width -> 5x5 box for local S/N
 WALL        = 1.6      # ZTF's own packaging cut
 SEED        = 12345    # controls only; fixed so C1/C2 are reproducible
 
 CHANCE_AXIS = 2 * AXIS_DEG / 90.0     # = 0.2222
-
-
-# ------------------------------------------------------------- statistics
-def axial_R(theta):
-    """Resultant length of the AXIAL distribution (Rayleigh on 2*theta)."""
-    t = np.asarray(theta, float)
-    if t.size == 0:
-        return float("nan")
-    return float(abs(np.mean(np.exp(2j * t))))
-
-
-def axis_fraction(theta):
-    """Fraction within AXIS_DEG of a PIXEL AXIS (0 or 90 deg). Chance=22.22%."""
-    d = np.abs(np.degrees(np.asarray(theta, float)))      # 0..90
-    return float((np.minimum(d, 90.0 - d) <= AXIS_DEG).mean()) if d.size else float("nan")
-
-
-def collinearity(x, y, theta, radius=NN_RADIUS):
-    """Median |theta - (angle to nearest neighbour)|, axial, folded to [0,90].
-
-    A streak fragmented into several detections has its elongation pointing
-    ALONG the chain -> near 0. Uniform expectation = 45 deg. Immune to
-    pixel-grid quantisation: the grid aligns theta to axes, not to a neighbour
-    direction. C3 exercises THIS function, not a reimplementation of it.
-    """
-    x = np.asarray(x, float); y = np.asarray(y, float); th = np.asarray(theta, float)
-    n = x.size
-    if n < 2:
-        return float("nan"), 0
-    out = []
-    for i in range(n):
-        dx = x - x[i]; dy = y - y[i]
-        d = np.hypot(dx, dy); d[i] = np.inf
-        j = int(np.argmin(d))
-        if d[j] > radius:
-            continue
-        ang = np.arctan2(dy[j], dx[j])
-        phi = ang - th[i]
-        out.append(np.degrees(abs(np.angle(np.exp(2j * phi)))) / 2.0)
-    if not out:
-        return float("nan"), 0
-    return float(np.median(out)), len(out)
-
-
-def bright_proximity(x, y, peak, side_mask):
-    """Distances from each side_mask detection to the nearest BRIGHT detection
-    in the same frame (self excluded)."""
-    if side_mask.sum() == 0 or x.size < 2:
-        return np.array([])
-    thr = np.percentile(peak, BRIGHT_PCT)
-    bi = np.flatnonzero(peak >= thr)
-    if bi.size == 0:
-        return np.array([])
-    out = []
-    for i in np.flatnonzero(side_mask):
-        d = np.hypot(x[bi] - x[i], y[bi] - y[i])
-        d[bi == i] = np.inf                      # a bright source is not near itself
-        m = d.min()
-        if np.isfinite(m):
-            out.append(m)
-    return np.array(out)
 
 
 # ---------------------------------------------------------------- CONTROLS

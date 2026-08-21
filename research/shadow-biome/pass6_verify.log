@@ -1,0 +1,23 @@
+﻿--- V1  COUNT DISCREPANCY: 8528 (measure) vs 8526 (diag) ---
+    DIFFERS  577_zr_c02_o_q4_scimre  measure-path=243  diag-path=244  (-1)
+    DIFFERS  575_zr_c10_o_q1_scimre  measure-path=141  diag-path=142  (-1)
+    DIFFERS  672_zr_c11_o_q4_scimre  measure-path=164  diag-path=165  (-1)
+    DIFFERS  531_zr_c05_o_q4_scimre  measure-path=245  diag-path=244  (+1)
+    DIFFERS  482_zr_c09_o_q1_scimre  measure-path=620  diag-path=619  (+1)
+    DIFFERS  687_zr_c14_o_q1_scimre  measure-path=1015  diag-path=1013  (+2)
+    DIFFERS  640_zg_c02_o_q3_scimre  measure-path=783  diag-path=782  (+1)
+  totals: measure-path = 8523   diag-path = 8521   delta = +2
+  -> RESOLVED: the two paths differ
+
+--- V2  D2a KEPT-SIDE CONTROL (the control I failed to pre-register) ---
+  far  : anchors= 4136  with a neighbour<= 10px= 2828 (68.38%)
+         opposite-sign rate= 96.25%  null= 47.21%  excess=+49.04 pp   median|delta|=77.87 deg
+         => 65.81% of the far side sits in an opposite-sign pair within 10 px
+  kept : anchors= 4392  with a neighbour<= 10px= 2309 (52.57%)
+         opposite-sign rate= 97.31%  null= 43.39%  excess=+53.93 pp   median|delta|=69.80 deg
+         => 51.16% of the kept side sits in an opposite-sign pair within 10 px
+
+  far-minus-kept share in opposite-sign close pairs = +14.65 pp
+  -> the dipole reading is FAR-SIDE SPECIFIC
+
+wrote PASS6_VERIFY.json

@@ -1,0 +1,70 @@
+﻿catalogue: n = 8528 detections across 20 frames
+
+--- D2a  DIPOLES  (close pairs within 10 px) ---
+  far-side anchors with a neighbour <= 10 px : n = 2828
+  opposite-sign rate       : 96.25%   -> D2a-1 HELD (>=65%)
+  C4 composition-matched null : 47.21%   excess = +49.04 pp
+  median |delta| all close pairs : 77.87 deg  (45 = uniform)
+  median |delta| opposite-sign   : 78.00 deg (n=2722)  -> D2a-2 HELD (>=70)
+  median |delta| same-sign       : 73.33 deg (n=106)
+  opposite - same = +4.67 deg  -> D2a-3 REFUTED (>=10)
+
+--- D2c  IS THE PREFERRED DIRECTION FRAME-SPECIFIC? ---
+    526_zr_c01_o_q1_scimre  R_far=0.398 R_kept=0.374  dir_far= 100.5 deg
+    577_zr_c02_o_q4_scimre  R_far=0.405 R_kept=0.214  dir_far=  19.5 deg
+    576_zr_c05_o_q2_scimre  R_far=0.048 R_kept=0.136  dir_far=  48.6 deg
+    525_zr_c06_o_q4_scimre  R_far=0.306 R_kept=0.098  dir_far=  10.6 deg
+    524_zr_c08_o_q2_scimre  R_far=0.267 R_kept=0.435  dir_far= 171.6 deg
+    575_zr_c10_o_q1_scimre  R_far=0.370 R_kept=0.234  dir_far=  90.5 deg
+    672_zr_c11_o_q4_scimre  R_far=0.171 R_kept=0.270  dir_far=  32.8 deg
+    531_zr_c05_o_q4_scimre  R_far=0.153 R_kept=0.254  dir_far=  87.1 deg
+    580_zr_c05_o_q4_scimre  R_far=0.124 R_kept=0.254  dir_far= 142.9 deg
+    628_zr_c11_o_q1_scimre  R_far=0.087 R_kept=0.210  dir_far=  32.8 deg
+    533_zr_c09_o_q2_scimre  R_far=0.624 R_kept=0.496  dir_far= 176.6 deg
+    631_zr_c12_o_q3_scimre  R_far=0.588 R_kept=0.295  dir_far=  12.6 deg
+    482_zr_c09_o_q1_scimre  R_far=0.652 R_kept=0.526  dir_far= 164.6 deg
+    590_zr_c13_o_q4_scimre  R_far=0.237 R_kept=0.164  dir_far= 171.7 deg
+    687_zr_c14_o_q1_scimre  R_far=0.245 R_kept=0.150  dir_far= 169.1 deg
+    591_zg_c12_o_q1_scimre  R_far=0.431 R_kept=0.295  dir_far=  55.7 deg
+    639_zg_c15_o_q3_scimre  R_far=0.085 R_kept=0.088  dir_far= 128.7 deg
+    539_zg_c09_o_q4_scimre  R_far=0.451 R_kept=0.088  dir_far= 112.5 deg
+    640_zg_c02_o_q3_scimre  R_far=0.422 R_kept=0.105  dir_far=   7.4 deg
+    687_zg_c07_o_q2_scimre  R_far=0.623 R_kept=0.489  dir_far=   6.8 deg
+  frames with R_far > R_kept : 13/20  -> D2c-1 REFUTED (>=15)
+  circular spread of the 20 far-side directions : 44.09 deg  (uniform ~ 50)  -> D2c-2 HELD (>=30)
+
+--- D2b  MINAREA LADDER (is 48.50%% a property of ZTF or of my parameter?) ---
+    526_zr_c01_o_q1_scimre done
+    577_zr_c02_o_q4_scimre done
+    576_zr_c05_o_q2_scimre done
+    525_zr_c06_o_q4_scimre done
+    524_zr_c08_o_q2_scimre done
+    575_zr_c10_o_q1_scimre done
+    672_zr_c11_o_q4_scimre done
+    531_zr_c05_o_q4_scimre done
+    580_zr_c05_o_q4_scimre done
+    628_zr_c11_o_q1_scimre done
+    533_zr_c09_o_q2_scimre done
+    631_zr_c12_o_q3_scimre done
+    482_zr_c09_o_q1_scimre done
+    590_zr_c13_o_q4_scimre done
+    687_zr_c14_o_q1_scimre done
+    591_zg_c12_o_q1_scimre done
+    639_zg_c15_o_q3_scimre done
+    539_zg_c09_o_q4_scimre done
+    640_zg_c02_o_q3_scimre done
+    687_zg_c07_o_q2_scimre done
+
+   minarea        n   frac_far   recovery
+         2    14202     0.5893     0.7314
+         3    11649     0.5070     0.6888
+         5     8526     0.4845     0.5931
+         8     5429     0.4830     0.5027
+        12     3100     0.5148     0.3617
+
+  D2b-1 recovery at minarea=2 : 73.14%  -> REFUTED (>=80%)
+  D2b-2 span of frac_far across ladder : 10.63 pp  -> HELD (>=5 pp)
+  D2b-3 frac_far increases with minarea : ['0.5893', '0.5070', '0.4845', '0.4830', '0.5148']  -> REFUTED
+
+=== 4/8 diagnostic predictions HELD ===
+wrote PASS6_DIAG.json

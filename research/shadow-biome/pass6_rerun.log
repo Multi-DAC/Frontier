@@ -1,0 +1,63 @@
+﻿--- CONTROLS (PASS6_PREDICTIONS.md sec.4) ---
+  C1 can detect alignment   R = 0.6695  (need > 0.30)  -> PASS
+  C2 does not false-alarm   R = 0.0310  (need < 0.10)  -> PASS
+  C3 can detect collinearity med|d| = 0.0000 deg (need < 10)  -> PASS
+  -> section 2 is INTERPRETABLE
+
+--- EXTRACTION: 20 images already on disk ---
+    ztf_20180601167662_000526_zr_c01_o_q1_scimre  n=  190  far=  117  axis_far=0.265  collin_far=65.2
+    ztf_20180601168113_000577_zr_c02_o_q4_scimre  n=  243  far=  159  axis_far=0.503  collin_far=47.9
+    ztf_20180601169954_000576_zr_c05_o_q2_scimre  n=  174  far=   53  axis_far=0.679  collin_far=32.5
+    ztf_20180601170417_000525_zr_c06_o_q4_scimre  n=  189  far=  110  axis_far=0.336  collin_far=58.1
+    ztf_20180601171319_000524_zr_c08_o_q2_scimre  n=  273  far=   49  axis_far=0.490  collin_far=34.8
+    ztf_20180601171794_000575_zr_c10_o_q1_scimre  n=  141  far=   65  axis_far=0.400  collin_far=64.4
+    ztf_20180601174595_000672_zr_c11_o_q4_scimre  n=  164  far=   80  axis_far=0.287  collin_far=73.6
+    ztf_20180601298993_000531_zr_c05_o_q4_scimre  n=  244  far=  122  axis_far=0.213  collin_far=68.0
+    ztf_20180601300394_000580_zr_c05_o_q4_scimre  n=  176  far=   94  axis_far=0.340  collin_far=71.8
+    ztf_20180601300856_000628_zr_c11_o_q1_scimre  n=  107  far=   63  axis_far=0.286  collin_far=76.1
+    ztf_20180601315556_000533_zr_c09_o_q2_scimre  n=  382  far=  212  axis_far=0.458  collin_far=71.2
+    ztf_20180601318438_000631_zr_c12_o_q3_scimre  n=  307  far=  189  axis_far=0.376  collin_far=69.5
+    ztf_20180601336968_000482_zr_c09_o_q1_scimre  n=  621  far=  305  axis_far=0.249  collin_far=62.9
+    ztf_20180601402257_000590_zr_c13_o_q4_scimre  n= 1033  far=  475  axis_far=0.238  collin_far=52.5
+    ztf_20180601434769_000687_zr_c14_o_q1_scimre  n= 1013  far=  571  axis_far=0.252  collin_far=60.0
+    ztf_20180601441875_000591_zg_c12_o_q1_scimre  n=  303  far=  153  axis_far=0.131  collin_far=68.9
+    ztf_20180601442338_000639_zg_c15_o_q3_scimre  n= 1155  far=  414  axis_far=0.239  collin_far=48.8
+    ztf_20180601443252_000539_zg_c09_o_q4_scimre  n=  289  far=  135  axis_far=0.237  collin_far=57.4
+    ztf_20180601457928_000640_zg_c02_o_q3_scimre  n=  784  far=  436  axis_far=0.261  collin_far=62.6
+    ztf_20180601475926_000687_zg_c07_o_q2_scimre  n=  740  far=  334  axis_far=0.296  collin_far=59.0
+
+extraction: n = 8528 detections; wrote PASS6_catalog.npz (pass 5 saved only elong/peak/sign/image, which is why this pass had to re-extract)
+
+--- P1 AXIS ALIGNMENT (chance = 0.2222) ---
+  far side  : 0.2897  (n=4136)   axial R = 0.2335
+  kept side : 0.3017  (n=4392)   axial R = 0.1259
+  excess far-kept = -0.0120   -> P1 REFUTED
+
+--- P2 STREAK COLLINEARITY (uniform = 45 deg) ---
+  far side  median |delta| : 62.773 deg   (median over 20 frames)
+  kept side median |delta| : 53.390 deg
+  kept-far = -9.382 deg   -> P2 REFUTED
+
+--- P3 BRIGHT-SOURCE PROXIMITY ---
+  far side  median distance to nearest bright : 397.33 px
+  kept side median distance to nearest bright : 430.29 px
+  ratio far/kept = 0.9234   -> P3 REFUTED (<0.90)
+
+--- P4 PER-FRAME HETEROGENEITY ---
+  far-side fraction per frame: min=0.1795 q1=0.4607 med=0.5025 q3=0.5683 max=0.6543
+  IQR = 0.1076   -> P4 HELD (>0.10)
+
+--- THE 41%: 376 alerts, 223 recovered (59.31%), 153 classified ---
+  RECOVERED                    223  (59.31%)
+  UNEXTRACTED_DESPITE_FLUX     121  (32.18%)
+  BELOW_THRESHOLD               31  ( 8.24%)
+  NEAR_MISS_RADIUS               1  ( 0.27%)
+
+  P5 median magpsf  recovered=18.034 (n=223)  unrecovered=19.379 (n=153)
+     delta = +1.345 mag  -> P5 HELD (>=0.5, fainter)
+  P6 geometry/mask share of misses : 0/153 = 0.00%  -> P6 HELD (<10%)
+  P7 below-threshold share of misses: 31/153 = 20.26%  -> P7 REFUTED (>=60%)
+  P8 recovery in brightest magpsf tercile : 98.41%  -> P8 HELD (>=80%)
+
+=== 4/8 pre-registered predictions HELD ===
+wrote PASS6_RESULTS.json + PASS6_MISSES.json
