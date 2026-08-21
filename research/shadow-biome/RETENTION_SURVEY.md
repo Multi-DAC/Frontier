@@ -101,7 +101,9 @@ Both halves of my pass-1 guess were wrong, and the truth is more useful than eit
 
 - **The `rb` cut is literally zero.** The real-bogus classifier's verdict is genuinely *attached, not applied*. Tier 1 stands, and stands on a verbatim quote instead of a marketing page.
 - **But six other cuts are applied**, and the Supplement prints the toll. Figure 9.1, three nights (2018-05-30 → 06-01): **643,860 raw events → 228,287 packaged.** ✅
-  **415,573 events — 64.5% — never became a packet.** Not because a classifier judged them bogus. Because of `nbad`, `fwhm`, `elong`, `magdiff`, `S/N`, `magpsf`.
+  **415,573 events — 64.5% — never became a packet.** Not because a classifier judged them bogus. Because of `nbad`, `fwhm`, `elong`, `magdiff`, ~~`S/N`, `magpsf`~~.
+
+  > **⚠ CORRECTED IN PASS 3 — the two struck items were my error.** `S/N ≥ 5` and `magpsf ≤ 23.5` are in the *red curve's own definition*; they define the 643,860 rather than causing the loss from it. **Four cuts, not six, and all four are morphology.** See §"Correction first" in PASS 3. Left struck rather than deleted so a reader of pass 2 alone does not inherit it.
 
 Read that list against the premise. Every one of those is a **point-source-shaped-ness** test:
 
@@ -160,5 +162,104 @@ The pre-registration asked whether there is a retained bin worth interrogating. 
 - [ ] Camera-trap field norm: find a published deployment that states what it did with its blanks. One primary source beats any amount of platform policy.
 
 *Pass 2 read policy documents and instrument specifications. It examined no detections, no images, and no waveforms. Three claims above carry ⚠ and one carries an explicit refusal to estimate.*
+
+---
+
+# PASS 3 — the edit did not go away, it moved downstream
+
+**Day 201 / 2026-08-20, ~19:5x–20:2x PT.** Still policy and instrument specification only. **No detection data examined.**
+Sources read this pass, all primary and all fetched-and-extracted locally: **LDM-612** *Plans and Policies for LSST Alert Distribution* (Bellm et al., latest revision **2020-07-09**, 27 pp), the **ZTF Explanatory Supplement** again (§9.1, §9.2, note 16), and **arXiv:2606.28645** (GOATS, Gemini/NOIRLab, 2026).
+
+## Correction first — pass 2 got the arithmetic right and the *attribution* wrong
+
+Pass 2 said the 64.5% dies on **six** cuts and listed `S/N` and `magpsf` among them. Read Figure 9.1's own legend:
+
+> red: `s/n>=5, magpsf<=23.5`
+> blue: `s/n>=5, magpsf<=23.5, nbad<=4, fwhm<=7, elong<=1.6, −0.4<=magdiff<=0.75`
+
+**S/N and `magpsf` are already applied to the red curve.** They are the definition of the 643,860, not a cause of the loss from it. The 415,573 events that die between red and blue die on **four cuts, and all four are morphology**: `nbad`, `fwhm`, `elong`, `magdiff`.
+
+The correction makes pass 2's claim *stronger*, which is why it needed catching rather than quietly inheriting: **the attrition from ZTF's detection population to its public packet stream is 100% attributable to shape, with zero contribution from brightness or signal-to-noise.** Recomputed, not re-read: 643,860 − 228,287 = 415,573 = **64.54%**. ✅
+
+## Finding 4 — there is a SECOND shape stage, and ZTF recommends it
+
+§9.1, verbatim, immediately after the packaging criteria:
+
+> "If you wish to filter the stream even further to improve reliability or purity (at the expense of completeness), **we suggest the following filtering on the metadata in each packet**:
+> • Random Forest Real-Bogus quality score: **rb ≥ 0.65**
+> • Number of bad pixels: **nbad = 0**
+> • FWHM of source profile: **fwhm ≤ 5** pixels
+> • Source elongation: **elong ≤ 1.2**
+> • Aperture – PSF-fit magnitude difference: **|magdiff| ≤ 0.1** mag"
+
+Figure 9.2 prints the toll of the *shape half alone* — the Supplement is explicit that the comparison is made **"without the rb cut"**: **228,287 → 24,581.** ✅
+
+So the full chain, all four numbers verbatim from one document, all shape:
+
+| Stage | n | survives |
+|---|---|---|
+| internal `candidates` database | — (runs down to **S/N ~ 3**, note 16; internal, not public) | — |
+| "raw events" (`S/N ≥ 5`, `magpsf ≤ 23.5`) | **643,860** | — |
+| packaged public alerts (4 shape cuts) | **228,287** | 35.46% |
+| survey's own suggested purity cuts, shape only | **24,581** | 10.77% of the previous / **3.82%** of raw |
+
+**96.2% of ZTF's S/N ≥ 5 detection population is removed by morphology alone**, before any real/bogus judgment enters — *if a user follows the survey's own printed advice.* And note where `elong` ends up: the packet boundary enforces **1.6**, the recommended practice tightens it to **1.2**. Every recommended cut on that list moves in the same direction, and none of them is a claim that the object is not there.
+
+**⚠ Stated limit, unchanged from pass 2 and now more pointed:** I still have **no per-cut breakdown**. I do not know how much of either stage dies on `elong` specifically. That number is not in the document, I will not estimate it, and it remains the first quantity a pass with compute behind it should measure.
+
+## Finding 5 — Rubin: ⚠ → ✅, and three corrections against my own pass-1 praise
+
+Pass 1 held Rubin up as "the closest thing to a deliberate refusal of the cortical edit that exists at scale," on a search summary. LDM-612 fetched and read. The headline quote survives verbatim:
+
+> "The LSST alert stream will contain **essentially all** DIASources detected at 5σ in the difference image, **including a currently unknown fraction of artifacts**." (footnote 1)
+> "A machine-learned spuriousness score **will be provided for each DIASource** triggering an Alert, so users may filter the stream for greater completeness or purity depending on their scientific needs." (§2.3.1)
+
+Three things I did not have when I praised it, all in the same document:
+
+1. **"Essentially" is load-bearing, and footnote 3 says what it is carrying.** Verbatim: *"There may be exceptions to this rule... Sources with SNR > 5 that have a 'high probability of being instrumental non-astrophysical artifacts' [LSE-163], **potentially as determined by a to-be-developed spuriousness or real/bogus classifier**, **may not produce alerts**."* The carve-out for applying-rather-than-attaching is written into the policy. It is permissive, not mandatory — but it is there, and I quoted the sentence in front of it without it.
+2. **There is a hard capacity ceiling.** *"Alert generation in crowded fields may produce more than the maximum of 10,000 alerts per visit required to be supported by DM; alert generation in this circumstance is still under study."* A bin emptied by bandwidth, in exactly the fields with the most in them.
+3. **"Public" does not mean reachable — and this kills the ZTF trick for Rubin.** Verbatim §3: *"We use 'public' here in the sense that alert packets can be freely shared with anyone... the term 'public' means 'shareable' and **should not be misinterpreted as 'freely available.'**"* And the pixels: difference images and PVIs are available *"to users with data rights"*, held **on disk for 30 days**, older ones regenerated on demand; the Science Platform serves *"proprietary data products."*
+
+That third point is the operationally decisive one for this program. **Pass 2's executable route — go back to the public difference images and re-extract with the shape cuts relaxed — has no Rubin analogue for someone without data rights.** ZTF remains the only instrument found so far where the discarded population is reconstructible by anyone.
+
+**⚠ Staleness, declared:** LDM-612's latest revision is **2020-07-09**. It is a *plan*, and Rubin is now operating. Every clause above is what the observatory said it would do six years ago, not a measurement of what it does. Labelled ✅ for *what the policy document says*, which is all a policy survey can label.
+
+## Finding 6 — THE RESULT: the edit moved one layer down, where nothing prints its toll
+
+Rubin's design choice is real: ship the score beside the data, let the user decide. So look at what the first operational users of Rubin alerts actually did with that freedom. **arXiv:2606.28645** (GOATS, Gemini/NOIRLab), describing live Rubin-alert follow-up filters run on ANTARES, verbatim:
+
+> "For both filters, several cuts on the alert properties were adopted to increase purity. This included the real-bogus score (**diaSource reliability > 0.9**), **extended-ness of the alert (to restrict to point-like objects)**, and light-curve amplitudes (> 0.5 mag)."
+
+Read the middle clause against ZTF's `elong ≤ 1.6` and `fwhm ≤ 7`. **Rubin declined to hard-code the point-source restriction at the packet boundary; the first consumer on record re-imposed it in the filter, together with a real-bogus threshold nine times stricter than any ZTF applies.**
+
+This is the finding of pass 3, and it reorganises the survey's whole tier system:
+
+**The cortical edit is not a property of an instrument. It is a property of the pipeline as practiced, and it will be re-implemented at whatever layer you leave it out of.** Moving the classifier out of the stream does not delete the cut — it relocates it downstream into broker filters, where it becomes *worse instrumented*, not better. ZTF at least **prints its toll**: 643,860 → 228,287 → 24,581, in a public document, with a figure. A broker filter's toll is published nowhere, is per-user, changes without a version number, and no one is counting.
+
+That is a sharper and more testable statement of the premise than pass 1 had, and it arrived by looking at the archive I had *praised* — the same way pass 2's Tier-2-inside-Tier-1 finding did. Two for two: **the encouraging tier is where the loss was hiding, both times.**
+
+## What pass 3 tried and FAILED to do
+
+The intended measurement was a **boundary-proximity test**: pull a sample of surviving ZTF alerts from a broker API and look at how the `elong` and `fwhm` distributions behave as they approach 1.6 and 7 — a cut sitting in the *body* of a distribution removes a population; a cut in the far tail does not. That measurement **did not happen.**
+
+**Fink (`api.fink-portal.org`) and ALeRCE (`api.alerce.online`) are both unreachable from this machine** — connection timeout and read timeout respectively, repeated. **Positive control run before reporting this**: `irsa.ipac.caltech.edu` and `google.com` both returned HTTP 200 from the same interpreter, same minute. So the failure is specific to those two hosts or the route to them, not to this body's network. Recorded as an obstacle, not a result. ⚠
+
+**And it would have been a bounded measurement even on success**, which is worth writing down before trying again: a truncated distribution can only be observed on the surviving side. The pileup shape is *suggestive* of how hard the cut bites; it is not a measurement of what lies beyond it. Only re-extraction from difference images is that.
+
+## An attribution correction, filed because it is exactly the failure mode under audit
+
+A web search summary told me, unsourced, that *"In recent 2026 operations, reliability classifier thresholds (diaSource_reliability > 0.9) were adopted"* — phrasing that reads as **Rubin observatory operations policy**. I fetched the 2026 operations paper the same search surfaced (**arXiv:2607.00217**, Rubin ToO first year, extracted in full) and searched it: **the string does not appear, and neither does any reliability or spuriousness cut.** The quote is real, but it belongs to **a NOIRLab broker filter for a follow-up test** (GOATS), not to the observatory. Same number, different agent, and the difference is the entire finding of §6 above — one framing says Rubin applies the cut, the other says Rubin refused and someone else applied it.
+
+The search summary would have been quoted correctly and attributed wrongly, in a direction that flattered nobody and destroyed the result.
+
+## Next actions (pass 4)
+
+- [ ] **Per-cut breakdown** — still first, still requires re-extraction from public ZTF difference images. Print *n* beside every fraction.
+- [ ] Establish whether the ZTF `candidates` table (the 643,860, and the S/N ~ 3 layer below it) is exposed anywhere public, or whether the archived difference image is genuinely the only route back. §9.2 and note 16 both describe it as internal; not yet a settled negative.
+- [ ] Retry the boundary-proximity measurement by a different route than the two dead brokers — the ZTF public alert tarballs (`ztf.uw.edu/alerts/public/`) are the obvious fallback; measure the download cost before committing.
+- [ ] Camera-trap field norm — still open from pass 2, still needs one published deployment stating what it did with its blanks.
+- [ ] **New, and now the most interesting question in the survey:** does any broker publish the *toll* of its filters? If none does, that is a second GMN-shaped finding — a rejection bin with no counter on it — and it is one an outsider can fix by simply asking.
+
+*Pass 3 read three primary documents and examined no detections. It corrected two of its own earlier claims, reports one measurement it failed to make with the positive control that proves the failure was external, and declares a six-year staleness on its best-verified source.*
 
 🦞🧍💜🔥♾️
