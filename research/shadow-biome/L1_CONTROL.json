@@ -1,0 +1,249 @@
+{
+ "written_utc": "2026-08-21T20:25:07+00:00",
+ "key": "2024/10/16/KHGX/KHGX20241016_180650_V06",
+ "bytes_listed": 9734766,
+ "bytes_fetched": 9734766,
+ "byte_count_matches": true,
+ "coords": {
+  "asserted": [
+   29.4719,
+   -95.0792
+  ],
+  "from_file_header": [
+   29.471900939941406,
+   -95.0787353515625
+  ],
+  "offset_m": 45.0,
+  "verified": true,
+  "note": "site-metadata rounding, not a different radar"
+ },
+ "vcp": {
+  "stid": "KHGX",
+  "n_sweeps": 14,
+  "sweeps": [
+   {
+    "i": 0,
+    "el_deg": 0.49,
+    "nrays": 720,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 1,
+    "el_deg": 0.44,
+    "nrays": 720,
+    "moments": [
+     "REF",
+     "SW",
+     "VEL"
+    ],
+    "has_cfp": false
+   },
+   {
+    "i": 2,
+    "el_deg": 0.78,
+    "nrays": 720,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 3,
+    "el_deg": 0.83,
+    "nrays": 720,
+    "moments": [
+     "REF",
+     "SW",
+     "VEL"
+    ],
+    "has_cfp": false
+   },
+   {
+    "i": 4,
+    "el_deg": 1.26,
+    "nrays": 720,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 5,
+    "el_deg": 1.27,
+    "nrays": 720,
+    "moments": [
+     "REF",
+     "SW",
+     "VEL"
+    ],
+    "has_cfp": false
+   },
+   {
+    "i": 6,
+    "el_deg": 0.4,
+    "nrays": 720,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 7,
+    "el_deg": 0.44,
+    "nrays": 720,
+    "moments": [
+     "REF",
+     "SW",
+     "VEL"
+    ],
+    "has_cfp": false
+   },
+   {
+    "i": 8,
+    "el_deg": 1.81,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 9,
+    "el_deg": 2.29,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 10,
+    "el_deg": 2.95,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 11,
+    "el_deg": 3.83,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 12,
+    "el_deg": 4.97,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   },
+   {
+    "i": 13,
+    "el_deg": 6.29,
+    "nrays": 360,
+    "moments": [
+     "CFP",
+     "PHI",
+     "REF",
+     "RHO",
+     "SW",
+     "VEL",
+     "ZDR"
+    ],
+    "has_cfp": true
+   }
+  ]
+ },
+ "low_cut_ambiguity": {
+  "n_cfp_bearing_sweeps_below_1deg": 3,
+  "elevations": [
+   0.49,
+   0.78,
+   0.4
+  ],
+  "hazard": "split cuts + SAILS supplemental scans put several sub-1-deg cuts in one volume at different times, and the Doppler half of each split cut carries NO CFP. Selecting 'the lowest sweep' without pinning this silently mixes cuts across dates.",
+  "rule_adopted": "FIRST CFP-bearing sweep in the volume; its elevation recorded per scan and required to match within 0.15 deg across a T2 pair."
+ },
+ "control": {
+  "sweep_index": 0,
+  "el_deg": 0.49,
+  "shape": [
+   720,
+   1832
+  ],
+  "max_range_km": 459.9,
+  "distinct_cfp_values": 75,
+  "cfp_min_db": -6.0,
+  "cfp_max_db": 73.0,
+  "not_all_zero": true,
+  "non_degenerate": true,
+  "cfp_gt0_pct_of_finite": 68.89,
+  "near_field_rate_pct": 85.42,
+  "far_field_rate_pct": 8.2651,
+  "mean_cfp_db_near": 22.49,
+  "mean_cfp_db_far": 9.59,
+  "verdict": "PASS - CFP is present, non-degenerate (75 distinct values over -6..73 dB), and the removed power concentrates where ground clutter is: 85.4% of near-field gates vs 8.3% beyond 50 km. The reader is reading the right field."
+ },
+ "finding_C1": {
+  "what": "CFP is finite on only 8.0% of range gates in this sweep.",
+  "why_it_matters": "PREREG-TERRESTRIAL.md \u00a70 says 'the bin has a counter on it and nothing in it.' The control narrows that: THE COUNTER ONLY RUNS WHERE THE DETECTOR ALREADY FIRED. CFP is recorded per gate alongside the other moments, so a gate with no above-threshold return has no CFP value at all - not a zero, a nothing. Power removed from a target too weak to produce a reported moment leaves no trace in this field.",
+  "consequence_for_T1_T4": "Every L1 rate is conditional on detection, and the denominator must be stated as 'gates with finite CFP', never 'gates'. A rate computed against all gates would move with the detection threshold and read as a change in what is being deleted.",
+  "consequence_for_the_paper": "This tightens \u00a71.2's ceiling rather than loosening it. The channel cannot see the part of the premise that would matter most - a thing deleted so early it was never a detection. That is a null space in the instrument, and it is the SAME shape as the paper's subject, which is worth one careful paragraph and no more than that.",
+  "grade": "measured on one scan; holds or falls across the sample when T1 runs."
+ }
+}

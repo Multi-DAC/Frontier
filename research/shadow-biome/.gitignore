@@ -3,3 +3,5 @@ ztf_public_*.tar.gz
 data/
 PASS5_alert_index.json
 diffimg/
+data/nexrad/
+*.raw
