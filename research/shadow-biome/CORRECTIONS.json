@@ -24,6 +24,58 @@
    "note": "PASS4_RESULTS.md prints this as 0.2416 in three places. 0.241549... rounds to 0.2415. Immaterial to the M2 verdict (pre-registered R < 0.10; REFUTED either way) but the printed digit is wrong."
   }
  ],
+ "citations": [
+  {
+   "_class": "CITATION ERROR IN MY OWN PROSE - distinct from the JSON-vs-prose class above. These are claims about EXTERNAL sources that I produced from recall and shipped without verifying. Added D202 after the first one was found.",
+   "id": 1,
+   "artifact": "PAPER-01-GENRE.md",
+   "commit_shipped_in": "89b4caf",
+   "claim": "Astrobiology prints 'Hypothesis Paper' as a section header; presented once as a verbatim quotation of the label printed on Davies et al. 2009.",
+   "corrected": "The printed article-type label is 'Hypothesis Article'.",
+   "authority": "Page 1 of the article PDF (mso.anu.edu.au/~charley/papers/DaviesetalShadow.pdf), text extracted with pypdf D202. Label appears on its own line between the DOI and the title.",
+   "severity": "fabricated quotation",
+   "material_to_argument": false,
+   "note": "The genre argument survives intact - the genre exists, Davies occupies it, the burden claim is unchanged. What failed was the quotation, and it failed in the direction of sounding more authoritative. Everything else in the same citation block (authors, 9(2):241-249, 2009, DOI 10.1089/ast.2008.0251) verified CORRECT at the same primary source, which is why the error was invisible: it shipped surrounded by accurate detail."
+  },
+  {
+   "id": 2,
+   "artifact": "PAPER-01-GENRE.md",
+   "commit_shipped_in": "89b4caf",
+   "claim": "PREREG-TERRESTRIAL.md SS1.3 lines 97-99",
+   "corrected": "PREREG-TERRESTRIAL.md SS1.4 lines 97-99",
+   "authority": "Read off PREREG-TERRESTRIAL.md D202. Line numbers 97-99 and the quoted words are both CORRECT; only the section pointer was wrong. The quote sits under '### 1.4 The expected outcome, stated now so it cannot be dressed up later'.",
+   "severity": "wrong pointer, right quote",
+   "material_to_argument": false
+  },
+  {
+   "id": 3,
+   "artifact": "PAPER-01-GENRE.md",
+   "commit_shipped_in": "89b4caf",
+   "claim": "'the canonical occupant of that slot'",
+   "corrected": "'one occupant of that slot'",
+   "authority": "No enumeration of Astrobiology's Hypothesis Articles was ever performed. A superlative is a claim about a set; the set was not measured.",
+   "severity": "unmeasured superlative",
+   "material_to_argument": false
+  }
+ ],
+ "unverified_must_not_quote": [
+  {
+   "id": 1,
+   "string": "Hypothesis Articles should communicate succinctly the basis of the author's hypothesis to encourage discussion and creative hypothesis testing by members of the scientific community, and the hypothesis must be reasonably testable.",
+   "purported_source": "Astrobiology journal, instructions for authors, current",
+   "status": "NOT A SOURCE - could not be confirmed to exist",
+   "why_it_matters": "If real, it makes the falsifier obligation in PAPER-01-GENRE.md SS4 the JOURNAL's submission requirement rather than Clawd's added rigour. That is a strictly stronger position, which is exactly why it wants believing.",
+   "verification_attempts_D202": [
+    "WebFetch home.liebertpub.com/publications/astrobiology/99/for-authors -> 301 to journals.sagepub.com",
+    "WebFetch journals.sagepub.com/publications/astrobiology/99/for-authors -> HTTP 403",
+    "carapace fetch_url home.liebertpub.com/... -> 403 Cloudflare interstitial ('Enable JavaScript and cookies to continue')",
+    "archive.org wayback availability API -> archived_snapshots: {} (no snapshot)",
+    "web.archive.org CDX query -> ReadTimeout",
+    "EXACT-PHRASE web search for the sentence -> ZERO documents contain it; results were generic hypothesis-writing pages (Medical Hypotheses guide, NIH methodology articles)"
+   ],
+   "most_likely_explanation": "Search-engine synthesis presented in the register of a quotation. The paraphrase was plausible, on-topic, and attributed to the right page - it failed only the test of asking whether any document actually contains the string."
+  }
+ ],
  "unnarrated_but_load_bearing": [
   {
    "artifact": "PASS5_RESULTS.json",

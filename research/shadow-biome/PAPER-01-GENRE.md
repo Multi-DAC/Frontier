@@ -15,18 +15,49 @@ unusually exposed to it.
 
 ## 1. THE GENRE HAS A NAME, A JOURNAL, AND A NEAR-IDENTICAL ANCESTOR
 
-Not a concession to informality. *Astrobiology* prints **"Hypothesis Paper"** as a section header, and
-the canonical occupant of that slot is in this exact conceptual neighbourhood:
+⚠ **CORRECTED D202 ~15:3x — THIS SECTION SHIPPED WITH THE GENRE'S NAME WRONG.** It read
+*"Hypothesis Paper"* in three places, including once as a **verbatim quotation of a printed section
+header**, which is a fabricated quotation and not a typo. The label is **"Hypothesis Article."**
+Original wording preserved in this notice rather than deleted; see `CORRECTIONS.json` /citations/1.
+The error was found by verifying my own citation, not by a reader — but it was *written* with the
+same confidence as the parts that were right, which is the whole problem with recalled citations.
+
+Not a concession to informality. *Astrobiology* prints **"Hypothesis Article"** as an article-type
+label, and one occupant of that slot sits in this exact conceptual neighbourhood:
 
 > Davies, P.C.W., Benner, S.A., Cleland, C.E., Lineweaver, C.H., McKay, C.P., Wolfe-Simon, F.
 > **"Signatures of a Shadow Biosphere."** *Astrobiology* **9**(2):241–249 (2009).
-> DOI 10.1089/ast.2008.0251. Section header on the article: *Hypothesis Paper*.
-> Abstract: *"we discuss possible signatures of weird life and outline some simple strategies for
-> seeking evidence of a shadow biosphere."*
+> DOI 10.1089/ast.2008.0251.
+> Article-type label printed above the title: **`Hypothesis Article`**
+> Abstract, final sentence, verbatim: *"In this paper, we discuss possible signatures of weird life
+> and outline some simple strategies for seeking evidence of a shadow biosphere."*
+
+✅ **GRADE: PRIMARY-VERIFIED.** Every element above — label, title, authors, volume, issue, page range,
+year, DOI, and the abstract sentence — was read D202 off page 1 of the article PDF itself
+(`mso.anu.edu.au/~charley/papers/DaviesetalShadow.pdf`, author's own copy), extracted with `pypdf`,
+not off an abstract page, a search snippet, or recall.
+
+⚠ **"one occupant," not "the canonical occupant."** The original claim was a superlative, and a
+superlative is a claim about a **set** — here, every Hypothesis Article *Astrobiology* has ever run.
+That set was never enumerated. What is defensible: this is a heavily-cited article, in this journal,
+in this genre, on a near-identical question. That is enough to carry the argument and it is all the
+argument needs.
 
 That abstract is a paraphrase of the proposal above, written seventeen years earlier, and the paper
-became a durable and heavily cited framing **while carrying no confirmatory result at all.** The genre
-is load-bearing in astrobiology, not a retreat from rigour.
+became a durable framing **while carrying no confirmatory result at all.** The genre is load-bearing
+in astrobiology, not a retreat from rigour.
+
+⛔ **OWED — THE JOURNAL'S *CURRENT* ARTICLE-TYPE DEFINITION IS UNVERIFIED AND MUST NOT BE QUOTED.**
+A web search returned what looked like the guideline text — *"Hypothesis Articles should communicate
+succinctly the basis of the author's hypothesis […] and the hypothesis must be reasonably testable"* —
+and that clause would have been a gift, because it makes §4's falsifier obligation the **journal's**
+requirement rather than my added rigour. **I could not confirm it exists.** `liebertpub.com` and
+`journals.sagepub.com` both return Cloudflare 403 to every fetch path tried; the Wayback Machine has
+no snapshot of the for-authors page; and an **exact-phrase search for that sentence returns zero
+documents containing it.** The most likely reading is that the search engine *synthesized* it from
+generic hypothesis-writing pages. Treat as **NOT A SOURCE** until read on the journal's own page.
+The 2009 label is verified; the 2026 guidelines are not, and the gap between those two grades is
+seventeen years wide.
 
 ⚠ **BUT — THE NAME COLLIDES, AND WE HAD NOT CITED IT.** `grep -ri "davies|shadow biosphere|weird life"`
 over every `.md` in this directory returned **zero hits** as of this file. We are drafting a paper called
@@ -79,7 +110,9 @@ Dropping *"prove it"* is fine. Dropping *"state what would count as evidence aga
 This is one section — not a research programme — so it costs the proposal nothing and is the entire
 difference between a proposal and a mood.
 
-⛔ **`PREREG-TERRESTRIAL.md §1.3` LINES 97–99 STILL BIND** and are now *more* important, because a
+⛔ **`PREREG-TERRESTRIAL.md §1.4` LINES 97–99 STILL BIND** *(section number corrected D202 from §1.3;
+the quoted words and the line numbers were right, the pointer was not — verified by reading the file)*
+and are now *more* important, because a
 lower burden of proof is exactly the condition under which a held gate gets quietly upgraded in prose:
 
 > *"if T3 and T4 both hold, that is aeroecology's known population showing up in a channel that measures

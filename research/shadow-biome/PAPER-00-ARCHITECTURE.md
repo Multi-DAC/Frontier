@@ -75,6 +75,7 @@ paper's existence proof, and our ZTF null is the paper's honesty.
 
 | § | Section | State | Rests on |
 |---|---|---|---|
+| **F** | ⭐ **FALSIFIERS — what would count as evidence against.** Sits **near the front**, after §1, *before* the evidence — not in a closing limitations paragraph, where a falsifier is a courtesy rather than a commitment | ✅ **HAVE**, written D202 ~15:4x | `PAPER-02-FALSIFIERS.md`. **Mandatory** per `PAPER-01-GENRE.md §4` — the genre's failure mode is unfalsifiability by construction and this premise explains its own absence of evidence. Six falsifiers **F1–F6** + the six forbidden moves + the paper's own stated death condition. **F6 has already fired on us** (NEXRAD kept a counter, not a bin) |
 | **1** | The premise, and the one repair it needs | ✅ **HAVE** | `PREREGISTRATION.md §1, §1a` — not-selected-*for* replaces selected-*against*; three mechanisms, all producing Clayton's observable |
 | **2** | Observer-relative kinds are legitimate | ✅ **HAVE** | cryptic species · dark taxa · Candidate Phyla Radiation (visible ~2013 because a device finally looked) |
 | **3** | The fork, and why it is written before the data | ✅ **HAVE** | `PREREGISTRATION.md §2`. **This is the transferable contribution** — two live branches let a null in one be reassigned to the other, each half stays falsifiable, the pair becomes unfalsifiable, and it happens *after* the data comes back and *feels like reasoning* |
@@ -115,7 +116,17 @@ under which it is hardest to keep. `PASS7_PREDICTIONS.md` gets committed and pus
 
 ## 4. ORDER OF WORK
 
-1. **`PASS7_PREDICTIONS.md`** — pre-registered, committed, pushed. Nothing else starts first.
+⚠ **REORDERED D202 ~15:4x BY THE GENRE DECISION — this list was written ~12:58 and went stale at
+~15:0x without changing a character.** Under a demonstration paper, pass 7 was "the whole ballgame"
+(§3) because the paper had to *establish* something. Under a hypothesis paper it does not, so pass 7
+now changes **which section is larger**, not whether the paper stands. Meanwhile `PAPER-01-GENRE.md §4`
+promoted the falsifier section from *absent* to *mandatory*. **Item 0 below is done** (`PAPER-02-FALSIFIERS.md`);
+item 1's pre-registration-before-code rule is **untouched and still binds.** Recorded rather than
+silently reordered — a stale order-of-work list is the kind of carrier that keeps issuing correct-looking
+instructions after the thing that justified them has moved.
+
+0. ✅ **`PAPER-02-FALSIFIERS.md`** — done D202. The one obligation that survives the lowered burden.
+1. **`PASS7_PREDICTIONS.md`** — pre-registered, committed, pushed. Nothing else *in the compute line* starts first.
 2. Pass 7 (a) → (b) → (c). Compute, not conversation.
 3. §6 primary sources — the NEXRAD/aeroecology citations, because it is the paper's existence proof
    and currently its weakest citation.
