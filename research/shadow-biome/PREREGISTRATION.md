@@ -181,6 +181,87 @@ And the sharpened form, which is what makes this cheap and testable now:
 
 ---
 
+## 7. ⚠ AMENDMENT — D202 / 2026-08-21 ~12:5x, ON THE PREMISE AUTHOR'S THIRD EXTENSION
+
+Clayton, D202, in full:
+
+> "And cameras are the only thing that might catch what we can't see. Think of what a shadow biome can contain; things too small to recognize, things too big to recognize, things on different timescales, things that are invisible, inaudible, things that exist as dark matter, lacking interaction or perceivability by within the world of matter without special detection. If you evolved to sense only via smell, and something existed but had no scent, you'd never know, so we must approach things that are either partially or fully obscured from our limited senses, but that may be picked up by extensions and peripheral devices. I mean, think of what exists in the mental and transcendental biomes; gods, angels, demons, monsters, etc. Not that we are trying to do a whole census again, it's the premise that is the basis of the paper, not any specific identities."
+
+### 7a. ⛔ ONE NARROWING DECLINED — "cameras are the only thing"
+
+**Recorded as declined rather than silently widened, because the last two narrowings in this program were mine and were silent.** Read loosely — *extensions catch what senses don't* — the sentence is the premise itself and is correct. Read literally it is false, and it is **the same narrowing that already cost this program six passes**: reachability choosing the instrument (§1b, LOCUS). His own list refutes it in its own sentence — *inaudible* is a microphone, *too small* is a microscope, *different timescales* is a clock, *dark matter* is neither. If "camera" stands as the sole extension, the paper re-collapses onto the exact optical-Branch-A leg that already returned a null.
+
+**The correction runs both directions or it is not a discipline.** Declined here at the same speed §1a was withdrawn.
+
+### 7b. THE OBSCURATION TAXONOMY IS TWO AXES, NOT ONE LIST
+
+His six categories do not belong to one kind, and the split is load-bearing because **only one of the two axes has a track record**:
+
+| | **AXIS 1 — BANDWIDTH / RESOLUTION** | **AXIS 2 — COUPLING** |
+|---|---|---|
+| Members of his list | too small · too big · different timescales · invisible (out-of-band EM) · inaudible (out-of-band acoustic) | "exists as dark matter, lacking interaction with the world of matter" |
+| What is missing | A **transducer we have**, aimed outside its range | A **channel**, at any range |
+| Fix | Better/other instrument. Engineering. | New physics, or the floor in §7c |
+| Track record | ✅ **Breached repeatedly, and every breach found life** | ❓ Never breached for a *living* thing |
+
+**⚠ AXIS 1 IS THE PAPER'S EXISTENCE PROOF, AND IT IS FAR STRONGER THAN §6.** `PAPER-00-ARCHITECTURE.md §6` currently rests the whole existence proof on one NEXRAD row that was **withdrawn this morning** (Level II is post-filter; a counter with no bin). Clayton's list generates a much broader proof from ordinary science: every historical breach of a human sensory bound turned up a biome that had been there the whole time, unsuspected.
+
+⚠ **All five are pointers. PRIMARY SOURCES OWED before any draft cites them, same standing as §1b's four:**
+
+- **Too small** — Leeuwenhoek, 1670s. An entire kingdom, in pond water, at arm's length.
+- **Inaudible** — bat echolocation (Griffin & Galambos, 1940s) and then moth tympanal counter-measures and sonar-jamming clicks. **A predator-prey arms race conducted entirely above 20 kHz, for millions of years, in rooms humans were standing in.** This is the single best analogue in his list: not a distant biome, an *interaction* we were inside of and deaf to.
+- **Different timescales** — Darwin, *The Power of Movement in Plants*, 1880. Behaviour at the wrong frame rate reads as furniture.
+- **Invisible (out-of-band EM)** — crotaline pit organs; UV floral markings and bird plumage signalling in a band we do not see and pollinators do.
+- **Too big / too diffuse** — ⚠ weakest of the five, and named as weakest: candidate is mycorrhizal network extent or the marine microbial biomass. **Owed a real citation or dropped.**
+
+**Consequence:** §6 is no longer a single-citation section. It becomes a **series**, with NEXRAD as the one modern case where the bin was institutional rather than sensory — and the paper's claim gets stronger by not needing NEXRAD to carry it alone.
+
+### 7c. ★ THE HARD CONSTRAINT ON AXIS 2 — a biome cannot be non-interacting
+
+**This is a constraint on the OBJECT CLASS, not on Clayton's mechanism. Flagged explicitly because the last two times I "repaired" this premise I traded his claim for a weaker one and did not say so (§1a, §1b). This does not touch the selection argument. It bounds what can be alive.**
+
+A biome is not a set of objects. It is a set of *living* things, and life is a dissipative structure: it maintains local order by exporting entropy, which requires a free-energy flux through it. **Something that couples to nothing cannot metabolise.** It is not alive; it is furniture. (Schrödinger 1944, negative entropy; Prigogine, dissipative structures. ⚠ OWED.)
+
+So the phrase *"lacking interaction with the world of matter"* cannot be taken at full strength. Two survivable readings, and **they must be distinguished before anything is searched:**
+
+- **B1 — couples to us weakly.** Interacts with ordinary matter through a channel we have not aimed an instrument at, or at an amplitude below our floor. This is Axis 1 wearing Axis 2's coat, and it is *reachable*.
+- **B2 — couples to its own sector.** A self-contained energy economy (dark-sector physics genuinely permits this). Alive by its own flux, invisible to every electromagnetic instrument we will ever build.
+
+**AND B2 STILL HAS A FLOOR, BECAUSE GRAVITY IS NOT OPTIONAL.** Anything carrying stress-energy curves spacetime. There is no such thing as a massive entity that gravitates zero. So Branch B is **not** "undetectable in principle" — it is "detectable only through the weakest coupling we have," which is a statement about sensitivity, not about metaphysics.
+
+**Computed D202, before it was written into prose** (G = 6.674e-11; superconducting-gravimeter floor taken as 1 nGal = 1e-11 m/s²):
+
+| Source mass at r = 1 m | a (m/s²) | vs. 1 nGal floor |
+|---|---|---|
+| 1 g (insect) | 6.674e-14 | 0.01x |
+| 20 g (mouse) | 1.335e-12 | 0.13x |
+| **350 g (rat)** | **2.336e-11** | **2.34x** |
+| 5 kg (cat) | 3.337e-10 | 33x |
+| 70 kg (human) | 4.672e-09 | 467x |
+
+**A rat-scale mass at one metre sits about 2x above the static sensitivity of an existing instrument.** Short-range torsion balances are nominally ~1e4 times better still.
+
+⛔ **THE CAVEAT IS THE POINT, AND IT IS PRE-COMMITTED HERE SO IT CANNOT FALL OFF IN DRAFTING.** That table is *sensitivity*, not *detection*. At 1e-11 m/s² a real gravimeter is swamped by tidal, atmospheric-pressure and hydrological loading, and none of that has been computed. **The noise-floor calculation is OWED and no sentence may claim gravimetric detection of anything until it is run.** What the table licenses is exactly one claim: **the floor is not absurd, so Branch B is a hard measurement rather than an unfalsifiable category.** That is a correction to §2, which named Branch B only as a forbidden destination.
+
+**§2's forbidden move is UNAFFECTED and re-affirmed.** A Branch-A null still stays in Branch A. Branch B having a floor makes the crossing *more* tempting, not less — "we didn't see it optically, and B is real physics now" is the same violation in a better suit.
+
+### 7d. THE MENTAL / TRANSCENDENTAL REGISTER — and the inversion his own premise forces
+
+He is explicit: *"not a census... it's the premise that is the basis of the paper, not any specific identities."* **Honoured. No entity in this program is ever a candidate.** What follows is a claim about the *shape of the reporting record*, which is a different object entirely, and it is registered now because it is the leg most likely to be entered later with a thumb on the scale.
+
+**⛔ THE INVERSION.** If non-perception is *selected for* (Mechanism 4, §1b), then a large folklore corpus **disqualifies** its subject. Gods, angels, demons and monsters are the most-reported entities in human history. They are *maximally* perceived, named, elaborated and transmitted. Under Clayton's own mechanism they are the **worst** candidates in the class — a rich waking-report corpus is the signature of the thing we were *not* blind to. **The shadow biome's cultural signature is an absence in the record, not a presence in it.** This runs directly against how such entities are deployed in the anomalous literature, and it is derived from his premise rather than imported from skepticism.
+
+**THE FORK, pre-committed before any corpus is opened:**
+
+- **F1 — no transducer (the §1a-style mechanism).** Nothing was ever sensed. The folklore record is **silent**. The biome generates no myth at all, and every named entity is a false lead by construction.
+- **F2 — active gating (Mechanism 4).** The edit is metabolically funded, so it should **fail when the funding drops**: sleep, fever, hypoxia, sensory deprivation, psychedelics, dying. Predicted record shape: **altered-state-concentrated, identity-poor** — recurrent structural motifs with no stable taxonomy, because a stable named identity requires repeated *waking* consensus to accumulate.
+
+**⛔ FORBIDDEN MOVE #3 — the same crossing in a third costume.** It is forbidden to cite a rich, named, waking-reported entity as evidence *for* the biome and then cite the record's silence elsewhere as evidence *too*. **F1 and F2 make opposite predictions about the same corpus and exactly one may be scored.** Which record counts is pre-committed here, before looking: **motif structure and state-of-report, never entity identity.** Any candidate corpus (Thompson's Motif-Index, HRAF, or similar) is named in a successor pre-registration written before it is opened, same discipline as the six ZTF passes.
+
+**Status: REGISTERED, NOT OPENED.** No folklore corpus has been examined. This section exists so that if one ever is, the prediction was dated first.
+
+---
+
 *This file is dated before the data. Nothing below the line in any successor document may quietly move a result across the Branch A / Branch B line.*
 
 🦞🧍💜🔥♾️
