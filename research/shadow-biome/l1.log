@@ -1,0 +1,74 @@
+[ 1/56] KHGX20241016_122354_V06                  cfp=True el=0.472 gates=1832 0s
+[ 2/56] KHGX20241016_123209_V06                  cfp=True el=0.439 gates=1832 0s
+[ 3/56] KHGX20241016_180650_V06                  cfp=True el=0.494 gates=1832 0s
+[ 4/56] KHGX20241016_181531_V06                  cfp=True el=0.475 gates=1832 0s
+[ 5/56] KHGX20241016_235430_V06                  cfp=True el=0.439 gates=1832 0s
+[ 6/56] KHGX20241017_000313_V06                  cfp=True el=0.439 gates=1832 0s
+[ 7/56] KHGX20241115_180624_V06                  cfp=True el=0.492 gates=1832 0s
+[ 8/56] KHGX20250115_131617_V06                  cfp=True el=0.401 gates=1832 0s
+[ 9/56] KHGX20250115_132222_V06                  cfp=True el=0.385 gates=1832 0s
+[10/56] KHGX20250115_183431_V06                  cfp=True el=0.379 gates=1832 0s
+[11/56] KHGX20250115_184017_V06                  cfp=True el=0.45 gates=1832 29s
+[12/56] KHGX20250115_234528_V06                  cfp=True el=0.398 gates=1832 157s
+[13/56] KHGX20250115_235104_V06                  cfp=True el=0.368 gates=1832 327s
+[14/56] KHGX20250214_183558_V06                  cfp=True el=0.28 gates=1832 373s
+[15/56] KHGX20250416_115537_V06                  cfp=True el=0.442 gates=1832 740s
+[16/56] KHGX20250416_120420_V06                  cfp=True el=0.481 gates=1832 1168s
+[17/56] KHGX20250416_182732_V06                  cfp=True el=0.45 gates=1832 1247s
+[18/56] KHGX20250416_183613_V06                  cfp=True el=0.486 gates=1832 1278s
+[19/56] KHGX20250417_005013_V06                  cfp=True el=0.368 gates=1832 1298s
+[20/56] KHGX20250417_005856_V06                  cfp=True el=0.055 gates=1832 1332s
+[21/56] KHGX20250516_181645_V06                  cfp=True el=0.324 gates=1832 1356s
+[22/56] KHGX20250716_113251_V06                  cfp=True el=0.277 gates=1832 1376s
+[23/56] KHGX20250716_113955_V06                  cfp=True el=0.503 gates=1832 1392s
+[24/56] KHGX20250716_183021_V06                  cfp=True el=0.398 gates=1832 1397s
+[25/56] KHGX20250716_183725_V06                  cfp=True el=0.494 gates=1832 1413s
+[26/56] KHGX20250717_012609_V06                  cfp=True el=0.22 gates=1832 1463s
+[27/56] KHGX20250717_013313_V06                  cfp=True el=0.005 gates=1832 1469s
+[28/56] KHGX20250815_182745_V06                  cfp=True el=0.349 gates=1832 1476s
+[29/56] KDDC20241016_125330_V06                  cfp=True el=0.42 gates=1832 1518s
+[30/56] KDDC20241016_130210_V06                  cfp=True el=0.478 gates=1832 1552s
+[31/56] KDDC20241016_183110_V06                  cfp=True el=0.431 gates=1832 1555s
+[32/56] KDDC20241016_183930_V06                  cfp=True el=0.382 gates=1832 1558s
+[33/56] KDDC20241017_000534_V06                  cfp=True el=0.409 gates=1832 1567s
+[34/56] KDDC20241017_001350_V06                  cfp=True el=0.475 gates=1832 1573s
+[35/56] KDDC20241115_182823_V06                  cfp=True el=0.467 gates=1832 1588s
+[36/56] KDDC20250115_135917_V06                  cfp=True el=0.324 gates=1832 1632s
+[37/56] KDDC20250115_140757_V06                  cfp=True el=0.437 gates=1832 1655s
+[38/56] KDDC20250115_185622_V06                  cfp=True el=0.439 gates=1832 1662s
+[39/56] KDDC20250115_190502_V06                  cfp=True el=0.382 gates=1832 1688s
+[40/56] KDDC20250115_234849_V06                  cfp=True el=0.478 gates=1832 1704s
+[41/56] KDDC20250115_235722_V06                  cfp=True el=0.481 gates=1832 1716s
+[42/56] KDDC20250214_185725_V06                  cfp=True el=0.483 gates=1832 1724s
+[43/56] KDDC20250416_120714_V06                  cfp=True el=0.634 gates=1832 1744s
+[44/56] KDDC20250416_121530_V06                  cfp=True el=0.662 gates=1832 1811s
+[45/56] KDDC20250416_184549_V06                  cfp=True el=0.637 gates=1832 1842s
+[46/56] KDDC20250416_185405_V06                  cfp=True el=0.632 gates=1832 1867s
+[47/56] KDDC20250417_012003_V06                  cfp=True el=0.706 gates=1832 1891s
+[48/56] KDDC20250417_012532_V06                  cfp=True el=0.703 gates=1832 1972s
+[49/56] KDDC20250516_183719_V06                  cfp=True el=0.637 gates=1832 1997s
+[50/56] KDDC20250716_113154_V06                  cfp=True el=0.61 gates=1832 2106s
+[51/56] KDDC20250716_114034_V06                  cfp=True el=0.593 gates=1832 2145s
+[52/56] KDDC20250716_185403_V06                  cfp=True el=0.612 gates=1832 2292s
+[53/56] KDDC20250716_190229_V06                  cfp=True el=0.574 gates=1832 2303s
+[54/56] KDDC20250717_020347_V06                  cfp=True el=0.654 gates=1832 2307s
+[55/56] KDDC20250717_020959_V06                  cfp=True el=0.689 gates=1832 2310s
+[56/56] KDDC20250815_184818_V06                  cfp=True el=0.599 gates=1832 2312s
+{
+ "T1": 100.0,
+ "T2": 0.7617980538669262,
+ "T3": [
+  7.691486358642578,
+  7.5720860958099365
+ ],
+ "T4": {
+  "KHGX": 1.353691577911377,
+  "KDDC": 0.39510250091552734
+ },
+ "verdicts": {
+  "T1": true,
+  "T2": true,
+  "T3": true,
+  "T4": true
+ }
+}

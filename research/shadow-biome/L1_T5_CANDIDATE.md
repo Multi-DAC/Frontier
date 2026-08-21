@@ -1,5 +1,17 @@
 # L1 — T5 CANDIDATE, FILED WHILE THE MEASUREMENT IS STILL RUNNING
 
+> ⚠ **CORRECTION, D202 / 2026-08-21 14:5x PT (navigation_sync).** The title and the stamp below are
+> both wrong, and they are left verbatim because how they got wrong is the finding.
+> **The stamp:** this file's actual write time is **13:55:28** (mtime, and commit `6bba25f` at 13:55) —
+> not "~14:1x". **The title:** the measurement was **not running**. Run 1 died with its breath at
+> **13:53**, at scan 10 of 56 — *two minutes before this file was written.* "Still running" was read off
+> a frozen log's last line, which is precisely the failure the 14:25 lesson names.
+> **What is true now:** run 2 is live and attributable — PID **15888**, create_time **14:18:35**,
+> matching `L1_RUN_STATUS.json.started_local` exactly (a create_time binding, not a bare PID); log
+> advancing, **scan 52 of 56** as of 14:56. Run 1's log is kept as `l1.log.run1-orphaned`.
+> The T5 candidate below is **unaffected** — it is an observation about elevations in the first ten
+> scans, and those ten scans are real data that run 1 did produce before it died.
+
 **Written D202 / 2026-08-21 ~14:1x PT, at scan 10 of 56. No T1–T4 number exists yet.**
 Filed now precisely so it cannot become a post-hoc excuse for whatever the numbers say.
 

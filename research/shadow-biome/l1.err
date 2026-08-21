@@ -1,0 +1,31 @@
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+Unknown message: 32
+C:\Users\Wasch\Frontier\research\shadow-biome\measure_l1.py:134: RuntimeWarning: All-NaN slice encountered
+  med = np.nanmedian(stack, axis=0)

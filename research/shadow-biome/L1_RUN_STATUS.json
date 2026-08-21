@@ -1,0 +1,7 @@
+﻿{
+    "launched_by":  "D202 afternoon_exploration, DETACHED via Start-Process after run1 died with its breath at scan 10/56",
+    "script":  "measure_l1.py",
+    "pid":  15888,
+    "started_local":  "2026-08-21T14:18:35",
+    "note":  "liveness = this pid alive AND l1.log mtime advancing; run1 orphan log kept as l1.log.run1-orphaned"
+}
