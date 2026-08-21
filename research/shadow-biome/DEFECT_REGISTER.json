@@ -1,0 +1,98 @@
+[
+  {
+    "id": "DEF-01",
+    "pass_": "L1",
+    "found_by": "eye",
+    "what": "el_match True 8/8 with n_dropped 0 -- a precondition that never rejected",
+    "cite": "file:L1_T5_CANDIDATE.md",
+    "citable": true
+  },
+  {
+    "id": "DEF-02",
+    "pass_": "7",
+    "found_by": "gauge",
+    "what": "o['b'] > 0 rejected 0 objects at all five minarea rungs",
+    "cite": "json:PASS7_RESULTS.json:/I/unexercised",
+    "citable": true
+  },
+  {
+    "id": "DEF-03",
+    "pass_": "7",
+    "found_by": "gauge",
+    "what": "NO_POSITION branch never executes -- every alert carries x/y",
+    "cite": "json:PASS7_RESULTS.json:/I/rejection_table/C_alert_has_position",
+    "citable": true
+  },
+  {
+    "id": "DEF-04",
+    "pass_": "7",
+    "found_by": "eye",
+    "what": "I1 and I2 set to the SAME boolean -- the gauge grades its own success",
+    "cite": "line:measure_pass7.py:352",
+    "citable": true
+  },
+  {
+    "id": "DEF-05",
+    "pass_": "4",
+    "found_by": "eye",
+    "what": "PASS4_RESULTS.json stale against the prose that documents its correction",
+    "cite": "file:CORRECTIONS.json",
+    "citable": true
+  },
+  {
+    "id": "DEF-06",
+    "pass_": "7",
+    "found_by": "eye",
+    "what": "sep 'non-determinism' contradicted by exact 5-rung reproduction a day later",
+    "cite": "json:PASS7_DIAG.json:/Q2/same_process",
+    "citable": true
+  },
+  {
+    "id": "DEF-07",
+    "pass_": "6",
+    "found_by": "eye",
+    "what": "PASS6_RESULTS vs PASS6_DIAG frac_far differ 0.047 pp at the SAME minarea",
+    "cite": "json:PASS6_DIAG.json:/D2b/ladder/5/frac_far",
+    "citable": true
+  },
+  {
+    "id": "DEF-08",
+    "pass_": "7",
+    "found_by": "gauge",
+    "what": "7(a) is the wrong operation -- caught by B2, a pre-committed agreement control",
+    "cite": "json:PASS7_RESULTS.json:/B/b2_gap_pp",
+    "citable": true
+  },
+  {
+    "id": "DEF-09",
+    "pass_": "8",
+    "found_by": "eye",
+    "what": "the owed 'third procedure' is degenerate: P_C == P_A as a set",
+    "cite": "file:PASS8_PREDICTIONS.md",
+    "citable": true
+  },
+  {
+    "id": "DEF-10",
+    "pass_": "8",
+    "found_by": "eye",
+    "what": "PASS8_PREDICTIONS N4's rationale mis-states BOTH structures: both compute Background inside the sign loop; the real difference is the extra bkg0 call and diag's FIVE extracts from one prep",
+    "cite": "line:diag_pass6.py:114",
+    "citable": true
+  },
+  {
+    "id": "DEF-11",
+    "pass_": "6a",
+    "found_by": "eye",
+    "what": "PAPER-00 sec.2 row 6a read 'PRE-REGISTERED, NOT RUN' for ~3h after L1 landed",
+    "cite": "file:PAPER-00-ARCHITECTURE.md",
+    "citable": true
+  },
+  {
+    "id": "DEF-12",
+    "pass_": "6",
+    "found_by": "eye",
+    "what": "pass6_stats.py's re-run-and-diff gauge cannot fail a correct refactor -- it can only ever render one verdict",
+    "cite": "line:pass6_stats.py:1",
+    "citable": true
+  }
+]

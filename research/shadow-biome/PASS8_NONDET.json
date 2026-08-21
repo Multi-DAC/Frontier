@@ -1,0 +1,497 @@
+{
+  "prereg": "PASS8_PREDICTIONS.md",
+  "prereg_commit": "6567f2b",
+  "n_images": 20,
+  "per_image": {
+    "ztf_20180601167662_000526_zr_c01_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        190,
+        190,
+        190,
+        190
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        190,
+        190,
+        190
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        117,
+        117,
+        117
+      ],
+      "struct_D_n": 190,
+      "struct_D_far": 117
+    },
+    "ztf_20180601168113_000577_zr_c02_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        243,
+        245,
+        243,
+        244
+      ],
+      "in_process_spread": 2,
+      "fresh_M": [
+        245,
+        245,
+        245
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        161,
+        161,
+        161
+      ],
+      "struct_D_n": 243,
+      "struct_D_far": 158
+    },
+    "ztf_20180601169954_000576_zr_c05_o_q2_scimrefdiffimg.fits": {
+      "in_process": [
+        174,
+        174,
+        174,
+        174
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        174,
+        174,
+        174
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        53,
+        53,
+        53
+      ],
+      "struct_D_n": 174,
+      "struct_D_far": 53
+    },
+    "ztf_20180601170417_000525_zr_c06_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        189,
+        189,
+        189,
+        189
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        189,
+        189,
+        189
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        110,
+        110,
+        110
+      ],
+      "struct_D_n": 189,
+      "struct_D_far": 110
+    },
+    "ztf_20180601171319_000524_zr_c08_o_q2_scimrefdiffimg.fits": {
+      "in_process": [
+        273,
+        273,
+        273,
+        273
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        272,
+        272,
+        272
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        48,
+        48,
+        48
+      ],
+      "struct_D_n": 273,
+      "struct_D_far": 49
+    },
+    "ztf_20180601171794_000575_zr_c10_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        142,
+        142,
+        141,
+        142
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        141,
+        141,
+        141
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        65,
+        65,
+        65
+      ],
+      "struct_D_n": 141,
+      "struct_D_far": 65
+    },
+    "ztf_20180601174595_000672_zr_c11_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        164,
+        165,
+        164,
+        164
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        164,
+        164,
+        164
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        80,
+        80,
+        80
+      ],
+      "struct_D_n": 164,
+      "struct_D_far": 80
+    },
+    "ztf_20180601298993_000531_zr_c05_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        244,
+        244,
+        244,
+        244
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        244,
+        244,
+        244
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        122,
+        122,
+        122
+      ],
+      "struct_D_n": 244,
+      "struct_D_far": 122
+    },
+    "ztf_20180601300394_000580_zr_c05_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        176,
+        176,
+        176,
+        176
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        176,
+        176,
+        176
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        94,
+        94,
+        94
+      ],
+      "struct_D_n": 176,
+      "struct_D_far": 94
+    },
+    "ztf_20180601300856_000628_zr_c11_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        106,
+        106,
+        106,
+        107
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        107,
+        107,
+        107
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        63,
+        63,
+        63
+      ],
+      "struct_D_n": 106,
+      "struct_D_far": 62
+    },
+    "ztf_20180601315556_000533_zr_c09_o_q2_scimrefdiffimg.fits": {
+      "in_process": [
+        381,
+        381,
+        382,
+        383
+      ],
+      "in_process_spread": 2,
+      "fresh_M": [
+        382,
+        382,
+        382
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        212,
+        212,
+        212
+      ],
+      "struct_D_n": 381,
+      "struct_D_far": 211
+    },
+    "ztf_20180601318438_000631_zr_c12_o_q3_scimrefdiffimg.fits": {
+      "in_process": [
+        305,
+        305,
+        306,
+        305
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        305,
+        305,
+        305
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        188,
+        188,
+        188
+      ],
+      "struct_D_n": 305,
+      "struct_D_far": 187
+    },
+    "ztf_20180601336968_000482_zr_c09_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        620,
+        621,
+        620,
+        621
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        619,
+        619,
+        619
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        305,
+        305,
+        305
+      ],
+      "struct_D_n": 621,
+      "struct_D_far": 306
+    },
+    "ztf_20180601402257_000590_zr_c13_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        1033,
+        1033,
+        1033,
+        1033
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        1033,
+        1033,
+        1033
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        475,
+        475,
+        475
+      ],
+      "struct_D_n": 1033,
+      "struct_D_far": 475
+    },
+    "ztf_20180601434769_000687_zr_c14_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        1016,
+        1015,
+        1016,
+        1013
+      ],
+      "in_process_spread": 3,
+      "fresh_M": [
+        1014,
+        1014,
+        1014
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        572,
+        572,
+        572
+      ],
+      "struct_D_n": 1012,
+      "struct_D_far": 571
+    },
+    "ztf_20180601441875_000591_zg_c12_o_q1_scimrefdiffimg.fits": {
+      "in_process": [
+        301,
+        301,
+        301,
+        301
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        302,
+        302,
+        302
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        152,
+        152,
+        152
+      ],
+      "struct_D_n": 301,
+      "struct_D_far": 150
+    },
+    "ztf_20180601442338_000639_zg_c15_o_q3_scimrefdiffimg.fits": {
+      "in_process": [
+        1155,
+        1155,
+        1156,
+        1154
+      ],
+      "in_process_spread": 2,
+      "fresh_M": [
+        1156,
+        1156,
+        1156
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        415,
+        415,
+        415
+      ],
+      "struct_D_n": 1155,
+      "struct_D_far": 413
+    },
+    "ztf_20180601443252_000539_zg_c09_o_q4_scimrefdiffimg.fits": {
+      "in_process": [
+        289,
+        289,
+        289,
+        289
+      ],
+      "in_process_spread": 0,
+      "fresh_M": [
+        289,
+        289,
+        289
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        135,
+        135,
+        135
+      ],
+      "struct_D_n": 289,
+      "struct_D_far": 134
+    },
+    "ztf_20180601457928_000640_zg_c02_o_q3_scimrefdiffimg.fits": {
+      "in_process": [
+        784,
+        785,
+        783,
+        780
+      ],
+      "in_process_spread": 5,
+      "fresh_M": [
+        783,
+        783,
+        783
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        436,
+        436,
+        436
+      ],
+      "struct_D_n": 782,
+      "struct_D_far": 435
+    },
+    "ztf_20180601475926_000687_zg_c07_o_q2_scimrefdiffimg.fits": {
+      "in_process": [
+        740,
+        740,
+        741,
+        740
+      ],
+      "in_process_spread": 1,
+      "fresh_M": [
+        739,
+        739,
+        739
+      ],
+      "fresh_M_spread": 0,
+      "fresh_M_far": [
+        333,
+        333,
+        333
+      ],
+      "struct_D_n": 741,
+      "struct_D_far": 334
+    }
+  },
+  "n_vary_inproc": 11,
+  "n_vary_fresh": 0,
+  "null_mismatch": [],
+  "struct_M": {
+    "n": 8524,
+    "n_far": 4136,
+    "frac_far": 0.48521820741435945
+  },
+  "struct_D": {
+    "n": 8520,
+    "n_far": 4126,
+    "frac_far": 0.48427230046948355
+  },
+  "n_delta": 4,
+  "frac_far_delta_pp": 0.09459069448758961,
+  "n4_status": "scored",
+  "verdicts": {
+    "N1": true,
+    "N2": true,
+    "N3": false,
+    "N-NULL": true,
+    "N4": true,
+    "N5": true
+  },
+  "rejections": {
+    "N_images_present": {
+      "n_in": 20,
+      "n_kept": 20,
+      "n_rejected": 0,
+      "note": "diffimg/*.fz on disk"
+    },
+    "N_b_positive": {
+      "n_in": 34103,
+      "n_kept": 34103,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "N_null_pairs": {
+      "n_in": 20,
+      "n_kept": 20,
+      "n_rejected": 0,
+      "note": "fresh run 1 == fresh run 2 (the no-op the gauge owes itself)"
+    }
+  },
+  "elapsed_s": 101.0,
+  "unexercised": [
+    "N_images_present",
+    "N_b_positive",
+    "N_null_pairs"
+  ]
+}

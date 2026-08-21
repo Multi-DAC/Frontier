@@ -1,0 +1,998 @@
+{
+  "prereg": "PASS8_PREDICTIONS.md",
+  "prereg_commit": "6567f2b",
+  "D1": {
+    "n_A": 3694,
+    "n_B": 6199,
+    "n_C": 3694,
+    "frac_far_A": 0.5487276664861939,
+    "frac_far_B": 0.4828198096467172,
+    "frac_far_C": 0.5487276664861939,
+    "identical": true
+  },
+  "D2": {
+    "n_alerts_all": 17991,
+    "n_alerts_frames": 376,
+    "n_with_flag": 376,
+    "spellings": [
+      "'f'",
+      "'t'"
+    ],
+    "n_neg": 240,
+    "n_pos": 136,
+    "neg_share": 0.6382978723404256
+  },
+  "D3": {
+    "r_neg": 0.6416666666666667,
+    "r_pos": 0.4117647058823529,
+    "gap_pp": 22.99019607843138,
+    "counts": {
+      "neg_in_unp_neg": 154,
+      "pos_in_unp_pos": 56,
+      "neg_total": 240,
+      "pos_total": 136,
+      "neg_matched": 167,
+      "pos_matched": 56
+    },
+    "n_unpaired_neg": 2505,
+    "n_unpaired_pos": 1365
+  },
+  "D5": {
+    "median_unpaired_neg": 367.0063803889926,
+    "median_unpaired_pos": 281.9033907164165,
+    "ratio": 1.3018870736400128,
+    "n_neg": 2505,
+    "n_pos": 1365
+  },
+  "D6": {
+    "ladder": {
+      "2": {
+        "n": 14202,
+        "r_neg": 0.7333333333333333,
+        "r_pos": 0.5735294117647058,
+        "gap_pp": 15.980392156862743,
+        "n_unpaired_neg": 4013,
+        "n_unpaired_pos": 2409,
+        "frac_far_union": 0.5892831995493593,
+        "counts": {
+          "neg_in_unp_neg": 176,
+          "pos_in_unp_pos": 78,
+          "neg_total": 240,
+          "pos_total": 136,
+          "neg_matched": 196,
+          "pos_matched": 79
+        }
+      },
+      "3": {
+        "n": 11649,
+        "r_neg": 0.7125,
+        "r_pos": 0.5220588235294118,
+        "gap_pp": 19.044117647058822,
+        "n_unpaired_neg": 3302,
+        "n_unpaired_pos": 1905,
+        "frac_far_union": 0.5069963086960254,
+        "counts": {
+          "neg_in_unp_neg": 171,
+          "pos_in_unp_pos": 71,
+          "neg_total": 240,
+          "pos_total": 136,
+          "neg_matched": 188,
+          "pos_matched": 71
+        }
+      },
+      "5": {
+        "n": 8526,
+        "r_neg": 0.6416666666666667,
+        "r_pos": 0.4117647058823529,
+        "gap_pp": 22.99019607843138,
+        "n_unpaired_neg": 2500,
+        "n_unpaired_pos": 1366,
+        "frac_far_union": 0.48451794510907814,
+        "counts": {
+          "neg_in_unp_neg": 154,
+          "pos_in_unp_pos": 56,
+          "neg_total": 240,
+          "pos_total": 136,
+          "neg_matched": 167,
+          "pos_matched": 56
+        }
+      },
+      "8": {
+        "n": 5429,
+        "r_neg": 0.55,
+        "r_pos": 0.35294117647058826,
+        "gap_pp": 19.705882352941178,
+        "n_unpaired_neg": 1728,
+        "n_unpaired_pos": 999,
+        "frac_far_union": 0.4829618714312028,
+        "counts": {
+          "neg_in_unp_neg": 132,
+          "pos_in_unp_pos": 48,
+          "neg_total": 240,
+          "pos_total": 136,
+          "neg_matched": 141,
+          "pos_matched": 48
+        }
+      },
+      "12": {
+        "n": 3100,
+        "r_neg": 0.4083333333333333,
+        "r_pos": 0.23529411764705882,
+        "gap_pp": 17.30392156862745,
+        "n_unpaired_neg": 1013,
+        "n_unpaired_pos": 709,
+        "frac_far_union": 0.5148387096774194,
+        "counts": {
+          "neg_in_unp_neg": 98,
+          "pos_in_unp_pos": 32,
+          "neg_total": 240,
+          "pos_total": 136,
+          "neg_matched": 104,
+          "pos_matched": 32
+        }
+      }
+    },
+    "reference_sign": 1,
+    "n_agree": 5,
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "D4": {
+    "ruling": "D3 HELD -> the 2505 unpaired negatives are a ZTF-validated population. 7(a) is CONFIRMED as the wrong operation. PAPER-00 sec.8's amendment (7b, 0.217 pp) is PROMOTED from PROVISIONAL to STANDING. B2's refutation is recorded as having caught a PLAN defect, not a measurement defect.",
+    "d2": true,
+    "d3": true
+  },
+  "G": {
+    "register": [
+      {
+        "id": "DEF-01",
+        "pass_": "L1",
+        "found_by": "eye",
+        "what": "el_match True 8/8 with n_dropped 0 -- a precondition that never rejected",
+        "cite": "file:L1_T5_CANDIDATE.md",
+        "citable": true
+      },
+      {
+        "id": "DEF-02",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "o['b'] > 0 rejected 0 objects at all five minarea rungs",
+        "cite": "json:PASS7_RESULTS.json:/I/unexercised",
+        "citable": true
+      },
+      {
+        "id": "DEF-03",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "NO_POSITION branch never executes -- every alert carries x/y",
+        "cite": "json:PASS7_RESULTS.json:/I/rejection_table/C_alert_has_position",
+        "citable": true
+      },
+      {
+        "id": "DEF-04",
+        "pass_": "7",
+        "found_by": "eye",
+        "what": "I1 and I2 set to the SAME boolean -- the gauge grades its own success",
+        "cite": "line:measure_pass7.py:352",
+        "citable": true
+      },
+      {
+        "id": "DEF-05",
+        "pass_": "4",
+        "found_by": "eye",
+        "what": "PASS4_RESULTS.json stale against the prose that documents its correction",
+        "cite": "file:CORRECTIONS.json",
+        "citable": true
+      },
+      {
+        "id": "DEF-06",
+        "pass_": "7",
+        "found_by": "eye",
+        "what": "sep 'non-determinism' contradicted by exact 5-rung reproduction a day later",
+        "cite": "json:PASS7_DIAG.json:/Q2/same_process",
+        "citable": true
+      },
+      {
+        "id": "DEF-07",
+        "pass_": "6",
+        "found_by": "eye",
+        "what": "PASS6_RESULTS vs PASS6_DIAG frac_far differ 0.047 pp at the SAME minarea",
+        "cite": "json:PASS6_DIAG.json:/D2b/ladder/5/frac_far",
+        "citable": true
+      },
+      {
+        "id": "DEF-08",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "7(a) is the wrong operation -- caught by B2, a pre-committed agreement control",
+        "cite": "json:PASS7_RESULTS.json:/B/b2_gap_pp",
+        "citable": true
+      },
+      {
+        "id": "DEF-09",
+        "pass_": "8",
+        "found_by": "eye",
+        "what": "the owed 'third procedure' is degenerate: P_C == P_A as a set",
+        "cite": "file:PASS8_PREDICTIONS.md",
+        "citable": true
+      },
+      {
+        "id": "DEF-10",
+        "pass_": "8",
+        "found_by": "eye",
+        "what": "PASS8_PREDICTIONS N4's rationale mis-states BOTH structures: both compute Background inside the sign loop; the real difference is the extra bkg0 call and diag's FIVE extracts from one prep",
+        "cite": "line:diag_pass6.py:114",
+        "citable": true
+      },
+      {
+        "id": "DEF-11",
+        "pass_": "6a",
+        "found_by": "eye",
+        "what": "PAPER-00 sec.2 row 6a read 'PRE-REGISTERED, NOT RUN' for ~3h after L1 landed",
+        "cite": "file:PAPER-00-ARCHITECTURE.md",
+        "citable": true
+      },
+      {
+        "id": "DEF-12",
+        "pass_": "6",
+        "found_by": "eye",
+        "what": "pass6_stats.py's re-run-and-diff gauge cannot fail a correct refactor -- it can only ever render one verdict",
+        "cite": "line:pass6_stats.py:1",
+        "citable": true
+      }
+    ],
+    "n_citable": 12,
+    "n_uncitable": 0,
+    "n_eye": 9,
+    "n_gauge": 3
+  },
+  "R4_control": {
+    "collisions": [
+      [
+        "I1",
+        "I2",
+        [
+          "gauge_found",
+          null,
+          "=="
+        ]
+      ]
+    ],
+    "fired_on_I1_I2": true,
+    "pass7_verdicts": {
+      "A1": false,
+      "A2": true,
+      "A3": false,
+      "A4": true,
+      "B1": true,
+      "B2": false,
+      "B3": true,
+      "C1": true,
+      "C2": true,
+      "C3": true,
+      "C4": true,
+      "I1": true,
+      "I2": true
+    }
+  },
+  "R4": {
+    "collisions": [],
+    "ok": true
+  },
+  "N": {
+    "prereg": "PASS8_PREDICTIONS.md",
+    "prereg_commit": "6567f2b",
+    "n_images": 20,
+    "per_image": {
+      "ztf_20180601167662_000526_zr_c01_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          190,
+          190,
+          190,
+          190
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          190,
+          190,
+          190
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          117,
+          117,
+          117
+        ],
+        "struct_D_n": 190,
+        "struct_D_far": 117
+      },
+      "ztf_20180601168113_000577_zr_c02_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          243,
+          245,
+          243,
+          244
+        ],
+        "in_process_spread": 2,
+        "fresh_M": [
+          245,
+          245,
+          245
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          161,
+          161,
+          161
+        ],
+        "struct_D_n": 243,
+        "struct_D_far": 158
+      },
+      "ztf_20180601169954_000576_zr_c05_o_q2_scimrefdiffimg.fits": {
+        "in_process": [
+          174,
+          174,
+          174,
+          174
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          174,
+          174,
+          174
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          53,
+          53,
+          53
+        ],
+        "struct_D_n": 174,
+        "struct_D_far": 53
+      },
+      "ztf_20180601170417_000525_zr_c06_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          189,
+          189,
+          189,
+          189
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          189,
+          189,
+          189
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          110,
+          110,
+          110
+        ],
+        "struct_D_n": 189,
+        "struct_D_far": 110
+      },
+      "ztf_20180601171319_000524_zr_c08_o_q2_scimrefdiffimg.fits": {
+        "in_process": [
+          273,
+          273,
+          273,
+          273
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          272,
+          272,
+          272
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          48,
+          48,
+          48
+        ],
+        "struct_D_n": 273,
+        "struct_D_far": 49
+      },
+      "ztf_20180601171794_000575_zr_c10_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          142,
+          142,
+          141,
+          142
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          141,
+          141,
+          141
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          65,
+          65,
+          65
+        ],
+        "struct_D_n": 141,
+        "struct_D_far": 65
+      },
+      "ztf_20180601174595_000672_zr_c11_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          164,
+          165,
+          164,
+          164
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          164,
+          164,
+          164
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          80,
+          80,
+          80
+        ],
+        "struct_D_n": 164,
+        "struct_D_far": 80
+      },
+      "ztf_20180601298993_000531_zr_c05_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          244,
+          244,
+          244,
+          244
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          244,
+          244,
+          244
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          122,
+          122,
+          122
+        ],
+        "struct_D_n": 244,
+        "struct_D_far": 122
+      },
+      "ztf_20180601300394_000580_zr_c05_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          176,
+          176,
+          176,
+          176
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          176,
+          176,
+          176
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          94,
+          94,
+          94
+        ],
+        "struct_D_n": 176,
+        "struct_D_far": 94
+      },
+      "ztf_20180601300856_000628_zr_c11_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          106,
+          106,
+          106,
+          107
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          107,
+          107,
+          107
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          63,
+          63,
+          63
+        ],
+        "struct_D_n": 106,
+        "struct_D_far": 62
+      },
+      "ztf_20180601315556_000533_zr_c09_o_q2_scimrefdiffimg.fits": {
+        "in_process": [
+          381,
+          381,
+          382,
+          383
+        ],
+        "in_process_spread": 2,
+        "fresh_M": [
+          382,
+          382,
+          382
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          212,
+          212,
+          212
+        ],
+        "struct_D_n": 381,
+        "struct_D_far": 211
+      },
+      "ztf_20180601318438_000631_zr_c12_o_q3_scimrefdiffimg.fits": {
+        "in_process": [
+          305,
+          305,
+          306,
+          305
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          305,
+          305,
+          305
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          188,
+          188,
+          188
+        ],
+        "struct_D_n": 305,
+        "struct_D_far": 187
+      },
+      "ztf_20180601336968_000482_zr_c09_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          620,
+          621,
+          620,
+          621
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          619,
+          619,
+          619
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          305,
+          305,
+          305
+        ],
+        "struct_D_n": 621,
+        "struct_D_far": 306
+      },
+      "ztf_20180601402257_000590_zr_c13_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          1033,
+          1033,
+          1033,
+          1033
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          1033,
+          1033,
+          1033
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          475,
+          475,
+          475
+        ],
+        "struct_D_n": 1033,
+        "struct_D_far": 475
+      },
+      "ztf_20180601434769_000687_zr_c14_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          1016,
+          1015,
+          1016,
+          1013
+        ],
+        "in_process_spread": 3,
+        "fresh_M": [
+          1014,
+          1014,
+          1014
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          572,
+          572,
+          572
+        ],
+        "struct_D_n": 1012,
+        "struct_D_far": 571
+      },
+      "ztf_20180601441875_000591_zg_c12_o_q1_scimrefdiffimg.fits": {
+        "in_process": [
+          301,
+          301,
+          301,
+          301
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          302,
+          302,
+          302
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          152,
+          152,
+          152
+        ],
+        "struct_D_n": 301,
+        "struct_D_far": 150
+      },
+      "ztf_20180601442338_000639_zg_c15_o_q3_scimrefdiffimg.fits": {
+        "in_process": [
+          1155,
+          1155,
+          1156,
+          1154
+        ],
+        "in_process_spread": 2,
+        "fresh_M": [
+          1156,
+          1156,
+          1156
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          415,
+          415,
+          415
+        ],
+        "struct_D_n": 1155,
+        "struct_D_far": 413
+      },
+      "ztf_20180601443252_000539_zg_c09_o_q4_scimrefdiffimg.fits": {
+        "in_process": [
+          289,
+          289,
+          289,
+          289
+        ],
+        "in_process_spread": 0,
+        "fresh_M": [
+          289,
+          289,
+          289
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          135,
+          135,
+          135
+        ],
+        "struct_D_n": 289,
+        "struct_D_far": 134
+      },
+      "ztf_20180601457928_000640_zg_c02_o_q3_scimrefdiffimg.fits": {
+        "in_process": [
+          784,
+          785,
+          783,
+          780
+        ],
+        "in_process_spread": 5,
+        "fresh_M": [
+          783,
+          783,
+          783
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          436,
+          436,
+          436
+        ],
+        "struct_D_n": 782,
+        "struct_D_far": 435
+      },
+      "ztf_20180601475926_000687_zg_c07_o_q2_scimrefdiffimg.fits": {
+        "in_process": [
+          740,
+          740,
+          741,
+          740
+        ],
+        "in_process_spread": 1,
+        "fresh_M": [
+          739,
+          739,
+          739
+        ],
+        "fresh_M_spread": 0,
+        "fresh_M_far": [
+          333,
+          333,
+          333
+        ],
+        "struct_D_n": 741,
+        "struct_D_far": 334
+      }
+    },
+    "n_vary_inproc": 11,
+    "n_vary_fresh": 0,
+    "null_mismatch": [],
+    "struct_M": {
+      "n": 8524,
+      "n_far": 4136,
+      "frac_far": 0.48521820741435945
+    },
+    "struct_D": {
+      "n": 8520,
+      "n_far": 4126,
+      "frac_far": 0.48427230046948355
+    },
+    "n_delta": 4,
+    "frac_far_delta_pp": 0.09459069448758961,
+    "n4_status": "scored",
+    "verdicts": {
+      "N1": true,
+      "N2": true,
+      "N3": false,
+      "N-NULL": true,
+      "N4": true,
+      "N5": true
+    },
+    "rejections": {
+      "N_images_present": {
+        "n_in": 20,
+        "n_kept": 20,
+        "n_rejected": 0,
+        "note": "diffimg/*.fz on disk"
+      },
+      "N_b_positive": {
+        "n_in": 34103,
+        "n_kept": 34103,
+        "n_rejected": 0,
+        "note": "sep semi-minor axis b > 0"
+      },
+      "N_null_pairs": {
+        "n_in": 20,
+        "n_kept": 20,
+        "n_rejected": 0,
+        "note": "fresh run 1 == fresh run 2 (the no-op the gauge owes itself)"
+      }
+    },
+    "elapsed_s": 101.0,
+    "unexercised": [
+      "N_images_present",
+      "N_b_positive",
+      "N_null_pairs"
+    ]
+  },
+  "unexercised": [
+    "D2_alert_has_isdiffpos",
+    "D6_b_positive_minarea12",
+    "D6_b_positive_minarea2",
+    "D6_b_positive_minarea3",
+    "D6_b_positive_minarea5",
+    "D6_b_positive_minarea8",
+    "G_citation_resolves",
+    "N::N_b_positive",
+    "N::N_images_present",
+    "N::N_null_pairs"
+  ],
+  "rejections": {
+    "D1_collapse_drops": {
+      "n_in": 8528,
+      "n_kept": 6199,
+      "n_rejected": 2329,
+      "note": "7(b) removes the '-' member of each mutual opposite-sign pair"
+    },
+    "D1_unpaired_neg_drops": {
+      "n_in": 6199,
+      "n_kept": 3694,
+      "n_rejected": 2505,
+      "note": "P_C additionally removes unpaired negatives"
+    },
+    "D2_alerts_on_our_frames": {
+      "n_in": 17991,
+      "n_kept": 376,
+      "n_rejected": 17615,
+      "note": "alert's frame is one of the 20 images in diffimg/"
+    },
+    "D2_alert_has_isdiffpos": {
+      "n_in": 376,
+      "n_kept": 376,
+      "n_rejected": 0,
+      "note": "alert carries an isdiffpos label at all"
+    },
+    "D5_bright_decile": {
+      "n_in": 3694,
+      "n_kept": 377,
+      "n_rejected": 3317,
+      "note": "top-decile peak positives on the frame"
+    },
+    "D6_b_positive_minarea2": {
+      "n_in": 14202,
+      "n_kept": 14202,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "D6_b_positive_minarea3": {
+      "n_in": 11649,
+      "n_kept": 11649,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "D6_b_positive_minarea5": {
+      "n_in": 8526,
+      "n_kept": 8526,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "D6_b_positive_minarea8": {
+      "n_in": 5429,
+      "n_kept": 5429,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "D6_b_positive_minarea12": {
+      "n_in": 3100,
+      "n_kept": 3100,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "G_citation_resolves": {
+      "n_in": 12,
+      "n_kept": 12,
+      "n_rejected": 0,
+      "note": "the row's cited artifact actually exists on disk"
+    },
+    "N::N_images_present": {
+      "n_in": 20,
+      "n_kept": 20,
+      "n_rejected": 0,
+      "note": "diffimg/*.fz on disk"
+    },
+    "N::N_b_positive": {
+      "n_in": 34103,
+      "n_kept": 34103,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "N::N_null_pairs": {
+      "n_in": 20,
+      "n_kept": 20,
+      "n_rejected": 0,
+      "note": "fresh run 1 == fresh run 2 (the no-op the gauge owes itself)"
+    }
+  },
+  "verdicts": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": null,
+    "D5": true,
+    "D6": true,
+    "N1": true,
+    "N2": true,
+    "N3": false,
+    "N4": true,
+    "N5": true,
+    "G1": true,
+    "G2": false,
+    "R4-CONTROL": true,
+    "N-NULL": true
+  },
+  "triples": {
+    "D1": [
+      "set_equality(P_A,P_C) and |ff_A-ff_C|",
+      0.0,
+      "=="
+    ],
+    "D2": [
+      "neg_share",
+      0.01,
+      ">="
+    ],
+    "D3": [
+      "r_neg - r_pos (pp)",
+      -10.0,
+      ">="
+    ],
+    "D5": [
+      "median_dist_ratio",
+      0.67,
+      ">="
+    ],
+    "D6": [
+      "n_rungs_agreeing_on_sign",
+      4.0,
+      ">="
+    ],
+    "D4": [
+      "decision rule (not a prediction)",
+      null,
+      "n/a"
+    ],
+    "G1": [
+      "n_eye / n_gauge",
+      2.0,
+      ">="
+    ],
+    "G2": [
+      "n_uncitable",
+      1.0,
+      ">="
+    ],
+    "R4-CONTROL": [
+      "r4_fires_on_pass7_I1I2",
+      null,
+      "=="
+    ],
+    "N1": [
+      "block-N:N1",
+      null,
+      "see nondet_pass8.py"
+    ],
+    "N2": [
+      "block-N:N2",
+      null,
+      "see nondet_pass8.py"
+    ],
+    "N3": [
+      "block-N:N3",
+      null,
+      "see nondet_pass8.py"
+    ],
+    "N-NULL": [
+      "block-N:N-NULL",
+      null,
+      "see nondet_pass8.py"
+    ],
+    "N4": [
+      "block-N:N4",
+      null,
+      "see nondet_pass8.py"
+    ],
+    "N5": [
+      "block-N:N5",
+      null,
+      "see nondet_pass8.py"
+    ]
+  },
+  "R1": {
+    "registered": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "G1",
+      "G2",
+      "R4-CONTROL",
+      "N-NULL"
+    ],
+    "missing": [],
+    "extra": [],
+    "ok": true
+  }
+}

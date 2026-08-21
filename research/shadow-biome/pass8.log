@@ -1,0 +1,144 @@
+==============================================================================
+D1  IDENTITY CONTROL -- is the owed 'third procedure' actually 7(a)?
+==============================================================================
+  |P_A| = 3694   |P_B| = 6199   |P_C| = 3694
+  frac_far  P_A = 0.548728   P_B = 0.482820   P_C = 0.548728
+  P_A and P_C identical as a SET : True
+  D1 CONTROL -> HOLDS   (excluded from the held-total, prereg sec.5)
+  ** CONFIRMED: the owed 'third procedure' IS 7(a). The debt was
+     mis-specified against prose, not against measure_pass7.py. **
+
+==============================================================================
+D2  DOES ZTF ITSELF ALERT ON NEGATIVE DIFFERENCES ON THESE 20 FRAMES?
+==============================================================================
+  alerts on our 20 frames : 376   carrying isdiffpos: 376
+  distinct isdiffpos spellings seen : ["'f'", "'t'"]
+  ZTF NEGATIVE alerts : 240   POSITIVE : 136   neg share = 63.830%
+  D2 neg share >= 1.0%  -> HELD
+
+==============================================================================
+D3  RULING: do ZTF's negative alerts land on our UNPAIRED negatives?
+==============================================================================
+  unpaired negatives in catalogue : 2505   unpaired positives : 1365
+  ZTF neg alerts   240  matched   167  of which UNPAIRED-NEG   154   r_neg = 0.6417
+  ZTF pos alerts   136  matched    56  of which UNPAIRED-POS    56   r_pos = 0.4118
+  gap r_neg - r_pos = +22.990 pp   (threshold >= -10.0)
+  D3 -> HELD
+
+==============================================================================
+D5  ARE UNPAIRED NEGATIVES HUDDLED AROUND BRIGHT POSITIVES?
+==============================================================================
+  median distance to nearest bright positive:
+    unpaired NEGATIVES :   367.01 px   (n=2505)
+    unpaired POSITIVES :   281.90 px   (n=1365)
+    ratio neg/pos = 1.3019   (threshold >= 0.67)
+  D5 -> HELD   (refuted = they huddle = halo residuals)
+
+==============================================================================
+D6  THE D3 GAP OVER THE minarea LADDER  (re-extraction, 20 images)
+==============================================================================
+    526_zr_c01_o_q1_scimrefd done
+    577_zr_c02_o_q4_scimrefd done
+    576_zr_c05_o_q2_scimrefd done
+    525_zr_c06_o_q4_scimrefd done
+    524_zr_c08_o_q2_scimrefd done
+    575_zr_c10_o_q1_scimrefd done
+    672_zr_c11_o_q4_scimrefd done
+    531_zr_c05_o_q4_scimrefd done
+    580_zr_c05_o_q4_scimrefd done
+    628_zr_c11_o_q1_scimrefd done
+    533_zr_c09_o_q2_scimrefd done
+    631_zr_c12_o_q3_scimrefd done
+    482_zr_c09_o_q1_scimrefd done
+    590_zr_c13_o_q4_scimrefd done
+    687_zr_c14_o_q1_scimrefd done
+    591_zg_c12_o_q1_scimrefd done
+    639_zg_c15_o_q3_scimrefd done
+    539_zg_c09_o_q4_scimrefd done
+    640_zg_c02_o_q3_scimrefd done
+    687_zg_c07_o_q2_scimrefd done
+
+   minarea       n     r_neg     r_pos    gap_pp   sign
+         2   14202    0.7333    0.5735   +15.980      1
+         3   11649    0.7125    0.5221   +19.044      1
+         5    8526    0.6417    0.4118   +22.990      1
+         8    5429    0.5500    0.3529   +19.706      1
+        12    3100    0.4083    0.2353   +17.304      1
+
+  frozen-catalogue gap sign = +1; ladder rungs agreeing: 5/5
+  D6 sign holds at >= 4 rungs -> HELD
+
+==============================================================================
+D4  APPLYING THE DECISION RULE  (prereg sec.1b -- written before the data)
+==============================================================================
+  D3 HELD -> the 2505 unpaired negatives are a ZTF-validated population.
+  7(a) is CONFIRMED as the wrong operation.
+  PAPER-00 sec.8's amendment (7b, 0.217 pp) is PROMOTED from PROVISIONAL to STANDING.
+  B2's refutation is recorded as having caught a PLAN defect, not a measurement defect.
+
+==============================================================================
+G   DEFECT REGISTER -- the pattern claim gets a NOTATION
+==============================================================================
+  register rows: 12   citable: 12   UNCITABLE: 0
+  found_by among CITABLE rows -- eye: 9   gauge: 3
+  G1 eye >= 2 x gauge -> HELD
+  G2 >= 1 uncitable row -> REFUTED
+
+==============================================================================
+R4-CONTROL  run the new gauge against PASS 7's verdict set
+==============================================================================
+  COLLISION  I1 and I2 decided on the SAME triple ('gauge_found', None, '==')
+  R4-CONTROL fires on I1/I2 -> YES
+
+  R4 on pass 8's own verdicts: CLEAN
+
+==============================================================================
+BLOCK N  (merged from PASS8_NONDET.json)
+==============================================================================
+  in-process varying: 11/20   fresh varying: 0/20
+  struct M n=8524 ff=0.485218  |  struct D n=8520 ff=0.484272
+  N1      -> True
+  N2      -> True
+  N3      -> False
+  N4      -> True
+  N5      -> True
+  N-NULL  -> True
+
+==============================================================================
+R2  UNEXERCISED-PRECONDITION GAUGE
+==============================================================================
+  D1_collapse_drops                in=   8528 kept=   6199 rejected=   2329
+  D1_unpaired_neg_drops            in=   6199 kept=   3694 rejected=   2505
+  D2_alert_has_isdiffpos           in=    376 kept=    376 rejected=      0  <== REJECTED NOTHING
+  D2_alerts_on_our_frames          in=  17991 kept=    376 rejected=  17615
+  D5_bright_decile                 in=   3694 kept=    377 rejected=   3317
+  D6_b_positive_minarea12          in=   3100 kept=   3100 rejected=      0  <== REJECTED NOTHING
+  D6_b_positive_minarea2           in=  14202 kept=  14202 rejected=      0  <== REJECTED NOTHING
+  D6_b_positive_minarea3           in=  11649 kept=  11649 rejected=      0  <== REJECTED NOTHING
+  D6_b_positive_minarea5           in=   8526 kept=   8526 rejected=      0  <== REJECTED NOTHING
+  D6_b_positive_minarea8           in=   5429 kept=   5429 rejected=      0  <== REJECTED NOTHING
+  G_citation_resolves              in=     12 kept=     12 rejected=      0  <== REJECTED NOTHING
+  N::N_b_positive                  in=  34103 kept=  34103 rejected=      0  <== REJECTED NOTHING
+  N::N_images_present              in=     20 kept=     20 rejected=      0  <== REJECTED NOTHING
+  N::N_null_pairs                  in=     20 kept=     20 rejected=      0  <== REJECTED NOTHING
+
+  !! R3 WARNING: 10 precondition(s) rejected NOTHING:
+     - D2_alert_has_isdiffpos
+     - D6_b_positive_minarea12
+     - D6_b_positive_minarea2
+     - D6_b_positive_minarea3
+     - D6_b_positive_minarea5
+     - D6_b_positive_minarea8
+     - G_citation_resolves
+     - N::N_b_positive
+     - N::N_images_present
+     - N::N_null_pairs
+
+==============================================================================
+=== 9/11 pre-registered predictions HELD   (2 refuted, 0 unscored) ===
+    excluded from the total: ['D1', 'D4', 'N-NULL', 'R4-CONTROL']  (prereg sec.5)
+    D1 identity   : HOLDS
+    N-NULL gate   : PASS
+    R4-CONTROL    : FIRED
+wrote PASS8_RESULTS.json + DEFECT_REGISTER.json
+R1 satisfied: a verdict key exists for every registered prediction letter

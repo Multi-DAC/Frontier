@@ -1,0 +1,43 @@
+==============================================================================
+BLOCK N -- sec.9a re-test over 20 image(s)
+==============================================================================
+  526_zr_c01_o_q1_scimrefd inproc [190, 190, 190, 190]  spread 0 | fresh [190, 190, 190] spread 0 | D 190
+  577_zr_c02_o_q4_scimrefd inproc [243, 245, 243, 244]  spread 2 | fresh [245, 245, 245] spread 0 | D 243
+  576_zr_c05_o_q2_scimrefd inproc [174, 174, 174, 174]  spread 0 | fresh [174, 174, 174] spread 0 | D 174
+  525_zr_c06_o_q4_scimrefd inproc [189, 189, 189, 189]  spread 0 | fresh [189, 189, 189] spread 0 | D 189
+  524_zr_c08_o_q2_scimrefd inproc [273, 273, 273, 273]  spread 0 | fresh [272, 272, 272] spread 0 | D 273
+  575_zr_c10_o_q1_scimrefd inproc [142, 142, 141, 142]  spread 1 | fresh [141, 141, 141] spread 0 | D 141
+  672_zr_c11_o_q4_scimrefd inproc [164, 165, 164, 164]  spread 1 | fresh [164, 164, 164] spread 0 | D 164
+  531_zr_c05_o_q4_scimrefd inproc [244, 244, 244, 244]  spread 0 | fresh [244, 244, 244] spread 0 | D 244
+  580_zr_c05_o_q4_scimrefd inproc [176, 176, 176, 176]  spread 0 | fresh [176, 176, 176] spread 0 | D 176
+  628_zr_c11_o_q1_scimrefd inproc [106, 106, 106, 107]  spread 1 | fresh [107, 107, 107] spread 0 | D 106
+  533_zr_c09_o_q2_scimrefd inproc [381, 381, 382, 383]  spread 2 | fresh [382, 382, 382] spread 0 | D 381
+  631_zr_c12_o_q3_scimrefd inproc [305, 305, 306, 305]  spread 1 | fresh [305, 305, 305] spread 0 | D 305
+  482_zr_c09_o_q1_scimrefd inproc [620, 621, 620, 621]  spread 1 | fresh [619, 619, 619] spread 0 | D 621
+  590_zr_c13_o_q4_scimrefd inproc [1033, 1033, 1033, 1033]  spread 0 | fresh [1033, 1033, 1033] spread 0 | D 1033
+  687_zr_c14_o_q1_scimrefd inproc [1016, 1015, 1016, 1013]  spread 3 | fresh [1014, 1014, 1014] spread 0 | D 1012
+  591_zg_c12_o_q1_scimrefd inproc [301, 301, 301, 301]  spread 0 | fresh [302, 302, 302] spread 0 | D 301
+  639_zg_c15_o_q3_scimrefd inproc [1155, 1155, 1156, 1154]  spread 2 | fresh [1156, 1156, 1156] spread 0 | D 1155
+  539_zg_c09_o_q4_scimrefd inproc [289, 289, 289, 289]  spread 0 | fresh [289, 289, 289] spread 0 | D 289
+  640_zg_c02_o_q3_scimrefd inproc [784, 785, 783, 780]  spread 5 | fresh [783, 783, 783] spread 0 | D 782
+  687_zg_c07_o_q2_scimrefd inproc [740, 740, 741, 740]  spread 1 | fresh [739, 739, 739] spread 0 | D 741
+
+------------------------------------------------------------------------------
+  images varying IN-PROCESS  : 11 / 20
+  images varying FRESH       : 0 / 20
+  N1  >=1 varies in-process        -> HELD
+  N2  fresh spread 0 on ALL images -> HELD   ** load-bearing **
+  N3  in-process varies on <10     -> REFUTED
+  N-NULL fresh run1 == run2        -> PASS   (gate, not counted)
+
+  structure M (measure_pass6): n = 8524   frac_far = 0.485218
+  structure D (diag_pass6)   : n = 8520   frac_far = 0.484272
+  |M - D| = 4 object(s)   frac_far delta = +0.0946 pp
+  N4  structures differ by >=1     -> True  [scored]
+  N5  M yields the higher frac_far -> True
+
+  !! R3 WARNING -- gate(s) that rejected NOTHING: ['N_images_present', 'N_b_positive', 'N_null_pairs']
+     A precondition that has never rejected anything is not
+     observably a precondition. Named, not silently trusted.
+
+wrote PASS8_NONDET.json  (101.0s)

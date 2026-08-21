@@ -197,13 +197,28 @@ accumulating process state) with one mechanism.
 **What it costs §9a.** §9a reports `PASS6_RESULTS.json` and `PASS6_DIAG.json` disagreeing by 0.047 pp
 at the same `minarea` and attributes it to run-to-run non-determinism. On this evidence **fresh runs
 of the same call sequence do not disagree**, so the 2-object measure-vs-diag delta more likely comes
-from the **structural** difference between the two scripts — `measure_pass6.py` computes the
-background *inside* the sign loop, `diag_pass6.py` computes it once *outside*.
+from the **structural** difference between the two scripts — ~~`measure_pass6.py` computes the
+background *inside* the sign loop, `diag_pass6.py` computes it once *outside*.~~
+
+> ⛔ **STRUCK D202 ~16:4x BY PASS 8 §4b. THE STRUCK CLAUSE IS FALSE OF BOTH SCRIPTS.**
+> **Both** compute `sep.Background` **inside** the sign loop (`measure_pass6.py:84-86`,
+> `diag_pass6.py:115-117`). The real differences are (1) `measure_pass6.py` makes an extra
+> `sep.Background(img)` call for `bkg0` *before* the loop, and (2) `diag_pass6.py` runs **five**
+> `sep.extract` calls off one prepped array where `measure_pass6.py` runs one — and given N1/N2 that
+> repetition *is* the variation mechanism. **The conclusion the clause was written to support
+> survives** (`PASS8_NONDET.json`: the two structures differ by 4 objects, `measure`'s the higher
+> `frac_far`, matching the published sign). The reason given for it did not. Entered as `DEF-10`.
 
 ⛔ **NOT YET TESTED, and §9a is not rewritten on this.** One image, ten extractions. The claim being
 corrected is a section of the paper, and correcting it on n=1 would repeat the error that produced
 it. **Owed:** run the same in-process/fresh-process contrast across all 20 images, and A/B the two
 background structures directly on identical inputs.
+
+> ✅ **PAID D202 ~16:3x — `PASS8_NONDET.json`, `PASS8_RESULTS.md §4`.** n=20, one process per image.
+> In-process variation on **11 of 20** (registered as a minority, **refuted** — it is a majority);
+> fresh-process spread **0 of 20**. The mechanism holds at n=20. ⭐ And the frozen catalogue inherits
+> it: `PASS6_catalog.npz` **8528** (one process, 20 images) · pass-7 A4 **8526** · pass-8
+> fresh-per-image **8524**.
 
 ⭐ **The one thing that stands now:** a re-run-and-diff gauge on this pipeline is worse than
 `pass6_stats.py` thought. The docstring says such a gauge *"can pass a broken refactor and fail a
