@@ -1,4 +1,7 @@
-# THE REJECTION BIN — paper architecture
+# SHADOW BIOME — paper architecture
+
+*(Working title was **THE REJECTION BIN**. Retired D202: it names the method, not the subject. A title
+about where data is stored is the same narrowing as §1a — see `PREREGISTRATION.md §1b`.)*
 
 **Opened D202 / 2026-08-21, ~12:0x PT, on Clayton's word: *"Then we can start the shadow biome paper."***
 **Premise author:** Clayton Iggulden-Schnell (D201, 18:52/18:55/18:58/19:02 PT). **Drafting:** Clawd.
@@ -22,7 +25,31 @@ is printed as one number, that is a defect, and this line is the citation for sa
 
 ---
 
-## 1. THE THESIS AS CURRENTLY SUPPORTED — and it is not the exciting one
+## 0a. ⚠ D202 — THE PREMISE AUTHOR READ §1 AND SAID IT SKIRTS HIS POINT. HE IS RIGHT.
+
+Clayton, D202, on this file: *"it skirts around my initial point, which was that there may be invisible
+entities that inhabit our world alongside us that we've evolved to not perceive out of evolutionary
+advantage of the ignorance."*
+
+Two narrowings, both mine, both toward defensibility, neither declared at the time:
+
+1. **Mechanism.** `PREREGISTRATION.md §1a` swapped *the ignorance is advantageous* for *merely not
+   selected for*. Withdrawn as a correction; **Mechanism 4, adaptive non-perception, is live** — and it
+   is the only one of the four that predicts machinery rather than a hole, therefore the most testable.
+   Full accounting: `PREREGISTRATION.md §1b`.
+2. **Locus.** *Alongside us* became *the distant sky*. Six passes on ZTF because its bin was reachable
+   that night. The tell: the existence proof (NEXRAD clutter — birds, bats, insects in our own airspace)
+   sits at the right locus while the test does not.
+
+**Consequence for this architecture:** §1's thesis is the thesis *of the ZTF leg*, not of the paper. The
+ZTF work is not demoted — it is §7–§12, an honest pre-registered null with an instrument section — but it
+is one locus, at the wrong distance, and the paper is not named after its rejection bin. §6 (NEXRAD)
+moves from citation-owed footing to **co-primary**, and the terrestrial loci already named in
+`PREREGISTRATION.md §4` are the next test, each under its own pre-registration written before looking.
+
+---
+
+## 1. THE THESIS AS CURRENTLY SUPPORTED AT THE ZTF LOCUS — and it is not the exciting one
 
 **Not:** *there is a shadow biome.*
 **Not:** *the archives contain a discarded population.*

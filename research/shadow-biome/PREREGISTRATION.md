@@ -41,6 +41,61 @@ As Clayton originally stated it — *perceiving it is disadvantageous* — the p
 
 All three produce Clayton's observable — a real thing humans do not perceive — without requiring selection to have removed a useful sense. **The program tests the observable, not the mechanism.** Mechanism is downstream of ever finding anything.
 
+### 1b. ⚠ AMENDMENT — D202 / 2026-08-21, ON THE PREMISE AUTHOR'S CORRECTION
+
+**§1a above is left standing verbatim and is WITHDRAWN as a correction.** It was written as a repair;
+Clayton read the paper architecture built on it and said it *skirts* his point. He is right, and the
+withdrawal is recorded rather than the paragraph rewritten, because this file's only value is that it
+was dated before the data.
+
+**What §1a did.** His stated premise is that perception of the class is *itself* evolutionarily
+disadvantageous — **the ignorance carries the advantage.** §1a replaced that with *merely not selected
+for*: no fitness consequence in either direction, no sensor built. That is a different claim. It is
+easier to defend and it is not his. Traded the load-bearing clause for defensibility and did not say so.
+
+**MECHANISM 4 — ADAPTIVE NON-PERCEPTION (restored to live status).** Not-perceiving is selected *for*.
+This does not fight selection theory; several standing literatures are exactly this, and I dismissed it
+in one clause without checking any of them. ⚠ **All four are pointers, primary sources OWED before any
+draft cites them:**
+
+- **Tolerance vs. resistance** — hosts evolving to *not respond* to a parasite because response costs
+  more than the parasite does (plant pathology → animal-host tolerance). Non-detection as the fitter strategy.
+- **Error management / signal detection under asymmetric payoffs** — when false alarms cost more than
+  misses, the optimal threshold is set so an entire stimulus class is reliably missed. Blindness as tuning.
+- **Sensory gating** — active, metabolically funded suppression upstream of awareness. The organism
+  spends energy *not* to see. This is machinery, not absence.
+- **Vigilance–foraging tradeoff** — attention paid to an undefeatable presence is attention removed from
+  actionable threat. Detection with no available response is pure cost.
+
+**Why this matters to the program rather than only to the framing — and it cuts my way, not his:**
+
+1. **His version predicts machinery; mine predicts a hole.** An adaptation has a mechanism, and a
+   mechanism has a signature — a class of stimulus reliably discarded pre-awareness, in a human, measurably.
+   §1a's "no sensor was ever built" predicts nothing but absence. **His premise is the more falsifiable
+   of the two**, and the sentence "the program tests the observable, not the mechanism" is what let me
+   drop it. That sentence is hereby not a licence to discard a mechanism that carries its own observable.
+2. **It makes the device test STRONGER.** If human blindness is an active adaptation, a CMOS has no
+   share in it — evolution shapes eyes, not sensors — so the device-side residual should be *maximal*,
+   not marginal. Under §1a's version the sensor might simply never be pointed there. Branch A is
+   unaffected as a fork and better motivated as a test.
+3. **⛔ THE FENCE STILL HOLDS.** "The ignorance is advantageous" is one restatement away from "and that
+   is why you find nothing" — §2's FORBIDDEN MOVE wearing a new coat. Mechanism 4 may explain human
+   non-perception. It may **never** be used to explain a device-archive null. That crossing is the same
+   crossing and this clause is the citation.
+
+**LOCUS — the second skirt, and the more consequential one.** Clayton's premise is *entities inhabiting
+our world alongside us*. Six passes ran against ZTF: difference images of the distant sky. §4 of this
+file names camera-trap networks, all-sky meteor cameras and security video — all of them *alongside us* —
+and the program went to the one locus that is not. **Reachability chose the locus**: ZTF's rejection bin
+was public and computable that night. That is not a scientific reason, and the tell was sitting in plain
+sight — the existence proof (NEXRAD clutter: birds, bats, insects **in our own airspace**) is at the
+right locus while the test is not.
+
+**What this amendment does and does not do to the record:**
+- The ZTF null **stands exactly as recorded**. Nothing here reopens it, and no pass-4/5/6 prediction is altered.
+- Any new locus is a **new pre-registration, written before looking**, same discipline as the six. An
+  amendment made after a null may add a place to look; it may not add one and quote what is in it.
+
 ---
 
 ## 2. THE FORK — pre-committed, and the crossing is FORBIDDEN
