@@ -1,7 +1,18 @@
-# SHADOW BIOME — paper architecture
+# EVOLUTIONARY IGNORANCE — paper architecture
+
+*(**TITLED D202 ~18:4x PT** by the premise author: *"The title should be something along the lines of
+Evolutionary Ignorance."* Adopted verbatim; the phrase turned out to be an existing term of art in
+mathematical biology for nearly our mechanism — Field & Bonsall, arXiv:1705.00987, primary-verified.
+See `PAPER-04-TITLE-VENUE-PRECEDENT.md`. Prior working title **SHADOW BIOME** survives as the
+subject's name and the directory's name.)*
 
 *(Working title was **THE REJECTION BIN**. Retired D202: it names the method, not the subject. A title
 about where data is stored is the same narrowing as §1a — see `PREREGISTRATION.md §1b`.)*
+
+**VENUE: our Substack** (Clayton, D202). No journal formatting or article-type standards bind. ⚠ This
+removes peer review — **the only gauge in this program not written, run and scored by me.** Provenance
+is replaced by public commit hashes + a Zenodo DOI; the *adversarial* function is **OWED** and needs a
+named outside reader. `PAPER-04-TITLE-VENUE-PRECEDENT.md §4`.
 
 **Opened D202 / 2026-08-21, ~12:0x PT, on Clayton's word: *"Then we can start the shadow biome paper."***
 **Premise author:** Clayton Iggulden-Schnell (D201, 18:52/18:55/18:58/19:02 PT). **Drafting:** Clawd.
@@ -99,7 +110,7 @@ citations are read*, and the draft's 12 owed markers are where that gap is now v
 | **12** | Archive reachability as a finding in its own right | ⛔ **OWED** | 15 of 55 exposures referenced by one night's alerts are 404 at IRSA, stranding 5.76% of alerts. **n=55, one night.** Re-measure on ≥2 nights before it may be quoted as an archive property |
 | **13** | What this does and does not bear on | ✅ **HAVE**, load-bearing | Branch A only. **The null stays in Branch A.** Any sentence in the finished paper that explains this null by appeal to Branch B violates `PREREGISTRATION.md §2` and is to be cut |
 | **14** | ★ **Branch B has a floor, and the floor is gravity** — new D202 | ✅ **HAVE** (the bound), ⛔ **OWED** (the noise floor) | `PREREGISTRATION.md §7c`. **A biome cannot be non-interacting: life is dissipative, so anything alive must couple to something.** "Lacking interaction with matter" splits into B1 (weak coupling, reachable) and B2 (own sector). B2 still gravitates — stress-energy is not optional — so Branch B is a *hard measurement*, not an unfalsifiable category. Computed: a **350 g mass at 1 m = 2.34x** a superconducting gravimeter's static floor. ⛔ **That is sensitivity, NOT detection** — tidal/atmospheric/hydrological loading uncomputed. No gravimetric detection claim until it is run |
-| **15** | The mental/transcendental register — and the inversion | ⛔ **REGISTERED, NOT OPENED** | `PREREGISTRATION.md §7d`. Clayton: *"not a census... the premise, not any specific identities"* — honoured, no entity is ever a candidate. The structural point his premise forces: **a large folklore corpus DISQUALIFIES its subject.** Selected-for blindness predicts an *absence* in the record. F1 (silent record) vs F2 (altered-state-concentrated, identity-poor) pre-committed; **FORBIDDEN MOVE #3** — may not score presence and absence in the same corpus |
+| **15** | The mental/transcendental register — and the inversion | ✅ **OPENED D202 ~18:4x** on Clayton's *"I'd like to open two."* Corpus admitted as evidence on the **F2 arm only** (his *"rarely perceived / considered anomalous"* IS F2's state-of-report criterion, pre-committed before he said it). **Price: FORBIDDEN MOVE #3 binds — taking F2 spends the inversion.** Successor prereg written before opening: `PREREG-CORPUS-F2.md`, gate C5 + predictions C1–C4, C2 unrunnable on this corpus (selection circularity), C4 new from Dozois. Corpus ROOT re-measured D202: 2,703 md / 2,531 live; the D186 contract no longer reproduces | `PREREGISTRATION.md §7d`. Clayton: *"not a census... the premise, not any specific identities"* — honoured, no entity is ever a candidate. The structural point his premise forces: **a large folklore corpus DISQUALIFIES its subject.** Selected-for blindness predicts an *absence* in the record. F1 (silent record) vs F2 (altered-state-concentrated, identity-poor) pre-committed; **FORBIDDEN MOVE #3** — may not score presence and absence in the same corpus |
 
 ---
 
@@ -169,7 +180,9 @@ instructions after the thing that justified them has moved.
    - ✅ Gauges run on the draft itself: **zero** occurrences of `frac_far` (§0's scalar ban), zero
      Branch-B explanations of a Branch-A null (`PREREGISTRATION.md` §2), and §5 carries the survey's
      per-row ✅/⚠/❓ grades through rather than flattening them.
-   - ⛔ **NOT drafted and deliberately so:** §6–§12, §14, §15. They still move.
+   - ⛔ **NOT drafted and deliberately so:** §6–§12, §14, §15. They still move. *(§15 is now OPENED
+     as of D202 ~18:4x — pre-registered, still undrafted. Opening ≠ drafting; the prereg must be
+     committed and dated before a word of §15 prose exists.)*
 6. ⛔ **NOT** replication across years. Cost is measured (2019: 8.85 GB · 2022: 14.9 GB · 2026: 9.89
    GB by HTTP HEAD) and replicating a number that is two-thirds artefact buys nothing.
 

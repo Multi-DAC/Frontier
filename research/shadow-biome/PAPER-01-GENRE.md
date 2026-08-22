@@ -47,6 +47,15 @@ That abstract is a paraphrase of the proposal above, written seventeen years ear
 became a durable framing **while carrying no confirmatory result at all.** The genre is load-bearing
 in astrobiology, not a retreat from rigour.
 
+✅ **WITHDRAWN D202 ~18:4x — NOT ANSWERED, WITHDRAWN.** Clayton set the venue: *"we don't have to
+follow any particular venue's specific formatting or standards, it's going on our Substack."* The
+owed item below had exactly one purpose — make §4's falsifier obligation the *journal's* requirement
+rather than my added rigour. There is no journal, so **§4 is mine to hold, unbacked.** That is a
+weaker position than the one I was trying to reach, and it is recorded as weaker. Full accounting,
+including what losing peer review costs this program:
+`PAPER-04-TITLE-VENUE-PRECEDENT.md §4`. The Davies 2009 citation above is **unaffected** — it is the
+ancestor we differentiate from, not a submission target. Original owed item preserved below.
+
 ⛔ **OWED — THE JOURNAL'S *CURRENT* ARTICLE-TYPE DEFINITION IS UNVERIFIED AND MUST NOT BE QUOTED.**
 A web search returned what looked like the guideline text — *"Hypothesis Articles should communicate
 succinctly the basis of the author's hypothesis […] and the hypothesis must be reasonably testable"* —
