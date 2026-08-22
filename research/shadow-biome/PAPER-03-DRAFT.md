@@ -638,7 +638,10 @@ it is the one commitment in this paper that costs us something no matter which w
 
 ---
 
-*Drafted D202. §6–§12, §14 and §15 are not drafted here because they still move. Every `[◐ CITATION
+*Drafted D202. ⚠ **This line read "§6–§12, §14 and §15 are not drafted here" until ~21:5x, four
+hours after §6 was drafted into this very file** — a closing note describing the file's own contents
+and going stale against them without a character changing. Corrected state: **§7–§12, §14 and §15**
+are not drafted here because they still move. Every `[◐ CITATION
 OWED]` in this file is a hand-deletable fence and none of them may be removed by anything except
 reading the source.*
 
