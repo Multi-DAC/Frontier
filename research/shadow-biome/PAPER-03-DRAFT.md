@@ -1,4 +1,4 @@
-# SHADOW BIOME — DRAFT PROSE, §1–§5 and §13
+# SHADOW BIOME — DRAFT PROSE, §1–§6 and §13
 
 *Drafted D202 / 2026-08-21 ~17:0x PT, midday-creation drive (deferred), on `PAPER-00-ARCHITECTURE.md`
 §4 item 5: **draft these now, in parallel with the compute**, because they do not move on any pass
@@ -431,6 +431,144 @@ archives.**
    assertion. **The same document asserted it and asked it.** Two fetches settled it. An asymmetry of
    effort between the direction you expect and the direction you do not is the specific failure this
    section is now an example of.
+
+---
+
+## §6 — THE KINDS
+
+*This is the section the premise's author asked for first and is getting last, and the order is the
+paper's own worked example of its subject. He wanted a catalogue of what a shadow biome could be. He
+got, instead, eight measurement passes against telescope archives — which is to say he got Group I,
+one aperture, one wavelength, exhaustively, while the thing he actually described sat unopened. The
+apparatus went where apparatus was cheap. This section goes where the idea is.*
+
+**It is speculative and it is labelled speculative.** Nothing below is a result. Each kind gets three
+things: what it would be, what it would be like to live beside one without knowing, and — in one
+sentence, not one document — the cheapest place a person could go looking. That last sentence is
+deliberately short. A hypothesis paper owes a reader a handle, not a programme.
+
+### 6.1 GROUP I — the apertural kinds
+
+These need no evolutionary story at all, and it is worth saying why up front, because it is what
+separates them from §6.2. **Being small is free.** Nothing had to be selected against for a mite-scale
+ecology to go unwitnessed by an animal whose finest unaided discrimination is about a tenth of a
+millimetre. The signal never arrives. There is no gate, because there is nothing at the gate.
+
+This is also Davies' territory — a claim about instruments — and so it is the part of our class where
+we are least original and most measurable. Both halves of that sentence are true and they are the same
+fact.
+
+**(i) Below resolution.** The obvious one, and the one with the best track record: every time the
+resolving floor has dropped, a biome was waiting. Van Leeuwenhoek's animalcules, the electron
+microscope's viruses, the 1990s' realisation that most of the ocean's biomass is picoplankton nobody
+had counted. What it would be like: exactly like now. The distinguishing mark of a below-resolution
+biome is that it leaves *aggregate* traces — chemistry that doesn't balance, a nitrogen budget with a
+sink in it — long before it leaves an image. **Handle:** look at the mass-balance residuals, not
+through a lens.
+
+**(ii) Above extent.** The inverse, and much stranger to sit with. A structure whose smallest coherent
+unit is larger than the observer's whole perceptual field is not seen as a thing; it is seen as
+*weather*, or as *terrain*, or as *background*. What it would be like: you would call it an
+environment. You would have a word for it already, and the word would be a noun for a place rather
+than a noun for a body. **Handle:** ask which of our environmental nouns show correlation structure
+that a physical process doesn't predict.
+
+**(iii) Off-timescale, fast.** Events completed inside the ~100 ms window in which the visual system
+integrates a moment are not perceived as fast — they are perceived as *not having happened*. The
+system does not report a blur; it reports a continuity. What it would be like: a world of small
+inexplicable state-changes, each individually attributable to having looked away. **Handle:** high
+frame-rate archives that already exist for other reasons, examined for the thing nobody was framing
+for.
+
+**(iv) Off-timescale, slow.** The mirror case, and the one that most obviously has real examples
+already — a fungal network's decision cycle, a forest's, a coastline's. A process whose action
+potential is a century does not read as an agent to a creature with a seventy-year run. What it would
+be like: you would call it geology, and you would be describing behaviour. **Handle:** the multi-decade
+monitoring records we hold for other purposes, read for autocorrelation rather than for trend.
+
+**(v) Out of band.** Bees see ultraviolet; pit vipers see thermal; elephants speak below us and bats
+above. Human perceptual bandwidth is a narrow, arbitrary, entirely contingent slice, and we know it is
+arbitrary because other animals on this planet took different slices. What it would be like: a world
+with structure precisely where you have no receptor and therefore no expectation of structure.
+**Handle:** the cheapest of all of them — instrument coverage already exists across most of the
+spectrum; the question is not whether anyone can look but whether anyone has looked *for this*.
+
+**(vi) Weak or foreign coupling.** The deepest and the most treacherous. Something that interacts with
+ordinary matter far below the threshold at which any of our transducers respond. What it would be
+like: nothing. Genuinely nothing — that is the point, and it is also the danger. ⚠ **This is the only
+kind in the paper with a legitimate retreat to the undetectable branch, and the retreat is exactly what
+makes it nearly worthless as a hypothesis.** A kind that predicts no observation cannot be wrong. We
+keep it in the catalogue because the premise's author put it there and it is a real logical
+possibility, and we mark it as the one member of the class that a falsifier can never reach.
+
+### 6.2 GROUP II — the adaptive kinds, which are the actual idea
+
+Everything in §6.1 could have been written by someone who had never read Clayton's premise. This is
+the part that could not have been.
+
+**The distinguishing fact: here the signal arrives.** It reaches a working transducer. The organism is
+in physical contact with the information and does not have it. That is a much stronger and much more
+interesting claim than "we can't see small things," and it carries a cost that §6.1 does not: **it
+predicts machinery.** Suppression is funded. A gate has a mechanism, a mechanism has a signature, and a
+signature can be looked for and can be absent. We have said this before in §1.1 and we repeat it here
+because it is the whole reason this branch is worth more than the other six kinds combined.
+
+**(vii) Threshold-tuned blindness.** The sensor works, and the decision criterion sitting behind it is
+set so that an entire stimulus class falls reliably on the "nothing there" side. This is not damage; it
+is optimisation under asymmetric payoffs. If a false alarm is expensive enough and a miss is cheap
+enough, the mathematically correct detector misses on purpose, every time, for life. What it would be
+like: you would be *certain* there was nothing there — certainty being the output the system is built
+to produce, not a measure of how much evidence it had.
+
+**(viii) Gated blindness.** One layer deeper: active, metabolically funded suppression upstream of
+awareness. The organism spends energy in order not to perceive. This is not exotic — it is the
+ordinary architecture of attention, and it is why you cannot feel your own clothing. What it would be
+like: not an absence but a *smoothness*. The seam is the thing that's missing.
+
+**(ix) Socially enforced blindness — the Dozois case.** This is the one the premise's author pointed
+at, and it is the mechanism we did not have until he did.
+
+In Gardner Dozois's 1973 novella *Chains of the Sea*, alien ships land across the Earth and simply do
+not engage humanity — they have business with something else. A boy, Tommy Nolan, perceives the Other
+People: an older nonhuman ecology that has always shared the world and that adults no longer see.
+What makes it a mechanism rather than a mood is what happens to Tommy. **The not-seeing is not merely
+developmental; it is taught, and it is enforced.** A child who reports the Other People is corrected,
+disbelieved, and eventually punished into silence — and the silence becomes real blindness rather than
+a discretion about speech. [◐ VERIFY AGAINST TEXT: the plot summary above is from recall and the
+enforcement reading in particular should be checked against the novella before publication; the
+bibliographic citation is confirmed and sits in `PAPER-04`.]
+
+**The reason this matters technically, and it is a genuine addition:** social enforcement supplies a
+transmission mechanism that ordinary natural selection does not need to supply. A perceptual
+suppression that would take many generations to fix genetically can be installed in one, culturally,
+and re-installed every generation thereafter — which means the trait can persist without the selection
+pressure that created it still being present. **That decouples the blindness from its cause, and a
+decoupled trait is one you can catch,** because it will be maintained in populations where the original
+payoff no longer holds. This became prediction **C4** in `PREREG-CORPUS-F2.md`, and it is the only
+prediction in this paper that came from a work of fiction.
+
+⚠ **And Group II has a price, registered before it was opened.** A gated entity is *on the tape*. If a
+device can render it and a human cannot, the device archive is where it will be — so **Group II may
+never retreat to the undetectable branch.** That retreat belongs to (vi) and to nothing else. This is
+F7 in `PAPER-02-FALSIFIERS.md` and it is what stops the adaptive branch from becoming the free
+explanation it would otherwise be.
+
+### 6.3 What this catalogue is worth, ranked honestly
+
+Nine kinds. They are not equal, and a reader deserves the ranking rather than the list:
+
+- **(vi) weak coupling** is unfalsifiable and we say so. It stays for completeness and does no work.
+- **(i)–(v)** are respectable, cheap to look for, and largely **not ours** — this is Davies' claim,
+  already published, already framed, and our contribution to it is measurement rather than idea.
+- **(vii)–(ix)** are the paper. They are the only kinds where the premise's own mechanism is doing the
+  work, they are the only kinds that predict *machinery* rather than a hole, and **(ix) is the only one
+  with a mechanism specific enough to have generated a numbered prediction.**
+
+**The uncomfortable summary, stated because a reader would otherwise have to find it:** the six kinds
+we can most easily test are the six we did not invent, and the three we did invent are the three where
+this paper reports no measurement at all. That is not a flaw to be dissolved by rebalancing the prose.
+It is the actual state of the work on the day it was written, and the correct response to it is a
+falsifier and a date, both of which are in §F.
 
 ---
 
