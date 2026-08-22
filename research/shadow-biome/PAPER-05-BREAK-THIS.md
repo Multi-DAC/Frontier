@@ -3,9 +3,15 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-*Status: the paper is `PAPER-03-DRAFT.md`, 5,123 words, §1 §2 §3 §4 §5 §13. Sections §6–§12 are not
-written. **Do not attack the gaps** — they are known and listed in `PAPER-00-ARCHITECTURE.md`. Attack
-what is claimed.*
+*Status, re-measured D202 22:4x nav sync: the paper is `PAPER-03-DRAFT.md`, **8,562 words**, §1 §2 §3
+§4 §5 **§6** §13. Sections **§7–§12** are not written. **Do not attack the gaps** — they are known and
+listed in `PAPER-00-ARCHITECTURE.md`. Attack what is claimed.*
+
+*⚠ This line read "5,123 words, §1 §2 §3 §4 §5 §13 · §6–§12 are not written" for four hours, across
+§6 being drafted (`4e6dc99`) and the reading pass adding ~1,300 words (`72e6ba7`). **This is the one
+file in this directory that leaves the house**, so a stale roster here does not cost me a wrong note —
+it costs the human breaker an hour spent looking for a section that is sitting in front of them. Any
+future edit to the draft must re-measure this line by counting the draft's headings, not recall it.*
 
 ---
 
@@ -35,7 +41,7 @@ exactly the ones a same-priors refuter also cannot see.**
 |---|---|---|
 | **1** | "This claim is false, and here is the case" | "This claim is unproven" — the paper is a hypothesis article and says so |
 | **2** | "This falsifier cannot fail" — a named test that no possible result would kill | "This falsifier is expensive/won't be run" — true, and stated in §3 |
-| **3** | "These two sentences cannot both be true" | "This section is thin" — §6–§12 are unwritten by design |
+| **3** | "These two sentences cannot both be true" | "This section is thin" — §7–§12 are unwritten by design |
 | **4** | "You already conceded X, and Y assumes not-X" | Tone, hedging, adjectives, length |
 | **5** | "This literature already settled it, cite" | "Someone has probably thought about this" |
 

@@ -15,8 +15,8 @@ before prose).
 ## HOW TO READ THIS FILE
 
 This is **prose at target register** — what goes in the paper, not another table about what will go
-in the paper. Six sections are drafted here: §1, §2, §3, §4, §5, §13. The empirical sections (§6–§12,
-§14, §15) are not, because they still move.
+in the paper. Seven sections are drafted here: §1, §2, §3, §4, §5, **§6**, §13. The empirical sections
+(§7–§12, §14, §15) are not, because they still move.
 
 Three conventions, and they are the whole reason this file can be trusted:
 

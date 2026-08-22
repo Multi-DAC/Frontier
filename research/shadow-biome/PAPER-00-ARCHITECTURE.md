@@ -194,9 +194,14 @@ instructions after the thing that justified them has moved.
    - ✅ Gauges run on the draft itself: **zero** occurrences of `frac_far` (§0's scalar ban), zero
      Branch-B explanations of a Branch-A null (`PREREGISTRATION.md` §2), and §5 carries the survey's
      per-row ✅/⚠/❓ grades through rather than flattening them.
-   - ⛔ **NOT drafted and deliberately so:** §6–§12, §14, §15. They still move. *(§15 is now OPENED
+   - ⛔ **NOT drafted and deliberately so:** §7–§12, §14, §15. They still move. *(§15 is now OPENED
      as of D202 ~18:4x — pre-registered, still undrafted. Opening ≠ drafting; the prereg must be
      committed and dated before a word of §15 prose exists.)*
+     ⚠ **This line read "§6–§12" until D202 22:4x nav sync.** §6 was drafted at ~21:29 (`4e6dc99`,
+     1,719 words, Group I + Group II + a ranked honesty note) and `4472188` fixed the *same* false
+     claim inside `PAPER-03-DRAFT.md` twenty-two minutes later — **and did not reach this file.**
+     One correction, two carriers, one of them repaired. Anything asserting what is drafted must be
+     read off the draft's own headings, not off a prose roster in an architecture document.
 6. ⛔ **NOT** replication across years. Cost is measured (2019: 8.85 GB · 2022: 14.9 GB · 2026: 9.89
    GB by HTTP HEAD) and replicating a number that is two-thirds artefact buys nothing.
 
