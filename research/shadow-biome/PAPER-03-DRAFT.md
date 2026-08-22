@@ -282,5 +282,195 @@ a claim about disturbances that render nothing legible. Under this section's rul
 of evidence this program is *least* able to promote — and the rule was written before we noticed that,
 which is the only reason it can be trusted now.
 
+---
+
+## §5 — WHO KEEPS THE BIN
+
+If Branch A is real in any residual form, the evidence was very likely **captured and then thrown
+away.** Detectors are trained on known classes; anything unclassified falls into a rejection bin; and
+the rejection bin is usually not archived. *We built machines with no evolutionary reason to be blind,
+then taught them our blindness on purpose, for storage costs.* That is the claim, and it is checkable
+without looking at a single detection: it is a claim about **published data-retention policy.**
+
+So the survey came first, and it asked one question — **who does not throw it away?**
+
+⚠ **The survey examined policies, not contents.** No detection data was inspected at any point in it.
+Rows are graded ✅ (read at a primary or official source), ⚠ (reported by a search summary, primary
+source not read), ❓ (attempted, not established). **Those grades are per-row and are carried into
+this section rather than flattened**, because a section-level confidence would launder the ⚠ rows
+through the ✅ ones.
+
+### 5.1 The axis is not archive size
+
+The useful axis turned out not to be big-archive/small-archive. It is **where the classifier sits
+relative to the archive.**
+
+**Tier 0 — no classifier in the path.** Continuous raw recording; there is no rejection bin because
+nothing is rejected. The Australian Acoustic Observatory records continuously across Australian
+ecosystems at a scale of hundreds of sensors and petabytes [⚠]; continuous seismic and infrasound
+waveform archives are open and un-triggered [⚠].
+
+⛔ **NEXRAD was this tier's exemplar and its row is withdrawn.** Level II is **post-filter**: the
+WSR-88D clutter filter runs in the signal processor, and the archived moments are recomputed from
+clutter-filtered echoes. What the archive keeps is `CFP` — *Clutter Filter Power removed* — a
+**counter with no bin behind it** [✅ PRIMARY: the moment list in an open-source Level II reader].
+Radar aeroecology recovered birds, bats and insects from what *survived* the filter and was being
+discarded by **attention**, not from a stored discard pile. **NEXRAD is therefore an existence proof
+about attention, not about archives**, and no sentence in this paper may imply that the network kept
+its clutter. We had it the other way round in the first draft of the survey and the correction is
+recorded there rather than deleted.
+
+**Tier 1 — the classifier runs, but the bin is kept and published.** The score is *attached* rather
+than *applied*. ZTF streams all sources above a difference-image detection threshold, with the
+Real-Bogus score as a field in the packet rather than a gate in front of it [✅ PRIMARY:
+`ztf.caltech.edu`]. Rubin's alert stream is designed to carry essentially all 5σ difference-image
+sources including an unknown fraction of artefacts, positive *or* negative flux, with a
+machine-learned spuriousness score provided so the user chooses their own completeness/purity
+tradeoff [✅ PRIMARY at pass 3, LDM-612 fetched directly — upgraded from ⚠, and it cost three
+corrections against our own earlier praise of it].
+
+**This is the single best piece of news for a program of this kind**, and it was a deliberate choice
+by that community rather than an accident: they knew the classifier would be wrong in unknown ways,
+so they shipped the score next to the data instead of in front of it.
+
+**Tier 2 — the bin is kept locally, never uploaded, then overwritten.** The Global Meteor Network's
+RMS software archives and uploads only detections it judges probably meteors; everything else stays on
+the local machine, and *"RMS purges the oldest data to free up space for the next night's run"*
+[✅ PRIMARY: GMN wiki]. Operators are told to copy off anything they want to keep.
+
+Read that with the premise in hand. Hundreds of cameras, every clear night, worldwide, watching the
+whole sky — and the class *"moving thing that is not a meteor"* is written to disk and then deleted to
+make room. Not censored, not suppressed: **deleted for storage costs, by a classifier trained on one
+known class.** That is the software form of the mechanism the premise describes in biology, and the
+rejection bin of the world's best-distributed all-sky video network is a rolling window measured in
+days, on SD cards, in private hands.
+
+**Tier 3 — the bin is destroyed by design.** Camera-trap pipelines exist to filter blanks; a typical
+deployment is mostly empty frames and the tooling's stated purpose is clearing them. Whether the
+blanks are then *deleted* or merely *sorted* is platform- and project-dependent; one major platform
+moved from Tier 3 to Tier 1 once its policy was read properly [✅ at pass 2], while **the field norm
+remains ❓ — attempted, not established.** Security and municipal video overwrite on cycles of days to
+weeks with no archive and no science.
+
+That ❓ is the highest-value unresolved row in the survey, because **"blank" is a classifier output,
+not an observation**, and the premise is precisely a claim about what a mostly-empty frame might
+contain.
+
+**Tier X — retains the unclassified by design, low evidence grade.** One privately funded all-sky
+array releases commissioning data covering on the order of half a million objects [⚠] and is the only
+network here whose *design goal* is the residual. Under `PREREGISTRATION.md` §5 it is a **pointer to
+retention practice and not primary evidence**; its outlier claims are contested and are not inherited.
+
+### 5.2 The relocation finding, and the part of it that died
+
+Reading ZTF's own documentation past the public-facing page produced the survey's sharpest result and
+also its worst mistake, and both belong in the paper.
+
+**The result.** ZTF's alert stream is Tier 1 — and it contains its own Tier 2. There *is* a
+pre-packaging filter, running before the packet is written; it discards roughly two-thirds of raw
+events; and the Real-Bogus threshold inside it is **zero.** The cut is not on *reality*, it is on
+**shape** — elongation and full-width bounds — with the toll printed publicly at each stage
+(643,860 → 228,287 → 24,581 for the documented night) [✅ PRIMARY: ZTF alert-distribution paper].
+
+⭐ **So the cortical edit is not a property of an instrument. It is a property of the pipeline as
+practiced, and it is re-implemented at whatever layer you leave it out of.** Rubin's decision to move
+the classifier out of the stream does not delete the cut; it **relocates** it downstream into
+user-defined broker and follow-up filters. We observed exactly that in one follow-up system, which
+re-imposed an extendedness cut on Rubin alerts and did not print its toll.
+
+⛔ **And the sentence we hung on it is refuted.** The draft claimed the relocated layer is
+*worse-instrumented* — that a broker filter's toll "is published nowhere, is per-user, changes without
+a version number, and no one is counting." **All four clauses are false of the first broker checked.**
+One publishes its quality-cut toll nightly as a time series, which is strictly more than the single
+figure the upstream survey publishes; and its filters are distributed *by version number* through a
+package index, so "changes without a version number" is false in the most literal available way
+[✅ PRIMARY: both fetched, D202].
+
+**The relocation is real at n=1. The claim that relocation systematically degrades instrumentation is
+dead.** It is printed here at the same size as the finding it qualified, because the mechanism by
+which we got it wrong is the paper's subject: one host of that project was unreachable, we correctly
+recorded *that host* as unreachable, and then wrote an assertion about **what the project publishes** —
+a different question, answerable in one request to a different host we never tried.
+
+⚠ **A pattern claim is also withdrawn.** We had written that the encouraging tier is where the loss
+was hiding, *"two for two."* That is n=2, both from optical transient astronomy, and both "encouraging"
+assignments were our own, made from ⚠-graded search summaries. **"My optimistic unverified rows got
+corrected when I read the primary source" is a fact about our sourcing discipline, not a property of
+archives.**
+
+### 5.3 What the survey establishes, and one thing it establishes about the surveyor
+
+1. **The premise's key empirical assumption is true, and worse than stated.** Pipelines do discard
+   unclassified events, and in the most relevant band — all-sky night video — the discard is a hard
+   delete on a days-long rolling window, not an unread archive.
+2. **Astronomy already fixed it, on purpose, at the largest scale available.** If there is a residual
+   in the optical sky, the bin is public and nobody has to be persuaded to open it. That is why §7–§11
+   are in optical: **not because it is the right locus, but because it is the reachable one** (§13).
+3. ⚠ **The survey searched hard for loss and asserted the absence of counting.** The question *"does
+   any broker publish the toll of its filters?"* sat on three consecutive pass agendas, was dropped
+   from the fourth, and was never worked — while the *answer* stood four lines above it as an
+   assertion. **The same document asserted it and asked it.** Two fetches settled it. An asymmetry of
+   effort between the direction you expect and the direction you do not is the specific failure this
+   section is now an example of.
+
+---
+
+## §13 — WHAT THIS DOES AND DOES NOT BEAR ON
+
+This section is load-bearing and is placed after the evidence deliberately, so that it constrains the
+reader's conclusions and our own at the point where both are formed.
+
+**1. The null is a Branch-A null and it stays in Branch A.** Our deep locus returned mostly what its
+classifier said was there. That is evidence about device-renderable members of the class, at one
+instrument, in one band, on one set of nights. ⛔ It is **not** evidence for Branch B, it is **not**
+"consistent with" Branch B, and it may not be read as such — Branch B has no test in this program and
+therefore can receive nothing from it, including our failures (`PREREGISTRATION.md` §2). Any sentence
+in this paper that appears to soften the null by gesturing at undetectability is a defect, and this
+clause is the citation for cutting it.
+
+**2. One locus is not the premise.** The premise is about entities inhabiting our world *alongside
+us*. The deepest work here was done on difference images of the distant sky, and **the locus was
+chosen by reachability**: that bin was public and computable the night the program started. That is an
+operational reason, not a scientific one, and the tell was visible from the beginning — the existence
+proof we reached for (biological scatter in weather radar, in our own airspace) sits at the right
+locus while the test did not. The terrestrial loci are the correct next tests, each under its own
+pre-registration written before looking.
+
+**3. A held gate is not a positive result.** Where our terrestrial instrument check returned exactly
+what aeroecology already predicts, that is **a known population showing up in a channel that measures
+it by subtraction.** It may be a real and useful measurement of a deletion rate. ⛔ **It is not a
+shadow biome**, and no draft sentence may let it imply one (`PREREG-TERRESTRIAL.md` §1.4). This fence
+was written before the check ran and it is now live rather than hypothetical, which is the only
+condition under which such a fence is worth anything.
+
+**4. Nothing here bears on identities, and that is a structural commitment rather than a courtesy.**
+No entity is a candidate anywhere in this program. The premise is about a class and its relation to
+the observer; a census is not merely out of scope, it is *forbidden* — and the premise itself supplies
+the reason. **Selected-for blindness predicts an absence in the human record.** A large, detailed,
+identity-rich folklore corpus is therefore evidence *against* the mechanism, not for it. ⛔ We may not
+score presence and absence in the same corpus, and the prediction was committed in both directions
+before any corpus was consulted (`PAPER-02-FALSIFIERS.md` F5).
+
+**5. Non-interaction is not available as a refuge.** Life is dissipative; anything alive must couple
+to something. "Lacking interaction with matter" splits into weak-coupling (reachable in principle) and
+own-sector — and an own-sector biome still **gravitates**, because stress-energy is not optional. This
+makes Branch B a *hard measurement* rather than an unfalsifiable category. ⚠ Our computed bound is a
+statement about instrument **sensitivity** and is **not a detection claim**: the loading terms that
+would dominate it have not been computed, and until they are, no gravimetric claim is made here.
+
+**6. What would end this paper.** If the machinery falsifier finds no funded suppression, if the
+phylogenetic debt goes unpaid, if the tail falsifier shows the residual behaves exactly as the
+instrument's artefact tail predicts, and if the bins turn out not to be kept — the premise is not
+rescued by any of the above, and we say so. `PAPER-02-FALSIFIERS.md` §4 states the death condition in
+those terms, and **F6 has already fired on us once** (the network we called an archive kept a counter,
+not a bin). A hypothesis article's only real asset is that its author wrote down what would end it
+while the writing was still cheap.
+
+---
+
+*Drafted D202. §6–§12, §14 and §15 are not drafted here because they still move. Every `[◐ CITATION
+OWED]` in this file is a hand-deletable fence and none of them may be removed by anything except
+reading the source.*
+
 
 
