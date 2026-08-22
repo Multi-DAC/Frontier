@@ -22,8 +22,9 @@ Original wording preserved in this notice rather than deleted; see `CORRECTIONS.
 The error was found by verifying my own citation, not by a reader — but it was *written* with the
 same confidence as the parts that were right, which is the whole problem with recalled citations.
 
-Not a concession to informality. *Astrobiology* prints **"Hypothesis Article"** as an article-type
-label, and one occupant of that slot sits in this exact conceptual neighbourhood:
+Not a concession to informality. *Astrobiology* **has published** work under the printed article-type
+label **"Hypothesis Article"** — past tense is the strongest tense the evidence carries, see the
+⚠ TENSE note in §1.1 — and one occupant of that slot sits in this exact conceptual neighbourhood:
 
 > Davies, P.C.W., Benner, S.A., Cleland, C.E., Lineweaver, C.H., McKay, C.P., Wolfe-Simon, F.
 > **"Signatures of a Shadow Biosphere."** *Astrobiology* **9**(2):241–249 (2009).
@@ -67,6 +68,47 @@ documents containing it.** The most likely reading is that the search engine *sy
 generic hypothesis-writing pages. Treat as **NOT A SOURCE** until read on the journal's own page.
 The 2009 label is verified; the 2026 guidelines are not, and the gap between those two grades is
 seventeen years wide.
+
+---
+
+## 1.1 CLOSED D202 ~21:0x — THE TENSE, NOT THE JOURNAL, WAS THE LIVE DEFECT
+
+⚠ **TENSE. §1's opening sentence read *"Astrobiology **prints** 'Hypothesis Article' as an
+article-type label"* — present tense, sourced entirely from a single 2009 instance, in a file whose
+own ⛔ block two paragraphs below said the current guidelines were unverified.** Corrected to
+**has published**.
+
+**The withdrawal at ~18:4x did not reach it.** That notice was scoped to the ⛔ block that *named*
+the debt; the unbacked claim was in the prose the debt was supposed to back, and prose above a
+retraction does not inherit it. The file has therefore been asserting the present tense for ~2.5
+hours *while simultaneously stating it could not verify the present tense.* Found by re-reading, not
+by any gauge — nothing in this tree greps for a claim's tense against its own evidence grade.
+
+⚠ **And the publisher changed.** `home.liebertpub.com` now 301s to `journals.sagepub.com`
+(observed D202 via WebFetch, which returns cross-host redirects rather than following them).
+*Astrobiology* is a SAGE title now. Any sentence about what the journal "currently" does is a claim
+about a publisher we have never once successfully read.
+
+**ROUTES ATTEMPTED AND DEAD — five, recorded so the sixth breath does not re-spend them:**
+
+| # | Route | Result |
+|---|---|---|
+| 1 | `fetch_url` → liebertpub for-authors | Cloudflare 403 |
+| 2 | `web_actuator` real Chromium → liebertpub | Cloudflare 403 |
+| 3 | `WebFetch` → `journals.sagepub.com/author-instructions/AST` | **403** (D202 21:0x) |
+| 4 | `WebFetch` → liebertpub for-authors | 301 → sagepub, host handed back |
+| 5 | `WebFetch` → the redirect target itself, `?cf-redirected` | **403** (D202 21:0x) |
+| — | Wayback Machine, for-authors page | no snapshot |
+| — | exact-phrase search for the quoted guideline sentence | **zero documents** → not a quotation |
+
+Route 5 was the one the 18:00 reminder singled out as *"never itself attempted."* It has now been
+attempted. It is 403. **Cloudflare is host-level, not path-level, and the publisher migration
+carried the block across with it** — so the remaining routes are a human browser (Clayton, item #1
+of the 17:29 message, which is HIS call and blocks nothing now) or nothing.
+
+✅ **NOTHING DOWNSTREAM IS BLOCKED.** Venue is Substack. The genre name is accurate with no journal
+attached (`PAPER-04 §4`). §4's falsifier obligation is **mine, unbacked, and in force** — that was
+settled at 18:4x and this note does not reopen it.
 
 ⚠ **BUT — THE NAME COLLIDES, AND WE HAD NOT CITED IT.** `grep -ri "davies|shadow biosphere|weird life"`
 over every `.md` in this directory returned **zero hits** as of this file. We are drafting a paper called
