@@ -1,0 +1,510 @@
+{
+ "label": "night1_20180601",
+ "index": "PASS5_alert_index.json",
+ "n_alerts_total": 17991,
+ "n_exposures": 55,
+ "exposures": [
+  {
+   "key": "20180601167662_000526",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 63,
+   "n_images_found": 63,
+   "n_alerts": 430,
+   "listing_size": 767
+  },
+  {
+   "key": "20180601168113_000577",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 60,
+   "n_images_found": 60,
+   "n_alerts": 472,
+   "listing_size": 764
+  },
+  {
+   "key": "20180601169954_000576",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 64,
+   "n_images_found": 64,
+   "n_alerts": 459,
+   "listing_size": 768
+  },
+  {
+   "key": "20180601170417_000525",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 64,
+   "n_images_found": 64,
+   "n_alerts": 541,
+   "listing_size": 768
+  },
+  {
+   "key": "20180601171319_000524",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 63,
+   "n_images_found": 63,
+   "n_alerts": 696,
+   "listing_size": 767
+  },
+  {
+   "key": "20180601171794_000575",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 64,
+   "n_images_found": 64,
+   "n_alerts": 435,
+   "listing_size": 768
+  },
+  {
+   "key": "20180601174595_000672",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 63,
+   "n_images_found": 63,
+   "n_alerts": 389,
+   "listing_size": 767
+  },
+  {
+   "key": "20180601240301_000577",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 10,
+   "n_images_found": 0,
+   "n_alerts": 40,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601298067_000477",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 10,
+   "n_images_found": 10,
+   "n_alerts": 42,
+   "listing_size": 714
+  },
+  {
+   "key": "20180601298530_000478",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 16,
+   "n_images_found": 16,
+   "n_alerts": 68,
+   "listing_size": 760
+  },
+  {
+   "key": "20180601298993_000531",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 54,
+   "n_images_found": 54,
+   "n_alerts": 147,
+   "listing_size": 758
+  },
+  {
+   "key": "20180601299468_000582",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 37,
+   "n_images_found": 0,
+   "n_alerts": 120,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601299931_000581",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 47,
+   "n_images_found": 0,
+   "n_alerts": 146,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601300394_000580",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 49,
+   "n_images_found": 49,
+   "n_alerts": 139,
+   "listing_size": 753
+  },
+  {
+   "key": "20180601300856_000628",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 56,
+   "n_images_found": 56,
+   "n_alerts": 203,
+   "listing_size": 760
+  },
+  {
+   "key": "20180601301319_000629",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 47,
+   "n_images_found": 47,
+   "n_alerts": 127,
+   "listing_size": 751
+  },
+  {
+   "key": "20180601315556_000533",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 15,
+   "n_images_found": 15,
+   "n_alerts": 39,
+   "listing_size": 754
+  },
+  {
+   "key": "20180601316076_000532",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 30,
+   "n_images_found": 0,
+   "n_alerts": 96,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601316539_000583",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 31,
+   "n_images_found": 0,
+   "n_alerts": 85,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601316991_000479",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 29,
+   "n_images_found": 0,
+   "n_alerts": 109,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601317477_000529",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 37,
+   "n_images_found": 0,
+   "n_alerts": 112,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601317975_000530",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 44,
+   "n_images_found": 0,
+   "n_alerts": 153,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601318438_000631",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 43,
+   "n_images_found": 43,
+   "n_alerts": 147,
+   "listing_size": 747
+  },
+  {
+   "key": "20180601318924_000630",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 45,
+   "n_images_found": 45,
+   "n_alerts": 123,
+   "listing_size": 749
+  },
+  {
+   "key": "20180601336968_000482",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 28,
+   "n_images_found": 28,
+   "n_alerts": 121,
+   "listing_size": 732
+  },
+  {
+   "key": "20180601337454_000534",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 25,
+   "n_images_found": 25,
+   "n_alerts": 84,
+   "listing_size": 729
+  },
+  {
+   "key": "20180601337917_000585",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 9,
+   "n_images_found": 0,
+   "n_alerts": 31,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601338368_000584",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 12,
+   "n_images_found": 0,
+   "n_alerts": 28,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601338843_000632",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 10,
+   "n_images_found": 0,
+   "n_alerts": 47,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601353935_000535",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 2,
+   "n_images_found": 0,
+   "n_alerts": 7,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601377338_000488",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 1,
+   "n_images_found": 1,
+   "n_alerts": 42,
+   "listing_size": 705
+  },
+  {
+   "key": "20180601377801_000686",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 6,
+   "n_images_found": 6,
+   "n_alerts": 183,
+   "listing_size": 710
+  },
+  {
+   "key": "20180601395058_000585",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 8,
+   "n_images_found": 0,
+   "n_alerts": 29,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601395509_000585",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 9,
+   "n_images_found": 0,
+   "n_alerts": 25,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601401435_000639",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 13,
+   "n_images_found": 13,
+   "n_alerts": 574,
+   "listing_size": 717
+  },
+  {
+   "key": "20180601402257_000590",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 37,
+   "n_images_found": 37,
+   "n_alerts": 1562,
+   "listing_size": 741
+  },
+  {
+   "key": "20180601402743_000540",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 13,
+   "n_images_found": 13,
+   "n_alerts": 354,
+   "listing_size": 717
+  },
+  {
+   "key": "20180601403206_000539",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 11,
+   "n_images_found": 11,
+   "n_alerts": 396,
+   "listing_size": 715
+  },
+  {
+   "key": "20180601430127_000830",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 3,
+   "n_images_found": 3,
+   "n_alerts": 78,
+   "listing_size": 707
+  },
+  {
+   "key": "20180601433299_000768",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 1,
+   "n_images_found": 1,
+   "n_alerts": 24,
+   "listing_size": 764
+  },
+  {
+   "key": "20180601433819_000729",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 4,
+   "n_images_found": 4,
+   "n_alerts": 98,
+   "listing_size": 764
+  },
+  {
+   "key": "20180601434769_000687",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 35,
+   "n_images_found": 35,
+   "n_alerts": 877,
+   "listing_size": 739
+  },
+  {
+   "key": "20180601437604_000640",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 23,
+   "n_images_found": 23,
+   "n_alerts": 615,
+   "listing_size": 727
+  },
+  {
+   "key": "20180601441424_000540",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 6,
+   "n_images_found": 6,
+   "n_alerts": 157,
+   "listing_size": 710
+  },
+  {
+   "key": "20180601441875_000591",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 52,
+   "n_images_found": 52,
+   "n_alerts": 1279,
+   "listing_size": 756
+  },
+  {
+   "key": "20180601442338_000639",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 57,
+   "n_images_found": 57,
+   "n_alerts": 1915,
+   "listing_size": 761
+  },
+  {
+   "key": "20180601442789_000590",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 50,
+   "n_images_found": 50,
+   "n_alerts": 1100,
+   "listing_size": 754
+  },
+  {
+   "key": "20180601443252_000539",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 39,
+   "n_images_found": 39,
+   "n_alerts": 709,
+   "listing_size": 743
+  },
+  {
+   "key": "20180601443704_000487",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 24,
+   "n_images_found": 24,
+   "n_alerts": 343,
+   "listing_size": 728
+  },
+  {
+   "key": "20180601452315_000801",
+   "http": 404,
+   "state": "MISSING",
+   "n_images_referenced": 2,
+   "n_images_found": 0,
+   "n_alerts": 9,
+   "listing_size": 0
+  },
+  {
+   "key": "20180601452836_000768",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 14,
+   "n_images_found": 14,
+   "n_alerts": 172,
+   "listing_size": 718
+  },
+  {
+   "key": "20180601457928_000640",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 53,
+   "n_images_found": 52,
+   "n_alerts": 741,
+   "listing_size": 756
+  },
+  {
+   "key": "20180601475926_000687",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 59,
+   "n_images_found": 59,
+   "n_alerts": 587,
+   "listing_size": 763
+  },
+  {
+   "key": "20180601476458_000730",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 1,
+   "n_images_found": 1,
+   "n_alerts": 1,
+   "listing_size": 727
+  },
+  {
+   "key": "20180601477488_000729",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 39,
+   "n_images_found": 39,
+   "n_alerts": 485,
+   "listing_size": 763
+  }
+ ],
+ "exposures_present": 40,
+ "exposures_missing": 15,
+ "exposures_unknown": 0,
+ "exposure_miss_frac": 0.2727272727272727,
+ "alerts_stranded": 1037,
+ "alerts_stranded_frac": 0.057639931076649435,
+ "alerts_unknown": 0
+}

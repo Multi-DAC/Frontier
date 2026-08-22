@@ -1,0 +1,86 @@
+{
+ "units_note": "values reported in nm/s^2 and nGal; 1 nm/s^2 = 100 nGal",
+ "signal_350g_at_1m": {
+  "m_s2": 2.3360049999999997e-11,
+  "nm_s2": 0.023360049999999997,
+  "nGal": 2.3360049999999997
+ },
+ "tide_rigid_lunar_nm_s2": 1099.860986960374,
+ "tide_rigid_solar_nm_s2": 505.0949177617636,
+ "tide_rigid_sum_nm_s2": 1604.9559047221373,
+ "tide_elastic_sum_nm_s2": 1861.7488494776792,
+ "tide_over_signal": 79697.98221654832,
+ "published_floors": [
+  {
+   "name": "tidal-band residual noise, best case, narrowband",
+   "lo_uGal": 0.017,
+   "hi_uGal": 0.037,
+   "source": "Crossley, Murphy & Liang 2023, Geophys. J. Int. 232(2) 1031-1065, doi:10.1093/gji/ggac357 (SG at Apache Point Observatory, NM)",
+   "quote": "residual noise 0.017-0.037 uGal (ETERNA, model AP1018mn, Series A-B)",
+   "hi_nm_s2": 0.37,
+   "hi_nGal": 37.00000000000001,
+   "floor_over_signal": 15.839007193905838,
+   "lo_over_signal": 7.277381683686466
+  },
+  {
+   "name": "mean error of fit after tidal + pressure correction, broadband",
+   "lo_uGal": 1.5,
+   "hi_uGal": 2.0,
+   "source": "Crossley, Murphy & Liang 2023, Geophys. J. Int. 232(2) 1031-1065, doi:10.1093/gji/ggac357 (SG at Apache Point Observatory, NM)",
+   "quote": "the mean error of our fit remains between 1.5-2.0 uGal for our two data sets",
+   "hi_nm_s2": 20.0,
+   "hi_nGal": 2000.0000000000002,
+   "floor_over_signal": 856.1625510219371,
+   "lo_over_signal": 642.1219132664529
+  },
+  {
+   "name": "departure of corrected residual from the hydrological model",
+   "lo_uGal": null,
+   "hi_uGal": 4.0,
+   "source": "Crossley, Murphy & Liang 2023, Geophys. J. Int. 232(2) 1031-1065, doi:10.1093/gji/ggac357 (SG at Apache Point Observatory, NM)",
+   "quote": "episodes in the corrected residuals that depart by up to 4 uGal from the hydrological models (after >90% of seasonal variance removed)",
+   "hi_nm_s2": 40.0,
+   "hi_nGal": 4000.0000000000005,
+   "floor_over_signal": 1712.3251020438743
+  },
+  {
+   "name": "non-tidal ocean loading, coastal station Yebes",
+   "lo_uGal": 0.2,
+   "hi_uGal": 0.2,
+   "source": "Antokoletz et al. 2024, Geophys. J. Int. 236(1) 88-98, doi:10.1093/gji/ggad371 (five European SG stations)",
+   "quote": "largest amplitude at Yebes (260 km from the Atlantic) with an RMS of 2 nm/s^2",
+   "hi_nm_s2": 2.0,
+   "hi_nGal": 200.00000000000003,
+   "floor_over_signal": 85.61625510219372,
+   "lo_over_signal": 85.61625510219372
+  },
+  {
+   "name": "inverted-barometer effect, most inland station Wettzell",
+   "lo_uGal": 0.14,
+   "hi_uGal": 0.14,
+   "source": "Antokoletz et al. 2024, Geophys. J. Int. 236(1) 88-98, doi:10.1093/gji/ggad371 (five European SG stations)",
+   "quote": "the IB effect shows an RMS of 1.4 nm/s^2",
+   "hi_nm_s2": 1.4000000000000001,
+   "hi_nGal": 140.00000000000003,
+   "floor_over_signal": 59.9313785715356,
+   "lo_over_signal": 59.9313785715356
+  }
+ ],
+ "mass_to_clear_floor_kg_at_1m": {
+  "best_narrowband_tidal_residual_0.017uGal": 2.547083589290263,
+  "broadband_fit_error_1.5uGal": 224.74266964325852,
+  "hydrological_departure_4uGal": 599.313785715356
+ },
+ "mass_to_clear_best_floor_kg": {
+  "1m": 2.547083589290263,
+  "3m": 22.923752303612368,
+  "10m": 254.70835892902628,
+  "30m": 2292.375230361237
+ },
+ "verdict": {
+  "signal_nGal": 2.3360049999999997,
+  "best_published_residual_nGal": 17.000000000000004,
+  "signal_is_below_best_floor_by_factor": 7.277381683686466,
+  "ruling": "The 2.34x figure compared the signal to the instrument's STATIC RESOLUTION. Against the residual that survives tidal, atmospheric, ocean-loading and hydrological correction at the best-characterised SG site in the literature, the same signal is BELOW the floor. Row 14's own fence -- sensitivity, not detection -- is upheld, and the margin is now a number rather than a caveat."
+ }
+}
