@@ -24,6 +24,12 @@ Three conventions, and they are the whole reason this file can be trusted:
   stays in the draft marked, so that the marker has to be deleted by hand and cannot fall off
   silently. A paper is where a program's hedges go to die; this is the counter-measure.
 - **`[✅ PRIMARY: x]`** — read at the source named, this program, by me.
+- **`[⚠ SECONDARY: x]`** — **added D202 by the reading pass, because the two-state convention above
+  was forcing a lie.** Citation, authorship and the operative claim verified through indexing or
+  reviewing literature; the article itself **not opened** — usually because a publisher served an
+  authentication redirect or a cookie wall. This is not a discharged debt and not an undischarged one;
+  it is a third state, and collapsing it into either of the other two is how a bibliography starts
+  vouching for reading that never happened.
 - **⛔** — a fence from the pre-registration that binds this sentence. Not decoration. Each one names
   the file and clause that would be violated.
 
@@ -81,16 +87,44 @@ Four standing literatures describe non-detection as an evolved strategy rather t
 the premise is a conjunction of the ordinary claims in them rather than a departure from selection
 theory:
 
-- **Tolerance versus resistance** — hosts that evolve *not to respond* to a parasite because the
-  response costs more than the parasite does. [◐ CITATION OWED: plant-pathology origin + an animal-host
-  tolerance case]
-- **Error management under asymmetric payoffs** — when a false alarm costs more than a miss, the
-  optimal detection threshold is set so that an entire stimulus class is reliably missed. Blindness as
-  tuning, not as damage. [◐ CITATION OWED: signal-detection formulation with asymmetric loss]
-- **Sensory gating** — active, metabolically funded suppression upstream of awareness. The organism
-  spends energy *not* to perceive. [◐ CITATION OWED]
-- **The vigilance–foraging tradeoff** — attention paid to a presence you cannot act on is attention
-  removed from a threat you can. Detection with no available response is pure cost. [◐ CITATION OWED]
+- **Tolerance versus resistance** — hosts that evolve *not to respond* to a parasite because mounting
+  the response costs more than the parasite does; "in many human diseases, a considerable proportion
+  of the harm is due to the host's immune response rather than a direct effect of the parasite."
+  The decomposition originates in plant pathology (Cobb 1894, cited in Schafer 1971) and was first
+  demonstrated in an animal host by Råberg et al. 2007. ⚠ **This supplies non-*response*, not
+  non-*detection*.** A tolerant host still perceives its parasite. [✅ PRIMARY: Råberg, Graham & Read,
+  *Phil. Trans. R. Soc. B* 364(1513):37–49, 2009, DOI 10.1098/rstb.2008.0184 — full text, D202]
+- **Error management under asymmetric payoffs** — fitness is maximised by responding whenever the
+  probability of the stimulus exceeds the ratio of the response's cost to the cost of missing it
+  (Nesse's `pD > CR/CD`). Where the response is expensive and the miss is cheap, that threshold rises
+  toward certainty and an entire stimulus class is reliably missed. Blindness as tuning, not as
+  damage. ⚠ **We are running this inequality in the direction its own literature does not treat.**
+  The smoke-detector tradition examines the opposite asymmetry — cheap false alarms, expensive misses,
+  therefore *over*-response — and states no result for ours. The corollary is arithmetic on Nesse's
+  rule and is **derived here, not cited**. [✅ PRIMARY for the rule: Nesse, *Evol. Med. Public Health*
+  2019(1):1, DOI 10.1093/emph/eoy034 — full text, D202. Origin of the framework: Haselton & Buss 2000]
+- **Sensory gating** — active inhibitory suppression upstream of awareness: the thalamic reticular
+  nucleus is entirely GABAergic and gates thalamocortical transmission, so non-perception here is
+  something the nervous system *does*, not something it fails to do. ⚠ **An earlier draft called this
+  "metabolically funded" and said the organism "spends energy not to perceive." Struck** — the gating
+  literature does not cost the inhibition, and the neural energy-budget literature attributes the bulk
+  of signalling cost to excitatory currents. The price tag was the load-bearing clause and was the
+  part we could not source.
+- **The vigilance–foraging tradeoff** — vigilance interrupts search and handling and measurably
+  reduces intake rate; attention is a budget spent against feeding. ⚠ **The literature supplies the
+  cost of attention. The next step — that attention paid to a presence you cannot act on is pure
+  cost, and therefore selectable against — is ours**, and is an extension of a body of work concerned
+  throughout with threats the animal *can* act on. [⚠ SECONDARY: Lima & Dill, *Can. J. Zool.*
+  68:619–640, 1990; verified through the reviewing literature, not opened at source]
+
+⚠ **Read the four together, because the honest claim is a conjunction and not one of them.** Tolerance
+supplies evolved non-response; error management supplies cost-asymmetric thresholds; gating supplies
+active suppression; vigilance supplies the price of attention. **No one of these four is
+adaptive non-perception, and none of the four literatures claims to be.** The premise is what you get
+by conjoining them, which is why this section establishes that the premise is *ordinary in its parts*
+rather than that it is *demonstrated*. Each bullet above was read at source in a dedicated pass
+(`PAPER-06-CITATIONS.md`); five of eleven such claims in this draft had to be amended against the
+source, and two of the four here are among them.
 
 ⛔ **The fence, and it is the one most likely to be breached by a sympathetic reader:** adaptive
 non-perception may explain *human* non-perception. It may **never** be used to explain a *device
@@ -151,17 +185,31 @@ defined by ignorance.
 - **Cryptic species** — populations that are reproductively isolated and genetically distinct while
   remaining morphologically indistinguishable *to us*. The kind is defined by the failure of human
   visual taxonomy, and it is a productive kind: it reorganised diversity estimates in several groups
-  once sequencing could see past the eye. [◐ CITATION OWED: a review giving the definition and a
-  documented magnitude]
-- **Dark taxa** — the working name, in molecular ecology, for the sequenced-but-unnamed: organisms
-  known to exist through their DNA and absent from taxonomy because nobody has described them. The
-  category is defined by the state of *our records*, not by any property of its members.
-  [◐ CITATION OWED]
+  once sequencing could see past the eye — "two or more distinct but morphologically similar species
+  that were classified as a single species." ⚠ **And the magnitude finding corrects the sentence
+  above it:** a survey of **2,207 cryptic-species reports** drawn from **771,931 studies capable of
+  detecting them** (Zoological Record, 1978–2006) found the proportion **homogeneously distributed**
+  across metazoan taxa and biogeographical regions once corrected for species richness and study
+  effort — not concentrated in "several groups." Cryptic diversity behaves as **random error in
+  biodiversity assessment**. *That is a better precedent for us, not a worse one:* a class we cannot
+  pre-localise is better analogised by a uniform base rate than by a few charismatic pockets.
+  [✅ PRIMARY: Pfenninger & Schwenk, *BMC Evol. Biol.* 7:121, 2007 — full text, D202.
+  ⚠ SECONDARY for the review: Bickford et al., *Trends Ecol. Evol.* 22(3):148–155, 2007]
+- **Dark taxa** — the working name, originating in **mycology** and since spreading, for the
+  sequenced-but-unnamed: organisms known to exist through their DNA, unlinkable to any physical
+  specimen or resolved name, and therefore absent from taxonomy, from species counts and from
+  legislation because nobody has described them. The category is defined by the state of *our
+  records*, not by any property of its members. [⚠ SECONDARY: Ryberg & Nilsson, "New light on names
+  and naming of dark taxa," *MycoKeys* 36:49–54, 2018 — citation and definition verified, full text
+  not opened]
 - **The Candidate Phyla Radiation** — "microbial dark matter." A very large slice of bacterial
   diversity that was never cultured, therefore never seen, therefore effectively did not exist for
   microbiology; it became visible around 2013 because a device finally looked in a way that did not
-  require culturing. [◐ CITATION OWED: the metagenomic paper that made the radiation visible + a
-  diversity figure]
+  require culturing. The figure is in the title of the paper that named it: **"Unusual biology across
+  a group comprising more than 15% of domain Bacteria"** — at least 35 candidate phyla off roughly
+  800 genomes. [Brown et al., *Nature* 523(7559):208–211, 2015; the term and the 2013 date: Rinke et
+  al., *Nature* 499:431–437, 2013. ⚠ SECONDARY — the >15% figure was verified through indexing, not
+  read at the article; *Nature* served an authentication redirect]
 
 Note what these three have in common. **Each is defined by a relation to the observer; each turned
 out to have members; and in each case the members were found not by arguing about the category but by
@@ -172,23 +220,55 @@ it is with a sensor that has no share in your blindness.
 The historical version of the same move is older and larger. Every documented breach of a human
 sensory bound has found a biome that was already there:
 
-- **Too small** — Leeuwenhoek, 1670s: an entire living world at a scale below the eye's resolution,
-  present the whole time, in water people had been drinking. [◐ CITATION OWED]
-- **Inaudible** — the bat/moth ultrasonic arms race: a predator–prey interaction conducted in a band
+- **Too small** — Leeuwenhoek, Letter 18, dated 9 October 1676: an entire living world at a scale
+  below the eye's resolution, present the whole time, in rain and well water. *"In 1675 I discovered
+  living creatures in Rain water which had stood but few days in a new earthen pot, glased blew
+  within."* [✅ PRIMARY: *Phil. Trans. R. Soc.* 12:821–831 (1677), DOI 10.1098/rstl.1677.0003. ⚠ Three
+  numbers with three roles: **18** is the letter, **1676** the date, **1677** the publication. The
+  common "18 October 1676" is the letter number mistaken for a day]
+- **Inaudible** — the bat/moth ultrasonic arms race: a predator–prey interaction conducted **largely**
   above human hearing, which humans have stood inside of, outdoors, at dusk, throughout the species'
-  existence, and were deaf to. *This is the closest analogue in the paper*, because it is not merely
-  something small or far away — it is a loud, ongoing, ecologically consequential interaction taking
-  place in our own airspace at a frequency we do not transduce. [◐ CITATION OWED]
-- **Wrong timescale** — Darwin's work on plant movement: behaviour that is invisible because it is
-  slower than the observer's attention span, not because it is faint. [◐ CITATION OWED]
-- **Out of band** — pit organs in snakes, ultraviolet signalling in birds and insects: channels that
-  carry ordinary biological information and were unavailable to us until an instrument was pointed at
-  them. [◐ CITATION OWED]
+  existence, and were substantially deaf to. *This is the closest analogue in the paper*, because it
+  is not merely something small or far away — it is a loud, ongoing, ecologically consequential
+  interaction taking place in our own airspace, and it has been running for **65 million years**:
+  ultrasound-sensitive tympanic organs "have evolved multiple times in nocturnal Lepidoptera and exist
+  in nearly half of extant species," and insect ears have arisen independently "in at least 7 of 27
+  insect orders." ⚠ **The obvious strong sentence here is false and we struck it.** An earlier draft
+  said this happens "at a frequency we do not transduce"; the source gives the band as **8 to 215 kHz
+  depending on the bat species**, and 8 kHz is well inside human hearing. The human bound at roughly
+  20 kHz is a line the phenomenon **crosses**, not a wall it hides behind — which is the more useful
+  fact anyway, because a partial aperture is exactly the case this paper is about.
+  [✅ PRIMARY: Conner & Corcoran, "Sound Strategies: The 65-Million-Year-Old Battle Between Bats and
+  Insects," *Annu. Rev. Entomol.* 57:21–39, 2012, DOI 10.1146/annurev-ento-121510-133537 — full PDF, D202]
+- **Wrong timescale** — Darwin (assisted by Francis Darwin), *The Power of Movement in Plants*, 1880.
+  **The citation is the apparatus, not a sentence.** To see circumnutation at all he affixed "a glass
+  filament, not thicker than a horsehair" to the moving part, and then "dots were made on the
+  glass-plate with a sharply pointed stick dipped in thick Indian-ink. Other dots were made at short
+  intervals of time and these were afterwards joined by straight lines." The movement had to be
+  **integrated across hours by an instrument** before it became perceptible. ⚠ The gloss — invisible
+  because slower than the observer's attention span rather than because it is faint — is ours; what
+  Darwin supplies is the fact that the apparatus was necessary. [✅ PRIMARY: title page and
+  Introduction, Darwin Online F1325, D202]
+- **Out of band** — and this one is stronger than a list entry. Bennett, Cuthill, Partridge & Maier
+  established that female zebra finches choose mates using the **300–400 nm** ultraviolet, preferring
+  UV-reflecting males to males whose UV reflection had been removed — and their abstract makes the
+  claim about *scientific practice*, not just about birds: humans had been used to assess avian
+  'colour', and that may be **flawed**, because many birds see in the ultraviolet, to which humans are
+  blind. **A biological signal was measured by human observers; the human aperture silently decided
+  what counted as the signal; a device without that aperture found a channel the animals were using
+  to choose mates.** That is this paper's thesis, already published, already settled by experiment, in
+  a domain where the entities were never in doubt. Infrared pit organs in snakes are the second case.
+  [Bennett et al., *Nature* 380:433–435, 1996; Bullock & Cowles, *Science* 115:541–543, 1952.
+  ⚠ SECONDARY — abstracts and citations verified, neither opened at the article]
 
 ⚠ **A fifth was proposed — "too big or too diffuse to be recognised as an entity" — and it is named
 here as the weakest member of the series.** It is retained only if a citation can be produced;
 otherwise it is dropped. Naming it as weakest in the draft is deliberate, so that the decision to keep
-it has to be made rather than defaulted into.
+it has to be made rather than defaulted into. ⛔ **STILL OPEN AFTER THE D202 READING PASS — AND NOT
+BECAUSE THE SEARCH FAILED. THE SEARCH NEVER RAN.** Every other bullet in §2 was read at a source that
+day; this one was not attempted, and recording it as "dropped for want of a citation" would claim a
+search that did not happen. It is the only claim in this section with no reading behind it, and it
+stays marked until one of the two things actually occurs.
 
 **Nothing in this section is evidence for a shadow biome.** It establishes something narrower and
 necessary: that a class defined by our relation to it is a scientific kind with a track record, and

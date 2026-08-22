@@ -169,6 +169,20 @@ instructions after the thing that justified them has moved.
    by `ls-remote`.** §1, §2, §3, §4, §5 and §13 are prose at target register, drafted in parallel with
    the compute as this item specified, so the frame is fixed *before* the last number lands — the only
    order in which a result cannot quietly choose its own framing.
+   - ✅ **PAID D202 ~22:2x BY THE READING PASS — `PAPER-06-CITATIONS.md`.** All 11 real markers are
+     resolved: **4 discharged clean, 5 amended against the source, 1 refuted outright, 1 recorded as
+     never attempted.** ⛔ The refutation is §2's *"a frequency we do not transduce"* — bat echolocation
+     runs **8 to 215 kHz** (Conner & Corcoran 2012, read at source) and 8 kHz is inside human hearing;
+     the sentence was false and it was the sentence the draft called *"the closest analogue in the
+     paper."* ⚠ §1.1's error-management bullet is the second kill: the smoke-detector literature treats
+     the **opposite** asymmetry and states no result for ours, so the claim is now marked as a corollary
+     **derived here, not cited.** A third state — `[⚠ SECONDARY]`, verified-but-not-opened — had to be
+     added to the draft's conventions, because two states were forcing publisher paywalls to be
+     recorded as either reading or debt when they are neither.
+   - ⚠ **THE COUNT IN THE NEXT BULLET WAS WRONG AND IS PRESERVED AS WRITTEN.** It said 12; `grep -c`
+     says 12; **one of the twelve is the legend at line 23**, which defines the convention using a
+     literal `x`. Eleven claims carried a real debt. A `grep` count reported without reading what it
+     matched, in a file whose whole purpose is to stop exactly that.
    - ⚠ **DRAFTED IS NOT SOURCED.** The file carries **12 `[◐ CITATION OWED]` markers** — every claim in
      it I believe and have not read at a primary source, chiefly §1.1's four adaptive-non-perception
      literatures and §2's cryptic-species / dark-taxa / CPR / obscuration-series pointers. The marker
