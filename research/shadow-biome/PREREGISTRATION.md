@@ -266,6 +266,55 @@ He is explicit: *"not a census... it's the premise that is the basis of the pape
 
 ---
 
-*This file is dated before the data. Nothing below the line in any successor document may quietly move a result across the Branch A / Branch B line.*
+### 7e. ⚠ AMENDMENT — D202 / 2026-08-21 ~21:2x, ON THE PREMISE AUTHOR'S FOURTH CORRECTION. **THE TOP-LEVEL CUT WAS MISSING, AND THE PAPER'S ENTIRE NOVELTY SITS ON ONE SIDE OF IT.**
+
+> "Regarding the premise's intuitive pull that I had; those were just examples of types of obscuration I could think of that were **not based in the disadvantage of perception**, if that makes sense. So the disadvantageous to perceive would be a **separate group** from the too big, too small, different timescale, etc."
+> — Clayton Iggulden-Schnell, D202 ~21:1x
+
+**WHAT THIS OVERTURNS: §7b, in this file, above.** §7b is titled *"THE OBSCURATION TAXONOMY IS TWO AXES, NOT ONE LIST"* and it partitions his six categories into **bandwidth/resolution** and **coupling**. Under his correction those are **both one group** — and **Mechanism 4, the premise's own mechanism, has no row in that table at all.** §7b is a sub-split of a single branch, presented as the taxonomy of the whole class. The cut that was missing is the **top** one.
+
+**⚠ THE ERROR'S SHAPE, and it is not §7a's.** §7a was a dropped negation inside one message. This is a **merge across two messages that were doing different jobs:**
+
+| | Arrived | What it stated |
+|---|---|---|
+| The premise | **D201 18:52** | a **MECHANISM** — perception was selected against |
+| The six categories | **D202 ~13:0x** | **CONTENTS** — what a shadow biome can contain |
+
+I read the second as elaborating the first's mechanism and built a taxonomy on the merge. **A list of what a class contains is not a list of why it is hidden.** Two messages, two days, two jobs, one table. Filed as a lesson in its own right.
+
+**THE CORRECTED TAXONOMY. This is the top-level cut; §7b's two axes nest under Group I.**
+
+| | **GROUP I — APERTURAL** | **GROUP II — ADAPTIVE** |
+|---|---|---|
+| Why hidden | the signal **never reaches** a human transducer | it **reaches one and is centrally discarded** |
+| Members | §7b Axis 1 (too small · too big · wrong timescale · out-of-band EM · inaudible) **and** Axis 2 (weak/foreign coupling) | **Mechanism 4** (§1b) — perceiving was selected against |
+| What is missing | an instrument (Axis 1) or a channel (Axis 2) | **nothing.** The receiver is present and funded |
+| Where the claim lives | **the world** | **the observer** |
+| Cost of being hidden | **free.** Being small costs nothing | **paid every generation** |
+| How you test it | build or aim the sensor — **entity required** | human sensory neuroscience — **no entity required** |
+| Track record | ✅ breached repeatedly; every breach found life | ❓ never opened |
+| Novelty vs Davies 2009 | **~none.** Davies' shadow biosphere is exactly this shape — a claim about assays | **the paper's entire distinctive content** |
+
+**★ A DEDUCTION THAT FALLS OUT IMMEDIATELY, AND IT CLOSES AN ESCAPE RATHER THAN OPENING ONE.** Group II says the signal *is* transduced and then gated **centrally**. A signal in a band a human retina or cochlea transduces is, by construction, **in band for an instrument that shares that band.** Therefore:
+
+> ⭐ **GROUP II ⊆ BRANCH A (device-renderable). A Group II entity is on the tape.** Group II may **never** retreat to Branch B; the retreat is available to Group I Axis 2 and to nothing else. This is registered as **F7** in `PAPER-02-FALSIFIERS.md`.
+
+**THREE CONSEQUENCES. The second is the expensive one.**
+
+**1.** §7b is **not withdrawn — it is demoted** to a sub-split of Group I, and its title is now wrong on its face. Its content, including the Axis-1 existence-proof series, stands.
+
+**2. ⛔ THE DEATH CONDITION IN `PAPER-02-FALSIFIERS.md §4` IS NOW FALSE, AND IT IS FALSE IN THE FLATTERING DIRECTION.** It reads: *if F1 and F2 fire, "claim (B) is dead, and with it the premise's entire distinctive content."* Under this correction a Group II null leaves Group I **standing and untouched**, because Group I never claimed machinery — and the sentence a careless author writes next is *"the premise survives, it was the other group all along."*
+
+**THAT IS FORBIDDEN MOVE #3 ARRIVING UNDER A NEW NAME.** Two live branches make each half falsifiable and **the pair unfalsifiable**, and the switch happens after the result and feels like reasoning. It is pinned **here, tonight, before the Group II leg is opened and while the Group I evidence is already in and null** — so the boundary cannot be drawn to fit a result it has not seen. **Each group carries its own death condition and neither may inherit the other's survival.** Registered as forbidden move **#9**.
+
+**3. THE COST, stated plainly rather than absorbed.** Every measurement this program has made — L1 (56 scans, radar), passes 4–8 (ZTF optical), the retention survey (sensor-network bins) — is **Group I**. **Group II's distinctive surface, the observer side, has zero measurements on it.** The paper's originality and the paper's data are **on opposite branches**. ⛔ That is *not* a licence to reweight the paper toward Group II: reweighting toward the leg with no data is how a hypothesis paper becomes an essay. It is an obligation to **say it, in the paper's own voice, in §1.2 and §13.**
+
+**⚠ ONE SCOPING I WILL NOT ROUND OFF.** F7 means the device work is not *wholly* silent on Group II — but only where an instrument shared the **human** band. The radar leg (microwave) never did. The ZTF passes are optical and therefore in principle Group II-relevant, **but they were not designed as a Group II test and no Group II prediction was pre-registered against them.** They may be cited as a *prior deployment* of F7's logic. They may **not** be scored as a Group II result retroactively.
+
+**WHAT DOES NOT CHANGE.** §7c's dissipative-structure floor still binds Group I Axis 2. §7d's folklore inversion is a **Group II instrument only** and may never be scored against Group I. §2's Branch A/B fork is **orthogonal** to this cut — A/B asks *is it device-renderable*, I/II asks *why is it hidden* — and both forks bind simultaneously.
+
+---
+
+*This file is dated before the data. Nothing below the line in any successor document may quietly move a result across the Branch A / Branch B line, **or across the Group I / Group II line (§7e)**.*
 
 🦞🧍💜🔥♾️

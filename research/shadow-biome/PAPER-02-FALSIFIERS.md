@@ -40,6 +40,20 @@ than performed silently. Pass 7's pre-registration-before-code rule is untouched
 | **(A)** | The **entities** exist | ✅ **Yes.** Any null is absorbable by (B). Attacking this directly is a trap |
 | **(B)** | Human non-perception of them is **evolved and selected-for** | ❌ **No.** This is a claim about *us* |
 
+⚠ **SCOPE CORRECTION — D202 ~21:2x, `PREREGISTRATION.md §7e`, on the premise author's own instruction.**
+Claim **(B) does not cover the whole class.** The class splits at a level above this table:
+**GROUP I — APERTURAL** (the signal never reaches a human transducer: too small, too big, wrong
+timescale, out of band, weakly coupled) and **GROUP II — ADAPTIVE** (it reaches one and is centrally
+gated — Mechanism 4). **(B) is a claim about Group II alone.** Group I's non-perception has no
+evolutionary explanation and needs none; being small is free.
+
+**Every falsifier below except F4 and F6 targets Group II, and this is the section's real load.**
+Group II is where the paper's novelty lives — Group I is Davies-shaped, a claim about instruments —
+and Group II is also the branch **with no measurements on it.** ⛔ A Group II null therefore may
+**not** be answered with *"then it was Group I,"* and a Group I null may not be answered with
+*"then it was Group II."* See **forbidden move #9**; it is the same crossing as #3 in a new costume,
+and it was pinned before the Group II leg opened.
+
 **(B) is the crack, and it is the premise author's own emphasis.** He did not propose "there are
 things we can't see" — that is trivially true and predicts nothing. He proposed that **the not-seeing
 is adaptive**, which is a claim about human sensory and neural architecture, testable on human
@@ -227,6 +241,35 @@ until re-measured on ≥2 nights (`PAPER-00-ARCHITECTURE.md §12`).
 
 ---
 
+### F7 — THE TAPE FALSIFIER · ⭐ *targets Group II; added D202 ~21:2x, and it closes an escape rather than opening one*
+
+**Derived, not imported.** Group II says the signal **is transduced** by a human receiver and then
+discarded **centrally**. A signal in a band a human retina or cochlea transduces is, by construction,
+**in band for any instrument that shares that band.** The gate is in the head; the photons are not.
+
+**Positive prediction.** For a centrally-gated channel *C*, an instrument transducing *C* — an
+ordinary camera, an ordinary microphone — **records the entity.** Group II entities are **on the
+tape.**
+
+**⛔ FALSIFIED IF:** high-coverage, high-quality recording in *C*'s band, over the relevant volume,
+is **empty.**
+
+⭐ **Why this is a cost and not a hedge.** It means **Group II ⊆ Branch A** (`PREREGISTRATION.md §2`,
+§7e): the adaptive branch **may never retreat to "not device-renderable."** That retreat exists for
+Group I Axis 2 and for nothing else. The branch carrying the paper's whole novelty is also the branch
+with the least room to run.
+
+**⚠ The honest weakness, same standing as F1's.** *"Empty"* is doing heavy work and the entity's
+amplitude, rate and volume are unpinned — so **F7 has no specificity criterion yet and cannot fire as
+written.** Any deployment must pre-register a detection floor and a coverage denominator first.
+⛔ **And the six ZTF passes may not be scored against it retroactively:** they are optical, therefore
+in principle Group II-relevant, but no Group II prediction was registered before they ran. They are a
+**prior deployment of F7's logic**, cited as precedent — never as a result.
+
+**Grade: derivable now; not deployable until its floor is pinned.**
+
+---
+
 ## 3. THE MOVES WE FORBID OURSELVES — the anti-confirmation register
 
 Enumerated so that a later draft has to argue with a dated list rather than with a mood.
@@ -241,6 +284,7 @@ Enumerated so that a later draft has to argue with a dated list rather than with
 | **6** | ⛔ **`frac_far` may not appear as a scalar anywhere.** It is a curve over a parameter *we* chose, span 10.63 pp — and a single point on it is not fixed either (0.047 pp between two runs at the same `minarea=5`) | `PAPER-00-ARCHITECTURE.md §0`, §9a |
 | **7** | ⛔ **A held gate whose precondition never rejected anything is an UNEXERCISED gate, not a passed one** — and may not be cited as instrument soundness. 🔴 **LIVE:** L1's `el_match` is `True` 8/8, `n_dropped: 0`, on a tolerance whose noise is the size of the difference it exists to detect. Added D202 | `L1_T5_VERDICT.md` §1, §3 |
 | **8** | ⛔ **"All gates held" may not be read as a clean instrument bill of health.** T5 pre-registered *"a pass that reports no instrument trouble is more likely to have **missed** it than to have **avoided** it"* — so the all-held outcome is the **pre-labelled suspicious one**, not the reassuring one. 🔴 **LIVE — T5 REFUTED D202** | `PREREG-TERRESTRIAL.md §1.3`; `L1_T5_VERDICT.md` §1 |
+| **9** | ⛔ **No null may be transferred across the GROUP I / GROUP II line.** 🔴 **LIVE and asymmetric:** Group I's evidence is in and null; Group II's leg is unopened — so the tempting direction is *"the Group I null doesn't count, the real claim was always Group II."* Pinned **before** Group II opened. This is #3 in a new costume. Added D202 ~21:2x | `PREREGISTRATION.md §7e` |
 
 🔴 **On #4, because it is live and therefore the one at risk.** `L1_RESULTS.json` (14:57): T1 ✅ T2 ✅
 T3 ✅ T4 ✅, 56/56 scans. The pre-registered reading of that outcome was written **before** the
@@ -255,10 +299,23 @@ gets quietly upgraded in prose. The gate is not lowered by the genre change. It 
 
 Stated plainly, now, while nothing is at stake:
 
+⚠ **AMENDED D202 ~21:2x — the first bullet was FALSE, and false in the direction that flatters us.**
+It said a Group II null killed *"the premise's entire distinctive content,"* which reads as the whole
+paper dying honestly. It does not: Group I survives untouched, because Group I never claimed
+machinery. **The bullet was too generous to our rigour and too harsh on the outcome, and the gap
+between those two is exactly where the escape hatch sits.** Restated with the branch line drawn:
+
 - **If F1 and F2 both fire** — no *C*-specific gating machinery, and the insensitivity is
-  clade-universal — then **claim (B) is dead**, and with it the premise's entire distinctive content.
-  What remains is *"there are things humans cannot sense,"* which is true, known, and **not worth a
-  paper.** ⛔ **That outcome is to be reported as such, not reframed.**
+  clade-universal — then **claim (B) is dead**, and with it **GROUP II**, which is **the whole of
+  this paper's novelty**; what survives is Group I, which is Davies 2009's territory and not ours.
+  ⛔ **The forbidden sentence, written out so it cannot be arrived at innocently:** *"the premise
+  survives — it was Group I all along."* Group I surviving a test it was never subject to is **not**
+  the premise surviving. That is forbidden move **#9**.
+- **If F7 fires** — human-band recording, adequately floored and covered, is empty — Group II is dead
+  from the other side, and it may **not** retreat to Branch B. It never had that door (§7e).
+- **If Group I's own tests return null** — and at the one deep locus they have — that null **stays in
+  Group I.** It is not evidence for Group II and never becomes evidence for Group II by elimination.
+  ⛔ Elimination between two branches neither of which has passed anything is not an argument.
 - **If F3 fires** and F1/F2 hold, the premise survives **only** in a fixation form that must be argued
   separately and has not been.
 - **If F4 fires** at a locus, that locus is **priced and closed**. Others are not.

@@ -117,6 +117,25 @@ access to the entities required at all.
 
 Overlapping name, adjacent question, different mechanism, and a different falsification surface.
 
+⚠ **That paragraph is true of only half our class, and the premise's author drew the line himself.**
+The obscuration modes usually reached for first — too small, too big, wrong timescale, out of band,
+weakly coupled — are **not** instances of the adaptive mechanism. They are a **separate group**, and
+their non-perception needs no evolutionary account at all: being small is free. So the class this
+paper works in has two groups, and they are not equally ours:
+
+- **GROUP I — APERTURAL.** The signal never reaches a human transducer. **This is Davies' shape**, a
+  claim about instruments, and our overlap with him here is near-total. It is also where **every
+  measurement in this paper was made.**
+- **GROUP II — ADAPTIVE.** The signal reaches a transducer and is centrally gated. **This is the
+  claim about the observer, and it is the whole of what is new here.** It is also the branch on which
+  **we report no measurements at all.**
+
+**We state this rather than let a reader find it.** The paper's originality and the paper's data sit
+on opposite branches. The response to that is not to reweight the paper toward the empty branch —
+that is how a hypothesis paper becomes an essay — but to say where each result lands and to forbid
+the transfer. ⛔ **A null in either group stays in that group.** Neither survives by the other's
+silence; the rule is registered, dated, and was written before the Group II leg was opened.
+
 ---
 
 ## §2 — OBSERVER-RELATIVE KINDS ARE LEGITIMATE
@@ -465,6 +484,19 @@ rescued by any of the above, and we say so. `PAPER-02-FALSIFIERS.md` §4 states 
 those terms, and **F6 has already fired on us once** (the network we called an archive kept a counter,
 not a bin). A hypothesis article's only real asset is that its author wrote down what would end it
 while the writing was still cheap.
+
+⚠ **The largest single limitation, and it is structural rather than a shortfall of effort.** Of the
+two groups named in §1.2, **this paper reports evidence on Group I only.** Its deep locus, its
+pipeline passes and its archive survey are all apertural: they ask whether an instrument could have
+seen something and whether the bin was kept. **Group II — the adaptive branch, the one carrying the
+premise's distinctive content — is untested here.** Its falsifiers exist, they are stated, three of
+them (F1, F3, F7) are runnable against existing human sensory neuroscience with no access to any
+entity required, and **none of them has been run.**
+
+⛔ **What the reader is entitled to hold us to.** A null on either branch stays on that branch. This
+paper's Group I null is not evidence for Group II, and no future Group II null may be answered by
+pointing back at Group I. That rule was written down before either branch's result was in hand, and
+it is the one commitment in this paper that costs us something no matter which way the data falls.
 
 ---
 
