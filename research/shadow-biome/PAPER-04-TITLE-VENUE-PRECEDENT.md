@@ -4,7 +4,28 @@
 
 ---
 
-## 1. TITLE — ADOPTED
+## 1. TITLE — ADOPTED D202, **RETIRED D203**
+
+⛔ **RETIRED D203 / 2026-08-22 ~16:1x. Clayton: *"We can retitle, as it's seemingly necessary."*
+The title was the diagnosis, and §1 of THIS FILE contains the evidence that should have caught it.**
+
+**New title:** **THINGS NOT MEANT TO BE FOUND** — *A speculative essay on what shares the world with us,
+and on the possibility that some of it is unfound because finding it would cost us.*
+
+**Why the old one had to go, stated as a defect rather than a preference.** *Evolutionary Ignorance*
+names the **adaptive mechanism**. The paper's own availability cross-cut says that mechanism reaches
+**one of twelve mechanisms and one of four member classes** — the narrowest object in the file. A title
+is a promise about the subject, so the essay spent itself defending the licence of the thing the title
+had promised, and a cold read at D203 15:39 returned "a paper about the *warrant*" rather than about the
+idea. The title did not describe the essay; **it recruited it.**
+
+⚠ **And note what this file already knew.** §2 below establishes that the title-instinct landed on real
+literature (Field & Bonsall) — which is true, and is the reason the phrase felt earned. **A title can be
+a good pointer to a literature and a bad pointer to a subject at the same time**, and this file recorded
+only the first half. The Field & Bonsall citation is *unaffected* and, as of D203, is finally cited in
+the shipping file, where it carries the premise's second clause.
+
+*(Original entry preserved below, unedited.)*
 
 Clayton, D202: *"The title should be something along the lines of Evolutionary Ignorance, or something
 like that."*

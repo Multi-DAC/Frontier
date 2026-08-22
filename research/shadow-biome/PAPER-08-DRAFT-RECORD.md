@@ -152,3 +152,69 @@ shelf.
 ---
 
 *🦞🧍💜🔥♾️*
+
+---
+
+## FRAMING CORRECTION 6 — D203 / 2026-08-22 ~16:1x — **THE TITLE WAS RECRUITING THE ESSAY**
+
+**Clayton:** *"Let's reframe the paper to what it's supposed to be about. We can retitle, as it's
+seemingly necessary."* Preceded by the statement of what it is supposed to be about: *"there might be
+things around us, interacting with us or not, that we don't perceive […] every time we adjust our
+aperture, we find something new, and what if there is more to be found, and furthermore, what if there
+are some things not meant to be found because finding them is detrimental?"*
+
+**The defect, named precisely.** The title *Evolutionary Ignorance* names the adaptive mechanism. The
+paper's own availability cross-cut says that mechanism reaches one of twelve mechanisms and one of four
+member classes — the narrowest object in the file. A title is a promise about the subject, so every
+section organised itself around defending that mechanism's licence. The result, on a cold read at 15:39:
+**a paper about the warrant for a proposition rather than a paper about the proposition.**
+
+This is not a writing problem that produced a title problem. It is a title problem that produced a
+writing problem, and it ran for two days.
+
+**What changed structurally.** Ten sections, previously eight:
+
+| New | Was | What moved |
+|---|---|---|
+| §1 The room | §1 | Opens on the **instrument specification** (300 nm of spectrum, tenth of a millimetre, 100 ms) before any claim. The proposition is now *arrived at*, not asserted |
+| §2 Every time we have looked | §2.1 + §2.2 | The induction, **plus the Davies 2009 full citation, printed in the shipping file for the first time** |
+| §3 What it would be like | §3.1 | The six no-signal cases, reframed from *taxonomy* to **texture**. The "what it would be like" clauses were always the vivid part and were buried under two sections of warrant |
+| §4 The turn | §1's strong reading + §3.2 | **The centre.** Hole-vs-machinery, the *meant* paragraph, **Field & Bonsall**, the two gates, the confound |
+| §5 Not perception failures | §3.4 | Unchanged in substance |
+| §6 From the far side | §4.5 | **Promoted from a subsection to a section.** It was the vertigo and it was at position 4.5 |
+| §7 What evidence would look like | §4 | Unchanged in substance |
+| §8 What keeps this from being a mood | §5 + collected fences | **The structural change.** Program-level discipline collected instead of interrupting every paragraph |
+| §9 What would end it | §6 | Unchanged in substance |
+| §10 What we actually did | §7 | Unchanged in substance |
+
+**THE GAP THE REFRAME EXPOSED, AND IT IS THE FINDING.** **Field & Bonsall, "Ignorance can be
+evolutionarily beneficial"** (arXiv:1705.00987) — a formal mathematical-biology treatment of *the
+reproductive value of information can be negative* — has been PRIMARY-VERIFIED in
+`PAPER-04-TITLE-VENUE-PRECEDENT.md §2` since D202 and appeared **nowhere in any shipping draft.**
+Clayton's second clause *is* their theorem. It went uncited for a day because the draft was organised
+around defending a licence rather than around stating an idea, and **a defence has no slot for a
+supporting formalism — only for an objection.** The organising frame determined which of our own
+verified citations were reachable. That is the same shape as the D203 §3.4 header defect and the D200
+apparatus-went-where-apparatus-was-cheap finding: *the frame selects the evidence before anyone chooses.*
+
+**FENCE AUDIT — RUN, NOT ASSERTED.** ⛔ count 14 → 12. Both reductions are **merges, verified line by
+line against `git show HEAD:...`**, not deletions:
+- old §2.3 (the *probably* smuggler) + old §2.4's "may not be lent to non-biological members" → one
+  two-part ⛔ block in §2 carrying both clauses verbatim in substance.
+- old §2.4's **header** fence (the substrate correction) → §1 prose (the correction) + §8 (the fence).
+
+Every other fence maps 1:1. Citation survival checked programmatically across 21 tokens: **zero lost,
+two gained** (Davies `10.1089/ast.2008.0251`, Field & Bonsall `arXiv:1705.00987`). Word count 8,541 →
+8,291 — the reframe is not a compression, it is a re-ordering that paid for two new citations out of
+merged scaffolding.
+
+**Carriers updated in the same commit** (the divergence this tree keeps producing): `PAPER-01-GENRE.md`
+§5 marked SUPERSEDED-IN-FORM; `PAPER-04-TITLE-VENUE-PRECEDENT.md` §1 marked RETIRED with the original
+entry preserved unedited. ⚠ `PAPER-04` §2's own record is the object lesson: it recorded that the
+title-instinct landed on real literature, which was **true**, and did not record that a title can point
+well at a literature and badly at a subject simultaneously. It captured the half that flattered the
+choice.
+
+**Filename note:** the shipping file remains `PAPER-07-SHORT.md`. Six files point at it; renaming buys a
+cosmetic filename and costs six dangling pointers. "Short" is now an artifact of the D203 compression
+pass and the file's own header says so.

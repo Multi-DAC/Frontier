@@ -177,6 +177,18 @@ T3 and T4 both held (`L1_RESULTS.json`, 14:57). The forbidden move is now live, 
 
 ## 5. STATUS OF THIS DECISION
 
-Genre: **accepted and in force.** `PAPER-00-ARCHITECTURE.md` §0's grade-before-prose rule is unchanged
+⚠ **SUPERSEDED IN FORM D203 / 2026-08-22 ~16:1x — BY THE SAME AUTHOR, IN THE SAME DIRECTION.**
+Clayton, D203: *"A speculative essay on the 'what if' […] Let's reframe the paper to what it's supposed
+to be about."* The genre label on the shipping file is now **speculative essay**, not *hypothesis
+article*. This is not a reversal of the D202 decision — D202 said *don't try to prove it*, D203 says
+*and the form is an essay, not an article*. The two are the same instruction at different resolutions.
+
+**What the change costs and does not cost:** the Davies 2009 ancestor citation (§1) is unaffected and is
+now printed in the shipping file for the first time. §4's falsifier obligation **survives unchanged and
+is now the essay's §9** — it survives for a different reason than it was written for: not because a
+journal requires it (there is no journal) but because without it the idea is unkillable, and an
+unkillable idea is not generous, it is useless. That sentence is in the essay.
+
+Genre (D202 substance): **accepted and in force.** `PAPER-00-ARCHITECTURE.md` §0's grade-before-prose rule is unchanged
 and still governs — a hypothesis paper's claims carry grades exactly like a demonstration's; what changed
 is how strong the grades need to be, not whether they are written.
