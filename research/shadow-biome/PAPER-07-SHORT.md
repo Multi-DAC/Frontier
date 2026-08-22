@@ -125,18 +125,38 @@ prereg did not fail. It never gated whether the object was **the kind of thing t
 about**, which is upstream of every safeguard it carried. That failure is recorded rather than
 repaired, and the successor owes an admissibility gate in front of the scoring gate.
 
-### 2.4 ⚠ What is unverified in this section
+### 2.4 The owed reading, discharged — and what it cost
 
-The novella's plot and the enforcement reading above are held **at second hand by the drafter.** The
-bibliographic citation is confirmed (`PAPER-04`); the text has not been read by me. The premise's
-author has read it, and the D203 quotation above is his reading, given directly. That is a real
-source and it is also an interested one — he is the premise's author.
+Through the long draft and the compression this section carried a caveat saying the novella was held
+**at second hand by the drafter**, that the text had not been read by me, and that "the check is one
+reading and it is owed before publication." The caveat was honest and it was also inert: it sat
+through a full draft and a full restructure and never once made the reading happen. **It took the
+premise's author asking.** A stated caveat is not a gauge; it is a promise, and promises do not fire.
 
-This matters more than an ordinary open citation, and the reason is worth stating: in the long draft
-this reading was decoration inside kind (ix). **Here it is load-bearing.** A claim that moves from
-decoration to structure needs re-verifying at its new weight, not at the weight it was checked at.
-The novella is in print in *The Very Best of Gardner Dozois*; the check is one reading and it is owed
-before publication.
+The novella has now been read in full (D203, 23,973 words, primary text). Three results, and they are
+not all comfortable.
+
+**Confirmed, and stronger than stated.** The witness class is named in the text by the entities
+themselves — *"You, and the others like you who can see. One of you comes into existence every once in
+a while."* The premise author's D203 reading is in the novella in substance. Prediction (c) is
+confirmed past its own wording: the child is not merely disbelieved, he is routed to a school
+psychiatrist and **medicated** — a prescription slip the psychiatrist signs *with a flourish, in green
+ink* — and the sentence after his silence is the last line of the story.
+
+**Refuted, and the refutation is load-bearing.** See §4, kind (ix). The reading the long draft was
+built on — that the not-seeing is *taught* and enforcement converts silence into blindness — **is not
+in the novella.** It was reconstructed, and it was reconstructed in the direction that made this
+paper's argument work. That correction is applied at (ix) rather than hidden here.
+
+**Two mechanisms found that no kind in §4 covers** — the **lapsed covenant** and **two-sided stigma**.
+Both are recorded in §4.4 as debts against the next revision rather than smuggled into the ranking
+now, because a kind added after the ranking was fixed is a kind that was never ranked.
+
+⚠ **Provenance, stated because it bears on citability.** All three Internet Archive scans of the 1973
+Nelson anthology are lending-restricted and could not be borrowed; the text read was a scraped web
+copy of unverified fidelity, and short quotations above should be re-checked against a licensed
+edition (Kindle ASIN B0DGFFVQGD, or *The Very Best of Gardner Dozois*) before they are printed. The
+structural findings do not turn on transcription, but the quotations do.
 
 ---
 
@@ -233,17 +253,35 @@ had.
 awareness. Not exotic — it is the ordinary architecture of attention, and it is why you cannot feel
 your own clothing. *Like:* not an absence but a **smoothness**. The seam is what's missing.
 
-**(ix) Socially enforced blindness — the Dozois case.** The mechanism §2 is built on, stated here as a
-mechanism rather than as an epistemology. The not-seeing is *taught*, and the teaching is enforced: a
-child who reports is corrected, disbelieved, and silenced, and the silence becomes blindness rather
-than a discretion about speech.
+**(ix) Socially enforced *silence* — the Dozois case, corrected against the primary text.** This kind
+previously read: *"the not-seeing is taught, and the teaching is enforced… and the silence becomes
+blindness rather than a discretion about speech."* **That is not what the novella shows, and the error
+was ours, not the novella's.**
 
-**The technical addition is real and it is not a mood.** Social enforcement supplies a transmission
-route that natural selection does not need to supply. A suppression that would take many generations
-to fix genetically installs in one, culturally, and re-installs every generation after. **That
-decouples the blindness from its cause — and a decoupled trait is one you can catch,** because it
-persists in populations where the original payoff no longer holds. It is the only prediction in this
-paper that came out of a work of fiction.
+What the text actually holds are **two mechanisms that it pointedly does not weld together**. The
+other children *could* once see the Other People and now cannot — and, decisively, **do not remember
+that they ever could**; the story states the loss and never states a cause. Separately, the one child
+who still sees is corrected, shunned, sent to a psychiatrist, and medicated. **He never stops seeing.**
+He perceives the Other People through every stage of the enforcement and on the last page of the
+story. He is *silenced, not blinded.*
+
+**The correction strengthens §2 rather than weakening it, which is why it is stated rather than
+absorbed.** §2.2 offers (b) — perception fails at perturbed gates — and (c) — reporting is costly — as
+**independent** predictions. Under the old welded reading they were one variable wearing two names,
+and the prereg would have been measuring the same quantity twice and calling the agreement
+corroboration. The novella, read properly, keeps the channels apart. **The perception channel and the
+reporting channel must be measured on different populations**, and (ix) is now a claim about the
+second channel only.
+
+**What survives of the technical addition.** Social enforcement still supplies a transmission route
+that natural selection does not have to supply, and a culturally installed suppression still decouples
+from its original payoff and so is still catchable in populations where that payoff has lapsed. But
+that is now a claim about **the suppression of reports**, which is directly observable in human
+records, rather than about the suppression of percepts, which is not. The weaker claim is the one that
+can be measured, and the novella never made the stronger one.
+
+⚠ It remains the only prediction in this paper sourced from a work of fiction — and it is now also the
+only one this paper has caught itself getting wrong by paraphrasing a source it had not opened.
 
 ⛔ **Group II's price, registered before the branch was opened.** A gated entity is *on the tape*. If a
 device can render what a human cannot, the device archive is where it will be — so **Group II may
@@ -259,6 +297,29 @@ does the work, the only ones predicting machinery rather than a hole.
 **The uncomfortable summary, stated because a reader would otherwise have to find it:** the six kinds
 we can most easily test are the six we did not invent, and the three we invented are the three where
 this paper reports no measurement at all.
+
+### 4.4 Two mechanisms the primary text supplied that this list does not cover — registered as debts, not added
+
+The D203 reading of *Chains of the Sea* (§2.4) turned up two mechanisms with no home in (i)–(ix).
+They are recorded here and **deliberately not promoted into the ranked list**, because a kind added
+after the ranking was fixed is a kind that was never ranked, and quietly widening a taxonomy to
+absorb whatever the newest source happened to contain is how a taxonomy stops being a claim.
+
+**(A) The lapsed covenant.** In the novella the biome is not hidden and was never hidden. It is **out
+of contract**: *"There were many agreements, many Covenants that were made long ago. With Men,
+although they do not remember."* What was forgotten is the **agreement**, not the entities. This is a
+structurally different object from every kind above — all nine explain a *failure to perceive*, and
+this one posits successful historical perception plus a lapsed relation. Its prediction is also
+different in kind: not a thin perceptual record but a **thick relational one**, mis-filed. That is a
+testable and uncomfortable claim about where to look, and it belongs to a revision that can price it.
+
+**(B) Two-sided stigma on the contact channel.** §2.2(c) charges the cost of contact to the human
+reporter. The novella charges it to **both** parties: the entity that talks to the boy says of its own
+interest, *"Our hobby is not approved of. It has made us an outcast, a laughingstock. We are
+shunned."* If contact is deviant on both sides, the rarity of the record is over-determined and the
+selection pressure is not a human parochialism — which weakens any inference that runs from *the
+record is thin* to *humans suppress it*. **This is the more damaging of the two and it is registered
+as such:** it supplies an alternative explanation for our own central prediction's shape.
 
 ---
 

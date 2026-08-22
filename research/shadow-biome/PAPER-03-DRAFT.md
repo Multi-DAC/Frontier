@@ -631,12 +631,21 @@ at, and it is the mechanism we did not have until he did.
 In Gardner Dozois's 1973 novella *Chains of the Sea*, alien ships land across the Earth and simply do
 not engage humanity — they have business with something else. A boy, Tommy Nolan, perceives the Other
 People: an older nonhuman ecology that has always shared the world and that adults no longer see.
-What makes it a mechanism rather than a mood is what happens to Tommy. **The not-seeing is not merely
-developmental; it is taught, and it is enforced.** A child who reports the Other People is corrected,
-disbelieved, and eventually punished into silence — and the silence becomes real blindness rather than
-a discretion about speech. [◐ VERIFY AGAINST TEXT: the plot summary above is from recall and the
-enforcement reading in particular should be checked against the novella before publication; the
-bibliographic citation is confirmed and sits in `PAPER-04`.]
+What makes it a mechanism rather than a mood is what happens to Tommy. A child who reports the Other
+People is corrected, disbelieved, sent to a school psychiatrist, and **medicated** into silence.
+
+[✅ VERIFIED AGAINST TEXT — D203 / 2026-08-22, primary read, 23,973 words. **The enforcement reading
+above is confirmed and is stronger than this draft claimed** (it is medicalization, not merely
+disbelief). **But the sentence this bracket replaced was REFUTED and is deleted.** It read: *"The
+not-seeing is not merely developmental; it is taught, and it is enforced… and the silence becomes real
+blindness rather than a discretion about speech."* The novella does not show that. Tommy **never stops
+seeing** — he perceives the Other People through every stage of the enforcement and on the final page.
+The other children's loss of the sight is stated with **no cause given**, and they do not remember
+having had it. Perception-loss and reporting-suppression are two uncoupled mechanisms in the text; the
+welding was the drafter's, working from recall, and it welded in the direction that made the argument
+work. See `PAPER-07-SHORT.md` §2.4 and §4.4. **Note that `PREREG-CORPUS-F2.md` C4 was written narrowly
+enough to be unaffected** — it only ever predicted a measurable cost to *reporters*, which is exactly
+what the text supports. The prereg was more careful than the prose it came from.]
 
 **The reason this matters technically, and it is a genuine addition:** social enforcement supplies a
 transmission mechanism that ordinary natural selection does not need to supply. A perceptual
