@@ -1,5 +1,12 @@
 # EVOLUTIONARY IGNORANCE — paper architecture
 
+⚠ **D203 ~12:5x — THE PAPER IS `PAPER-07-SHORT.md` (8 sections, ~4,100 words). THIS FILE'S 15-ROW
+TABLE DESCRIBES THE SUPPLEMENT.** Clayton: *"Let's compress it! I want the idea at the center."* The
+rows below are not withdrawn — they are the provenance of every number the short paper cites, and
+that is now their job. **What this file does NOT yet carry: the short paper's §2 (the witness
+asymmetry) has no row here**, because it was written from his D203 reading of *Chains of the Sea*
+rather than from any pass. Give it one before citing this table as the paper's shape.
+
 *(**TITLED D202 ~18:4x PT** by the premise author: *"The title should be something along the lines of
 Evolutionary Ignorance."* Adopted verbatim; the phrase turned out to be an existing term of art in
 mathematical biology for nearly our mechanism — Field & Bonsall, arXiv:1705.00987, primary-verified.

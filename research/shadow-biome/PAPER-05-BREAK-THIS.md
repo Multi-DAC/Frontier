@@ -3,8 +3,18 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-*Status, re-measured **D203 / 2026-08-22 ~11:4x** by `wc -w` and `grep -o "^## §"` on the draft
-itself: the paper is `PAPER-03-DRAFT.md`, **16,845 words**, **15 headings — §1 §2 §3 §4 §5 §6 §7 §8
+⚠ **THE TARGET MOVED D203 ~12:5x AND THIS PACKET HAS NOT BEEN RE-AIMED.** On the premise author's
+instruction — *"I want the idea at the center"* — **the paper is now `PAPER-07-SHORT.md`, 8 sections,
+~4,100 words**, and `PAPER-03-DRAFT.md` is demoted to supplement. Every attack below was written
+against the long draft. **Most of them still land** (the fences, the fork, the pass results are
+carried over verbatim or near-verbatim), **but the roster line beneath is stale by construction and a
+reader must not take it as the paper's shape.** The one genuinely new attack surface is §2, the
+witness asymmetry, and it is the most attackable thing in either file: it argues that the expected
+evidence is a distribution of exceptions, which is one inch from the move F5 exists to forbid.
+Re-aim this packet before it leaves the house.
+
+*Status, re-measured **D203 / 2026-08-22 ~11:4x** by `wc -w` and `grep -o "^## §"` on the SUPPLEMENT
+(then the paper): `PAPER-03-DRAFT.md`, **16,845 words**, **15 headings — §1 §2 §3 §4 §5 §6 §7 §8
 §9 §10 §11 §12 §13 §14 §15. There are no gaps. The draft is complete.***
 
 *⭐ **AND THE THREE SECTIONS ADDED SINCE THIS FILE WAS LAST MEASURED ARE THE THREE MOST WORTH
