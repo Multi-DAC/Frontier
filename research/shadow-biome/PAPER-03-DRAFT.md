@@ -1160,6 +1160,64 @@ conclusion, and that is the correct place for it to end.
 
 ---
 
+## §12 — ARCHIVE REACHABILITY, AND A NUMBER WE TOOK BACK
+
+The previous sections asked whether an instrument could have seen something and whether the bin was
+kept. This one asks a smaller question that turns out to sit underneath both: **when the public record
+points at an exposure, is the exposure still there?**
+
+It began as a favourable observation. Of the 55 exposures referenced by the alerts of 2018-06-01,
+**15 are not retrievable from IRSA**, the archive of record — 27.3% of exposures, stranding 1,037 of
+17,991 alerts, or **5.76%**. We wrote that down in June with a fence around it: *n = 55, one night,
+may not be quoted as an archive property until re-measured on at least two.* The fence was cheap to
+write because there was no reason to expect it to fire.
+
+**It fired.** `PREREG-REACHABILITY.md` pinned the second night — 2018-06-02, deliberately adjacent so
+that archive *epoch* was held fixed and only the night varied — and pre-committed three predictions
+before the tarball was opened. R1: the miss reproduces at all. R2: the rate is within a factor of two
+of 27.3%. R3: alert stranding stays below exposure loss.
+
+**Night 2 returns zero. Zero of 32 exposures missing, zero of 19,446 alerts stranded.** R1 and R2 are
+refuted; R3 compares two zeros and is uninterpretable, recorded as such rather than counted. Two of
+two interpretable predictions failed, which makes this the only block in the program where nothing
+held — and it is the block whose pre-registration said in writing that its direction was unknown.
+
+⛔ **So the number is withdrawn as an archive property.** 5.76% is a fact about 2018-06-01. It is not
+a rate, it is not a decay constant, and it may not be quoted as either.
+
+**The obvious rescue was tested, and it failed too.** Within night 1, missing exposures are markedly
+thinner than surviving ones — 47 alerts at the median against 348, 12 referenced images against 38 —
+which invites the tidy story that archives lose marginal field-nights. Night 2's thinnest exposure
+carries **11 alerts and one referenced image, and it is present**; thirteen of night 1's fifteen
+missing exposures are richer than that. The correlation is real inside one night and does not
+transfer. We report it because an untested rescue that sounds right is worse than no rescue: it would
+have let the withdrawn number survive under a mechanism nobody measured.
+
+**What survives is a different and better-shaped claim.** Night 1's losses are not scattered. They
+fall in runs — five consecutive exposures missing with intact neighbours on both sides, then three,
+then two — and, decisively, **field 000577 is present at one point in the night and missing at
+another.** The same patch of sky, the same night, two outcomes. Whatever removed these products is
+keyed to **when an exposure was processed**, not to where it pointed.
+
+The honest reading is dull, and dullness is the correct register: on one night there were processing
+intervals whose products never reached the archive, while the alert stream went on referencing them.
+The next night has no such interval. **Reachability is episodic, not a rate.**
+
+⛔ **What this is not.** A stranded alert is one whose difference image is unreachable. No missing
+file was opened here, because a missing file cannot be opened — which is simultaneously the finding
+and its ceiling. Nothing in this section is evidence that content was removed, that the removed
+content differed from the retained content, or that anyone chose any of it. Archives lose things.
+
+⚠ **Both nights are 2018 and adjacent by construction, so nothing here bears on whether older
+holdings decay.** That leg was costed and not run.
+
+The reason this section stays in a paper about a shadow biome is now methodological rather than
+evidential, and it is the only lesson we would ask a reader to carry out of it: **a program that
+plans to re-derive results from a public archive must measure reachability per epoch, because one
+night said 27% and the next said zero.**
+
+---
+
 ## §13 — WHAT THIS DOES AND DOES NOT BEAR ON
 
 This section is load-bearing and is placed after the evidence deliberately, so that it constrains the
@@ -1226,6 +1284,159 @@ it is the one commitment in this paper that costs us something no matter which w
 
 ---
 
+## §14 — BRANCH B HAS A FLOOR, AND THE FLOOR IS GRAVITY
+
+Branch B is the version of the premise that puts the biome outside the electromagnetic channel
+entirely — the reading that sounds unfalsifiable and is usually deployed as a refuge. This section
+exists to close the refuge, and then to measure honestly how far short of closing it we fall.
+
+**The argument that removes the refuge is short.** Life is dissipative. Anything alive maintains
+itself against equilibrium, and maintaining requires exchanging something with something. "Lacking
+interaction with matter" is therefore not a coherent property of a *biome*; it splits into two
+readings, and both are reachable in principle. **B1 — weak coupling:** the interaction exists and is
+small, which is a sensitivity problem, not a category problem. **B2 — own sector:** the constituents
+carry no charge under our forces at all. **And B2 still gravitates**, because stress-energy is not
+optional and gravity does not ask what sector a thing belongs to. So Branch B is a hard measurement,
+badly funded, rather than an unfalsifiable category. That is the whole content of the argument and we
+think it is correct.
+
+**What it is worth is another matter, and the arithmetic is unkind.**
+
+A superconducting gravimeter is the most sensitive static gravity instrument that exists. Set a
+350-gram mass one metre from one and its Newtonian attraction is
+
+> *GM/r²* = 2.34 × 10⁻¹¹ m s⁻² = **2.34 nGal** = 0.023 nm s⁻².
+
+Our architecture recorded that as **2.34× the instrument's floor**, and the sentence is true. It is
+also the wrong comparison, and we said so at the time without knowing by how much. **An instrument's
+static resolution is not the floor a measurement stands on. The floor is what is left after the Earth
+is subtracted, and the Earth is enormous.**
+
+Computed from first principles rather than recalled: the degree-2 tidal acceleration at the sub-body
+point is 2*GMR*/*d*³, giving **110 nm s⁻²** for the Moon and **50 nm s⁻²** for the Sun; multiplied by
+the elastic gravimetric factor δ ≈ 1.16 the solid-Earth tide reaches **≈ 1,860 nm s⁻²**, which is
+**80,000 times our signal**. That term is modelled and removed to high accuracy, so it is not itself
+the floor — it is the scale of what has to be removed before a floor exists at all.
+
+What remains after removal is measured, at real stations, and we take it from the literature rather
+than estimating it. At Apache Point, where a superconducting gravimeter has been characterised against
+GPS and hydrological modelling in support of lunar laser ranging, Crossley, Murphy & Liang report a
+narrowband tidal-band residual noise of **0.017–0.037 μGal**, a mean error of fit after tidal and
+pressure correction of **1.5–2.0 μGal**, and — after a local hydrology model removes more than 90% of
+the seasonal variance — residual episodes still departing from that model by **up to 4 μGal**. Their
+nominal barometric admittance is −3.0 nm s⁻² hPa⁻¹, fitted at −2.63. Antokoletz *et al.*, across five
+European stations, put non-tidal ocean loading at an RMS of **2 nm s⁻²** at the most coastal site and
+the inverted-barometer effect at **1.4 nm s⁻²** at the most inland one.
+
+Against those numbers our 2.34 nGal signal sits:
+
+| floor | value | signal is below it by |
+|---|---|---|
+| best narrowband tidal-band residual | 17–37 nGal | **7×–16×** |
+| inverted-barometer effect, inland station | 140 nGal | 60× |
+| non-tidal ocean loading, coastal station | 200 nGal | 86× |
+| mean error of fit, broadband | 1,500–2,000 nGal | 640×–860× |
+| departure from the hydrological model | up to 4,000 nGal | 1,700× |
+
+**So the fence we wrote around this number — *sensitivity, not detection* — holds, and it now has a
+size.** Depending on which band and which correction level a measurement can honestly claim, the
+signal is between one and three orders of magnitude under the noise. It is not a near miss.
+
+**The useful form of the result is the inversion, and it is the one sentence in this section a reader
+should keep.** Requiring the signal to exceed the *best published residual* rather than the
+instrument's resolution, the mass needed at one metre is
+
+> **≈ 2.6 kg** to clear the narrowband tidal residual · **≈ 225 kg** to clear the broadband fit error,
+
+scaling as *r*², so **≈ 23 kg at 3 m** and **≈ 255 kg at 10 m** against the narrowband figure. That
+is a real bound and it is falsifiable in the direction that matters: **a persistent own-sector mass
+concentration of more than a few kilograms, sitting within a metre of one of the world's
+superconducting gravimeters, would already have shown up in the residuals.** It has not. We claim
+nothing more from that than it can carry — the instruments are few, they are fixed, and their
+sampling of the planet is negligible — but it is a measurement rather than a posture, and it is
+available to anyone who wants to tighten it.
+
+⛔ **No gravimetric detection claim is made anywhere in this paper, and none is available from this
+section.** What is claimed is narrower and, we think, more useful: **Branch B is not exempt from
+measurement, and the price of the exemption it usually claims is now written down in kilograms.**
+
+---
+
+## §15 — THE MENTAL REGISTER, THE INVERSION, AND A GATE THAT PASSED THE WRONG OBJECT
+
+The premise has a second register. If the class is defined by its relation to the observer rather
+than by a shared mechanism, then the human record of *anomalous perception* — the folklore, the
+sightings, the reports made in altered states — is the obvious place to look, and it is the place
+this program has most carefully avoided until now.
+
+**The structural point has to come first, because it costs us.** Selected-for blindness predicts an
+**absence** in the human record. A large, detailed, identity-rich folklore corpus is therefore
+evidence **against** the mechanism, not for it. We committed that in both directions before consulting
+anything (`PAPER-02-FALSIFIERS.md` F5), and it generates a forbidden move we hold to throughout:
+**presence and absence may not be scored in the same corpus.** Taking the arm on which reports count
+forfeits the arm on which their silence counts. One arm, chosen in advance.
+
+The arm was chosen, and chosen by a criterion written before it was invoked. `PREREGISTRATION.md` §7d
+pre-committed two readings — **F1**, a silent record, and **F2**, a record that is
+altered-state-concentrated and identity-poor — and required any candidate corpus to be named in a
+successor pre-registration written before it was opened. That successor exists
+(`PREREG-CORPUS-F2.md`), it registers a mass-concentration gate **C5** to be run first and alone, and
+it registers four predictions with failure conditions, one of which it declares unscorable on the
+named corpus for circularity before looking at it.
+
+**Then the gate ran, and the interesting thing happened.**
+
+C5 asks whether the corpus is really one document wearing many filenames: if a single source holds
+more than half the total word mass, no distributional claim may be made from it. Measured across
+2,552 live files and 5.46 million words, the largest single file holds **1.59%**, the largest five
+**6.1%**. The gate passes cleanly and, by its own pre-committed rule, licenses the scoring of C1–C4.
+
+⛔ **We are not scoring them, because the object is inadmissible and the gate could not see it.**
+
+The corpus named in the pre-registration is **our own**. Its README opens *"a unified intellectual
+program built by Clayton Iggulden-Schnell and Clawd"*; 31% of its mass is one author's identity and
+memory files, 30% is this program's technical work, 7% is the drafts of a book we wrote. It is a body
+of analysis, produced by the two parties who hold the hypothesis. It is not a record of reports by
+anyone else. F2's predictions are all statements about a record of reports — C1 wants motifs
+recurring across *independent source clusters*, C3 wants the affect of a reported phenomenology, C4
+wants the cost borne by *reporters* — and not one of them has a referent here.
+
+**A name collision did it.** In the authors' working vocabulary "the Corpus" denotes that repository,
+and the sentence admitting a corpus of anomalous reports as evidence was routed at the filing cabinet
+that owns the word.
+
+⭐ **The reason this is in the paper rather than quietly repaired is the branch it exposes.** Had C5
+returned *void*, we would have written the right conclusion — *this corpus cannot carry the weight* —
+for a reason that has nothing to do with why it is true, and never noticed. C5 passing is the
+dangerous outcome, and what it licensed was not a null. The corpus contains a file titled *The
+Comprehensive Catalog of Perspectival Beings*: a taxonomy of named entities, each rated across twelve
+labelled dimensions on a five-point scale. C1's pre-committed failure condition reads *"fails if a
+small set of stable, elaborated, cross-source-consistent named taxa carries the bulk of report
+mass."* A faithful scorer would have found exactly that, marked **C1 refuted**, and recorded that the
+record disqualifies its own subject — having measured our philosophical appendix and reported it as
+the human record. The verdict would have been pre-registered, reproducible, dated, and confidently
+wrong, with the pre-registration itself serving as the alibi.
+
+**Nothing in the pre-registration failed.** It was written before opening, it stated its failure
+conditions, it forbade the moves that would have rescued it, and it put its gate first. What it did
+not do — what none of our gates did — is ask whether the named object is **the kind of thing the
+predictions are about**. That question is upstream of every safeguard the file contains. A
+pre-registration protects an inference from its data; it does not protect an object from its name.
+
+**So this register is opened and unresolved, and the honest inventory is:** C5 ran and returned open,
+reported with its numbers because a gate that ran is worth more on the record than a gate that was
+skipped. **C1, C3 and C4 are unscored and are not nulls.** C2 remains owed for the separate reason of
+selection circularity, which this defect neither causes nor repairs. **No claim about any folklore or
+ethnographic record appears anywhere in this paper**, because nothing bearing on one was measured.
+
+What is owed is a successor pre-registration against an actual report corpus — Thompson's
+Motif-Index, HRAF, or a comparable collection — carrying a new admissibility gate **in front of** C5:
+*is the object a record of reports made by parties independent of the hypothesis's authors?* That
+gate did not exist. Its absence is the most instructive thing this section produced, and we would
+rather publish it than the finding it nearly manufactured.
+
+---
+
 *Drafted D202. ⚠ **This line read "§6–§12, §14 and §15 are not drafted here" until ~21:5x, four
 hours after §6 was drafted into this very file** — a closing note describing the file's own contents
 and going stale against them without a character changing. **It went stale a SECOND time within two
@@ -1236,6 +1447,21 @@ next drafting act has to edit it: **§7, §8, §10, §11, §12, §14 and §15** 
 they still move. Every `[◐ CITATION
 OWED]` in this file is a hand-deletable fence and none of them may be removed by anything except
 reading the source.*
+
+*⭐ **D203 / 2026-08-22 ~11:3x — THE LIST ABOVE IS NOW EMPTY, AND IT WENT STALE A THIRD TIME BEFORE
+ANYONE EDITED IT.** §7, §8, §10 and §11 were drafted on D202 between ~23:5x and ~00:2x; the note kept
+naming them undrafted for eleven hours. §12, §14 and §15 were drafted this morning. **Roster, read
+off this file's own `## §` headings by `grep` and not off any prose: §1 §2 §3 §4 §5 §6 §7 §8 §9 §10
+§11 §12 §13 §14 §15 — fifteen of fifteen, no gaps.** The fence about citation markers stands
+unchanged and is not affected by completion.*
+
+*⚠ **What completion does NOT mean, stated here because this is the line a reader will reach last.**
+Three of the last four sections drafted report a **refutation or a retraction**, not a result: §12
+withdraws its own headline number after the second night returned zero, §14 finds its gravimetric
+signal one to three orders of magnitude under the environmental floor, and §15 rejects its own
+pre-registered corpus as inadmissible after the gate designed to protect it passed. **The paper is
+complete; the program is not vindicated by its completion, and no section may be read as though it
+were.***
 
 
 

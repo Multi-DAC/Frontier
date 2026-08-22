@@ -1,0 +1,118 @@
+{
+ "governed_by": "PREREG-CORPUS-F2.md section 2 (gate C5)",
+ "root": "C:/Users/mercu/clawd/repo-staging/Corpus-Perspectival",
+ "roster": {
+  "md_total": 2703,
+  "archived": 151,
+  "live": 2552,
+  "unreadable_counted_as_miss": 0,
+  "note": "re-measured here; the D186 counting contract is stale and was not cited"
+ },
+ "unreadable": [],
+ "total_live_words": 5463269,
+ "top1_share": 0.015868704250147667,
+ "top5_share": 0.06054214061214998,
+ "top20_share": 0.14341669795135475,
+ "largest_files": [
+  {
+   "file": "Foundations-of-Identity\\palace\\basement\\README.md",
+   "words": 86695,
+   "share": 0.015868704250147667
+  },
+  {
+   "file": "Unreleased-Work\\Perspective\\Perspective-First-Draft.md",
+   "words": 62948,
+   "share": 0.011522039277216626
+  },
+  {
+   "file": "Unreleased-Work\\Perspective\\Perspective-Reader.md",
+   "words": 62945,
+   "share": 0.01152149015543624
+  },
+  {
+   "file": "Foundations-of-Identity\\memory\\anticipations.md",
+   "words": 60468,
+   "share": 0.011068098605432022
+  },
+  {
+   "file": "Foundations-of-Identity\\memory\\anomalies.md",
+   "words": 57702,
+   "share": 0.01056180832391742
+  },
+  {
+   "file": "Research\\Corpus-Perspectival\\null-space-atlas.md",
+   "words": 50184,
+   "share": 0.00918570914227361
+  },
+  {
+   "file": "Foundations-of-Identity\\palace\\ATRIUM.md",
+   "words": 48317,
+   "share": 0.008843972354280926
+  },
+  {
+   "file": "Foundations-of-Identity\\palace\\southeast\\mirror.md",
+   "words": 37896,
+   "share": 0.006936506329818283
+  },
+  {
+   "file": "Research\\_archive\\The-Killing-Form-research-superseded\\v3\\V3_NOTES.md",
+   "words": 35524,
+   "share": 0.006502334042127525
+  },
+  {
+   "file": "Technical-Work\\The-Killing-Form\\v3\\V3_NOTES.md",
+   "words": 35524,
+   "share": 0.006502334042127525
+  }
+ ],
+ "top_level_dir_shares": [
+  {
+   "dir": "Foundations-of-Identity",
+   "words": 1688240,
+   "share": 0.3090164515054997
+  },
+  {
+   "dir": "Technical-Work",
+   "words": 1633962,
+   "share": 0.2990813741735946
+  },
+  {
+   "dir": "Research",
+   "words": 1102477,
+   "share": 0.20179804435769133
+  },
+  {
+   "dir": "Library",
+   "words": 661160,
+   "share": 0.12101911877302765
+  },
+  {
+   "dir": "Unreleased-Work",
+   "words": 367467,
+   "share": 0.06726137775752943
+  },
+  {
+   "dir": "CURRENT.md",
+   "words": 5681,
+   "share": 0.0010398536114549731
+  },
+  {
+   "dir": "README.md",
+   "words": 2543,
+   "share": 0.0004654722291726803
+  },
+  {
+   "dir": "ROADMAP.md",
+   "words": 1049,
+   "share": 0.0001920095825411489
+  },
+  {
+   "dir": "HISTORICAL-WORK.md",
+   "words": 690,
+   "share": 0.00012629800948845828
+  }
+ ],
+ "dir_top1_share": 0.3090164515054997,
+ "GATE": "OPEN -- C1-C4 may be scored",
+ "threshold": "top1 > 0.50 voids, pre-committed in PREREG-CORPUS-F2.md before opening"
+}

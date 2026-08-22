@@ -1,0 +1,303 @@
+{
+ "label": "night2_20180602",
+ "index": "PASS_night2_alert_index.json",
+ "n_alerts_total": 19446,
+ "n_exposures": 32,
+ "exposures": [
+  {
+   "key": "20180602183634_000668",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 56,
+   "n_images_found": 56,
+   "n_alerts": 221,
+   "listing_size": 748
+  },
+  {
+   "key": "20180602184086_000571",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 61,
+   "n_images_found": 61,
+   "n_alerts": 386,
+   "listing_size": 743
+  },
+  {
+   "key": "20180602186458_000523",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 63,
+   "n_images_found": 63,
+   "n_alerts": 584,
+   "listing_size": 767
+  },
+  {
+   "key": "20180602187905_000473",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 59,
+   "n_images_found": 59,
+   "n_alerts": 577,
+   "listing_size": 764
+  },
+  {
+   "key": "20180602188368_000527",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 48,
+   "n_images_found": 48,
+   "n_alerts": 200,
+   "listing_size": 752
+  },
+  {
+   "key": "20180602188866_000578",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 60,
+   "n_images_found": 60,
+   "n_alerts": 392,
+   "listing_size": 757
+  },
+  {
+   "key": "20180602189329_000627",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 59,
+   "n_images_found": 59,
+   "n_alerts": 503,
+   "listing_size": 753
+  },
+  {
+   "key": "20180602190694_000579",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 60,
+   "n_images_found": 60,
+   "n_alerts": 299,
+   "listing_size": 764
+  },
+  {
+   "key": "20180602384792_000539",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 10,
+   "n_images_found": 10,
+   "n_alerts": 429,
+   "listing_size": 714
+  },
+  {
+   "key": "20180602417130_000590",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 35,
+   "n_images_found": 35,
+   "n_alerts": 1913,
+   "listing_size": 739
+  },
+  {
+   "key": "20180602418056_000591",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 13,
+   "n_images_found": 13,
+   "n_alerts": 650,
+   "listing_size": 763
+  },
+  {
+   "key": "20180602418518_000639",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 11,
+   "n_images_found": 11,
+   "n_alerts": 634,
+   "listing_size": 627
+  },
+  {
+   "key": "20180602420232_000686",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 7,
+   "n_images_found": 7,
+   "n_alerts": 208,
+   "listing_size": 739
+  },
+  {
+   "key": "20180602451956_000802",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 3,
+   "n_images_found": 3,
+   "n_alerts": 62,
+   "listing_size": 707
+  },
+  {
+   "key": "20180602452419_000830",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 3,
+   "n_images_found": 3,
+   "n_alerts": 52,
+   "listing_size": 707
+  },
+  {
+   "key": "20180602453368_000768",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 3,
+   "n_images_found": 3,
+   "n_alerts": 93,
+   "listing_size": 707
+  },
+  {
+   "key": "20180602453831_000729",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 5,
+   "n_images_found": 5,
+   "n_alerts": 114,
+   "listing_size": 760
+  },
+  {
+   "key": "20180602454294_000730",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 1,
+   "n_images_found": 1,
+   "n_alerts": 37,
+   "listing_size": 763
+  },
+  {
+   "key": "20180602454768_000687",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 38,
+   "n_images_found": 38,
+   "n_alerts": 1239,
+   "listing_size": 764
+  },
+  {
+   "key": "20180602457130_000640",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 22,
+   "n_images_found": 22,
+   "n_alerts": 701,
+   "listing_size": 768
+  },
+  {
+   "key": "20180602457627_000540",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 13,
+   "n_images_found": 13,
+   "n_alerts": 630,
+   "listing_size": 762
+  },
+  {
+   "key": "20180602461030_000487",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 26,
+   "n_images_found": 26,
+   "n_alerts": 410,
+   "listing_size": 730
+  },
+  {
+   "key": "20180602461481_000539",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 38,
+   "n_images_found": 38,
+   "n_alerts": 933,
+   "listing_size": 742
+  },
+  {
+   "key": "20180602461944_000590",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 47,
+   "n_images_found": 47,
+   "n_alerts": 1262,
+   "listing_size": 751
+  },
+  {
+   "key": "20180602462396_000639",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 55,
+   "n_images_found": 55,
+   "n_alerts": 2140,
+   "listing_size": 759
+  },
+  {
+   "key": "20180602462859_000686",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 43,
+   "n_images_found": 43,
+   "n_alerts": 2413,
+   "listing_size": 747
+  },
+  {
+   "key": "20180602464931_000729",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 38,
+   "n_images_found": 38,
+   "n_alerts": 825,
+   "listing_size": 643
+  },
+  {
+   "key": "20180602465440_000768",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 13,
+   "n_images_found": 13,
+   "n_alerts": 198,
+   "listing_size": 574
+  },
+  {
+   "key": "20180602465903_000801",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 2,
+   "n_images_found": 2,
+   "n_alerts": 19,
+   "listing_size": 475
+  },
+  {
+   "key": "20180602467315_000730",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 2,
+   "n_images_found": 2,
+   "n_alerts": 11,
+   "listing_size": 420
+  },
+  {
+   "key": "20180602477037_000687",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 47,
+   "n_images_found": 47,
+   "n_alerts": 538,
+   "listing_size": 707
+  },
+  {
+   "key": "20180602479595_000640",
+   "http": 200,
+   "state": "PRESENT",
+   "n_images_referenced": 52,
+   "n_images_found": 52,
+   "n_alerts": 773,
+   "listing_size": 756
+  }
+ ],
+ "exposures_present": 32,
+ "exposures_missing": 0,
+ "exposures_unknown": 0,
+ "exposure_miss_frac": 0.0,
+ "alerts_stranded": 0,
+ "alerts_stranded_frac": 0.0,
+ "alerts_unknown": 0
+}
