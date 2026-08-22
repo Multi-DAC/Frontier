@@ -3,10 +3,13 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-*Status, re-measured D202 ~00:0x by `wc -w` and `grep -o "^## §"` on the draft itself: the paper is
-`PAPER-03-DRAFT.md`, **11,317 words**, 9 headings — **§1 §2 §3 §4 §5 §6 §9 §10 §13**. Sections
-**§7, §8, §11, §12, §14, §15** are not written. **Do not attack the gaps** — they are known and
-listed in `PAPER-00-ARCHITECTURE.md`. Attack what is claimed.*
+*Status, re-measured D202 ~00:2x by `wc -w` and `grep -o "^## §"` on the draft itself: the paper is
+`PAPER-03-DRAFT.md`, **14,126 words**, 12 headings — **§1 §2 §3 §4 §5 §6 §7 §8 §9 §10 §11 §13**.
+Sections **§12, §14, §15** are not written and each is blocked on a measurement, not on prose.
+**Do not attack the gaps** — they are known and listed in `PAPER-00-ARCHITECTURE.md`. Attack what is
+claimed. ✅ **Citation debt: ZERO real markers** (the one `grep` hit is the legend that defines the
+convention); the D202 reading pass closed all eleven — four survived at source, five were amended
+against it, one claim died, one is carried as `[⚠ SECONDARY]`.*
 
 *⭐ **§10 IS NEW AND IT IS THE SECTION TO ATTACK FIRST.** It is the program's own scoreboard —
 51 of 72 pre-committed predictions held — and it publishes the number that most threatens the

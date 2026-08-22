@@ -187,11 +187,14 @@ instructions after the thing that justified them has moved.
      says 12; **one of the twelve is the legend at line 23**, which defines the convention using a
      literal `x`. Eleven claims carried a real debt. A `grep` count reported without reading what it
      matched, in a file whose whole purpose is to stop exactly that.
-   - ⚠ **DRAFTED IS NOT SOURCED.** The file carries **12 `[◐ CITATION OWED]` markers** — every claim in
-     it I believe and have not read at a primary source, chiefly §1.1's four adaptive-non-perception
-     literatures and §2's cryptic-species / dark-taxa / CPR / obscuration-series pointers. The marker
-     is designed so that removing it is a **hand** action that cannot happen by drafting past it. Item
-     3 below (§6's five primary sources) is a **subset of this debt, not a separate one**.
+   - ✅ **DEBT DISCHARGED — re-measured D202 ~00:2x, and this row was STALE.** It read *"The file
+     carries 12 `[◐ CITATION OWED]` markers"* for hours after the reading pass (`72e6ba7`) closed
+     them. **Live count: `grep -o "◐ CITATION OWED" PAPER-03-DRAFT.md | wc -l` = 1, and the 1 is the
+     legend line that defines the convention.** Real outstanding debts: **ZERO.** Of the eleven, four
+     survived at source, five were amended against the source, one claim died, one is carried as
+     `[⚠ SECONDARY]` (verified through indexing, article not opened — a third state, not a discharge).
+     Item 3 below (§6's five primary sources) was a subset of this debt and is closed with it.
+     ⚠ **A stale debt-count in the file whose job is stopping stale debts.** Re-measure, do not recall.
    - ✅ Discharges `PAPER-01-GENRE.md` §1's stated obligation en route: Davies et al. 2009 is cited as
      ancestor in §1.2 and differentiated on mechanism (**instruments** vs **the observer**), which the
      genre file recorded as unstated with `grep` returning zero hits across this directory.
@@ -207,8 +210,12 @@ instructions after the thing that justified them has moved.
      the §9a row here quotes the frozen-catalogue triple as 8528/8526/8524, which is right, but pass 6's
      `V1` returns a *fourth and fifth* value (8523/8521) on a path this row does not mention. The draft
      reports them and declines to count them, because their population is not established identical.
-   - ⛔ **NOT drafted:** §7, §8, §11, §12, §14, §15. *(§10 left this list D202 ~23:5x — drafted off
-     `PROGRAM_SCORE.json`. Explicit list, never a range.)*
+   - ⛔ **NOT drafted:** §12, §14, §15 — and each is blocked on a **measurement**, not on prose.
+     §12 needs a second night's IRSA fetch (5.76 % is n=55 anecdote until then) · §14 needs the
+     tidal/atmospheric/hydrological noise floor (the gravimetric number is **sensitivity, not
+     detection**) · §15 is pre-registered with zero data.
+     *(§10 left this list D202 ~23:5x off `PROGRAM_SCORE.json`; §7, §8 and §11 left it ~00:2x once
+     pass 9 closed the last number that could move them. Explicit list, never a range.)*
      *(This line read "§7–§12" until D202 ~23:1x. §9 and §9a are inside that range and are now prose.)*
      *(§15 is now OPENED
      as of D202 ~18:4x — pre-registered, still undrafted. Opening ≠ drafting; the prereg must be

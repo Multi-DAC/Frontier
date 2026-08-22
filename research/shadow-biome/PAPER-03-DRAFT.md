@@ -1,8 +1,10 @@
-# SHADOW BIOME — DRAFT PROSE: §1 §2 §3 §4 §5 §6 §9 §10 §13
+# SHADOW BIOME — DRAFT PROSE: §1 §2 §3 §4 §5 §6 §7 §8 §9 §10 §11 §13
 
-*(Roster stated as an EXPLICIT LIST, never a range. It read "§1–§6, §9 and §13" until D202 ~23:5x;
-a range cannot say that §7 and §8 are missing from inside it. Re-measured by
-`grep -o '^## §' | tr` at each edit, not remembered.)*
+*(14,126 words, 12 headings. Roster stated as an EXPLICIT LIST, never a range — it read
+"§1–§6, §9 and §13" until D202 ~23:5x, and a range cannot say which sections are missing from inside
+it. Re-measured by `wc -w` and `grep -o '^## §'` at each edit, never recalled. **Still unwritten:
+§12, §14, §15** — §12 needs a second night's archive fetch, §14 needs a noise floor, §15 is
+pre-registered with zero data.)*
 
 *Drafted D202 / 2026-08-21 ~17:0x PT, midday-creation drive (deferred), on `PAPER-00-ARCHITECTURE.md`
 §4 item 5: **draft these now, in parallel with the compute**, because they do not move on any pass
@@ -34,6 +36,13 @@ Three conventions, and they are the whole reason this file can be trusted:
 - **`[◐ CITATION OWED: x]`** — the claim is one I believe and have not read at a primary source. It
   stays in the draft marked, so that the marker has to be deleted by hand and cannot fall off
   silently. A paper is where a program's hedges go to die; this is the counter-measure.
+  **⭐ LIVE COUNT: ZERO.** All eleven real markers were discharged by the D202 reading pass — four
+  survived at source, five were amended against the source, one claim died, one is carried as
+  `[⚠ SECONDARY]`. This bullet is now a definition with no users, and it is kept rather than deleted
+  because the next drafting breath needs the convention available. *(Re-measure with*
+  `grep -o "◐ CITATION OWED" | wc -l` *and subtract this legend line; the architecture carried "12
+  markers" for hours after the debt was discharged, which is a stale-debt error in a file whose
+  purpose is stopping stale debts.)*
 - **`[✅ PRIMARY: x]`** — read at the source named, this program, by me.
 - **`[⚠ SECONDARY: x]`** — **added D202 by the reading pass, because the two-state convention above
   was forcing a lie.** Citation, authorship and the operative claim verified through indexing or
@@ -663,6 +672,168 @@ falsifier and a date, both of which are in §F.
 
 ---
 
+## §7 — THE TEST, AND WHY IT WAS WRITTEN BEFORE THE DATA
+
+*Drafted D202 ~00:1x PT off `PASS4/5/6/7/8/9_PREDICTIONS.md` and the commit log that timestamps
+them. No number in this section is new; the section's whole content is the **ordering**.*
+
+Kind (ix) of §6 — an aperture that discards a class of thing before any human sees it — is the only
+one of our kinds with machinery specific enough to name a place and a threshold. The place is the
+Zwicky Transient Facility's public alert stream. The threshold is its packaging cut on source
+elongation, `elong ≤ 1.6`, applied before an alert packet is written.
+
+The test is not "is there a shadow biome behind ZTF's shape cut." Nothing here could establish that,
+and §13 states so at length. The test is the far weaker and far more checkable question that has to
+be answered first: **does a real, non-noise population of detections exist on the far side of that
+cut, and does it survive every instrumental explanation we can construct for it?** A negative answer
+closes the locus. A positive answer does not open anything; it says only that the bin is occupied and
+that the occupants are not obviously artefacts of our own extraction.
+
+### 7.1 The ordering, which is the only thing that makes any of this evidence
+
+Every numbered prediction in this program was committed to a public git repository **before the code
+that scored it existed.** Not before the code was run — before it was written. The commit hashes are
+in the table below and the ordering is externally checkable by anyone who clones the repository.
+
+| pass | prediction file | committed as | what ran afterwards |
+|---|---|---|---|
+| 4 | `PASS4_PREDICTIONS.md` (+ Amendment 1) | `715182f` | `measure_pass4.py`, on a tarball that was still downloading when the amendment was filed |
+| 5 | `PASS5_PREDICTIONS.md` | — | `measure_pass5.py` |
+| 6 | `PASS6_PREDICTIONS.md` | `f3c51a5` | `measure_pass6.py` |
+| 6d | `PASS6_DIAGNOSTIC_PREDICTIONS.md` | `685fa0c` | `diag_pass6.py` |
+| 7 | `PASS7_PREDICTIONS.md` | `da25f0c` | `measure_pass7.py` |
+| 8 | `PASS8_PREDICTIONS.md` | `6567f2b` | `measure_pass8.py`, `nondet_pass8.py` |
+| 9 | `PASS9_PREDICTIONS.md` | `32877a0` | `measure_pass9.py` |
+
+This is cheap. That is the point of including it. The discipline costs one file and ten minutes per
+pass, and the anomalous-phenomena literature this paper sits adjacent to almost never pays it — which
+is precisely why a result from that literature cannot be distinguished from a result that was framed
+after its own data came back.
+
+### 7.2 What a pre-registration has to contain to be worth anything
+
+Four properties, each of which this program has violated at least once and repaired:
+
+**(a) A statistic fixed before the histogram is seen.** Pass 4's boundary ratio *R* names its
+numerator bin and its reference bin in advance, and says why the reference bin was chosen — it sits
+immediately outside the survey's own tighter recommended cut, so it is ordinary populated territory
+that neither threshold defends. A ratio whose bins are picked after the plot is a decoration.
+
+**(b) A declared prior that points away from the interesting answer.** Pass 4's M2 predicted
+*R* < 0.10 — that the shape cut sits harmlessly in the tail — which is the boring result and the one
+that would have weakened the whole locus. It came back at 0.2416 and is scored as a refutation of our
+own skeptical prior. A pre-registration that only ever predicts what its author hopes for is a wish
+list with dates on it.
+
+**(c) A control that can return both answers.** Pass 6 required three synthetic-data gates to pass
+before its shape section could be read at all: one that must detect alignment, one that must *not*
+false-alarm on uniform angles, and one run through the *actual* scoring function rather than a
+reimplementation of it. Pass 9 required a scramble control to reproduce the pair statistic's null
+before its pair result could be quoted. A gauge that has only ever rendered one verdict is furniture.
+
+**(d) A decision rule, binding, written while the number does not yet exist.** Pass 8's D4 is the
+clearest case: it states in advance what will be concluded at each possible value of a gap that had
+not been measured. It is the mechanism that stops a result from being interpreted by whoever reads it
+last.
+
+### 7.3 The rule we broke, and what it cost
+
+Pass 4's M1 predicted a survival fraction of 8–14 % against a figure quoted from ZTF's own
+explanatory supplement. Between committing that prediction and opening the data, we re-read the
+supplement and discovered the quoted figure was built from two different populations — a public-only
+numerator over an all-programs denominator, which stacks a telescope-time allocation on top of a
+shape attrition and calls the product morphology.
+
+The right move was available and was taken: **the prediction was left exactly as written, an
+amendment was filed stating that it would now be expected to fail and in which direction, and it was
+scored as a miss.** It failed high, at 34.5 %, in the direction the amendment named. A
+pre-registration that gets quietly edited when its author learns something is not a pre-registration,
+and the scoreboard in §10 is more useful with a called miss on it than with a retrofitted hit.
+
+What did not save us is worth stating, because it generalises: the numbers had been transcribed
+correctly, the cuts listed correctly, and the arithmetic recomputed rather than re-read. **Every
+check we ran was on the arithmetic; none was on whether the two counts described the same set of
+objects.**
+
+---
+
+## §8 — THE RESULT: WHAT IS ON THE FAR SIDE OF `elong ≤ 1.6`
+
+*Drafted D202 ~00:1x PT. Every number below was re-read off its named JSON in the drafting breath.
+Two of them contradict summaries this project was carrying about its own results, and both
+corrections run against us.*
+
+### 8.1 The bin is occupied, and it is not a noise skirt
+
+Re-extracting sources at 5 σ from twenty ZTF difference images, without ZTF's packaging cut,
+**48.50 % of detections lie past `elong = 1.6`** [✅ PRIMARY: `PASS6_RESULTS.json` `/frac_far`,
+`minarea = 5`]. The fraction is flat to a signal-to-noise ratio of 100, so it is not the skirt of a
+noise distribution; the histogram crosses 1.6 smoothly with a step ratio of 0.8878, so our own
+extraction is not truncated there; and pass 4's boundary statistic recomputed on the uncut extraction
+is **1.387** against **0.2416** on the packaged alert stream.
+
+Only **0.17 %** of those past-1.6 detections — 7 of 4,136 — lie within 2 px of a ZTF alert. Whatever
+occupies that bin, ZTF did not package it.
+
+### 8.2 What occupies it: dipoles, and the pairs are real
+
+The far side is dominated by **difference-image dipoles** — a source that moved or varied between the
+science and reference images leaves a paired positive and negative residual, and the pair's members
+are elongated along the axis joining them.
+
+**65.81 %** of far-side detections sit within 10 px of another detection of the opposite sign
+[✅ PRIMARY: `PASS6_VERIFY.json` `/V2/far/opp_share_of_side`], with a median elongation angle of
+**77.9°** to the line joining them — near-perpendicular, which is the dipole signature and not the
+streak signature we had predicted.
+
+⚠ **The number this project printed as its headline for this section was the wrong one, and the
+correction is against us.** We had quoted an opposite-sign excess of **+49.04 pp** (far-side
+`opp_rate` 0.96252 against a composition-matched null of 0.47207) as evidence that the far side is
+special. The kept side's own control, computed the same day and left unread for three passes, gives
+`opp_rate` **0.97315** against a null of **0.43386** — an excess of **+53.93 pp**, *larger* than the
+far side's [✅ PRIMARY: `PASS6_VERIFY.json` `/V2/kept`]. **Both sides' close pairs are overwhelmingly
+opposite-sign. That is a property of the catalogue, not of the far side**, and +49.04 pp may not be
+printed as a far-side finding.
+
+The far-side-specific number is the *share of the side that is paired at all*: **0.65812 far versus
+0.51161 kept, a gap of +14.65 pp.** That is what this section claims, and it is a third the size of
+the number we nearly published.
+
+The pairs are not a crowding coincidence. Scrambling the negative-sign positions by eight fixed
+40-pixel offsets — preserving *n*, preserving the elongation distribution, destroying only the
+pairing — collapses **2,329** mutual opposite-sign pairs to a median of **41.5**, i.e. **1.8 %** of
+the observed count, and collapses the effect on the far-side fraction from −6.20 pp to a median
+**0.020 pp** [✅ PRIMARY: `PASS9_RESULTS.json` `/S`].
+
+### 8.3 The operation that would have been wrong, and the anchor that caught it
+
+The obvious response — extract from the positive-difference image only, and the dipole doubling goes
+away — is **the wrong operation, and we know that because an external anchor says so.**
+
+It fails twice. First, the far side is *positive*-dominated, not negative: `frac_far` on
+positive-only detections is **0.5487** against **0.4363** on negative-only, at all five `minarea`
+rungs, with the effect growing monotonically [✅ PRIMARY: `PASS7_RESULTS.json` `/A`]. Two
+pre-registered predictions asserting the opposite were refuted in the same direction. Second, and
+decisively, dropping negatives deletes **2,505 unpaired negative detections that are not dipole
+halves** — and ZTF's own negative-difference alerts land on exactly that population. Of ZTF's 240
+`isdiffpos = 'f'` alerts on these frames, **64.17 %** fall on our unpaired negatives, against the
+positive analogue's **41.18 %** — a gap of **+22.99 pp**, same sign at 5 of 5 rungs [✅ PRIMARY:
+`PASS8_RESULTS.json` `/D3`].
+
+`isdiffpos` is a label neither of our procedures controls. It is the only external adjudicator in
+this chain, and it says the negatives we were about to delete are real detections ZTF itself alerted
+on.
+
+⛔ **One claim this project made and then killed, recorded here because §10's scoreboard is worth
+nothing if the corpses are hidden.** We had written that the far-side *fraction* was manufactured by
+counting dipoles twice. Measured: collapsing all 2,329 mutual pairs moves `frac_far` from 0.484991 to
+**0.482820** — a change of **0.217 pp**. Dipole doubling inflates ***n*** and leaves the **fraction**
+where it was. "Counted twice" is refuted and stays refuted. "The dipole pairs are an elongated
+artefact class" is a *different* claim, established on different evidence, and may not inherit the
+first one's citation.
+
+---
+
 ## §9 — WHAT THE INSTRUMENT DID TO THE RESULT
 
 *Drafted D202 ~23:0x PT. Every number in this section was read off the named JSON in the same
@@ -904,6 +1075,88 @@ and its usefulness is almost entirely in the **21 refutations**, not the 51 conf
 qualifier in §9 arrived through a failed prediction. The most consequential correction in the program
 came from a control whose prediction failed. A scoreboard with no losses on it is not a strong
 program; it is an unfalsifiable one that has not noticed yet.
+
+---
+
+## §11 — THE RESIDUAL
+
+*Drafted D202 ~00:2x PT under constraints pre-committed in `PASS9_PREDICTIONS.md` §6 **before** the
+pass-9 data existed: the headline may not be printed alone, the band must travel with it, and the
+alternative estimators must appear beside it rather than in a footnote. Those constraints are
+honoured below and are the reason this section is shaped the way it is.*
+
+### 11.1 The number, with everything that qualifies it in the same sentence
+
+After removing both members of every mutual opposite-sign pair — the artefact class §8 established —
+the fraction of detections past ZTF's packaging cut is:
+
+> **`frac_far`(P_D) = 0.42** at `minarea = 5`, against **0.4845** for the untreated union and
+> **0.5487** for the positive-only estimator, and moving across the `minarea` ladder by
+> **+0.48 / −4.53 / −6.32 / −5.69 / −1.43 percentage points** at rungs 2 / 3 / 5 / 8 / 12
+> [✅ PRIMARY: `PASS9_RESULTS.json` `/P0` and `/ladder`].
+
+Three things are load-bearing in that sentence and none of them is the leading digit.
+
+**The estimators disagree by more than the effect.** 0.42, 0.48 and 0.55 are three defensible
+answers to "how much of the extraction is past 1.6," and the spread between them (13 pp) is twice the
+size of the pair correction (6.3 pp). Any reader handed 0.42 alone would take from it a precision the
+data does not contain.
+
+**The correction is a band and it dies at one end of it.** At `minarea = 2` the move reverses sign
+(+0.48 pp) and the effect is gone; at `minarea = 12` it is nearly gone (−1.43 pp). The mechanism is
+visible in the same table: pair share rises to **0.5478** at rung 2, so the pair population there is
+diluted with non-dipoles and removing it stops meaning what it means at rung 5. **This is not a
+robust result across the parameter. It is a result at one parameter, with a stated shape either side
+of it.**
+
+**And it peaks exactly where we were already standing.** The largest correction any procedure in this
+program has produced is largest at `minarea = 5` — the value the frozen catalogue was already built
+at, chosen three passes earlier for reasons unrelated to pairs. ⚠ We have no evidence the choice was
+motivated: `minarea = 5` predates the pair procedure by three passes and the commit log shows it.
+But a coincidence that flatters the result is reported, not filed, and this is the report.
+
+### 11.2 The third decimal does not exist
+
+`PASS9_RESULTS.json` contains two values for this quantity, produced by two runs at the same
+parameter in the same session: **0.422997** (*n* = 8,528) from the reproduction control and
+**0.421366** (*n* = 8,526) from the ladder. They differ by **0.16 pp**, and the catalogue sizes
+differ by two detections.
+
+This is §9's in-process non-determinism arriving at the headline. The correct response is not to pick
+the prettier number or to average them. It is the rule §9 states and this section obeys: **round to
+where the runs agree.** That is two decimal places. `frac_far`(P_D) is **0.42**, and any digit past
+it in this program is run-dependent.
+
+### 11.3 What survives the pair correction, and what it is worth
+
+A residual survives. After removing 2,329 mutual pairs — 27.3 % of the catalogue — roughly **42 % of
+detections still lie past a threshold that ZTF applies before writing an alert packet.** The pair
+procedure is also demonstrably *not* under-inclusive: on the survivors, the far-side opposition excess
+falls from +49.04 pp to **+4.48 pp** and the far-minus-kept paired share from +14.65 pp to
+**+2.55 pp**, so the mask is taking the dipoles it was built to take and is not leaving a large
+uncaught population behind it [✅ PRIMARY: `PASS9_RESULTS.json` `/P5P6`].
+
+⛔ **And here is what that residual is not.**
+
+It is not a detection of anything. It is not evidence for a shadow biome, or for any object, or for
+any phenomenon. Passes 7 through 9 established a floor for the dull reading and the dull reading
+holds where it was tested: pass 7's recovery block found the residual there to be a
+**detection-efficiency floor** — 101 unrecovered of 376, dominated by `UNEXTRACTED_DESPITE_FLUX` at
+68, median magnitude offset **+1.124**, spread across **20 of 20** frames. That is what a threshold
+looks like from underneath, and it was pre-registered as the boring answer before it was measured.
+
+What the residual is, precisely: **a population in a bin that a major survey discards before a human
+sees it, which we have failed to explain away in nine attempts.** The correct epistemic weight of
+"we failed to explain it away" is set entirely by how hard we tried, which is what §10's scoreboard
+and §9's instrument section exist to let a reader judge — and §10's own verdict on that is that our
+success rate rose by 30 points at exactly the moment the questions turned inward. A reader who
+discounts this residual on that basis is reading the paper correctly.
+
+⛔ **The forbidden move, restated at the point where it would be tempting.** This is a Branch A
+result. A residual we cannot presently account for is **not** evidence for Branch B, and no sentence
+anywhere in this paper may explain a Branch A null or a Branch A residual by appeal to a
+non-interacting biome. §13 item 1 holds. The cost of that rule is that this section ends without a
+conclusion, and that is the correct place for it to end.
 
 ---
 
