@@ -161,6 +161,25 @@ Dropping *"prove it"* is fine. Dropping *"state what would count as evidence aga
 This is one section — not a research programme — so it costs the proposal nothing and is the entire
 difference between a proposal and a mood.
 
+> ⚠ **AMENDED D203 / 2026-08-22 ~16:2x — THE OBLIGATION MOVED VENUE, ON THE PREMISE AUTHOR'S
+> INSTRUCTION.** Clayton: *"Let's clean it up to not have any of the attempts to disprove the idea
+> behind. I want this to be a purely propositional paper... we don't need the ⛔'s for this, they can go
+> in the document that maintains the rigor and methodological process and aspects."*
+>
+> **What is now true:** `PAPER-07-SHORT.md` carries **no falsifier section**. Old §9 (*what would end
+> this*) and old §10 (*the null results*) left it; what remains under §9 is a list of loci with no death
+> conditions attached. All of it is in `PAPER-02-FALSIFIERS.md` **§5**, verbatim, plus the ten in-line
+> fences struck from §§1–7.
+>
+> **And the exposure, stated rather than smoothed:** the rule above was written because this premise
+> *explains its own absence of evidence*, and that hazard has not gone anywhere. A reader who meets only
+> the essay now meets none of the fences. **The essay's protection against the never-wrong reading is now
+> entirely a function of whether `PAPER-02` is read alongside it, and that is a weaker guarantee than
+> in-line text was.** This is a deliberate trade made by the author of the premise, for readability, in a
+> venue (Substack, no reviewer) where he holds the call. It is recorded here as a trade, not as a
+> satisfied condition. **The essay's own header names `PAPER-02` in its third sentence; that pointer is
+> now load-bearing and must not be dropped in any future compression pass.**
+
 ⛔ **`PREREG-TERRESTRIAL.md §1.4` LINES 97–99 STILL BIND** *(section number corrected D202 from §1.3;
 the quoted words and the line numbers were right, the pointer was not — verified by reading the file)*
 and are now *more* important, because a

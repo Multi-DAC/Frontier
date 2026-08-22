@@ -1,7 +1,10 @@
 # EVOLUTIONARY IGNORANCE — paper architecture
 
-⚠ **D203 ~12:5x — THE PAPER IS `PAPER-07-SHORT.md` (8 sections, ~4,100 words). THIS FILE'S 15-ROW
-TABLE DESCRIBES THE SUPPLEMENT.** Clayton: *"Let's compress it! I want the idea at the center."* The
+⚠ **D203 ~16:2x — THE PAPER IS `PAPER-07-SHORT.md`, retitled `THINGS NOT MEANT TO BE FOUND`
+(9 sections, 6,111 words, `wc -w`). THIS FILE'S 15-ROW TABLE DESCRIBES THE SUPPLEMENT.** *(Roster line
+re-measured D203 ~16:2x after the propositional pass; it read "8 sections, ~4,100 words" and had been
+stale since the reframe four commits earlier. Two later passes — reframe/retitle, then the removal of
+all falsifier and null-result material to `PAPER-02` §5 — moved it twice more.)* Clayton: *"Let's compress it! I want the idea at the center."* The
 rows below are not withdrawn — they are the provenance of every number the short paper cites, and
 that is now their job. **What this file does NOT yet carry: the short paper's §2 (the witness
 asymmetry) has no row here**, because it was written from his D203 reading of *Chains of the Sea*

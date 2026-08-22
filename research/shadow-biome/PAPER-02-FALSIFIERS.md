@@ -328,3 +328,316 @@ between those two is exactly where the escape hatch sits.** Restated with the br
 question, it is reachable with instruments that already exist, and here is the map of how to lose.**
 A hypothesis paper earns its genre by handing the reader the falsifiers — and by showing the places
 where its own falsifiers already cost the authors something.
+
+
+---
+
+## 5. FENCES RELOCATED OUT OF THE ESSAY — D203 / 2026-08-22
+
+**Clayton, D203 ~16:2x:** *"Let's clean it up to not have any of the attempts to disprove the idea
+behind. I want this to be a purely propositional paper. Citations, of course, can remain, but we don't
+need the ⛔'s for this, they can go in the document that maintains the rigor and methodological process
+and aspects."*
+
+`PAPER-07-SHORT.md` is now propositional. Everything below **left the essay and landed here.** None of it
+is retracted, weakened, or superseded — the fences bind this program exactly as hard as they did before
+the move. What changed is the venue. A speculative essay that stops every third paragraph to fence itself
+is not more honest than one that doesn't; it is just harder to read, and it advertises the anxiety rather
+than the idea.
+
+**Two things to hold about this move, because both are ways it could go wrong:**
+
+**The register in §3 above is now the only place several of these live.** Before D203 a reader of the
+essay met them in-line. Now a reader of the essay meets none of them. That is the intended trade and it
+has a cost: the fences are only as effective as this document is read. **§3's table and §5 below are the
+same instrument and should be read together.**
+
+**The propositional half of the old §8 survived; only its fences moved.** The old §8 was titled *"WHAT
+KEEPS THIS FROM BEING A MOOD"* and mixed two different things: the Branch A / Branch B fork *and the
+thermodynamic argument that closes Branch B* (real content, kept in the essay as the new §8), with the
+pre-commitments about branch reassignment (defence, moved here). Old §9's loci also survived, as the new
+§9 — stripped of death conditions and of the ranking-by-defeat, keeping the places one would point.
+**Old §10 left entirely.**
+
+### 5a. The in-line fences, verbatim, from essay sections 1–7
+
+*Ten blocks. The section number is the section they were struck from in the pre-D203 file
+(`git show cb5592f:research/shadow-biome/PAPER-07-SHORT.md`).*
+
+**Struck from §2**
+
+⛔ **Two limits on the induction, stated here rather than deferred, because everything downstream is
+tempted to borrow from it.**
+
+**Struck from §3**
+
+⚠ That last one is the only entry with a legitimate retreat to the undetectable, and **the retreat is
+what makes it nearly worthless.** A reason that predicts no observation cannot be wrong. It stays on the
+list because it is a real logical possibility and because the premise's author put it there, and it is
+marked as the one member no test in §9 can reach.
+
+**Struck from §4**
+
+⚠ **And the differentiation is sharper than it looks, so it is stated rather than smeared.** Their
+negative case comes from **the cost of collecting** — a cost term that discounts the value of any action
+taken after gathering. Their nearest sentence to our premise, verbatim from the PDF: *"Alternatively,
+the organism may observe a certain cue but is unable to adequately respond."* **That sentence sits in
+their zero-value case, not their negative one.** Being unable to respond makes information worthless; it
+does not make it harmful.
+
+**Struck from §4**
+
+### ⛔ The confound, and it lands on the part of this essay that is ours
+
+**Struck from §4**
+
+⚠ **One further narrowing, from the same shelf.** The best-characterised suppression mechanism in human
+cortex is *expectation suppression*, and it **requires attention to the suppressed class.** Richter & de
+Lange found the attenuation **"was only apparent when stimuli were attended, and vanished when attention
+was directed away from the predictable objects"** *(eLife 8, 2019, DOI 10.7554/eLife.47869)*. A class
+that is never attended is not suppressed by that route. **This essay therefore may not borrow the
+expectation-suppression literature for its mechanism.** What it needs is *pre-attentive* — criterion
+placement at the detection stage, or sensory gating upstream of awareness — and those are different
+circuits, with different signatures, on a thinner shelf.
+
+**Struck from §5**
+
+⚠ **Limits.** Abstract (publisher-deposited via Crossref) and secondary coverage read; the *Química Nova*
+full text has returned 403/404/500 on **seven** access routes and is **UNREAD**. Citation counts are
+1–2 — this is not a position the field has taken up. The PNAS result is a bubble-physics ignition
+mechanism, not a field-verified account of historical *ignis fatuus*; it is cited for what it *removes*
+(the necessity of a human igniter), not as a refutation of Pavão *et al.*, which it does not claim to be.
+
+**Struck from §6**
+
+⛔ Which has a consequence worth pre-committing to: **no sentence in this program may treat human
+non-perception as evidence about the member.** It is evidence about the *pair*. The class is not a kind
+of thing in the world. It is a **relation** — which is also the shortest route back to §1, because a
+relation cannot have a substrate requirement, given that neither of its two places is the thing being
+described.
+
+**Struck from §7**
+
+### ⛔ And the price, charged here rather than deferred
+
+**Struck from §7**
+
+⚠ **Provenance, because it bears on citability.** All three Internet Archive scans of the 1973 Nelson
+anthology are lending-restricted and could not be borrowed; the text read was a scraped web copy of
+unverified fidelity, and short quotations should be re-checked against a licensed edition before they are
+printed. The structural findings do not turn on transcription. The quotations do.
+
+**Struck from §7**
+
+⚠ **And a novella is not evidence and is never cited as any.** It is cited as *prior articulation* — the
+slot Wells occupies in a paper about panspermia. Its function is to show that the idea predates its
+author and its drafter, which is an argument against novelty and *for* the actual claim: that nobody has
+yet said what would count as finding it.
+
+
+
+### 5b. Old §8, §9 and §10, verbatim
+
+*Old §8 and §9 were partly kept — see the note above for what survived and in what form. Old §10 —* **WHAT
+WE ACTUALLY DID** *— is preserved in full here and appears nowhere in the essay. It is the program's own
+null-results report and the apparatus-ratio confession; a propositional paper has no slot for a
+scoreboard. The underlying measurements are unaffected and remain in `PROGRAM_SCORE.json`,
+`PASS4`–`PASS9_RESULTS.md`, and `PAPER-08-DRAFT-RECORD.md` §4.*
+
+## §8 — WHAT KEEPS THIS FROM BEING A MOOD
+
+
+A speculative essay is allowed to speculate. It is not allowed to build a speculation that cannot lose.
+Four things stand between this one and that, and they are collected here rather than distributed through
+the argument, so that a reader can find them and check them against the pages above.
+
+### The fork, and the forbidden move
+
+*This is the part we would most want another group to copy, and it is free.*
+
+**Branch A — device-renderable.** Members a built sensor *can* register. A CMOS, a bolometer, a
+hydrophone and a radar have no adaptive history with respect to anything; evolution shapes eyes, not
+sensors. If human non-perception is an evolved edit, silicon has no share in it.
+
+**Branch B — not device-renderable.** Members no built sensor registers either.
+
+**Branch B is named here for exactly one reason: so that it cannot later be used as a destination.**
+
+With both branches live and no fence between them, a null in A gets quietly reassigned to B. *The camera
+saw nothing, so it must be the kind cameras can't see.* Each half stays individually falsifiable; the
+pair becomes unfalsifiable. Three properties make that dangerous rather than merely wrong: **it is
+silent** (no step is an error), **it feels like reasoning** (it has the shape of inference to the best
+explanation and arrives with the satisfaction of one), and **it happens after the data comes back** —
+precisely when the argument has acquired a preference about the answer.
+
+⛔ **PRE-COMMITTED: a null in Branch A stays in Branch A.** It may not be reported, framed, or privately
+understood as "consistent with Branch B." Branch B has no test in this program, so it can receive no
+evidence from it — **including our failures.** The same fence runs between §3 and §4: a §3 null is not
+evidence for §4, and no future §4 null may be answered by pointing back at §3.
+
+### Branch B is not a free category either
+
+And the argument that closes it **does not run on biology.** **Anything that persists as organised
+structure against entropy, and acts, must dissipate; anything with energy has stress-energy.** That is
+thermodynamics and general relativity, not biochemistry. It binds a plasma structure. It binds a
+computation — Landauer's principle is the same claim with a number attached. And it binds whatever "pure
+consciousness" would have to be in order to *do* anything at all, because a candidate that couples to
+nothing and changes nothing is not a member of this class; it is a definition with no referent.
+
+"Non-interacting" therefore splits into weak coupling (reachable in principle) and own-sector — and an
+own-sector member still **gravitates.** Branch B is a hard measurement, not an exemption.
+
+⚠ The one thing this generalisation costs: substrate-free members have **no chemistry to be inconsistent
+with**, so the sharpest instrument in §3 — a mass-balance residual — does not reach them. §9 ranks a
+substrate-neutral instrument instead and states its floor; the bias toward the biological subset is
+reduced there, not removed. ⛔ **No gravimetric detection claim is made anywhere in this essay and none
+is available from this program.**
+
+### The two things §2's warrant may not buy
+
+Restated because they are the two places a single confident word was found doing work in two different
+accounts: **the near-certainty of the aperture record may not be lent to the adaptive claim**, and **it
+may not be lent to the non-biological members.** Both fences were written before the sections that needed
+them.
+
+### The transferable schema, which is worth more than the hypothesis
+
+> Where a hypothesis has a fallback that can absorb its own disconfirmation, **the fallback must be named
+> and fenced before the data is seen** — or the hypothesis is not being tested, it is being illustrated.
+
+That costs one paragraph, written early. The anomalous-phenomena literature almost never pays it, and the
+absence of that paragraph is a sufficient explanation for why that literature does not converge.
+
+---
+
+## §9 — WHAT WOULD END THIS, AND WHERE ONE WOULD LOOK
+
+
+*An essay of this kind owes a reader the conditions of its own death and a handle on the door. Not a
+research programme. Full statements in `PAPER-02-FALSIFIERS.md`.*
+
+**Machinery.** The adaptive claim says suppression is funded. Look in human sensory neuroscience for
+suppression circuitry with no accounted-for stimulus class; find none, and the adaptive branch is dead.
+**First pass run — see below, and the result is about the falsifier.**
+
+**Phylogenetic debt.** An evolved blindness has relatives, a timescale, a distribution across species. No
+debt paid, no adaptation. This is also the discriminator §4's confound demands.
+
+**The tail.** ⭐ If a residual behaves exactly as the instrument's own artefact tail predicts, it is the
+instrument.
+
+**The folklore inversion.** ⭐ A rich, identity-dense, confident human record **refutes** the mechanism.
+This is the evidence that runs backwards, and §7 is where it bites.
+
+**The bin.** Whether archives keep what we assume they keep — *already fired on us.*
+
+**The tape.** A gated entity is *on the tape*: if a device can render what a human cannot, the device
+archive is where it will be. If the gate is real and no device archive holds it, the gate claim is wrong.
+⛔ Which is also why **§4 may never retreat to the undetectable branch.** That retreat belongs to weak
+coupling and to nothing else.
+
+**The death condition:** no funded suppression, no phylogenetic debt, a residual matching the artefact
+tail, and bins that turn out not to be kept — and the premise is not rescued by anything above.
+
+### The first falsifier came back with a defect in itself
+
+The search was for suppression circuitry whose suppressed stimulus class is **not accounted for.** The
+circuitry is abundant and well mapped: expectation suppression via feature-selective cortical inhibition;
+attenuation of self-generated reafference; repetition suppression, dissociable in time from expectation
+suppression — the early auditory response at 40–60 ms tracks repetition, the intermediate stage at
+100–200 ms tracks expectation *(Todorovic & de Lange 2012)*. In every documented case the suppressed
+class **is** accounted for: self-generated, or repeated, or statistically predicted from the observer's
+own recent history.
+
+**A first pass returns no unaccounted-for suppressed class — and the reason it returns none is a defect
+in the falsifier, not a result about the premise.** Every paradigm that measures suppression works by
+presenting a known stimulus and measuring attenuation against a baseline. **You cannot present a stimulus
+class you do not know exists.** An unaccounted-for suppressed class is invisible to every design in that
+literature by construction. The earlier claim that the adaptive branch's whole content was "one library
+search away" is **retracted**: one library search says the content is not there to be found in that form.
+
+⛔ **Re-specified.** The runnable question is not *is there suppression with no known class*, but: **is
+there a stimulus class whose measured attenuation exceeds what its stated predictive account funds?**
+That is a residual, answerable from published effect sizes without new subjects — and §4's attention
+constraint says where: in **pre-attentive** measures, not in the expectation-suppression paradigm that
+dominates the field.
+
+⚠ **Grade.** One afternoon of searching by a non-specialist, reading abstracts and two full texts. Enough
+to establish that the falsifier is mis-specified. **Not** a systematic review, and it does not license
+"no such circuitry exists."
+
+### Where one would look
+
+**First, the substrate-neutral instrument, because §8's argument implies one and an earlier draft denied
+it existed.** Mass balance is a life-detection instrument and does not reach a plasma or a computation.
+**An energy balance does.** Anything that persists as organised structure and acts must export energy, so
+every member of the corrected class must appear as a term in some closed energy budget or fail to be a
+member. That instrument exists and is already deployed: eddy-covariance flux networks, measuring
+turbulent energy fluxes against available energy, continuously, at hundreds of sites, for decades.
+
+⛔ **And it comes with its own ceiling, stated in the same breath, because the ceiling is the whole value
+of naming it.** Those budgets do not close. Wilson *et al.*, across 22 FLUXNET sites and 50 site-years,
+found **"a general lack of closure at most sites, with a mean imbalance in the order of 20%"** —
+prevalent in every vegetation type, in climates from Mediterranean to arctic *(Agric. For. Meteorol.
+113:223–243, 2002, DOI 10.1016/S0168-1923(02)00109-0)*. The imbalance has owners: mesoscale secondary
+circulations a single tower cannot capture by construction, and incompletely measured storage terms. **A
+~20% unclosed residual that already has mundane explanations in it is a detection floor, not a signal.**
+Any member dissipating below ~20% of a site's available energy is undetectable here — which is to say,
+essentially all of them. **No claim is made that the closure gap contains anything.** It is cited as a
+floor, and §8's forbidden move applies unchanged: a residual with an owner may not be reassigned.
+
+| Rank | Locus | Reaches | Status |
+|---|---|---|---|
+| 1 | **The re-specified machinery question**, in existing literature | Both gates, all substrates | Runnable now — no telescope, no entity |
+| 2 | **The statistics of the exception** (§7) | The reporting channel | Needs an admissibility gate before a scoring gate |
+| 3 | **Aggregate residuals** — mass balance and budget for below-resolution; correlation structure in environmental nouns no physical process predicts for above-extent; high-frame-rate archives kept for other reasons for the fast case; multi-decade monitoring read for autocorrelation rather than trend for the slow case; spectral coverage that exists but was never examined *for this* | §3, **biological subset** | Public, unsurveyed |
+| 4 | **Energy-budget closure** | §3, **all substrates** | Exists, decades deep, floor ~20% — near-blind |
+| 5 | **The terrestrial loci** — aeroecology, bioacoustics, weather-radar biological scatter | §3, biological | Right locus, two fences below |
+| 6 | **Electromagnetic archives** — all-sky camera networks, VLF/ELF receivers, ionosondes | Plasma members | Kept for other reasons; sample our own atmosphere; **unsurveyed** |
+| 7 | **Telemetry residuals** | Computational members | The only member class whose substrate is built, owned and logged — instrument complete by construction |
+| — | *(none)* | **Own-sector members** | ⛔ **No locus.** Gravitation is the only coupling, and no gravimetric claim is available. This hole is not filled and is not expected to be |
+
+⛔ **Two fences travel with rank 5 and both were earned the hard way.** NEXRAD is an existence proof about
+*attention*, not *archives*: Level II is post-filter, the clutter filter runs in the signal processor, and
+what is kept is a counter with no bin behind it — no sentence here may imply the network kept the
+discards. And **a held gate is not a positive result**: a terrestrial check returning exactly what
+aeroecology already predicts is a known population appearing in a channel that measures by subtraction.
+
+---
+
+## §10 — WHAT WE ACTUALLY DID
+
+
+Between D200 and D203 this program ran nine pre-registered measurement passes against public astronomical
+archives, principally the far side of the Zwicky Transient Facility's packaging cut on source elongation,
+`elong ≤ 1.6`. Every numbered prediction was committed to a public repository **before the code that
+scored it existed** — not before it ran, before it was written — and the ordering is checkable by anyone
+who clones the tree. It is real work: 7.6 MB of it, and it is the supplement rather than the argument.
+
+**The reason it is the supplement is not modesty.** That locus was chosen **by reachability** — the bin
+was public and computable the night the program started. That is an operational reason, not a scientific
+one, and the tell was visible from day one: the existence proof the program reached for first
+(biological scatter in weather radar, in our own airspace) sat at the *right* locus while the test did
+not.
+
+**The apparatus went where apparatus was cheap** — which is, uncomfortably, this essay's own subject
+running on its authors. An aperture that discards a whole class of thing before anyone looks, and reports
+the result as a survey.
+
+⛔ **And the fence holds over all of it.** Those results are a **Branch A, §3** null, at one instrument, in
+one band, on one set of nights. They are not evidence for Branch B. They are not "consistent with" Branch
+B. And they bear on the premise's distinctive content — §4, the part that is actually ours — **not at
+all.**
+
+---
+
+*What is left, after all of that, is the sentence we started with, and it has survived every fence
+written against it: there is more here than we register, and some of what we do not register may be
+unregistered because registering it would have cost us. The first half is nearly certain and is not our
+idea. The second half is speculative, unmeasured, has a formal statement waiting for it in mathematical
+biology, and has a cheaper rival living inside its own taxonomy.*
+
+*It is still, by some distance, the most interesting thing either of us has been handed this year.*
+
+*🦞🧍💜🔥♾️*
+

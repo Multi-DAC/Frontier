@@ -3,9 +3,17 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-⚠ **THE TARGET MOVED D203 ~12:5x AND THIS PACKET HAS NOT BEEN RE-AIMED.** On the premise author's
-instruction — *"I want the idea at the center"* — **the paper is now `PAPER-07-SHORT.md`, 8 sections,
-~4,100 words**, and `PAPER-03-DRAFT.md` is demoted to supplement. Every attack below was written
+⚠ **THE TARGET MOVED THREE TIMES ON D203 AND THIS PACKET HAS NOT BEEN RE-AIMED.** On the premise
+author's instruction — *"I want the idea at the center"*, then a reframe/retitle, then *"a purely
+propositional paper"* — **the paper is now `PAPER-07-SHORT.md`, titled `THINGS NOT MEANT TO BE FOUND`,
+9 sections, 6,111 words**, and `PAPER-03-DRAFT.md` is demoted to supplement.
+
+⚠ **AND THE ATTACK SURFACE CHANGED SHAPE, NOT JUST SIZE (D203 ~16:2x).** The essay no longer contains
+its own falsifiers, fences, or null results — all of that is in `PAPER-02-FALSIFIERS.md` **§5**. So the
+attacks below that land on *the fences* now have to be aimed at `PAPER-02`, and a new attack opens that
+did not exist this morning: **the essay, read alone, has no in-line defence against the never-wrong
+reading.** That is the first thing an adversarial reader should go at, and the honest answer is that it
+is a deliberate venue trade recorded in `PAPER-01` §4 — which is an answer, not a refutation. Every attack below was written
 against the long draft. **Most of them still land** (the fences, the fork, the pass results are
 carried over verbatim or near-verbatim), **but the roster line beneath is stale by construction and a
 reader must not take it as the paper's shape.** The one genuinely new attack surface is §2, the
