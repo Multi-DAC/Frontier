@@ -73,6 +73,12 @@ paper's existence proof, and our ZTF null is the paper's honesty.
 
 ## 2. SECTION MAP — HAVE / OWED, with the artifact named
 
+⭐ **D202 ~17:2x — §1, §2, §3, §4, §5 and §13 now EXIST AS PROSE**, not only as HAVE-rows pointing at
+source files: `PAPER-03-DRAFT.md` (`3362d1a`). Their "Rests on" column below is unchanged and still
+correct — the draft is *downstream* of those artifacts, and where the two disagree the artifact wins
+and the draft is the defect. ⚠ A HAVE-row means *the argument is supported*; it never meant *the
+citations are read*, and the draft's 12 owed markers are where that gap is now visible per-sentence.
+
 | § | Section | State | Rests on |
 |---|---|---|---|
 | **F** | ⭐ **FALSIFIERS — what would count as evidence against.** Sits **near the front**, after §1, *before* the evidence — not in a closing limitations paragraph, where a falsifier is a courtesy rather than a commitment | ✅ **HAVE**, written D202 ~15:4x | `PAPER-02-FALSIFIERS.md`. **Mandatory** per `PAPER-01-GENRE.md §4` — the genre's failure mode is unfalsifiability by construction and this premise explains its own absence of evidence. Six falsifiers **F1–F6** + the six forbidden moves + the paper's own stated death condition. **F6 has already fired on us** (NEXRAD kept a counter, not a bin) |
@@ -148,10 +154,22 @@ instructions after the thing that justified them has moved.
 3. §6 primary sources — the NEXRAD/aeroecology citations, because it is the paper's existence proof
    and currently its weakest citation.
 4. §12 second night, so reachability is a measurement rather than an anecdote.
-5. Draft §1–§5 and §13 **now**, in parallel with the compute — they are already fully supported and
-   they do not move on pass 7's result. Drafting them early also means the frame is fixed *before*
-   the last number lands, which is the only order in which a result cannot quietly choose its own
-   framing.
+5. ✅ **DONE D202 ~17:2x — `PAPER-03-DRAFT.md`, 5,123 words, pushed `3362d1a`, local==origin verified
+   by `ls-remote`.** §1, §2, §3, §4, §5 and §13 are prose at target register, drafted in parallel with
+   the compute as this item specified, so the frame is fixed *before* the last number lands — the only
+   order in which a result cannot quietly choose its own framing.
+   - ⚠ **DRAFTED IS NOT SOURCED.** The file carries **12 `[◐ CITATION OWED]` markers** — every claim in
+     it I believe and have not read at a primary source, chiefly §1.1's four adaptive-non-perception
+     literatures and §2's cryptic-species / dark-taxa / CPR / obscuration-series pointers. The marker
+     is designed so that removing it is a **hand** action that cannot happen by drafting past it. Item
+     3 below (§6's five primary sources) is a **subset of this debt, not a separate one**.
+   - ✅ Discharges `PAPER-01-GENRE.md` §1's stated obligation en route: Davies et al. 2009 is cited as
+     ancestor in §1.2 and differentiated on mechanism (**instruments** vs **the observer**), which the
+     genre file recorded as unstated with `grep` returning zero hits across this directory.
+   - ✅ Gauges run on the draft itself: **zero** occurrences of `frac_far` (§0's scalar ban), zero
+     Branch-B explanations of a Branch-A null (`PREREGISTRATION.md` §2), and §5 carries the survey's
+     per-row ✅/⚠/❓ grades through rather than flattening them.
+   - ⛔ **NOT drafted and deliberately so:** §6–§12, §14, §15. They still move.
 6. ⛔ **NOT** replication across years. Cost is measured (2019: 8.85 GB · 2022: 14.9 GB · 2026: 9.89
    GB by HTTP HEAD) and replicating a number that is two-thirds artefact buys nothing.
 
