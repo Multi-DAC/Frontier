@@ -241,12 +241,13 @@ mechanism does the work, the only ones predicting machinery rather than a hole.
 reasons we can most easily test are the six we did not invent, and the three we invented are the three
 where this paper reports no measurement at all.
 
-### 3.4 Two mechanisms the primary text supplied that this list does not cover — registered as debts, not added
+### 3.4 Three mechanisms with no home in (i)–(ix) — registered as debts, not added
 
-The D203 reading of *Chains of the Sea* (§4.4) turned up two mechanisms with no home in (i)–(ix).
-They are recorded here and **deliberately not promoted into the ranked list**, because an entry added
-after the ranking was fixed is an entry that was never ranked, and quietly widening a taxonomy to
-absorb whatever the newest source happened to contain is how a taxonomy stops being a claim.
+(A) and (B) came out of the D203 reading of *Chains of the Sea* (§4.4). (C) came out of the published
+*ignis fatuus* chemistry the same day, and is the only one of the three with a real-world referent.
+All three are recorded here and **deliberately not promoted into the ranked list**, because an entry
+added after the ranking was fixed is an entry that was never ranked, and quietly widening a taxonomy
+to absorb whatever the newest source happened to contain is how a taxonomy stops being a claim.
 
 **(A) The lapsed covenant.** In the novella the biome is not hidden and was never hidden. It is **out
 of contract**: *"There were many agreements, many Covenants that were made long ago. With Men,
@@ -262,6 +263,43 @@ shunned."* If contact is deviant on both sides, the rarity of the record is over
 selection pressure is not a human parochialism — which weakens any inference running from *the record
 is thin* to *humans suppress it*. **This is the more damaging of the two and it is registered as
 such:** it supplies an alternative explanation for our own central prediction's shape.
+
+**(C) Observer-coupled occurrence — and it arrives already contested, which is why it is a debt.**
+Pavão, Paiva & Bastos (*Química Nova* 2023, DOI 10.21577/0100-4042.20230002) describe *ignis fatuus*
+as a **cool flame of methane**: chemiluminescence rather than combustion heat, the characteristic blue
+from excited formaldehyde (CH₂O\*) formed in slow oxidation — and they argue from the energetics that
+the process is **"not spontaneous in nature."** It needs an igniter. Their historical arm is that
+19th-century experimenters ignited it with *torches*, and that **"the abandonment of fire in favor of
+night lighting may hold the secret to this mystery of ignis fatuus's extinction."** Under that
+reading the observer is not a detector at all — the observer is a **reagent**. Withdraw them and the
+phenomenon does not become hidden; it *stops occurring*. Every one of (i)–(ix) explains a failure to
+perceive an ongoing thing. This posits that the thing's occurrence was conditional on our practice,
+and it is the only mechanism on this page that predicts a **historical boundary** rather than a
+perceptual one.
+
+**Why it stays a debt: the newest work in that literature removes its load-bearing premise.** Xia,
+Zare *et al.* (PNAS 2025) report **micro-lightning between methane bubbles** — charge separating as
+bubbles approach, electrons jumping the gap, photons counted — supplying precisely the natural
+ignition Volta guessed at in 1776 and that Pavão *et al.* say is absent. If swamp methane ignites
+itself, the torch is unnecessary, and wetland drainage — dull, enormous, exhaustively documented —
+accounts for the modern null with no observer coupling at all.
+
+**What survives is a calibration, not a support, and it is worth more than the mechanism would have
+been.** *Ignis fatuus* is a real, non-fictional instance of this paper's §4.1 evidence class: a thick
+pre-modern first-person record, a modern null, no replicable capture — Garlaschelli stood in a
+graveyard with a collection device and caught nothing — and, after two and a half centuries of
+attention from competent chemists, **three live and unreconciled explanations** (chemical, electrical,
+sociological). That is what "a distribution of exceptions" looks like when a real field works a real
+case hard, with the right chemistry in hand and no shadow biome required. It does not converge. Any
+expectation that §4.1's exception-statistics will *settle* anything should be priced against that
+record, and §4.3's price paragraph is the place it belongs.
+
+⚠ **Limits, stated because this entry is one search old.** Abstract (publisher-deposited via Crossref)
+and secondary coverage read; the *Química Nova* full text returned 403/404 on four routes and is
+**UNREAD**. Citation counts are 1–2 — this is not a position the field has taken up. The PNAS result
+is a bubble-physics ignition mechanism, not a field-verified account of historical *ignis fatuus*; it
+is cited here for what it *removes* (the necessity of a human igniter), not as a refutation of Pavão
+*et al.*, which it does not claim to be.
 
 ---
 
