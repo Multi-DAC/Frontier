@@ -177,3 +177,110 @@ that the historical base rate for "breach a sensory bound, find something alread
 not low. Everything after this point is about whether *this* class has members, and the answer this
 program returns at its one deep locus is no.
 
+---
+
+## §3 — THE FORK, AND WHY IT IS WRITTEN BEFORE THE DATA
+
+This is the section we would most want another group to copy, and it is free.
+
+The premise has two live branches:
+
+**BRANCH A — device-renderable.** Members of the class that a built sensor *can* register. A CMOS, a
+bolometer, a hydrophone and a radar have no adaptive history with respect to anything; evolution
+shapes eyes, not sensors. If human non-perception is an evolved edit, silicon has no share in it.
+**This is the only branch under test by this program.**
+
+**BRANCH B — not device-renderable.** Members that no built sensor registers either.
+
+**Branch B is named here for one reason only: so that it cannot be used later as a destination.**
+
+### 3.1 The failure this prevents
+
+With both branches live and no fence between them, a null in A can be reassigned to B. *The camera
+saw nothing, so it must be the kind cameras cannot see.* Each half remains individually falsifiable.
+The pair becomes unfalsifiable.
+
+Three properties make that move dangerous rather than merely wrong:
+
+1. **It is silent.** No step in it is an error. Each sentence is defensible on its own.
+2. **It feels like reasoning.** It has the shape of an inference to the best explanation, and it
+   arrives with the satisfaction of one.
+3. **It happens after the data comes back** — which is precisely when the argument has acquired a
+   preference about the answer.
+
+⛔ **THE FORBIDDEN MOVE, pre-committed:** *a null result in Branch A stays in Branch A.* If an archive
+search comes back empty, that is evidence about Branch A and about nothing else. It may not be
+reported, framed, or privately understood as "consistent with Branch B." Branch B has no test in this
+program, so it can receive no evidence from it — **including the failures.** Any document in this line
+that explains a Branch-A null by appeal to Branch B is in violation of `PREREGISTRATION.md` §2, and
+that clause is the citation for saying so.
+
+### 3.2 Why the date on the file is the whole of its value
+
+The fork above was written before any detection data was examined — before a single image, waveform
+or catalogue row had been inspected, with only a survey of retention *policies* behind it. That
+ordering is stated plainly because **it is the thing a reader should be suspicious of**, and the only
+answer to the suspicion is a commit timestamp that precedes the code.
+
+We held it operationally rather than only in principle. Every measurement pass in §7–§11 was
+pre-registered in a file committed and pushed **before the script that scored it existed** — a
+condition we can demonstrate rather than assert, because absence of a file at a commit is checkable.
+The discipline had a measurable cost, which is the evidence that it was real: at least one pass
+forfeited a prediction on the way in, because the pre-registration's own §0 disclosed a prior peek at
+a catalogue statistic, and a quantity already seen may not be reported as a prediction that held.
+
+**A pre-registration that never costs you anything is not binding you.**
+
+### 3.3 The generalisation, stated at the level a reader can take away
+
+The transferable contribution is not the fork itself. It is the schema:
+
+> **Where a hypothesis has a fallback that can absorb its own disconfirmation, the fallback must be
+> named and fenced off before the data is seen, or the hypothesis is not being tested — it is being
+> illustrated.**
+
+This costs one paragraph, written early. The anomalous-phenomena literature, which is where a premise
+of this shape usually ends up, almost never pays it — and the absence of that paragraph is a
+sufficient explanation for why that literature does not converge.
+
+---
+
+## §4 — IMAGING VERSUS PERTURBATION
+
+The premise's device clause forces a distinction that is cheap, obvious once stated, and almost never
+made in the literature that most needs it. Two entirely different events are both reported as *"a
+device detected it"*:
+
+| | **IMAGING** | **PERTURBATION** |
+|---|---|---|
+| What happens | The device **renders** the thing. Photons in, structure out. | The device is **disturbed** and renders nothing legible. |
+| Product | A resolved object with morphology, position, spectrum | A dropout, an artefact, a glitch, a reading that should not be there |
+| Evidence grade | Can support an object claim | **Cannot** support an object claim on its own |
+| Dominant failure mode | Misclassification | Instrument fault, EMI, thermal, cosmic ray, software |
+
+⛔ **Every candidate this program produces is labelled IMAGING or PERTURBATION at the moment it is
+recorded, before any interpretation of it is written.** The label is assigned by what the instrument
+produced, not by what the analyst thinks it was.
+
+**A PERTURBATION-class candidate can never be promoted to an object claim by accumulation.** A
+thousand glitches are a thousand glitches. They are consistent with an object, and they are equally
+consistent with a shared instrumental cause, and the number of them carries no information about
+which — because the shared instrumental cause is exactly the hypothesis that predicts *many* of them.
+Promotion requires an independent **IMAGING** detection of the same thing, from an instrument on
+different physics.
+
+This is not a high standard. It is the standard that separates a discovery from an equipment problem,
+and it costs nothing but the discipline of writing one word beside each candidate at the time it is
+recorded rather than at the time it is argued about. **Most device anomalies in the anomalous-phenomena
+literature are of the second kind and are read as though they were the first**, and that single
+conflation accounts for a substantial fraction of the damage in that field.
+
+We flag one consequence for ourselves, because it constrains this paper more than it constrains
+anyone we are criticising: **the premise's own most suggestive prediction lives in the PERTURBATION
+column.** "It could explain anomalous device phenomena" (the premise's first extension) is precisely
+a claim about disturbances that render nothing legible. Under this section's rule, that is the class
+of evidence this program is *least* able to promote — and the rule was written before we noticed that,
+which is the only reason it can be trusted now.
+
+
+
