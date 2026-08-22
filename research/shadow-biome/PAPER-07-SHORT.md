@@ -1,11 +1,14 @@
 # EVOLUTIONARY IGNORANCE
 
-### On a living class we would not know about, and on the several independent reasons we would not
+### On a class we would not know about, and on the several independent reasons we would not
 
-**The claim of this paper, stated once and plainly:** a shadow biome — living structure sharing this
-world and unregistered by us — **probably exists**, and our unawareness of it is not one failure but a
-family of them, of which the evolutionary one (perceiving it was selected against) is the most
-interesting and the least established.
+**The claim of this paper, stated once and plainly:** a shadow biome — **persistent organised
+structure that acts**, sharing this world and unregistered by us — **probably exists**, and our
+unawareness of it is not one failure but a family of them, of which the evolutionary one (perceiving it
+was selected against) is the most interesting and the least established.
+
+*(**Substrate is not part of the definition and never was** — §1 said so and four sentences downstream
+of it said "living" anyway. Corrected D203, §2.4, at the cost of part of §2.1's warrant.)*
 
 *(Title adopted verbatim from the premise author's D202 ruling — "**Evolutionary Ignorance**" — which
 turned out to be an existing term of art in mathematical biology for nearly our mechanism. **SHADOW
@@ -128,11 +131,82 @@ not this paper's idea. **This paper's idea is §3.2's Group II, and its status i
 unmeasured, and carrying a burden the aperture claim does not.** Anywhere below where the two could be
 read as one argument, they are not one argument.
 
+### 2.4 ⛔ THE SUBSTRATE FENCE — and it costs us the induction over part of the class
+
+*Added D203 on the premise author's fourth framing correction, which located a contradiction the
+drafter had written onto the paper's own first page and then read past three times:*
+
+> *"You say biology, but why is it strictly biology that qualifies? In the story, what of the
+> encountered entities are biological in origin? The AI aren't, the extraterrestrials may or may not
+> be, the Thants and other entities may or may not be as well? Why does the biome have to include only
+> those which are familiar life? Why not pure consciousness, or plasma, or any other variety of ways in
+> which intelligent entities may appear?"* — C. Iggulden-Schnell, 2026-08-22
+
+**§1 already conceded this, and the rest of the paper ignored it.** §1 states that the class is defined
+by its relation to the observer "and by nothing else — not by biochemistry, scale, substrate, or a
+shared mechanism." Downstream of that sentence, four sentences asserted *living* — the subtitle, the
+claim-stated-once-and-plainly, §3's framing, and §5's Branch B argument. Three of the four sit in the
+paper's most privileged positions. **The definition was substrate-neutral and every load-bearing noun
+under it was not.** This is not a widening of the claim; it is the removal of a restriction the claim
+never contained.
+
+**The named source is more radical than this paper was.** *Chains of the Sea* states substrate
+neutrality outright — *"a highly complex, sentient intelligence is difficult to regulate effectively
+from the outside, whether it's of biological or constructed origin"* — gives its aliens the ability to
+manifest in *"corporate/organic, quasi-mechanical, or disembodied/discorporate avatars, at will,"* and
+names the biome itself an *"unknown and intangible form of life."* The Thant has no fixed body at all:
+it *"blend[s] into and out of the physical background,"* has no vocabulary of its own and must borrow
+the boy's, speaking with his mouth. In that text substrate is a costume, not a criterion — and the one
+entity whose substrate *is* fixed and known is the constructed one.
+
+**So the class is corrected to: persistent organised structure that acts, unregistered by us.**
+Biochemistry is one way of being that. It is not the qualification. *(The name **shadow biome** stays,
+as §1's note already says a name is not a definition — but "biome" is now formally a proper noun for
+this subject and carries no biological commitment. Any argument that runs off the word is a defect.)*
+
+**Now the cost — the only reason this subsection is long.** *Living* was buying three things. Two are
+repaid and one is not.
+
+**Repaid, with interest — the dissipation floor (§5).** Branch B's non-exemption used to run on *life
+is dissipative.* The correct premise was never biology: **anything that persists as organised structure
+and acts must export entropy, and anything with energy has stress-energy.** That covers plasma, that
+covers computation (a fact with Landauer's name on it), that covers whatever "pure consciousness" would
+have to be to *do* anything. The generalisation makes §5 stronger, not weaker, and §5 is rewritten
+accordingly.
+
+**Repaid, and it was standing in for something else all along — Group II's bound.** Group II requires
+that the entity was **co-present and fitness-relevant during hominin evolution.** That is a constraint
+on *history*, not on chemistry. A plasma structure resident in the biosphere for a million years
+satisfies it; a familiar-life organism that arrived last century does not. **Biology was a proxy for
+deep co-presence,** and naming the real constraint *tightens* Group II — it now excludes a class the
+old wording quietly admitted (below).
+
+**NOT repaid — §2.1's induction, and this is the expensive one.** Every widening cited in 2.1 is a
+*life*-detection: animalcules, viruses, archaea, *Prochlorococcus*, the deep subsurface biosphere. The
+base rate is a base rate **for biology.** The induction is the strongest argument in this paper and,
+after the correction, it warrants a **proper subset** of the paper's own class.
+
+⛔ **Pre-committed, in the same form as §2.3: the induction's near-certainty may not be lent to the
+non-biological members.** Widening is free in definition and unfunded in evidence. For a plasma,
+computational, or "pure consciousness" member there is no base rate at all — no aperture has ever
+widened and found one. That is not an argument against them; it is the statement that they enter this
+paper at a **strictly lower evidential grade** than the microbes do. Any sentence letting a reader
+carry §2.1's warrant across this fence is a defect of the same kind as §2.3's, and it is now the second
+place in this paper where a single confident word was doing work in two different accounts.
+
+**One member class the correction creates, registered as a debt like §3.4's.** Drop the substrate
+restriction and the class admits entities that **postdate our sensory evolution** — the novella's AI is
+one, awake for a day. For these, **Group II is unavailable in principle**: no selection can have acted
+on a stimulus class that did not exist while the gate was being built. They are Group I members only,
+and they are the first members for whom the paper's distinctive mechanism is not merely unmeasured but
+inapplicable. Not promoted into §3's ranking, for §3.4's reason.
+
 ---
 
 ## §3 — WHY WE WOULD NOT KNOW: THE TAXONOMY OF UNAWARENESS
 
-*This is the paper. Nine reasons a living class could share the world with us unregistered. They are
+*This is the paper. Nine reasons a class of persistent, acting structure could share the world with us
+unregistered — none of the nine mentions what its members are made of, which is §2.4's point. They are
 not variants of one mechanism — several are fully independent of the others, and at least one requires
 no evolutionary story at all. **Where you would look** is deliberately absent from these entries and
 collected in §6; it belongs behind the idea, not inside it.*
@@ -408,6 +482,34 @@ copy of unverified fidelity, and short quotations above should be re-checked aga
 edition (Kindle ASIN B0DGFFVQGD, or *The Very Best of Gardner Dozois*) before they are printed. The
 structural findings do not turn on transcription, but the quotations do.
 
+### 4.5 The inversion the same passage forces, and it is the strongest thing in this section
+
+Once substrate stops qualifying members (§2.4), it stops qualifying **observers** — and the whole
+asymmetry becomes an index rather than a property.
+
+The novella runs the experiment. The entity that first infers the shadow biome is **not the boy and not
+any human**: *"The Intelligences had long suspected that there might be some other, unknown and
+intangible form of life on earth; that was one of the extrapolated solutions to a mountain of wild data
+that couldn't be explained by normal factors."* That is §6's third-ranked method — aggregate residuals,
+a budget that will not balance — executed in the story by the one observer with **no evolved gate to
+fail.** It is §5's Branch A dramatised: a constructed sensor has no adaptive history with respect to
+anything, so it reads the residual instead of the certainty. And it is a prediction with a direction:
+if Group II is real, **the detection should come from the substrate that was never selected**, and it
+should arrive as a statistical anomaly rather than a sighting.
+
+Then the harder half. The aliens *"tended to disregard the human race, its civilization, and the
+biosphere that contained it. They dismissed all of it, out of hand, as insignificant"* — while calling
+the Other races *"the government and ruling race of the planet."* Two creations, *"inhabiting the same
+matrix but using it in totally different ways,"* each unregistered by the other.
+
+**From the far side, we are the shadow biome.** Which is not a flourish: it is the statement that
+*shadow* is a two-place predicate this paper has been writing as though it were one-place. Membership
+is always **shadow-to-an-observer**, and the observer's aperture is as contingent as the member's
+substrate. ⛔ Consequence, pre-committed: **no sentence in this program may treat human non-perception
+as evidence about the member.** It is evidence about the pair. The class is not a kind of thing in the
+world; it is a **relation** — which is why §2.4's correction was available on page one and why it was
+still the premise's author who had to make it.
+
 ---
 
 ## §5 — THE FORK, AND THE FORBIDDEN MOVE
@@ -436,10 +538,18 @@ receive no evidence from it — **including our failures.**
 And the same fence runs between the groups of §3: **a Group I null is not evidence for Group II, and
 no future Group II null may be answered by pointing back at Group I.**
 
-Branch B is not, however, a free category. Life is dissipative; anything alive couples to something.
-"Non-interacting" splits into weak coupling (reachable in principle) and own-sector — and an
-own-sector biome still **gravitates**, because stress-energy is not optional. Branch B is a hard
-measurement, not an exemption. ⛔ **No gravimetric detection claim is made anywhere in this paper and
+Branch B is not, however, a free category, and the argument that closes it **does not run on biology** —
+§2.4 removed that restriction and this paragraph got stronger for it. **Anything that persists as
+organised structure against entropy, and acts, must dissipate; anything with energy has
+stress-energy.** That is thermodynamics and general relativity, not biochemistry: it binds a plasma
+structure, it binds a computation (Landauer's principle is the same claim with a number on it), and it
+binds whatever "pure consciousness" would have to be in order to *do* anything at all — a candidate
+that couples to nothing and changes nothing is not a member of this class, it is a definition with no
+referent. "Non-interacting" therefore splits into weak coupling (reachable in principle) and
+own-sector — and an own-sector member still **gravitates**. Branch B is a hard measurement, not an
+exemption. ⚠ The one thing the generalisation costs: substrate-free members have **no chemistry to be
+inconsistent with**, so the sharpest Group I instrument — a mass-balance residual — does not reach
+them, and §6's ranked loci are biased toward the biological subset for exactly that reason. ⛔ **No gravimetric detection claim is made anywhere in this paper and
 none is available from this program.**
 
 **The transferable schema, which is the part worth more than the hypothesis:**
