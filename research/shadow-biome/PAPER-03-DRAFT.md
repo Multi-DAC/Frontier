@@ -1,4 +1,4 @@
-# SHADOW BIOME — DRAFT PROSE, §1–§6 and §13
+# SHADOW BIOME — DRAFT PROSE, §1–§6, §9 and §13
 
 *Drafted D202 / 2026-08-21 ~17:0x PT, midday-creation drive (deferred), on `PAPER-00-ARCHITECTURE.md`
 §4 item 5: **draft these now, in parallel with the compute**, because they do not move on any pass
@@ -15,8 +15,15 @@ before prose).
 ## HOW TO READ THIS FILE
 
 This is **prose at target register** — what goes in the paper, not another table about what will go
-in the paper. Seven sections are drafted here: §1, §2, §3, §4, §5, **§6**, §13. The empirical sections
-(§7–§12, §14, §15) are not, because they still move.
+in the paper. Eight sections are drafted here: §1, §2, §3, §4, §5, **§6**, **§9**, §13. The remaining
+empirical sections (§7, §8, §10, §11, §12, §14, §15) are not, because they still move.
+
+⚠ **§9 absorbed §9a.** The architecture carries the non-determinism finding as its own row, §9a. In
+prose it is §9.2, because a reader meeting *the number is not stable* as a separate section would
+reasonably ask why it is not part of *what the instrument did to the result*. The architecture's row
+is not deleted — it is the artifact, and this is the draft downstream of it. **Recorded rather than
+done silently**, since a section number that exists in one carrier and not the other is exactly the
+divergence this file spent the day repairing.
 
 Three conventions, and they are the whole reason this file can be trusted:
 
@@ -652,6 +659,125 @@ falsifier and a date, both of which are in §F.
 
 ---
 
+## §9 — WHAT THE INSTRUMENT DID TO THE RESULT
+
+*Drafted D202 ~23:0x PT. Every number in this section was read off the named JSON in the same
+breath that drafted it, not off the architecture's summary of it — one of the three was wrong in
+that summary and is corrected here.*
+
+In most papers this is a limitations paragraph, placed last, where a reader who has already formed
+a conclusion can skim it. Here it is a section, placed before the conclusion, and the reason is
+arithmetic rather than modesty: **the largest single number this program produced is a property of
+our own apparatus, not of the sky.** A limitations paragraph that contains the biggest effect in
+the paper is mis-filed.
+
+Three findings. The first is a parameter we chose. The second is a value that is not stable even
+with that parameter fixed. The third is a carrier that quietly serves a stale number to anyone who
+follows our own stated rule for reading numbers.
+
+### 9.1 The headline quantity is a curve, and we picked the point on it
+
+Source extraction takes a threshold, `minarea` — the minimum number of connected pixels above the
+noise that counts as a detection. It is ours. ZTF never imposed it, no pre-registration fixed it,
+and pass 5 set it to 5 because that is the library's default.
+
+Across `minarea` 2, 3, 5, 8, 12, the far-side fraction goes:
+
+| `minarea` | catalogue `n` | far-side fraction | recovery of injected sources |
+|---|---|---|---|
+| 2 | 14,202 | 0.5893 | 0.7314 |
+| 3 | 11,649 | 0.5070 | 0.6888 |
+| 5 | 8,526 | 0.4845 | 0.5931 |
+| 8 | 5,429 | 0.4830 | 0.5027 |
+| 12 | 3,100 | 0.5148 | 0.3617 |
+
+**Span: 0.10632** [✅ PRIMARY: `PASS6_DIAG.json` `/D2b/span` and `/D2b/ladder`, re-read D202].
+⛔ That span is larger than any effect reported anywhere in this paper, which is why
+`PAPER-00-ARCHITECTURE.md` §0 forbids this quantity from ever appearing as a scalar. It is a curve.
+Any single value of it is a statement about our threshold with an astronomical fact attached, and
+the order of those two clauses is the finding.
+
+**And the curve refuted its own prediction, in shape rather than in size.** Two of the three
+pre-committed sub-predictions about the ladder failed; one held [`PASS6_DIAG.json` `/D2b/D2b1`,
+`/D2b2`, `/D2b3`]. We had registered a monotone dependence. What came back falls from `minarea` 2
+to 8 and **turns back up at 12** — a U, and we had the direction wrong.
+
+⚠ **One restrained inference, marked as an inference.** The right-hand column moves monotonically
+across the same rungs — recovery of injected sources falls from 0.7314 to 0.3617 as the threshold
+rises, exactly as it must. So sensitivity is monotone in this parameter and the far-side fraction
+is not. That non-tracking is a reason not to read the far-side fraction as a pure sensitivity
+artefact; it is **not** a reason to read it as anything else, and no sentence in this paper does.
+
+### 9.2 With the parameter fixed, the number is still not fixed
+
+At `minarea = 5`, one quantity — the catalogue size on the same twenty frames — has been recorded
+by this program three times, in three artifacts, as three numbers:
+
+- **8,528** — pass 5's frozen catalogue, the one downstream passes were built not to re-extract
+- **8,526** — pass 6's diagnostic ladder at the same rung [`PASS6_DIAG.json` `/D2b/ladder/5/n`]
+- **8,524** — pass 8's structural run, one fresh process per image [`PASS8_NONDET.json` `/struct_M/n`]
+
+⚠ *A fourth and fifth value exist — pass 6's own two-code-path verification returned 8,523 and
+8,521 [`PASS6_VERIFY.json` `/V1`] — but that check ran a comparison whose population we have not
+established is identical to the three above, so it is reported and not counted.*
+
+⛔ **The cause we first published for this was wrong, and pass 8 killed it.** §9a as originally
+written called it *run-to-run non-determinism* in the extraction library. Tested at n = 20:
+**across fresh processes the spread is exactly zero on all twenty images.** The variation is
+**in-process** — repeated extractions inside one Python process — and it appears on **11 of 20**
+images, with a maximum spread of 5 detections on a single frame [`PASS8_NONDET.json`
+`/n_vary_fresh` = 0, `/n_vary_inproc` = 11]. We had pre-registered that it would be a *minority* of
+images. It is a majority. That prediction (N3) is refuted.
+
+**Every catalogue this program published was built by looping twenty images inside one process.**
+They all carry it. The published code, run as published, does not reproduce the published catalogue
+sizes — not because of randomness, but because a cached state inside the process accumulates across
+calls.
+
+⭐ **The section's conclusion survives its own mechanism's death, and that is the weakest kind of
+surviving.** The instruction — *round to where the runs agree; no digit past the second decimal is
+this program's to keep* — was right when it rested on a random library and is still right now that
+it rests on a stateful one. But the two diagnoses have opposite consequences. A random library is a
+fact you live with and report. An in-process cache is **a bug you fix**, and the fix is one line of
+process hygiene: one image per process, which is what returned the zero spread above. We would not
+have looked for a fix while the cause was labelled *random*. The label was doing work.
+
+### 9.3 The rule for reading our own numbers is inverted for at least one of them
+
+Pass 4's emitted JSON is stale against a correction that pass 4's own prose documents. Two alert
+packets violate the packaging bound `elong <= 1.6` and belong in the top elongation bin; the prose
+says so, and moves the boundary ratio from **0.2408** to **0.2416**. The JSON still reads `634` and
+`0.24078997341435623` [✅ PRIMARY: `PASS4_RESULTS.json` `/M2_bins/1.5-1.6` and `/M2_R`, against
+`PASS4_RESULTS.md` line 36, both re-read D202].
+
+The 0.0008 is not the point — the correction changes no verdict, and pass 4's prose says so in the
+sentence that makes it. **The point is the carrier.** This program's standing rule, written into
+`PASS5_RESULTS.md` after a superseded table was found sitting above its own correction and reading
+as current, is: *read numbers off the JSON, not off this prose.* For this value that rule is
+**inverted**, and a reader obeying it is handed the uncorrected number. A precedence rule with a
+permanent winner cannot express a correction that runs the other way.
+
+The repair is a sidecar, `CORRECTIONS.json`. The emitted artifacts are deliberately **not** mutated
+— editing them would destroy the only claim they make, which is *this is what the code produced* —
+so the supersession lives beside them with its authority named per row.
+
+⚠ **Stated as a limitation of the fix rather than as the fix:** a sidecar nobody is obliged to
+consult is a correction with a mechanism and no trigger. It has one reader, and the reader is us.
+Naming that here is the only enforcement it currently has.
+
+### 9.4 What this section costs, said plainly
+
+Of the four qualifiers this program's architecture named before drafting began — parameter-dependent,
+one-night, non-deterministic-library, JSON-stale-against-prose — **three are in this section and one
+of the three had its mechanism wrong until the eighth pass.** None of them were found by a referee.
+All of them were found by pre-committed diagnostics that had to be written before the code that
+scored them, and two of them were found by diagnostics whose *predictions failed*.
+
+That is the argument for the whole apparatus, and it is worth more to this paper than the null in
+§8: **a program that cannot refute itself cannot be trusted when it agrees with itself.**
+
+---
+
 ## §13 — WHAT THIS DOES AND DOES NOT BEAR ON
 
 This section is load-bearing and is placed after the evidence deliberately, so that it constrains the
@@ -720,8 +846,12 @@ it is the one commitment in this paper that costs us something no matter which w
 
 *Drafted D202. ⚠ **This line read "§6–§12, §14 and §15 are not drafted here" until ~21:5x, four
 hours after §6 was drafted into this very file** — a closing note describing the file's own contents
-and going stale against them without a character changing. Corrected state: **§7–§12, §14 and §15**
-are not drafted here because they still move. Every `[◐ CITATION
+and going stale against them without a character changing. **It went stale a SECOND time within two
+hours** — "§7–§12" was correct at 21:5x and false at 23:0x, because §9 was drafted into this file and
+§9 is inside that range. A range is the worst possible way to state a roster: it goes wrong without
+being touched, and it looks equally correct either way. Corrected state, stated as a **list** so the
+next drafting act has to edit it: **§7, §8, §10, §11, §12, §14 and §15** are not drafted here because
+they still move. Every `[◐ CITATION
 OWED]` in this file is a hand-deletable fence and none of them may be removed by anything except
 reading the source.*
 

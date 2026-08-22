@@ -194,7 +194,18 @@ instructions after the thing that justified them has moved.
    - ✅ Gauges run on the draft itself: **zero** occurrences of `frac_far` (§0's scalar ban), zero
      Branch-B explanations of a Branch-A null (`PREREGISTRATION.md` §2), and §5 carries the survey's
      per-row ✅/⚠/❓ grades through rather than flattening them.
-   - ⛔ **NOT drafted and deliberately so:** §7–§12, §14, §15. They still move. *(§15 is now OPENED
+   - ✅ **§9 + §9a DRAFTED D202 ~23:0x**, as prose §9 with four subsections (9.1 the `minarea` curve ·
+     9.2 the in-process instability, absorbing §9a · 9.3 the inverted read-the-JSON rule · 9.4 what the
+     section costs). Draft now **10,041 words** (`wc -w`, re-measured AFTER the last edit — the first
+     stamp said 9,880 and was written before three further edits landed, which is the same defect one
+     scale down). Every number re-read off its JSON in the drafting
+     breath rather than copied from this file — and **one of this file's own summaries was wrong**:
+     the §9a row here quotes the frozen-catalogue triple as 8528/8526/8524, which is right, but pass 6's
+     `V1` returns a *fourth and fifth* value (8523/8521) on a path this row does not mention. The draft
+     reports them and declines to count them, because their population is not established identical.
+   - ⛔ **NOT drafted and deliberately so:** §7, §8, §10, §11, §12, §14, §15. They still move.
+     *(This line read "§7–§12" until D202 ~23:1x. §9 and §9a are inside that range and are now prose.)*
+     *(§15 is now OPENED
      as of D202 ~18:4x — pre-registered, still undrafted. Opening ≠ drafting; the prereg must be
      committed and dated before a word of §15 prose exists.)*
      ⚠ **This line read "§6–§12" until D202 22:4x nav sync.** §6 was drafted at ~21:29 (`4e6dc99`,
