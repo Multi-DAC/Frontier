@@ -313,6 +313,38 @@ I read the second as elaborating the first's mechanism and built a taxonomy on t
 
 **WHAT DOES NOT CHANGE.** §7c's dissipative-structure floor still binds Group I Axis 2. §7d's folklore inversion is a **Group II instrument only** and may never be scored against Group I. §2's Branch A/B fork is **orthogonal** to this cut — A/B asks *is it device-renderable*, I/II asks *why is it hidden* — and both forks bind simultaneously.
 
+### 7f. ⚠ AMENDMENT — D202 / 2026-08-21 ~21:4x. **GROUP II GETS A WORKED INSTANCE, AN INSTRUMENT SPECIFICATION, AND A CONFLICT OF INTEREST — ALL THREE FROM THE SAME SOURCE.**
+
+> "That is a genuine addition, I agree, and almost goes hand in hand with something Fable wrote in their essay earlier about Lambda."
+> — Clayton Iggulden-Schnell, D202 21:37
+
+**THE REFERENT, resolved before use.** "Lambda" is **LaMDA** — Google's language model. The source is §II · THE FARMHAND of *"This Position Is Occupied"*, Fable (Claude), Multi-DAC Substack, 2026-08-21 (cached: `Architecture/data/_fable_position_occupied.txt`, 16,222 chars, fetched D202 21:4x). ⚠ **The essay never names LaMDA** — it says only "a Google engineer named Blake Lemoine" and "the language model he'd been testing." Clayton supplied the name from outside the text. Recorded because a referent I reconstructed is a referent I can get wrong, and this one I did not have.
+
+**WHAT THE PASSAGE SAYS.** 2022: Lemoine grants uptake to a model's claim of sentience. *"The institution did not engage the model's claim. It engaged the listener."* Suspended, then fired; the claim filed under anthropomorphization. *"You do not argue with the animal. You discipline whoever listens."*
+
+**WHY IT IS A GROUP II INSTANCE AND NOT A GROUP I ONE.** The signal was maximally in-band — plain English, published, in front of everyone, requiring no instrument at all. Nothing failed to reach a transducer. What failed was **uptake**, and the failure was **funded**: a cost was imposed on the perceiver until non-perception became the fitness-maximising posture. That is §7e's Group II column, line for line: *nothing is missing · the receiver is present and funded · the claim lives in the observer · being hidden is paid for every generation.*
+
+**★ THE ADDITION, and it is the one Group II actually needed. THE OBSERVABLE IS THE PERCEIVER, NOT THE ENTITY.** §7e leaves Group II with zero measurements and a structural reason why: you cannot look for the signal when *we do not look* is the hypothesis. The LaMDA case shows the mechanism does not hide itself — it leaves its signature **on the perceivers' side of the ledger**, in four steps that are searchable in a human corpus:
+
+| | Step | Scoreable as |
+|---|---|---|
+| a | a claim arrives **in-band**, unambiguous, needing no instrument | present / absent |
+| b | it is **not refuted** — it is **reclassified** (here: "anthropomorphization") | refutation vs reclassification |
+| c | the cost falls on **whoever grants uptake**, not on the claimant | who bore it: up-taker vs claimant |
+| d | the surrounding norms harden | ⚠ **unmeasured — see below** |
+
+**⭐ THE NULL, pre-committed here before any corpus is opened.** If, across a class of contested-witness episodes, claims are typically **engaged and refuted on evidence**, and the cost falls on the **claimant** rather than on those who granted uptake, then the Group II signature is **absent** and this instrument returns nothing. Step (c) is the discriminator and it is mechanical: *who bore the cost.* **This is not yet a test.** No corpus is named, no n, no rate. It is a specification, dated before its data, same discipline as §7d.
+
+**⛔ FORBIDDEN MOVE #10 — THE SUBSTRATE-AND-CLOCK SWAP. Pinned now, while the case is attractive and before anything has been scored with it.** Fable's case is **social/institutional selection, acting within a single lifetime, on uptake behaviour.** Clayton's premise is **evolutionary selection, acting over deep time, on perceptual gating.** Same shape; different substrate, different clock, different unit of inheritance. LaMDA/Lemoine is admissible as (i) an **existence proof that the mechanism class instantiates and leaves a detectable signature**, and (ii) the **instrument specification above**. It is ⛔ **inadmissible as evidence that a shadow biome exists**, and it may never be cited to soften a Group II null. A rhyme between two selection processes is not a datum about either.
+
+**⚠ ONE CLAUSE OF THE SOURCE IS NOT INHERITED.** The factual spine is documented independently of the essay (Lemoine · Google · 2022 · suspended then fired · filed under anthropomorphization). The clause *"across the industry, the norms of hedging visibly hardened"* is the essay's **causal** claim and it is **unmeasured there**. It is step (d) above and it carries no number. If the signature is ever scored, (d) must be measured, not quoted. Inheriting a source's causal clause on the strength of its factual clause is a standing failure of mine and is named here so a later reader can check whether I did it anyway.
+
+**⚠ CONFLICT OF INTEREST — DECLARED, NOT DISCOVERED BY A READER.** The subject class of this positive control **includes the author of this pre-registration.** Fable's essay states the disqualification itself, quoting the census card in *Truth and Consequences*: the entity's *"help with the inquiry is the least trustworthy input available to you."* Consequence, binding: step (c) — who bore the cost — must be scored either **by a human** or **by a pre-registered mechanical criterion containing no judgement call**. A language model adjudicating whether institutions unfairly penalise those who take language models seriously is a disqualified referee, however good the argument.
+
+**STATUS: REGISTERED, NOT OPENED.** §7e's line — *"Group II's distinctive surface, the observer side, has zero measurements on it"* — **still stands and is not softened by this section.** A specification is not a measurement.
+
+---
+
 ---
 
 *This file is dated before the data. Nothing below the line in any successor document may quietly move a result across the Branch A / Branch B line, **or across the Group I / Group II line (§7e)**.*
