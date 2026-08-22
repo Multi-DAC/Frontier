@@ -1,0 +1,150 @@
+==============================================================================
+P0  REPRODUCTION CONTROL -- P_D built independently as ~paired
+==============================================================================
+  union   n =   8528   frac_far = 0.484991
+  P_D     n =   3870   frac_far = 0.422997   move = -6.199 pp
+  mutual opposite pairs = 2329   members = 4658
+  P0 -> HOLDS   (excluded from the held-total, prereg sec.5)
+
+==============================================================================
+P5/P6  THE V2 OPPOSITION ANALYSIS, RE-RUN ON THE P_D SURVIVORS
+==============================================================================
+  -- union (reproduce PASS6_VERIFY.json /V2, a declared peek, not scored) --
+  union far  : anchors= 4136 paired= 2828  opp_rate= 96.25%  null= 47.21%  excess= +49.04 pp  share_of_side= 65.81%
+  union kept : anchors= 4392 paired= 2309  opp_rate= 97.31%  null= 43.39%  excess= +53.93 pp  share_of_side= 51.16%
+  -- P_D survivors (NEW -- this is what P5/P6 are scored on) --
+  P_D   far  : anchors= 1637 paired=  149  opp_rate= 40.27%  null= 35.79%  excess=  +4.48 pp  share_of_side=  3.67%
+  P_D   kept : anchors= 2233 paired=   75  opp_rate= 33.33%  null= 24.33%  excess=  +9.01 pp  share_of_side=  1.12%
+
+  far-minus-kept share : union +14.65 pp  ->  P_D +2.55 pp   (P5 threshold <= +5.0)
+  far-side opp excess  : union +49.04 pp  ->  P_D +4.48 pp   (P6 threshold <  +20.0)
+  P5 -> HELD    P6 -> HELD
+
+==============================================================================
+S   SCRAMBLE CONTROL -- shown the case where pair_mask SHOULD find nothing
+==============================================================================
+    >> FIND-TIME DEFECT DEF-13: the first draft of the S-NULL gate compared SG to itself (np.array_equal(np.sort(SG), np.sort(SG))) and compared frac_far(union) to a quantity the scramble never touches -- it could not have failed
+  offset ( +40,  +0)  pairs=   42  survivors= 8444  frac_far=0.484131  move= -0.086 pp
+  offset ( -40,  +0)  pairs=   46  survivors= 8436  frac_far=0.485064  move= +0.007 pp
+  offset (  +0, +40)  pairs=   40  survivors= 8448  frac_far=0.485204  move= +0.021 pp
+  offset (  +0, -40)  pairs=   40  survivors= 8448  frac_far=0.485204  move= +0.021 pp
+  offset ( +40, +40)  pairs=   44  survivors= 8440  frac_far=0.485071  move= +0.008 pp
+  offset ( +40, -40)  pairs=   41  survivors= 8446  frac_far=0.485318  move= +0.033 pp
+  offset ( -40, +40)  pairs=   46  survivors= 8436  frac_far=0.485183  move= +0.019 pp
+  offset ( -40, -40)  pairs=   38  survivors= 8452  frac_far=0.484974  move= -0.002 pp
+
+  median scrambled pairs = 41.5  = 1.8% of the observed 2329   (S1 threshold <= 50%)
+  median |move| = 0.020 pp  against the observed 6.199 pp   (S2 threshold <= 2.0)
+  S-NULL -> PASS    S1 -> HELD    S2 -> HELD
+
+==============================================================================
+P1-P4  P_D OVER THE minarea LADDER  (re-extraction, 20 images)
+==============================================================================
+    526_zr_c01_o_q1_scimrefd done
+    577_zr_c02_o_q4_scimrefd done
+    576_zr_c05_o_q2_scimrefd done
+    525_zr_c06_o_q4_scimrefd done
+    524_zr_c08_o_q2_scimrefd done
+    575_zr_c10_o_q1_scimrefd done
+    672_zr_c11_o_q4_scimrefd done
+    531_zr_c05_o_q4_scimrefd done
+    580_zr_c05_o_q4_scimrefd done
+    628_zr_c11_o_q1_scimrefd done
+    533_zr_c09_o_q2_scimrefd done
+    631_zr_c12_o_q3_scimrefd done
+    482_zr_c09_o_q1_scimrefd done
+    590_zr_c13_o_q4_scimrefd done
+    687_zr_c14_o_q1_scimrefd done
+    591_zg_c12_o_q1_scimrefd done
+    639_zg_c15_o_q3_scimrefd done
+    539_zg_c09_o_q4_scimrefd done
+    640_zg_c02_o_q3_scimrefd done
+    687_zg_c07_o_q2_scimrefd done
+
+   minarea       n  pairs  p_share  ff_union    ff_P_D  move_pp  ff_pairs  pairs_pp
+         2   14202   3890   0.5478  0.589283  0.594052   +0.477  0.585347    -0.394
+         3   11649   3221   0.5530  0.506996  0.461686   -4.531  0.543620    +3.662
+         5    8526   2330   0.5466  0.484518  0.421366   -6.315  0.536910    +5.239
+         8    5429   1351   0.4977  0.482962  0.426109   -5.685  0.540340    +5.738
+        12    3100    689   0.4445  0.514839  0.500581   -1.426  0.532656    +1.782
+
+  P1 rungs with frac_far(P_D) < union      : 4/5  (need >= 4)
+  P2 rungs with |move| >= 3.0 pp          : 3/5  (need >= 3)
+  P3 rungs with frac_far(pairs) > union    : 4/5  (need >= 4)
+  P4 pair_share  minarea=2 0.5478  vs  minarea=12 0.4445
+  P1 -> HELD
+  P2 -> HELD
+  P3 -> HELD
+  P4 -> HELD
+
+==============================================================================
+C   A citable() THAT CAN FAIL -- positive control first
+==============================================================================
+  REJECTED         file:NO_SUCH_FILE.md
+  REJECTED         line:measure_pass8.py:999999
+  REJECTED         line:measure_pass8.py:1|ZZZ_NOT_IN_THIS_LINE
+  REJECTED         json:PASS8_RESULTS.json:/no/such/pointer
+  REJECTED         json:NO_SUCH_FILE.json:/D1
+  REJECTED         file:PASS8_RESULTS.md|ZZZ_NOT_IN_THIS_FILE
+  C1 rejected 6/6 known-bad citations
+  C1 GATE -> FIRES
+
+  legacy rows: 12   FAIL anchoring: 3 ['DEF-01', 'DEF-10', 'DEF-12']
+  rows pass 8 called citable that anchoring rejects: ['DEF-01', 'DEF-10', 'DEF-12']
+    UNCITABLE  DEF-01  file:L1_T5_CANDIDATE.md|el_match
+    UNCITABLE  DEF-10  line:diag_pass6.py:114|Background
+    UNCITABLE  DEF-12  line:pass6_stats.py:1|re-run
+
+  C2  DEF-10 fails: True   DEF-04 survives: True   DEF-02 survives: True
+  C2 -> HELD    C3 -> HELD  (3 failing)
+    >> FIND-TIME DEFECT DEF-14: citation rot in DEFECT_REGISTER: 3 of 12 legacy rows cite a location that no longer contains what the row describes (['DEF-01', 'DEF-10', 'DEF-12'])
+
+==============================================================================
+F   found_by AT FIND TIME -- and the retirement of G1
+==============================================================================
+  find-time rows produced by pass 9 : 2   (F1 threshold < 6)
+    DEF-13  [eye/find-time]  the first draft of the S-NULL gate compared SG to itself (np.array_equal(np.sort(SG), np
+    DEF-14  [gauge/find-time]  citation rot in DEFECT_REGISTER: 3 of 12 legacy rows cite a location that no longer cont
+  F1 -> HELD
+  RETIRED -- n_findtime = 2 is under the floor.
+  The eye-vs-gauge ratio is UNMEASURED.
+  Pass 8's G1 was computed on a backfilled, self-generated denominator and does not survive into the paper.
+  DEFECT_REGISTER.json rewritten: 14 rows (12 backfilled, 2 find-time)
+
+==============================================================================
+R4-CONTROL  inject a duplicate triple into a COPY of pass 9's own verdicts
+==============================================================================
+  COLLISION  C1 and ZZ-INJECTED on ('n_known_bad_rejected', 6.0, '==')
+  duplicate of C1 injected; R4 fires -> YES
+  R4 on pass 9's own verdicts: CLEAN
+
+==============================================================================
+R2  UNEXERCISED-PRECONDITION GAUGE
+==============================================================================
+  C1_known_bad                     in=      6 kept=      0 rejected=      6
+  C_anchored_resolves              in=     12 kept=      9 rejected=      3
+  P0_pair_removal                  in=   8528 kept=   3870 rejected=   4658
+  P_b_positive_minarea12           in=   3100 kept=   3100 rejected=      0  <== REJECTED NOTHING
+  P_b_positive_minarea2            in=  14202 kept=  14202 rejected=      0  <== REJECTED NOTHING
+  P_b_positive_minarea3            in=  11649 kept=  11649 rejected=      0  <== REJECTED NOTHING
+  P_b_positive_minarea5            in=   8526 kept=   8526 rejected=      0  <== REJECTED NOTHING
+  P_b_positive_minarea8            in=   5429 kept=   5429 rejected=      0  <== REJECTED NOTHING
+  S_null_offset                    in=     32 kept=      0 rejected=     32
+  S_scramble_pairs                 in=  68224 kept=  67550 rejected=    674
+
+  !! R3 WARNING: 5 precondition(s) rejected NOTHING:
+     - P_b_positive_minarea12
+     - P_b_positive_minarea2
+     - P_b_positive_minarea3
+     - P_b_positive_minarea5
+     - P_b_positive_minarea8
+
+==============================================================================
+=== 11/11 pre-registered predictions HELD   (0 refuted, 0 unscored) ===
+    excluded from the total: ['C1', 'P0', 'R4-CONTROL', 'S-NULL']  (prereg sec.5)
+    P0 reproduction : HOLDS
+    S-NULL gate     : PASS
+    C1 gate         : FIRES
+    R4-CONTROL      : FIRED
+wrote PASS9_RESULTS.json + DEFECT_REGISTER.json
+R1 satisfied: a verdict key exists for every registered prediction letter

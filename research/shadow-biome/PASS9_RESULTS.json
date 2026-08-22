@@ -1,0 +1,608 @@
+{
+  "prereg": "PASS9_PREDICTIONS.md",
+  "prereg_commit": "32877a0",
+  "P0": {
+    "n_union": 8528,
+    "frac_far_union": 0.4849906191369606,
+    "n_PD": 3870,
+    "frac_far_PD": 0.4229974160206718,
+    "move_pp": -6.199320311628881,
+    "n_pairs": 2329,
+    "expected_n": 3870,
+    "expected_ff": 0.422997,
+    "reproduced": true
+  },
+  "P5P6": {
+    "union": {
+      "far": {
+        "anchors": 4136,
+        "paired": 2828,
+        "paired_share": 0.683752417794971,
+        "opp_rate": 0.9625176803394625,
+        "null": 0.4720682970504571,
+        "med_delta": 77.87172916997415,
+        "opp_share_of_side": 0.6581237911025145
+      },
+      "kept": {
+        "anchors": 4392,
+        "paired": 2309,
+        "paired_share": 0.525728597449909,
+        "opp_rate": 0.9731485491554785,
+        "null": 0.4338610452338994,
+        "med_delta": 69.79902402539268,
+        "opp_share_of_side": 0.5116120218579235
+      }
+    },
+    "P_D": {
+      "far": {
+        "anchors": 1637,
+        "paired": 149,
+        "paired_share": 0.09102015882712279,
+        "opp_rate": 0.40268456375838924,
+        "null": 0.35785262427325276,
+        "med_delta": 59.64160529459639,
+        "opp_share_of_side": 0.03665241295051924
+      },
+      "kept": {
+        "anchors": 2233,
+        "paired": 75,
+        "paired_share": 0.03358710255261979,
+        "opp_rate": 0.3333333333333333,
+        "null": 0.24325272598444186,
+        "med_delta": 57.08326147947896,
+        "opp_share_of_side": 0.011195700850873265
+      }
+    },
+    "far_minus_kept_union_pp": 14.651176924459097,
+    "far_minus_kept_PD_pp": 2.5456712099645977,
+    "far_excess_union_pp": 49.04493832890054,
+    "far_excess_PD_pp": 4.483193948513647
+  },
+  "S": {
+    "offsets": [
+      {
+        "dx": 40,
+        "dy": 0,
+        "n_pairs": 42,
+        "n_survivors": 8444,
+        "frac_far": 0.48413074372335385,
+        "move_pp": -0.08598754136067699
+      },
+      {
+        "dx": -40,
+        "dy": 0,
+        "n_pairs": 46,
+        "n_survivors": 8436,
+        "frac_far": 0.4850640113798009,
+        "move_pp": 0.007339224284025336
+      },
+      {
+        "dx": 0,
+        "dy": 40,
+        "n_pairs": 40,
+        "n_survivors": 8448,
+        "frac_far": 0.4852035984848485,
+        "move_pp": 0.02129793478878872
+      },
+      {
+        "dx": 0,
+        "dy": -40,
+        "n_pairs": 40,
+        "n_survivors": 8448,
+        "frac_far": 0.4852035984848485,
+        "move_pp": 0.02129793478878872
+      },
+      {
+        "dx": 40,
+        "dy": 40,
+        "n_pairs": 44,
+        "n_survivors": 8440,
+        "frac_far": 0.48507109004739335,
+        "move_pp": 0.008047091043272836
+      },
+      {
+        "dx": 40,
+        "dy": -40,
+        "n_pairs": 41,
+        "n_survivors": 8446,
+        "frac_far": 0.4853184939616386,
+        "move_pp": 0.03278748246779983
+      },
+      {
+        "dx": -40,
+        "dy": 40,
+        "n_pairs": 46,
+        "n_survivors": 8436,
+        "frac_far": 0.4851825509720247,
+        "move_pp": 0.019193183506405198
+      },
+      {
+        "dx": -40,
+        "dy": -40,
+        "n_pairs": 38,
+        "n_survivors": 8452,
+        "frac_far": 0.4849739706578325,
+        "move_pp": -0.0016648479128134053
+      }
+    ],
+    "median_pairs": 41.5,
+    "observed_pairs": 2329,
+    "frac_of_observed": 0.017818806354658653,
+    "median_abs_move_pp": 0.02024555914759696,
+    "null_ok": true
+  },
+  "ladder": {
+    "rungs": {
+      "2": {
+        "n": 14202,
+        "n_pairs": 3890,
+        "pair_share": 0.5478101675820307,
+        "frac_far_union": 0.5892831995493593,
+        "frac_far_PD": 0.5940516972905637,
+        "move_pp": 0.47684977412044693,
+        "frac_far_pairs": 0.5853470437017995,
+        "pairs_move_pp": -0.3936155847559797,
+        "p1": false,
+        "p2": false,
+        "p3": false
+      },
+      "3": {
+        "n": 11649,
+        "n_pairs": 3221,
+        "pair_share": 0.5530088419606833,
+        "frac_far_union": 0.5069963086960254,
+        "frac_far_PD": 0.46168619166506625,
+        "move_pp": -4.531011703095916,
+        "frac_far_pairs": 0.5436199937907482,
+        "pairs_move_pp": 3.66236850947228,
+        "p1": true,
+        "p2": true,
+        "p3": true
+      },
+      "5": {
+        "n": 8526,
+        "n_pairs": 2330,
+        "pair_share": 0.5465634529673938,
+        "frac_far_union": 0.48451794510907814,
+        "frac_far_PD": 0.42136575271598553,
+        "move_pp": -6.315219239309261,
+        "frac_far_pairs": 0.5369098712446352,
+        "pairs_move_pp": 5.239192613555704,
+        "p1": true,
+        "p2": true,
+        "p3": true
+      },
+      "8": {
+        "n": 5429,
+        "n_pairs": 1351,
+        "pair_share": 0.4976975501934058,
+        "frac_far_union": 0.4829618714312028,
+        "frac_far_PD": 0.42610927759442613,
+        "move_pp": -5.685259383677666,
+        "frac_far_pairs": 0.540340488527017,
+        "pairs_move_pp": 5.737861709581421,
+        "p1": true,
+        "p2": true,
+        "p3": true
+      },
+      "12": {
+        "n": 3100,
+        "n_pairs": 689,
+        "pair_share": 0.44451612903225807,
+        "frac_far_union": 0.5148387096774194,
+        "frac_far_PD": 0.5005807200929152,
+        "move_pp": -1.4257989584504194,
+        "frac_far_pairs": 0.532656023222061,
+        "pairs_move_pp": 1.7817313544641555,
+        "p1": true,
+        "p2": false,
+        "p3": true
+      }
+    },
+    "n_p1": 4,
+    "n_p2": 3,
+    "n_p3": 4,
+    "pair_share_lo": 0.5478101675820307,
+    "pair_share_hi": 0.44451612903225807,
+    "p1_p3_disagree": []
+  },
+  "C": {
+    "known_bad": [
+      "file:NO_SUCH_FILE.md",
+      "line:measure_pass8.py:999999",
+      "line:measure_pass8.py:1|ZZZ_NOT_IN_THIS_LINE",
+      "json:PASS8_RESULTS.json:/no/such/pointer",
+      "json:NO_SUCH_FILE.json:/D1",
+      "file:PASS8_RESULTS.md|ZZZ_NOT_IN_THIS_FILE"
+    ],
+    "n_rejected": 6,
+    "legacy": [
+      {
+        "id": "DEF-01",
+        "pass_": "L1",
+        "found_by": "eye",
+        "what": "el_match True 8/8 with n_dropped 0 -- a precondition that never rejected",
+        "cite": "file:L1_T5_CANDIDATE.md",
+        "anchor": "el_match",
+        "found_at": "passL1",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "file:L1_T5_CANDIDATE.md|el_match",
+        "citable_pass8_rule": true,
+        "citable_anchored": false
+      },
+      {
+        "id": "DEF-02",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "o['b'] > 0 rejected 0 objects at all five minarea rungs",
+        "cite": "json:PASS7_RESULTS.json:/I/unexercised",
+        "anchor": null,
+        "found_at": "pass7",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "json:PASS7_RESULTS.json:/I/unexercised",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-03",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "NO_POSITION branch never executes -- every alert carries x/y",
+        "cite": "json:PASS7_RESULTS.json:/I/rejection_table/C_alert_has_position",
+        "anchor": null,
+        "found_at": "pass7",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "json:PASS7_RESULTS.json:/I/rejection_table/C_alert_has_position",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-04",
+        "pass_": "7",
+        "found_by": "eye",
+        "what": "I1 and I2 set to the SAME boolean -- the gauge grades its own success",
+        "cite": "line:measure_pass7.py:352",
+        "anchor": "I1",
+        "found_at": "pass7",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "line:measure_pass7.py:352|I1",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-05",
+        "pass_": "4",
+        "found_by": "eye",
+        "what": "PASS4_RESULTS.json stale against the prose that documents its correction",
+        "cite": "file:CORRECTIONS.json",
+        "anchor": "PASS4_RESULTS",
+        "found_at": "pass4",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "file:CORRECTIONS.json|PASS4_RESULTS",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-06",
+        "pass_": "7",
+        "found_by": "eye",
+        "what": "sep 'non-determinism' contradicted by exact 5-rung reproduction a day later",
+        "cite": "json:PASS7_DIAG.json:/Q2/same_process",
+        "anchor": null,
+        "found_at": "pass7",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "json:PASS7_DIAG.json:/Q2/same_process",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-07",
+        "pass_": "6",
+        "found_by": "eye",
+        "what": "PASS6_RESULTS vs PASS6_DIAG frac_far differ 0.047 pp at the SAME minarea",
+        "cite": "json:PASS6_DIAG.json:/D2b/ladder/5/frac_far",
+        "anchor": null,
+        "found_at": "pass6",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "json:PASS6_DIAG.json:/D2b/ladder/5/frac_far",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-08",
+        "pass_": "7",
+        "found_by": "gauge",
+        "what": "7(a) is the wrong operation -- caught by B2, a pre-committed agreement control",
+        "cite": "json:PASS7_RESULTS.json:/B/b2_gap_pp",
+        "anchor": null,
+        "found_at": "pass7",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "json:PASS7_RESULTS.json:/B/b2_gap_pp",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-09",
+        "pass_": "8",
+        "found_by": "eye",
+        "what": "the owed 'third procedure' is degenerate: P_C == P_A as a set",
+        "cite": "file:PASS8_PREDICTIONS.md",
+        "anchor": "P_C",
+        "found_at": "pass8",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "file:PASS8_PREDICTIONS.md|P_C",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-10",
+        "pass_": "8",
+        "found_by": "eye",
+        "what": "PASS8_PREDICTIONS N4's rationale mis-states BOTH structures: both compute Background inside the sign loop; the real difference is the extra bkg0 call and diag's FIVE extracts from one prep",
+        "cite": "line:diag_pass6.py:114",
+        "anchor": "Background",
+        "found_at": "pass8",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "line:diag_pass6.py:114|Background",
+        "citable_pass8_rule": true,
+        "citable_anchored": false
+      },
+      {
+        "id": "DEF-11",
+        "pass_": "6a",
+        "found_by": "eye",
+        "what": "PAPER-00 sec.2 row 6a read 'PRE-REGISTERED, NOT RUN' for ~3h after L1 landed",
+        "cite": "file:PAPER-00-ARCHITECTURE.md",
+        "anchor": "PRE-REGISTERED, NOT RUN",
+        "found_at": "pass6a",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "file:PAPER-00-ARCHITECTURE.md|PRE-REGISTERED, NOT RUN",
+        "citable_pass8_rule": true,
+        "citable_anchored": true
+      },
+      {
+        "id": "DEF-12",
+        "pass_": "6",
+        "found_by": "eye",
+        "what": "pass6_stats.py's re-run-and-diff gauge cannot fail a correct refactor -- it can only ever render one verdict",
+        "cite": "line:pass6_stats.py:1",
+        "anchor": "re-run",
+        "found_at": "pass6",
+        "found_by_provenance": "backfilled",
+        "cite_anchored": "line:pass6_stats.py:1|re-run",
+        "citable_pass8_rule": true,
+        "citable_anchored": false
+      }
+    ],
+    "failed": [
+      "DEF-01",
+      "DEF-10",
+      "DEF-12"
+    ],
+    "loosened_by_pass8_rule": [
+      "DEF-01",
+      "DEF-10",
+      "DEF-12"
+    ]
+  },
+  "F": {
+    "n_findtime": 2,
+    "n_backfilled": 12,
+    "findtime_rows": [
+      {
+        "id": "DEF-13",
+        "pass_": "9",
+        "found_by": "eye",
+        "found_at": "pass9",
+        "found_by_provenance": "find-time",
+        "what": "the first draft of the S-NULL gate compared SG to itself (np.array_equal(np.sort(SG), np.sort(SG))) and compared frac_far(union) to a quantity the scramble never touches -- it could not have failed",
+        "cite": "file:measure_pass9.py|S_null_offset",
+        "anchor": "S_null_offset",
+        "why": "caught by reading the block before running it; the repair is the positives-untouched / negatives-moved / in-range triple now in place"
+      },
+      {
+        "id": "DEF-14",
+        "pass_": "9",
+        "found_by": "gauge",
+        "found_at": "pass9",
+        "found_by_provenance": "find-time",
+        "what": "citation rot in DEFECT_REGISTER: 3 of 12 legacy rows cite a location that no longer contains what the row describes (['DEF-01', 'DEF-10', 'DEF-12'])",
+        "cite": "json:PASS9_RESULTS.json:/C",
+        "anchor": "C3",
+        "why": "found by the anchored citable(), which is a gauge, at run time"
+      }
+    ],
+    "g1_state": "RETIRED -- n_findtime = 2 is under the floor. The eye-vs-gauge ratio is UNMEASURED. Pass 8's G1 was computed on a backfilled, self-generated denominator and does not survive into the paper."
+  },
+  "R4": {
+    "collisions": [],
+    "ok": true,
+    "control_fired": true,
+    "injected_duplicate_of": "C1"
+  },
+  "unexercised": [
+    "P_b_positive_minarea12",
+    "P_b_positive_minarea2",
+    "P_b_positive_minarea3",
+    "P_b_positive_minarea5",
+    "P_b_positive_minarea8"
+  ],
+  "rejections": {
+    "P0_pair_removal": {
+      "n_in": 8528,
+      "n_kept": 3870,
+      "n_rejected": 4658,
+      "note": "P_D drops BOTH members of every mutual opposite pair"
+    },
+    "S_null_offset": {
+      "n_in": 32,
+      "n_kept": 0,
+      "n_rejected": 32,
+      "note": "S-NULL sub-checks per offset (kept = FAILED checks)"
+    },
+    "S_scramble_pairs": {
+      "n_in": 68224,
+      "n_kept": 67550,
+      "n_rejected": 674,
+      "note": "scrambled P_D drops both members of every mutual opposite pair"
+    },
+    "P_b_positive_minarea2": {
+      "n_in": 14202,
+      "n_kept": 14202,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "P_b_positive_minarea3": {
+      "n_in": 11649,
+      "n_kept": 11649,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "P_b_positive_minarea5": {
+      "n_in": 8526,
+      "n_kept": 8526,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "P_b_positive_minarea8": {
+      "n_in": 5429,
+      "n_kept": 5429,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "P_b_positive_minarea12": {
+      "n_in": 3100,
+      "n_kept": 3100,
+      "n_rejected": 0,
+      "note": "sep semi-minor axis b > 0"
+    },
+    "C1_known_bad": {
+      "n_in": 6,
+      "n_kept": 0,
+      "n_rejected": 6,
+      "note": "known-bad citations that the gauge ACCEPTED (kept = accepted = failure)"
+    },
+    "C_anchored_resolves": {
+      "n_in": 12,
+      "n_kept": 9,
+      "n_rejected": 3,
+      "note": "the row's cited location contains the row's own anchor"
+    }
+  },
+  "verdicts": {
+    "P0": true,
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": true,
+    "P6": true,
+    "S-NULL": true,
+    "S1": true,
+    "S2": true,
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "F1": true,
+    "R4-CONTROL": true
+  },
+  "triples": {
+    "P0": [
+      "(n_PD, round(frac_far,6)) vs pass-8 post-hoc",
+      null,
+      "=="
+    ],
+    "P5": [
+      "far_minus_kept_share_pp_PD",
+      5.0,
+      "<="
+    ],
+    "P6": [
+      "far_opp_excess_pp_PD",
+      20.0,
+      "<"
+    ],
+    "S-NULL": [
+      "scramble preserves n/signs/frac_far_union",
+      null,
+      "=="
+    ],
+    "S1": [
+      "median_scrambled_pairs / observed",
+      0.5,
+      "<="
+    ],
+    "S2": [
+      "median_abs_move_pp_scrambled",
+      2.0,
+      "<="
+    ],
+    "P1": [
+      "n_rungs_PD_below_union",
+      4.0,
+      ">="
+    ],
+    "P2": [
+      "n_rungs_move_ge_3pp",
+      3.0,
+      ">="
+    ],
+    "P3": [
+      "n_rungs_pairs_above_union",
+      4.0,
+      ">="
+    ],
+    "P4": [
+      "pair_share_minarea2 - pair_share_minarea12",
+      0.0,
+      ">"
+    ],
+    "C1": [
+      "n_known_bad_rejected",
+      6.0,
+      "=="
+    ],
+    "C2": [
+      "three named C2 outcomes all correct",
+      null,
+      "=="
+    ],
+    "C3": [
+      "n_legacy_failing_anchor",
+      2.0,
+      ">="
+    ],
+    "F1": [
+      "n_findtime_rows",
+      6.0,
+      "<"
+    ],
+    "R4-CONTROL": [
+      "r4_fires_on_injected_duplicate",
+      null,
+      "=="
+    ]
+  },
+  "R1": {
+    "registered": [
+      "P0",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "S-NULL",
+      "S1",
+      "S2",
+      "C1",
+      "C2",
+      "C3",
+      "F1",
+      "R4-CONTROL"
+    ],
+    "missing": [],
+    "extra": [],
+    "ok": true
+  }
+}

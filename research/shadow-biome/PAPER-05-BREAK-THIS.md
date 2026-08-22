@@ -8,6 +8,11 @@ it. This file exists so that offer costs the human an hour instead of a week.*
 §12, §14, §15** are not written. **Do not attack the gaps** — they are known and listed in
 `PAPER-00-ARCHITECTURE.md`. Attack what is claimed.*
 
+*Roster re-measured D202 ~23:5x by `wc -w` and `grep -o "^## §"` on the draft itself: **10,041
+words**, 8 headings, unchanged by pass 9 — pass 9 touched the evidence files and the architecture,
+not the prose. ⚠ **The single most attackable item in the packet is now pass 9's 11-of-11 with three
+boundary passes — see "known weaknesses" below, item 5.***
+
 *⭐ **§9 is the section to attack first**, and it is the newest. It is the instrument section, it
 contains the largest number in the program (a 0.10632 span on a threshold we chose), and it reports
 that our own published catalogue is not reproducible from our own published code. If §9 is wrong in
@@ -166,6 +171,33 @@ Twelve-plus defects are logged in `DEFECT_REGISTER.json` with citations, and cor
 - **Pass 7's headline died** (sign of the artefact was backwards); **pass 8 killed its own owed
   repair** (the "third procedure" was degenerate, `P_C == P_A` as a set). These are instrument-level
   findings about the L1 imaging work, not about the premise.
+- ⭐ **PASS 9 REFUTED NOTHING, AND THAT IS THE MOST ATTACKABLE THING IN THE PROGRAM RIGHT NOW.**
+  Run D202 ~23:4x, `PASS9_RESULTS.md`: **11 of 11 pre-registered predictions held.** Every prior
+  pass killed something. **Three of the four `minarea`-ladder predictions passed at EXACTLY their
+  pre-registered threshold** — 4/5 where 4 was required, 3/5 where 3 was required, 4/5 where 4 was
+  required. **One more failing rung and all three die.** The thresholds were written by someone who
+  had already seen the frozen-catalogue value (declared as a peek in `PASS9_PREDICTIONS.md §0`).
+  ⚠ **If you attack one thing in the ZTF chain, attack those three thresholds.** Ask why ≥4 of 5
+  and not ≥5 of 5; ask why ≥3.0 pp and not ≥5.0 pp. We think the answer is that the effect is a
+  genuine band (`minarea` 3–8) that dies at 2 — but that is *our* reading of *our* boundary.
+- ⚠ **The largest correction in the program peaks at the parameter we had already chosen.** P_D's
+  `frac_far` move over `minarea` 2→12 is **+0.48 / −4.53 / −6.32 / −5.69 / −1.43 pp**. The maximum
+  sits at `minarea = 5`, the value the frozen catalogue was built at three passes earlier for
+  unrelated reasons. We report this against ourselves (`PASS9_RESULTS.md §3b`, architecture §9).
+  It is disclosed, not defended.
+- **Two things in pass 9 are strong and we would rather you attacked them than the boundaries.**
+  **(1)** The scramble control: shifting negative-sign detections by 8 fixed offsets collapses 2329
+  mutual opposite-sign pairs to a median of **41.5** and the `frac_far` move from 6.199 pp to
+  **0.020 pp**. **(2)** On P_D survivors the far-side opposition excess falls from +49.04 pp to
+  **+4.48 pp**. Both had wide margins and a pre-committed bad branch that did not fire.
+- **We corrected our own headline number the same night we validated it** (DEF-15). The architecture
+  printed **+49.04 pp** as §8's bold number; the *kept*-side control gives **+53.93 pp** — larger —
+  so that number was never far-side-specific. The far-specific figure is **+14.65 pp**. It had been
+  sitting unread in our own `PASS6_VERIFY.json` since pass 6.
+- **`G1` and `G2` are both withdrawn.** G1 (*"defects are found by eye, not by gauge, 2:1"*) was
+  computed on a register I wrote, classified after the fact, about my own finding process — it is
+  now **retired as unmeasured**. G2's pass-8 refutation was **wrong**: with a citation checker that
+  rejects 6 of 6 known-bad inputs, **3 of 12** register rows fail. Do not cite either.
 - **The nearest published relative is found and cited:** Field & Bonsall, *"Ignorance can be
   evolutionarily beneficial"*, arXiv:1705.00987. The title "Evolutionary Ignorance" is Clayton's and
   it landed on real literature. If you know a closer relative, that is the most useful thing you

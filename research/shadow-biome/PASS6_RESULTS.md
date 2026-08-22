@@ -22,6 +22,19 @@ Pass 6 asked what the far side *is*. The answer:
 > them.** Against a composition-matched null of 47.21%, the opposite-sign rate
 > among close pairs is **96.25%** — an excess of **+49.04 percentage points**.
 
+⛔ **⚠ CORRECTION APPENDED D202 / 2026-08-21 ~23:5x — DEF-15. This record is frozen; the number
+above is left as written and is superseded here.** The **+49.04 pp** excess is **not far-side
+specific.** `verify_pass6.py`'s V2 kept-side control — added the same day, and its kept branch
+unread until pass 9 — gives the kept side `opp_rate` **0.97315** against a null of **0.43386**, an
+excess of **+53.93 pp**, *larger* than the far side's. **Both sides' close pairs are overwhelmingly
+opposite-sign; that is a property of the catalogue, not of the far side.** The far-side-specific
+quantity is the **share of the side** sitting in such a pair — far **65.81%** vs kept **51.16%**,
+**+14.65 pp** — which is the number `verify_pass6.py` actually rules on and the number the paper
+prints. The **65.81%** in the quotation above is correct and load-bearing; the **+49.04 pp** clause
+is correct arithmetic that supports a narrower claim than its placement implies.
+→ `PASS9_RESULTS.md §2a` · `PASS6_VERIFY.json /V2/kept` · `PAPER-00-ARCHITECTURE.md §8`.
+⚠ Line 163 of this file leans on the same **(+49.04 pp)** and inherits this correction.
+
 That is the signature of a **difference-image dipole**: a star that subtracts
 imperfectly under small astrometric mis-registration leaves a positive lobe and
 a negative lobe a few pixels apart, each lobe a crescent whose long axis is
