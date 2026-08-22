@@ -315,6 +315,26 @@ mechanism does the work, the only ones predicting machinery rather than a hole.
 reasons we can most easily test are the six we did not invent, and the three we invented are the three
 where this paper reports no measurement at all.
 
+**And the ranking is not the same for every member — which is what §2.4's substrate correction actually
+changes, and it is not a list of creatures.** The nine reasons are substrate-neutral. Their
+**availability** is not. Three cases, each a consequence of something already stated above rather than
+a new claim:
+
+- A member **co-present and fitness-relevant during hominin evolution** has all nine available, and is
+  the only kind this paper's distinctive mechanism can reach at all.
+- A member that **postdates our sensory evolution** — the novella's constructed intelligence, awake for
+  a day; anything arrived, built, or emergent since — has **Group I only, in principle.** No selection
+  can act on a stimulus class that did not exist while the gate was being built. §2.4 registers this;
+  it operates here.
+- A member in an **own sector, or coupling below every transducer floor**, has **(vi) only** — the one
+  entry no falsifier in §6 reaches.
+
+**So the variety in this class is real, and this is the axis it lives on: not what a member is made of,
+but which of the nine reasons it is even eligible for.** Stated plainly and to our own cost: **the
+class is wide and the paper's own content is narrow.** Everything in Group II — the part that is ours —
+applies only to the first case. The second and third are members in full standing under §1's
+definition and receive nothing from §3.2 but the observation that it does not apply to them.
+
 ### 3.4 Three mechanisms with no home in (i)–(ix) — registered as debts, not added
 
 (A) and (B) came out of the D203 reading of *Chains of the Sea* (§4.4). (C) came out of the published
@@ -581,7 +601,12 @@ tape:** if Group II is real and no device archive holds it, Group II is wrong.
 **The death condition:** no funded suppression, no phylogenetic debt, a residual matching the artefact
 tail, and bins that turn out not to be kept — and the premise is not rescued by anything above.
 
-**Where one would look**, one line each, ranked, and subordinate to everything above:
+**Where one would look**, one line each, ranked, and subordinate to everything above. ⛔ **Ranked for
+the biological subset only, and the gap is stated rather than filled.** §5's dissipation argument binds
+every member of the corrected class; the instruments below do not. Mass-balance residuals, aeroecology,
+bioacoustics and spectral archives are life-detection instruments — a substrate-free member has no
+chemistry to be inconsistent with. **This paper ranks no locus for its plasma, computational or
+own-sector members.** That is a hole in the programme, not a property of those members.
 
 1. **F1, in existing literature.** Group II's whole content is one library search away and no
    telescope is involved. That it has not been run is a fact about us, not about the difficulty.
