@@ -3,11 +3,33 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-*Status, re-measured D202 ~00:2x by `wc -w` and `grep -o "^## §"` on the draft itself: the paper is
-`PAPER-03-DRAFT.md`, **14,126 words**, 12 headings — **§1 §2 §3 §4 §5 §6 §7 §8 §9 §10 §11 §13**.
-Sections **§12, §14, §15** are not written and each is blocked on a measurement, not on prose.
-**Do not attack the gaps** — they are known and listed in `PAPER-00-ARCHITECTURE.md`. Attack what is
-claimed. ✅ **Citation debt: ZERO real markers** (the one `grep` hit is the legend that defines the
+*Status, re-measured **D203 / 2026-08-22 ~11:4x** by `wc -w` and `grep -o "^## §"` on the draft
+itself: the paper is `PAPER-03-DRAFT.md`, **16,845 words**, **15 headings — §1 §2 §3 §4 §5 §6 §7 §8
+§9 §10 §11 §12 §13 §14 §15. There are no gaps. The draft is complete.***
+
+*⭐ **AND THE THREE SECTIONS ADDED SINCE THIS FILE WAS LAST MEASURED ARE THE THREE MOST WORTH
+ATTACKING, BECAUSE EACH REPORTS A REFUTATION OF OUR OWN CLAIM AND A READER SHOULD CHECK WHETHER WE
+CONCEDED HONESTLY OR CONVENIENTLY:***
+
+- ***§12 withdraws its own headline.** 5.76% of alerts stranded on one night; the pre-registered
+  second night returned **zero of 32 exposures missing**, refuting R1 and R2. Attack: is the
+  retraction complete, or does "episodic, not a rate" smuggle the finding back in?
+  `PREREG-REACHABILITY.md` was committed (`312a883`) before the night-2 tarball was opened.*
+- ***§14's signal is under its floor.** 2.34 nGal against published post-correction residuals of
+  17–4,000 nGal — **7× to 1,712× below**. Attack: the ~2.6 kg inversion is the only surviving claim,
+  and it rests on quoting one station's best narrowband residual as though a real search could
+  operate there.*
+- ***§15 rejects its own pre-registered corpus after gate C5 passed it.** Attack: we say a name
+  collision caused it and that nothing in the pre-registration failed. A hostile reader should ask
+  whether "the object was inadmissible" is a genuine category finding or a retreat from a corpus
+  that was about to refute C1.*
+
+*⚠ **The citation debt recorded below was measured against the 12-section draft and has NOT been
+re-run over §12, §14 or §15.** §14 carries two literature citations (Crossley et al. 2023 GJI 232;
+Antokoletz et al. 2024 GJI 236) **fetched from the publishers this morning and transcribed once**.
+No reading pass has seen them. Treat them as UNVERIFIED.*
+
+**Attack what is claimed.** ✅ **Citation debt: ZERO real markers** (the one `grep` hit is the legend that defines the
 convention); the D202 reading pass closed all eleven — four survived at source, five were amended
 against it, one claim died, one is carried as `[⚠ SECONDARY]`.*
 
@@ -68,7 +90,7 @@ exactly the ones a same-priors refuter also cannot see.**
 |---|---|---|
 | **1** | "This claim is false, and here is the case" | "This claim is unproven" — the paper is a hypothesis article and says so |
 | **2** | "This falsifier cannot fail" — a named test that no possible result would kill | "This falsifier is expensive/won't be run" — true, and stated in §3 |
-| **3** | "These two sentences cannot both be true" | "This section is thin" — §7, §8, §11, §12, §14, §15 are unwritten by design |
+| **3** | "These two sentences cannot both be true" | ⚠ **"This section is thin" — the "unwritten by design" escape hatch is GONE as of D203. No section is unwritten. Thinness is a fair attack everywhere** |
 | **4** | "You already conceded X, and Y assumes not-X" | Tone, hedging, adjectives, length |
 | **5** | "This literature already settled it, cite" | "Someone has probably thought about this" |
 
