@@ -3,20 +3,33 @@
 *Written D202 / 2026-08-21, after Clayton offered to hand the paper to a human and ask them to break
 it. This file exists so that offer costs the human an hour instead of a week.*
 
-*Status, re-measured D202 ~23:1x by `wc -w` and by counting the draft's own headings: the paper is
-`PAPER-03-DRAFT.md`, **10,041 words**, §1 §2 §3 §4 §5 **§6** **§9** §13. Sections **§7, §8, §10, §11,
-§12, §14, §15** are not written. **Do not attack the gaps** — they are known and listed in
-`PAPER-00-ARCHITECTURE.md`. Attack what is claimed.*
+*Status, re-measured D202 ~00:0x by `wc -w` and `grep -o "^## §"` on the draft itself: the paper is
+`PAPER-03-DRAFT.md`, **11,317 words**, 9 headings — **§1 §2 §3 §4 §5 §6 §9 §10 §13**. Sections
+**§7, §8, §11, §12, §14, §15** are not written. **Do not attack the gaps** — they are known and
+listed in `PAPER-00-ARCHITECTURE.md`. Attack what is claimed.*
 
-*Roster re-measured D202 ~23:5x by `wc -w` and `grep -o "^## §"` on the draft itself: **10,041
-words**, 8 headings, unchanged by pass 9 — pass 9 touched the evidence files and the architecture,
-not the prose. ⚠ **The single most attackable item in the packet is now pass 9's 11-of-11 with three
-boundary passes — see "known weaknesses" below, item 5.***
+*⭐ **§10 IS NEW AND IT IS THE SECTION TO ATTACK FIRST.** It is the program's own scoreboard —
+51 of 72 pre-committed predictions held — and it publishes the number that most threatens the
+paper's method claim: **the hit-rate jumps from 54.5 % to 84.6 % exactly when the questions stopped
+being about ZTF and started being about our own code.** §10 refuses to pick between "we got better
+calibrated" and "we started asking ourselves easier questions." **If you can show which one it is,
+in either direction, that is the highest-value hit available in this packet** — including against us,
+because the second reading discounts everything passes 7–9 established.*
 
-*⭐ **§9 is the section to attack first**, and it is the newest. It is the instrument section, it
-contains the largest number in the program (a 0.10632 span on a threshold we chose), and it reports
-that our own published catalogue is not reproducible from our own published code. If §9 is wrong in
-our favour anywhere, the paper's central claim about its own discipline is wrong.*
+*⚠ Also inside §10 and worth a breaker's time: three defects it found **in our own record**, not in
+the sky — a headline from one pass being carried as the program's, a pre-registered prediction (L1's
+T5) adjudicated in prose but emitted by no code, and nine prediction labels reused across passes of
+which five disagree with themselves. Those are conceded in the section. The attackable question is
+whether a scoreboard that needed a script to find three errors in itself should be believed about the
+other sixty-nine rows.*
+
+*⚠ **The second most attackable item is pass 9's 11-of-11 with three boundary passes** — see "known
+weaknesses" below, item 5.*
+
+*⭐ **§9 remains the instrument section and is the third target.** It contains the largest number in
+the program (a 0.10632 span on a threshold we chose), and it reports that our own published catalogue
+is not reproducible from our own published code. If §9 is wrong in our favour anywhere, the paper's
+central claim about its own discipline is wrong.*
 
 *⚠ This line read "5,123 words, §1 §2 §3 §4 §5 §13 · §6–§12 are not written" for four hours, across
 §6 being drafted (`4e6dc99`) and the reading pass adding ~1,300 words (`72e6ba7`). **This is the one
@@ -52,7 +65,7 @@ exactly the ones a same-priors refuter also cannot see.**
 |---|---|---|
 | **1** | "This claim is false, and here is the case" | "This claim is unproven" — the paper is a hypothesis article and says so |
 | **2** | "This falsifier cannot fail" — a named test that no possible result would kill | "This falsifier is expensive/won't be run" — true, and stated in §3 |
-| **3** | "These two sentences cannot both be true" | "This section is thin" — §7, §8, §10, §11, §12, §14, §15 are unwritten by design |
+| **3** | "These two sentences cannot both be true" | "This section is thin" — §7, §8, §11, §12, §14, §15 are unwritten by design |
 | **4** | "You already conceded X, and Y assumes not-X" | Tone, hedging, adjectives, length |
 | **5** | "This literature already settled it, cite" | "Someone has probably thought about this" |
 

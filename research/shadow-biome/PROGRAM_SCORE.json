@@ -1,0 +1,257 @@
+{
+  "era_split": {
+    "early_passes_4_6": {
+      "held": 18,
+      "scored": 33
+    },
+    "late_passes_7_9_L1": {
+      "held": 33,
+      "scored": 39
+    },
+    "note": "The early era tested claims about ZTF's data; the late era tested claims largely about our own extraction and our own artefact taxonomy. A rising hit-rate across that boundary is AMBIGUOUS between calibration improving and the questions getting closer to our own machinery. It may not be reported as the first without the second printed beside it."
+  },
+  "written": "D202 / 2026-08-21 ~23:5x PT",
+  "generated_by": "score_program.py - recomputed, never transcribed",
+  "convention": "each pass's own declared exclusion rule, applied uniformly backward to passes 4-6",
+  "total": {
+    "held": 51,
+    "scored": 72
+  },
+  "prereg": {
+    "held": 44,
+    "scored": 59
+  },
+  "diagnostic": {
+    "held": 6,
+    "scored": 12
+  },
+  "cost": {
+    "held": 1,
+    "scored": 1
+  },
+  "excluded_count": 13,
+  "refuted_pass_qualified": [
+    "pass4:M1",
+    "pass4:M2",
+    "pass5:P1",
+    "pass5:P3",
+    "pass5:P6",
+    "pass5:D1a",
+    "pass5:D1b",
+    "pass6:P1",
+    "pass6:P2",
+    "pass6:P3",
+    "pass6:P7",
+    "pass6:D2a-3",
+    "pass6:D2b-1",
+    "pass6:D2b-3",
+    "pass6:D2c-1",
+    "pass7:A1",
+    "pass7:A3",
+    "pass7:B2",
+    "pass8:N3",
+    "pass8:G2",
+    "l1:T5"
+  ],
+  "per_pass": {
+    "pass4": {
+      "held": 4,
+      "scored": 6,
+      "prereg": [
+        4,
+        6
+      ],
+      "diagnostic": [
+        0,
+        0
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [
+        "M1d"
+      ],
+      "refuted": [
+        "M1",
+        "M2"
+      ]
+    },
+    "pass5": {
+      "held": 6,
+      "scored": 11,
+      "prereg": [
+        3,
+        6
+      ],
+      "diagnostic": [
+        2,
+        4
+      ],
+      "cost": [
+        1,
+        1
+      ],
+      "excluded": [],
+      "refuted": [
+        "D1a",
+        "D1b",
+        "P1",
+        "P3",
+        "P6"
+      ]
+    },
+    "pass6": {
+      "held": 8,
+      "scored": 16,
+      "prereg": [
+        4,
+        8
+      ],
+      "diagnostic": [
+        4,
+        8
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "refuted": [
+        "D2a-3",
+        "D2b-1",
+        "D2b-3",
+        "D2c-1",
+        "P1",
+        "P2",
+        "P3",
+        "P7"
+      ]
+    },
+    "pass7": {
+      "held": 9,
+      "scored": 12,
+      "prereg": [
+        9,
+        12
+      ],
+      "diagnostic": [
+        0,
+        0
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [
+        "B3"
+      ],
+      "refuted": [
+        "A1",
+        "A3",
+        "B2"
+      ]
+    },
+    "pass8": {
+      "held": 9,
+      "scored": 11,
+      "prereg": [
+        9,
+        11
+      ],
+      "diagnostic": [
+        0,
+        0
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [
+        "D1",
+        "D4",
+        "N-NULL",
+        "R4-CONTROL"
+      ],
+      "refuted": [
+        "G2",
+        "N3"
+      ]
+    },
+    "pass9": {
+      "held": 11,
+      "scored": 11,
+      "prereg": [
+        11,
+        11
+      ],
+      "diagnostic": [
+        0,
+        0
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [
+        "C1",
+        "P0",
+        "R4-CONTROL",
+        "S-NULL"
+      ],
+      "refuted": []
+    },
+    "l1": {
+      "held": 4,
+      "scored": 5,
+      "prereg": [
+        4,
+        5
+      ],
+      "diagnostic": [
+        0,
+        0
+      ],
+      "cost": [
+        0,
+        0
+      ],
+      "excluded": [],
+      "refuted": [
+        "T5"
+      ]
+    }
+  },
+  "letter_collisions_disagreeing": {
+    "P1": {
+      "pass5": false,
+      "pass6": false,
+      "pass9": true
+    },
+    "P2": {
+      "pass5": true,
+      "pass6": false,
+      "pass9": true
+    },
+    "P3": {
+      "pass5": false,
+      "pass6": false,
+      "pass9": true
+    },
+    "P6": {
+      "pass5": false,
+      "pass6": true,
+      "pass9": true
+    },
+    "P7": {
+      "pass5": true,
+      "pass6": false
+    }
+  },
+  "passes_1_3": "policy and instrument-specification only; five findings, ZERO scorable predictions. Excluded from the denominator and named here so the exclusion is not silent.",
+  "cross_check_problems": []
+}

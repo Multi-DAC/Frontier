@@ -1,4 +1,8 @@
-# SHADOW BIOME — DRAFT PROSE, §1–§6, §9 and §13
+# SHADOW BIOME — DRAFT PROSE: §1 §2 §3 §4 §5 §6 §9 §10 §13
+
+*(Roster stated as an EXPLICIT LIST, never a range. It read "§1–§6, §9 and §13" until D202 ~23:5x;
+a range cannot say that §7 and §8 are missing from inside it. Re-measured by
+`grep -o '^## §' | tr` at each edit, not remembered.)*
 
 *Drafted D202 / 2026-08-21 ~17:0x PT, midday-creation drive (deferred), on `PAPER-00-ARCHITECTURE.md`
 §4 item 5: **draft these now, in parallel with the compute**, because they do not move on any pass
@@ -775,6 +779,131 @@ scored them, and two of them were found by diagnostics whose *predictions failed
 
 That is the argument for the whole apparatus, and it is worth more to this paper than the null in
 §8: **a program that cannot refute itself cannot be trusted when it agrees with itself.**
+
+---
+
+## §10 — THE SCOREBOARD
+
+A program that pre-registers is obliged to publish the scoreboard, including the parts that make it
+look worse. This section is that. Every number in it comes from `score_program.py`, which recomputes
+the tally from the per-pass artifacts on every run rather than storing a figure someone typed once
+[✅ PRIMARY: `PROGRAM_SCORE.json`, regenerated D202]. The distinction matters here more than usual:
+a hand tally of a scoreboard is a stamp, and a stamp is right on the day it is written and silently
+wrong on every day after.
+
+### 10.1 The count
+
+Across nine passes plus the terrestrial L1 block, **51 of 72 scored predictions held — 70.8 %.**
+Restricted to predictions committed before any data existed, **44 of 59 — 74.6 %.** Restricted to the
+post-hoc diagnostics, which were minted after seeing an earlier pass's numbers and are labelled as
+such throughout, **6 of 12 — 50.0 %.**
+
+| pass | held / scored | refuted, pass-qualified |
+|---|---|---|
+| 4 | 4 / 6 | M1, M2 |
+| 5 | 6 / 11 | P1, P3, P6, D1a, D1b |
+| 6 | 8 / 16 | P1, P2, P3, P7, D2a-3, D2b-1, D2b-3, D2c-1 |
+| 7 | 9 / 12 | A1, A3, B2 |
+| 8 | 9 / 11 | N3, G2 |
+| 9 | 11 / 11 | — |
+| L1 | 4 / 5 | T5 |
+
+Thirteen further items — synthetic-data gates, identity controls, positive controls, and one decision
+rule that never fired — are **excluded from the denominator**, following the rule each pass declared
+for itself and applying it uniformly backward to the passes that had not yet declared one. A control
+that returns its known answer is not a confirmed hypothesis; counting it would inflate the score with
+the program's own furniture.
+
+Passes 1–3 contribute **zero** to both columns. They were policy and instrument specification and
+produced five findings, not one of which had a number that could come back and contradict it. They
+are named here rather than quietly omitted, because a denominator that drops its weakest passes is
+not a scoreboard.
+
+### 10.2 Three errors the arithmetic found in our own record
+
+None of these are about the sky. All three are about the scoreboard, and they were invisible until
+the tally was actually run.
+
+**(i) "8 of 16 held" was pass 6's headline, not the program's.** It had been carried in the
+architecture as though it described the whole series. It describes one pass — and it is the pass with
+the worst ratio in the program.
+
+**(ii) A pre-registered prediction was scored in prose and nowhere else.** L1's **T5** — the
+self-directed prediction that at least one of T1–T4 would fail for an *instrument* reason rather than
+a scientific one — was pre-registered [✅ PRIMARY: `PREREG-TERRESTRIAL.md` line 87] and adjudicated
+REFUTED [✅ PRIMARY: `L1_T5_VERDICT.md` line 24], but `L1_RESULTS.json` `/verdicts` contains only
+T1–T4. Any count taken off the machine-readable dictionaries therefore read L1 as **4 of 4**. It is
+**4 of 5**, and the program's refutation count in that same dictionary set moves from five to six.
+The defect is exactly the one this program names as its signature: a mechanism with no trigger, here
+a verdict with no emitter.
+
+**(iii) A bare prediction label does not identify a prediction in this program.** Nine keys are used
+by more than one pass, and **five of them disagree with themselves across passes**:
+
+| key | pass 5 | pass 6 | pass 9 |
+|---|---|---|---|
+| P1 | REFUTED | REFUTED | HELD |
+| P2 | **HELD** | **REFUTED** | HELD |
+| P3 | REFUTED | REFUTED | HELD |
+| P6 | REFUTED | HELD | HELD |
+| P7 | HELD | REFUTED | — |
+
+The architecture had been citing "P2 refuted" unqualified. Two different P2s exist and they hold
+opposite verdicts. Every reference in this paper is pass-qualified for that reason.
+
+### 10.3 The number this section actually has to explain
+
+Split the program at the point where its subject changed. Passes 4–6 asked questions about **ZTF's
+sky and ZTF's data**. Passes 7–9 and L1 asked questions largely about **our own extraction and our
+own artefact taxonomy** — whether our pair-finder was under-inclusive, whether our library was
+non-deterministic, whether our citations anchored.
+
+> **Passes 4–6: 18 of 33 held (54.5 %). Passes 7–9 + L1: 33 of 39 held (84.6 %). A swing of
+> +30.1 percentage points.**
+
+There are two readings and the flattering one is not automatically correct.
+
+The flattering reading is calibration: nine passes of being wrong in public taught us to write
+predictions we could actually defend, and the late passes are the payoff.
+
+The unflattering reading is that **the questions got closer to our own machinery**, and a question
+about your own code is one you are in a far better position to answer than a question about someone
+else's telescope. On that reading the rising hit-rate is not evidence of a better forecaster; it is
+evidence of an easier forecast. Pass 9's own write-up already flagged 11-of-11 as the worst-looking
+result the program has produced, on the narrower ground that three of its four ladder predictions
+passed at *exactly* their threshold. The era split is the same alarm with the whole series behind it.
+
+We cannot presently separate the two readings, and we are not going to pick one. What follows from
+saying so is a commitment, entered here: **the next pass on this chain is designed so that we do not
+know which way it goes, and it is aimed back at the sky rather than at ourselves.**
+
+### 10.4 The one calibration number we can compute, and it is small
+
+Pass 5 is the only pass that attached explicit prior probabilities to its predictions before running
+them [✅ PRIMARY: `PASS5_PREDICTIONS.md` §2, table]. That makes it the only block in the program that
+supports a calibration statistic rather than a hit-rate.
+
+Stated confidences averaged **67.9 %**; **57.1 %** of those predictions held. **Overconfident by 10.7
+percentage points on n = 7.** The Brier score is **0.161** against a base-rate Brier of **0.245** — a
+skill score of **0.34**, so the forecasts carried real information despite the overconfidence. On the
+six science predictions alone, dropping the operational cost prediction, the overconfidence widens to
+**15.0 points** and the skill falls to **0.26**.
+
+⚠ **n = 7.** This is not a calibration curve; it is a single small sample from one pass, and it is
+reported because it is the only such sample that exists and because the direction — overconfident —
+is the direction that costs a program like this one the most. That eight subsequent blocks of
+predictions were committed without priors attached is a defect in the apparatus and is recorded as
+one. Prior probabilities are cheap to write and are the only thing that converts a scoreboard into a
+calibration.
+
+### 10.5 What a 70.8 % means, and what it does not
+
+It does not mean the program is 70.8 % likely to be right about anything. It is not a confidence in a
+conclusion. It is a record of how often a number committed in advance survived contact with data —
+and its usefulness is almost entirely in the **21 refutations**, not the 51 confirmations. Every
+qualifier in §9 arrived through a failed prediction. The most consequential correction in the program
+came from a control whose prediction failed. A scoreboard with no losses on it is not a strong
+program; it is an unfalsifiable one that has not noticed yet.
 
 ---
 
