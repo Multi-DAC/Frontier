@@ -620,8 +620,11 @@ enough, the mathematically correct detector misses on purpose, every time, for l
 like: you would be *certain* there was nothing there — certainty being the output the system is built
 to produce, not a measure of how much evidence it had.
 
-**(viii) Gated blindness.** One layer deeper: active, metabolically funded suppression upstream of
-awareness. The organism spends energy in order not to perceive. This is not exotic — it is the
+**(viii) Gated blindness.** One layer deeper: active suppression upstream of
+awareness. *(⚠ "metabolically funded" and "the organism spends energy in order not to perceive" struck
+D203 — `PAPER-06-CITATIONS.md` §3 amended them on D202 and the sentence itself was never edited. The
+correction reached the ledger, the ledger's summary table, and this file's own correction note at line
+129, and did not reach the claim.)* This is not exotic — it is the
 ordinary architecture of attention, and it is why you cannot feel your own clothing. What it would be
 like: not an absence but a *smoothness*. The seam is the thing that's missing.
 

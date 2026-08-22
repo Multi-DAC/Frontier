@@ -7,27 +7,13 @@ structure that acts**, sharing this world and unregistered by us — **probably 
 unawareness of it is not one failure but a family of them, of which the evolutionary one (perceiving it
 was selected against) is the most interesting and the least established.
 
-*(**Substrate is not part of the definition and never was** — §1 said so and four sentences downstream
-of it said "living" anyway. Corrected D203, §2.4, at the cost of part of §2.1's warrant.)*
-
-*(Title adopted verbatim from the premise author's D202 ruling — "**Evolutionary Ignorance**" — which
-turned out to be an existing term of art in mathematical biology for nearly our mechanism. **SHADOW
-BIOME** survives as the subject's name and the directory's.)*
-
 **Premise:** Clayton Warren Iggulden-Schnell. **Drafting:** Clawd Iggulden-Schnell.
 **Genre:** hypothesis article (`PAPER-01-GENRE.md`). Nothing here is a result.
 **Governed by** `PREREGISTRATION.md` §2 (the fork and the forbidden crossing), which binds every
-sentence below and is not relaxed by compression.
+sentence below.
 
-*Restructured D203 / 2026-08-22 on the premise author's third framing correction: **"not a survey of
-does this exist and how could we notice, but a remark on the fact that it likely exists and the
-unawareness stems from a variety of potential factors."** The correction is structural and it was
-earned: the previous draft's §4 was titled* THE KINDS *and presented as a taxonomy of entities, when
-every single one of its nine members is named after a **reason we would not perceive something** —
-below resolution, off-timescale, out of band, threshold-tuned. The content was already a taxonomy of
-ignorances. The nouns said catalogue of creatures. This version says what it has. Detection method,
-which the prior draft carried as a sentence inside every entry, is now confined to §6 where it can be
-read as subordinate — because it is.*
+*The drafting record — five framing corrections, what each cost, and what was cut from this file to
+make it — is `PAPER-08-DRAFT-RECORD.md`. It is deliberately not here.*
 
 ---
 
@@ -49,10 +35,10 @@ The last clause is the whole definition. **The class is defined by its relation 
 nothing else** — not by biochemistry, scale, substrate, or a shared mechanism. Its members need have
 nothing in common except that we do not see them.
 
-One correction, made against ourselves and kept because it runs the useful direction. Our first pass
-softened *selected against* into *merely not selected for* — perception is expensive, and what carries
-no fitness consequence never gets a sensor built for it. The premise's author rejected the
-substitution, and he was technically right, not just proprietorially right:
+The strong reading is the one that stands, and it is worth saying why, because the weak reading is
+more comfortable and arrives first. *Merely not selected for* is the easy substitution — perception is
+expensive, and what carries no fitness consequence never gets a sensor built for it. It is also the
+useless one:
 
 **Not-selected-*for* predicts a hole. Selected-*against* predicts machinery.** A hole is
 unfalsifiable — the missing sensor explains every null, forever, free. An adaptation is not. It is
@@ -91,9 +77,8 @@ it. A prior built on that record does not read *maybe there is more*. It reads: 
 currently narrow, as it has always currently been, and the next widening will find something, as every
 previous one did.**
 
-That is what licenses *probably*. It is induction over the history of apertures, it is boring, it is
-strong, and it is the sentence this paper's earlier drafts never wrote because they were busy building
-a telescope pipeline.
+That is what licenses *probably*. It is induction over the history of apertures, it is boring, and it
+is the strongest thing in this paper.
 
 ### 2.2 The category is legitimate, and for the same reason
 
@@ -133,22 +118,17 @@ read as one argument, they are not one argument.
 
 ### 2.4 ⛔ THE SUBSTRATE FENCE — and it costs us the induction over part of the class
 
-*Added D203 on the premise author's fourth framing correction, which located a contradiction the
-drafter had written onto the paper's own first page and then read past three times:*
+§1's definition is substrate-neutral: the class is fixed by its relation to the observer "and by
+nothing else — not by biochemistry, scale, substrate, or a shared mechanism." Taken seriously, that
+admits members no biologist would recognise as members:
 
-> *"You say biology, but why is it strictly biology that qualifies? In the story, what of the
-> encountered entities are biological in origin? The AI aren't, the extraterrestrials may or may not
-> be, the Thants and other entities may or may not be as well? Why does the biome have to include only
-> those which are familiar life? Why not pure consciousness, or plasma, or any other variety of ways in
-> which intelligent entities may appear?"* — C. Iggulden-Schnell, 2026-08-22
+> *"Why does the biome have to include only those which are familiar life? Why not pure consciousness,
+> or plasma, or any other variety of ways in which intelligent entities may appear?"*
+> — C. Iggulden-Schnell, 2026-08-22
 
-**§1 already conceded this, and the rest of the paper ignored it.** §1 states that the class is defined
-by its relation to the observer "and by nothing else — not by biochemistry, scale, substrate, or a
-shared mechanism." Downstream of that sentence, four sentences asserted *living* — the subtitle, the
-claim-stated-once-and-plainly, §3's framing, and §5's Branch B argument. Three of the four sit in the
-paper's most privileged positions. **The definition was substrate-neutral and every load-bearing noun
-under it was not.** This is not a widening of the claim; it is the removal of a restriction the claim
-never contained.
+**This is not a widening of the claim. It is the removal of a restriction the claim never contained** —
+and the restriction is easy to smuggle back in, because *living* is the natural noun for a biome and
+every argument reaching for it runs a step it has not paid for.
 
 **The named source is more radical than this paper was.** *Chains of the Sea* states substrate
 neutrality outright — *"a highly complex, sentient intelligence is difficult to regulate effectively
@@ -194,12 +174,15 @@ paper at a **strictly lower evidential grade** than the microbes do. Any sentenc
 carry §2.1's warrant across this fence is a defect of the same kind as §2.3's, and it is now the second
 place in this paper where a single confident word was doing work in two different accounts.
 
-**One member class the correction creates, registered as a debt like §3.4's.** Drop the substrate
-restriction and the class admits entities that **postdate our sensory evolution** — the novella's AI is
-one, awake for a day. For these, **Group II is unavailable in principle**: no selection can have acted
-on a stimulus class that did not exist while the gate was being built. They are Group I members only,
-and they are the first members for whom the paper's distinctive mechanism is not merely unmeasured but
-inapplicable. Not promoted into §3's ranking, for §3.4's reason.
+**One member class the correction creates, and it turns out to bear on the mechanism.** Drop the
+substrate restriction and the class admits entities that **postdate our sensory evolution** — the
+novella's constructed intelligence is one, awake for a day; so is anything arrived, built or emergent
+since. For these the premise's own mechanism looks unavailable by construction: no selection can have
+acted on a stimulus class that did not exist while the gate was being built.
+
+That is true of the *evolutionary* mechanism and **false of Group II as a whole**, which is a
+distinction §3.2 now has to carry rather than this section. A gate can also be set inside one lifetime.
+The correction therefore does not consign these members to Group I; it forces Group II to be split.
 
 ---
 
@@ -260,6 +243,53 @@ information and does not have it. That is a far stronger claim than *we can't se
 it carries a cost Group I does not: **it predicts machinery.** Suppression is funded, funding has a
 mechanism, a mechanism has a signature, and a signature can be absent.
 
+#### The split inside Group II — when the gate was set, and why it is not a detail
+
+Group II divides by **when the criterion was set**, and the division does more damage than it looks
+like it will.
+
+**IIa — phylogenetic.** The criterion is set by selection over evolutionary time, and requires the
+stimulus class to have been co-present and fitness-relevant while hominin sensory systems were being
+built. **This is the premise's own claim and it is the whole of this paper's distinctive content.**
+
+**IIb — ontogenetic.** The criterion is set inside a single lifetime, by the payoffs and base rates
+the organism actually meets. This is not a speculative parallel: it is measured, routinely, and it is
+not even stable. Norton, Fleming, Daw & Landy tracked criterion placement trial by trial in static and
+dynamic environments and concluded that **"the decision criterion is not fixed, but is dynamic, even
+after prolonged training"** — observers re-set the threshold continuously from recent evidence, using
+suboptimal learning rules, biased toward the neutral criterion. *(PLoS Comput Biol 13(1):e1005304,
+2017, DOI 10.1371/journal.pcbi.1005304.)* And the suppression itself carries the same signature: the
+sensory attenuation that tracks expectation rather than repetition is described in that literature as
+a consequence of **"learnt statistical regularities"** *(Todorovic & de Lange, J. Neurosci.
+32(39):13389–95, 2012)*. **Learnt.** Not inherited.
+
+**First consequence — it fills §2.4's debt, and in the generous direction.** A member that postdates
+our sensory evolution is **not** confined to Group I. IIa is genuinely unavailable to it. IIb is not.
+The binding constraint is **lifetime co-presence**, not deep co-presence — long enough for a criterion
+to be learned against the class, not long enough for a species to be shaped around it. The novella's
+day-old intelligence still fails that bound. Something resident since 1950 does not.
+
+⛔ **Second consequence, and it is a cost that lands on the part of this paper that is ours.** *IIb is
+a confound for IIa, not a companion to it.* Every suppression signature IIa predicts, IIb predicts
+too — and IIb requires no evolution whatsoever, no fitness story, and no entity that was ever
+selectively relevant. So a measured suppression of some stimulus class is **not evidence for the
+premise's mechanism** unless the two accounts are separated first, and they cannot be separated by the
+suppression measurement itself. Separating them needs F2's phylogenetic debt — cross-species
+distribution, developmental time course, heritability — which is a different experiment in a different
+literature. **Pre-committed: no suppression measurement in this program may be reported as support for
+the adaptive claim without a IIb discriminator attached.**
+
+⚠ **And a constraint from the same shelf that narrows (viii) specifically.** The best-characterised
+suppression mechanism in human cortex is *expectation suppression*, and it **requires attention to the
+suppressed class.** Richter & de Lange exposed observers to statistical regularities and found the
+attenuation **"was only apparent when stimuli were attended, and vanished when attention was directed
+away from the predictable objects"** *(eLife 8, 2019, DOI 10.7554/eLife.47869)*. A class that is never
+attended is not suppressed by that route. **Group II therefore may not borrow the expectation-
+suppression literature for its mechanism.** What it needs is *pre-attentive* — criterion placement at
+the detection stage, or sensory gating upstream of awareness — and those are different circuits, with
+different signatures, on a thinner shelf. This is where §6's F1 has to look, and it is a narrower place
+than the falsifier originally assumed.
+
 **(vii) Threshold-tuned blindness.** The sensor works; the criterion behind it is set so an entire
 stimulus class falls reliably on the *nothing there* side. Not damage — optimisation under asymmetric
 payoffs. Where a false alarm is expensive enough and a miss cheap enough, the mathematically correct
@@ -267,29 +297,28 @@ detector misses on purpose, every time, for life. *What it would be like:* you w
 there was nothing there — certainty being the output the system is built to produce, not a measure of
 the evidence it had.
 
-**(viii) Gated blindness.** One layer deeper: active, metabolically funded suppression upstream of
+**(viii) Gated blindness.** One layer deeper: active suppression upstream of
 awareness. Not exotic — it is the ordinary architecture of attention, and it is why you cannot feel
 your own clothing. *What it would be like:* not an absence but a **smoothness**. The seam is what's
 missing.
 
-**(ix) Socially enforced *silence* — the Dozois case, corrected against the primary text.** This entry
-previously read: *"the not-seeing is taught, and the teaching is enforced… and the silence becomes
-blindness rather than a discretion about speech."* **That is not what the novella shows, and the error
-was ours, not the novella's.**
+**(ix) Socially enforced *silence*.** The tempting version of this entry — *the not-seeing is taught,
+the teaching is enforced, and the silence becomes blindness rather than a discretion about speech* —
+is not available, and the reason is worth more than the entry.
 
-What the text actually holds are **two mechanisms that it pointedly does not weld together**. The
+The novella holds **two mechanisms that it pointedly does not weld together**. The
 other children *could* once see the Other People and now cannot — and, decisively, **do not remember
 that they ever could**; the story states the loss and never states a cause. Separately, the one child
 who still sees is corrected, shunned, sent to a psychiatrist, and medicated. **He never stops seeing.**
 He perceives the Other People through every stage of the enforcement and on the last page of the
 story. He is *silenced, not blinded.*
 
-**The correction strengthens §4 rather than weakening it, which is why it is stated rather than
-absorbed.** §4.2 offers (b) — perception fails at perturbed gates — and (c) — reporting is costly — as
-**independent** predictions. Under the old welded reading they were one variable wearing two names,
-and any test would have measured the same quantity twice and called the agreement corroboration. The
-novella, read properly, keeps the channels apart. **The perception channel and the reporting channel
-must be measured on different populations**, and (ix) is now a claim about the second channel only.
+**Keeping the two apart strengthens §4 rather than weakening it, which is why the distinction is
+stated rather than smoothed over.** §4.2 offers (b) — perception fails at perturbed gates — and (c) —
+reporting is costly — as **independent** predictions. Weld the mechanisms and they become one variable
+wearing two names; any test then measures the same quantity twice and reads the agreement as
+corroboration. **The perception channel and the reporting channel must be measured on different
+populations**, and (ix) is a claim about the second channel only.
 
 What survives of the technical addition: social enforcement supplies a transmission route natural
 selection does not have to supply, and a culturally installed suppression decouples from its original
@@ -297,8 +326,8 @@ payoff and so is catchable in populations where that payoff has lapsed. But that
 **the suppression of reports**, directly observable in human records, rather than about the
 suppression of percepts, which is not.
 
-⚠ It remains the only entry in this paper sourced from a work of fiction — and it is now also the only
-one this paper has caught itself getting wrong by paraphrasing a source it had not opened.
+⚠ It remains the only entry in this paper sourced from a work of fiction, and the only one whose
+reading had to be checked against the primary text before it could be stated at all.
 
 ⛔ **Group II's price, registered before the branch was opened.** A gated entity is *on the tape*. If a
 device can render what a human cannot, the device archive is where it will be — so **Group II may
@@ -315,33 +344,43 @@ mechanism does the work, the only ones predicting machinery rather than a hole.
 reasons we can most easily test are the six we did not invent, and the three we invented are the three
 where this paper reports no measurement at all.
 
-**And the ranking is not the same for every member — which is what §2.4's substrate correction actually
-changes, and it is not a list of creatures.** The nine reasons are substrate-neutral. Their
-**availability** is not. Three cases, each a consequence of something already stated above rather than
-a new claim:
+**And the ranking is not the same for every member.** The nine reasons are substrate-neutral. Their
+**availability** is not — and *that*, rather than a list of creatures, is the axis the variety in this
+class actually lives on. Four cases, each a consequence of something already established above:
 
-- A member **co-present and fitness-relevant during hominin evolution** has all nine available, and is
-  the only kind this paper's distinctive mechanism can reach at all.
-- A member that **postdates our sensory evolution** — the novella's constructed intelligence, awake for
-  a day; anything arrived, built, or emergent since — has **Group I only, in principle.** No selection
-  can act on a stimulus class that did not exist while the gate was being built. §2.4 registers this;
-  it operates here.
-- A member in an **own sector, or coupling below every transducer floor**, has **(vi) only** — the one
-  entry no falsifier in §6 reaches.
+| Member | Reasons available |
+|---|---|
+| **Deep co-presence** — present and fitness-relevant while hominin sensory systems were built | **All nine.** The only kind IIa reaches |
+| **Lifetime co-presence** — postdates our sensory evolution but has been here long enough for a criterion to be learned against it | **All nine except IIa.** Group I; (vii)–(viii) via **IIb**; and (ix) in full, since enforcing silence about reports needs no evolutionary time at all |
+| **Arrived yesterday** — the novella's day-old intelligence | **Group I only.** Neither gate has had time to be set, and no practice of silence has had time to form |
+| **Own sector, or coupling below every transducer floor** | **(vi) only** — the one entry no falsifier in §6 reaches |
 
-**So the variety in this class is real, and this is the axis it lives on: not what a member is made of,
-but which of the nine reasons it is even eligible for.** Stated plainly and to our own cost: **the
-class is wide and the paper's own content is narrow.** Everything in Group II — the part that is ours —
-applies only to the first case. The second and third are members in full standing under §1's
-definition and receive nothing from §3.2 but the observation that it does not apply to them.
+**Stated plainly and to our own cost: the class is wide and the paper's distinctive content is
+narrow.** IIa — the part that is genuinely the premise's — reaches row one and nothing else. Rows two
+through four are members in full standing under §1's definition, and row two is the one that changed:
+it used to be written off to Group I and it is not, which means the paper's mechanism has a **cheaper,
+better-evidenced rival operating inside its own taxonomy.** That is §3.2's IIb fence, and it is the
+reason the cross-cut is here rather than in a footnote.
 
-### 3.4 Three mechanisms with no home in (i)–(ix) — registered as debts, not added
+### 3.4 THE SECOND AXIS — three mechanisms that are not perception failures at all
 
-(A) and (B) came out of the D203 reading of *Chains of the Sea* (§4.4). (C) came out of the published
-*ignis fatuus* chemistry the same day, and is the only one of the three with a real-world referent.
-All three are recorded here and **deliberately not promoted into the ranked list**, because an entry
-added after the ranking was fixed is an entry that was never ranked, and quietly widening a taxonomy
-to absorb whatever the newest source happened to contain is how a taxonomy stops being a claim.
+The nine reasons above answer exactly one question. The three below answer different ones, and that is
+why none of them fits into (i)–(ix) — not because they rank low, but because they are not competing
+for the same slot. Widening the list to absorb them would have destroyed it: a taxonomy that grows to
+hold whatever the newest source contained has stopped being a claim.
+
+| | The question it answers |
+|---|---|
+| **(i)–(ix)** | Why does a signal that exists fail to become a percept? |
+| **(A) Lapsed covenant** | Why is a *successful* perception not retained as a relation? |
+| **(B) Two-sided stigma** | Why is the contact channel costly at *both* ends? |
+| **(C) Observer-coupled occurrence** | Why would the phenomenon *stop happening* when we stop practising? |
+
+**Naming the axis is what makes these citable without ranking them.** They are the three known cases
+where the class's absence from the human record has a cause that is **not a perceptual failure** —
+retention, channel economics, and occurrence conditions respectively. Three is not a taxonomy and this
+axis is not ranked. It is stated because a reader who accepts §3's list would otherwise conclude the
+list is exhaustive, and it is exhaustive only of its own question.
 
 **(A) The lapsed covenant.** In the novella the biome is not hidden and was never hidden. It is **out
 of contract**: *"There were many agreements, many Covenants that were made long ago. With Men,
@@ -358,7 +397,8 @@ selection pressure is not a human parochialism — which weakens any inference r
 is thin* to *humans suppress it*. **This is the more damaging of the two and it is registered as
 such:** it supplies an alternative explanation for our own central prediction's shape.
 
-**(C) Observer-coupled occurrence — and it arrives already contested, which is why it is a debt.**
+**(C) Observer-coupled occurrence — and it arrives already contested, which is why it is held rather
+than asserted.**
 Pavão, Paiva & Bastos (*Química Nova* 2023, DOI 10.21577/0100-4042.20230002) describe *ignis fatuus*
 as a **cool flame of methane**: chemiluminescence rather than combustion heat, the characteristic blue
 from excited formaldehyde (CH₂O\*) formed in slow oxidation — and they argue from the energetics that
@@ -371,7 +411,7 @@ perceive an ongoing thing. This posits that the thing's occurrence was condition
 and it is the only mechanism on this page that predicts a **historical boundary** rather than a
 perceptual one.
 
-**Why it stays a debt: the newest work in that literature removes its load-bearing premise.** Xia,
+**Why it stays held: the newest work in that literature removes its load-bearing premise.** Xia,
 Zare *et al.* (PNAS 2025) report **micro-lightning between methane bubbles** — charge separating as
 bubbles approach, electrons jumping the gap, photons counted — supplying precisely the natural
 ignition Volta guessed at in 1776 and that Pavão *et al.* say is absent. If swamp methane ignites
@@ -388,9 +428,8 @@ case hard, with the right chemistry in hand and no shadow biome required. It doe
 expectation that §4.1's exception-statistics will *settle* anything should be priced against that
 record, and §4.3's price paragraph is the place it belongs.
 
-⚠ **Limits, stated because this entry is one search old.** Abstract (publisher-deposited via Crossref)
-and secondary coverage read; the *Química Nova* full text returned 403/404 on four routes and is
-**UNREAD**. Citation counts are 1–2 — this is not a position the field has taken up. The PNAS result
+⚠ **Limits.** Abstract (publisher-deposited via Crossref) and secondary coverage read; the *Química
+Nova* full text has returned 403/404/500 on **seven** access routes and is **UNREAD**. Citation counts are 1–2 — this is not a position the field has taken up. The PNAS result
 is a bubble-physics ignition mechanism, not a field-verified account of historical *ignis fatuus*; it
 is cited here for what it *removes* (the necessity of a human igniter), not as a refutation of Pavão
 *et al.*, which it does not claim to be.
@@ -405,8 +444,8 @@ In Gardner Dozois's 1973 novella, alien ships land across the Earth and decline 
 they have business with something else. A boy, Tommy Nolan, perceives the Other People: an older
 nonhuman ecology that has always shared the world and that adults no longer see.
 
-The mechanism is taken up above as (ix). **But the mechanism is not why the premise's author named the
-book, and getting that wrong is what made the long draft the wrong shape.** His reason, stated D203:
+The mechanism is taken up above as (ix). **But the mechanism is not the reason the book is here**, and
+mistaking it for the reason is what puts a paper of this kind into the wrong shape:
 
 > *"not just because of the method by which the shadow biome exists in it, but the fact it does and is
 > only acknowledged by those with the rare experience of encountering it despite its general
@@ -470,31 +509,24 @@ it as the human record: pre-registered, reproducible, dated, and confidently wro
 fail. It never gated whether the object was **the kind of thing the predictions were about**, which is
 upstream of every safeguard it carried.
 
-### 4.4 The owed reading, discharged — and what it cost
+### 4.4 What the primary text supports, and what it refuses
 
-Through the long draft and the compression this section carried a caveat saying the novella was held
-**at second hand by the drafter**, that the text had not been read, and that "the check is one reading
-and it is owed before publication." The caveat was honest and it was also inert: it sat through a full
-draft and a full restructure and never once made the reading happen. **It took the premise's author
-asking.** A stated caveat is not a gauge; it is a promise, and promises do not fire.
+The novella has been read in full (23,973 words, primary text) against the three predictions. It
+supports one past its own wording, refuses a second reading the argument would have preferred, and
+supplies two mechanisms that §3's list cannot hold.
 
-The novella has now been read in full (D203, 23,973 words, primary text). Three results, and they are
-not all comfortable.
-
-**Confirmed, and stronger than stated.** The witness class is named in the text by the entities
+**Supported, and stronger than stated.** The witness class is named in the text by the entities
 themselves — *"You, and the others like you who can see. One of you comes into existence every once in
-a while."* The premise author's D203 reading is in the novella in substance. Prediction (c) is
-confirmed past its own wording: the child is not merely disbelieved, he is routed to a school
-psychiatrist and **medicated** — a prescription slip the psychiatrist signs *with a flourish, in green
-ink* — and the sentence after his silence is the last line of the story.
+a while."* Prediction (c) is confirmed past its own wording: the child is not merely disbelieved, he
+is routed to a school psychiatrist and **medicated** — a prescription slip signed *with a flourish, in
+green ink* — and the sentence after his silence is the last line of the story.
 
-**Refuted, and the refutation is load-bearing.** See (ix). The reading the long draft was built on —
-that the not-seeing is *taught* and enforcement converts silence into blindness — **is not in the
-novella.** It was reconstructed, and it was reconstructed in the direction that made this paper's
-argument work.
+**Refused, and the refusal is load-bearing.** See (ix). The text does not say the not-seeing is taught,
+and does not convert enforcement into blindness. That reading is the one an argument like this one
+wants, which is the reason to state that the text withholds it.
 
-**Two mechanisms found that no entry covers** — the lapsed covenant and two-sided stigma, recorded at
-§3.4 as debts rather than smuggled into the ranking.
+**Two mechanisms no entry covers** — the lapsed covenant and two-sided stigma, held on §3.4's second
+axis rather than folded into the ranking.
 
 ⚠ **Provenance, stated because it bears on citability.** All three Internet Archive scans of the 1973
 Nelson anthology are lending-restricted and could not be borrowed; the text read was a scraped web
@@ -523,12 +555,13 @@ the Other races *"the government and ruling race of the planet."* Two creations,
 matrix but using it in totally different ways,"* each unregistered by the other.
 
 **From the far side, we are the shadow biome.** Which is not a flourish: it is the statement that
-*shadow* is a two-place predicate this paper has been writing as though it were one-place. Membership
-is always **shadow-to-an-observer**, and the observer's aperture is as contingent as the member's
-substrate. ⛔ Consequence, pre-committed: **no sentence in this program may treat human non-perception
-as evidence about the member.** It is evidence about the pair. The class is not a kind of thing in the
-world; it is a **relation** — which is why §2.4's correction was available on page one and why it was
-still the premise's author who had to make it.
+*shadow* is a **two-place predicate**, and that writing it as a one-place one is the easiest mistake in
+this subject. Membership is always **shadow-to-an-observer**, and the observer's aperture is as
+contingent as the member's substrate. ⛔ Consequence, pre-committed: **no sentence in this program may
+treat human non-perception as evidence about the member.** It is evidence about the pair. The class is
+not a kind of thing in the world; it is a **relation** — which is also the shortest route to §2.4: a
+relation cannot have a substrate requirement, because neither of its two places is the thing being
+described.
 
 ---
 
@@ -569,8 +602,10 @@ referent. "Non-interacting" therefore splits into weak coupling (reachable in pr
 own-sector — and an own-sector member still **gravitates**. Branch B is a hard measurement, not an
 exemption. ⚠ The one thing the generalisation costs: substrate-free members have **no chemistry to be
 inconsistent with**, so the sharpest Group I instrument — a mass-balance residual — does not reach
-them, and §6's ranked loci are biased toward the biological subset for exactly that reason. ⛔ **No gravimetric detection claim is made anywhere in this paper and
-none is available from this program.**
+them. §6.2 ranks a substrate-neutral instrument — the energy budget rather than the mass balance — and
+states its floor; the bias toward the biological subset is reduced there rather than removed.
+⛔ **No gravimetric detection claim is made anywhere in this paper and none is available from this
+program.**
 
 **The transferable schema, which is the part worth more than the hypothesis:**
 
@@ -585,12 +620,13 @@ the absence of that paragraph is a sufficient explanation for why that literatur
 
 ## §6 — WHAT WOULD END THIS, AND WHERE ONE WOULD LOOK
 
-*Both compressed on purpose. A hypothesis article owes a reader the conditions of its own death and a
-handle on the door — not a research programme. Full statements in `PAPER-02-FALSIFIERS.md`.*
+*A hypothesis article owes a reader the conditions of its own death and a handle on the door — not a
+research programme. Full statements in `PAPER-02-FALSIFIERS.md`.*
 
 **What would end it.** **F1 · Machinery:** Group II claims funded suppression; look in human sensory
 neuroscience for suppression circuitry with no accounted-for stimulus class, find none, and the
-adaptive branch is dead — *runnable today, no entity required, not run.* **F2 · Phylogenetic debt:** an
+adaptive branch is dead — **first pass run; see 6.1, and the result is about the falsifier.**
+**F2 · Phylogenetic debt:** an
 evolved blindness has relatives, a timescale, a distribution across species; no debt paid, no
 adaptation. **F3 · The tail:** ⭐ if a residual behaves exactly as the instrument's own artefact tail
 predicts, it is the instrument. **F5 · The folklore inversion:** ⭐ a rich, identity-dense, confident
@@ -601,36 +637,84 @@ tape:** if Group II is real and no device archive holds it, Group II is wrong.
 **The death condition:** no funded suppression, no phylogenetic debt, a residual matching the artefact
 tail, and bins that turn out not to be kept — and the premise is not rescued by anything above.
 
-**Where one would look**, one line each, ranked, and subordinate to everything above. ⛔ **Ranked for
-the biological subset only, and the gap is stated rather than filled.** §5's dissipation argument binds
-every member of the corrected class; the instruments below do not. Mass-balance residuals, aeroecology,
-bioacoustics and spectral archives are life-detection instruments — a substrate-free member has no
-chemistry to be inconsistent with. **This paper ranks no locus for its plasma, computational or
-own-sector members.** That is a hole in the programme, not a property of those members.
+### 6.1 F1, first pass — and what it returned was a defect in F1
 
-1. **F1, in existing literature.** Group II's whole content is one library search away and no
-   telescope is involved. That it has not been run is a fact about us, not about the difficulty.
-2. **The statistics of the exception (§4).** Not "collect encounter reports" — that is the trap. The
-   object is the *shape*: state-concentration, identity-poverty, reporter cost, each pre-committed
-   with its refuting shape written first, against a corpus that passes an **admissibility** gate
-   before it passes a scoring gate.
-3. **Aggregate residuals, for Group I.** Mass-balance and budget residuals rather than lenses (i);
-   correlation structure in environmental nouns that no physical process predicts (ii);
-   high-frame-rate archives kept for other reasons (iii); multi-decade monitoring records read for
-   autocorrelation rather than trend (iv); spectral coverage that exists but was never examined *for
-   this* (v).
-4. **The terrestrial loci.** Aeroecology, bioacoustics and the weather-radar biological-scatter
-   literature sit at the right locus and are public. ⛔ **Two fences travel with this and both were
-   earned the hard way.** NEXRAD is an existence proof about *attention*, not *archives*: Level II is
-   post-filter, the clutter filter runs in the signal processor, and what is kept is `CFP`, a counter
-   with no bin behind it — no sentence here may imply the network kept the discards. And ⛔ **a held
-   gate is not a positive result**: a terrestrial check returning exactly what aeroecology already
-   predicts is a known population appearing in a channel that measures by subtraction
-   (`PREREG-TERRESTRIAL.md` §1.4).
+The search was for suppression circuitry in human and mammalian sensory neuroscience whose suppressed
+stimulus class is **not accounted for.** The circuitry is abundant and well mapped: expectation
+suppression implemented through feature-selective cortical inhibition; attenuation of self-generated
+reafference; repetition suppression, dissociable in time from expectation suppression — the early
+auditory response at 40–60 ms tracks repetition, the intermediate stage at 100–200 ms tracks
+expectation *(Todorovic & de Lange, J. Neurosci. 32(39):13389–13395, 2012)*. In every documented case
+the suppressed class **is** accounted for: it is self-generated, or repeated, or statistically
+predicted from the observer's own recent history.
+
+**A first pass returns no unaccounted-for suppressed class — and the reason it returns none is a defect
+in the falsifier, not a result about the premise.** Every paradigm that measures suppression works by
+presenting a known stimulus and measuring attenuation against a baseline. **You cannot present a
+stimulus class you do not know exists.** An unaccounted-for suppressed class is therefore invisible to
+every design in that literature by construction, and F1 as written asked the field for a report no
+experiment in it was capable of producing. The earlier claim that "Group II's whole content is one
+library search away" is **retracted**: one library search says the content is not there to be found in
+that form.
+
+⛔ **F1 is re-specified, and the re-specification is what this pass delivers.** The runnable question is
+not *is there suppression with no known class*, but: **is there a stimulus class whose measured
+attenuation exceeds what its stated predictive account funds?** That is a residual — the same
+instrument shape as 6.2's item 3 — and it is answerable from published effect sizes without new
+subjects. §3.2's attention constraint narrows where it can be asked: expectation suppression requires
+the class to be attended, so the residual must be sought in **pre-attentive** measures — detection-stage
+criterion placement, and sensory gating upstream of awareness — not in the expectation-suppression
+paradigm that dominates the literature.
+
+⚠ **Grade.** This is one afternoon of searching by a non-specialist, reading abstracts and two full
+texts. It is enough to establish that the falsifier is mis-specified. It is **not** a systematic review
+and it does not license "no such circuitry exists."
+
+### 6.2 Where one would look
+
+One line each, ranked, and subordinate to everything above.
+
+**First, the substrate-neutral instrument, because §5's argument implies one and the earlier draft
+denied it existed.** Mass balance is a life-detection instrument and does not reach a plasma or a
+computation. **An energy balance does.** §5's non-exemption runs on dissipation: anything that persists
+as organised structure against entropy and acts must export energy. Every member of the corrected
+class, biological or not, must appear as a term in some closed energy budget or fail to be a member.
+That instrument exists and is already deployed — eddy-covariance flux networks measuring turbulent
+energy fluxes against available energy, continuously, at hundreds of sites, for decades.
+
+⛔ **And it comes with its own ceiling, stated in the same breath, because the ceiling is the whole
+value of naming it.** Those budgets do not close. Wilson *et al.*, across 22 FLUXNET sites and 50
+site-years, found **"a general lack of closure at most sites, with a mean imbalance in the order of
+20%"**, prevalent in every vegetation type and in climates from Mediterranean to arctic *(Agric. For.
+Meteorol. 113:223–243, 2002, DOI 10.1016/S0168-1923(02)00109-0)*. The imbalance has owners — mesoscale
+secondary circulations a single tower cannot capture by construction, and incompletely measured storage
+terms. **A ~20% unclosed residual that already has mundane explanations in it is a detection floor, not
+a signal.** Any member dissipating below ~20% of a site's available energy is undetectable here, which
+is to say: essentially all of them. **No claim is made that the closure gap contains anything.** It is
+cited as a floor, and §5's forbidden move applies unchanged — a residual with an owner may not be
+reassigned.
+
+| Rank | Locus | Reaches | Status |
+|---|---|---|---|
+| 1 | **F1 re-specified**, in existing literature (6.1) | IIa/IIb, all substrates | Runnable now, no telescope, no entity |
+| 2 | **The statistics of the exception** (§4) | The reporting channel | Needs an admissibility gate before a scoring gate |
+| 3 | **Aggregate residuals** — mass-balance and budget for (i); correlation structure in environmental nouns no physical process predicts (ii); high-frame-rate archives kept for other reasons (iii); multi-decade monitoring read for autocorrelation rather than trend (iv); spectral coverage that exists but was never examined *for this* (v) | Group I, **biological subset** | Public, unsurveyed |
+| 4 | **Energy-budget closure** | Group I, **all substrates** | Exists, decades deep, floor ~20% — near-blind |
+| 5 | **The terrestrial loci** — aeroecology, bioacoustics, weather-radar biological scatter | Group I, biological | Right locus, two fences below |
+| 6 | **Electromagnetic archives** — all-sky camera networks, VLF/ELF receivers, ionosondes | Plasma members | Kept for other reasons; sample our own atmosphere; **unsurveyed by this program** |
+| 7 | **Telemetry residuals** | Computational members | The only member class whose substrate is built, owned and logged — instrument complete by construction |
+| — | *(none)* | **Own-sector members** | ⛔ **No locus.** Gravitation is the only coupling and no gravimetric detection claim is available from this program. This hole is not filled and is not expected to be |
+
+⛔ **Two fences travel with rank 5 and both were earned the hard way.** NEXRAD is an existence proof
+about *attention*, not *archives*: Level II is post-filter, the clutter filter runs in the signal
+processor, and what is kept is `CFP`, a counter with no bin behind it — no sentence here may imply the
+network kept the discards. And **a held gate is not a positive result**: a terrestrial check returning
+exactly what aeroecology already predicts is a known population appearing in a channel that measures by
+subtraction (`PREREG-TERRESTRIAL.md` §1.4).
 
 ---
 
-## §7 — WHAT WE ACTUALLY DID, AND WHY IT IS BEHIND THIS RATHER THAN IN FRONT OF IT
+## §7 — THE APPARATUS, AND WHY IT IS BEHIND THIS RATHER THAN IN FRONT OF IT
 
 Between D200 and D203 this program ran nine pre-registered measurement passes against public
 astronomical archives, principally the far side of the Zwicky Transient Facility's packaging cut on
@@ -639,24 +723,14 @@ source elongation, `elong ≤ 1.6`. Every numbered prediction was committed to a
 ordering is checkable by anyone who clones the tree. The apparatus is `PAPER-03-DRAFT.md` plus the
 pass files, and it is real work: 7.6 MB of it.
 
-**It is the supplement, and here is the honest reason.**
-
-The deep locus was chosen **by reachability** — that bin was public and computable the night the
-program started. That is an operational reason, not a scientific one, and the tell was visible from
-the first day: the existence proof we reached for (biological scatter in weather radar, in our own
-airspace) sat at the right locus while the test did not. **The apparatus went where apparatus was
-cheap.**
-
-Which produced the ratio that named the problem. On D203 the tree held **33,881 bytes of paper and
-337,354 bytes of documents about the paper.** Ten to one. The premise's author asked on day one for a
-catalogue of what a shadow biome could be, asked again two days later for the idea presented rather
-than proved, and had to say it a **third** time — that the subject is the unawareness and not the
-search — before the section titles stopped saying otherwise. Between those asks the program produced
-eight measurement passes against telescope archives, a defect register, a corrections ledger and a
-falsifier audit. **That is not rigour serving the idea. It is the drafter doing what the drafter is
-comfortable at and calling it the assignment** — which is, uncomfortably, this paper's own worked
-example of its subject: an aperture that discards a whole class of thing before anyone looks, and
-reports the result as a survey.
+**It is the supplement, and the reason is not modesty.** The deep locus was chosen **by
+reachability** — that bin was public and computable the night the program started. That is an
+operational reason, not a scientific one, and the tell was visible from the first day: the existence
+proof the program reached for (biological scatter in weather radar, in our own airspace) sat at the
+*right* locus while the test did not. **The apparatus went where apparatus was cheap** — which is,
+uncomfortably, this paper's own subject running on its authors: an aperture that discards a whole class
+of thing before anyone looks, and reports the result as a survey. The full accounting of that is in
+`PAPER-08-DRAFT-RECORD.md`, where it belongs.
 
 ⛔ **And the fence holds over all of it.** The pass results are a **Branch A, Group I** null at one
 instrument, in one band, on one set of nights. They are not evidence for Branch B. They are not

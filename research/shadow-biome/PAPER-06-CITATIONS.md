@@ -406,3 +406,36 @@ smoke-detector direction — landed on the **two sentences the draft was proudes
 have defended in conversation are the sentences that had never been checked, because conviction
 substitutes for verification precisely where conviction is highest. **That is the argument for handing
 this to Clayton's human breaker, and it is now an argument with data behind it.**
+
+---
+
+## 12. D203 ADDITIONS — the F1 first pass and the substrate-neutral locus
+
+*Four sources entered `PAPER-07-SHORT.md` on D203 (§3.2's IIa/IIb split, §6.1's F1 result, §6.2's
+energy-budget locus). Each is logged with its **verification route**, because the one fabricated
+quotation in `CORRECTIONS.json` came from search-engine synthesis wearing a quotation's register. Every
+quoted string below was matched against the fetched document text, not against a search snippet.*
+
+| # | Source | Used for | Route | Grade |
+|---|---|---|---|---|
+| 12a | **Norton, E.H., Fleming, S.M., Daw, N.D. & Landy, M.S. (2017).** "Suboptimal Criterion Learning in Static and Dynamic Environments." *PLoS Comput. Biol.* **13**(1):e1005304. DOI 10.1371/journal.pcbi.1005304 | §3.2 **IIb** — criterion-setting is within-lifetime | Full text fetched from PMC5242548; quoted strings located by exact substring match in the fetched body | ✅ PRIMARY, quote verified in situ |
+| 12b | **Richter, D. & de Lange, F.P. (2019).** "Statistical learning attenuates visual activity only for attended stimuli." *eLife* **8**. DOI 10.7554/eLife.47869 | §3.2 — the **attention prerequisite** that bars Group II from the expectation-suppression literature | Full text fetched from elifesciences.org; abstract + Results heading "Attention is a prerequisite for perceptual expectations" both read in the fetched body | ✅ PRIMARY, quote verified in situ |
+| 12c | **Todorovic, A. & de Lange, F.P. (2012).** "Repetition suppression and expectation suppression are dissociable in time in early auditory evoked fields." *J. Neurosci.* **32**(39):13389–95. DOI 10.1523/JNEUROSCI.2227-12.2012 | §6.1 — the 40–60 ms / 100–200 ms dissociation; §3.2 — expectation suppression as **learnt** | Full text 403 at jneurosci.org. Abstract retrieved from the **publisher-deposited PubMed record** (PMID 23015429) via NCBI E-utilities and read whole; both timing windows and the "learnt statistical regularities" clause are in it verbatim | ✅ ABSTRACT-PRIMARY — the two claims used are stated in the abstract; the article body is unread |
+| 12d | **Wilson, K., Goldstein, A., Falge, E., Aubinet, M., Baldocchi, D., *et al.* (2002).** "Energy balance closure at FLUXNET sites." *Agric. For. Meteorol.* **113**:223–243. DOI 10.1016/S0168-1923(02)00109-0 | §6.2 — the ~20% floor on the substrate-neutral locus | PDF fetched (ugr.es/~andyk/pubs/016.pdf), page 1 extracted with pypdf; abstract read in full and the quoted sentence taken from it | ✅ PRIMARY, quote + n (22 sites, 50 site-years) verified in situ |
+
+**One source used and not cited in the paper.** *Feature selective inhibitory mechanisms enable
+expectation suppression in cortical microcircuits*, Sci. Rep. **15** (2025), DOI
+10.1038/s41598-025-28227-8 — Crossref resolves it, the full text redirects to an auth wall, and only
+the abstract was read via search summary. **The interneuron-type detail (PV/SOM/VIP) it supplies is
+therefore stated in §6.1 generically as "feature-selective cortical inhibition" and the paper attaches
+no citation to it.** An unread source is not a citation.
+
+⚠ **What §6.1's grade actually is.** One afternoon, non-specialist, four searches, two full texts read.
+It is enough to establish that **F1 as written asks for a report no experiment in the literature could
+produce** — which is a claim about experimental design, checkable from any one of these papers'
+methods sections. It is **not** a systematic review and does not license "no such circuitry exists."
+
+⛔ **Still unreachable, seventh attempt.** Pavão, Paiva & Bastos, *Química Nova* (2023), DOI
+10.21577/0100-4042.20230002 — SciELO 403, `doi.org` 404, SBQ article page HTTP 500 on D203, on top of
+the four routes that failed on the day it entered §3.4(C). Abstract via Crossref only. **UNREAD, and
+the paper says so.**
