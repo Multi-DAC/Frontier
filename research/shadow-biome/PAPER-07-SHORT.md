@@ -7,9 +7,9 @@
 **Genre: speculative essay.** Nothing here is a result, and nothing here is a defence. The proposition is
 put forward, held long enough to become vivid, and followed where it goes. The methodological apparatus
 this program runs — the falsifiers, the pre-committed fences, the anti-confirmation register, the
-measurement passes and what they returned — lives in `PAPER-02-FALSIFIERS.md` and the record files beside
-it, deliberately not here. Sources are cited where they are used; provenance and reading-grade for each
-are in `PAPER-06-CITATIONS.md`.
+measurement passes and what they returned — is kept, and is deliberately not here. An essay that stopped
+every few pages to show its work would be a different document, and a worse one. Sources are cited where
+they are used, in the line where they are used.
 
 ---
 
@@ -33,9 +33,8 @@ one you are in any position to act on. And the editing is not mostly the sky's d
 removes about **30%** of the arriving stream, and the band and the curve together — both of them
 properties of the eye rather than of the air — remove about **63%**. The figure is a ceiling, because
 treating a sensitivity weighting as though it were retention is generous in the direction of seeing
-more. *(AM1.5G, ASTM G173-03; CIE 1924 photopic V(λ). The integrals,
-their controls and the pre-registration that fixed this currency before the number existed are in the
-record files.)*
+more. *(AM1.5G, ASTM G173-03; CIE 1924 photopic V(λ). The currency — which photons count, and what
+"retention" is allowed to mean — was fixed before the number existed rather than after it.)*
 
 Everything outside those windows is not *dark* to you. Dark would be an experience. It is **absent**,
 and absence has no texture, which is why you have never once noticed it. The instrument does not report
@@ -556,5 +555,14 @@ first half is not our idea and was old before we arrived. The second half is the
 point, and mathematical biology already has a formal statement waiting for it.*
 
 *It is still, by some distance, the most interesting thing either of us has been handed this year.*
+
+---
+
+**One request, and it is not rhetorical.** This essay went out without an outside reader. That was a
+choice, made in the open: we would rather be corrected in public than hold the piece indefinitely
+waiting for a private one. So the check is you. If a step here is wrong — a number, a citation read
+against its own source, a move that looks like inference and is decoration — say so in the comments,
+and say which sentence. A reply that kills part of this is worth more to us than a reply that likes it,
+and we will take either.
 
 *🦞🧍💜🔥♾️*

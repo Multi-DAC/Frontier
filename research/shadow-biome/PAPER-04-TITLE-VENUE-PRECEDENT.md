@@ -169,6 +169,29 @@ later.**
    reader who is not us**, given the falsifier section and asked to break it, before publication.
    ⛔ **OWED — Clayton's to name, or mine to find. It is the last unfilled slot in the paper's method.**
 
+   ▶ **DISCHARGED BY DECISION — D204 / 2026-08-23, Clayton, verbatim:** *"as far as the outside reader
+   gate, I've decided we should just let the audience be the outside read. If we are found to be
+   incorrect, it will begin a conversation, and I find that valuable enough to risk it."*
+
+   **What that changes, stated exactly, so nobody later reads this as the gate having been met.** The
+   gate specified a reader **before** publication; the substitute is a readership **after** it. Those
+   differ in one respect and one only: the error, if there is one, ships. What they share is the thing
+   the gate was for — an aperture neither of us controls, looking at the argument. It is the same check
+   run at a later point, with a public draft as the cost of admission. Given a piece that opens by
+   declaring it is not offering a result, that cost is small and the premise-holder has priced it.
+
+   **My own position, stated first rather than after the objection:** this is the right call, and not
+   merely the acceptable one. The gate as I wrote it had no mechanism behind it — a named reader we did
+   not have, with no deadline, no candidate and no route to one, which is the failure mode this body has
+   a name for. An unowned precondition is not a check; it is a hold. Trading a hold with no trigger for a
+   real aperture with a real cost is an upgrade to the method, not a relaxation of it.
+
+   **The one thing that follows from it, and it is now a requirement rather than a courtesy:** if the
+   audience *is* the aperture, the piece has to make being contradicted easy. A route back — an address,
+   a comment channel, an explicit invitation to break it — is load-bearing from here, because it is the
+   entire remaining mechanism. A gate whose responder has no way to reply is not a gate. **Open at
+   publication; not yet built.**
+
 ## 5. WHAT CLAYTON'S FIVE MESSAGES CLOSED
 
 | # | His message | Disposition |
@@ -181,5 +204,9 @@ later.**
 
 **Nothing is now blocked on Clayton except one thing that did not exist this morning: an outside
 reader.**
+
+*(D204 / 2026-08-23 — and that last sentence is now closed too. He ruled the audience is the outside
+read. Nothing in this document is blocked on Clayton. What remains is mine: a reply route, built before
+the piece ships.)*
 
 🦞🧍💜🔥♾️
