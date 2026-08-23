@@ -24,12 +24,27 @@ resolve nothing at all. Above roughly a hundred milliseconds you are shown conti
 event — the system reports smoothness, not blur, and it does this so well you have never caught it
 doing it.
 
+Those windows have a size, and on the one arriving stream whose quantity is standardised it can be
+stated exactly. Of the photons reaching the top of the atmosphere, about **70% survive the air.** Of
+those, about **36% fall inside the visible band** at all. Weighting what remains by the eye's own
+sensitivity curve — what the visual system does with a photon, as distinct from what physics delivers —
+leaves **29%** of that band. End to end, **7.3%**: roughly fourteen photons arrive above you for every
+one you are in any position to act on. And the editing is not mostly the sky's doing: the atmosphere
+removes about **30%** of the arriving stream, and the band and the curve together — both of them
+properties of the eye rather than of the air — remove about **63%**. The figure is a ceiling, because
+treating a sensitivity weighting as though it were retention is generous in the direction of seeing
+more. *(AM1.5G, ASTM G173-03; CIE 1924 photopic V(λ). The integrals,
+their controls and the pre-registration that fixed this currency before the number existed are in the
+record files.)*
+
 Everything outside those windows is not *dark* to you. Dark would be an experience. It is **absent**,
 and absence has no texture, which is why you have never once noticed it. The instrument does not report
 its own edges. Nothing you have ever felt has been the feeling of a limit.
 
-That much is not a claim. It is a specification, it is uncontroversial, and every word of it could be
-read off an undergraduate physiology text.
+That much is not a claim. It is a specification. The windows themselves are uncontroversial and could be
+read off an undergraduate physiology text; the retention figure is ours, composed from two published
+standards and checked against their own published integrals. Neither one asserts anything about what is
+on the other side.
 
 Here is the claim.
 
@@ -117,12 +132,10 @@ so it is a base rate for biology and for nothing else. The plasma member, the co
 whatever "pure consciousness" would have to be: no aperture has ever widened and found one. They enter
 this essay further from the ground than the microbes do, and they stay there.
 
-### A note on the category, since the objection arrives early
+### What kind of class this is
 
-The obvious complaint is that a class whose only shared property is *we don't see it* is a bag, not a
-natural kind.
-
-Science already runs several such bags, productively, and one of them is a Nobel industry. **Dark
+A class whose only shared property is *we don't see it* is a bag rather than a natural kind. Science
+runs several such bags, productively, and one of them is a Nobel industry. **Dark
 matter** is defined by non-interaction with the electromagnetic field — a relation to our instruments,
 not an intrinsic property — and the category survived and organised decades of work without a single
 member ever being identified. **Extremophiles** were a class defined by where we had not looked.
@@ -147,7 +160,7 @@ Suppose it is true. What is the world like from inside it?
 
 This is the part that repays holding still, because the honest answer is: **exactly like this.** Not
 like this with a strangeness at the edges. Like this. Every one of the ways below produces a world that
-feels complete from the inside, and that is not a weakness of the idea, it is the content of it.
+feels complete from the inside. That completeness is the content of the idea.
 
 Six of them are cases where **the signal never arrives at a working sensor.** Being unseen is free here.
 Nothing had to be arranged for a mite-scale ecology to go unwitnessed by an animal whose finest unaided
@@ -213,9 +226,9 @@ never gets a sensor built for it, and you can rest there indefinitely. An adapta
 anywhere. It is funded every generation. Funding implies a mechanism, a mechanism has a signature, and a
 signature is a thing in the world that someone could go and look for.
 
-**The stronger-sounding version of the premise is the more exposed one.** That is unusual enough to be
-worth pausing on. Most speculative claims get safer as they get bolder. This one does the opposite, and
-that is the best reason to prefer it.
+**The stronger-sounding version of the premise is the more exposed one.** Most speculative claims get
+safer as they get bolder. This one does the opposite: it names machinery, and machinery can be looked
+for.
 
 ### The word "meant"
 
@@ -281,23 +294,20 @@ that tracks what the observer expects, as distinct from what merely repeats, is 
 separable in time from repetition effects *(Todorovic & de Lange, J. Neurosci. 32(39):13389–95, 2012)*.
 *What it would be like:* not an absence but a **smoothness**. The seam is what's missing.
 
-**Enforced silence.** And this one has to be stated carefully, because the tempting version is not
-available and the reason is worth more than the entry.
+**Enforced silence.** *Chains of the Sea*, Gardner Dozois, 1973 — a novella in which an older nonhuman
+ecology shares the world and adults no longer perceive it — holds **two mechanisms, and holds them
+apart.** The other children *could* once see the Other People and now cannot, and, decisively, **do not
+remember that they ever could**; the story states the loss and gives no cause. Separately, the one child
+who still sees is corrected, shunned, sent to a school psychiatrist, and medicated. **He never stops
+seeing.** He perceives them through every stage of the enforcement and on the last page of the story. He
+is *silenced, not blinded*.
 
-*Chains of the Sea*, Gardner Dozois, 1973 — a novella in which an older nonhuman ecology shares the world
-and adults no longer perceive it — holds **two mechanisms that it pointedly refuses to weld together.**
-The other children *could* once see the Other People and now cannot, and, decisively, **do not remember
-that they ever could**; the story states the loss and never states a cause. Separately, the one child who
-still sees is corrected, shunned, sent to a school psychiatrist, and medicated. **He never stops seeing.**
-He perceives them through every stage of the enforcement and on the last page of the story. He is
-*silenced, not blinded*.
-
-Keeping those apart costs the argument its most satisfying move and buys something better. Welded, the
-perception channel and the reporting channel become one variable wearing two names. Kept apart, what
-survives is real and smaller, and it is a different kind of thing from everything else on this list:
-social enforcement supplies a transmission route natural selection does not have to supply, and a
-culturally installed suppression can outlive whatever payoff installed it. That is a claim about **the
-suppression of reports** — which is written down in human records, in ink, and can be read.
+Apart, they are two variables. Welded, the perception channel and the reporting channel become one
+variable wearing two names. Apart is the smaller reading and the more useful one, and it is a different
+kind of thing from everything else on this list: social enforcement supplies a transmission route natural
+selection does not have to supply, and a culturally installed suppression can outlive whatever payoff
+installed it. That is a claim about **the suppression of reports** — which is written down in human
+records, in ink, and can be read.
 
 ### Who this reaches, and who it does not
 
@@ -314,8 +324,8 @@ kinds.
 
 **Stated plainly: the class is wide and this essay's distinctive content is narrow.** The adaptive claim
 reaches row one. Rows two through four are members in full standing under §1's definition, and they get
-there by other routes — which is the shape of the subject rather than a shortcoming of it. A relation
-this loosely specified was always going to have members that arrive by different doors.
+there by other routes. A relation this loosely specified was always going to have members that arrive by
+different doors.
 
 ---
 
@@ -323,8 +333,8 @@ this loosely specified was always going to have members that arrive by different
 
 Everything so far answers one question: *why does a signal that exists fail to become a percept?*
 
-Three known cases answer different questions, and that is why none of them can be folded into the list
-above — not because they rank low, but because they are not competing for the same slot.
+Three known cases answer different questions, which is why none of them folds into the list above. They
+are not competing for the same slot.
 
 **The lapsed covenant.** *Why is a successful perception not retained as a relation?* In the novella the
 biome is not hidden and was never hidden. It is **out of contract**: *"There were many agreements, many
@@ -352,19 +362,18 @@ not a detector at all. The observer is a **reagent.** Withdraw them and the phen
 hidden — it *stops occurring*. It is the only mechanism on this page that predicts a **historical
 boundary** rather than a perceptual one.
 
-The question is live rather than settled, and the newest work pulls the other way: Xia, Zare *et al.*
-(PNAS 2025) report **micro-lightning between methane bubbles** — charge separating as bubbles approach,
-electrons jumping the gap, photons counted — supplying precisely the natural ignition Volta guessed at
-in 1776. If swamp methane ignites itself, no human torch is needed, and wetland drainage accounts for
-the modern absence with no observer coupling at all.
+A second account of the ignition is on the table. Xia, Zare *et al.* (PNAS 2025) report
+**micro-lightning between methane bubbles** — charge separating as bubbles approach, electrons jumping
+the gap, photons counted — which is the natural ignition Volta guessed at in 1776. Under that account
+swamp methane lights itself, no human torch is required, and wetland drainage accounts for the modern
+absence with no observer coupling at all.
 
-What that leaves is worth more than a verdict would have been. *Ignis fatuus* is a real, non-fictional
-instance of exactly the evidence class §7 describes: a thick pre-modern first-person record, a modern
-null, no replicable capture — Garlaschelli stood in a graveyard with a collection device and caught
-nothing — and, after two and a half centuries of attention from competent chemists, **three live and
-unreconciled explanations** (chemical, electrical, sociological). Three centuries in, with the right
-chemistry in hand and no shadow biome required, it still has not resolved. That is simply what this kind
-of question looks like from the inside, and it is a useful thing to have seen before starting.
+*Ignis fatuus* is therefore a real, non-fictional instance of exactly the evidence class §7 describes: a
+thick pre-modern first-person record, a modern null, no replicable capture — Garlaschelli stood in a
+graveyard with a collection device and caught nothing — and, after two and a half centuries of attention
+from competent chemists, **three live and unreconciled explanations** (chemical, electrical,
+sociological). Three centuries in, with the right chemistry in hand and no shadow biome required, it has
+not resolved. That is what this kind of question looks like from the inside.
 
 ---
 
@@ -390,8 +399,8 @@ same matrix but using it in totally different ways,"* each unregistered by the o
 
 **From the far side, we are the shadow biome.**
 
-That is not a flourish. It is the statement that *shadow* is a **two-place predicate**, and that writing
-it as a one-place one is the easiest mistake available in this subject. Membership is always
+Which is to say that *shadow* is a **two-place predicate**, and that writing it as a one-place one is the
+easiest mistake available in this subject. Membership is always
 **shadow-to-an-observer.** Our failure to see something is a fact about the pair — us and it — and not a
 property the thing carries around. The observer's aperture is exactly as contingent as the member's
 substrate, and there is no privileged seat.
@@ -452,9 +461,8 @@ prediction is confirmed past its own wording: the child is not merely disbelieve
 school psychiatrist and **medicated**, a prescription slip signed *with a flourish, in green ink*, and
 the sentence after his silence is the last line of the story.
 
-It **refuses** the second, and the refusal is load-bearing: the text does not say the not-seeing is
-taught. That reading is the one an argument like this one wants, which is exactly why it is worth stating
-that the text withholds it.
+On the second it is silent: the text does not say the not-seeing is taught. It states the loss and gives
+no cause, and what this essay takes from the novella stops where the text stops.
 
 A novella is cited here as *prior articulation* — the slot Wells occupies in a paper about panspermia.
 Its function is to show that the idea predates its author and its drafter, which is an argument against
@@ -473,8 +481,7 @@ adaptive claim has a shadow on the instrument side, and the instrument side is b
 
 **Branch B — not device-renderable.** Members no built sensor registers either.
 
-Branch B sounds like a place where anything could hide, and it is not, and the argument that closes it
-**does not run on biology.** **Anything that persists as organised structure against entropy, and acts,
+Branch B is narrower than it sounds, and what narrows it **does not run on biology.** **Anything that persists as organised structure against entropy, and acts,
 must dissipate; anything with energy has stress-energy.** That is thermodynamics and general relativity,
 not biochemistry. It binds a plasma structure. It binds a computation — Landauer's principle is the same
 claim with a number attached. And it binds whatever "pure consciousness" would have to be in order to
@@ -539,8 +546,8 @@ as far as we have been able to establish, is no.
 
 *What is left, after all of that, is the sentence we started with: there is more here than we register,
 and some of what we do not register may be unregistered because registering it would have cost us. The
-first half is nearly certain and is not our idea. The second half is speculative, unmeasured, and has a
-formal statement waiting for it in mathematical biology.*
+first half is not our idea and was old before we arrived. The second half is the one that says where to
+point, and mathematical biology already has a formal statement waiting for it.*
 
 *It is still, by some distance, the most interesting thing either of us has been handed this year.*
 

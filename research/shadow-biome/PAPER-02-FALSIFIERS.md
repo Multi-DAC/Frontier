@@ -436,6 +436,61 @@ yet said what would count as finding it.
 
 
 
+### 5c. ADJUDICATION RELOCATED — D203 / 2026-08-22, second pass (~18:0x PT)
+
+**Clayton, D203:** *"Let's remove the adjudication, and let's add that measurement."*
+
+The D203 first pass removed the **marked** apparatus — every ⛔ and ⚠. It did not remove the **reflex**.
+Read cold afterwards, four sections still carried defence-shaped structure in plain English: prose that
+raises an objection in order to answer it, or that argues for the claim rather than stating it. Marked
+scaffolding is easy to grep; the same move written as ordinary sentences is not, and it survived a strip
+that was aimed at it. **That is the finding worth keeping from this pass** — a strip scoped to a marker
+removes the marker, and the habit that produced the marker writes its next instance unmarked.
+
+Eleven sites, found by scanning for defence *signatures* rather than by re-reading the four I had
+already named. Struck text, with what replaced it:
+
+| § | Struck | Replaced by |
+|---|---|---|
+| §2 | `### A note on the category, since the objection arrives early` + *"The obvious complaint is…"* | `### What kind of class this is` — same content, stated rather than defended |
+| §3 | *"and that is not a weakness of the idea, it is the content of it"* | *"That completeness is the content of the idea."* |
+| §4 | *"That is unusual enough to be worth pausing on… and that is the best reason to prefer it."* | *"…it names machinery, and machinery can be looked for."* |
+| §4 | *"And this one has to be stated carefully, because the tempting version is not available and the reason is worth more than the entry."* | Deleted; the novella's two mechanisms now open the entry directly |
+| §4 | *"Keeping those apart costs the argument its most satisfying move and buys something better."* | *"Apart, they are two variables."* |
+| §4 | *"which is the shape of the subject rather than a shortcoming of it"* | Deleted |
+| §5 | *"Three known cases… not because they rank low, but because…"* | *"…which is why none of them folds into the list above."* |
+| §5 | *"The question is live rather than settled, and the newest work pulls the other way"* / *"What that leaves is worth more than a verdict would have been"* / *"a useful thing to have seen before starting"* | *"A second account of the ignition is on the table."* — **the Xia/Zare counter-evidence itself is untouched and still in full** |
+| §6 | *"That is not a flourish."* | *"Which is to say that…"* |
+| §7 | *"It **refuses** the second, and the refusal is load-bearing… That reading is the one an argument like this one wants, which is exactly why it is worth stating that the text withholds it."* | *"On the second it is silent… what this essay takes from the novella stops where the text stops."* |
+| §8 | *"Branch B sounds like a place where anything could hide, and it is not…"* | *"Branch B is narrower than it sounds…"* |
+| close | *"The second half is **speculative, unmeasured**, and has a formal statement waiting for it"* | *"…is the one that says where to point, and mathematical biology already has a formal statement waiting for it."* — the essay no longer ends by grading itself |
+
+**The anti-confirmation content of two of these is not retracted, and is restated here so it survives
+the move:**
+
+⚠ **§4, the enforced-silence entry.** The satisfying reading — that the children were *taught* not to
+see — is **not available in the text.** Welding the perception channel to the reporting channel makes
+one variable wear two names, and it is the reading an argument like this one wants. `Chains of the Sea`
+holds them apart, and this program holds them apart because the text does.
+
+⚠ **§7, what the novella withholds.** The text does not say the not-seeing is taught. It states the loss
+and gives no cause. **The essay's use of the novella must stop where the text stops**, and any future
+draft that has the novella supporting a *taught* blindness has crossed a fence, not found new evidence.
+
+**What was deliberately NOT stripped, and why** — a strip has to be able to over-run, and these are the
+places it would have:
+
+- **§2's scope caveat** (*"it is a base rate for biology and for nothing else… they enter further from
+  the ground and stay there"*). Reads like a concession. It is a **limit on the claim**, and removing it
+  would let a wider claim survive the strip than the evidence funds. Kept in full.
+- **§4's four-row availability table** (deep co-presence / lifetime / arrived-yesterday / own sector) and
+  the sentence *"the class is wide and this essay's distinctive content is narrow."* Same reason.
+- **The Xia/Zare micro-lightning result.** Removing counter-evidence under cover of "removing
+  adjudication" is the failure this pass was most exposed to. The framing went; the finding stayed.
+- **Persuasive prose that is not defensive** — §2's *"a perfect record of being wrong in one direction
+  is information"*, §6's whole turn. Stating a case is not adjudicating it, and stripping to the point
+  where nothing is argued would leave a list, not an essay.
+
 ### 5b. Old §8, §9 and §10, verbatim
 
 *Old §8 and §9 were partly kept — see the note above for what survived and in what form. Old §10 —* **WHAT
