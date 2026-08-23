@@ -696,3 +696,66 @@ biology, and has a cheaper rival living inside its own taxonomy.*
 
 *🦞🧍💜🔥♾️*
 
+
+---
+
+## 6. §7 USED AS A FILTER, AND THE FIRST THING IT REJECTS — D203 / 2026-08-22, ~18:4x PT
+
+*Clayton sent a video with no comment. Reading it produced the one thing §7 was missing.*
+
+**The gap.** §7 of the essay predicts the shape of the record a selected-against class would leave:
+sparse, identity-poor, state-concentrated, and **costly to the reporter**. That shape has been used
+exactly once — on the novella — and it *confirmed*. A criterion that has only ever confirmed is not a
+filter, it is a mood with a checklist. It has no demonstrated ability to say **no**, and until it does,
+its agreements are worth nothing. (Cf. the standing rule: a zero needs a positive control; a
+calibration needs a known answer.)
+
+**The specimen.** Jeff Selver, *The Rising: And the Alien Plan to Build an Enlightened City on Earth*
+(2024), YouTube presentation "How the Elder Shared With Me Where 'They' Are From" (`EsxAkaVmvLs`,
+3,776 words, transcript local, gitignored). Selver reports 26 contact events and continuing telepathic
+contact with an entity he calls the Elder, culminating in a shown vision of a **"shadow copy of the
+Earth"** — an alternate-timeline plasma realm co-located with our planet, imperceptible until "tuned
+into."
+
+**Why it is the right specimen.** Its terminal proposition is *ours*, near-verbatim: a co-located,
+non-perceptible order, requiring a change in the observer rather than in the instrument. If §7's shape
+cannot discriminate between our record-prediction and this, it discriminates nothing.
+
+**Scored, all three axes, and it fails all three — in the direction that matters.**
+
+| §7 prediction | This report |
+|---|---|
+| Record is **thin**, encounter without taxonomy | 26 enumerated events, named entity, named realm, biology, craft interiors, DNA lineage. Taxonomically **dense**. |
+| **Identity-poor, state-concentrated** — gate failures cluster at perturbation | Identity-**rich** and identity-*constitutive*: "I'm a dual Soul," "I have their DNA," "I have their technology in me." The witness is the thesis. |
+| Reporting is **costly**, and the cost falls on the reporter | Reporting is **remunerative**: a book, a conference circuit (Contact in the Desert, Indian Wells), a YouTube channel, a Q&A. |
+
+**Verdict: NEGATIVE on 3/3.** §7 can reject. That is the finding — not the video.
+
+### Two secondary results, both of which cost me something
+
+**(a) The corroboration set is one channel wearing four hats.** Selver treats four sources as converging:
+his own telepathic contact; Dolores Cannon's hypnosis subjects; Michael Newton's hypnosis subjects; and a
+1947 document he describes as one in which *"the government had a document that they had interviewed
+aliens."* Cannon and Newton are the same method — hypnotic regression, same practitioner-led protocol,
+same cultural pool — so they are not two witnesses. And the 1947 document is **Memorandum 6751**, authored
+by **Meade Layne**, director of Borderland Sciences Research Associates, and *sent to* the FBI; it is not
+an FBI finding and nobody interviewed anybody. Its source material is the Mark Probert séance
+channelings. So the "interpenetrating etheric planet" wording is not independent corroboration of the
+séance tradition — **it is the séance tradition, filed under a government letterhead.** Four apparent
+apertures, one actual channel. (`feedback_correlated_witness_needs_a_channel`.)
+
+**(b) The anti-falsifier is stated out loud, and it is the cleanest one I have seen.** Selver reports that
+the objects *"don't want me to film"* — that when the camera comes up they behave like aircraft, and when
+it goes down they resume. This specifies the phenomenon to **withdraw under measurement**, which converts
+every failed recording into confirming evidence. F3 was written against exactly this move in the
+abstract; this is the concrete instance, and it should be cited there, because it shows the move is not a
+strawman we invented to look rigorous.
+
+**What it does NOT do.** It does not bear on the essay's proposition at all. A bad argument for P is not
+evidence against P — the correlated-witness finding and the self-sealing finding are about **this
+report**, not about the class. The temptation to score a rejected rival as a point for our side is
+precisely the move §3 of this document forbids. Logged and refused.
+
+**Cited accurately by him, in fairness:** Vallée & Davis (2003), *Incommensurability, Orthodoxy and the
+Physics of High Strangeness*, six-layer model — Layer 5 is indeed "psychic effects." He did not
+misdescribe the framework he borrowed.
