@@ -439,3 +439,72 @@ methods sections. It is **not** a systematic review and does not license "no suc
 10.21577/0100-4042.20230002 — SciELO 403, `doi.org` 404, SBQ article page HTTP 500 on D203, on top of
 the four routes that failed on the day it entered §3.4(C). Abstract via Crossref only. **UNREAD, and
 the paper says so.**
+
+---
+
+## 13. D204 ADDITIONS — the Pavão blocker is dead, and reading it cost the essay a sentence
+
+*Written 2026-08-23 during the pre-publication readiness pass. The ⛔ above is **superseded**; it is
+left standing rather than edited, because the route that finally worked is the finding.*
+
+### 13a. ✅ PAVÃO, PAIVA & BASTOS — PRIMARY, FULL TEXT, READ
+
+**Routes 8 and 9 failed exactly as 1–7 did** (SciELO article page and its `?format=pdf` sibling: HTTP
+403, JS interstitial). **Route 10 worked, and it came out of the Crossref record itself** — the
+`resource.primary.URL` field points at `quimicanova.sbq.org.br/audiencia_pdf.asp?aid2=9528`, which
+serves not a PDF but a 641-byte HTML shim whose `<embed src>` carries the real file:
+`https://quimicanova.sbq.org.br/Content/pdf/AR2022-0238.pdf`. 915,100 bytes, 3 pages, 16,418 characters
+extracted with `pypdf`. Vendored to `sources/pavao2023_ignis_fatuus.pdf` + `.txt`.
+
+⚠ **The lesson, because it is the reusable half:** seven of the ten routes were the *publisher's* front
+door under a bot wall. The metadata record I had been using only for the abstract contained the working
+path the whole time, one field down from the one I was reading. **A source graded UNREACHABLE is a
+statement about the routes tried, and the route list was never audited against the record I already
+had.**
+
+- Both strings quoted in `PAPER-07-SHORT.md` §5 — *"not spontaneous in nature"* and *"the abandonment of
+  fire in favor of night lighting may hold the secret to this mystery of ignis fatuus's extinction"* —
+  **verify verbatim in the fetched body.** Grade goes ◐/⛔ → **✅ PRIMARY, quote verified in situ.**
+- The body **confirms** the energetics argument the essay attributes to it, and names the 19th-century
+  torch experimenters the abstract only alludes to: Washington and Paine on the Millstone River (1783)
+  and Blesson in the Gorbitz Forest.
+
+### 13b. ⚠ AND READING IT BROKE A SENTENCE IN THE SHIPPING ESSAY
+
+The paper cites **Garlaschelli & Boschetti, *On the track of the Will-o'-the-wisp* (2013), their ref.
+30** — and cites him for a **positive** result: he and Boschetti *"successfully created a weak, cool
+flame by mixing phosphine with air and nitrogen in certain proportions,"* which Pavão *et al.* then
+reject because *"those cool flames were greenish in colour"* and so do not resemble *ignis fatuus*.
+
+`PAPER-07-SHORT.md` §5 carried Garlaschelli as a **pure null** — the empty-handed graveyard trip and
+nothing else — inside a sentence arguing that the phenomenon has *"no replicable capture."* The
+graveyard trip is real *(L. Allen, "New theory may at last explain a swamp's ghostly will-o'-the-wisps",*
+Science News Explores*, 29 September 2025 — Garlaschelli at Pavia, midnight, wearing a vacuum collection
+device; nothing appeared)*. **But it was the only half reported, and the omitted half is a lab
+auto-ignition — the thing the sentence two lines above says does not happen in nature.**
+
+⚠ **Note the direction.** The omission made the evidence look thinner and the mystery look cleaner,
+which is the shape the section wanted. Nobody suppressed it; it was never read. **An unread source is
+not neutral — it is silent in whichever direction the drafter already leaned.** Sentence amended D204 to
+carry both halves and both citations.
+
+⚠ **Also amended:** the essay's *"three live and unreconciled explanations (chemical, electrical,
+sociological)"* now says that the chemical branch is itself split — methane cool flame versus Mills'
+phosphine auto-ignition, which Pavão treats and rejects. The count of three was a defensible taxonomy,
+not an error, and it is left standing; what was missing was that one of the three has two occupants.
+
+### 13c. ✅ TWO PREVIOUSLY UNCITED CLAIMS IN THE SHIPPING ESSAY, NOW SOURCED
+
+Both were found by grepping the shipping text's proper nouns against **every other file in the tree** —
+the test being *does the register know about this name at all*, rather than *does the sentence look
+sound*. Two names appeared in `PAPER-07-SHORT.md` and **nowhere else in the program**:
+
+| Name | Claim as it stood | Disposition |
+|---|---|---|
+| **Garlaschelli** | A named living scientist and an attributed **negative result**, with no citation anywhere in the tree | ✅ Cited, and corrected — see 13b |
+| ***Prochlorococcus*** | *"plausibly the most abundant photosynthetic organism on Earth"* — a superlative, uncited | ✅ Chisholm, Olson, Zettler, Goericke, Waterbury & Welschmeyer, *Nature* **334**:340–343 (1988), DOI 10.1038/334340a0. Authors and pagination verified via Crossref. The hedge *"plausibly"* stays |
+| **Volta, 1776** | *"the natural ignition Volta guessed at in 1776"* — uncited historical attribution | ✅ Same Science News Explores piece: Volta, at Pavia, proposed in 1776 that a spark ignites the swamp gas |
+
+⚠ **Grade honestly: the Volta and graveyard facts are ◐ SECONDARY** — a science-news article, not
+Volta's 1776 text and not Garlaschelli's own account. Good enough for a speculative essay's aside,
+**not** good enough to carry an argument, and neither is asked to.

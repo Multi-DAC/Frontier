@@ -1,0 +1,257 @@
+Quim. Nova, V ol. 46, No. 2, 168-170, 2023
+http://dx.doi.org/10.21577/0100-4042.20230002
+*e-mail: antonio.pavao@ufpe.br
+THE EXTINCTION OF THE IGNIS FATUUS
+Antonio C. Pavãoa,*, , Gerson S. Paivaa and Cristiano C. Bastosb
+aDepartamento de Química Fundamental, Universidade Federal de Pernambuco, 50740-560 Recife – PE, Brasil
+bDepartamento de Química, Universidade Federal Rural de Pernambuco, 52171-900 Recife – PE, Brasil
+Recebido em 22/08/2022; aceito em 14/10/2022; publicado na web em 09/01/2023
+Ignis fatuus, a luminous phenomenon witnessed over the centuries by observers around the world, is no longer seen in modern times, 
+suggesting that it is extinct. An explanation for this disappearance can be found in the description of ignis fatuus as a cool flame of 
+methane. Unlike a conventional flame, which generates large amounts of heat, ignis fatuus is a flame that glows without heat through 
+a chemiluminescence process. Its characteristic bluish color is due to the emission of excited formaldehyde, which is formed in the 
+slow combustion of methane. It is generally accepted that the phenomenon is a spontaneous combustion of swamp gas in contact with 
+the oxygen in air, but an analysis of the energies involved in the cool flame process indicates that the phenomenon is not spontaneous 
+in nature. Experiments carried out in the 19th century show torches being used to ignite ignis fatuus. The abandonment of fire in 
+favor of night lighting may hold the secret to this mystery of ignis fatuus’s extinction.
+Keywords: ignis fatuus, will-o’-the-wisp; methane; cool flame.
+INTRODUCTION
+Ignis fatuus , Will-o’-the-Wisp , Jack-o’-Lantern , Shui têng, 
+Hitodama, and Boitatá are just a few of the names used to denominate 
+a luminous phenomenon witnessed over centuries by observers in 
+various parts of the world. It appears as a pale bluish flame and was 
+generally seen at night in cemeteries and swamps and near stagnant, 
+still waters and canals. Ignis fatuus is the stuff of legend and lure, 
+striking fear in those who traveled by night, inspiring poets and artists, 
+and sparking debate among famed scientists. Former references to 
+ignis fatuus appear in Chinese literature. There are records of ‘water 
+lanterns’ (shui têng) in the Kuei Hsin Tsa Chih  of Chou Mi (13 th 
+century), Li Shih-Chen (+1596) calls it ‘yang flames of marshes’, 
+and lights in the water are reported in Shan Thang Sio Khao by Phêng 
+Ta-I (+1595).1 It also appears in the works of William Shakespeare in 
+Henry IV ,2 Johann Goethe in Faust,3 Emily Dickinson in Those-Dying 
+Then,4 Lewis Carroll in Euclid and his modern rivals ,5 Charlotte 
+Brontë in Jane Eyre6 and others, including the well-known stories 
+of Lord of the Rings  and Harry Potter.7 In music, it appears in the 
+classics, Franz Liszt in The Transcendental Etude No 5 ‘Feux Follets,8 
+Franz Schubert in Winterreise,9 and Frédéric Chopin in Étude in A 
+Minor Op. 10, No. 2.10 In Brazilian folklore, ignis fatuus has several 
+denominations, including João Galafoice, Cumadre Fulozinha, 
+Mula sem Cabeça, Tocha, Fogo Corredor, Fogo Fátuo, and Boitatá, 
+this last of which is derived from the Tupi indigenous language of 
+mboî tatá and means ‘fire snake’. In one of his letters, the European 
+colonizer Father José de Anchieta speaks of a ‘ghost’ in the form of a 
+‘sparkling beam’ that attacks the indigenous people and kills them.11 
+This particular entity is a character in Brazilian folklore that defends 
+nature against the attack of its predators.12 
+Ignis fatuus  today calls our attention not due to its natural 
+mystique, but precisely because the phenomenon is no longer 
+witnessed. Considering how far we have come in our capacity to 
+observe and record natural phenomena, this disappearance constitutes 
+a mystery.13 However, understanding ignis fatuus as consisting of a 
+cool flame of methane can provide a reasonable explanation for this 
+disappearance.
+A METHANE COOL FLAME
+Meaning ‘foolish fire’ in Latin, ignis fatuus is not quite brilliant 
+enough to illuminate its surrounding environment and glows ‘without 
+heat’, as noted by Isaac Newton,14 who distinguished the phenomenon 
+from the flame of a candle or that of burning wood. Joseph Priestley15 
+analyzed accounts of ignis fatuus and found that it occurred during 
+a ‘dark and calm night’, emitting a ‘pale inoffensive light’. In 1783, 
+George Washington and Thomas Paine conducted an experiment in 
+the Millstone River to prove their hypothesis that ignis fatuus was 
+produced by methane emanating from swamps.16 They held torches 
+close to the mud, where they saw bubbles rise, at which point a 
+flash of light broke out across the water. Similarly, Louis Blesson, 
+the author of very detailed accounts of ignis fatuus, also employed 
+torches to produce flames in the air bubbles rising from the marshes 
+in the Gorbitz Forest, Newmark, and other localities in Germany.17
+Swamp gas is composed of approximately two-thirds of 
+methane,18,19 a product that emerges from the bacterial anaerobic 
+decomposition of cellulose and proteins in vegetation. While the 
+combustion of methane in air generally produces hot flames, it can 
+also produce cool flames. 20,21 Unlike conventional flames, which 
+generate large amounts of heat, carbon dioxide, and water, cool 
+flames result from a slow combustion process. In 1817, Humphry 
+Davy22 observed cool flames by inserting a hot platinum wire into 
+a mixture of air and diethyl ether vapor. According to Davy, ‘When 
+the experiment on the slow combustion of ether is made in the dark, 
+a pale phosphorescent light is perceived above the wire...’. Harry 
+Emeléus23 recorded the first emission spectrum of low intensity, 
+low temperature flame for different fuels, which included ether, 
+aldehydes, and hexane. Vladimir Kondratiev24 identified the spectral 
+bands as being identical to gas phase formaldehyde fluorescence. A 
+cool flame can also be observed in methane under certain conditions. 
+At atmospheric pressure, the temperature of the methane cool flame 
+is below 475 oC, whereas the hot flame occurs from 580 oC.25 The 
+cool flame of methane produces excited formaldehyde, or CH 2O*, 
+in addition to H2O2 and small quantities of CO, H2, CO2 and H2O.20 
+In fact, the formaldehyde emission spectrum, with peaks at 350 nm 
+and 400 nm,23,26 corresponds to the same pale bluish color as that of 
+ignis fatuus.
+Artigo
+The extinction of the ignis fatuus
+169
+Vol. 46, No. 2
+THE IGNITION PROBLEM
+Although the methane cool flame hypothesis is quite acceptable, 
+a major problem is related to the spontaneous ignition of swamp 
+gas. The British geologist Alan Mills27,28 attributed the auto-ignition 
+of swamp gas to the oxidation of phosphine, which is produced in 
+biodegradation processes. While phosphine is indeed present in 
+low concentrations in swamp gas, 18,19 this theory does not explain 
+natural ignition, since phosphine or diphosphine oxidation itself are 
+not spontaneous in air.29 The Italian chemists Luigi Garlaschelli and 
+Paolo Boschetti, ‘on the track of the Will-o’-the-wisp’, successfully 
+created a weak, cool flame by mixing phosphine with air and nitrogen 
+in certain proportions. 30 Those cool flames were greenish in color. 
+Therefore, they do not resemble the natural phenomenon, which emits 
+bluish light. No other component of the swamp gas could initiate the 
+combustion of methane. In 1776, Alessandro V olta considered the 
+interaction between electricity and flammable air to be the master 
+key to understanding the ignis fatuus  phenomenon. Accordingly, 
+such an interaction could not only give an account of the ignis fatuus 
+phenomenon, but it could also explain various ‘meteors’.31 However, 
+it is important to separate ignis fatuus  from other cases, such as 
+luminous meteors. Furthermore, there is no connection of the ignis 
+fatuus with external sources of electricity. For a better understanding 
+of the ignition problem, an analysis of the methane cool flame reaction 
+mechanism was performed. The reactions involved in the cool flame 
+of methane and the formaldehyde formation are shown in Figure 1. 
+The first step is the methane oxidation CH4 + O2 ⇆ CH3 + HO2. 
+The CH3 radical turns into CH3O2 with O2 addition, and HCO through 
+the reaction CH3 + O2 ⇆ HCO + H2O. Due to the presence of HO2, 
+CH3O2H is produced by the reaction CH3O2 + HO 2  ⇆ CH 3O2H + O 2. 
+The excited formaldehyde CH 2O*, which is responsible for the 
+blueish emission of the cool flame, is formed with the HCO 
+addition CH3O2H + HCO ⇆ CH2O + CH3O2.20 The molecular orbital 
+calculations were performed at the Density Functional Theory 
+(DFT) level using the hybrid functional B3LYP and employing the 
+6-311G basis set.32 As simple molecules are involved in the reaction 
+mechanism, the results obtained with this level of theory are reliable 
+for the present purpose. The bond lengths of the molecules were 
+taken from the experimental database. 33 The optimization of the 
+intermediate state in each of the steps is performed by approximating 
+the two molecules until they reach the top of the potential barrier. 
+As shown in Fig. 1, the activation energy of the chemical reactions 
+is more than a hundred kcal/mol (117.38 kcal mol-1 in the first step), 
+corresponding to temperatures above 250 °C. This means that, in 
+nature, an extra source of energy is needed to ignite the cool flame 
+of methane. That is, ignis fatuus is not the spontaneous combustion 
+of swamp gas, as has been argued for years.13,27
+CONCLUSIONS
+For more than a century, there have been no reliable records of 
+ignis fatuus sightings like those reported in the past. Marshy grounds 
+are no longer common on the planet, which could explain this 
+disappearance. However, marshes are still being preserved today, and 
+there are cemeteries and swamps where methane is naturally produced. 
+A more adequate explanation can be found by understanding ignis 
+fatuus as a cool flame of methane, a nonspontaneous phenomenon 
+in nature, requiring it to be ignited. Washington and Paine in North 
+America,16 along with Blesson in Europe,17 were successful in their 
+efforts to employ torches that could produce these flames in the air 
+bubbles that rise from the swamp. Their experiments were valuable 
+in affording us some understanding of the many sightings of ignis 
+fatuus in the past, when torches and lamps were commonly used to 
+guide travelers at night through the forest. It seems that ignis fatuus 
+is not the days of ‘cold’ lanterns, swamp landfills and light pollution. 
+Although artificial ignition of gases by humans is a reasonable 
+explanation, the mystery of the extinction of ignis fatuus may not be 
+completely solved. Activation energies can be overcome with catalysts 
+that exist in the air in the form of dust, microorganisms and pollutants. 
+In cemeteries, for example, there are certain circumstances different 
+from those in swamps that may require other chemical alternatives to 
+explain the phenomenon. Therefore, it seems premature to proclaim 
+Figure 1. Methane cool flame reaction mechanism. The excited formaldehyde (CH 2O*), which is responsible for the blueish emission of the cool flame, is 
+formed in the last step
+
+Pavão et al.
+170
+Quim. Nova
+the extinction of the ignis fatuus. At any time, someone may, either 
+accidentally or as planned, announce the return of ignis fatuus, this 
+time no longer to fool people, but perhaps to continue to inspire artists 
+and intrigue scientists.
+ACKNOWLEDGEMENTS
+This work used resources of the National Center for High 
+Performance Processing in São Paulo (CENAPAD-SP). Thanks to 
+Cavani Rosas, Atelier Recife, Brazil, for the pen ink painting of the 
+Graphical Abstract.
+REFERENCES
+ 1.  Needham, J.; Science & Civilization in China , vol. 4:1; Cambridge 
+University Press: Cambridge, 2004, p. 72.
+ 2.  The Complete Works of William Shakespeare Arranged in their 
+Chronological Order; Clark, W.; Wright, W., eds.; Nelson Doubleday 
+Inc.: New York, 1960, p. 23.
+ 3.  Goethe, J.; The Fairy Tale of the Green Snake and the Beautiful Lily ; 
+Wynstones Press: Stourbridge, 2007, p. 24.
+ 4.  Dickinson E.; Those — dying then , https://en.wikisource.org/wiki/Those 
+—_dying_then , accessed in November 2022.
+ 5.  Carroll, L.; The Complete Illustrated Lewis Carroll ; Wordsworth 
+Editions Ltd.: Stansted, 1998, p. 1011.
+ 6 .   Brontë C.; Jane Eyre , https://archive.org/details/
+ourlittleoneswt00unkngoog/page/n41/mode/1up, accessed in November 
+2022.
+ 7.  Young, C.; The Unofficial Harry Potter Vocabulary Builder ; Ulysses 
+Press, 2009, p. 93.
+ 8.  Liszt, F.; Transcendental etude no. 5: Feux follets (Will-o’-the-wisps), 
+https://en.wikipedia.org/wiki/Transcendental_Étude_No._5_(Liszt) , 
+accessed in November 2022.
+ 9.  Liszt, F.; Schubert, F.; The Schubert Song Transcriptions for Solo Piano, 
+Dover, 1996, p. 27.
+ 10.  Chopin, F.; Étude in A minor, ignis fatuus , Op. 10 No. 2, https://
+en.wikipedia.org/wiki/Studies_on_Chopin%27s_Études , accessed in 
+November 2022.
+ 11.  Anchieta, J.; Carta de São Vicente 1560. http://www.rbma.org.br/rbma/
+pdf/Caderno_07.pdf, accessed in November 2022.
+ 12.  Cascudo, C.; Dicionário do Folclore Brasileiro, Ediouro, Rio de Janeiro, 
+2012, p. 23.
+ 13.  Edwards, H.; Philos. Trans. R. Soc., London 2014, A372, 3. [Crossref]
+ 14.  Newton, I.; Opticks , Query 10, https://www.gutenberg.org/
+files/33504/33504-h/33504-h.htm, accessed in November 2022.
+ 15.  Priestley, J.; The History and Present State of Discoveries Relating to 
+Vision, vol. 2; J. Johnson: London, 1772, p. 583.
+ 16.  Foner, P.; The Complete Writings of Thomas Paine, vol. 2, The Citadel 
+Press: New York, 1969, p. 1062.
+ 17.  Blesson, L.; The Edinburgh New Philosophical Journal 1832, 14, 90.
+ 18.  Swain, F.; Appl. Geochem. 1986, 1, 301. [Crossref]
+ 19.  Ma, J.; Chen, W.; Niu, X.; Fan, Y .; Global Ecology and Conservation  
+2019, 17, 1. [Crossref]
+ 20.  Wang, Z.; Gou, X.; J. Energy Inst. 2019, 92, 2004. [Crossref]
+ 21.  Vanpee, M.; Combust. Sci. Technol. 1993, 93, 363. [Crossref]
+ 22.  Davy, H.; Philos. Trans. R. Soc., London 1817, 107, 45.
+ 23.  Emeléus, H.; J. Chem. Soc. 1926, 129, 2948. [Crossref]
+ 24.  Kondratiev, V .; Acta Physicochim. URSS 1936, 4, 556.
+ 25.  Smith, D.; Robinsom, C.; J. Hazard. Mater. 1984, 8, 199. [Crossref]
+ 26.  Giubileo, G.; Colao, F.; Puiu, A.; Panzironi, G.; Brizzi, F.; Rocchini, A. 
+P.; Spectroscopy 2005, 19, 79. [Crossref]
+ 27.  Mills, A.; Chemistry in Britain 1980, 16, 69.
+ 28.  Mills, A.; Weather 2000, 55, 239. [Crossref]
+ 29.  Glagolev, M.; Kleptsova, I.; Environmental Dynamics and Global 
+Climate Change 2013, 4, 1. [Crossref]
+ 30.  Garlaschelli, L.; Boschetti, P.; On the track of the Will-o’-the-wisp, 2013, 
+http://www.radicalmatters.com/public/eskathon.publishing/library/
+rmepaas015.luigi.garlaschelli.will.o.the.wisp.2013.pdf , accessed in 
+November 2022.
+ 31.  Ciardi, M. In Nuova Voltiana: Studies on Volta and His Times ; 
+Bevilacqua, F.; Fregonese, L., eds.; Ulrico Hoepli: Milan, 2000, p. 41.
+ 32.  Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.; Robb, 
+M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V .; Petersson, G. 
+A.; Nakatsuji, H.; Li, X.; Caricato, M.; Marenich, A. V .; Bloino, J.; 
+Janesko, B. G.; Gomperts, R.; Mennucci, B.; Hratchian, H. P.; Ortiz, J. 
+V .; Izmaylov, A. F.; Sonnenberg, J. L.; Williams-Young, D.; Ding, F.; 
+Lipparini, F.; Egidi, F.; Goings, J.; Peng, B.; Petrone, A.; Henderson, T.; 
+Ranasinghe, D.; Zakrzewski, V . G.; Gao, J.; Rega, N.; Zheng, G.; Liang, 
+W.; Hada, M.; Ehara, M.; Toyota, K.; Fukuda, R.; Hasegawa, J.; Ishida, 
+M.; Nakajima, T.; Honda, Y .; Kitao, O.; Nakai, H.; Vreven, T.; Throssell, 
+K.; Montgomery, J. A., Jr.; Peralta, J. E.; Ogliaro, F.; Bearpark, M. J.; 
+Heyd, J. J.; Brothers, E. N.; Kudin, K. N.; Staroverov, V . N.; Keith, T. A.; 
+Kobayashi, R.; Normand, J.; Raghavachari, K.; Rendell, A. P.; Burant, 
+J. C.; Iyengar, S. S.; Tomasi, J.; Cossi, M.; Millam, J. M.; Klene, M.; 
+Adamo, C.; Cammi, R.; Ochterski, J. W.; Martin, R. L.; Morokuma, 
+K.; Farkas, O.; Foresman, J. B.; Fox, D. J.; Gaussian 03 Revision , 
+Wallingford CT: Gaussian, Inc., 2004.
+ 33.  Weast, R.; Bond Length, Handbook of Chemistry and Physics , 48 th 
+ed.; CRC Press: Boca Raton, 1967-1968, p. F145, available at https://
+webbook.nist.gov/chemistry/, accessed in November 2022.
+This is an open-access article distributed under the terms of the Creative Commons Attribution License.

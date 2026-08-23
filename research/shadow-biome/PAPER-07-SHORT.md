@@ -98,7 +98,8 @@ an instrument. Sequencing replaced culture, and there were archaea, and then the
 that the great majority of microbial lineages had never been grown and never would be. Ocean sampling
 counted what the nets caught; then flow cytometry found *Prochlorococcus* in 1988 — plausibly the most
 abundant photosynthetic organism on Earth, invisible to a century of oceanography that had been staring
-directly at it the entire time. Drilling went deeper than anyone had a commercial reason to drill, and
+directly at it the entire time *(Chisholm, Olson, Zettler, Goericke, Waterbury & Welschmeyer,* Nature
+*334:340–343, 1988, DOI 10.1038/334340a0)*. Drilling went deeper than anyone had a commercial reason to drill, and
 there was the deep subsurface biosphere, on current estimates a large fraction of the planet's
 microbial biomass, living in rock.
 
@@ -364,15 +365,20 @@ boundary** rather than a perceptual one.
 
 A second account of the ignition is on the table. Xia, Zare *et al.* (PNAS 2025) report
 **micro-lightning between methane bubbles** — charge separating as bubbles approach, electrons jumping
-the gap, photons counted — which is the natural ignition Volta guessed at in 1776. Under that account
+the gap, photons counted — which is the natural ignition Alessandro Volta guessed at in 1776, from the same university Garlaschelli
+would later leave the graveyard for *(ibid.)*. Under that account
 swamp methane lights itself, no human torch is required, and wetland drainage accounts for the modern
 absence with no observer coupling at all.
 
 *Ignis fatuus* is therefore a real, non-fictional instance of exactly the evidence class §7 describes: a
-thick pre-modern first-person record, a modern null, no replicable capture — Garlaschelli stood in a
-graveyard with a collection device and caught nothing — and, after two and a half centuries of attention
-from competent chemists, **three live and unreconciled explanations** (chemical, electrical,
-sociological). Three centuries in, with the right chemistry in hand and no shadow biome required, it has
+thick pre-modern first-person record, a modern null, and no capture that settles it — Luigi Garlaschelli
+stood in a graveyard at midnight with a vacuum device to collect one and nothing appeared, then went back
+to the lab and *did* get decomposition gases to ignite unaided, in the wrong colour: green, where *ignis
+fatuus* is blue *(field attempt: L. Allen,* Science News Explores*, 29 September 2025; the lab result is
+Garlaschelli & Boschetti 2013, cited by Pavão et al. as ref. 30 and rejected by them on exactly that
+colour mismatch)*. And, after two and a half centuries of attention from competent chemists, **three live
+and unreconciled explanations** (chemical, electrical, sociological) — with the chemical branch itself
+split between methane cool flame and phosphine auto-ignition. Three centuries in, with the right chemistry in hand and no shadow biome required, it has
 not resolved. That is what this kind of question looks like from the inside.
 
 ---
