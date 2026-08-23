@@ -1,0 +1,74 @@
+{
+ "written_utc": "2026-08-23T00:41:33+00:00",
+ "reads_results_json": false,
+ "attacks": {
+  "A1_weighting_function": {
+   "claim_attacked": "measure_l2.py's docstring says the V-as-retention bias runs AGAINST P4. It runs BOTH WAYS and the docstring named one.",
+   "cie1924_end_to_end": 0.07342,
+   "cie2008_end_to_end": 0.07744,
+   "cie2008_peak_nm": 556.0,
+   "cie2008_peak_value": 0.999993,
+   "relative_change": 0.0547,
+   "v450_1924": 0.038,
+   "v450_2008": 0.06472,
+   "P4_survives": true,
+   "verdict": "P4 SURVIVES",
+   "residual_objection": "BOTH functions are luminance-channel. Neither admits chromatic detection, so both understate what the visual system can act on and OVERSTATE the edit. This arm narrows the uncertainty; it does not remove the sign problem. The honest ceiling: even a weight that is 1.0 across the whole 380-780 band gives end-to-end r = r1*r2, below.",
+   "absolute_ceiling_flat_band_weight": 0.25306,
+   "ceiling_still_below_ZTF": true
+  },
+  "A2_band_and_currency": {
+   "claim_attacked": "P1 HIT at 0.3613, which is 1.1 points inside a window I chose.",
+   "r2_grid": {
+    "380-780_photon": 0.3613,
+    "380-780_power": 0.5342,
+    "400-700_photon": 0.2766,
+    "400-700_power": 0.4297
+   },
+   "P1_hit_under": {
+    "380-780_photon": true,
+    "380-780_power": true,
+    "400-700_photon": false,
+    "400-700_power": true
+   },
+   "n_hit": 3,
+   "n_cells": 4,
+   "verdict": "P1 FRAGILE",
+   "reading": "P1's verdict is decided by two free choices. The pre-registration fixed both BEFORE the run, which is the only reason this is reportable at all -- but a prediction that flips across defensible conventions is a weak prediction and is labelled one."
+  },
+  "A3_stage_correlation": {
+   "claim_attacked": "P3 says biology out-edits the atmosphere -- but the eye evolved inside the window the atmosphere already opened, so the two stages are not independent and P3 may be recording that.",
+   "eye_retention_applied_to_UNFILTERED_AM0": 0.08912,
+   "eye_retention_applied_to_surface": 0.10484,
+   "atmosphere_retention": 0.70035,
+   "eye_edit_on_AM0": 0.91088,
+   "atmosphere_edit": 0.29965,
+   "ordering_survives_decorrelation": true,
+   "verdict": "P3 SURVIVES",
+   "reading": "Handed the unfiltered TOA spectrum, the eye discards a LARGER fraction than the atmosphere does. The correlation objection is real but does not reverse the ordering -- if anything the atmosphere HELPS the eye look less selective by pre-removing what the eye would have cut."
+  },
+  "A4_truncated_denominator": {
+   "claim_attacked": "the denominator stops at 4000 nm, so it omits atmospheric thermal IR arriving at the same face, INFLATING every retention.",
+   "solar_surface_photons_per_s_m2": "4.306e+21",
+   "downwelling_LW_photons_300K_eps0.8_4to100um": "3.149e+22",
+   "solar_share_of_combined_photon_influx": 0.1203,
+   "P4_measured": 0.07342,
+   "P4_if_denominator_included_LW": 0.00883,
+   "verdict": "P4 SURVIVES (correction moves it further from 0.355, not toward it)",
+   "reading": "This attack cannot rescue P4: every omission from the denominator makes retention look HIGHER than it is, and P4 predicts LOW. The truncation is a scope limit declared in the prereg, and it is conservative.",
+   "caveat": "a 300 K greybody is a MODEL, not a measured downwelling spectrum. It is used here only to bound a direction, never to report a retention figure."
+  }
+ },
+ "summary": {
+  "predictions_killed": [],
+  "predictions_weakened": [
+   "A2_band_and_currency"
+  ],
+  "verdicts": [
+   "P4 SURVIVES",
+   "P1 FRAGILE",
+   "P3 SURVIVES",
+   "P4 SURVIVES (correction moves it further from 0.355, not toward it)"
+  ]
+ }
+}

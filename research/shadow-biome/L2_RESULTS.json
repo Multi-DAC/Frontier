@@ -1,0 +1,149 @@
+{
+ "written_utc": "2026-08-23T00:41:33+00:00",
+ "prereg": "PREREG-PERCEPTUAL-L2.md",
+ "sources": {
+  "spectra": "ASTM G173-03 via pvlib vendored copy (NREL host DNS-dead on this box; provenance is one step weaker than the prereg asked for, and the published-integral controls are what compensate)",
+  "vlambda": "CIE 1924 photopic V(lambda), CVRL vl1924e_1.csv, 1 nm"
+ },
+ "controls": {
+  "integral_global": {
+   "published_W_m2": 1000.37,
+   "measured_W_m2": 1000.371,
+   "rel_error": 1e-06,
+   "pass": true,
+   "kills": "a corrupted/mis-parsed table, a wrong column order, a broken quadrature"
+  },
+  "integral_extraterrestrial": {
+   "published_W_m2": 1347.9,
+   "measured_W_m2": 1347.934,
+   "rel_error": 2.5e-05,
+   "pass": true,
+   "kills": "a corrupted/mis-parsed table, a wrong column order, a broken quadrature"
+  },
+  "vlambda_peak": {
+   "claim": "V(lambda) peaks at 555 nm with value 1.0",
+   "measured_peak_nm": 555.0,
+   "measured_peak_value": 1.0,
+   "pass": true,
+   "kills": "an unnormalised or scotopic table silently substituted for photopic"
+  },
+  "grid": {
+   "claim": "grid spans 280-4000 nm and V(lambda) spans 360-830 nm",
+   "g173_range": [
+    280.0,
+    4000.0
+   ],
+   "n_rows": 2002,
+   "v_range": [
+    360.0,
+    830.0
+   ],
+   "v_rows": 471,
+   "pass": true,
+   "kills": "a truncated download that would silently shrink the denominator"
+  },
+  "flat_negative_control": {
+   "claim": "a FLAT spectrum retains exactly the band's share of the grid width",
+   "expected": 0.107527,
+   "measured": 0.107527,
+   "pass": true,
+   "kills": "endpoint-clipping bugs in trapz; and it is the value the real answer must NOT equal, which is the input where right and wrong differ"
+  }
+ },
+ "measurements": {
+  "global__photon": {
+   "geometry": "AM1.5G global tilt (37deg, albedo 0.2)",
+   "S1_atmosphere_retention": 0.7003459314052002,
+   "S2_band_retention_of_arriving": 0.36133212958070987,
+   "S3_weighting_retention_of_band": 0.2901385643336475,
+   "S2S3_combined_of_arriving": 0.10483638532416664,
+   "end_to_end_retention": 0.07342173592500795,
+   "_raw": {
+    "toa": 6.147777976152733e+21,
+    "surf": 4.3055712927810627e+21,
+    "band": 1.5557412442821514e+21,
+    "wgt": 4.5138053109066577e+20
+   }
+  },
+  "global__power": {
+   "geometry": "AM1.5G global tilt (37deg, albedo 0.2)",
+   "S1_atmosphere_retention": 0.7421508902402901,
+   "S2_band_retention_of_arriving": 0.5342459062772512,
+   "S3_weighting_retention_of_band": 0.2999652715175718,
+   "S2S3_combined_of_arriving": 0.16025521833360687,
+   "end_to_end_retention": 0.11893355295193839,
+   "_raw": {
+    "toa": 1347.9343199999996,
+    "surf": 1000.3706555734398,
+    "band": 534.4439275000002,
+    "wgt": 160.31461782345502
+   }
+  },
+  "direct__photon": {
+   "geometry": "AM1.5D direct+circumsolar (normal incidence)",
+   "S1_atmosphere_retention": 0.6486577411634988,
+   "S2_band_retention_of_arriving": 0.344287953891594,
+   "S3_weighting_retention_of_band": 0.29199493441004715,
+   "S2S3_combined_of_arriving": 0.10053033851474531,
+   "end_to_end_retention": 0.06520978229937657,
+   "_raw": {
+    "toa": 6.147777976152733e+21,
+    "surf": 3.987803775185938e+21,
+    "band": 1.3729528022799407e+21,
+    "wgt": 4.008952634498217e+20
+   }
+  },
+  "direct__power": {
+   "geometry": "AM1.5D direct+circumsolar (normal incidence)",
+   "S1_atmosphere_retention": 0.6677916838590585,
+   "S2_band_retention_of_arriving": 0.5197239191537277,
+   "S3_weighting_retention_of_band": 0.3040220081784409,
+   "S2S3_combined_of_arriving": 0.15800750959948598,
+   "end_to_end_retention": 0.1055161008978171,
+   "_raw": {
+    "toa": 1347.9343199999996,
+    "surf": 900.1393292842148,
+    "band": 467.82394,
+    "wgt": 142.22877371275044
+   }
+  }
+ },
+ "predictions": {
+  "P1_band_retention_in_0.35_0.60": {
+   "measured": 0.3613,
+   "verdict": "HIT"
+  },
+  "P2_weighting_costs_more_than_band": {
+   "r3_given_band": 0.2901,
+   "r2_band_of_arriving": 0.3613,
+   "verdict": "HIT"
+  },
+  "P3_biology_out_edits_atmosphere": {
+   "margin_global": 0.3273,
+   "margin_direct": 0.2321,
+   "geometries_agree_in_sign": true,
+   "verdict": "HIT"
+  },
+  "P4_end_to_end_below_ZTF_0.355": {
+   "measured": 0.0734,
+   "ztf_retention": 0.355,
+   "verdict": "HIT",
+   "note": "the V(lambda)-as-retention choice OVERESTIMATES retention, so this test is biased toward MISS -- against the prediction"
+  },
+  "P5_famous_figure_denominator_dependent": {
+   "values": {
+    "linear_wavelength_1e-14m_to_1e4m": 4e-11,
+    "linear_frequency_same_span": 1.34953e-08,
+    "log10_frequency_1Hz_to_1e25Hz": 0.0124924,
+    "linear_wavelength_1pm_to_100km": 4e-12,
+    "log10_wavelength_1e-14m_to_1e4m": 0.0173506
+   },
+   "orders_of_magnitude_spread": 9.64,
+   "clause_a_spread_ge_3_orders": true,
+   "clause_b_reproduces_0.0035pct": false,
+   "denominator_that_WOULD_yield_0.0035pct_m": 0.011429,
+   "verdict": "PARTIAL",
+   "reading": "PARTIAL is the stronger result for section 1a, not the weaker one: the famous figure is not merely denominator-dependent, it is unreproducible under every denominator I could defend."
+  }
+ }
+}
