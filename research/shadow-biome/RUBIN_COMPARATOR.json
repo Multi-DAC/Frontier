@@ -1,0 +1,73 @@
+{
+ "prereg": "PREREG-DMTN-PRIMARY.md @ f253aa6",
+ "Q2_Q3_discard_cascade": {
+  "rubin_dmtn006_decam": {
+   "visit_197367": {
+    "raw_per_sq_deg": 8335,
+    "kept_after_5sigma_per_sq_deg": 1035,
+    "discarded_per_sq_deg": 7300,
+    "discarded_pct": 87.58,
+    "reduction_factor": 8.05
+   },
+   "all_visits_mean": {
+    "raw_per_sq_deg": 42493,
+    "kept_after_5sigma_per_sq_deg": 1622,
+    "discarded_per_sq_deg": 40871,
+    "discarded_pct": 96.18,
+    "reduction_factor": 26.2
+   }
+  },
+  "ours_ztf_fig9.1": {
+   "raw_alerts": 643860,
+   "packaged": 228287,
+   "discarded": 415573,
+   "discarded_pct": 64.54,
+   "reduction_factor": 2.82
+  },
+  "unit_note": "Rubin's rows are per-sq-deg densities; ours are absolute alert counts. The RATIO is unit-free, which is why the comparison is possible at all. The two filters are NOT the same operation."
+ },
+ "Q6_dipoles": {
+  "rubin_dipole_density_per_sq_deg": {
+   "visit_197367": 1124,
+   "all_visits_mean": 1609
+  },
+  "ours_pass9_block_S": {
+   "n_union": 8528,
+   "n_mutual_opposite_pairs": 2329,
+   "sources_in_pairs": 4658,
+   "share_of_union_pct": 54.62
+  },
+  "SHARE_COMPARISON_REFUSED": "Table 1's dipole row is annotated '(not included below)', which fixes its relation to the rows BELOW and leaves its relation to the raw rows ABOVE unstated. A Rubin dipole SHARE is therefore not derivable from the published table, so ours cannot be placed against it. Recorded as not-computable rather than estimated."
+ },
+ "Q4_attribution": {
+  "in_dmtn006": {
+   "hits_90_or_95_pct": 0,
+   "hits_purity": 0,
+   "hits_completeness_word": 1,
+   "only_90_in_document": []
+  },
+  "in_ldm612_on_disk_since_day201": {
+   "hits_90_pct": 3,
+   "hits_purity": 7
+  },
+  "upstream_authority_cited_BY_ldm612": [
+   "LSE-163",
+   "LSE-30",
+   "LSE-319",
+   "LSE-61"
+  ],
+  "authority_split": {
+   "cited_as_LSE-30": 2,
+   "cited_as_LSE-61": 1
+  }
+ },
+ "Q5_hundredfold": {
+  "verbatim_found": true,
+  "multiplier": 100,
+  "context": "scribed in Kaiser (2004) and Becker et al. (2013). For the Decam images with seeing of \\(\\sigma_g = 1.8\\) pixels and 2k by 4k pixel sensor, we expect 1.5 noise detections per sensor at \\(5\\sigma\\) or 33 detections per square degree (twice that if counting both positive and negative detections). The raw rate we measure is 100 times this. This suggests that either some substantial quantity of artifacts (in the original images or introduced by the LSST software) are present, or that the pipeline’s estimate of the threshold for detecti",
+  "baseline_stated": "33 detections per square degree expected from Gaussian noise at 5 sigma (sigma_g=1.8 px, 2k x 4k sensor)",
+  "raw_not_post_classifier": true,
+  "dataset": "DECam / CTIO 4m, Program 2013A-724, 60s exposures, 2013"
+ },
+ "rubin_states_its_own_rate_is_UNKNOWN": "ers that will receive the full stream. This 1The LSST alert stream will contain essentially all DIASources detected at 5 𝜎 in the difference image, including a currently unknown fraction of artifacts. LSST will provide a threshold that may be used to filter transients in the alert stream to 90% completeness and 95% purity at 6 𝜎 [LSE-30], so less than 5% of"
+}

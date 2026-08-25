@@ -1,0 +1,108 @@
+{
+ "docs": {
+  "DMTN-006": {
+   "url_requested": "https://dmtn-006.lsst.io/",
+   "url_final": "https://dmtn-006.lsst.io/",
+   "redirected": false,
+   "http_status": 200,
+   "chars": 28124,
+   "title_verbatim_first_line": "DMTN-006: False Positive Rates in the LSST Image Differencing Pipeline",
+   "positive_control": {
+    "LSST": 28,
+    "difference": 34,
+    "image": 82
+   },
+   "positive_control_passed": true,
+   "spelling_counts": {
+    "artifact": 11,
+    "artefact": 0,
+    "false positive": 9,
+    "false-positive": 0,
+    "falsepositive": 0,
+    "purity": 0,
+    "completeness": 1,
+    "reliability": 0,
+    "per square degree": 6,
+    "deg^2": 0,
+    "deg2": 0
+   },
+   "rate_candidates": [
+    "and show both positive and negative artifacts. The dipole fitting code in the LSST pipeline attempts to fit both negative and positive components to a detection, and then flags sources as dipoles if the the absolute value of the flux in both components is similar (neither component holds more than 65% of the total flux). Detections where this flag is set have been marked “Dipole” on the left side of the postage stamps, and one can see that this successfully identifies many of the bright stars with failed subtractions. Many of the other detections show no apparent source at all in the original",
+    "erencing. The reported uncertainties are derived from each exposure’s variance plane, which is also used for computing the uncertainties on the difference images. Figure 3 shows this analysis performed for a pair of well-behaved fields at high latitude. The scatter in the measured fluxes is about 15% wider than the pipeline uncertainties report. While this is enough to account for ~300 detections per square degree, that still falls fall short of the actual detection numbers we see in the high latitude images. Figure 3 Difference in measured flux between exposures 197367 and 197371, normalize",
+    "rs we see in the high latitude images. Figure 3 Difference in measured flux between exposures 197367 and 197371, normalized by the reported uncertainty on each measurement. If the reported uncertainties are correct, this should form a unit Gaussian, however it is better fit by a Gaussian that is 15% wider. The same analysis for one of the visits with extremely high DIA source counts, visit 197662, is shown in Figure 4 . In this image the variance plane underestimates the scatter in the photometry by approximately 60%. This will certainly lead to an order of magnitude excess of detections, a",
+    "hould form a unit Gaussian, however it is better fit by a Gaussian that is 15% wider. The same analysis for one of the visits with extremely high DIA source counts, visit 197662, is shown in Figure 4 . In this image the variance plane underestimates the scatter in the photometry by approximately 60%. This will certainly lead to an order of magnitude excess of detections, and we do not investigate these fields further. Figure 4 Difference in measured flux between the low latitude exposures 197662 and 198668, normalized by the reported uncertainty on each measurement. In this comparison the r",
+    "elds further. Figure 4 Difference in measured flux between the low latitude exposures 197662 and 198668, normalized by the reported uncertainty on each measurement. In this comparison the reported uncertainties are significantly smaller than the observed scatter in the fluxes, differing by about 60%. Figure 5 Force photometry on random locations in the difference image. This measures the noise on the same size scale as the PSF. The reported uncertainties are about 15% smaller than the observed scatter. This is consistent with propagating the variance plane provided by the Community Pipeline",
+    "comparison the reported uncertainties are significantly smaller than the observed scatter in the fluxes, differing by about 60%. Figure 5 Force photometry on random locations in the difference image. This measures the noise on the same size scale as the PSF. The reported uncertainties are about 15% smaller than the observed scatter. This is consistent with propagating the variance plane provided by the Community Pipeline. Noise in Difference Images Â¶ Even after rescaling the variance planes on the input images, the number of detections per square degree are several orders of magnitude g",
+    "an annulus around the bright source of size \\[r_{inner} = 8'',\\] \\[r_{outer} = 50'' - 3 \\times M.\\] This puts the outer edge of the detections at \\(22''\\) for the 9th magnitude case and gradually shrinks the annulus for fainter sources. While this is certainly not a fit that is accurate to 10%, it is generally within \\(\\pm 1\\) detection. The assumption of a constant density annulus of detections is also imprecise but simple to implement. A density gradient could be added if necessary, but for the purposes of testing the performance of moving object detection we believe this to be suffici",
+    "ly mitigated. Figure 16 Example detection on the crosstalk image (right side) of a CCD charge bleed (left side vertical line). Conclusions Â¶ The primary result from this work is that the LSST pipeline is capable of producing a clean sample of difference image detections, at roughly the 200-400 per square degree level, as long as the image variance is carefully tracked. In the case of the test data we tried, this required adjusting the variance measures supplied by an external pipeline to match the observed scatter in pixel variance. Similar checks will be necessary when using variance estimates generated",
+    "ent) in the input images into a mixture of per-pixel noise and correlated noise between pixels. This correlated noise is not currently tracked by the LSST software, and so the detection process defines a threshold relative to the per-pixel noise level. In our testing this threshold is too low by 20-30%, resulting large numbers of detections with signal to noise ratios between \\(4\\sigma\\) and \\(5\\sigma\\) being reported as \\(>5\\sigma\\) detections. We present a fix to this mis-estimate by computing the expected uncertainty on DIA sources from force photometry on the input direct images. This uses",
+    "ncept rather than a final design decision. Further work Â¶ There are a number of ways in which this effort could be extended. Some of these are: Testing on deeper exposures. The data currently used are 60 second exposures on a 4 meter telescope. Scaling by the collecting area, this is about 65% of the depth of an LSST visit. While we expect that many CCD artifacts should not be strongly dependent on the exposure depth, the number of astrophysical sources in the images will be increased and consequently so will the possibility of mis-subtracted sources appearing in the difference images."
+   ],
+   "q4_purity_hits": [
+    "trail shown in Figure 16 . In this case the bright star on the left creates a vertical line of saturated pixels, and when the image is read out, the amplifier reading the right side of the image (without the bleed) is affected by the strong signal on the left side amplifier. While we show this for completeness, in this example dataset the crosstalk corrections that should remove this effect was performed by the Decam Community Pipeline, rather than the LSST software stack. A future extension of this work will be to enable the LSST pipeline’s crosstalk corrections on Decam images and ensure that this effe"
+   ],
+   "q4_ninety_five": [],
+   "q4_snr": [],
+   "q5_multiplier_hits": [],
+   "q5_decam": 7,
+   "q6_method_hits": [
+    "of poorly subtracted stars, and show both positive and negative artifacts. The dipole fitting code in the LSST pipeline attempts to fit both negative and positive components to a detection, and then flags sources as dipoles if the the absolute value of the flux in both components is similar (neither component holds more than 65% of the total flux). Detections where this flag is set have been marked “D",
+    "to a detection, and then flags sources as dipoles if the the absolute value of the flux in both components is similar (neither component holds more than 65% of the total flux). Detections where this flag is set have been marked “Dipole” on the left side of the postage stamps, and one can see that this successfully identifies many of the bright stars with failed subtractions. Many of the other detec",
+    "mages, and the presence of a flux overdensity or underdensity is barely perceptible by eye. Some of these detections could simply be noise excursions that happen to exceed the \\(5.0\\sigma\\) detection threshold. However they could also be real detections of particularly faint objects, and thus it is critical to understand the origin of these detections. Figure 1 Example postage stamps of Dia sources in v",
+    "ected from Gaussian noise. For an image with a Gaussian PSF of width \\(\\sigma_g\\) in pixels (note this is the Gaussian \\(\\sigma\\) , not the full width at half max), the density of detections above a threshold \\(\\nu\\) is \\[n(> \\nu) = \\frac{1}{2^{5/2} \\pi^{3/2}} \\nu e^{-\\nu^2/2},\\] where the total number per image is \\[N_{\\rm total}(> \\nu) = n(> \\nu) / \\sigma_g^2 \\times \\rm{nrows} \\times \\rm{ncol}.\\]",
+    "ure is 100 times this. This suggests that either some substantial quantity of artifacts (in the original images or introduced by the LSST software) are present, or that the pipeline’s estimate of the threshold for detection is incorrect. We believe that latter effect is the dominant contributor of false detections. If the pipeline underestimates the variance in the difference images, then what we call “",
+    "dominant contributor of false detections. If the pipeline underestimates the variance in the difference images, then what we call “ \\(5\\sigma\\) ” will not correspond to our actual intended detection threshold. This true for the direct images as well, but for the difference images the problem of tracking the variance becomes much more difficult due to the convolution steps (Price & Magnier 2004, Becker et",
+    "earing in the science exposure will need to have a signal to noise ratio of \\(5\\sqrt{2}\\) to be detected as a \\(5 \\sigma\\) source in the difference image. The force photometry diagrams thus show this threshold as the two diagonal lines, for positive and negative sources. Though this should be the threshold for detection, the presence of numerous sources just inside the \\(5 \\sqrt{2}\\sigma\\) lines indicate",
+    "cted as a \\(5 \\sigma\\) source in the difference image. The force photometry diagrams thus show this threshold as the two diagonal lines, for positive and negative sources. Though this should be the threshold for detection, the presence of numerous sources just inside the \\(5 \\sqrt{2}\\sigma\\) lines indicates that the pipeline is being overly permissive in detection. The uncertainty on the difference image",
+    "ions of DIA source detections. The parallel diagonal lines denote \\(\\rm{science} - \\rm{template} > 5\\sqrt{2}\\sigma\\) and \\(\\rm{science} - \\rm{template} < -5 \\sqrt{2}\\sigma\\) , which are the intended criteria for detection. The fact that numerous detections appear just inside these lines is a result of the mis-estimation of the variance in the difference image (some incidental failures are also present in",
+    "in the input images into a mixture of per-pixel noise and correlated noise between pixels. This correlated noise is not currently tracked by the LSST software, and so the detection process defines a threshold relative to the per-pixel noise level. In our testing this threshold is too low by 20-30%, resulting large numbers of detections with signal to noise ratios between \\(4\\sigma\\) and \\(5\\sigma\\) being",
+    "noise between pixels. This correlated noise is not currently tracked by the LSST software, and so the detection process defines a threshold relative to the per-pixel noise level. In our testing this threshold is too low by 20-30%, resulting large numbers of detections with signal to noise ratios between \\(4\\sigma\\) and \\(5\\sigma\\) being reported as \\(>5\\sigma\\) detections. We present a fix to this mis-"
+   ]
+  },
+  "DMTN-007": {
+   "url_requested": "https://dmtn-007.lsst.io/",
+   "url_final": "https://dmtn-007.lsst.io/",
+   "redirected": false,
+   "http_status": 200,
+   "chars": 26364,
+   "title_verbatim_first_line": "DMTN-007: Dipole characterization for image differencing",
+   "positive_control": {
+    "LSST": 6,
+    "difference": 5,
+    "image": 48
+   },
+   "positive_control_passed": true,
+   "spelling_counts": {
+    "artifact": 2,
+    "artefact": 0,
+    "false positive": 0,
+    "false-positive": 0,
+    "falsepositive": 0,
+    "purity": 0,
+    "completeness": 0,
+    "reliability": 0,
+    "per square degree": 0,
+    "deg^2": 0,
+    "deg2": 0
+   },
+   "rate_candidates": [
+    "figure_6 , we show the results (analogous to those in figure_5 ) of performing a least-squares fit to the same data as in figure_4 , but also including the “pre-subtraction” image data as two additional data planes. In this example, the pre-subtracted data points were (arbitrarily) down-weighted to 5% (1/20) relative to the diffim data points for the least-squares fit. The degeneracy is still evident (because of the significant down-weighting of the pre-subtraction data) but even so, the final estimated parameters are very close to the input. Figure 6 \\(\\chi^2\\) error contours for a dipole fi",
+    "gradient), while removing the necessity for an additional user-tunable parameter. Recommendation: Test the dipole fitting including using the additional (pre-subtraction) data planes, including simulating bright and steep-gradient backgrounds. Investigate the tolerance of very low weighting (5 to 10%) or additional parameters to (pre-) fit any background gradients on the pre-subtraction planes to evaluate relative improvement in fit accuracy. Below we show the results for both of these options. After updating the dipole fit code to include the pre-subtraction images (here again with 5% weight",
+    "(5 to 10%) or additional parameters to (pre-) fit any background gradients on the pre-subtraction planes to evaluate relative improvement in fit accuracy. Below we show the results for both of these options. After updating the dipole fit code to include the pre-subtraction images (here again with 5% weighting), as shown in this notebook , the accuracy once again improves. The new (constrained) result, fitting to the same simulated dipole data, which, notably does not include any gradients in the pre-subtraction images is shown in Figure 10 (note the difference in axis limits): Figure 10 \\",
+    "ulated dipole data, which, notably does not include any gradients in the pre-subtraction images is shown in Figure 10 (note the difference in axis limits): Figure 10 \\(\\chi^2\\) error contours for a 2-d dipole fit to the data in Figure 7 , analogous to Figure 9 , but in this case integrating the 5%-weighted pre-subtraction image data. Top: error contours showing covariance between dipole flux and x-coordinate of the positive lobe. Bottom: contours for x- and y- coordinate of the positive lobe. In this case, adding the 5% weighted constraint to the fit unsurprisingly improves the flux measu",
+    "Figure 7 , analogous to Figure 9 , but in this case integrating the 5%-weighted pre-subtraction image data. Top: error contours showing covariance between dipole flux and x-coordinate of the positive lobe. Bottom: contours for x- and y- coordinate of the positive lobe. In this case, adding the 5% weighted constraint to the fit unsurprisingly improves the flux measurements for a variety of dipole separations, as shown in Figure 11 (which may be directly compared with Figure 2 , generated with no constraint). Figure 11 Comparison of recovered dipole fluxes as a function of dipole separatio"
+   ],
+   "q4_purity_hits": [
+    "ccurate optimization, especially at low signal-to-noise in the diffim . Of note, the new python-implemented optimization is \\(\\sim 2 \\times\\) faster than the existing C++ dipoleMeasurement implementation. Further investigation and timings of the existing implementation showed that it performed a complete optimization of a single dipole in less than \\(\\sim 20\\) ms, and the new python-implemented version runs in \\(\\sim 10\\) ms on my Macbook Pro, even though it is fitting to \\(3 \\times\\) the data of the original implementation. Additional comparisons may be found in the IPython notebooks . Generi"
+   ],
+   "q4_ninety_five": [],
+   "q4_snr": [],
+   "q5_multiplier_hits": [
+    "t serves to constrain these parameters, but only after potential background gradients are subtracted from those data. We have implemented such a procedure for the LSST ip_diffim pipelines which performs these tasks, and thus achieves dipole measurement with significantly greater accuracy at roughly 2x greater runtime efficiency. Appendix I. IPython notebooks Â¶ All figures and methods investigated for this report were generated using IPython notebooks. The relevant notebooks may be found in this repo . Much of the code in these notebooks is exploratory; below are the highlights (i.e., the ones from"
+   ],
+   "q5_decam": 0,
+   "q6_method_hits": []
+  }
+ },
+ "prereg": "PREREG-DMTN-PRIMARY.md @ f253aa6"
+}

@@ -153,22 +153,39 @@ Prereg §5 forbade waving *"well, obviously no observatory publishes that"* thro
 floor. `feedback_asymmetric_skepticism_is_a_stance`. The check ran.
 
 **Rubin/LSST publishes exactly this artefact, as a dedicated document.** **DMTN-006 — *"False
-Positive Rates in the LSST Image Differencing Pipeline."*** Alongside it, a *numeric requirement* on
-the alert stream — **90% complete at 95% purity for DIASources at SNR = 6** — and a measured finding
+Positive Rates in the LSST Image Differencing Pipeline."*** ~~Alongside it, a *numeric requirement* on
+the alert stream — **90% complete at 95% purity for DIASources at SNR = 6**~~ — and a measured finding
 that the raw false-positive detection rate in DECam data runs **~100× above the noise-only
 expectation.**
+
+> 🔴 **CORRECTED D206 by `RUBIN_COMPARATOR.md` (prereg OUTCOME D).** The struck clause
+> mis-attributed the 90/95 requirement. It is **not in DMTN-006** — that document contains `90%`
+> zero times, `purity` zero times, and its one `completeness` is the English idiom. The requirement
+> is carried by **LDM-612**, which cites `[LSE-30]` twice and `LSE-61` once for the same number.
+> `_src_rubin_ldm612.txt` was already in this directory, read at PASS 1 on Day 201. The word
+> "alongside" had no referent.
+> The **100×** claim beside it was **verified verbatim** against the primary: baseline 33/deg² from
+> Gaussian noise, raw, DECam. ✅
 
 ⛔ **So ZTF's silence is a property of ZTF's supplement, not of the field.** The comfortable reading —
 *observatories don't publish artefact rates* — is refuted by the nearest comparable observatory,
 which publishes one, names the document after it, and states it as a requirement. Had this check been
 skipped, the write-up would have recorded a reasonable-sounding excuse in place of a fact.
 
-⭐ **And it relocates the program.** Criteria 1c and 3a are **satisfiable — against Rubin, not against
+~~⭐ **And it relocates the program.** Criteria 1c and 3a are **satisfiable — against Rubin, not against
 ZTF.** The choice of archive was made for retention policy (LDM-612's ship-the-score-beside-the-data
 refusal, PASS 1). It turns out to carry a second property nobody selected for: Rubin is the archive
-that publishes the comparator §5 demands. ⚠ Grade: search-summary, primary not yet fetched — same
+that publishes the comparator §5 demands.~~ ⚠ Grade: search-summary, primary not yet fetched — same
 grade `PREREG-S5-VERDICT.md §5` already flags on the LDM-612 read. **Fetch DMTN-006 before any of
 this is scored.**
+
+> 🟠 **DOWNGRADED D206 by `RUBIN_COMPARATOR.md` (prereg OUTCOME B).** Primaries fetched; the
+> relocation is **partial**, not clean. Rubin publishes (a) a **measured** rate — for **DECam
+> precursor data, 2013**, not its own stream; (b) a **target**, 90/95 at 6σ, which is a
+> specification rather than a measurement; and (c) an explicit statement that its own operational
+> artefact fraction is ***"currently unknown."*** The narrow claim — *the field publishes such
+> documents, so ZTF's silence is ZTF's* — **survives at primary grade.** "Rubin publishes the
+> comparator §5 demands" does not. **Grade on this section is now PRIMARY.**
 
 ⭐ **Bonus, and it lands on 1b.** **DMTN-007 — *"Dipole characterization for image differencing."***
 Pass 9's Block S headline is **2,329 mutual opposite pairs** — dipoles. Rubin has a technical note on
