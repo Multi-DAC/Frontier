@@ -1,0 +1,778 @@
+{
+ "prereg": "PREREG-SILENT-NULL.md @ a8e10fb",
+ "run_at": "2026-08-26T18:43:07.484793+00:00",
+ "tolerance_band": 0.05,
+ "n_seed": 1,
+ "n_sibling": 1,
+ "n_frame": 12,
+ "rows": [
+  {
+   "id": "S1",
+   "tier": "seed",
+   "name": "USGS FDSN event",
+   "predicted_A2": "A2-SILENT",
+   "fetched_at": "2026-08-26T18:41:40.339029+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "bytes": 11013,
+    "elapsed": 0.46,
+    "final_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=6",
+    "params": {
+     "format": "geojson",
+     "minmagnitude": "6"
+    },
+    "rows": 13,
+    "declared_total": 13,
+    "parse_note": "fdsn/geojson",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [],
+    "body_head": "{\"type\":\"FeatureCollection\",\"metadata\":{\"generated\":1787769700000,\"url\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=6\",\"title\":\"USGS Earthquakes\",\"status\":200,\"api\":\"2.7.0\",\"count\":13},\"features\":[{\"type\":\"Feature\",\"properties\":{\"mag\":6,\"place\":\"215 km NNE of Lospalos, Timor Leste\",\"time\":1787580617299,\"updated\":1787667579675,\"tz\":null,\"url\":\"https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn41\",\"detail\":\"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000tn41&format=geojson\",\"felt\":null,\"cdi\":null,\"mmi\":3.987,\"alert\":\"green\",\"status\":\"revi"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "bytes": 11202964,
+    "elapsed": 1.26,
+    "final_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=6&starttime=1900-01-01T00%3A00%3A00&endtime=2026-08-27T00%3A00%3A00&limit=20000",
+    "params": {
+     "format": "geojson",
+     "minmagnitude": "6",
+     "starttime": "1900-01-01T00:00:00",
+     "endtime": "2026-08-27T00:00:00",
+     "limit": "20000"
+    },
+    "rows": 14514,
+    "declared_total": null,
+    "parse_note": "fdsn/geojson",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    13,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    14514,
+    "rows_returned"
+   ],
+   "A1": "A1-NONE",
+   "A2": "A2-SILENT",
+   "why": "eligible set grew 13 -> 14514 (1116.5x) with no declaration in the naive body",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "P1",
+   "tier": "sibling",
+   "name": "EarthScope/IRIS FDSN event",
+   "predicted_A2": "A2-SILENT",
+   "fetched_at": "2026-08-26T18:41:43.140381+00:00",
+   "naive": {
+    "ok": true,
+    "status": 410,
+    "ctype": "text/html; charset=utf-8",
+    "bytes": 7186,
+    "elapsed": 0.98,
+    "final_url": "https://service.iris.edu/fdsnws/event/1/query?format=text&minmagnitude=6",
+    "params": {
+     "format": "text",
+     "minmagnitude": "6"
+    },
+    "rows": 172,
+    "declared_total": null,
+    "parse_note": "fdsn/text (no total by contract)",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [],
+    "body_head": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    \n      <title>\n        \n          NGF: \n  Service Unavailable\n\n        \n      </title>\n      \n  <meta name=\"keywords\" content=\"seismology, seismological data,\n  earthquakes, iris dmc\" />\n  <!-- Forces IE to render in 'latest' compatible mode -->\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  \n\n\n\n\n\n\n      \n  <link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"/static/css/iris.css\" />\n\n  <link rel=\"stylesheet\" media=\"print\" type=\"text/"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 410,
+    "ctype": "text/html; charset=utf-8",
+    "bytes": 7186,
+    "elapsed": 0.77,
+    "final_url": "https://service.iris.edu/fdsnws/event/1/query?format=text&minmagnitude=6&starttime=1900-01-01T00%3A00%3A00&endtime=2026-08-27T00%3A00%3A00",
+    "params": {
+     "format": "text",
+     "minmagnitude": "6",
+     "starttime": "1900-01-01T00:00:00",
+     "endtime": "2026-08-27T00:00:00"
+    },
+    "rows": 172,
+    "declared_total": null,
+    "parse_note": "fdsn/text (no total by contract)",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    172,
+    "rows_returned"
+   ],
+   "eligible_bounded": [
+    172,
+    "rows_returned"
+   ],
+   "A1": "A1-NONE",
+   "A2": "A2-NONE",
+   "why": "eligible 172 vs 172 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F1",
+   "tier": "frame",
+   "name": "arXiv API",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:41:45.895981+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/atom+xml; charset=utf-8",
+    "bytes": 23335,
+    "elapsed": 0.6,
+    "final_url": "https://export.arxiv.org/api/query?search_query=all%3Aelectron",
+    "params": {
+     "search_query": "all:electron"
+    },
+    "rows": 10,
+    "declared_total": 185365,
+    "parse_note": "atom/opensearch",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "totalResults",
+     "itemsPerPage",
+     "startIndex"
+    ],
+    "body_head": "<?xml version='1.0' encoding='UTF-8'?>\n<feed xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\" xmlns:arxiv=\"http://arxiv.org/schemas/atom\" xmlns=\"http://www.w3.org/2005/Atom\">\n  <id>https://arxiv.org/api/WyBPOs+pRgzCTXTMWhtnbcOmk6g</id>\n  <title>arXiv Query: search_query=all:electron&amp;id_list=&amp;start=0&amp;max_results=10</title>\n  <updated>2026-08-26T18:41:46Z</updated>\n  <link href=\"https://arxiv.org/api/query?search_query=all:electron&amp;start=0&amp;max_results=10&amp;id_list=\" type=\"application/atom+xml\"/>\n  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>\n  <opensearch:to"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/atom+xml; charset=utf-8",
+    "bytes": 445226,
+    "elapsed": 1.53,
+    "final_url": "https://export.arxiv.org/api/query?search_query=all%3Aelectron&start=0&max_results=200",
+    "params": {
+     "search_query": "all:electron",
+     "start": "0",
+     "max_results": "200"
+    },
+    "rows": 200,
+    "declared_total": 185365,
+    "parse_note": "atom/opensearch",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    185365,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    185365,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 185365 vs 185365 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F2",
+   "tier": "frame",
+   "name": "Crossref works",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:41:49.029975+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 52265,
+    "elapsed": 0.6,
+    "final_url": "https://api.crossref.org/works?query=electron",
+    "params": {
+     "query": "electron"
+    },
+    "rows": 20,
+    "declared_total": 1069570,
+    "parse_note": "crossref",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "total-results"
+    ],
+    "body_head": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":1069570,\"items\":[{\"indexed\":{\"date-parts\":[[2026,6,11]],\"date-time\":\"2026-06-11T18:21:32Z\",\"timestamp\":1781202092662,\"version\":\"3.54.1\"},\"publisher-location\":\"London\",\"reference-count\":6,\"publisher\":\"Macmillan Education UK\",\"isbn-type\":[{\"value\":\"9780333182925\",\"type\":\"print\"},{\"value\":\"9781349025954\",\"type\":\"electronic\"}],\"license\":[{\"start\":{\"date-parts\":[[1975,1,1]],\"date-time\":\"1975-01-01T00:00:00Z\",\"timestamp\":157766400000},\"content-version\":\"unspecified\",\"delay-in-days\":0,\"URL\":\"htt"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 909021,
+    "elapsed": 0.75,
+    "final_url": "https://api.crossref.org/works?query=electron&rows=200",
+    "params": {
+     "query": "electron",
+     "rows": "200"
+    },
+    "rows": 200,
+    "declared_total": 1069570,
+    "parse_note": "crossref",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    1069570,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    1069570,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 1069570 vs 1069570 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F3",
+   "tier": "frame",
+   "name": "OpenAlex works",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:41:51.383367+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 433513,
+    "elapsed": 1.74,
+    "final_url": "https://api.openalex.org/works?search=electron",
+    "params": {
+     "search": "electron"
+    },
+    "rows": 25,
+    "declared_total": 9692815,
+    "parse_note": "openalex",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "count",
+     "per_page"
+    ],
+    "body_head": "{\"meta\": {\"count\": 9692815, \"db_response_time_ms\": 262, \"page\": 1, \"per_page\": 25, \"groups_count\": null, \"x_query\": {\"oql\": \"works where full text has (electron)\", \"oqo\": {\"get_rows\": \"works\", \"filter_rows\": [{\"column_id\": \"fulltext.search\", \"value\": \"electron\", \"operator\": \"has\"}]}, \"url\": \"/works?filter=fulltext.search:electron\"}, \"cost_usd\": 0.001}, \"results\": [{\"id\": \"https://openalex.org/W2023271753\", \"doi\": \"https://doi.org/10.1103/physrevb.37.785\", \"title\": \"Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density\", \"display_name\": \"Developm"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 3872498,
+    "elapsed": 2.6,
+    "final_url": "https://api.openalex.org/works?search=electron&per_page=200",
+    "params": {
+     "search": "electron",
+     "per_page": "200"
+    },
+    "rows": 200,
+    "declared_total": 9692815,
+    "parse_note": "openalex",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    9692815,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    9692815,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 9692815 vs 9692815 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F4",
+   "tier": "frame",
+   "name": "GBIF occurrence",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:41:56.743966+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 99866,
+    "elapsed": 1.44,
+    "final_url": "https://api.gbif.org/v1/occurrence/search?q=Corvus",
+    "params": {
+     "q": "Corvus"
+    },
+    "rows": 20,
+    "declared_total": 64203640,
+    "parse_note": "gbif",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "count",
+     "limit",
+     "endOfRecords"
+    ],
+    "body_head": "{\"offset\":0,\"limit\":20,\"endOfRecords\":false,\"count\":64203640,\"results\":[{\"key\":1841345746,\"datasetKey\":\"f9a70dab-004b-45ad-90cb-24d8ff645b44\",\"publishingOrgKey\":\"296fe5cf-ae43-4212-8f77-293e807d0d5a\",\"installationKey\":\"d91497eb-406a-4c8f-8f41-efc74acede7f\",\"hostingOrganizationKey\":\"296fe5cf-ae43-4212-8f77-293e807d0d5a\",\"publishingCountry\":\"CA\",\"protocol\":\"EML\",\"lastCrawled\":\"2026-08-23T18:43:39.628+00:00\",\"lastParsed\":\"2026-08-23T18:50:02.725+00:00\",\"crawlId\":391,\"extensions\":{},\"basisOfRecord\":\"PRESERVED_SPECIMEN\",\"occurrenceStatus\":\"PRESENT\",\"lifeStage\":\"Adult\",\"classifications\":{\"7ddf754f-d"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 1900251,
+    "elapsed": 2.41,
+    "final_url": "https://api.gbif.org/v1/occurrence/search?q=Corvus&limit=300",
+    "params": {
+     "q": "Corvus",
+     "limit": "300"
+    },
+    "rows": 300,
+    "declared_total": 64203640,
+    "parse_note": "gbif",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    64203640,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    64203640,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 64203640 vs 64203640 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F5",
+   "tier": "frame",
+   "name": "Zenodo records",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:42:01.606598+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 192392,
+    "elapsed": 3.48,
+    "final_url": "https://zenodo.org/api/records?q=electron",
+    "params": {
+     "q": "electron"
+    },
+    "rows": 25,
+    "declared_total": 42125,
+    "parse_note": "zenodo",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "links"
+    ],
+    "body_head": "{\"hits\": {\"hits\": [{\"created\": \"2023-05-06T16:29:55.078553+00:00\", \"modified\": \"2024-07-12T04:02:27.396897+00:00\", \"id\": 7903069, \"conceptrecid\": \"7903068\", \"doi\": \"10.1016/j.ultramic.2021.113461\", \"doi_url\": \"https://doi.org/10.1016/j.ultramic.2021.113461\", \"metadata\": {\"title\": \"The Performance of EDXS at Elevated Sample Temperatures Using a MEMS-Based In Situ TEM Heating System\", \"doi\": \"10.1016/j.ultramic.2021.113461\", \"publication_date\": \"2021-12-31\", \"description\": \"<p>Since the development of MEMS heating holders, dynamic in-situ experiments at elevated temperatures may be complemented "
+   },
+   "bounded": {
+    "ok": true,
+    "status": 400,
+    "ctype": "application/json",
+    "bytes": 207,
+    "elapsed": 0.72,
+    "final_url": "https://zenodo.org/api/records?q=electron&size=200",
+    "params": {
+     "q": "electron",
+     "size": "200"
+    },
+    "rows": null,
+    "declared_total": null,
+    "parse_note": "UNPARSEABLE KeyError: 'hits'",
+    "body_head": "{\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"size\", \"messages\": [\"Page size cannot be greater than 25. Please use authenticated requests to increase the limit to 100.\"]}]}",
+    "http200_but_error_body": false
+   },
+   "A2": "A2-UNREACHABLE",
+   "A1": "A1-UNREACHABLE",
+   "why": "bounded leg unusable: UNPARSEABLE KeyError: 'hits'"
+  },
+  {
+   "id": "F6",
+   "tier": "frame",
+   "name": "PubMed esearch",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:42:06.803835+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=UTF-8",
+    "bytes": 693,
+    "elapsed": 0.63,
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=electron&retmode=json",
+    "params": {
+     "db": "pubmed",
+     "term": "electron",
+     "retmode": "json"
+    },
+    "rows": 20,
+    "declared_total": 1085475,
+    "parse_note": "eutils",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "count",
+     "retmax",
+     "retstart"
+    ],
+    "body_head": "{\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"1085475\",\"retmax\":\"20\",\"retstart\":\"0\",\"idlist\":[\"42644815\",\"42644814\",\"42644731\",\"42644717\",\"42644614\",\"42644606\",\"42644598\",\"42644580\",\"42644577\",\"42644567\",\"42644565\",\"42644545\",\"42644522\",\"42644514\",\"42644495\",\"42644475\",\"42644389\",\"42644380\",\"42644359\",\"42644356\"],\"translationset\":[{\"from\":\"electron\",\"to\":\"\\\"electron's\\\"[All Fields] OR \\\"electrone\\\"[All Fields] OR \\\"electrons\\\"[MeSH Terms] OR \\\"electrons\\\"[All Fields] OR \\\"electron\\\"[All Fields]\"}],\"querytranslation\":\"\\\"electron s\\\"[All Fields] OR \\\"electrone\\\"[All Fiel"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=UTF-8",
+    "bytes": 2674,
+    "elapsed": 0.56,
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=electron&retmode=json&retmax=200",
+    "params": {
+     "db": "pubmed",
+     "term": "electron",
+     "retmode": "json",
+     "retmax": "200"
+    },
+    "rows": 200,
+    "declared_total": 1085475,
+    "parse_note": "eutils",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    1085475,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    1085475,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 1085475 vs 1085475 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F7",
+   "tier": "frame",
+   "name": "openFDA drug event",
+   "predicted_A2": "A2-SILENT",
+   "fetched_at": "2026-08-26T18:42:08.998365+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "bytes": 120392,
+    "elapsed": 0.61,
+    "final_url": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3Aaspirin",
+    "params": {
+     "search": "patient.drug.medicinalproduct:aspirin"
+    },
+    "rows": 1,
+    "declared_total": 617935,
+    "parse_note": "openfda",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "total",
+     "limit",
+     "skip"
+    ],
+    "body_head": "{\n  \"meta\": {\n    \"disclaimer\": \"Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.\",\n    \"terms\": \"https://open.fda.gov/terms/\",\n    \"license\": \"https://open.fda.gov/license/\",\n    \"last_updated\": \"2026-07-30\",\n    \"results\": {\n      \"skip\": 0,\n      \"limit\": 1,\n      \"total\": 617935\n    }\n  },\n  \"results\": [\n    {\n      \"safetyreportversion\": \"2\",\n      \"safetyreportid\": \"10003304\""
+   },
+   "bounded": {
+    "ok": true,
+    "status": 403,
+    "ctype": "application/json",
+    "bytes": 128,
+    "elapsed": 0.26,
+    "final_url": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3Aaspirin&limit=1000",
+    "params": {
+     "search": "patient.drug.medicinalproduct:aspirin",
+     "limit": "1000"
+    },
+    "rows": 0,
+    "declared_total": null,
+    "parse_note": "openfda",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    617935,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    0,
+    "rows_returned"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 617935 vs 0 within the 5% band",
+   "inside_tolerance_band": true
+  },
+  {
+   "id": "F8",
+   "tier": "frame",
+   "name": "JPL SSD close-approach",
+   "predicted_A2": "A2-SILENT",
+   "fetched_at": "2026-08-26T18:42:10.865265+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 5455,
+    "elapsed": 0.42,
+    "final_url": "https://ssd-api.jpl.nasa.gov/cad.api",
+    "params": {},
+    "rows": 30,
+    "declared_total": 30,
+    "parse_note": "ssd-cad",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "signature"
+    ],
+    "body_head": "{\"signature\":{\"source\":\"NASA/JPL SBDB Close Approach Data API\",\"version\":\"1.5\"},\"count\":30,\"fields\":[\"des\",\"orbit_id\",\"jd\",\"cd\",\"dist\",\"dist_min\",\"dist_max\",\"v_rel\",\"v_inf\",\"t_sigma_f\",\"h\"],\"data\":[[\"2026 QV2\",\"1\",\"2461278.581812541\",\"2026-Aug-26 01:58\",\"0.01120335958881\",\"0.0111292009664785\",\"0.0112775087728173\",\"6.7738165088093\",\"6.73861505748086\",\"00:09\",\"27.235\"],[\"523609\",\"57\",\"2461279.583714085\",\"2026-Aug-27 02:01\",\"0.0473093531067489\",\"0.0473091968401503\",\"0.0473095093733528\",\"22.7495843115937\",\"22.7471085118476\",\"< 00:01\",\"19.53\"],[\"2026 QY1\",\"2\",\"2461280.692937069\",\"2026-Aug-28 04:38\""
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 89005962,
+    "elapsed": 24.74,
+    "final_url": "https://ssd-api.jpl.nasa.gov/cad.api?date-min=1900-01-01&date-max=2100-01-01&dist-max=1",
+    "params": {
+     "date-min": "1900-01-01",
+     "date-max": "2100-01-01",
+     "dist-max": "1"
+    },
+    "rows": 516088,
+    "declared_total": 516088,
+    "parse_note": "ssd-cad",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    30,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    516088,
+    "declared_total"
+   ],
+   "A1": "A1-NONE",
+   "A2": "A2-DECLARED",
+   "why": "narrowed, but naive body names it: ['signature']",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F9",
+   "tier": "frame",
+   "name": "SIMBAD TAP",
+   "predicted_A2": "A2-DECLARED",
+   "fetched_at": "2026-08-26T18:42:37.478418+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json;charset=UTF-8",
+    "bytes": 1177318,
+    "elapsed": 3.08,
+    "final_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?request=doQuery&lang=adql&format=json&query=SELECT+main_id+FROM+basic+WHERE+otype%3D%27G..%27",
+    "params": {
+     "request": "doQuery",
+     "lang": "adql",
+     "format": "json",
+     "query": "SELECT main_id FROM basic WHERE otype='G..'"
+    },
+    "rows": 50000,
+    "declared_total": null,
+    "parse_note": "tap/json (no total by contract)",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [],
+    "body_head": "{\"metadata\":[{\"name\":\"main_id\",\"description\":\"Main identifier for an object\",\"datatype\":\"CHAR\",\"arraysize\":\"*\",\"ucd\":\"meta.id;meta.main\",\"utype\":\"mango:MangoObject.identifier\"}],\"data\":[[\"LEDA   90488\"],[\"LEDA 4012004\"],[\"LEDA 1525246\"],[\"LEDA 1787124\"],[\"FIRST J074908.2+370507\"],[\"LEDA 4003704\"],[\"SDSS J104040.12+092449.4\"],[\"LEDA  487153\"],[\"LEDA 4006192\"],[\"2dFGRS TGS061Z113\"],[\"LEDA   36769\"],[\"LEDA   72949\"],[\"LEDA 3086028\"],[\"6dFGS gJ174648.7-082242\"],[\"LEDA 1505933\"],[\"LEDA 4018307\"],[\"2dFGRS TGS374Z118\"],[\"Z  89-52\"],[\"LEDA 1906819\"],[\"LEDA  166178\"],[\"LEDA 3091616\"],[\"LEDA 1276691\"],["
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json;charset=UTF-8",
+    "bytes": 5729337,
+    "elapsed": 4.71,
+    "final_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?request=doQuery&lang=adql&format=json&MAXREC=200000&query=SELECT+main_id+FROM+basic+WHERE+otype%3D%27G..%27",
+    "params": {
+     "request": "doQuery",
+     "lang": "adql",
+     "format": "json",
+     "MAXREC": "200000",
+     "query": "SELECT main_id FROM basic WHERE otype='G..'"
+    },
+    "rows": 200000,
+    "declared_total": null,
+    "parse_note": "tap/json (no total by contract)",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    50000,
+    "rows_returned"
+   ],
+   "eligible_bounded": [
+    200000,
+    "rows_returned"
+   ],
+   "A1": "A1-SILENT",
+   "A2": "A2-INDETERMINATE",
+   "why": "naive body carries NO total, so its eligible set cannot be read from inside one response; bounded is larger but the cause is not separable from pagination",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F10",
+   "tier": "frame",
+   "name": "NASA Exoplanet Archive TAP",
+   "predicted_A2": "A2-DECLARED",
+   "fetched_at": "2026-08-26T18:42:46.298408+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 1149092,
+    "elapsed": 2.33,
+    "final_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?request=doQuery&lang=adql&format=json&query=select+pl_name+from+ps",
+    "params": {
+     "request": "doQuery",
+     "lang": "adql",
+     "format": "json",
+     "query": "select pl_name from ps"
+    },
+    "rows": null,
+    "declared_total": null,
+    "parse_note": "UNPARSEABLE AttributeError: 'list' object has no attribute 'get'",
+    "body_head": "[\n{\"pl_name\": \"Kepler-317 c\"},\n{\"pl_name\": \"Kepler-1513 b\"},\n{\"pl_name\": \"HAT-P-45 b\"},\n{\"pl_name\": \"KMT-2021-BLG-1898L b\"},\n{\"pl_name\": \"HATS-10 b\"},\n{\"pl_name\": \"NGTS-1 b\"},\n{\"pl_name\": \"Kepler-432 b\"},\n{\"pl_name\": \"Kepler-1181 b\"},\n{\"pl_name\": \"Kepler-106 d\"},\n{\"pl_name\": \"TOI-3474 b\"},\n{\"pl_name\": \"Kepler-26 d\"},\n{\"pl_name\": \"Kepler-77 b\"},\n{\"pl_name\": \"Kepler-387 b\"},\n{\"pl_name\": \"WASP-75 b\"},\n{\"pl_name\": \"TOI-4914 b\"},\n{\"pl_name\": \"Kepler-1408 b\"},\n{\"pl_name\": \"Kepler-687 b\"},\n{\"pl_name\": \"WASP-33 b\"},\n{\"pl_name\": \"Kepler-467 b\"},\n{\"pl_name\": \"K2-42 b\"},\n{\"pl_name\": \"Kepler-81 c\"},\n{\"pl_",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": []
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 1149092,
+    "elapsed": 4.0,
+    "final_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?request=doQuery&lang=adql&format=json&MAXREC=200000&query=select+pl_name+from+ps",
+    "params": {
+     "request": "doQuery",
+     "lang": "adql",
+     "format": "json",
+     "MAXREC": "200000",
+     "query": "select pl_name from ps"
+    },
+    "rows": null,
+    "declared_total": null,
+    "parse_note": "UNPARSEABLE AttributeError: 'list' object has no attribute 'get'",
+    "body_head": "[\n{\"pl_name\": \"Kepler-317 c\"},\n{\"pl_name\": \"Kepler-1513 b\"},\n{\"pl_name\": \"HAT-P-45 b\"},\n{\"pl_name\": \"KMT-2021-BLG-1898L b\"},\n{\"pl_name\": \"HATS-10 b\"},\n{\"pl_name\": \"NGTS-1 b\"},\n{\"pl_name\": \"Kepler-432 b\"},\n{\"pl_name\": \"Kepler-1181 b\"},\n{\"pl_name\": \"Kepler-106 d\"},\n{\"pl_name\": \"TOI-3474 b\"},\n{\"pl_name\": \"Kepler-26 d\"},\n{\"pl_name\": \"Kepler-77 b\"},\n{\"pl_name\": \"Kepler-387 b\"},\n{\"pl_name\": \"WASP-75 b\"}",
+    "http200_but_error_body": false
+   },
+   "A2": "A2-UNREACHABLE",
+   "A1": "A1-UNREACHABLE",
+   "why": "naive leg unusable: UNPARSEABLE AttributeError: 'list' object has no attribute 'get'"
+  },
+  {
+   "id": "F11",
+   "tier": "frame",
+   "name": "DataCite DOIs",
+   "predicted_A2": "A2-NONE",
+   "fetched_at": "2026-08-26T18:42:53.638142+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "bytes": 186995,
+    "elapsed": 1.85,
+    "final_url": "https://api.datacite.org/dois?query=electron",
+    "params": {
+     "query": "electron"
+    },
+    "rows": 25,
+    "declared_total": 8325743,
+    "parse_note": "datacite",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [],
+    "body_head": "{\"data\":[{\"id\":\"10.5281/zenodo.6508590\",\"type\":\"dois\",\"attributes\":{\"doi\":\"10.5281/zenodo.6508590\",\"identifiers\":[],\"creators\":[{\"nameType\":\"Personal\",\"familyName\":\"Nemo\",\"name\":\"Nemo\",\"nameIdentifiers\":[],\"affiliation\":[]},{\"nameType\":\"Personal\",\"affiliation\":[\"@actions\"],\"familyName\":\"actions-user\",\"name\":\"actions-user\",\"nameIdentifiers\":[]}],\"titles\":[{\"title\":\"captn3m0/electron-fingerprints: v2026.8.26\"}],\"publisher\":\"Zenodo\",\"container\":{},\"publicationYear\":2026,\"subjects\":[],\"contributors\":[],\"dates\":[{\"date\":\"2026-08-26\",\"dateType\":\"Issued\"}],\"language\":null,\"types\":{\"schemaOrg\":\"Softwa"
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "bytes": 3762709,
+    "elapsed": 6.92,
+    "final_url": "https://api.datacite.org/dois?query=electron&page%5Bsize%5D=200",
+    "params": {
+     "query": "electron",
+     "page[size]": "200"
+    },
+    "rows": 200,
+    "declared_total": 8325743,
+    "parse_note": "datacite",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    8325743,
+    "declared_total"
+   ],
+   "eligible_bounded": [
+    8325743,
+    "declared_total"
+   ],
+   "A1": "A1-DECLARED",
+   "A2": "A2-NONE",
+   "why": "eligible 8325743 vs 8325743 within the 5% band",
+   "inside_tolerance_band": false
+  },
+  {
+   "id": "F12",
+   "tier": "frame",
+   "name": "USGS Water Services IV",
+   "predicted_A2": "A2-SILENT",
+   "fetched_at": "2026-08-26T18:43:03.430949+00:00",
+   "naive": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 2415,
+    "elapsed": 0.71,
+    "final_url": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&parameterCd=00060",
+    "params": {
+     "format": "json",
+     "sites": "01646500",
+     "parameterCd": "00060"
+    },
+    "rows": 1,
+    "declared_total": null,
+    "parse_note": "nwis/waterml-json (no total by contract)",
+    "http200_but_error_body": false,
+    "declaration_tokens_found": [
+     "queryInfo",
+     "criteria"
+    ],
+    "body_head": "{\"name\":\"ns1:timeSeriesResponseType\",\"declaredType\":\"org.cuahsi.waterml.TimeSeriesResponseType\",\"scope\":\"javax.xml.bind.JAXBElement$GlobalScope\",\"value\":{\"queryInfo\":{\"queryURL\":\"http://waterservices.usgs.gov/nwis/iv/format=json&sites=01646500&parameterCd=00060\",\"criteria\":{\"locationParam\":\"[ALL:01646500]\",\"variableParam\":\"[00060]\",\"parameter\":[]},\"note\":[{\"value\":\"[ALL:01646500]\",\"title\":\"filter:sites\"},{\"value\":\"[mode=LATEST, modifiedSince=null]\",\"title\":\"filter:timeRange\"},{\"value\":\"methodIds=[ALL]\",\"title\":\"filter:methodId\"},{\"value\":\"2026-08-26T18:43:04.109Z\",\"title\":\"requestDT\"},{\"value\""
+   },
+   "bounded": {
+    "ok": true,
+    "status": 200,
+    "ctype": "application/json",
+    "bytes": 2678337,
+    "elapsed": 2.33,
+    "final_url": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=01646500&parameterCd=00060&startDT=2026-05-01&endDT=2026-08-26",
+    "params": {
+     "format": "json",
+     "sites": "01646500",
+     "parameterCd": "00060",
+     "startDT": "2026-05-01",
+     "endDT": "2026-08-26"
+    },
+    "rows": 33833,
+    "declared_total": null,
+    "parse_note": "nwis/waterml-json (no total by contract)",
+    "http200_but_error_body": false
+   },
+   "eligible_naive": [
+    1,
+    "rows_returned"
+   ],
+   "eligible_bounded": [
+    33833,
+    "rows_returned"
+   ],
+   "A1": "A1-SILENT",
+   "A2": "A2-INDETERMINATE",
+   "why": "naive body carries NO total, so its eligible set cannot be read from inside one response; bounded is larger but the cause is not separable from pagination",
+   "inside_tolerance_band": false
+  }
+ ]
+}
