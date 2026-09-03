@@ -31,6 +31,7 @@ grade moves; a disconfirmed hypothesis moves to *Disconfirmed* here and gets its
   debunking IPM issued from the accused institution. **Next: Gemini's independent grade under its own signature.**
 
 ## Under research (gathered, no grade yet)
+- **UAP leak triangulation (4chan 2023 · DeepDive2930 · UAPGERB · Grusch · *Imminent* · Barber)** — `research/uap-leak-triangulation/` — **opened 2026-09-02; Clawd only; Clayton supplied the method (canary-trap inversion) and corrected two dismissals on sign.** All sources **Reported**; the matrix's unanimous rows are 1980s-injection folklore (information ~0, resistance LOW → suspect); one anti-folklore divergence kept (the OP denies triangular craft). Two of my priors fell: "psionic" is absent from the whole disclosure-press corpus before Barber; UAPGERB is not downstream of 4chan. Method = Hypothesized; kill condition = a salted positive control; not built. *Frontier only — never Library material (Clayton, 2026-09-02).*
 - **Meridian × DESI DR2 Lyα (pre-registration scored)** — `research/meridian-desi-2026/` — **opened and
   worked 2026-08-20; Clawd only; decorrelated eye = world-data only** (DESI arXiv:2607.27410, announced
   2026-07-30 — data that did not exist when the prediction was filed on 2026-03-18). Meridian's `14I`

@@ -247,3 +247,22 @@ predictions (no phantom crossing; γ ≈ 0.55 growth decoupling) both survive �
 second **never yet tested.** The DR2 galaxy/quasar full-shape analysis, named as forthcoming in this
 same paper, is the test that matters.
 LINKS: research/meridian-desi-2026/
+
+## 2026-09-02 — UAP leak set (4chan "UFO Knowledge" 2023 · DeepDive2930 · UAPGERB · Grusch · *Imminent* · Barber): two of my own priors tested
+VERDICT: partial — one prior of mine DISCONFIRMED, one dismissal WITHDRAWN, the method itself untested (no positive control)
+EVIDENCE: (1) Prior "psionic was already in the To The Stars vocabulary" → full-text count ZERO across four Sekret
+Machines volumes, Skinwalkers at the Pentagon, American Cosmic, Imminent, Grusch's sworn testimony, AARO Vol. I;
+r/UFOs post bodies before 2023-04-25: 0 "psionic", 1 "psionics". Ambient only in SF (1951/1956) and tabletop
+(desuarchive /tg/, tens of thousands of posts) — Clayton's claim that the word was not in circulation *in this
+field* before Barber (Jan 2025) stands. (2) Dismissal "UAPGERB is downstream of the 4chan threads" → he cites them
+and DISAGREES on three points (MITRE video 107BtDYhTkA, read end to end at 01:28–01:35 and 02:10–02:13); a copier
+cannot disagree. (3) First-pass claims matrix, 16 atomic claims × 5 sources, cells asserts/denies/SILENT from
+grep-with-context: unanimous rows are all pre-1990 folklore (Grays, recovered craft, program above the USAF),
+information ~0; the single classifiable divergence is the OP's DENIAL of triangular craft, which gap-filling
+cannot produce. (4) A same-snapshot "0 comments" on the UAPGERB repost was wrong: 100 comments in the cached file,
+and the one I quoted was selected toward my conclusion — corrected in place.
+DECORRELATED EYE: none on the grade. **Clayton (human)** supplied the method and corrected the SIGN of two of
+three dismissals before any refuter ran; the null-refuter subagent (Claude sibling, discounted) then killed both.
+GRADE MOVE: (new topic) → Under research; every source Reported, u/Yud07's MJ-12 synthesis Received. Method =
+Hypothesized, kill condition = a salted positive control it fails to recover; not built.
+LINKS: research/uap-leak-triangulation/
