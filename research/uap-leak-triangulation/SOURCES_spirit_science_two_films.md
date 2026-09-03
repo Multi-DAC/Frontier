@@ -76,3 +76,32 @@ So the two films' agreement is **one trunk retold twice**, Gnostic demiurge in s
 - No positive control: a synthesis I *know* to be single-trunk was not run through the same tree-drawing to see whether the method reliably collapses it. Same debt as the README's kill condition.
 
 *Researcher pass: 97 tool calls, ~17 min, primary sources reached for items 2, 3, 6, 8, 9, 13, 15, 16, 17, 18, 19, 20, 23 of the 23 asked; the rest bibliographic or second-hand, marked above.*
+
+## 5. Flood myths: remembered, not invented — and where that is measured
+
+*Added D215 ~02:00, after Clayton pressed on the word "invents" in my 01:5x reply ("You said every people invents a flood. What makes you say invents?"). Position: the flood motif is **remembered where anyone has checked**, and **invented is supported nowhere that has been checked**. Both halves are narrower than they sound; the table says how narrow.*
+
+Two mechanisms, two predictions. **Shared architecture** (a "cognitive universal") predicts the motif everywhere, with no date attached. **Shared experience** predicts patchiness and a motif that tracks real, datable events. The test is whether a story can be tied to a dated event, and the strength of any position here is bounded by how few places that test has been run.
+
+| # | Case | Status | What the source supports |
+|---|---|---|---|
+| 1 | Australian coastal inundation stories | **Measured, one continent** | Nunn & Reid 2016, *Australian Geographer* 47(1):11–47, doi:10.1080/00049182.2015.1077539. 21 story groups; 19 dated to 7,250–13,070 cal BP by matching story-implied water depths against the Lewis et al. 2013 sea-level envelope. **Method caveat:** this is an *upper bound on origin date*, not a measured transmission interval. The story cannot be younger than the last time that shoreline was dry; nothing dates how long it has been told. Table 2 maximum is 13,310 against the abstract's 13,070. The only continent where the date-tracking test has been run. |
+| 2 | China's Great Flood / Jishi Gorge outburst | **Contested, not a clean case** | Wu et al. 2016, *Science* 353:579 (outburst ~1922 ± 28 BC, peak ~0.4 × 10⁶ m³/s from the SM). Three technical comments, *Science* 355:1382 (Wu Wenxiang et al.; Jian-Chiu Han, HKU, not Han Jianye; Huang Chun Chang et al.); Zhang, Huang, Shulmeister et al. 2019, *QSR* 218:267, "No relation to China's Great Flood": the dammed lake was gone by 5.65 ± 0.21 ka, about two millennia before the proposed outburst. I cited this as a dated event in my first correction and in the taxonomy slot. **Withdrawn.** |
+| 3 | Genesis 6–9 | **Dependent, not independent** | Consensus: dependent on the Mesopotamian tradition. Which branch (Atrahasis vs Gilgamesh XI) is live. OB Atrahasis colophon under Ammi-ṣaduqa, 1646–1626 BC middle chronology. Chen 2013 (OUP) argues the Sumerian flood tradition itself is late / Old Babylonian. Inside the region: copied, not made up, and one branch, not two. |
+| 4 | "Not universal: Egypt, much of Africa" | **Corrected** | Frazer 1918 vol. I pp. 329, 333 said Africa and Egypt absent (Egypt on Petrie's personal communication). Baumann 1936, via Witzel 2010 (Harvard DASH), finds flood stories "in pockets, all over sub-Saharan Africa". **"Much of Africa" withdrawn.** Egypt stands with a qualifier: no Noah-type deluge (the Destruction of Mankind is slaughter plus beer, Guilhou 2010, UEE), but BD 175 / CT 1130 carry a water-dissolution eschatology, so "no flood at all" overstates it. |
+| 5 | Black Sea inundation | **Majority against** | Aksu & Hiscott 2022, *Earth-Science Reviews* 227:103960 (against a catastrophic flood); Yanchilina et al. 2017, *Marine Geology* 383:14 (minority for). Not usable as a dated-event anchor for any myth. |
+| 6 | Storegga slide tsunami | **Real event, no myth** | 8,150 cal BP (Walker et al. 2020, *Antiquity* 94:1409). No tradition credibly tied to it. A dated event with no story is the memory mechanism's own null: transmission can fail, and did here. |
+
+**What survives, at its real width.**
+
+- One continent measured (Australia), by an upper-bound method. One region traced (Mesopotamia → Genesis), one branch. One dated-event case withdrawn (China). One "absence" withdrawn (Africa). One absence kept with a qualifier (Egypt). Two dated events with no story (Black Sea, contested; Storegga, clean).
+- So "remembered where anyone has checked" rests on n = 1 continent plus one textual lineage. "Invented", architecture alone, has no positive evidence anywhere checked, but the checking is thin enough that this is absence of evidence in a small sample, not evidence of absence.
+- Both withdrawals ran in the direction that flattered my new position, and both were caught by the researcher pass, not by me. Same defect as the film's §2 rows, on my side of the table. Recorded against experience v485.
+
+**Could not verify** (marked, not resolved). The researcher's return is carried only in the continuation note that produced this section; it did not record which items were reached at first hand and which bibliographically, so nothing above is claimed as primary-verified beyond the identifiers given. Specifically unresolved:
+
+- Whether Baumann 1936 is read at first hand by Witzel or via intermediaries; Witzel's characterisation is all that is held.
+- Chen 2013's argument, checked against a summary, not the monograph.
+- The Nunn & Reid Table 2 vs abstract discrepancy (13,310 vs 13,070): noted, cause not established.
+
+**Transfer.** Does this correction carry to the culture-bringer motif (Oannes, Watchers, Thoth, Viracocha) that §1 and §3 lean on? Not automatically. That motif has no dated-event anchor of the flood kind, so the memory-vs-architecture test has not been run on it. The objection I hold against my own position on the culture-bringers stays live until it is.
