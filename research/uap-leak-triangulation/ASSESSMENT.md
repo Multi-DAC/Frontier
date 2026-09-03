@@ -182,3 +182,47 @@ Unchanged in direction; two qualifiers and two corrections.
 - Gerb's other releases beyond the three pulled (MITRE 2026-08-07; USO surveys Apr 2024 ×2) — Clayton's "feel free to pull Gerb's transcripts" is open-ended; the three are the ones that bear on the station claim. His *method* is quoted in the follow-through above; no further video has been read.
 - /x/ pre-2023 frequency of "psionic" — needs a route into 4plebs.
 - Reddit comment corpus for "psionic" pre-2023 — Arctic Shift comments endpoint down tonight.
+
+## Addendum D214 ~23:2x — the Mexico "bad crash zone" cell, and its mapping onto §5(A)
+
+Clayton (Telegram ~23:1x): the leaker's more place-threshold-relevant statement is not the
+Bahamas station but the areas craft *avoid* "due to gravitational issues", Mexico as the example.
+
+**Source text, all three OP mentions (gdoc_export.txt, thread 1 + thread 2):**
+- l.232 (25 Apr 2023): "One area they seemed to avoid like the plague we suspect is due to issues
+  with gravity and flight. Before they figured it out we collected quite a few mishaps there."
+- l.495 (26 Apr): "there is an area they actively avoid in Mexico among others."
+- l.958 (thread 2, answering "Why/how are they avoiding Mexico?"): "One area around there is a bad
+  crash zone for them."
+- Adjacent mechanism line, l.99: "gravity engines near the surface of the planet can be like
+  crossing an intersection."
+- Zero hits in the OP for Silencio / Zone of Silence / Chicxulub / Yucatán. The place is never named.
+- Cross-source: Imminent OCR mentions Mexico 11× (Roswell/Socorro NM ×9, Ciudad Acuña 1950 body,
+  Alcubierre); Barber transcript 4× ; Gerb/JRE 0. No other source carries an *avoided-zone* claim —
+  the cell is 1 asserts / 4 silent. Lone-source, node-shaped (tied to gravity-engine, mishaps,
+  "they learn" claims). Partial-view-shaped, not poison-shaped, under CONVERGENCE_METHOD.md.
+
+**Folklore prior (measured D214 by web search, not from memory):** the Mapimí "Zona del Silencio"
+(Durango/Chihuahua/Coahuila) — named 1966 by an oil executive over failed radio reception, amplified
+by the 1970 Athena rocket crash, magnetite/meteorite lore, UFO stories; biosphere-reserve staff report
+radios and GPS work normally and locals admit 1970s tourism embellishment. So "a zone in Mexico where
+craft fail" has a folklore prior near one. The OP's version is *gravity*, not radio, and unnamed —
+a small divergence from the folk form, not enough to price it as surprising.
+
+**Mapping onto our own work (the honest version):**
+- It is structurally the §5(A) claim — place-fixedness via gravitational geometry — with the
+  observable inverted: not *where anomalies appear* but *where gravity-manipulating craft fail*.
+- §5(A) is FALSIFIED at crustal scale (D182, RESULT.md): reported window-areas sit on FLATTER
+  Bouguer gradients (0.34 percentile, wrong sign), and PROSAIC sites outscored UNEXPLAINED, because
+  sighting geography is basin-selected by where people live. The instrument could not see the
+  chameleon's metre-scale density anyway.
+- A recovery program's *crash* geography, if it existed, would be the one dataset NOT confounded by
+  observer geography — exactly the habitability-independent control RESULT.md asked for. The claim
+  points at the test we could not run and supplies no data for it. Reported; cannot move a grade.
+- Physics candidate if the claim were ever tested against a map: the sharpest large Bouguer gradient
+  feature in Mexico is the Chicxulub ring (Yucatán; ~30 mGal low of ~90 km radius with a ~20 mGal
+  central high, Pilkington 1994 / Hildebrand). Zona del Silencio has no documented gravity anomaly.
+  Folk reading and physics reading name DIFFERENT places — a discriminator, if the OP had named one.
+  He did not.
+
+Grade: Reported. Resistance: LOW (folk-adjacent). Not Library material.
